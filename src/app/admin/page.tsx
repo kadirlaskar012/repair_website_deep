@@ -83,7 +83,7 @@ export default async function AdminDashboardPage() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))',
             gap: '20px',
             marginBottom: '36px'
           }}
@@ -165,7 +165,7 @@ export default async function AdminDashboardPage() {
           <h3 style={{ fontSize: '1.1875rem', fontWeight: 700, marginBottom: '14px', color: 'var(--color-text-main)' }}>
             System Status & Configuration
           </h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px', fontSize: '0.875rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '16px', fontSize: '0.875rem' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
               <CheckCircle2 size={18} style={{ color: 'var(--color-success)', flexShrink: 0, marginTop: '2px' }} />
               <div>
