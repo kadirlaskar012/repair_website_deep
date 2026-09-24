@@ -427,18 +427,34 @@ export const initialProblems: Problem[] = [
 ];
 
 export const initialBrands: Brand[] = [
-  { id: 'samsung', name: 'Samsung', logoUrl: '/images/brands/samsung.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 1, isActive: true, isPopular: true },
-  { id: 'lg', name: 'LG', logoUrl: '/images/brands/lg.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 2, isActive: true, isPopular: true },
-  { id: 'whirlpool', name: 'Whirlpool', logoUrl: '/images/brands/whirlpool.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 3, isActive: true, isPopular: true },
-  { id: 'voltas', name: 'Voltas', logoUrl: '/images/brands/voltas.svg', categoryIds: ['ac-repair', 'fridge-repair'], sortOrder: 4, isActive: true, isPopular: true },
-  { id: 'godrej', name: 'Godrej', logoUrl: '/images/brands/godrej.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 5, isActive: true, isPopular: true },
-  { id: 'haier', name: 'Haier', logoUrl: '/images/brands/haier.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 6, isActive: true, isPopular: true },
-  { id: 'panasonic', name: 'Panasonic', logoUrl: '/images/brands/panasonic.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 7, isActive: true, isPopular: true },
-  { id: 'daikin', name: 'Daikin', logoUrl: '/images/brands/daikin.svg', categoryIds: ['ac-repair'], sortOrder: 8, isActive: true, isPopular: true },
-  { id: 'sony', name: 'Sony', logoUrl: '/images/brands/sony.svg', categoryIds: ['led-tv-repair'], sortOrder: 9, isActive: true, isPopular: true },
-  { id: 'ifb', name: 'IFB', logoUrl: '/images/brands/ifb.svg', categoryIds: ['ac-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 10, isActive: true, isPopular: true },
-  { id: 'bosch', name: 'Bosch', logoUrl: '/images/brands/bosch.svg', categoryIds: ['fridge-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 11, isActive: true, isPopular: true },
-  { id: 'blue-star', name: 'Blue Star', logoUrl: '/images/brands/blue-star.svg', categoryIds: ['ac-repair', 'fridge-repair'], sortOrder: 12, isActive: true, isPopular: true }
+  {"id":"voltas","name":"Voltas","logoUrl":"/images/brands/voltas.svg","categoryIds":["ac-repair","fridge-repair"],"sortOrder":1,"isActive":true,"isPopular":true},
+  {"id":"daikin","name":"Daikin","logoUrl":"/images/brands/daikin.svg","categoryIds":["ac-repair"],"sortOrder":2,"isActive":true,"isPopular":true},
+  {"id":"hitachi","name":"Hitachi","logoUrl":"/images/brands/hitachi.svg","categoryIds":["ac-repair","fridge-repair"],"sortOrder":3,"isActive":true,"isPopular":true},
+  {"id":"samsung","name":"Samsung","logoUrl":"/images/brands/samsung.svg","categoryIds":["ac-repair","fridge-repair","washing-machine-repair","microwave-repair","led-tv-repair"],"sortOrder":4,"isActive":true,"isPopular":true},
+  {"id":"lg","name":"LG","logoUrl":"/images/brands/lg.svg","categoryIds":["ac-repair","fridge-repair","washing-machine-repair","microwave-repair","led-tv-repair"],"sortOrder":5,"isActive":true,"isPopular":true},
+  {"id":"whirlpool","name":"Whirlpool","logoUrl":"/images/brands/whirlpool.svg","categoryIds":["ac-repair","fridge-repair","washing-machine-repair","microwave-repair"],"sortOrder":6,"isActive":true,"isPopular":true},
+  {"id":"carrier","name":"Carrier","logoUrl":"/images/brands/carrier.svg","categoryIds":["ac-repair"],"sortOrder":7,"isActive":true,"isPopular":true},
+  {"id":"blue-star","name":"Blue Star","logoUrl":"/images/brands/blue-star.svg","categoryIds":["ac-repair","fridge-repair"],"sortOrder":8,"isActive":true,"isPopular":true},
+  {"id":"o-general","name":"O General","logoUrl":"/images/brands/o-general.svg","categoryIds":["ac-repair"],"sortOrder":9,"isActive":true,"isPopular":true},
+  {"id":"mitsubishi","name":"Mitsubishi","logoUrl":"/images/brands/mitsubishi.svg","categoryIds":["ac-repair"],"sortOrder":10,"isActive":true,"isPopular":true},
+  {"id":"lloyd","name":"Lloyd","logoUrl":"/images/brands/lloyd.svg","categoryIds":["ac-repair","fridge-repair","washing-machine-repair","led-tv-repair"],"sortOrder":11,"isActive":true,"isPopular":true},
+  {"id":"godrej","name":"Godrej","logoUrl":"/images/brands/godrej.svg","categoryIds":["ac-repair","fridge-repair","washing-machine-repair","microwave-repair"],"sortOrder":12,"isActive":true,"isPopular":true},
+  {"id":"haier","name":"Haier","logoUrl":"/images/brands/haier.svg","categoryIds":["ac-repair","fridge-repair","washing-machine-repair","microwave-repair","led-tv-repair"],"sortOrder":13,"isActive":true,"isPopular":true},
+  {"id":"panasonic","name":"Panasonic","logoUrl":"/images/brands/panasonic.svg","categoryIds":["ac-repair","fridge-repair","washing-machine-repair","microwave-repair","led-tv-repair"],"sortOrder":14,"isActive":true,"isPopular":true},
+  {"id":"ifb","name":"IFB","logoUrl":"/images/brands/ifb.svg","categoryIds":["ac-repair","washing-machine-repair","microwave-repair"],"sortOrder":15,"isActive":true,"isPopular":true},
+  {"id":"bosch","name":"Bosch","logoUrl":"/images/brands/bosch.svg","categoryIds":["fridge-repair","washing-machine-repair","microwave-repair"],"sortOrder":16,"isActive":true,"isPopular":true},
+  {"id":"siemens","name":"Siemens","logoUrl":"/images/brands/siemens.svg","categoryIds":["fridge-repair","washing-machine-repair","microwave-repair"],"sortOrder":17,"isActive":true,"isPopular":true},
+  {"id":"toshiba","name":"Toshiba","logoUrl":"/images/brands/toshiba.svg","categoryIds":["ac-repair","fridge-repair","washing-machine-repair"],"sortOrder":18,"isActive":true,"isPopular":true},
+  {"id":"sony","name":"Sony","logoUrl":"/images/brands/sony.svg","categoryIds":["led-tv-repair"],"sortOrder":19,"isActive":true,"isPopular":true},
+  {"id":"tcl","name":"TCL","logoUrl":"/images/brands/tcl.svg","categoryIds":["led-tv-repair","ac-repair","washing-machine-repair"],"sortOrder":20,"isActive":true,"isPopular":true},
+  {"id":"mi","name":"Mi / Xiaomi","logoUrl":"/images/brands/mi.svg","categoryIds":["led-tv-repair"],"sortOrder":21,"isActive":true,"isPopular":true},
+  {"id":"oneplus","name":"OnePlus","logoUrl":"/images/brands/oneplus.svg","categoryIds":["led-tv-repair"],"sortOrder":22,"isActive":true,"isPopular":true},
+  {"id":"kelvinator","name":"Kelvinator","logoUrl":"/images/brands/kelvinator.svg","categoryIds":["fridge-repair","ac-repair","washing-machine-repair"],"sortOrder":23,"isActive":true,"isPopular":true},
+  {"id":"electrolux","name":"Electrolux","logoUrl":"/images/brands/electrolux.svg","categoryIds":["washing-machine-repair","fridge-repair"],"sortOrder":24,"isActive":true,"isPopular":true},
+  {"id":"kent","name":"Kent RO","logoUrl":"/images/brands/kent.svg","categoryIds":["fridge-repair"],"sortOrder":25,"isActive":true,"isPopular":true},
+  {"id":"aquaguard","name":"Aquaguard","logoUrl":"/images/brands/aquaguard.svg","categoryIds":["fridge-repair"],"sortOrder":26,"isActive":true,"isPopular":true},
+  {"id":"livpure","name":"Livpure","logoUrl":"/images/brands/livpure.svg","categoryIds":["fridge-repair"],"sortOrder":27,"isActive":true,"isPopular":true},
+  {"id":"pureit","name":"Pureit","logoUrl":"/images/brands/pureit.svg","categoryIds":["fridge-repair"],"sortOrder":28,"isActive":true,"isPopular":true}
 ];
 
 export const initialLocations: LocationItem[] = [
