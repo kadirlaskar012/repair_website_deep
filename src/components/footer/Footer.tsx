@@ -88,16 +88,29 @@ export default function Footer({ settings, categories, locations, lang }: Footer
         >
           {/* Brand & About */}
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-              <div style={{ width: '36px', height: '36px', background: 'var(--color-primary)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF' }}>
-                <Wrench size={18} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+              <div style={{ width: '42px', height: '42px', borderRadius: '11px', overflow: 'hidden', flexShrink: 0, boxShadow: '0 4px 14px rgba(0,0,0,0.3)' }}>
+                <img
+                  src="/logo-icon.svg"
+                  alt="AC Repair Service"
+                  width={42}
+                  height={42}
+                  style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                />
               </div>
-              <span style={{ fontSize: '1.25rem', fontWeight: 800, color: '#FFFFFF' }}>
-                {isBn ? settings.businessNameBn : settings.businessName}
-              </span>
+              <div>
+                <span style={{ fontSize: '1.25rem', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.02em', display: 'block', lineHeight: 1.15 }}>
+                  AC REPAIR <span style={{ color: 'var(--color-accent)' }}>SERVICE</span>
+                </span>
+                <span style={{ fontSize: '0.6875rem', fontWeight: 700, color: '#34D399', letterSpacing: '0.04em' }}>
+                  {isBn ? 'ডোরস্টেপ এসি ও অ্যাপ্লায়েন্স কেয়ার • পশ্চিমবঙ্গ' : 'DOORSTEP APPLIANCE CARE • WEST BENGAL'}
+                </span>
+              </div>
             </div>
             <p style={{ fontSize: '0.875rem', lineHeight: 1.6, marginBottom: '20px' }}>
-              {t.footerAbout}
+              {isBn 
+                ? 'কলকাতা ও পশ্চিমবঙ্গ জুড়ে ডোরস্টেপ এসি এবং হোম অ্যাপ্লায়েন্স মেরামত। প্রত্যয়িত দক্ষ টেকনিশিয়ান, ৯০ দিনের গ্যারান্টি এবং স্বচ্ছ ₹২৯৯ পরিদর্শন ফি।'
+                : 'West Bengal’s trusted doorstep air conditioner and home appliance repair. Certified multi-brand engineers, 90-day warranty, and fixed ₹299 inspection fee.'}
             </p>
             <div style={{ fontSize: '0.8125rem', color: '#88A39C', display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>

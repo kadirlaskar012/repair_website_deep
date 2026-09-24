@@ -1,7 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
-  <rect x="5" y="10" width="40" height="40" rx="10" fill="#146C5B" />
-  <path d="M25 18 L25 32 M18 25 L32 25" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
-  <circle cx="25" cy="25" r="3" fill="#E8A33D" />
-  <text x="56" y="32" font-family="sans-serif" font-size="18" font-weight="bold" fill="#14221F">AC Repair</text>
-  <text x="56" y="46" font-family="sans-serif" font-size="12" font-weight="600" fill="#146C5B">Service &bull; West Bengal</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64">
+  <defs>
+    <linearGradient id="shieldGradFull" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F5143"/>
+      <stop offset="50%" stop-color="#146C5B"/>
+      <stop offset="100%" stop-color="#09382E"/>
+    </linearGradient>
+    <linearGradient id="glowBorderFull" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="goldGradFull" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="iceGradFull" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="subtleShadowFull" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Left Emblem (52x52) -->
+  <g transform="translate(6, 6)">
+    <rect x="0" y="0" width="52" height="52" rx="14" fill="url(#shieldGradFull)" stroke="url(#glowBorderFull)" stroke-width="1.6"/>
+    <path d="M 8 30 C 14 18, 24 16, 38 18" fill="none" stroke="url(#iceGradFull)" stroke-width="2.6" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 12 36 C 18 28, 26 24, 40 25" fill="none" stroke="url(#iceGradFull)" stroke-width="1.8" stroke-linecap="round" opacity="0.4"/>
+    
+    <!-- Precision Wrench -->
+    <g transform="translate(25, 27) rotate(-45) translate(-25, -27)" filter="url(#subtleShadowFull)">
+      <path d="M 23 11 C 19 11, 16 14, 16 18 C 16 20.5, 17.2 22.8, 19 24 L 22 41 C 22.5 42, 23.8 43, 25 43 C 26.2 43, 27.5 42, 28 41 L 31 24 C 32.8 22.8, 34 20.5, 34 18 C 34 14, 31 11, 27 11 Z" fill="#FFFFFF"/>
+      <path d="M 22 10 L 25 15 L 28 10 Z" fill="url(#shieldGradFull)"/>
+      <circle cx="25" cy="18" r="2.8" fill="url(#shieldGradFull)"/>
+      <circle cx="25" cy="37" r="1.8" fill="url(#shieldGradFull)"/>
+    </g>
+
+    <!-- Spark -->
+    <g transform="translate(40, 11) scale(0.75)">
+      <path d="M 0 -7 Q 0 0 7 0 Q 0 0 0 7 Q 0 0 -7 0 Q 0 0 0 -7 Z" fill="url(#goldGradFull)"/>
+      <circle cx="0" cy="0" r="1.2" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- Typography: AC REPAIR SERVICE -->
+  <text x="70" y="32" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" letter-spacing="-0.02em" fill="#0F2620">AC REPAIR <tspan fill="#146C5B">SERVICE</tspan></text>
+
+  <!-- Verified Trust Badge Pill & SEO Tagline -->
+  <rect x="70" y="39" width="16" height="16" rx="8" fill="#10B981" fill-opacity="0.15"/>
+  <path d="M 74 47 L 77 50 L 82 44" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <text x="91" y="51" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.04em" fill="#4B635D">DOORSTEP CARE <tspan fill="#E8A33D">•</tspan> WEST BENGAL</text>
 </svg>

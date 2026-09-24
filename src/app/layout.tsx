@@ -25,12 +25,40 @@ const notoSansBengali = Noto_Sans_Bengali({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'AC Repair Service | Doorstep Appliance Repair in West Bengal | ₹299 Visit',
+    default: 'AC Repair Service | Doorstep AC & Appliance Repair in Kolkata & West Bengal | ₹299 Visit',
     template: '%s | AC Repair Service'
   },
-  description: 'Verified doorstep appliance repair across West Bengal. Transparent ₹299 visit and diagnosis fee for AC, Fridge, Washing Machine, Microwave, and LED TV.',
+  description: 'Verified doorstep AC and home appliance repair across Kolkata, Howrah, Salt Lake & West Bengal. Same-day technician visit for AC, Fridge, Washing Machine, Microwave, and LED TV. 90-day warranty & flat ₹299 diagnosis fee.',
+  keywords: [
+    'AC repair Kolkata',
+    'Doorstep appliance repair West Bengal',
+    'Split AC repair service Kolkata',
+    'Refrigerator repair Salt Lake',
+    'Washing machine service Howrah',
+    'Microwave oven repair West Bengal',
+    'LED TV repair Kolkata',
+    'AC gas refill Kolkata',
+    'Home appliance service ₹299 visit',
+    'Emergency AC technician Kolkata'
+  ],
   icons: {
-    icon: '/favicon.ico'
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', type: 'image/png', sizes: '32x32' }
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    shortcut: '/favicon.ico'
+  },
+  openGraph: {
+    title: 'AC Repair Service | Doorstep AC & Appliance Repair in West Bengal',
+    description: 'Same-day certified technician visit for AC, Fridge, Washing Machine, Microwave & TV. 90-day warranty, 100% genuine parts, transparent ₹299 inspection fee.',
+    url: SITE_URL,
+    siteName: 'AC Repair Service',
+    locale: 'en_IN',
+    type: 'website'
   }
 };
 

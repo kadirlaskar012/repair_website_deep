@@ -134,6 +134,31 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div style={{ maxWidth: '860px', margin: '0 auto', textAlign: 'center' }}>
           
+          {/* SEO Optimized Trust & Tagline Pill Badge */}
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '6px 14px',
+              borderRadius: '9999px',
+              backgroundColor: 'var(--color-primary-light)',
+              color: 'var(--color-primary-dark)',
+              fontSize: '0.8125rem',
+              fontWeight: 700,
+              marginBottom: '16px',
+              border: '1px solid rgba(20, 108, 91, 0.2)',
+              boxShadow: '0 1px 3px rgba(20, 108, 91, 0.08)'
+            }}
+          >
+            <Sparkles size={14} style={{ color: 'var(--color-accent)' }} />
+            <span>
+              {isBn
+                ? 'পশ্চিমবঙ্গের #১ বিশ্বস্ত ডোরস্টেপ সার্ভিস • ৯০ মিনিটে আগমন'
+                : "West Bengal's #1 Doorstep Appliance Repair • 90-Min Response"}
+            </span>
+          </div>
+
           {/* Main Title - Inspired by HomeTriangle */}
           <h1
             style={{
@@ -161,8 +186,8 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
             }}
           >
             {isBn
-              ? 'কলকাতা এবং পুরো পশ্চিমবঙ্গে এসি, ফ্রিজ, ওয়াশিং মেশিন, মাইক্রোওয়েভ ও টিভির ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ পরিদর্শনে সার্টিফাইড বিশেষজ্ঞ।'
-              : 'Certified doorstep technicians across Kolkata & West Bengal. Same-day service with fixed ₹299 inspection fee.'}
+              ? 'কলকাতা ও পশ্চিমবঙ্গ জুড়ে স্প্লিট এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভির ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ পরিদর্শনে সার্টিফাইড বিশেষজ্ঞ ও ৯০ দিনের ওয়ারেন্টি।'
+              : 'Expert doorstep technicians across Kolkata & West Bengal for AC, Refrigerator, Washing Machine, Microwave & TV. 90-day warranty with flat ₹299 inspection fee.'}
           </p>
 
           {/* HomeTriangle-Style Unified Search & Location Bar */}

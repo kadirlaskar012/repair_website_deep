@@ -105,14 +105,32 @@ export default function Header({
           aria-label="AC Repair Service Home"
         >
           <div className="header-logo-icon">
-            <Wrench size={20} />
+            <img
+              src="/logo-icon.svg"
+              alt="AC Repair Service"
+              width={40}
+              height={40}
+              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+            />
           </div>
           <div className="header-logo-text">
             <div className="header-logo-title">
-              AC Repair Service
+              <span>AC REPAIR</span> <span className="logo-accent">SERVICE</span>
             </div>
             <div className="header-logo-sub">
-              {isBn ? 'পশ্চিমবঙ্গ ডোরস্টেপ সার্ভিস' : 'West Bengal Doorstep Care'}
+              {isBn ? (
+                <>
+                  <span>ডোরস্টেপ কেয়ার</span>
+                  <span className="verified-dot" />
+                  <span>পশ্চিমবঙ্গ</span>
+                </>
+              ) : (
+                <>
+                  <span>DOORSTEP REPAIR</span>
+                  <span className="verified-dot" />
+                  <span>WEST BENGAL</span>
+                </>
+              )}
             </div>
           </div>
         </Link>
@@ -201,15 +219,21 @@ export default function Header({
             {/* Drawer Top */}
             <div className="mobile-drawer-header">
               <div className="mobile-drawer-brand">
-                <div className="header-logo-icon" style={{ width: '34px', height: '34px', borderRadius: '8px' }}>
-                  <Wrench size={18} />
+                <div className="header-logo-icon" style={{ width: '36px', height: '36px', borderRadius: '10px' }}>
+                  <img
+                    src="/logo-icon.svg"
+                    alt="AC Repair Service"
+                    width={36}
+                    height={36}
+                    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                  />
                 </div>
                 <div>
-                  <div style={{ fontWeight: 800, fontSize: '1.05rem', color: 'var(--color-primary)', lineHeight: 1.15 }}>
-                    AC Repair Service
+                  <div style={{ fontWeight: 800, fontSize: '1.05rem', color: 'var(--color-text-main)', lineHeight: 1.15 }}>
+                    AC REPAIR <span style={{ color: 'var(--color-primary)' }}>SERVICE</span>
                   </div>
-                  <div style={{ fontSize: '0.6875rem', fontWeight: 600, color: 'var(--color-text-muted)' }}>
-                    {isBn ? 'পশ্চিমবঙ্গ ডোরস্টেপ সার্ভিস' : 'West Bengal Doorstep Care'}
+                  <div style={{ fontSize: '0.6875rem', fontWeight: 700, color: 'var(--color-text-muted)' }}>
+                    {isBn ? 'ডোরস্টেপ কেয়ার • পশ্চিমবঙ্গ' : 'Doorstep Repair • West Bengal'}
                   </div>
                 </div>
               </div>

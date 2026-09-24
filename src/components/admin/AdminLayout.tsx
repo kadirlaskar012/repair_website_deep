@@ -112,13 +112,19 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
         {/* Top Brand Header */}
         <div className="admin-sidebar-header">
           <Link href="/admin" className="admin-brand-link">
-            <div className="admin-brand-icon">
-              <Wrench size={19} />
+            <div className="admin-brand-icon" style={{ padding: 0, overflow: 'hidden' }}>
+              <img
+                src="/logo-icon.svg"
+                alt="AC Repair Service"
+                width={36}
+                height={36}
+                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+              />
             </div>
             {!collapsed && (
               <div className="admin-brand-text">
-                <div className="admin-brand-title">AC Repair Service</div>
-                <div className="admin-brand-subtitle">Control Panel</div>
+                <div className="admin-brand-title">AC REPAIR SERVICE</div>
+                <div className="admin-brand-subtitle">Admin Control Panel</div>
               </div>
             )}
           </Link>
@@ -263,11 +269,17 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
             {/* Drawer Header */}
             <div className="admin-drawer-header">
               <div className="admin-brand-link">
-                <div className="admin-brand-icon">
-                  <Wrench size={18} />
+                <div className="admin-brand-icon" style={{ padding: 0, overflow: 'hidden' }}>
+                  <img
+                    src="/logo-icon.svg"
+                    alt="AC Repair Service"
+                    width={36}
+                    height={36}
+                    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                  />
                 </div>
                 <div className="admin-brand-text">
-                  <div className="admin-brand-title">AC Repair Service</div>
+                  <div className="admin-brand-title">AC REPAIR SERVICE</div>
                   <div className="admin-brand-subtitle">Admin Portal</div>
                 </div>
               </div>

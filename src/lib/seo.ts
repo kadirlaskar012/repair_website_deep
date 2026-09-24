@@ -81,7 +81,9 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
     telephone: settings.phone,
     email: settings.email,
     priceRange: '₹₹',
-    image: `${SITE_URL}/logo.png`,
+    image: `${SITE_URL}/icon-512.png`,
+    logo: `${SITE_URL}/logo.svg`,
+    slogan: 'Doorstep AC & Appliance Repair in West Bengal | 90-Min Response • 90-Day Warranty',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Salt Lake Sector V',
@@ -211,7 +213,7 @@ export function generateArticleSchema(post: BlogPost, lang: Language) {
       name: 'AC Repair Service',
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/logo.png`
+        url: `${SITE_URL}/logo.svg`
       }
     },
     mainEntityOfPage: {
