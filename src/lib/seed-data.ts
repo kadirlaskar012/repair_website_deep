@@ -427,18 +427,18 @@ export const initialProblems: Problem[] = [
 ];
 
 export const initialBrands: Brand[] = [
-  { id: 'samsung', name: 'Samsung', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 1, isActive: true, isPopular: true },
-  { id: 'lg', name: 'LG', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 2, isActive: true, isPopular: true },
-  { id: 'whirlpool', name: 'Whirlpool', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 3, isActive: true, isPopular: true },
-  { id: 'voltas', name: 'Voltas', categoryIds: ['ac-repair', 'fridge-repair'], sortOrder: 4, isActive: true, isPopular: true },
-  { id: 'godrej', name: 'Godrej', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 5, isActive: true, isPopular: true },
-  { id: 'haier', name: 'Haier', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 6, isActive: true, isPopular: true },
-  { id: 'panasonic', name: 'Panasonic', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 7, isActive: true, isPopular: true },
-  { id: 'daikin', name: 'Daikin', categoryIds: ['ac-repair'], sortOrder: 8, isActive: true, isPopular: true },
-  { id: 'sony', name: 'Sony', categoryIds: ['led-tv-repair'], sortOrder: 9, isActive: true, isPopular: true },
-  { id: 'ifb', name: 'IFB', categoryIds: ['ac-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 10, isActive: true, isPopular: true },
-  { id: 'bosch', name: 'Bosch', categoryIds: ['fridge-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 11, isActive: true, isPopular: true },
-  { id: 'blue-star', name: 'Blue Star', categoryIds: ['ac-repair', 'fridge-repair'], sortOrder: 12, isActive: true, isPopular: true }
+  { id: 'samsung', name: 'Samsung', logoUrl: '/images/brands/samsung.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 1, isActive: true, isPopular: true },
+  { id: 'lg', name: 'LG', logoUrl: '/images/brands/lg.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 2, isActive: true, isPopular: true },
+  { id: 'whirlpool', name: 'Whirlpool', logoUrl: '/images/brands/whirlpool.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 3, isActive: true, isPopular: true },
+  { id: 'voltas', name: 'Voltas', logoUrl: '/images/brands/voltas.svg', categoryIds: ['ac-repair', 'fridge-repair'], sortOrder: 4, isActive: true, isPopular: true },
+  { id: 'godrej', name: 'Godrej', logoUrl: '/images/brands/godrej.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 5, isActive: true, isPopular: true },
+  { id: 'haier', name: 'Haier', logoUrl: '/images/brands/haier.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 6, isActive: true, isPopular: true },
+  { id: 'panasonic', name: 'Panasonic', logoUrl: '/images/brands/panasonic.svg', categoryIds: ['ac-repair', 'fridge-repair', 'washing-machine-repair', 'microwave-repair', 'led-tv-repair'], sortOrder: 7, isActive: true, isPopular: true },
+  { id: 'daikin', name: 'Daikin', logoUrl: '/images/brands/daikin.svg', categoryIds: ['ac-repair'], sortOrder: 8, isActive: true, isPopular: true },
+  { id: 'sony', name: 'Sony', logoUrl: '/images/brands/sony.svg', categoryIds: ['led-tv-repair'], sortOrder: 9, isActive: true, isPopular: true },
+  { id: 'ifb', name: 'IFB', logoUrl: '/images/brands/ifb.svg', categoryIds: ['ac-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 10, isActive: true, isPopular: true },
+  { id: 'bosch', name: 'Bosch', logoUrl: '/images/brands/bosch.svg', categoryIds: ['fridge-repair', 'washing-machine-repair', 'microwave-repair'], sortOrder: 11, isActive: true, isPopular: true },
+  { id: 'blue-star', name: 'Blue Star', logoUrl: '/images/brands/blue-star.svg', categoryIds: ['ac-repair', 'fridge-repair'], sortOrder: 12, isActive: true, isPopular: true }
 ];
 
 export const initialLocations: LocationItem[] = [

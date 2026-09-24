@@ -114,7 +114,7 @@ export default function AdminBrandsPage() {
         </div>
 
         {/* Brands Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '16px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 200px), 1fr))', gap: '16px' }}>
           {brands.map((b) => (
             <div
               key={b.id}
@@ -128,11 +128,32 @@ export default function AdminBrandsPage() {
               }}
             >
               <div>
+                <div
+                  style={{
+                    width: '100%',
+                    height: '56px',
+                    backgroundColor: '#F8FAFC',
+                    borderRadius: '8px',
+                    border: '1px solid #E2E8F0',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    marginBottom: '14px',
+                    padding: '6px 12px'
+                  }}
+                >
+                  <img
+                    src={b.logoUrl || `/images/brands/${b.id}.svg`}
+                    alt={b.name}
+                    style={{ maxHeight: '38px', maxWidth: '100%', objectFit: 'contain' }}
+                  />
+                </div>
+
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-                  <span style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--color-text-main)' }}>
+                  <span style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--color-text-main)' }}>
                     {b.name}
                   </span>
-                  <span style={{ fontSize: '0.75rem', color: b.isActive ? 'var(--color-success)' : 'var(--color-text-light)' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 600, color: b.isActive ? 'var(--color-success)' : 'var(--color-text-light)' }}>
                     {b.isActive ? 'Active' : 'Disabled'}
                   </span>
                 </div>

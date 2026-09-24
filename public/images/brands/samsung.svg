@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <defs>
+    <linearGradient id="samsungGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1428A0"/>
+      <stop offset="100%" stop-color="#0B1B7D"/>
+    </linearGradient>
+  </defs>
+  <!-- Slanted Blue Oval Characteristic of Samsung -->
+  <ellipse cx="80" cy="25" rx="74" ry="21" transform="rotate(-8 80 25)" fill="url(#samsungGrad)"/>
+  <!-- Samsung Wordmark in Crisp White -->
+  <text x="80" y="32" font-family="'Helvetica Neue', 'Arial Black', Arial, sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="2px">SAMSUNG</text>
+</svg>

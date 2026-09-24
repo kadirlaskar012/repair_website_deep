@@ -26,49 +26,69 @@ export default function BrandsSection({ brands, lang }: BrandsSectionProps) {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 150px), 1fr))',
             gap: '16px'
           }}
         >
-          {brands.map((b) => (
-            <div
-              key={b.id}
-              style={{
-                backgroundColor: '#FFFFFF',
-                border: '1px solid var(--color-border)',
-                borderRadius: 'var(--radius-md)',
-                padding: '20px 16px',
-                textAlign: 'center',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: 'var(--shadow-xs)',
-                transition: 'transform 0.15s, border-color 0.15s'
-              }}
-              className="card-hover"
-            >
-              {b.logoUrl ? (
+          {brands.map((b) => {
+            const logoSrc = b.logoUrl || `/images/brands/${b.id}.svg`;
+
+            return (
+              <div
+                key={b.id}
+                style={{
+                  backgroundColor: '#FFFFFF',
+                  border: '1px solid var(--color-border)',
+                  borderRadius: '12px',
+                  padding: '16px 18px',
+                  minHeight: '82px',
+                  textAlign: 'center',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.03)',
+                  transition: 'all 0.2s ease',
+                  cursor: 'default'
+                }}
+                className="card-hover"
+                title={`${b.name} Authorized Multi-Brand Service`}
+              >
                 <img
-                  src={b.logoUrl}
-                  alt={b.name}
-                  style={{ maxHeight: '36px', maxWidth: '100%', objectFit: 'contain' }}
+                  src={logoSrc}
+                  alt={`${b.name} Official Brand Logo`}
+                  style={{
+                    maxHeight: '40px',
+                    maxWidth: '128px',
+                    width: 'auto',
+                    height: 'auto',
+                    objectFit: 'contain',
+                    transition: 'transform 0.2s ease'
+                  }}
+                  onError={(e) => {
+                    // graceful text fallback if image path ever fails
+                    const target = e.currentTarget;
+                    target.style.display = 'none';
+                    if (target.nextElementSibling) {
+                      (target.nextElementSibling as HTMLElement).style.display = 'block';
+                    }
+                  }}
                 />
-              ) : (
                 <span
                   style={{
-                    fontSize: '1.05rem',
-                    fontWeight: 700,
+                    display: 'none',
+                    fontSize: '1rem',
+                    fontWeight: 800,
                     letterSpacing: '0.04em',
-                    color: 'var(--color-text-main)',
+                    color: 'var(--color-primary-dark)',
                     textTransform: 'uppercase'
                   }}
                 >
                   {b.name}
                 </span>
-              )}
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </div>
 
         <div style={{ textAlign: 'center', marginTop: '24px', fontSize: '0.75rem', color: 'var(--color-text-light)' }}>

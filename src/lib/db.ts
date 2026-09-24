@@ -345,7 +345,10 @@ export async function deleteProblem(id: string): Promise<boolean> {
 }
 
 export async function getBrands(categoryId?: string): Promise<Brand[]> {
-  let list = inMemory.brands.filter((b) => b.isActive);
+  let list = inMemory.brands.filter((b) => b.isActive).map((b) => ({
+    ...b,
+    logoUrl: b.logoUrl || `/images/brands/${b.id}.svg`
+  }));
   if (categoryId) {
     list = list.filter((b) => b.categoryIds.includes(categoryId));
   }
@@ -353,7 +356,10 @@ export async function getBrands(categoryId?: string): Promise<Brand[]> {
 }
 
 export async function getAllBrandsAdmin(): Promise<Brand[]> {
-  return inMemory.brands;
+  return inMemory.brands.map((b) => ({
+    ...b,
+    logoUrl: b.logoUrl || `/images/brands/${b.id}.svg`
+  }));
 }
 
 export async function saveBrand(brand: Brand): Promise<Brand> {
