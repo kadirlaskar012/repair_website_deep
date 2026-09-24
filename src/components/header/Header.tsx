@@ -65,17 +65,39 @@ export default function Header({
     targetLangPath = pathname === '/' ? '/bn' : `/bn${pathname}`;
   }
 
+  const getNavParts = (slug: string, fullLabel: string, isBengali: boolean) => {
+    if (isBengali) {
+      if (slug === 'ac-repair') return { prefix: 'এসি', suffix: 'মেরামত' };
+      if (slug === 'fridge-repair') return { prefix: 'ফ্রিজ', suffix: 'মেরামত' };
+      if (slug === 'washing-machine-repair') return { prefix: 'ওয়াশিং মেশিন', suffix: '' };
+      if (slug === 'microwave-repair') return { prefix: 'মাইক্রোওয়েভ', suffix: '' };
+      if (slug === 'led-tv-repair') return { prefix: 'এলইডি টিভি', suffix: '' };
+      return { prefix: fullLabel, suffix: '' };
+    }
+    if (slug === 'ac-repair') return { prefix: 'AC', suffix: 'Repair' };
+    if (slug === 'fridge-repair') return { prefix: 'Fridge', suffix: 'Repair' };
+    if (slug === 'washing-machine-repair') return { prefix: 'Washing Machine', suffix: 'Repair' };
+    if (slug === 'microwave-repair') return { prefix: 'Microwave', suffix: 'Oven' };
+    if (slug === 'led-tv-repair') return { prefix: 'LED TV', suffix: 'Repair' };
+    return { prefix: fullLabel, suffix: '' };
+  };
+
   const navLinks = [
-    { href: isBn ? '/bn' : '/', label: t.home },
-    ...categories.map((c) => ({
-      href: isBn ? `/bn/${c.slug}` : `/${c.slug}`,
-      label: isBn ? c.nameBn : c.name
-    }))
+    { href: isBn ? '/bn' : '/', label: t.home, prefix: t.home, suffix: '' },
+    ...categories.map((c) => {
+      const parts = getNavParts(c.slug, isBn ? c.nameBn : c.name, isBn);
+      return {
+        href: isBn ? `/bn/${c.slug}` : `/${c.slug}`,
+        label: isBn ? c.nameBn : c.name,
+        prefix: parts.prefix,
+        suffix: parts.suffix
+      };
+    })
   ];
 
   return (
     <header className="header-sticky">
-      <div className="container header-container">
+      <div className="header-container">
         {/* Brand Logo */}
         <Link
           href={isBn ? '/bn' : '/'}
@@ -97,7 +119,7 @@ export default function Header({
 
         {/* Right Group: Navbar -> Search -> EN-BN Language Toggle -> Book CTA */}
         <div className="header-right-group">
-          {/* Desktop Navigation (Right Aligned) */}
+          {/* Desktop Navigation (Right Aligned, Fluid Responsive) */}
           <nav
             className="desktop-nav"
             aria-label="Primary Navigation"
@@ -110,7 +132,8 @@ export default function Header({
                   href={link.href}
                   className={`desktop-nav-link ${isActive ? 'active' : ''}`}
                 >
-                  {link.label}
+                  <span className="nav-prefix">{link.prefix}</span>
+                  {link.suffix ? <span className="nav-suffix">&nbsp;{link.suffix}</span> : null}
                 </Link>
               );
             })}
