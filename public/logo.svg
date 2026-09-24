@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect x="5" y="10" width="40" height="40" rx="10" fill="#146C5B" />
+  <path d="M25 18 L25 32 M18 25 L32 25" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+  <circle cx="25" cy="25" r="3" fill="#E8A33D" />
+  <text x="56" y="32" font-family="sans-serif" font-size="18" font-weight="bold" fill="#14221F">AC Repair</text>
+  <text x="56" y="46" font-family="sans-serif" font-size="12" font-weight="600" fill="#146C5B">Service &bull; West Bengal</text>
+</svg>
