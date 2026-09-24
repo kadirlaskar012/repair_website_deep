@@ -1,10 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
-  <g transform="translate(10, 4)">
-    <!-- Red Chevron Accent -->
-    <path d="M 6 12 L 18 12 L 12 24 Z" fill="#ED1C24"/>
-    <!-- Voltas Bold Wordmark -->
-    <text x="24" y="26" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="900" fill="#0054A6" letter-spacing="1px">VOLTAS</text>
-    <!-- TATA Enterprise Subtext -->
-    <text x="26" y="38" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8.5" font-weight="700" fill="#5B6770" letter-spacing="1.5px">A TATA ENTERPRISE</text>
+  <g transform="translate(10, 8)">
+    <path d="M 6 8 L 18 8 L 12 24 Z" fill="#ED1C24"/>
+    <text x="24" y="22" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="900" fill="#0A3A60" letter-spacing="1.5px">VOLTAS</text>
+    <text x="25" y="32" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#ED1C24" letter-spacing="1.8px">A TATA PRODUCT</text>
   </g>
 </svg>
