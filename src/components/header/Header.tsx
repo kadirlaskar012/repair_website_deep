@@ -159,16 +159,6 @@ export default function Header({
 
           {/* Right Header Actions */}
           <div className="header-actions">
-            {/* Search Trigger Button */}
-            <button
-              onClick={onOpenSearch}
-              className="header-icon-btn"
-              aria-label={t.search}
-              title={t.search}
-            >
-              <Search size={18} />
-            </button>
-
             {/* Language Toggle Button: EN-BN without extra text */}
             <Link
               href={targetLangPath}
@@ -180,6 +170,16 @@ export default function Header({
               <span className="lang-sep">-</span>
               <span className={`lang-pill ${isBn ? 'active' : ''}`}>BN</span>
             </Link>
+
+            {/* Search Trigger Button */}
+            <button
+              onClick={onOpenSearch}
+              className="header-icon-btn"
+              aria-label={t.search}
+              title={t.search}
+            >
+              <Search size={18} />
+            </button>
 
             {/* Direct Book CTA (Tablet & Desktop >= 768px) */}
             <button
