@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { ArrowRight, ShieldCheck, Award, CheckCircle2 } from 'lucide-react';
 import { Language } from '@/lib/types';
+import homepageImages from '@/lib/homepage-images.json';
 
 interface WidePromoBannerTwoProps {
   lang: Language;
@@ -29,7 +30,7 @@ export default function WidePromoBannerTwo({ lang, onOpenBooking }: WidePromoBan
         >
           {/* Real Background Photo */}
           <Image
-            src="/images/expert_banner_modern.jpg"
+            src={homepageImages.promo_banner_2 || "/images/expert_banner_modern.jpg"}
             alt="Appliance Repair Specialists"
             fill
             sizes="100vw"

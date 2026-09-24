@@ -13,7 +13,8 @@ import {
   ArrowRight,
   TrendingUp,
   CheckCircle2,
-  Clock
+  Clock,
+  Image as ImageIcon
 } from 'lucide-react';
 
 export const revalidate = 0; // dynamic admin dashboard
@@ -23,6 +24,7 @@ export default async function AdminDashboardPage() {
 
   const cards = [
     { title: 'Total Bookings', value: stats.bookings, icon: <Calendar size={22} />, color: '#146C5B', link: '/admin/bookings', note: 'Customer service leads' },
+    { title: 'Homepage Images', value: '16 Slots', icon: <ImageIcon size={22} />, color: '#0284C7', link: '/admin/homepage-images', note: 'Hardcoded assets & Git sync' },
     { title: 'Categories', value: stats.categories, icon: <Layers size={22} />, color: '#2563EB', link: '/admin/categories', note: 'Primary repair hubs' },
     { title: 'Brands Serviced', value: stats.brands, icon: <Award size={22} />, color: '#7C3AED', link: '/admin/brands', note: 'Supported appliances' },
     { title: 'West Bengal Locations', value: stats.locations, icon: <MapPin size={22} />, color: '#EA580C', link: '/admin/locations', note: 'Serving districts' },

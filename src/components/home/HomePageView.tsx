@@ -71,7 +71,7 @@ export default function HomePageView({
 
   return (
     <>
-      <LocationBar locations={locations} lang={lang} />
+      <LocationBar locations={locations} lang={lang} phone={settings.phone} />
       <Header
         categories={categories}
         lang={lang}

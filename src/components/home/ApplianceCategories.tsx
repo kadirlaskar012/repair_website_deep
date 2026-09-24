@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight, ArrowRight, ShieldCheck } from 'lucide-react';
 import { Category, Language } from '@/lib/types';
+import homepageImages from '@/lib/homepage-images.json';
 
 interface ApplianceCategoriesProps {
   categories: Category[];
@@ -16,11 +17,11 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
 
   // Map category slugs to our curated real appliance product shots
   const categoryImages: Record<string, string> = {
-    'ac-repair': '/images/split_ac_unit.jpg',
-    'fridge-repair': '/images/samsung_fridge_unit.jpg',
-    'washing-machine-repair': '/images/front_load_washer.jpg',
-    'microwave-repair': '/images/microwave_oven_unit.jpg',
-    'led-tv-repair': '/images/smart_led_tv_unit.jpg'
+    'ac-repair': homepageImages.cat_ac || '/images/split_ac_unit.jpg',
+    'fridge-repair': homepageImages.cat_fridge || '/images/samsung_fridge_unit.jpg',
+    'washing-machine-repair': homepageImages.cat_washing || '/images/front_load_washer.jpg',
+    'microwave-repair': homepageImages.cat_microwave || '/images/microwave_oven_unit.jpg',
+    'led-tv-repair': homepageImages.cat_led_tv || '/images/smart_led_tv_unit.jpg'
   };
 
   return (

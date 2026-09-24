@@ -95,66 +95,70 @@ export default function Header({
           </div>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav
-          className="desktop-nav"
-          aria-label="Primary Navigation"
-        >
-          {navLinks.map((link) => {
-            const isActive = pathname === link.href;
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`desktop-nav-link ${isActive ? 'active' : ''}`}
-              >
-                {link.label}
-              </Link>
-            );
-          })}
-        </nav>
-
-        {/* Right Header Actions */}
-        <div className="header-actions">
-          {/* Search Trigger Button */}
-          <button
-            onClick={onOpenSearch}
-            className="header-icon-btn"
-            aria-label={t.search}
-            title={t.search}
+        {/* Right Group: Navbar -> Search -> EN-BN Language Toggle -> Book CTA */}
+        <div className="header-right-group">
+          {/* Desktop Navigation (Right Aligned) */}
+          <nav
+            className="desktop-nav"
+            aria-label="Primary Navigation"
           >
-            <Search size={18} />
-          </button>
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`desktop-nav-link ${isActive ? 'active' : ''}`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
 
-          {/* Bilingual Switcher */}
-          <Link
-            href={targetLangPath}
-            className="header-lang-btn"
-            title="Switch Language / ভাষা পরিবর্তন করুন"
-            aria-label="Switch Language / ভাষা পরিবর্তন করুন"
-          >
-            <Languages size={15} />
-            <span>{isBn ? 'EN' : 'বাংলা'}</span>
-          </Link>
+          {/* Right Header Actions */}
+          <div className="header-actions">
+            {/* Search Trigger Button */}
+            <button
+              onClick={onOpenSearch}
+              className="header-icon-btn"
+              aria-label={t.search}
+              title={t.search}
+            >
+              <Search size={18} />
+            </button>
 
-          {/* Direct Book CTA (Tablet & Desktop >= 768px) */}
-          <button
-            onClick={onOpenBooking}
-            className="btn btn-primary btn-sm desktop-book-btn"
-          >
-            <Calendar size={15} />
-            <span>{t.bookNow}</span>
-          </button>
+            {/* Language Toggle Button: EN-BN without extra text */}
+            <Link
+              href={targetLangPath}
+              className="header-lang-toggle"
+              title={isBn ? 'Switch to English' : 'বাংলায় পরিবর্তন করুন'}
+              aria-label="Switch Language EN-BN"
+            >
+              <span className={`lang-pill ${!isBn ? 'active' : ''}`}>EN</span>
+              <span className="lang-sep">-</span>
+              <span className={`lang-pill ${isBn ? 'active' : ''}`}>BN</span>
+            </Link>
 
-          {/* Mobile / Tablet Menu Trigger (< 1140px) */}
-          <button
-            onClick={() => setMobileMenuOpen(true)}
-            className="header-icon-btn mobile-menu-btn"
-            aria-label="Open Navigation Menu"
-            aria-expanded={mobileMenuOpen}
-          >
-            <Menu size={20} />
-          </button>
+            {/* Direct Book CTA (Tablet & Desktop >= 768px) */}
+            <button
+              onClick={onOpenBooking}
+              className="btn btn-primary btn-sm desktop-book-btn"
+            >
+              <Calendar size={15} />
+              <span>{t.bookNow}</span>
+            </button>
+
+            {/* Mobile / Tablet Menu Trigger (< 1140px) */}
+            <button
+              onClick={() => setMobileMenuOpen(true)}
+              className="header-icon-btn mobile-menu-btn"
+              aria-label="Open Navigation Menu"
+              aria-expanded={mobileMenuOpen}
+            >
+              <Menu size={20} />
+            </button>
+          </div>
         </div>
       </div>
 

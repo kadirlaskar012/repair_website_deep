@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Star, ShieldCheck, ChevronRight, ArrowRight } from 'lucide-react';
 import { Category, Problem, Language } from '@/lib/types';
+import homepageImages from '@/lib/homepage-images.json';
 
 interface MostBookedServicesProps {
   categories: Category[];
@@ -29,7 +30,7 @@ export default function MostBookedServices({
       title: isBn ? 'স্প্লিট এসি জেট সার্ভিস ও গ্যাস চেক' : 'Split AC Jet Service & Gas Check',
       categorySlug: 'ac-repair',
       categoryId: 'ac-repair',
-      image: '/images/ac_service.jpg',
+      image: homepageImages.service_ac || '/images/ac_service.jpg',
       badge: isBn ? 'সর্বাধিক বুকড' : 'Bestseller',
       badgeColor: '#146C5B',
       rating: '4.9',
@@ -43,7 +44,7 @@ export default function MostBookedServices({
       title: isBn ? 'ডাবল ডোর ফ্রিজ কুলিং মেরামত' : 'Double Door Fridge Cooling Repair',
       categorySlug: 'fridge-repair',
       categoryId: 'fridge-repair',
-      image: '/images/fridge_service.jpg',
+      image: homepageImages.service_fridge || '/images/fridge_service.jpg',
       badge: isBn ? 'দ্রুত সমাধান' : 'Fast 60-Min',
       badgeColor: '#E8A33D',
       rating: '4.8',
@@ -57,7 +58,7 @@ export default function MostBookedServices({
       title: isBn ? 'ফ্রন্ট লোড ওয়াশার ড্রাম ও মোটর' : 'Front Load Washer Drum & Motor',
       categorySlug: 'washing-machine-repair',
       categoryId: 'washing-machine-repair',
-      image: '/images/washing_service.jpg',
+      image: homepageImages.service_washing || '/images/washing_service.jpg',
       badge: isBn ? 'সার্টিফাইড পার্টস' : 'Genuine Spares',
       badgeColor: '#6366F1',
       rating: '4.9',
@@ -71,7 +72,7 @@ export default function MostBookedServices({
       title: isBn ? 'মাইক্রোওয়েভ হিটিং ও ম্যাগনেট্রন' : 'Microwave Magnetron & Heating',
       categorySlug: 'microwave-repair',
       categoryId: 'microwave-repair',
-      image: '/images/microwave_service.jpg',
+      image: homepageImages.service_microwave || '/images/microwave_service.jpg',
       badge: isBn ? 'বিশেষজ্ঞ সেবা' : 'Expert Service',
       badgeColor: '#EA580C',
       rating: '4.8',
@@ -85,7 +86,7 @@ export default function MostBookedServices({
       title: isBn ? 'স্মার্ট এলইডি টিভি স্ক্রিন ও মাদারবোর্ড' : 'Smart LED TV Display & Motherboard',
       categorySlug: 'led-tv-repair',
       categoryId: 'led-tv-repair',
-      image: '/images/led_tv_service.jpg',
+      image: homepageImages.service_led_tv || '/images/led_tv_service.jpg',
       badge: isBn ? 'ওয়ারেন্টি সহ' : 'Warranty Backed',
       badgeColor: '#8B5CF6',
       rating: '4.9',

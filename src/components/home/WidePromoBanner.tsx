@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { ArrowRight, Phone, ShieldCheck, Clock, CheckCircle } from 'lucide-react';
 import { Language } from '@/lib/types';
+import homepageImages from '@/lib/homepage-images.json';
 
 interface WidePromoBannerProps {
   lang: Language;
@@ -30,7 +31,7 @@ export default function WidePromoBanner({ lang, onOpenBooking, phone }: WideProm
         >
           {/* Real Background Photo */}
           <Image
-            src="/images/banner_comfort.jpg"
+            src={homepageImages.promo_banner_1 || "/images/banner_comfort.jpg"}
             alt="Appliance Repair in West Bengal"
             fill
             sizes="100vw"

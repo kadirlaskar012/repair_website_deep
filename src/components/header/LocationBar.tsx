@@ -8,9 +8,10 @@ import { getDictionary } from '@/lib/i18n';
 interface LocationBarProps {
   locations: LocationItem[];
   lang: Language;
+  phone?: string;
 }
 
-export default function LocationBar({ locations, lang }: LocationBarProps) {
+export default function LocationBar({ locations, lang, phone = '+91 6291674186' }: LocationBarProps) {
   const t = getDictionary(lang);
   const [selectedLoc, setSelectedLoc] = useState<LocationItem | null>(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -124,11 +125,11 @@ export default function LocationBar({ locations, lang }: LocationBarProps) {
             {lang === 'bn' ? 'ফ্ল্যাট ₹২৯৯ পরিদর্শন ও ডায়াগনোসিস' : 'Flat ₹299 Visit & Inspection'}
           </span>
           <a
-            href="tel:+919830012345"
+            href={`tel:${phone.replace(/[^\d+]/g, '')}`}
             className="location-phone-link"
           >
             <Phone size={12} style={{ opacity: 0.9 }} />
-            <span>+91 98300 12345</span>
+            <span>{phone}</span>
           </a>
         </div>
       </div>

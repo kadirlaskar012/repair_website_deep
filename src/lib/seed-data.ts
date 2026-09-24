@@ -3,8 +3,8 @@ import { SiteSettings, Category, Problem, Brand, LocationItem, TrustItem, Review
 export const initialSiteSettings: SiteSettings = {
   businessName: 'AC Repair Service',
   businessNameBn: 'এসি মেরামত পরিষেবা',
-  phone: '+91 98300 12345',
-  whatsapp: '+91 12345 67890', // Default dummy as specified in requirements
+  phone: '+91 6291674186',
+  whatsapp: '+91 6291674186',
   email: 'service@acrepairservice.com',
   address: 'Salt Lake Sector V, Kolkata, West Bengal - 700091',
   addressBn: 'সল্টলেক সেক্টর ৫, কলকাতা, পশ্চিমবঙ্গ - ৭০০০৯১',

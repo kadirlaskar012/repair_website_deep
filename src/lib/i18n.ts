@@ -72,7 +72,7 @@ export const i18n = {
     fullName: 'Your Full Name',
     fullNamePlaceholder: 'Enter your name',
     mobileNumber: 'Mobile Number',
-    mobilePlaceholder: '10-digit mobile number (e.g. 9830012345)',
+    mobilePlaceholder: '10-digit mobile number (e.g. 6291674186)',
     selectService: 'Select Service Category',
     selectBrandPlaceholder: 'Select appliance brand',
     problemDetails: 'Problem / Symptoms',

@@ -51,7 +51,8 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
     { href: '/admin/reviews', label: 'Customer Reviews', icon: <Star size={18} /> },
     { href: '/admin/blog', label: 'Blog & Articles', icon: <FileText size={18} /> },
     { href: '/admin/ai-settings', label: 'AI Configuration', icon: <Sparkles size={18} /> },
-    { href: '/admin/media', label: 'Media Assets', icon: <ImageIcon size={18} /> },
+    { href: '/admin/homepage-images', label: 'Homepage Images', icon: <ImageIcon size={18} /> },
+    { href: '/admin/media', label: 'Media Assets', icon: <Layers size={18} /> },
     { href: '/admin/settings', label: 'Site Settings & Content', icon: <Settings size={18} /> }
   ];
 

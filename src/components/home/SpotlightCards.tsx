@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ShieldCheck, Star } from 'lucide-react';
 import { Language } from '@/lib/types';
+import homepageImages from '@/lib/homepage-images.json';
 
 interface SpotlightCardsProps {
   lang: Language;
@@ -20,7 +21,7 @@ export default function SpotlightCards({ lang, onOpenBooking }: SpotlightCardsPr
       title: isBn ? 'এসি ডিপ ক্লিন ও গ্যাস রিফিল' : 'AC Deep Cleaning & Gas Refill',
       subtitle: isBn ? 'সার্টিফাইড বিশেষজ্ঞ টেকনিশিয়ান' : 'Certified AC Technicians',
       priceTag: isBn ? '₹২৯৯ পরিদর্শন' : '₹299 Visit Fee',
-      image: '/images/ac_service.jpg',
+      image: homepageImages.hero_ac || '/images/ac_service.jpg',
       slug: 'ac-repair'
     },
     {
@@ -28,7 +29,7 @@ export default function SpotlightCards({ lang, onOpenBooking }: SpotlightCardsPr
       title: isBn ? 'নির্ভরযোগ্য ফ্রিজ মেরামত' : 'Reliable Refrigerator Repair',
       subtitle: isBn ? 'সিঙ্গেল ও ডাবল ডোর স্পেশালিস্ট' : 'Single & Double Door Care',
       priceTag: isBn ? '₹২৯৯ পরিদর্শন' : '₹299 Visit Fee',
-      image: '/images/fridge_service.jpg',
+      image: homepageImages.hero_fridge || '/images/fridge_service.jpg',
       slug: 'fridge-repair'
     },
     {
@@ -36,7 +37,7 @@ export default function SpotlightCards({ lang, onOpenBooking }: SpotlightCardsPr
       title: isBn ? 'ওয়াশিং মেশিন পেশাদার সেবা' : 'Professional Washing Machine Care',
       subtitle: isBn ? 'ফ্রন্ট ও টপ লোড ড্রাম সমাধান' : 'Front & Top Load Specialists',
       priceTag: isBn ? '₹২৯৯ পরিদর্শন' : '₹299 Visit Fee',
-      image: '/images/washing_service.jpg',
+      image: homepageImages.hero_washing || '/images/washing_service.jpg',
       slug: 'washing-machine-repair'
     }
   ];
