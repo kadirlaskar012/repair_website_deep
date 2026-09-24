@@ -462,16 +462,26 @@ img, svg {
 }
 
 .header-logo-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 11px;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(15, 81, 67, 0.25);
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+  display: block;
 }
 
 .header-brand-logo:hover .header-logo-icon {
@@ -1332,6 +1342,17 @@ img, svg {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  background-color: #ffffff;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.admin-brand-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+  display: block;
 }
 
 .admin-brand-title {

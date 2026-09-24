@@ -89,9 +89,9 @@ export default function Footer({ settings, categories, locations, lang }: Footer
           {/* Brand & About */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-              <div style={{ width: '42px', height: '42px', borderRadius: '11px', overflow: 'hidden', flexShrink: 0, boxShadow: '0 4px 14px rgba(0,0,0,0.3)' }}>
+              <div style={{ width: '46px', height: '46px', borderRadius: '12px', overflow: 'hidden', flexShrink: 0, boxShadow: '0 4px 14px rgba(0,0,0,0.3)', backgroundColor: '#ffffff', padding: '3px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img
-                  src="/logo-icon.svg"
+                  src="/logo-icon.png"
                   alt="AC Repair Service"
                   width={42}
                   height={42}

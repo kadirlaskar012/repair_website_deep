@@ -106,7 +106,7 @@ export default function Header({
         >
           <div className="header-logo-icon">
             <img
-              src="/logo-icon.svg"
+              src="/logo-icon.png"
               alt="AC Repair Service"
               width={40}
               height={40}
@@ -221,7 +221,7 @@ export default function Header({
               <div className="mobile-drawer-brand">
                 <div className="header-logo-icon" style={{ width: '36px', height: '36px', borderRadius: '10px' }}>
                   <img
-                    src="/logo-icon.svg"
+                    src="/logo-icon.png"
                     alt="AC Repair Service"
                     width={36}
                     height={36}

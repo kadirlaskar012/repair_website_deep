@@ -114,7 +114,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           <Link href="/admin" className="admin-brand-link">
             <div className="admin-brand-icon" style={{ padding: 0, overflow: 'hidden' }}>
               <img
-                src="/logo-icon.svg"
+                src="/logo-icon.png"
                 alt="AC Repair Service"
                 width={36}
                 height={36}
@@ -271,7 +271,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
               <div className="admin-brand-link">
                 <div className="admin-brand-icon" style={{ padding: 0, overflow: 'hidden' }}>
                   <img
-                    src="/logo-icon.svg"
+                    src="/logo-icon.png"
                     alt="AC Repair Service"
                     width={36}
                     height={36}
