@@ -22,6 +22,8 @@
   --color-bg-warm: #FBFBF9;
   --color-bg-alt: #F4F6F4;
   --color-bg-card: #FFFFFF;
+  --color-header-bg: rgba(255, 255, 255, 0.96);
+  --color-brand-card-bg: #FFFFFF;
 
   --color-text-main: #14221F;
   --color-text-muted: #586965;
@@ -65,6 +67,56 @@
   --max-width: 1200px;
   --max-width-wide: 1320px;
   --max-width-narrow: 840px;
+}
+
+/* ============================================================
+   Dark Mode Theme Tokens ([data-theme="dark"])
+   Tailored slate/emerald aesthetic with ultra-high contrast & rich depth
+   ============================================================ */
+[data-theme="dark"] {
+  /* Color Palette - Luminous Emerald & Warm Amber */
+  --color-primary: #1DBB96;
+  --color-primary-hover: #26D5AC;
+  --color-primary-dark: #0F766E;
+  --color-primary-light: rgba(29, 187, 150, 0.16);
+  --color-primary-subtle: rgba(29, 187, 150, 0.08);
+
+  --color-accent: #F59E0B;
+  --color-accent-hover: #FBBF24;
+  --color-accent-dark: #D97706;
+  --color-accent-light: rgba(245, 158, 11, 0.16);
+
+  /* Dark Background Surfaces */
+  --color-bg-base: #0B1118;
+  --color-bg-warm: #0F1722;
+  --color-bg-alt: #16202E;
+  --color-bg-card: #131E2C;
+  --color-header-bg: rgba(15, 23, 34, 0.95);
+  --color-brand-card-bg: #1A283B;
+
+  /* Text Contrast */
+  --color-text-main: #F3F6F8;
+  --color-text-muted: #94A3B8;
+  --color-text-light: #64748B;
+  --color-text-inverse: #0B1118;
+
+  /* Borders */
+  --color-border: #233346;
+  --color-border-light: #1A2838;
+  --color-border-focus: #1DBB96;
+
+  /* Status Colors */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-info: #38BDF8;
+
+  /* Elevated Dark Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.55);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.65);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.75);
+  --shadow-modal: 0 24px 60px rgba(0, 0, 0, 0.9);
 }
 
 /* Base Reset & Box Sizing */
@@ -409,11 +461,12 @@ img, svg {
   position: sticky;
   top: 0;
   z-index: 500;
-  background-color: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(8px);
+  background-color: var(--color-header-bg, rgba(255, 255, 255, 0.98));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border-light);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: all var(--transition-fast);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 
 .header-container {
@@ -462,18 +515,16 @@ img, svg {
 }
 
 .header-logo-icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  overflow: hidden;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .header-logo-icon img {
@@ -482,11 +533,20 @@ img, svg {
   object-fit: contain;
   aspect-ratio: 1 / 1;
   display: block;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.18));
+  transition: filter 0.25s ease, transform 0.25s ease;
 }
 
-.header-brand-logo:hover .header-logo-icon {
-  transform: scale(1.05);
-  box-shadow: 0 5px 14px rgba(15, 81, 67, 0.35);
+.header-brand-logo:hover .header-logo-icon img {
+  filter: drop-shadow(0 6px 14px rgba(20, 108, 91, 0.45));
+}
+
+[data-theme="dark"] .header-logo-icon img {
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.55));
+}
+
+[data-theme="dark"] .header-brand-logo:hover .header-logo-icon img {
+  filter: drop-shadow(0 6px 16px rgba(29, 187, 150, 0.6));
 }
 
 .header-logo-title {
@@ -506,7 +566,7 @@ img, svg {
 .header-logo-sub {
   font-size: 0.7rem;
   font-weight: 700;
-  color: #4B635D;
+  color: var(--color-text-muted);
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -530,13 +590,37 @@ img, svg {
 
 @media (max-width: 480px) {
   .header-logo-icon {
-    width: 34px;
-    height: 34px;
-    border-radius: 8px;
+    width: 42px;
+    height: 42px;
   }
   .header-logo-title {
     font-size: 0.98rem;
   }
+}
+
+.theme-toggle-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle-btn:hover {
+  transform: rotate(15deg) scale(1.04);
+}
+
+.theme-toggle-icon {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.2s ease;
+}
+
+.theme-sun {
+  color: #F59E0B;
+}
+
+.theme-moon {
+  color: #6366F1;
+}
+
+[data-theme="dark"] .theme-moon {
+  color: #818CF8;
 }
 
 .header-actions {
@@ -1741,5 +1825,98 @@ img, svg {
   flex-direction: column;
   gap: 8px;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================================
+   Dark Mode Component Polish & Enhancements
+   ============================================================ */
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  color-scheme: dark;
+}
+
+[data-theme="dark"] .card {
+  background-color: var(--color-bg-card);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .card-hover:hover {
+  border-color: rgba(29, 187, 150, 0.45);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .modal-dialog {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .mobile-drawer-content {
+  background-color: var(--color-bg-card);
+  border-left: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .header-lang-toggle {
+  background: var(--color-bg-alt);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .header-lang-toggle:hover {
+  background: var(--color-bg-card);
+  border-color: var(--color-primary);
+}
+
+[data-theme="dark"] .header-icon-btn {
+  background: var(--color-bg-alt);
+  border-color: var(--color-border);
+  color: var(--color-text-main);
+}
+
+[data-theme="dark"] .header-icon-btn:hover {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .hero-search-bar {
+  background: var(--color-bg-card);
+  border-color: var(--color-border);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .quick-icon-circle {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .btn-outline {
+  background-color: var(--color-bg-card);
+  border-color: var(--color-border);
+  color: var(--color-text-main);
+}
+
+[data-theme="dark"] .btn-outline:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+[data-theme="dark"] .form-control {
+  background-color: var(--color-bg-alt);
+  border-color: var(--color-border);
+  color: var(--color-text-main);
+}
+
+[data-theme="dark"] .form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(29, 187, 150, 0.25);
+}
+
+/* Brand logos in dark mode maintain crisp contrast and authentic colors */
+[data-theme="dark"] .card-hover img[alt*="Official Brand Logo"] {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 4px 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 

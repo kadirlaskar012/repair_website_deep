@@ -43,7 +43,7 @@ export default function SpotlightCards({ lang, onOpenBooking }: SpotlightCardsPr
   ];
 
   return (
-    <section style={{ backgroundColor: '#FFFFFF', paddingBottom: '48px' }}>
+    <section style={{ backgroundColor: 'var(--color-bg-base)', paddingBottom: '48px' }}>
       <div className="container">
         <div
           style={{

@@ -13,7 +13,7 @@ export default function PricingSection({ lang, onOpenBooking }: PricingSectionPr
   const isBn = lang === 'bn';
 
   return (
-    <section className="section" style={{ backgroundColor: '#FFFFFF' }}>
+    <section className="section" style={{ backgroundColor: 'var(--color-bg-base)' }}>
       <div className="container">
         <div className="section-title-wrap">
           <div className="section-badge">

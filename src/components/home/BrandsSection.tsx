@@ -37,7 +37,7 @@ export default function BrandsSection({ brands, lang }: BrandsSectionProps) {
               <div
                 key={b.id}
                 style={{
-                  backgroundColor: '#FFFFFF',
+                  backgroundColor: 'var(--color-bg-card)',
                   border: '1px solid var(--color-border)',
                   borderRadius: '12px',
                   padding: '16px 18px',

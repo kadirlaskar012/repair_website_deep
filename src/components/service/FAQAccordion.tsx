@@ -19,7 +19,7 @@ export default function FAQAccordion({ faqs, lang }: FAQAccordionProps) {
   };
 
   return (
-    <div style={{ backgroundColor: '#FFFFFF', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-lg)', padding: 'clamp(20px, 4vw, 36px)', marginBottom: '40px' }}>
+    <div style={{ backgroundColor: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-lg)', padding: 'clamp(20px, 4vw, 36px)', marginBottom: '40px' }}>
       <div style={{ marginBottom: '24px' }}>
         <h3 style={{ fontSize: '1.35rem', color: 'var(--color-text-main)', marginBottom: '6px' }}>
           {t.faqsHeading}
@@ -39,7 +39,7 @@ export default function FAQAccordion({ faqs, lang }: FAQAccordionProps) {
                 border: '1px solid var(--color-border-light)',
                 borderRadius: 'var(--radius-md)',
                 overflow: 'hidden',
-                backgroundColor: isOpen ? 'var(--color-bg-warm)' : '#FFFFFF',
+                backgroundColor: isOpen ? 'var(--color-bg-warm)' : 'var(--color-bg-card)',
                 transition: 'background-color 0.15s'
               }}
             >

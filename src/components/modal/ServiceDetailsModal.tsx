@@ -99,7 +99,7 @@ export default function ServiceDetailsModal({
             style={{
               padding: '6px',
               borderRadius: '6px',
-              background: '#FFFFFF',
+              background: 'var(--color-bg-card)',
               border: '1px solid var(--color-border)',
               color: 'var(--color-text-muted)'
             }}
@@ -180,7 +180,7 @@ export default function ServiceDetailsModal({
           style={{
             padding: '16px 28px',
             borderTop: '1px solid var(--color-border-light)',
-            backgroundColor: '#FFFFFF',
+            backgroundColor: 'var(--color-bg-card)',
             display: 'flex',
             flexDirection: 'column',
             gap: '10px'

@@ -84,7 +84,7 @@ export default function BookingModal({
 
           <button
             onClick={onClose}
-            style={{ padding: '6px', borderRadius: '6px', background: '#FFFFFF', border: '1px solid var(--color-border)', color: 'var(--color-text-muted)' }}
+            style={{ padding: '6px', borderRadius: '6px', background: 'var(--color-bg-card)', border: '1px solid var(--color-border)', color: 'var(--color-text-muted)' }}
             aria-label={t.modalClose}
           >
             <X size={18} />

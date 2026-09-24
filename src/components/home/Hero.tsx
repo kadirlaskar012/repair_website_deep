@@ -92,7 +92,7 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
   return (
     <section
       style={{
-        backgroundColor: '#FFFFFF',
+        backgroundColor: 'var(--color-bg-base)',
         position: 'relative',
         overflow: 'hidden',
         paddingTop: '48px',

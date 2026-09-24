@@ -182,7 +182,7 @@ export default function MostBookedServices({
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
-                background: '#FFFFFF',
+                background: 'var(--color-bg-card)',
                 border: '1px solid var(--color-border-light)'
               }}
             >

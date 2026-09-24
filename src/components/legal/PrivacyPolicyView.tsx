@@ -45,7 +45,7 @@ export default function PrivacyPolicyView({
         <div className="container" style={{ maxWidth: '820px' }}>
           <div
             style={{
-              backgroundColor: '#FFFFFF',
+              backgroundColor: 'var(--color-bg-card)',
               borderRadius: 'var(--radius-xl)',
               border: '1px solid var(--color-border)',
               padding: 'clamp(24px, 5vw, 48px)',

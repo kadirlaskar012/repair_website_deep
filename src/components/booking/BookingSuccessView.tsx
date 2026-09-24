@@ -50,7 +50,7 @@ export default function BookingSuccessView({
       <div className="container" style={{ maxWidth: '680px' }}>
         <div
           style={{
-            backgroundColor: '#FFFFFF',
+            backgroundColor: 'var(--color-bg-card)',
             borderRadius: 'var(--radius-xl)',
             border: '1px solid var(--color-border)',
             boxShadow: 'var(--shadow-md)',
@@ -116,8 +116,8 @@ export default function BookingSuccessView({
                 gap: '6px',
                 padding: '8px 14px',
                 borderRadius: '6px',
-                backgroundColor: '#FFFFFF',
-                color: 'var(--color-primary-dark)',
+                backgroundColor: 'var(--color-bg-card)',
+                color: 'var(--color-primary)',
                 border: '1px solid rgba(20, 108, 91, 0.25)',
                 fontWeight: 600,
                 fontSize: '0.8125rem'

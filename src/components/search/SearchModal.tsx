@@ -112,7 +112,7 @@ export default function SearchModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search Input Bar */}
-        <div style={{ display: 'flex', alignItems: 'center', padding: '16px 20px', borderBottom: '1px solid var(--color-border)', gap: '12px', background: '#FFFFFF' }}>
+        <div style={{ display: 'flex', alignItems: 'center', padding: '16px 20px', borderBottom: '1px solid var(--color-border)', gap: '12px', background: 'var(--color-bg-card)' }}>
           <Search size={20} style={{ color: 'var(--color-primary)' }} />
           <input
             ref={inputRef}
@@ -241,7 +241,7 @@ export default function SearchModal({
                           onClick={() => handleProblemClick(prob)}
                           style={{
                             padding: '12px 14px',
-                            background: '#FFFFFF',
+                            background: 'var(--color-bg-card)',
                             border: '1px solid var(--color-border)',
                             borderRadius: '8px',
                             textAlign: 'left',

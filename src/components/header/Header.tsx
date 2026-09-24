@@ -13,7 +13,9 @@ import {
   Wrench,
   Calendar,
   Languages,
-  ChevronRight
+  ChevronRight,
+  Sun,
+  Moon
 } from 'lucide-react';
 import { Category, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
@@ -39,10 +41,22 @@ export default function Header({
   const t = getDictionary(lang);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
     setMounted(true);
+    const activeTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    setTheme(activeTheme);
   }, []);
+
+  const toggleTheme = () => {
+    const nextTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(nextTheme);
+    document.documentElement.setAttribute('data-theme', nextTheme);
+    try {
+      localStorage.setItem('theme', nextTheme);
+    } catch (e) {}
+  };
 
   // Prevent background scroll when mobile drawer is open
   useEffect(() => {
@@ -108,8 +122,8 @@ export default function Header({
             <img
               src="/logo-icon.png"
               alt="AC Repair Service"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
               style={{ width: '100%', height: '100%', objectFit: 'contain' }}
             />
           </div>
@@ -135,7 +149,7 @@ export default function Header({
           </div>
         </Link>
 
-        {/* Right Group: Navbar -> Search -> EN-BN Language Toggle -> Book CTA */}
+        {/* Right Group: Navbar -> Search -> EN-BN Language Toggle -> Theme Toggle -> Book CTA */}
         <div className="header-right-group">
           {/* Desktop Navigation (Right Aligned, Fluid Responsive) */}
           <nav
@@ -181,6 +195,20 @@ export default function Header({
               <Search size={18} />
             </button>
 
+            {/* Dark / Light Mode Toggle Button */}
+            <button
+              onClick={toggleTheme}
+              className="header-icon-btn theme-toggle-btn"
+              aria-label={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+              title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            >
+              {mounted && theme === 'dark' ? (
+                <Sun size={19} className="theme-toggle-icon theme-sun" />
+              ) : (
+                <Moon size={19} className="theme-toggle-icon theme-moon" />
+              )}
+            </button>
+
             {/* Direct Book CTA (Tablet & Desktop >= 768px) */}
             <button
               onClick={onOpenBooking}
@@ -219,12 +247,12 @@ export default function Header({
             {/* Drawer Top */}
             <div className="mobile-drawer-header">
               <div className="mobile-drawer-brand">
-                <div className="header-logo-icon" style={{ width: '36px', height: '36px', borderRadius: '10px' }}>
+                <div className="header-logo-icon" style={{ width: '44px', height: '44px' }}>
                   <img
                     src="/logo-icon.png"
                     alt="AC Repair Service"
-                    width={36}
-                    height={36}
+                    width={44}
+                    height={44}
                     style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                   />
                 </div>
@@ -237,13 +265,27 @@ export default function Header({
                   </div>
                 </div>
               </div>
-              <button
-                onClick={() => setMobileMenuOpen(false)}
-                className="mobile-drawer-close-btn"
-                aria-label="Close Navigation Menu"
-              >
-                <X size={20} />
-              </button>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <button
+                  onClick={toggleTheme}
+                  className="header-icon-btn theme-toggle-btn"
+                  aria-label={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                  title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                >
+                  {mounted && theme === 'dark' ? (
+                    <Sun size={18} className="theme-toggle-icon theme-sun" />
+                  ) : (
+                    <Moon size={18} className="theme-toggle-icon theme-moon" />
+                  )}
+                </button>
+                <button
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="mobile-drawer-close-btn"
+                  aria-label="Close Navigation Menu"
+                >
+                  <X size={20} />
+                </button>
+              </div>
             </div>
 
             {/* Language Switch Inside Mobile Drawer */}

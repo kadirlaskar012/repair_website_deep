@@ -75,7 +75,7 @@ export default function LocationBar({ locations, lang, phone = '+91 6291674186' 
                   top: '100%',
                   left: 0,
                   marginTop: '6px',
-                  background: '#FFFFFF',
+                  background: 'var(--color-bg-card)',
                   color: 'var(--color-text-main)',
                   borderRadius: '8px',
                   boxShadow: 'var(--shadow-lg)',

@@ -93,7 +93,7 @@ export default function CategoryPageView({
         {/* Category Hero with Real Photography */}
         <section
           style={{
-            backgroundColor: '#FFFFFF',
+            backgroundColor: 'var(--color-bg-base)',
             borderBottom: '1px solid var(--color-border-light)',
             paddingTop: '40px',
             paddingBottom: '48px',
@@ -287,7 +287,7 @@ export default function CategoryPageView({
             {/* 3. ₹299 Pricing / Diagnosis Explanation Box */}
             <div
               style={{
-                backgroundColor: '#FFFFFF',
+                backgroundColor: 'var(--color-bg-card)',
                 border: '2px solid var(--color-primary-light)',
                 borderRadius: 'var(--radius-lg)',
                 padding: 'clamp(20px, 4vw, 36px)',

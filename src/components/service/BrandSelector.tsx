@@ -27,7 +27,7 @@ export default function BrandSelector({
   );
 
   return (
-    <div style={{ backgroundColor: '#FFFFFF', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-lg)', padding: 'clamp(20px, 4vw, 32px)', marginBottom: '40px' }}>
+    <div style={{ backgroundColor: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-lg)', padding: 'clamp(20px, 4vw, 32px)', marginBottom: '40px' }}>
       <div style={{ marginBottom: '20px' }}>
         <h3 style={{ fontSize: '1.25rem', marginBottom: '6px', color: 'var(--color-text-main)' }}>
           {t.selectBrand}

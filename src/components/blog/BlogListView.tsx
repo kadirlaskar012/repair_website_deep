@@ -49,7 +49,7 @@ export default function BlogListView({
 
       <main style={{ backgroundColor: 'var(--color-bg-warm)', paddingBottom: '64px' }}>
         {/* Blog Header */}
-        <section style={{ backgroundColor: '#FFFFFF', borderBottom: '1px solid var(--color-border-light)', padding: '48px 0' }}>
+        <section style={{ backgroundColor: 'var(--color-bg-base)', borderBottom: '1px solid var(--color-border-light)', padding: '48px 0' }}>
           <div className="container" style={{ maxWidth: '820px', textAlign: 'center' }}>
             <div
               style={{
@@ -85,7 +85,7 @@ export default function BlogListView({
         <section className="section">
           <div className="container" style={{ maxWidth: '980px' }}>
             {posts.length === 0 ? (
-              <div style={{ textAlign: 'center', padding: '60px 20px', backgroundColor: '#FFFFFF', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)' }}>
+              <div style={{ textAlign: 'center', padding: '60px 20px', backgroundColor: 'var(--color-bg-card)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)' }}>
                 <BookOpen size={36} style={{ color: 'var(--color-text-light)', margin: '0 auto 12px auto' }} />
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>
                   {isBn ? 'বর্তমানে কোনো প্রকাশিত আর্টিকেল নেই' : 'No Published Articles Yet'}
@@ -105,7 +105,7 @@ export default function BlogListView({
                       flexDirection: 'column',
                       justifyContent: 'space-between',
                       padding: '28px',
-                      backgroundColor: '#FFFFFF'
+                      backgroundColor: 'var(--color-bg-card)'
                     }}
                   >
                     <div>

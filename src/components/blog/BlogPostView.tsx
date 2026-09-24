@@ -115,7 +115,7 @@ export default function BlogPostView({
 
       <main style={{ backgroundColor: 'var(--color-bg-warm)', paddingBottom: '64px' }}>
         {/* Breadcrumb Bar */}
-        <div style={{ backgroundColor: '#FFFFFF', borderBottom: '1px solid var(--color-border-light)', padding: '14px 0' }}>
+        <div style={{ backgroundColor: 'var(--color-bg-base)', borderBottom: '1px solid var(--color-border-light)', padding: '14px 0' }}>
           <div className="container" style={{ maxWidth: '840px' }}>
             <nav style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.8125rem', color: 'var(--color-text-muted)' }} aria-label="Breadcrumb">
               <Link href={isBn ? '/bn' : '/'} style={{ color: 'inherit' }}>
@@ -137,7 +137,7 @@ export default function BlogPostView({
         <div className="container" style={{ maxWidth: '840px', marginTop: '40px' }}>
           <article
             style={{
-              backgroundColor: '#FFFFFF',
+              backgroundColor: 'var(--color-bg-card)',
               borderRadius: 'var(--radius-xl)',
               border: '1px solid var(--color-border)',
               padding: 'clamp(24px, 5vw, 48px)',

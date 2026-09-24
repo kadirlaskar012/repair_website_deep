@@ -15,7 +15,7 @@ export default function WidePromoBannerTwo({ lang, onOpenBooking }: WidePromoBan
   const isBn = lang === 'bn';
 
   return (
-    <section style={{ padding: '36px 0', backgroundColor: '#FFFFFF' }}>
+    <section style={{ padding: '36px 0', backgroundColor: 'var(--color-bg-base)' }}>
       <div className="container">
         <div
           style={{

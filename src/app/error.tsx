@@ -21,7 +21,7 @@ export default function ErrorPage({
         style={{
           maxWidth: '520px',
           width: '100%',
-          backgroundColor: '#FFFFFF',
+          backgroundColor: 'var(--color-bg-card)',
           borderRadius: 'var(--radius-xl)',
           padding: '48px 32px',
           textAlign: 'center',

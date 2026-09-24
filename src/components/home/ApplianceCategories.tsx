@@ -25,7 +25,7 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
   };
 
   return (
-    <section style={{ backgroundColor: '#FFFFFF', padding: '48px 0' }} id="appliance-repair">
+    <section style={{ backgroundColor: 'var(--color-bg-base)', padding: '48px 0' }} id="appliance-repair">
       <div className="container">
         {/* Header with View All */}
         <div
@@ -81,13 +81,13 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
                   padding: 0,
                   display: 'flex',
                   flexDirection: 'column',
-                  background: '#FFFFFF',
+                  background: 'var(--color-bg-card)',
                   border: '1px solid var(--color-border-light)',
                   transition: 'transform 0.2s, box-shadow 0.2s'
                 }}
               >
                 {/* Real Appliance Unit Photo */}
-                <div style={{ position: 'relative', width: '100%', height: '160px', overflow: 'hidden', backgroundColor: '#F1F5F9' }}>
+                <div style={{ position: 'relative', width: '100%', height: '160px', overflow: 'hidden', backgroundColor: 'var(--color-bg-alt)' }}>
                   <Image
                     src={imgPath}
                     alt={isBn ? c.nameBn : c.name}
