@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Search, MapPin, ArrowRight, Wrench, Snowflake, Refrigerator, Disc3, Radio, Tv, Flame, Sparkles, ChevronDown } from 'lucide-react';
 import { Category, LocationItem, Language } from '@/lib/types';
@@ -18,7 +18,22 @@ interface HeroProps {
 export default function Hero({ categories, locations, lang, onOpenSearch, onOpenBooking, phone }: HeroProps) {
   const t = getDictionary(lang);
   const isBn = lang === 'bn';
-  const [selectedCity, setSelectedCity] = useState<string>('Kolkata');
+  const kolkata = locations.find((l) => l.name.toLowerCase() === 'kolkata' || l.id === 'loc-kol') || locations[0];
+  const [selectedCity, setSelectedCity] = useState<string>(kolkata ? kolkata.name : 'Kolkata');
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const savedName = localStorage.getItem('preferred_location_name');
+    const hash = window.location.hash.replace('#', '').toLowerCase();
+    const matchHash = locations.find((l) => l.hashSlug === hash);
+    if (matchHash) {
+      setSelectedCity(matchHash.name);
+    } else if (savedName && locations.some((l) => l.name === savedName)) {
+      setSelectedCity(savedName);
+    } else if (kolkata) {
+      setSelectedCity(kolkata.name);
+    }
+  }, [locations, kolkata]);
 
   // Quick categories matching the circular icon row in reference screenshot
   const quickItems = [
@@ -84,8 +99,15 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
     const city = e.target.value;
     setSelectedCity(city);
     const loc = locations.find((l) => l.name === city);
-    if (loc) {
+    if (loc && typeof window !== 'undefined') {
+      localStorage.setItem('preferred_location_id', loc.id);
+      localStorage.setItem('preferred_location_slug', loc.hashSlug);
+      localStorage.setItem('preferred_location_name', loc.name);
       window.location.hash = loc.hashSlug;
+      // Reload website so user sees that the website updates location-wise
+      setTimeout(() => {
+        window.location.reload();
+      }, 150);
     }
   };
 
@@ -154,8 +176,8 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
             <Sparkles size={14} style={{ color: 'var(--color-accent)' }} />
             <span>
               {isBn
-                ? 'পশ্চিমবঙ্গের #১ বিশ্বস্ত ডোরস্টেপ সার্ভিস • ৯০ মিনিটে আগমন'
-                : "West Bengal's #1 Doorstep Appliance Repair • 90-Min Response"}
+                ? `${selectedCity === 'Howrah' ? 'হাওড়া' : selectedCity === 'Hooghly' ? 'হুগলি' : selectedCity === 'Barasat' ? 'বারাসাত' : 'কলকাতা'}-য় #১ বিশ্বস্ত ডোরস্টেপ সার্ভিস • ৯০ মিনিটে আগমন`
+                : `#1 Doorstep Appliance Repair in ${selectedCity} • 90-Min Response`}
             </span>
           </div>
 
@@ -186,8 +208,8 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
             }}
           >
             {isBn
-              ? 'কলকাতা ও পশ্চিমবঙ্গ জুড়ে স্প্লিট এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভির ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ পরিদর্শনে সার্টিফাইড বিশেষজ্ঞ ও ৯০ দিনের ওয়ারেন্টি।'
-              : 'Expert doorstep technicians across Kolkata & West Bengal for AC, Refrigerator, Washing Machine, Microwave & TV. 90-day warranty with flat ₹299 inspection fee.'}
+              ? 'কলকাতা, হাওড়া, হুগলি ও বারাসাত জুড়ে স্প্লিট এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভির ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ পরিদর্শনে সার্টিফাইড বিশেষজ্ঞ ও ৯০ দিনের ওয়ারেন্টি।'
+              : 'Expert doorstep technicians across Kolkata, Howrah, Hooghly & Barasat for AC, Refrigerator, Washing Machine, Microwave & TV. 90-day warranty with flat ₹299 inspection fee.'}
           </p>
 
           {/* HomeTriangle-Style Unified Search & Location Bar */}

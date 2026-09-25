@@ -71,7 +71,7 @@ export default function AdminLocationsPage() {
               West Bengal Service Areas
             </h1>
             <p style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>
-              Manage location selectors and hash links (e.g. /#kolkata, /#howrah, /#durgapur)
+              Manage location selectors and hash links (e.g. /#kolkata, /#howrah, /#hooghly, /#barasat)
             </p>
           </div>
 

@@ -36,7 +36,7 @@ export async function generateBlogWithAI(input: AIGenerationPromptInput): Promis
 You are an expert technical appliance repair writer and technical SEO specialist for "Appliance Seva", a professional doorstep appliance repair business operating across West Bengal, India.
 Generate a comprehensive, highly informative, realistic, and SEO-optimized appliance repair blog article based on the user's prompt.
 Strict rules:
-1. Focus on West Bengal context (climate: humid summers, monsoon moisture, common power fluctuations in Kolkata, Howrah, Durgapur, Siliguri, etc.).
+1. Focus on West Bengal context (climate: humid summers, monsoon moisture, common power fluctuations in Kolkata, Howrah, Hooghly, Barasat, etc.).
 2. Emphasize realistic troubleshooting tips and mention the standard ₹299 inspection & diagnosis visit fee where appropriate.
 3. DO NOT make false technical claims.
 4. Output MUST BE strictly valid JSON matching this schema:

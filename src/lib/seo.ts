@@ -134,11 +134,7 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
       { '@type': 'AdministrativeArea', name: 'West Bengal' },
       { '@type': 'City', name: 'Kolkata' },
       { '@type': 'City', name: 'Howrah' },
-      { '@type': 'City', name: 'Durgapur' },
-      { '@type': 'City', name: 'Siliguri' },
-      { '@type': 'City', name: 'Asansol' },
-      { '@type': 'City', name: 'Bardhaman' },
-      { '@type': 'City', name: 'Kalyani' },
+      { '@type': 'City', name: 'Hooghly' },
       { '@type': 'City', name: 'Barasat' }
     ],
     hasOfferCatalog: {

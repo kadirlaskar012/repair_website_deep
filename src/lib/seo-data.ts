@@ -50,7 +50,7 @@ export const kolkataTopHubs = [
   { name: 'Barasat & Madhyamgram', nameBn: 'বারাসাত ও মধ্যমগ্রাম', pin: '700124 / 700129' },
   { name: 'Ballygunge & Park Street', nameBn: 'বালিগঞ্জ ও পার্ক স্ট্রিট', pin: '700019 / 700016' },
   { name: 'Kestopur & Baguiati', nameBn: 'কেষ্টপুর ও বাগুইআটি', pin: '700101 / 700059' },
-  { name: 'Durgapur City Hub', nameBn: 'দুর্গাপুর সিটি হাব', pin: '713216' },
-  { name: 'Siliguri Town Hub', nameBn: 'শিলিগুড়ি টাউন হাব', pin: '734001' },
-  { name: 'Asansol Industrial Hub', nameBn: 'আসানসোল ইন্ডাস্ট্রিয়াল হাব', pin: '713301' }
+  { name: 'Hooghly & Serampore', nameBn: 'হুগলি ও শ্রীরামপুর', pin: '712201' },
+  { name: 'Chinsurah & Chandannagar', nameBn: 'চুঁচুড়া ও চন্দননগর', pin: '712101' },
+  { name: 'Uttarpara & Dankuni', nameBn: 'উত্তরপাড়া ও ডানকুনি', pin: '712232' }
 ];

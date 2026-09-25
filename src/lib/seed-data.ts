@@ -8,16 +8,16 @@ export const initialSiteSettings: SiteSettings = {
   email: 'service@applianceseva.com',
   address: 'Salt Lake Sector V, Kolkata, West Bengal - 700091',
   addressBn: 'সল্টলেক সেক্টর ৫, কলকাতা, পশ্চিমবঙ্গ - ৭০০০৯১',
-  serviceArea: 'West Bengal, India (Kolkata, Howrah, Durgapur, Siliguri, Asansol & surrounding regions)',
-  serviceAreaBn: 'পশ্চিমবঙ্গ, ভারত (কলকাতা, হাওড়া, দুর্গাপুর, শিলিগুড়ি, আসানসোল ও পার্শ্ববর্তী অঞ্চল)',
+  serviceArea: 'Kolkata, Howrah, Hooghly & Barasat (West Bengal)',
+  serviceAreaBn: 'কলকাতা, হাওড়া, হুগলি এবং বারাসাত (পশ্চিমবঙ্গ)',
   workingHours: '8:00 AM - 9:00 PM (All 7 Days)',
   workingHoursBn: 'সকাল ৮:০০ - রাত ৯:০০ (সপ্তাহের ৭ দিনই)',
   visitFee: 299,
   currency: '₹',
   pricingDisclaimer: '₹299 is ONLY the visit & diagnosis fee. The actual repair cost is confirmed after thorough inspection by the certified technician and strictly upon your approval before any repair work begins.',
   pricingDisclaimerBn: '₹২৯৯ শুধুমাত্র ভিজিট এবং রোগ নির্ণয় ফি। কোনো মেরামতের কাজ শুরু করার আগে প্রত্যয়িত টেকনিশিয়ানের পুঙ্খানুপুঙ্খ পরিদর্শনের পরে এবং সম্পূর্ণ আপনার অনুমোদনের পরেই প্রকৃত মেরামতের খরচ চূড়ান্ত করা হয়।',
-  emergencyNotice: 'Same-day technician visit available across Kolkata and major West Bengal hubs.',
-  emergencyNoticeBn: 'কলকাতা এবং পশ্চিমবঙ্গের প্রধান প্রধান শহরে একই দিনে টেকনিশিয়ান ভিজিটের সুবিধা উপলব্ধ।'
+  emergencyNotice: 'Same-day doorstep technician visit available across Kolkata, Howrah, Hooghly, and Barasat.',
+  emergencyNoticeBn: 'কলকাতা, হাওড়া, হুগলি এবং বারাসাতে একই দিনে ডোরস্টেপ টেকনিশিয়ান ভিজিটের সুবিধা উপলব্ধ।'
 };
 
 export const initialCategories: Category[] = [
@@ -458,16 +458,10 @@ export const initialBrands: Brand[] = [
 ];
 
 export const initialLocations: LocationItem[] = [
-  { id: 'loc-wb', name: 'West Bengal (All Hubs)', nameBn: 'পশ্চিমবঙ্গ (সকল অঞ্চল)', hashSlug: 'west-bengal', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 1, isActive: true },
-  { id: 'loc-kol', name: 'Kolkata', nameBn: 'কলকাতা', hashSlug: 'kolkata', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 2, isActive: true },
-  { id: 'loc-hwh', name: 'Howrah', nameBn: 'হাওড়া', hashSlug: 'howrah', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 3, isActive: true },
-  { id: 'loc-dgp', name: 'Durgapur', nameBn: 'দুর্গাপুর', hashSlug: 'durgapur', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 4, isActive: true },
-  { id: 'loc-slg', name: 'Siliguri', nameBn: 'শিলিগুড়ি', hashSlug: 'siliguri', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 5, isActive: true },
-  { id: 'loc-asl', name: 'Asansol', nameBn: 'আসানসোল', hashSlug: 'asansol', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 6, isActive: true },
-  { id: 'loc-bdn', name: 'Bardhaman', nameBn: 'বর্ধমান', hashSlug: 'bardhaman', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 7, isActive: true },
-  { id: 'loc-kly', name: 'Kalyani', nameBn: 'কল্যাণী', hashSlug: 'kalyani', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 8, isActive: true },
-  { id: 'loc-bst', name: 'Barasat', nameBn: 'বারাসাত', hashSlug: 'barasat', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 9, isActive: true },
-  { id: 'loc-kgp', name: 'Kharagpur', nameBn: 'খড়গপুর', hashSlug: 'kharagpur', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 10, isActive: true }
+  { id: 'loc-kol', name: 'Kolkata', nameBn: 'কলকাতা', hashSlug: 'kolkata', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 1, isActive: true },
+  { id: 'loc-hwh', name: 'Howrah', nameBn: 'হাওড়া', hashSlug: 'howrah', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 2, isActive: true },
+  { id: 'loc-hgy', name: 'Hooghly', nameBn: 'হুগলি', hashSlug: 'hooghly', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 3, isActive: true },
+  { id: 'loc-bst', name: 'Barasat', nameBn: 'বারাসাত', hashSlug: 'barasat', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 4, isActive: true }
 ];
 
 export const initialTrustItems: TrustItem[] = [
@@ -532,7 +526,7 @@ export const initialReviews: Review[] = [
   {
     id: 'rev-3',
     customerName: 'Priyanka Banerjee',
-    location: 'City Centre, Durgapur',
+    location: 'Champadali More, Barasat',
     serviceCategory: 'Washing Machine Repair',
     rating: 5,
     comment: 'LG front load washer was giving an OE error code and refusing to drain. Booking through the website was smooth, technician cleared the coin trap cleanly without mess.',
@@ -546,7 +540,7 @@ export const initialReviews: Review[] = [
   {
     id: 'rev-4',
     customerName: 'Debabrata Sen',
-    location: 'Pradhan Nagar, Siliguri',
+    location: 'Serampore, Hooghly',
     serviceCategory: 'LED TV Repair',
     rating: 5,
     comment: 'Sony Bravia had sound but black screen. They diagnosed the backlight LED issue honestly and replaced the full strip with a genuine part. Professional behavior.',

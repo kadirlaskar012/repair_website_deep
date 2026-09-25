@@ -13,24 +13,48 @@ interface LocationBarProps {
 
 export default function LocationBar({ locations, lang, phone = '+91 6291674186' }: LocationBarProps) {
   const t = getDictionary(lang);
-  const [selectedLoc, setSelectedLoc] = useState<LocationItem | null>(null);
+  // Default to Kolkata immediately
+  const kolkata = locations.find((l) => l.id === 'loc-kol' || l.name.toLowerCase() === 'kolkata') || locations[0] || null;
+  const [selectedLoc, setSelectedLoc] = useState<LocationItem | null>(kolkata);
   const [isOpen, setIsOpen] = useState(false);
+  const [isUpdating, setIsUpdating] = useState(false);
 
   useEffect(() => {
-    // Read from hash or default to first location (West Bengal / Kolkata)
+    if (typeof window === 'undefined') return;
+    const savedSlug = localStorage.getItem('preferred_location_slug');
+    const savedId = localStorage.getItem('preferred_location_id');
     const hash = window.location.hash.replace('#', '').toLowerCase();
-    const match = locations.find((l) => l.hashSlug === hash);
-    if (match) {
-      setSelectedLoc(match);
-    } else if (locations.length > 0) {
-      setSelectedLoc(locations[0]);
+
+    // Check hash first, then saved preference, fallback to Kolkata
+    const target = hash || savedSlug;
+    let match = target ? locations.find((l) => l.hashSlug === target || l.name.toLowerCase() === target) : null;
+    if (!match && savedId) {
+      match = locations.find((l) => l.id === savedId) || null;
+    }
+
+    const active = match || kolkata;
+    if (active) {
+      setSelectedLoc(active);
+      localStorage.setItem('preferred_location_id', active.id);
+      localStorage.setItem('preferred_location_slug', active.hashSlug);
+      localStorage.setItem('preferred_location_name', active.name);
     }
   }, [locations]);
 
   const handleSelect = (loc: LocationItem) => {
     setSelectedLoc(loc);
-    window.location.hash = loc.hashSlug;
     setIsOpen(false);
+    setIsUpdating(true);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('preferred_location_id', loc.id);
+      localStorage.setItem('preferred_location_slug', loc.hashSlug);
+      localStorage.setItem('preferred_location_name', loc.name);
+      window.location.hash = loc.hashSlug;
+      // Reload page so user sees site updating location-wise
+      setTimeout(() => {
+        window.location.reload();
+      }, 150);
+    }
   };
 
   return (
@@ -59,7 +83,7 @@ export default function LocationBar({ locations, lang, phone = '+91 6291674186' 
             aria-expanded={isOpen}
             aria-label={t.selectLocation}
           >
-            <span>{selectedLoc ? (lang === 'bn' ? selectedLoc.nameBn : selectedLoc.name) : 'West Bengal'}</span>
+            <span>{selectedLoc ? (lang === 'bn' ? selectedLoc.nameBn : selectedLoc.name) : (lang === 'bn' ? 'কলকাতা' : 'Kolkata')}</span>
             <ChevronDown size={13} style={{ transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} />
           </button>
 

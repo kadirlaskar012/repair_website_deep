@@ -204,7 +204,23 @@ export default function Footer({ settings, categories, locations, lang }: Footer
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', fontSize: '0.8125rem' }}>
             {locations.map((loc, idx) => (
               <span key={loc.id} style={{ color: '#88A39C' }}>
-                <a href={`#${loc.hashSlug}`} style={{ color: '#B5C7C3' }}>
+                <a
+                  href={`#${loc.hashSlug}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (typeof window !== 'undefined') {
+                      localStorage.setItem('preferred_location_id', loc.id);
+                      localStorage.setItem('preferred_location_slug', loc.hashSlug);
+                      localStorage.setItem('preferred_location_name', loc.name);
+                      window.location.hash = loc.hashSlug;
+                      setTimeout(() => {
+                        window.location.reload();
+                      }, 150);
+                    }
+                  }}
+                  style={{ color: '#B5C7C3', textDecoration: 'none' }}
+                  className="footer-link"
+                >
                   {isBn ? loc.nameBn : loc.name}
                 </a>
                 {idx < locations.length - 1 && ' • '}

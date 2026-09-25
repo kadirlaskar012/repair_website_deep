@@ -644,11 +644,11 @@ export default function CategoryPageView({
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
                 <MapPin size={18} style={{ color: 'var(--color-primary)' }} />
                 <h4 style={{ fontSize: '1rem', fontWeight: 800, margin: 0, color: 'var(--color-text-main)' }}>
-                  {isBn ? `${category.nameBn} কভারেজ এরিয়া (কলকাতা ও পশ্চিমবঙ্গ)` : `${category.name} Doorstep Coverage Areas`}
+                  {isBn ? `${category.nameBn} কভারেজ এরিয়া (কলকাতা, হাওড়া, হুগলি ও বারাসাত)` : `${category.name} Coverage Areas (Kolkata, Howrah, Hooghly & Barasat)`}
                 </h4>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                {locations.slice(0, 10).map((loc) => (
+                {locations.map((loc) => (
                   <span
                     key={loc.id}
                     style={{
