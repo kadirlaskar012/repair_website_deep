@@ -1416,5 +1416,591 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
         aBn: 'সরাসরি কল করুন +91 6291674186 অথবা হোয়াটসঅ্যাপে বুক করুন।'
       }
     ]
+  },
+
+  'toshiba': {
+    slug: 'toshiba',
+    name: 'Toshiba',
+    headlineEn: 'Toshiba AC, Washing Machine & Refrigerator Repair Service in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় তোশিবা এসি, ওয়াশিং মেশিন ও ফ্রিজ ডোরস্টেপ সার্ভিস',
+    subheadlineEn: 'Japanese engineering precision repair for Toshiba Inverter AC, Top & Front Load Washers, and Fridges. 90-min visit with flat ₹299 inspection fee.',
+    subheadlineBn: 'তোশিবা ইনভার্টার এসি, ওয়াশিং মেশিন ও ফ্রিজের প্রিমিয়াম ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত ও নির্ভরযোগ্য সার্ভিস।',
+    coverageDescEn: 'Toshiba home appliances deliver Japanese reliability. We diagnose Toshiba DC hybrid inverter AC error codes, washing machine drain/lid switch issues, and multi-door refrigerator inverter cooling system failures.',
+    coverageDescBn: 'তোশিবা ইনভার্টার এসির ফল্ট কোড, ওয়াশিং মেশিনের ড্রেন ও লিড লক এরর এবং ফ্রিজের ইনভার্টার কুলিং সমস্যা নিপুণভাবে সমাধানে আমাদের টেকনিশিয়ানরা বিশেষজ্ঞ।',
+    errorCodes: [
+      {
+        code: 'Error 00 / 01 (Toshiba AC)',
+        issueEn: 'Indoor and outdoor communication failure or serial bus sync issue',
+        issueBn: 'ইনডোর ও আউটডোরের মধ্যে সিরিয়াল কমিউনিকেশন বিচ্ছিন্ন হওয়া',
+        solutionEn: 'Check terminal wiring voltage, replace communication optocoupler on outdoor inverter board.',
+        solutionBn: 'টার্মিনাল ওয়্যারিং ভোল্টেজ পরীক্ষা এবং আউটডোর ইনভার্টার বোর্ডের অপটোকপলার মেরামত।'
+      },
+      {
+        code: 'E23 / E2 Error (Toshiba Washer)',
+        issueEn: 'Safety lid lock switch open or drain valve motor failure',
+        issueBn: 'ওয়াশিং মেশিনের ঢাকনা লক না হওয়া বা ড্রেন মোটর ত্রুটি',
+        solutionEn: 'Inspect safety lid microswitch, clear lint from coin filter, and replace drain tractor motor.',
+        solutionBn: 'লিড মাইক্রোসুইচ টেস্ট, ড্রেন ফিল্টারের ময়লা পরিষ্কার এবং ড্রেন মোটর পরিবর্তন।'
+      }
+    ],
+    searchedKeywords: [
+      'toshiba service centre',
+      'toshiba service centre near me',
+      'toshiba service centre kolkata',
+      'toshiba customer care number',
+      'toshiba customer care number 24x7',
+      'toshiba ac repair near me',
+      'toshiba ac repair kolkata',
+      'toshiba ac error code',
+      'toshiba inverter ac not cooling',
+      'toshiba washing machine repair near me',
+      'toshiba washing machine e23 error',
+      'toshiba fridge repair kolkata'
+    ],
+    faqs: [
+      {
+        qEn: 'Who repairs Toshiba home appliances in Kolkata?',
+        qBn: 'কলকাতায় তোশিবা অ্যাপ্লায়েন্স মেরামত কারা করে?',
+        aEn: 'Our certified engineers service Toshiba ACs, washing machines, and refrigerators at your doorstep across Kolkata and Howrah. Call +91 6291674186.',
+        aBn: 'আমাদের অভিজ্ঞ টেকনিশিয়ানরা সমগ্র কলকাতা ও হাওড়ায় তোশিবা অ্যাপ্লায়েন্সের ডোরস্টেপ সার্ভিস দেন। কল: +91 6291674186।'
+      },
+      {
+        qEn: 'How to contact Toshiba repair support in Kolkata?',
+        qBn: 'তোশিবা মেরামতের জন্য যোগাযোগ নম্বর কোনটি?',
+        aEn: 'Call +91 6291674186 or WhatsApp us for instant doorstep booking at flat ₹299 inspection charge.',
+        aBn: 'তাৎক্ষণিক বুকিংয়ের জন্য ডায়াল করুন +91 6291674186 অথবা হোয়াটসঅ্যাপে মেসেজ করুন।'
+      }
+    ]
+  },
+
+  'tcl': {
+    slug: 'tcl',
+    name: 'TCL',
+    headlineEn: 'TCL Smart LED TV & Inverter AC Repair Service in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় টিসিএল স্মার্ট এলইডি টিভি ও এসি ডোরস্টেপ সার্ভিস',
+    subheadlineEn: 'Specialist doorstep repair for TCL 4K UHD, QLED Android/Google Smart TVs & Inverter ACs. Same-day visit with flat ₹299 inspection fee.',
+    subheadlineBn: 'টিসিএল ৪কে ইউএইচডি, কিউলেড গুগল টিভি এবং ইনভার্টার এসির বিশেষজ্ঞ ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সমাধান।',
+    coverageDescEn: 'TCL produces advanced smart TVs and air conditioners. We resolve TCL TV sound-with-black-screen backlight issues, bootloop / logo stuck errors, horizontal display lines, and TCL inverter AC E4 cooling faults.',
+    coverageDescBn: 'টিসিএল স্মার্ট টিভির ডিসপ্লে সমস্যা (শব্দ আছে কিন্তু ছবি নেই), টিসিএল লোগোতে আটকে থাকা, পর্দায় দাগ এবং ইনভার্টার এসির কুলিং সমস্যার দ্রুত সমাধান দিই।',
+    errorCodes: [
+      {
+        code: 'Screen Black But Sound Plays (TCL TV)',
+        issueEn: 'Audio is loud and clear but the LED backlight array has failed',
+        issueBn: 'টিভিতে চ্যানেল বা ইউটিউবের শব্দ পরিষ্কার আসছে কিন্তু ডিসপ্লে সম্পূর্ণ অন্ধকার',
+        solutionEn: 'Flashlight test panel, test power board LED booster circuit, and install genuine aluminum-base LED strips.',
+        solutionBn: 'প্যানেল টেস্ট করে পাওয়ার সাপ্লাই চেক এবং নতুন অরিজিনাল এলইডি ব্যাকলাইট স্ট্রিপ প্রতিস্থাপন।'
+      },
+      {
+        code: 'TV Stuck on TCL Boot Logo',
+        issueEn: 'TV powers on to TCL logo and keeps restarting in a continuous loop',
+        issueBn: 'টিভি অন হয়ে টিসিএল লোগোতে আটকে রিবুট হতে থাকা',
+        solutionEn: 'Flash updated Android firmware via ISP programmer or replace corrupted EMMC memory IC.',
+        solutionBn: 'আইএসপি প্রোগ্রামার দিয়ে ফার্মওয়্যার রি-ফ্ল্যাশ করা অথবা ইএমএমসি মেমরি আইসি মেরামত।'
+      },
+      {
+        code: 'E4 Error Code (TCL AC)',
+        issueEn: 'Outdoor unit condenser coil sensor malfunction or fan speed abnormal',
+        issueBn: 'আউটডোর কনডেন্সার সেন্সর বা ফ্যানের গতি অস্বাভাবিক হওয়া',
+        solutionEn: 'Test sensor resistance with multimeter, inspect outdoor fan capacitor, and wash condenser fins.',
+        solutionBn: 'মাল্টিমিটার দিয়ে সেন্সর টেস্ট, ফ্যান ক্যাপাসিটর পরীক্ষা এবং কয়েল পরিষ্কার।'
+      }
+    ],
+    searchedKeywords: [
+      'tcl service centre',
+      'tcl service centre near me',
+      'tcl service centre kolkata',
+      'tcl customer care number',
+      'tcl customer care number 24x7',
+      'tcl tv repair near me',
+      'tcl tv repair kolkata',
+      'tcl smart tv screen black',
+      'tcl smart tv no sound',
+      'tcl 4k tv display line repair',
+      'tcl ac repair near me',
+      'tcl ac error code'
+    ],
+    faqs: [
+      {
+        qEn: 'Why does my TCL TV screen have sound but no picture?',
+        qBn: 'টিসিএল টিভিতে শব্দ আসছে কিন্তু কোনো ছবি নেই কেন?',
+        aEn: 'This indicates backlight LED failure while the mainboard and speakers work. Our technician replaces backlight strips with warranty at your home. Call +91 6291674186.',
+        aBn: 'টিভি ব্যাকলাইট কেটে যাওয়ার কারণে এমন হয়। আমাদের টেকনিশিয়ান স্পটেই নতুন ব্যাকলাইট লাগিয়ে দেন।'
+      },
+      {
+        qEn: 'How to book TCL TV repair in Kolkata?',
+        qBn: 'কলকাতায় টিসিএল টিভি মেরামতের জন্য কীভাবে বুক করবেন?',
+        aEn: 'Dial +91 6291674186 or WhatsApp for same-day doorstep service at flat ₹299 inspection visit fee.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে বুক করুন।'
+      }
+    ]
+  },
+
+  'mi': {
+    slug: 'mi',
+    name: 'Mi / Xiaomi',
+    headlineEn: 'Mi & Redmi Smart LED TV Repair Service Support in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় এমআই ও রেডমি স্মার্ট টিভি ডোরস্টেপ মেরামত সাপোর্ট',
+    subheadlineEn: 'Specialist repair for Mi 4A, 4X, 5A, Horizon Edition & Redmi 4K Smart TVs. Backlight replacement, display panel repair & motherboard servicing at flat ₹299 visit fee.',
+    subheadlineBn: 'এমআই ৪এ, ৪এক্স, হরাইজন এডিশন ও রেডমি ৪কে স্মার্ট টিভির ব্যাকলাইট, ডিসপ্লে ও মাদারবোর্ডের বিশেষজ্ঞ ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফি।',
+    coverageDescEn: 'Xiaomi/Redmi TVs are hugely popular across Kolkata. We solve common Mi TV problems including black screen with audio, stuck on "Mi" logo, ghosting/double image, HDMI port failure, and power board capacitor burnout.',
+    coverageDescBn: 'কলকাতায় এমআই ও রেডমি টিভির স্ক্রিন অন্ধকার হয়ে যাওয়া (শব্দ আছে), এমআই লোগোতে আটকে থাকা, ডিসপ্লেতে ডাবল ইমেজ এবং পাওয়ার বোর্ডের সমস্যা আমরা স্পটেই ঠিক করি।',
+    errorCodes: [
+      {
+        code: 'Audio Working But Display Completely Dark',
+        issueEn: 'User can change channels and adjust volume, but screen does not illuminate',
+        issueBn: 'সাউন্ড আসছে এবং ভলিউম বাড়ানো যাচ্ছে কিন্তু স্ক্রিন সম্পূর্ণ কালো',
+        solutionEn: 'Disassemble display stack with suction grips, replace burned LED backlight string with 6V high-lumen diodes.',
+        solutionBn: 'ডিসপ্লে প্যানেল সাবধানে খুলে পুরো ব্যাকলাইট সেট নতুন অরিজিনাল এলইডি দিয়ে পরিবর্তন।'
+      },
+      {
+        code: 'Stuck on "Mi" Logo / Bootloop',
+        issueEn: 'TV turns on, displays Mi logo, then turns off and restarts continuously',
+        issueBn: 'টিভি অন হয়ে এমআই লোগোতে আটকে রিস্টার্ট হতে থাকা',
+        solutionEn: 'Perform hardware eMMC flash recovery or replace 1.8V/3.3V DC-DC buck converter chip on motherboard.',
+        solutionBn: 'ইএমএমসি ফ্ল্যাশ রিকভারি অথবা মাদারবোর্ডের ডিসি-ডিসি কনভার্টার চিপ রিপেয়ার।'
+      },
+      {
+        code: 'Vertical / Horizontal Lines on Screen',
+        issueEn: 'Color lines appearing across the picture due to COF ribbon gate driver disconnect',
+        issueBn: 'পর্দায় রঙিন খাড়া বা আড়াআড়ি দাগ পড়া (কফ আইসির সমস্যা)',
+        solutionEn: 'COF bonding repair, T-Con level shifter bypass, and display source capacitor service.',
+        solutionBn: 'কফ বন্ডিং মেরামত এবং টি-কন লেভেল শিফটার বাইপাস মডিফিকেশন।'
+      }
+    ],
+    searchedKeywords: [
+      'mi service centre',
+      'mi service centre near me',
+      'mi service centre kolkata',
+      'mi customer care number',
+      'mi customer care',
+      'mi tv repair near me',
+      'mi tv repair kolkata',
+      'mi tv service centre kolkata',
+      'mi led tv repair doorstep',
+      'mi tv screen black sound ok',
+      'mi tv stuck on mi logo',
+      'mi tv display panel price',
+      'redmi smart tv screen repair kolkata'
+    ],
+    faqs: [
+      {
+        qEn: 'Why is my Mi TV screen black but sound is clear?',
+        qBn: 'এমআই টিভির সাউন্ড পরিষ্কার আসছে কিন্তু স্ক্রিন কালো কেন?',
+        aEn: 'The LED backlight array has failed while the motherboard continues to play sound. Our technician replaces the backlight at your home with warranty. Call +91 6291674186.',
+        aBn: 'টিভি ব্যাকলাইট কেটে যাওয়ার কারণে এমন হয়। আমাদের টেকনিশিয়ান স্পটেই নতুন ব্যাকলাইট লাগিয়ে দেন।'
+      },
+      {
+        qEn: 'Can Mi TV stuck on boot logo be repaired at home?',
+        qBn: 'এমআই লোগোতে আটকে থাকা টিভি কি বাড়িতে ঠিক করা সম্ভব?',
+        aEn: 'Yes! Our engineer performs motherboard firmware recovery and voltage rail testing right at your doorstep. Call +91 6291674186.',
+        aBn: 'হ্যাঁ! আমাদের ইঞ্জিনিয়ার আপনার বাড়িতে এসেই সফটওয়্যার ও মাদারবোর্ড টেস্ট করে সারিয়ে দেন।'
+      },
+      {
+        qEn: 'How much is the inspection fee for Mi TV repair?',
+        qBn: 'এমআই টিভি পরিদর্শনের ফি কত?',
+        aEn: 'Doorstep inspection is only ₹299 across Kolkata and Howrah. Call +91 6291674186.',
+        aBn: 'কলকাতা ও হাওড়ায় হোম ভিজিট চার্জ মাত্র ₹২৯৯।'
+      }
+    ]
+  },
+
+  'oneplus': {
+    slug: 'oneplus',
+    name: 'OnePlus',
+    headlineEn: 'OnePlus Smart LED & QLED TV Repair Service Support in Kolkata',
+    headlineBn: 'কলকাতায় ওয়ানপ্লাস স্মার্ট টিভি ডোরস্টেপ মেরামত সাপোর্ট',
+    subheadlineEn: 'Expert doorstep technician for OnePlus Y Series, U Series & Q Series 4K QLED Smart TVs. Display panel, backlight & motherboard diagnostics at flat ₹299 visit fee.',
+    subheadlineBn: 'ওয়ানপ্লাস ওয়াই সিরিজ, ইউ সিরিজ ও কিউলেড টিভির ডিসপ্লে, ব্যাকলাইট ও মাদারবোর্ডের বিশেষজ্ঞ ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফি।',
+    coverageDescEn: 'OnePlus Smart TVs feature premium bezels and OxygenOS integration. We fix OnePlus TV sound-with-no-picture issues, vertical green/pink lines, bootloop, and remote pairing problems.',
+    coverageDescBn: 'ওয়ানপ্লাস স্মার্ট টিভির শব্দ থাকা সত্ত্বেও ছবি না আসা, ডিসপ্লেতে সবুজ বা গোলাপি লাইন, রিস্টার্ট সমস্যা এবং মাদারবোর্ড ত্রুটি আমরা দ্রুত ও নির্ভরযোগ্যভাবে সমাধান করি।',
+    errorCodes: [
+      {
+        code: 'Vertical Green / Pink Line on Screen',
+        issueEn: 'One or multiple thin vertical colored lines appear across the display panel',
+        issueBn: 'স্ক্রিনের উপর এক বা একাধিক সবুজ অথবা গোলাপি দাগ পড়া',
+        solutionEn: 'Inspect COF ribbon cable bonding, test source PCB gate driver signals, and perform laser panel repair.',
+        solutionBn: 'কফ রিবন কেবল ও সোর্স পিসিবি সিগন্যাল পরীক্ষা এবং প্যানেল ড্রাইভ সার্ভিস।'
+      },
+      {
+        code: 'TV Has Sound But Screen Is Pitch Black',
+        issueEn: 'Power LED is blue/white, audio plays normally, but screen has zero light output',
+        issueBn: 'টিভি অন হচ্ছে এবং সাউন্ড বাজছে কিন্তু স্ক্রিনে আলো নেই',
+        solutionEn: 'Replace burned out backlight LED array with original high-brightness aluminum-core strips.',
+        solutionBn: 'নষ্ট ব্যাকলাইট নতুন অ্যালুমিনিয়াম-বেস এলইডি স্ট্রিপ দিয়ে পরিবর্তন।'
+      }
+    ],
+    searchedKeywords: [
+      'oneplus service centre',
+      'oneplus service centre near me',
+      'oneplus service centre kolkata',
+      'oneplus customer care number',
+      'oneplus tv customer care',
+      'oneplus tv repair near me',
+      'oneplus tv repair kolkata',
+      'oneplus smart tv screen replacement',
+      'oneplus tv green line on screen',
+      'oneplus tv sound ok no picture',
+      'oneplus tv stuck on loading screen',
+      'oneplus led tv repair doorstep'
+    ],
+    faqs: [
+      {
+        qEn: 'How to fix green lines on OnePlus TV screen?',
+        qBn: 'ওয়ানপ্লাস টিভি স্ক্রিনে সবুজ দাগ কীভাবে ঠিক করবেন?',
+        aEn: 'Green lines occur due to COF ribbon gate driver connection issues. Our technician conducts on-site micro-testing to fix panel lines. Call +91 6291674186.',
+        aBn: 'প্যানেল কফ আইসি ও সিগন্যাল ট্র্যাকে ত্রুটি হলে সবুজ দাগ পড়ে। আমাদের টেকনিশিয়ান স্পটেই টেস্ট করে সারিয়ে দেন।'
+      },
+      {
+        qEn: 'How to contact OnePlus TV customer repair support in Kolkata?',
+        qBn: 'কলকাতায় ওয়ানপ্লাস টিভি মেরামতের জন্য কীভাবে যোগাযোগ করবেন?',
+        aEn: 'Dial +91 6291674186 or WhatsApp for same-day doorstep inspection at flat ₹299 across Kolkata and Howrah.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে মেসেজ পাঠান।'
+      }
+    ]
+  },
+
+  'kelvinator': {
+    slug: 'kelvinator',
+    name: 'Kelvinator',
+    headlineEn: 'Kelvinator Refrigerator & AC Repair Service Support in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় কেলভিনেটর ফ্রিজ ও এসি ডোরস্টেপ মেরামত সাপোর্ট',
+    subheadlineEn: 'Reliable doorstep repair for Kelvinator Single Door, Double Door Frost-Free Fridges & ACs. 90-min arrival with flat ₹299 inspection fee.',
+    subheadlineBn: 'কেলভিনেটর সিঙ্গেল ডোর, ডাবল ডোর ফ্রস্ট-ফ্রি ফ্রিজ ও এসির বিশ্বস্ত ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সেবা।',
+    coverageDescEn: 'Kelvinator refrigerators are celebrated for deep cooling. We fix refrigerator compressor not starting, cooling coil freezing while lower cabinet is warm, gas leakage, thermostat defects, and AC servicing.',
+    coverageDescBn: 'কেলভিনেটর ফ্রিজে গ্যাস লিকেজ, কম্প্রেসার স্টার্ট না হওয়া, ডিপে অতিরিক্ত বরফ জমে নিচে ঠান্ডা না হওয়া এবং এসির গ্যাস রিফিলিংয়ের নির্ভরযোগ্য সেবা প্রদান করি।',
+    errorCodes: [
+      {
+        code: 'Freezer Cold But Lower Cabinet Warm',
+        issueEn: 'Deep freezer makes ice normally, but lower fresh-food compartment is room temperature',
+        issueBn: 'ডিপে ঠিকমতো বরফ হচ্ছে কিন্তু নিচের চেম্বারে খাবার নষ্ট ও গরম হয়ে যাচ্ছে',
+        solutionEn: 'Defrost air duct choke, test bimetal defrost thermostat, and replace faulty defrost timer/heater.',
+        solutionBn: 'এয়ার ডাক্টের বরফ গলানো, বাইমেটাল সেন্সর পরীক্ষা এবং ডিফ্রস্ট হিটার পরিবর্তন।'
+      },
+      {
+        code: 'Compressor Humming / Clicking Every 2 Minutes',
+        issueEn: 'Compressor clicks on, hums for 5 seconds, clicks off, and fridge remains warm',
+        issueBn: 'কম্প্রেসার চালু হওয়ার চেষ্টা করে খটকা আওয়াজ করে বন্ধ হয়ে যাওয়া',
+        solutionEn: 'Replace burned PTC start relay and overload protector (OLP) with genuine Kelvinator-compatible parts.',
+        solutionBn: 'নষ্ট পিটিসি রিলে ও ওভারলোড প্রটেক্টর (OLP) নতুন পার্টস দিয়ে প্রতিস্থাপন।'
+      }
+    ],
+    searchedKeywords: [
+      'kelvinator service centre',
+      'kelvinator service centre near me',
+      'kelvinator service centre kolkata',
+      'kelvinator customer care number',
+      'kelvinator customer care',
+      'kelvinator fridge repair near me',
+      'kelvinator fridge repair kolkata',
+      'kelvinator refrigerator not cooling',
+      'kelvinator single door fridge cooling problem',
+      'kelvinator double door fridge ice melting',
+      'kelvinator ac repair near me'
+    ],
+    faqs: [
+      {
+        qEn: 'Why is my Kelvinator fridge lower compartment not cooling?',
+        qBn: 'কেলভিনেটর ফ্রিজের নিচের চেম্বার ঠান্ডা হচ্ছে না কেন?',
+        aEn: 'This is usually caused by a failed defrost timer or blocked air duct preventing cold air circulation. Our technician fixes it at your doorstep. Call +91 6291674186.',
+        aBn: 'ডিফ্রস্ট টাইমার বা হিটার খারাপ হলে নিচের চেম্বারে ঠান্ডা যাওয়া বন্ধ হয়ে যায়। আমাদের টেকনিশিয়ান স্পটেই ঠিক করে দেন।'
+      },
+      {
+        qEn: 'How to book Kelvinator fridge repair in Kolkata?',
+        qBn: 'কলকাতায় কেলভিনেটর ফ্রিজ মেরামতের জন্য যোগাযোগ নম্বর কোনটি?',
+        aEn: 'Call +91 6291674186 or WhatsApp for same-day doorstep service at flat ₹299 inspection visit charge.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপ করুন।'
+      }
+    ]
+  },
+
+  'electrolux': {
+    slug: 'electrolux',
+    name: 'Electrolux',
+    headlineEn: 'Electrolux Washing Machine & Refrigerator Repair in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় ইলেকট্রোলাক্স ওয়াশিং মেশিন ও ফ্রিজ ডোরস্টেপ সার্ভিস',
+    subheadlineEn: 'Specialist repair for Electrolux Front Load & Top Load Washing Machines, UltimateCare washers & Fridges. 90-min arrival with flat ₹299 inspection fee.',
+    subheadlineBn: 'ইলেকট্রোলাক্স ফ্রন্ট লোড ও টপ লোড ওয়াশিং মেশিন এবং ফ্রিজের বিশেষজ্ঞ ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত ও নির্ভরযোগ্য সমাধান।',
+    coverageDescEn: 'Electrolux washing machines offer Scandinavian engineering. We resolve Electrolux E10 water inlet timeout, E20 drain pump errors, E40 door lock faults, drum bearing noise, and refrigerator inverter cooling issues.',
+    coverageDescBn: 'ইলেকট্রোলাক্স ওয়াশিং মেশিনের E10 ওয়াটার এরর, E20 ড্রেন পাম্প এরর, E40 ডোর লক এরর, ড্রামে অতিরিক্ত শব্দ এবং ফ্রিজের কুলিং সমস্যার জন্য আমরা দক্ষ টেকনিশিয়ান প্রদান করি।',
+    errorCodes: [
+      {
+        code: 'E20 / E21 Drain Error (Washer)',
+        issueEn: 'Washing machine cannot drain water and pauses before spin cycle',
+        issueBn: 'মেশিন থেকে নোংরা জল বের হতে না পারা এবং স্পিনের আগে আটকে যাওয়া',
+        solutionEn: 'Clean coin filter chamber, check drain pipe hose, and test drain pump magnetic motor.',
+        solutionBn: 'কয়েন ফিল্টার খুলে পরিষ্কার, ড্রেন পাইপ চেক এবং ড্রেন পাম্প মোটর টেস্ট।'
+      },
+      {
+        code: 'E10 / E11 Water Inlet Error',
+        issueEn: 'Water is not filling into the drum within the preset time limit',
+        issueBn: 'নির্ধারিত সময়ে ওয়াশিং মেশিনের ড্রামে জল প্রবেশ না করা',
+        solutionEn: 'Clean inlet mesh filter, verify water tap pressure, and replace faulty solenoid valve coil.',
+        solutionBn: 'ইনলেট ফিল্টার নেট পরিষ্কার, জলের প্রেসার চেক এবং সলেনয়েড ভালভ মেরামত।'
+      },
+      {
+        code: 'E40 / E41 Door Lock Error',
+        issueEn: 'Door is closed but control board does not sense door latch lock',
+        issueBn: 'দরজা বন্ধ থাকলেও ডোর লক সুইচ সেন্স না করা',
+        solutionEn: 'Replace thermal PTC door interlock switch and check mainboard door sensing circuit.',
+        solutionBn: 'ডোর ইন্টারলক সুইচ পরিবর্তন এবং মাদারবোর্ডের ডোর সেন্সিং সার্কিট চেক।'
+      }
+    ],
+    searchedKeywords: [
+      'electrolux service centre',
+      'electrolux service centre near me',
+      'electrolux service centre kolkata',
+      'electrolux customer care number',
+      'electrolux washing machine repair near me',
+      'electrolux washing machine customer care',
+      'electrolux front load washing machine e10 error',
+      'electrolux front load washing machine e20 error',
+      'electrolux front load washing machine e40 error',
+      'electrolux fridge repair kolkata'
+    ],
+    faqs: [
+      {
+        qEn: 'How to fix E20 error on Electrolux washing machine?',
+        qBn: 'ইলেকট্রোলাক্স ওয়াশিং মেশিনের E20 এরর কীভাবে ঠিক করবেন?',
+        aEn: 'E20 indicates the water cannot drain away due to a choked coin filter or blocked pump. Our technician cleans the pump and tests the motor at your home. Call +91 6291674186.',
+        aBn: 'ড্রেন ফিল্টার বা ড্রেন পাইপ জ্যাম হলে E20 দেখায়। আমাদের টেকনিশিয়ান স্পটেই খুলে পরিষ্কার বা নতুন পাম্প লাগিয়ে দেন।'
+      },
+      {
+        qEn: 'How to book Electrolux repair service in Kolkata?',
+        qBn: 'কলকাতায় ইলেকট্রোলাক্স মেরামতের জন্য যোগাযোগ নম্বর কোনটি?',
+        aEn: 'Call +91 6291674186 or WhatsApp us for express doorstep visit with 30-day service warranty.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে মেসেজ পাঠান।'
+      }
+    ]
+  },
+
+  'kent': {
+    slug: 'kent',
+    name: 'Kent RO',
+    headlineEn: 'Kent RO Water Purifier Repair & Filter Service in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় কেন্ট আরও ওয়াটার পিউরিফায়ার মেরামত ও ফিল্টার সার্ভিস',
+    subheadlineEn: 'Doorstep service for Kent Grand Plus, Prime, Pearl & Mineral RO systems. Membrane replacement, UV lamp repair, and filter changes at flat ₹299 inspection fee.',
+    subheadlineBn: 'কেন্ট গ্র্যান্ড প্লাস, প্রাইম ও মিনারেল আরও ওয়াটার পিউরিফায়ারের জেনুইন ফিল্টার ও মেমব্রেন সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত ডোরস্টেপ সমাধান।',
+    coverageDescEn: 'Kent is India’s premier RO water purifier brand. We fix continuous alarm beeping, filter life expired alerts, low water flow, tank water leakage, booster pump pressure drop, and foul taste.',
+    coverageDescBn: 'কেন্ট পিউরিফায়ারে একনাগাড়ে অ্যালার্ম বাজা, ফিল্টার পরিবর্তনের নোটিফিকেশন, ট্যাঙ্কে জল না জমা, বুস্টার পাম্পের প্রেসার কমে যাওয়া ও জলের স্বাদের সমস্যা আমরা দক্ষ টেকনিশিয়ান দিয়ে সমাধান করি।',
+    errorCodes: [
+      {
+        code: 'Continuous Fast Beeping Sound / Alarm',
+        issueEn: 'Kent purifier beeps rapidly every 2 seconds and stops purifying water',
+        issueBn: 'কেন্ট পিউরিফায়ার থেকে একটানা দ্রুত অ্যালার্ম বা বিপ শব্দ হওয়া এবং জল ফিল্টার বন্ধ হওয়া',
+        solutionEn: 'Inspect UV lamp ballast choke, replace burned UV quartz tube, and check solenoid valve.',
+        solutionBn: 'ইউভি ল্যাম্পের চোক অ্যাডাপ্টার পরীক্ষা, নষ্ট ইউভি টিউব পরিবর্তন এবং এসভি ভালভ চেক।'
+      },
+      {
+        code: 'Slow Beeping Sound / Filter Alert',
+        issueEn: 'Machine beeps 4 times every 2 seconds indicating filter service life cycle reached',
+        issueBn: 'মেশিন থেমে থেমে বিপ শব্দ করছে (ফিল্টারের কার্যক্ষমতা শেষ হওয়ার সতর্কবার্তা)',
+        solutionEn: 'Replace sediment filter, activated carbon block, UF membrane, and perform system reset.',
+        solutionBn: 'সেডিমেন্ট ফিল্টার, কার্বন ফিল্টার ও ইউএফ মেমব্রেন নতুন লাগানো এবং সিস্টেম রিসেট।'
+      },
+      {
+        code: 'Water Not Flowing into Storage Tank',
+        issueEn: 'Power adapter is on, but zero purified water drips into the clean water tank',
+        issueBn: 'মেশিন অন আছে কিন্তু পিউরিফাইড জলের ট্যাঙ্কে এক ফোঁটাও জল ভরছে না',
+        solutionEn: 'Test 24V booster pump pressure (must exceed 80 PSI), replace choked RO membrane and pre-filter candle.',
+        solutionBn: 'বুস্টার পাম্পের প্রেসার গেজ টেস্ট (৮০ পিএসআই এর বেশি হতে হবে), জ্যাম মেমব্রেন ও প্রি-ফিল্টার মোমবাতি পরিবর্তন।'
+      }
+    ],
+    searchedKeywords: [
+      'kent service centre',
+      'kent service centre near me',
+      'kent service centre kolkata',
+      'kent service centre kolkata phone number',
+      'kent customer care number',
+      'kent customer care number 24x7',
+      'kent ro service near me',
+      'kent ro customer care',
+      'kent water purifier repair kolkata',
+      'kent ro filter change cost',
+      'kent ro membrane change',
+      'kent ro continuous beeping sound',
+      'kent ro water not coming in tank'
+    ],
+    faqs: [
+      {
+        qEn: 'Why is my Kent RO water purifier beeping continuously?',
+        qBn: 'কেন্ট আরও পিউরিফায়ার থেকে একনাগাড়ে বিপ শব্দ হচ্ছে কেন?',
+        aEn: 'A continuous alarm indicates UV lamp failure or filter life exhaustion. Our technician tests the UV choke and replaces the bulb/filter at your doorstep. Call +91 6291674186.',
+        aBn: 'ইউভি ল্যাম্প কেটে গেলে অথবা ফিল্টারের বয়স শেষ হলে এই বিপ শব্দ হয়। আমাদের টেকনিশিয়ান স্পটেই নতুন ফিল্টার বা ইউভি ল্যাম্প লাগিয়ে দেন।'
+      },
+      {
+        qEn: 'How much does Kent RO filter service cost?',
+        qBn: 'কেন্ট আরও ফিল্টার সার্ভিসের খরচ কত?',
+        aEn: 'Doorstep inspection is flat ₹299. Genuine sediment, carbon, and RO membrane replacements are shared with transparent pricing before work. Call +91 6291674186.',
+        aBn: 'ভিজিট চার্জ মাত্র ₹২৯৯। কোনো ফিল্টার পরিবর্তনের প্রয়োজন হলে আগেই রেট জানিয়ে অনুমোদন নেওয়া হয়।'
+      },
+      {
+        qEn: 'How to book Kent RO repair in Kolkata?',
+        qBn: 'কলকাতায় কেন্ট আরও মেরামতের জন্য যোগাযোগ নম্বর কোনটি?',
+        aEn: 'Call +91 6291674186 or WhatsApp for same-day service across Kolkata and Howrah.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে মেসেজ পাঠান।'
+      }
+    ]
+  },
+
+  'aquaguard': {
+    slug: 'aquaguard',
+    name: 'Aquaguard',
+    headlineEn: 'Aquaguard & Eureka Forbes Water Purifier Service Support in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় অ্যাকোয়াগার্ড ও ইউরেকা ফোর্বস ওয়াটার পিউরিফায়ার সার্ভিস',
+    subheadlineEn: 'Doorstep maintenance for Aquaguard Enhance, Magna, Geneus & Neo RO+UV Purifiers. Genuine filter cartridges, booster pumps & membrane replacement at ₹299 visit fee.',
+    subheadlineBn: 'অ্যাকোয়াগার্ড এনহ্যান্স, ম্যাগনা ও নিও আরও+ইউভি পিউরিফায়ারের জেনুইন ফিল্টার ও মেমব্রেন সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত ডোরস্টেপ সমাধান।',
+    coverageDescEn: 'Aquaguard water purifiers are trusted by millions. We resolve Aquaguard red light blinking, electronic life lock alert, water leaking from base, low water output, and motor humming sounds.',
+    coverageDescBn: 'অ্যাকোয়াগার্ডে লাল বাতি ব্লিংক করা, জল লিকেজ হওয়া, জল আসতে দেরি হওয়া, ট্যাঙ্কে নোংরা গন্ধ বা অস্বচ্ছ স্বাদের সমস্যায় আমরা অরিজিনাল পার্টস ও অভিজ্ঞ টেকনিশিয়ান প্রদান করি।',
+    errorCodes: [
+      {
+        code: 'Red Light Blinking with Beep Alert',
+        issueEn: 'Aquaguard purifier shows red service indicator and locks water purification cycle',
+        issueBn: 'লাল লাইট ব্লিংক করা এবং ওয়াটার পিউরিফিকেশন লক হয়ে যাওয়া',
+        solutionEn: 'Scan internal electronic smart chip, replace exhausted clarity/chemi-block cartridges, and unlock machine.',
+        solutionBn: 'স্মার্ট চিপ চেক, মেয়া উত্তীর্ণ ক্ল্যারিটি ও কেমি-ব্লক কার্ট্রিজ পরিবর্তন এবং সিস্টেম আনলক।'
+      },
+      {
+        code: 'Water Leaking from Purifier Bottom Body',
+        issueEn: 'Constant drip or puddle forming under the water purifier cabinet',
+        issueBn: 'পিউরিফায়ারের নিচের বডি বা পাইপ সংযোগ থেকে অনবরত জল পড়া',
+        solutionEn: 'Replace worn O-ring seals, cracked filter housing bowls, or loose quick-fit elbow push connectors.',
+        solutionBn: 'নষ্ট ও-রিং রবার সিল, ফাটা হাউজিং বা লুজ ফিটিং এলবো নতুন কানেক্টর দিয়ে পরিবর্তন।'
+      }
+    ],
+    searchedKeywords: [
+      'aquaguard service centre',
+      'aquaguard service centre near me',
+      'aquaguard service centre kolkata',
+      'aquaguard customer care number',
+      'aquaguard customer care number 24x7',
+      'aquaguard ro repair near me',
+      'aquaguard water purifier repair kolkata',
+      'aquaguard filter change service',
+      'aquaguard red light blinking',
+      'aquaguard water leakage repair',
+      'eureka forbes customer care number kolkata',
+      'aquaguard service request online'
+    ],
+    faqs: [
+      {
+        qEn: 'Why is the red light blinking on my Aquaguard purifier?',
+        qBn: 'অ্যাকোয়াগার্ড পিউরিফায়ারে লাল লাইট ব্লিংক করছে কেন?',
+        aEn: 'The red blinking light signals that filter cartridges have reached their purification capacity and require replacement. Our technician services it at your home. Call +91 6291674186.',
+        aBn: 'ফিল্টারের কার্যক্ষমতা শেষ হয়ে গেলে লাল লাইট জ্বলে। আমাদের টেকনিশিয়ান আপনার বাড়িতে এসেই নতুন ফিল্টার লাগিয়ে সিস্টেম চালু করে দেন।'
+      },
+      {
+        qEn: 'How to book Aquaguard water purifier repair in Kolkata?',
+        qBn: 'কলকাতায় অ্যাকোয়াগার্ড মেরামতের জন্য কীভাবে বুক করবেন?',
+        aEn: 'Call +91 6291674186 or WhatsApp for same-day doorstep inspection across Kolkata and Howrah at flat ₹299.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে মেসেজ পাঠান।'
+      }
+    ]
+  },
+
+  'livpure': {
+    slug: 'livpure',
+    name: 'Livpure',
+    headlineEn: 'Livpure RO Water Purifier Repair & Maintenance Service in Kolkata',
+    headlineBn: 'কলকাতায় লিভপিওর আরও ওয়াটার পিউরিফায়ার ডোরস্টেপ সার্ভিস',
+    subheadlineEn: 'Doorstep repair for Livpure Glo, Bolt, Platino & Pep RO systems. Filter replacement, booster pump repair & membrane maintenance at flat ₹299 inspection visit fee.',
+    subheadlineBn: 'লিভপিওর গ্লো, বোল্ট ও পেপ আরও ওয়াটার পিউরিফায়ারের ফিল্টার, বুস্টার পাম্প ও মেমব্রেন সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত ডোরস্টেপ সমাধান।',
+    coverageDescEn: 'Livpure provides smart RO purification systems. We resolve purifier not turning on, wastewater leaking continuously while pure water tank is empty, low TDS issues, and power SMPS failures.',
+    coverageDescBn: 'লিভপিওরের পাওয়ার অন না হওয়া, অনবরত ড্রেন দিয়ে জল বয়ে যাওয়া কিন্তু ফিল্টারে জল না জমা, টিডিএস অস্বাভাবিক হওয়া ও পাম্পের ত্রুটির দক্ষ সমাধান দিই।',
+    errorCodes: [
+      {
+        code: 'Water Purifier Not Turning On (No Power)',
+        issueEn: 'LED indicator lights are completely off and motor does not start',
+        issueBn: 'পিউরিফায়ারের লাইট জ্বলছে না এবং মোটর স্টার্ট হচ্ছে না',
+        solutionEn: 'Test 24V DC SMPS power supply adapter, inspect low-pressure switch (LPS), and check internal wiring.',
+        solutionBn: '২৪ ভোল্ট এসএমপিএস পাওয়ার অ্যাডাপ্টার টেস্ট, লো প্রেসার সুইচ চেক এবং অভ্যন্তরীণ ওয়্যারিং মেরামত।'
+      },
+      {
+        code: 'Continuous Reject Water Flow But Tank Is Empty',
+        issueEn: 'Reject drain pipe keeps draining water nonstop while pure water does not fill the tank',
+        issueBn: 'ড্রেন পাইপ দিয়ে জল পড়ে যাচ্ছে কিন্তু পরিষ্কার জলের ট্যাঙ্ক খালি থাকছে',
+        solutionEn: 'Replace choked 75/80 GPD RO membrane and unclog 450cc flow restrictor (FR).',
+        solutionBn: 'জ্যাম মেমব্রেন নতুন ৭৫/৮০ জিপিডি মেমব্রেন দিয়ে পরিবর্তন এবং এফআর ভালভ চেক।'
+      }
+    ],
+    searchedKeywords: [
+      'livpure service centre',
+      'livpure service centre near me',
+      'livpure service centre kolkata',
+      'livpure customer care number',
+      'livpure customer care number 24x7',
+      'livpure ro service near me',
+      'livpure water purifier repair kolkata',
+      'livpure filter change cost',
+      'livpure ro tank not filling',
+      'livpure ro motor not starting'
+    ],
+    faqs: [
+      {
+        qEn: 'How to contact Livpure RO service support in Kolkata?',
+        qBn: 'কলকাতায় লিভপিওর আরও সার্ভিসের ফোন নম্বর কোনটি?',
+        aEn: 'Call our direct helpline +91 6291674186 or WhatsApp us for instant doorstep booking at flat ₹299 inspection fee.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে বুক করুন।'
+      },
+      {
+        qEn: 'Why is my Livpure RO water tank not filling up?',
+        qBn: 'লিভপিওর আরও ওয়াটার ট্যাঙ্ক ভরছে না কেন?',
+        aEn: 'This typically means the pre-filters or RO membrane are choked, or the booster pump pressure has dropped. Our technician tests and fixes this at your home. Call +91 6291674186.',
+        aBn: 'মেমব্রেন বা প্রি-ফিল্টার জ্যাম হলে অথবা পাম্পের প্রেসার কমে গেলে এমন হয়। আমাদের টেকনিশিয়ান স্পটেই সমাধান করে দেন।'
+      }
+    ]
+  },
+
+  'pureit': {
+    slug: 'pureit',
+    name: 'Pureit',
+    headlineEn: 'Pureit RO Water Purifier Repair & GKK Replacement Service in Kolkata',
+    headlineBn: 'কলকাতায় পিউরিট আরও ওয়াটার পিউরিফায়ার ও জিকেকে পরিবর্তন সার্ভিস',
+    subheadlineEn: 'Doorstep service for Pureit Classic, Marvella, Copper & Advanced RO systems. Germkill Kit (GKK) change, booster pump servicing, and leak repairs at ₹299 visit fee.',
+    subheadlineBn: 'পিউরিট ক্লাসিক, মারভেলা, কপার ও অ্যাডভান্সড আরও পিউরিফায়ারের জিকেকে কিট পরিবর্তন ও মেমব্রেন সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সমাধান।',
+    coverageDescEn: 'Hindustan Unilever Pureit purifiers ensure safe drinking water. We handle Pureit GKK red alert lockout, internal water leakage, booster pump pressure drop, and taste enhancement cartridge replacement.',
+    coverageDescBn: 'পিউরিটে লাল সংকেত (জিকেকে এক্সপায়ার), ওয়াটার লিকেজ, মোটর বন্ধ হওয়া এবং ফিল্টারের ত্রুটি সারাতে আমরা অরিজিনাল কিট ও দক্ষ মেকানিক প্রদান করি।',
+    errorCodes: [
+      {
+        code: 'GKK Red Indicator / Auto Shut-Off Lock',
+        issueEn: 'Red light blinks or glows steadily and auto shut-off mechanism stops water delivery',
+        issueBn: 'লাল লাইট জ্বলে ওঠা এবং অটো শাট-অফ সক্রিয় হয়ে জল ফিল্টার হওয়া বন্ধ হয়ে যাওয়া',
+        solutionEn: 'Install genuine Pureit Germkill Kit (GKK-1 or GKK-2), replace carbon polisher, and reset mechanical counter.',
+        solutionBn: 'নতুন অরিজিনাল পিউরিট জিকেকে কিট লাগানো, কার্বন পলিশার পরিবর্তন এবং মেকানিক্যাল কাউন্টার রিসেট।'
+      },
+      {
+        code: 'Internal Water Leaking from Machine Body',
+        issueEn: 'Water pools on the countertop or drips continuously from inside the front cover',
+        issueBn: 'পিউরিফায়ারের ভেতর থেকে কাউন্টারটপে জল চুইয়ে পড়া',
+        solutionEn: 'Replace split high-pressure tubing, reseal cracked pump head, and inspect solenoid valve ports.',
+        solutionBn: 'ফাটা হাই-প্রেসার পাইপ ও পাম্প হেড মেরামত এবং এসভি ভালভ সংযোগ পরীক্ষা।'
+      }
+    ],
+    searchedKeywords: [
+      'pureit service centre',
+      'pureit service centre near me',
+      'pureit service centre kolkata',
+      'pureit customer care number',
+      'pureit customer care',
+      'pureit ro service near me',
+      'pureit water purifier repair kolkata',
+      'pureit gkk replacement cost',
+      'pureit red alert indicator',
+      'pureit ro water leaking from bottom',
+      'pureit auto shut off not working'
+    ],
+    faqs: [
+      {
+        qEn: 'Why has my Pureit water purifier stopped giving water with a red light?',
+        qBn: 'পিউরিট ওয়াটার পিউরিফায়ারে লাল লাইট জ্বলে জল আসা বন্ধ হয়ে গেছে কেন?',
+        aEn: 'Pureit purifiers feature an Auto Shut-Off mechanism that locks when the Germkill Kit (GKK) expires to ensure safe water. Our technician installs a genuine new GKK kit at your doorstep. Call +91 6291674186.',
+        aBn: 'জিকেকে কিটের মেয়াদ শেষ হলে অটো শাট-অফ হয়ে জল বন্ধ হয়ে যায়। আমাদের টেকনিশিয়ান স্পটেই নতুন অরিজিনাল কিট লাগিয়ে রিসেট করে দেন।'
+      },
+      {
+        qEn: 'How to book Pureit water purifier repair in Kolkata?',
+        qBn: 'কলকাতায় পিউরিট পিউরিফায়ার মেরামতের জন্য কীভাবে বুক করবেন?',
+        aEn: 'Call +91 6291674186 or WhatsApp us for doorstep visit at flat ₹299 inspection charge across Kolkata and Howrah.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে মেসেজ পাঠান।'
+      }
+    ]
   }
 };

@@ -640,7 +640,39 @@ export const initialSearchKeywords: SearchKeywordItem[] = [
   // Sony
   { id: 'kw-sn-1', keyword: 'Sony service centre kolkata tv led repair', keywordBn: 'সোনি সার্ভিস সেন্টার কলকাতা টিভি মেরামত', categoryId: 'led-tv-repair', targetUrl: '/brands/sony' },
   { id: 'kw-sn-2', keyword: 'Sony bravia tv red light blinking 6 times', keywordBn: 'সোনি ব্রাভিয়া টিভি লাল লাইট ৬ বার ব্লিংক', categoryId: 'led-tv-repair', targetUrl: '/brands/sony' },
-  { id: 'kw-sn-3', keyword: 'Sony tv screen black sound coming', keywordBn: 'সোনি টিভিতে শব্দ আছে ছবি নেই', categoryId: 'led-tv-repair', targetUrl: '/brands/sony' }
+  { id: 'kw-sn-3', keyword: 'Sony tv screen black sound coming', keywordBn: 'সোনি টিভিতে শব্দ আছে ছবি নেই', categoryId: 'led-tv-repair', targetUrl: '/brands/sony' },
+  // Toshiba
+  { id: 'kw-ts-1', keyword: 'Toshiba service centre kolkata contact number', keywordBn: 'তোশিবা সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/toshiba' },
+  { id: 'kw-ts-2', keyword: 'Toshiba washing machine e23 error repair', keywordBn: 'তোশিবা ওয়াশিং মেশিন E23 এরর', categoryId: 'washing-machine-repair', targetUrl: '/brands/toshiba' },
+  // TCL
+  { id: 'kw-tcl-1', keyword: 'TCL service centre kolkata tv repair', keywordBn: 'টিসিএল সার্ভিস সেন্টার কলকাতা টিভি মেরামত', categoryId: 'led-tv-repair', targetUrl: '/brands/tcl' },
+  { id: 'kw-tcl-2', keyword: 'TCL smart tv screen black sound coming', keywordBn: 'টিসিএল টিভিতে শব্দ আছে স্ক্রিন কালো', categoryId: 'led-tv-repair', targetUrl: '/brands/tcl' },
+  // Mi / Xiaomi
+  { id: 'kw-mi-1', keyword: 'Mi service centre kolkata tv repair doorstep', keywordBn: 'এমআই সার্ভিস সেন্টার কলকাতা টিভি মেরামত', categoryId: 'led-tv-repair', targetUrl: '/brands/mi' },
+  { id: 'kw-mi-2', keyword: 'Mi tv sound ok no picture black screen', keywordBn: 'এমআই টিভি সাউন্ড আসছে স্ক্রিন কালো', categoryId: 'led-tv-repair', targetUrl: '/brands/mi' },
+  { id: 'kw-mi-3', keyword: 'Mi tv stuck on mi logo reboot loop', keywordBn: 'এমআই লোগোতে আটকে থাকা টিভি ঠিক করা', categoryId: 'led-tv-repair', targetUrl: '/brands/mi' },
+  // OnePlus
+  { id: 'kw-op-1', keyword: 'OnePlus service centre kolkata tv repair', keywordBn: 'ওয়ানপ্লাস সার্ভিস সেন্টার কলকাতা টিভি মেরামত', categoryId: 'led-tv-repair', targetUrl: '/brands/oneplus' },
+  { id: 'kw-op-2', keyword: 'OnePlus tv green line on screen repair', keywordBn: 'ওয়ানপ্লাস টিভি স্ক্রিনে সবুজ দাগ ঠিক করা', categoryId: 'led-tv-repair', targetUrl: '/brands/oneplus' },
+  // Kelvinator
+  { id: 'kw-kv-1', keyword: 'Kelvinator service centre kolkata fridge repair', keywordBn: 'কেলভিনেটর সার্ভিস সেন্টার কলকাতা ফ্রিজ মেরামত', categoryId: 'fridge-repair', targetUrl: '/brands/kelvinator' },
+  { id: 'kw-kv-2', keyword: 'Kelvinator fridge not cooling properly', keywordBn: 'কেলভিনেটর ফ্রিজ ঠান্ডা হচ্ছে না', categoryId: 'fridge-repair', targetUrl: '/brands/kelvinator' },
+  // Electrolux
+  { id: 'kw-el-1', keyword: 'Electrolux service centre kolkata washing machine', keywordBn: 'ইলেকট্রোলাক্স সার্ভিস সেন্টার কলকাতা ওয়াশিং মেশিন', categoryId: 'washing-machine-repair', targetUrl: '/brands/electrolux' },
+  { id: 'kw-el-2', keyword: 'Electrolux front load washing machine e20 error', keywordBn: 'ইলেকট্রোলাক্স ওয়াশিং মেশিন E20 এরর', categoryId: 'washing-machine-repair', targetUrl: '/brands/electrolux' },
+  // Kent RO
+  { id: 'kw-kt-1', keyword: 'Kent service centre kolkata ro water purifier', keywordBn: 'কেন্ট সার্ভিস সেন্টার কলকাতা ওয়াটার পিউরিফায়ার', categoryId: 'fridge-repair', targetUrl: '/brands/kent' },
+  { id: 'kw-kt-2', keyword: 'Kent ro continuous beeping sound alarm', keywordBn: 'কেন্ট আরও একটানা বিপ শব্দ অ্যালার্ম', categoryId: 'fridge-repair', targetUrl: '/brands/kent' },
+  { id: 'kw-kt-3', keyword: 'Kent ro filter membrane change near me', keywordBn: 'কেন্ট ফিল্টার ও মেমব্রেন পরিবর্তন', categoryId: 'fridge-repair', targetUrl: '/brands/kent' },
+  // Aquaguard
+  { id: 'kw-aq-1', keyword: 'Aquaguard service centre kolkata eureka forbes', keywordBn: 'অ্যাকোয়াগার্ড সার্ভিস সেন্টার কলকাতা ইউরেকা ফোর্বস', categoryId: 'fridge-repair', targetUrl: '/brands/aquaguard' },
+  { id: 'kw-aq-2', keyword: 'Aquaguard red light blinking water purifier', keywordBn: 'অ্যাকোয়াগার্ড লাল বাতি ব্লিংকিং সমস্যা', categoryId: 'fridge-repair', targetUrl: '/brands/aquaguard' },
+  // Livpure
+  { id: 'kw-lp-1', keyword: 'Livpure service centre kolkata ro repair', keywordBn: 'লিভপিওর সার্ভিস সেন্টার কলকাতা আরও মেরামত', categoryId: 'fridge-repair', targetUrl: '/brands/livpure' },
+  { id: 'kw-lp-2', keyword: 'Livpure ro water not filling in tank', keywordBn: 'লিভপিওর আরও ওয়াটার ট্যাঙ্ক ভরছে না', categoryId: 'fridge-repair', targetUrl: '/brands/livpure' },
+  // Pureit
+  { id: 'kw-pi-1', keyword: 'Pureit service centre kolkata water purifier', keywordBn: 'পিউরিট সার্ভিস সেন্টার কলকাতা ওয়াটার পিউরিফায়ার', categoryId: 'fridge-repair', targetUrl: '/brands/pureit' },
+  { id: 'kw-pi-2', keyword: 'Pureit gkk replacement red alert lock', keywordBn: 'পিউরিট জিকেকে কিট পরিবর্তন লাল অ্যালার্ট', categoryId: 'fridge-repair', targetUrl: '/brands/pureit' }
 ];
 
 export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[]; bn: { q: string; a: string }[] }> = {
