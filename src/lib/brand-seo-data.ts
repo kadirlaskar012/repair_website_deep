@@ -719,5 +719,702 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
         aBn: 'সরাসরি ডায়াল করুন: +91 6291674186।'
       }
     ]
+  },
+
+  'voltas': {
+    slug: 'voltas',
+    name: 'Voltas',
+    headlineEn: 'Voltas AC & Beko Refrigerator Repair & Service Centre Support in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় ভোল্টাস এসি ও বেকো ফ্রিজ মেরামত ও ডোরস্টেপ সার্ভিস সেন্টার সাপোর্ট',
+    subheadlineEn: 'Certified doorstep service for Voltas Inverter AC, Maha Adjustable Split AC, Window AC & Beko Fridges. 90-min arrival across Kolkata with flat ₹299 visit fee.',
+    subheadlineBn: 'ভোল্টাস ইনভার্টার এসি, স্প্লিট ও উইন্ডো এসি এবং বেকো রেফ্রিজারেটরের নির্ভরযোগ্য ডোরস্টেপ সার্ভিস। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    coverageDescEn: 'Voltas is India’s most popular air conditioning brand. Our certified engineers specialize in Voltas inverter PCB board repairs, rotary compressor capacitor replacements, pure R32/R410A gas refilling, and cooling restoration.',
+    coverageDescBn: 'ভোল্টাস ভারতের সর্বাধিক বিক্রিত এসি ব্র্যান্ড। ভোল্টাস ইনভার্টার পিসিবি মেরামত, কম্প্রেসার ক্যাপাসিটর পরিবর্তন, সঠিক গ্যাস চার্জিং এবং সম্পূর্ণ কুলিং পুনরুদ্ধারে আমাদের দীর্ঘ অভিজ্ঞতা রয়েছে।',
+    errorCodes: [
+      {
+        code: 'E6 / F1 Error Code',
+        issueEn: 'Communication error between indoor and outdoor PCBs or DC fan motor stall',
+        issueBn: 'ইনডোর ও আউটডোর সার্কিট বোর্ডের সিগন্যাল বিচ্ছিন্ন বা ফ্যান মোটর সমস্যা',
+        solutionEn: 'Inspect connecting communication wiring, test outdoor motherboard DC bus voltage, and service brushless fan motor.',
+        solutionBn: 'কমিউনিকেশন ওয়্যার টেস্ট, আউটডোর মাদারবোর্ড ভোল্টেজ পরীক্ষা এবং ফ্যান মোটর মেরামত।'
+      },
+      {
+        code: 'Fan Running But Not Cooling',
+        issueEn: 'Indoor blower works normally but room does not cool and outdoor compressor does not kick in',
+        issueBn: 'ইনডোর ফ্যান চলছে কিন্তু ঘর ঠান্ডা হচ্ছে না, আউটডোর কম্প্রেসার চালু হচ্ছে না',
+        solutionEn: 'Test dual-run start capacitor, overload protector (OLP), and test refrigerant suction pressure with manifold gauge.',
+        solutionBn: 'ক্যাপাসিটর ও ওএলপি পরীক্ষা এবং গ্যাস প্রেশার গেজ দিয়ে লিকেজ ও গ্যাসের পরিমাণ চেক।'
+      },
+      {
+        code: 'Water Dripping from Indoor Unit',
+        issueEn: 'Water overflowing from drain tray and dripping on wall or floor',
+        issueBn: 'ইনডোর ড্রেন ট্রে থেকে জল উপচে ঘরের মেঝে বা দেয়ালে পড়া',
+        solutionEn: 'Clear algae and dust block from drain hose using pressure pump and check unit horizontal level.',
+        solutionBn: 'প্রেসার পাম্প দিয়ে ড্রেন পাইপের ময়লা পরিষ্কার এবং এসির ব্যাকপ্লেট লেভেলিং।'
+      }
+    ],
+    searchedKeywords: [
+      'voltas service centre',
+      'voltas service centre number',
+      'voltas service centre near me',
+      'voltas service centre kolkata',
+      'voltas service centre kolkata contact number',
+      'voltas customer care number',
+      'voltas customer care',
+      'voltas customer care number 24x7',
+      'voltas customer care toll free number india',
+      'voltas customer care whatsapp number',
+      'voltas customer care kolkata',
+      'voltas ac repair near me',
+      'voltas ac repair',
+      'voltas ac repair service',
+      'voltas ac repair complaint number',
+      'voltas ac service kolkata',
+      'voltas ac service near me',
+      'voltas ac service request',
+      'voltas ac service charges',
+      'voltas ac not cooling',
+      'voltas ac not cooling but fan is running',
+      'voltas ac not cooling properly',
+      'voltas ac not working with remote',
+      'voltas ac water dripping inside',
+      'voltas ac inverter 1.5 ton error code',
+      'voltas ac e6 error code',
+      'voltas ac f1 error code',
+      'voltas ac gas refilling charges kolkata',
+      'voltas fridge repair near me',
+      'voltas beko refrigerator customer care',
+      'voltas beko double door fridge not cooling'
+    ],
+    faqs: [
+      {
+        qEn: 'Why is my Voltas AC fan running but not cooling?',
+        qBn: 'ভোল্টাস এসির ফ্যান চলছে কিন্তু ঠান্ডা হচ্ছে না কেন?',
+        aEn: 'This commonly happens when the compressor capacitor fails, cooling gas leaks, or the outdoor coil is choked with dirt. Our technician diagnoses this on-site for flat ₹299. Call +91 6291674186.',
+        aBn: 'কম্প্রেসার ক্যাপাসিটর খারাপ হলে বা গ্যাস লিকেজ হলে এমন হয়। আমাদের টেকনিশিয়ান মাত্র ₹২৯৯ পরিদর্শনে বাড়িতে এসে সঠিক কারণ নির্ণয় করেন।'
+      },
+      {
+        qEn: 'What does E6 error code mean in Voltas inverter AC?',
+        qBn: 'ভোল্টাস ইনভার্টার এসিতে E6 এরর কোডের অর্থ কী?',
+        aEn: 'E6 indicates communication failure between the indoor display board and the outdoor inverter PCB. Our technicians carry genuine testing tools and replacement boards.',
+        aBn: 'E6 হলো ইনডোর ও আউটডোর সার্কিট বোর্ডের যোগাযোগ বিচ্ছিন্ন হওয়ার লক্ষণ। আমাদের প্রকৌশলীরা স্পটেই টেস্ট করে এটি সমাধান করেন।'
+      },
+      {
+        qEn: 'How to contact for Voltas AC doorstep repair in Kolkata?',
+        qBn: 'কলকাতায় ভোল্টাস এসি মেরামতের জন্য কীভাবে যোগাযোগ করবেন?',
+        aEn: 'Call our direct helpline +91 6291674186 or tap WhatsApp. Certified multi-brand technicians arrive in 90 minutes.',
+        aBn: 'সরাসরি আমাদের হেল্পলাইন +91 6291674186 নম্বরে কল করুন। ৯০ মিনিটের মধ্যে টেকনিশিয়ান পৌঁছে যাবেন।'
+      }
+    ]
+  },
+
+  'samsung': {
+    slug: 'samsung',
+    name: 'Samsung',
+    headlineEn: 'Samsung AC, Refrigerator, Washing Machine & TV Service Centre Support in West Bengal',
+    headlineBn: 'পশ্চিমবঙ্গে স্যামসাং এসি, ফ্রিজ, ওয়াশিং মেশিন ও টিভি ডোরস্টেপ সার্ভিস সেন্টার সাপোর্ট',
+    subheadlineEn: 'Certified multi-brand doorstep specialists for Samsung Digital Inverter AC, Curd Maestro Fridge, EcoBubble Washers & Crystal 4K LED TV. 90-min arrival with ₹299 diagnosis fee.',
+    subheadlineBn: 'স্যামসাং ডিজিটাল ইনভার্টার এসি, ফ্রিজ, ইকো-বাবল ওয়াশিং মেশিন ও স্মার্ট টিভির বিশেষজ্ঞ ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    coverageDescEn: 'Samsung home appliances feature advanced smart inverter tech. We provide certified repairs for Samsung washing machine 4E/5E/dE error codes, refrigerator defrost problems, AC C4 sensor errors, and LED TV display panel repairs.',
+    coverageDescBn: 'স্যামসাং ওয়াশিং মেশিনের 4E/5E/dE এরর কোড, ফ্রিজের নিচের চেম্বার ঠান্ডা না হওয়া, ইনভার্টার এসির গ্যাস রিফিল এবং স্মার্ট টিভির ডিসপ্লে প্যানেল সমস্যার জন্য আমরা অভিজ্ঞ প্রকৌশলী দিয়ে তাৎক্ষণিক সেবা দিই।',
+    errorCodes: [
+      {
+        code: '4E / 5E Error Code (Washer)',
+        issueEn: 'Water inlet timeout error (4E) or drainage failure error (5E) on washer display',
+        issueBn: 'ওয়াশিং মেশিনে জল না ঢোকা (4E) অথবা ড্রেন না হওয়া (5E) এরর কোড',
+        solutionEn: 'Clean inlet mesh filter, test solenoid water valve, inspect drain filter and test drain pump motor.',
+        solutionBn: 'ইনলেট ফিল্টার পরিষ্কার, সলেনয়েড ভালভ টেস্ট এবং ড্রেন পাম্প মোটর চেক।'
+      },
+      {
+        code: 'dE / 1E Error Code (Washer)',
+        issueEn: 'Door lock error (dE) or water level sensor pressure fault (1E)',
+        issueBn: 'দরজা লক না হওয়া (dE) অথবা জলের প্রেসার সেন্সরের ত্রুটি (1E)',
+        solutionEn: 'Replace door latch interlock switch and recalibrate frequency water pressure sensor.',
+        solutionBn: 'ডোর ইন্টারলক সুইচ প্রতিস্থাপন এবং ওয়াটার লেভেল প্রেসার সেন্সর পরিবর্তন।'
+      },
+      {
+        code: 'C4 Error / AC Not Cooling',
+        issueEn: 'Indoor heat exchanger thermistor sensor open/short circuit, compressor shuts down',
+        issueBn: 'ইনডোর হিট এক্সচেঞ্জার সেন্সর ফল্ট, যার ফলে কম্প্রেসার বন্ধ হয়ে যায়',
+        solutionEn: 'Replace copper coil thermistor sensor and check communication line to outdoor unit.',
+        solutionBn: 'কপার কয়েল থার্মিস্টর সেন্সর পরিবর্তন এবং আউটডোর কমিউনিকেশন লাইন পরীক্ষা।'
+      },
+      {
+        code: 'Double Door Fridge Lower Chamber Warm',
+        issueEn: 'Freezer creates frost but fresh food compartment is warm and food spoils',
+        issueBn: 'ডিপ ফ্রিজে বরফ জমছে কিন্তু নিচের অংশে ঠান্ডা নেই ও খাবার নষ্ট হচ্ছে',
+        solutionEn: 'Test defrost heater bimetal, thermal fuse, and clear ice choked damper air passage.',
+        solutionBn: 'ডিফ্রস্ট হিটার ও থার্মাল ফিউজ টেস্ট এবং বরফ জমে বন্ধ হয়ে যাওয়া এয়ার নালী পরিষ্কার।'
+      }
+    ],
+    searchedKeywords: [
+      'samsung service centre',
+      'samsung service centre near me',
+      'samsung service centre kolkata',
+      'samsung service centre kolkata phone number',
+      'samsung customer care number',
+      'samsung customer care',
+      'samsung customer care number 24x7',
+      'samsung customer care whatsapp number',
+      'samsung ac repair near me',
+      'samsung ac repair kolkata',
+      'samsung ac not cooling',
+      'samsung ac inverter error code list',
+      'samsung ac c4 error code',
+      'samsung ac gas refilling charges',
+      'samsung fridge repair near me',
+      'samsung fridge repair kolkata',
+      'samsung refrigerator customer care number',
+      'samsung double door fridge not cooling bottom',
+      'samsung inverter fridge blinking light error',
+      'samsung washing machine customer care number',
+      'samsung washing machine repair near me',
+      'samsung washing machine service kolkata',
+      'samsung top load washing machine 4e error',
+      'samsung top load washing machine 5e error',
+      'samsung front load washing machine repair',
+      'samsung front load washing machine dE error',
+      'samsung front load washing machine 1E error',
+      'samsung microwave oven repair near me',
+      'samsung microwave oven not heating',
+      'samsung led tv repair kolkata',
+      'samsung tv screen black sound coming',
+      'samsung smart tv display lines repair'
+    ],
+    faqs: [
+      {
+        qEn: 'How to fix 4E or 5E error on Samsung washing machine?',
+        qBn: 'স্যামসাং ওয়াশিং মেশিনের 4E বা 5E এরর কীভাবে ঠিক করবেন?',
+        aEn: '4E means no water is entering due to tap blockage or faulty inlet valve; 5E means water is not draining due to choked filter or pump failure. Our technician resolves this at your home. Call +91 6291674186.',
+        aBn: '4E হলো জল না ঢোকার ত্রুটি এবং 5E হলো জল ড্রেন না হওয়ার সমস্যা। আমাদের টেকনিশিয়ান স্পটেই ড্রেন পাম্প বা ভালভ ঠিক করে দেন।'
+      },
+      {
+        qEn: 'Why is the lower section of my Samsung fridge not cooling?',
+        qBn: 'স্যামসাং ফ্রিজের নিচের অংশ ঠান্ডা হচ্ছে না কেন?',
+        aEn: 'In frost-free double door fridges, a burnt defrost heater or faulty sensor causes frost to block the cold air chute to the bottom. We replace the sensor on-site with a 30-day warranty.',
+        aBn: 'ডিফ্রস্ট হিটার বা সেন্সর খারাপ হলে বরফ জমে নিচের চেম্বারে ঠান্ডা যাওয়া বন্ধ হয়ে যায়। আমরা স্পটেই নতুন সেন্সর লাগিয়ে দিই।'
+      },
+      {
+        qEn: 'What is the Samsung appliance repair customer number in Kolkata?',
+        qBn: 'কলকাতায় স্যামসাং অ্যাপ্লায়েন্স মেরামতের ফোন নম্বর কোনটি?',
+        aEn: 'Call +91 6291674186 or WhatsApp for same-day doorstep technician visit with transparent ₹299 inspection fee.',
+        aBn: 'একই দিনে ডোরস্টেপ সার্ভিসের জন্য সরাসরি কল করুন +91 6291674186 নম্বরে। পরিদর্শন ফি মাত্র ₹২৯৯।'
+      }
+    ]
+  },
+
+  'lg': {
+    slug: 'lg',
+    name: 'LG',
+    headlineEn: 'LG Dual Inverter AC, Refrigerator, Washing Machine & TV Repair Service in West Bengal',
+    headlineBn: 'পশ্চিমবঙ্গে এলজি ডুয়াল ইনভার্টার এসি, ফ্রিজ, ওয়াশিং মেশিন ও টিভি সার্ভিস সাপোর্ট',
+    subheadlineEn: 'Express 90-min doorstep service for LG Smart Inverter AC, Door-in-Door Refrigerator, AI DD Washers & OLED/NanoCell TV. Flat ₹299 visit fee.',
+    subheadlineBn: 'এলজি ডুয়াল ইনভার্টার এসি, স্মার্ট ফ্রিজ, এআই ওয়াশিং মেশিন ও এলইডি টিভির দক্ষ ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ পরিদর্শনে দ্রুত সার্ভিস।',
+    coverageDescEn: 'LG appliances lead in inverter motor and compressor reliability. We resolve LG Dual Inverter AC CH05/CH10 error codes, washing machine OE/IE/UE errors, Linear Inverter fridge cooling issues, and LED TV backlight faults.',
+    coverageDescBn: 'এলজি ডুয়াল ইনভার্টার এসির CH05/CH10 এরর কোড, ওয়াশিং মেশিনের OE/IE/UE ড্রেন ও স্পিন ত্রুটি, লিনিয়ার ইনভার্টার ফ্রিজের গ্যাস লিকেজ এবং এলইডি টিভির ব্যাকলাইট সমস্যায় আমাদের বিশেষ দক্ষতা রয়েছে।',
+    errorCodes: [
+      {
+        code: 'CH05 / CH10 Error Code (AC)',
+        issueEn: 'Communication breakdown between indoor and outdoor unit (CH05) or fan motor lock (CH10)',
+        issueBn: 'ইউনিটদ্বয়ের মধ্যে যোগাযোগ ত্রুটি (CH05) অথবা ফ্যান মোটর জ্যাম (CH10)',
+        solutionEn: 'Check 230V communication signal continuity, test outdoor inverter PCB driver, and replace faulty BLDC motor.',
+        solutionBn: 'কমিউনিকেশন ওয়্যার টেস্ট, আউটডোর ইনভার্টার পিসিবি চেক এবং বিএলডিসি ফ্যান মোটর মেরামত।'
+      },
+      {
+        code: 'OE / IE / dE Error Code (Washer)',
+        issueEn: 'OE (water drain failure), IE (water inlet failure), or dE (door lock latch failure)',
+        issueBn: 'OE (জল ড্রেন না হওয়া), IE (জল না ঢোকা), বা dE (দরজা লক না হওয়া)',
+        solutionEn: 'Unclog drain pump coin trap, inspect inlet water valve solenoid, and replace door switch.',
+        solutionBn: 'ড্রেন ফিল্টার পরিষ্কার, ওয়াটার ইনলেট ভালভ পরিবর্তন এবং ডোর লক সুইচ মেরামত।'
+      },
+      {
+        code: 'UE Error Code (Washer Spin)',
+        issueEn: 'Unbalanced load error during spin cycle, washing machine violently shaking and stopping',
+        issueBn: 'স্পিনের সময় ভারসাম্যহীন লোড (UE), মেশিন প্রচণ্ড কেঁপে থেমে যাওয়া',
+        solutionEn: 'Inspect tub suspension dampers/springs, balance load, and test hall sensor.',
+        solutionBn: 'ড্রামের সাসপেনশন ড্যাম্পার স্প্রিং পরীক্ষা এবং হল সেন্সর চেক।'
+      }
+    ],
+    searchedKeywords: [
+      'lg service centre',
+      'lg service centre near me',
+      'lg service centre kolkata',
+      'lg service centre kolkata phone number',
+      'lg customer care number',
+      'lg customer care',
+      'lg customer care number 24x7',
+      'lg customer care toll free number india',
+      'lg customer care whatsapp number',
+      'lg ac repair near me',
+      'lg ac repair kolkata',
+      'lg ac service request online',
+      'lg dual inverter ac not cooling',
+      'lg ac ch05 error code',
+      'lg ac ch10 error code',
+      'lg ac ch21 error code',
+      'lg ac remote not working',
+      'lg fridge repair near me',
+      'lg refrigerator customer care number',
+      'lg double door fridge cooling problem',
+      'lg linear inverter fridge compressor repair',
+      'lg washing machine customer care number',
+      'lg washing machine repair near me',
+      'lg washing machine service kolkata',
+      'lg top load washing machine OE error',
+      'lg top load washing machine IE error',
+      'lg top load washing machine dE error',
+      'lg front load washing machine repair',
+      'lg front load washing machine UE error',
+      'lg microwave oven repair near me',
+      'lg microwave oven service centre kolkata',
+      'lg led tv screen repair kolkata',
+      'lg smart tv horizontal lines on screen'
+    ],
+    faqs: [
+      {
+        qEn: 'What does CH05 error mean in LG Dual Inverter AC?',
+        qBn: 'এলজি ডুয়াল ইনভার্টার এসিতে CH05 এরর কোডের অর্থ কী?',
+        aEn: 'CH05 indicates a communication fault between indoor and outdoor units due to wiring damage or PCB failure. Our technicians diagnose and resolve this on-site. Call +91 6291674186.',
+        aBn: 'CH05 হলো ইনডোর ও আউটডোরের মধ্যে সংকেত আদান-প্রদান বন্ধ হওয়া। আমাদের টেকনিশিয়ান স্পটেই তার ও পিসিবি চেক করে ঠিক করে দেন।'
+      },
+      {
+        qEn: 'How to clear OE or IE error on LG washing machine?',
+        qBn: 'এলজি ওয়াশিং মেশিনে OE বা IE এরর কীভাবে ঠিক করবেন?',
+        aEn: 'OE means drain blockage while IE means water is not filling. Our technician cleans the blocked filter or replaces the faulty pump/valve at your home.',
+        aBn: 'OE ড্রেন পাইপ বা ফিল্টারে ময়লা জমার লক্ষণ এবং IE জল না ঢোকার সংকেত। আমাদের টেকনিশিয়ান স্পটেই পরিষ্কার বা পার্টস বদলে দেন।'
+      },
+      {
+        qEn: 'How can I book LG appliance repair in Kolkata?',
+        qBn: 'কলকাতায় এলজি অ্যাপ্লায়েন্স মেরামতের জন্য কীভাবে বুক করবেন?',
+        aEn: 'Dial +91 6291674186 or WhatsApp us for instant doorstep dispatch with a 30-day warranty.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 অথবা হোয়াটসঅ্যাপে মেসেজ পাঠান।'
+      }
+    ]
+  },
+
+  'carrier': {
+    slug: 'carrier',
+    name: 'Carrier',
+    headlineEn: 'Carrier AC Repair & Service Centre Support in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় ক্যারিয়ার এসি মেরামত ও ডোরস্টেপ সার্ভিস সেন্টার সাপোর্ট',
+    subheadlineEn: 'Professional repair for Carrier Inverter, Split, Window & Cassette AC units. 90-min doorstep arrival across Kolkata with flat ₹299 inspection fee.',
+    subheadlineBn: 'ক্যারিয়ার ইনভার্টার, স্প্লিট, উইন্ডো ও ক্যাসেট এসির সার্টিফাইড ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    coverageDescEn: 'Carrier is an iconic global air conditioning pioneer. We specialize in Carrier inverter AC E1/E4 error code diagnostics, compressor protection tripping, copper coil leak repairs, and precise R32/R410A gas recharging.',
+    coverageDescBn: 'ক্যারিয়ার বিশ্বজুড়ে এয়ার কন্ডিশনারের পথিকৃৎ। ক্যারিয়ার ইনভার্টার এসির E1/E4 এরর কোড, কম্প্রেসার ট্রিপিং, কপার কয়েল লিকেজ মেরামত এবং নিখুঁত গ্যাস রিফিলে আমাদের টেকনিশিয়ানরা বিশেষভাবে প্রশিক্ষিত।',
+    errorCodes: [
+      {
+        code: 'E1 / E4 Error Code',
+        issueEn: 'Room temperature sensor malfunction (E1) or outdoor compressor high-pressure protection (E4)',
+        issueBn: 'রুম টেম্পারেচার সেন্সর ফল্ট (E1) অথবা আউটডোর কম্প্রেসারে হাই-প্রেশার প্রোটেকশন (E4)',
+        solutionEn: 'Test sensor resistance, clean clogged condenser coil, and balance refrigerant charge.',
+        solutionBn: 'সেন্সর রেজিস্ট্যান্স পরিমাপ, আউটডোর কয়েল জেট ওয়াশ এবং সঠিক গ্যাসের চাপ নিশ্চিতকরণ।'
+      },
+      {
+        code: 'Fan Running But Not Cooling',
+        issueEn: 'Blower pushes ambient room air without cooling, outdoor compressor does not start',
+        issueBn: 'ইনডোর ফ্যান চলছে কিন্তু সাধারণ বাতাস বের হচ্ছে, কম্প্রেসার অন হচ্ছে না',
+        solutionEn: 'Test dual-run capacitor, start relay, and check for refrigerant gas leakage.',
+        solutionBn: 'রান ক্যাপাসিটর টেস্ট, স্টার্ট রিলে পরীক্ষা এবং গ্যাসের চাপ চেক করা।'
+      }
+    ],
+    searchedKeywords: [
+      'carrier service centre',
+      'carrier service centre number',
+      'carrier service centre near me',
+      'carrier service centre kolkata',
+      'carrier service centre kolkata contact number',
+      'carrier customer care number',
+      'carrier customer care',
+      'carrier customer care number 24x7',
+      'carrier customer care toll free number india',
+      'carrier ac repair near me',
+      'carrier ac repair',
+      'carrier ac repair service',
+      'carrier ac repair complaint number',
+      'carrier ac service kolkata',
+      'carrier ac service near me',
+      'carrier ac service request online',
+      'carrier ac installation charges',
+      'carrier ac not cooling',
+      'carrier ac not cooling but fan is running',
+      'carrier inverter ac e1 error code',
+      'carrier inverter ac e4 error code',
+      'carrier ac remote setting for cooling',
+      'carrier ac gas charging charges kolkata',
+      'carrier cassette ac service kolkata'
+    ],
+    faqs: [
+      {
+        qEn: 'Why is my Carrier AC not cooling though the fan is working?',
+        qBn: 'ক্যারিয়ার এসির ফ্যান চলছে কিন্তু ঠান্ডা হচ্ছে না কেন?',
+        aEn: 'Usually caused by a weak compressor capacitor or gas leakage. Our technician tests this on-site with a flat ₹299 inspection fee. Call +91 6291674186.',
+        aBn: 'ক্যাপাসিটর দুর্বল হলে বা গ্যাস লিকেজ হলে এমন হয়। আমাদের টেকনিশিয়ান মাত্র ₹২৯৯ ফিতে স্পটেই টেস্ট করে দেন।'
+      },
+      {
+        qEn: 'What does E1 or E4 error mean on Carrier AC?',
+        qBn: 'ক্যারিয়ার এসিতে E1 বা E4 এরর কোডের মানে কী?',
+        aEn: 'E1 is a temperature sensor fault while E4 indicates high pressure or outdoor unit overheating. We clean the condenser and replace faulty sensors on-site.',
+        aBn: 'E1 সেন্সরের ত্রুটি এবং E4 আউটডোর ইউনিট অতিরিক্ত গরম হওয়ার লক্ষণ। আমরা স্পটেই সমাধান করে দিই।'
+      },
+      {
+        qEn: 'How to book Carrier AC service in Kolkata?',
+        qBn: 'কলকাতায় ক্যারিয়ার এসি সার্ভিস কীভাবে বুক করবেন?',
+        aEn: 'Call +91 6291674186 or WhatsApp us for express 90-minute doorstep service.',
+        aBn: 'সরাসরি +91 6291674186 নম্বরে কল করুন বা হোয়াটসঅ্যাপ করুন।'
+      }
+    ]
+  },
+
+  'godrej': {
+    slug: 'godrej',
+    name: 'Godrej',
+    headlineEn: 'Godrej Refrigerator, AC & Washing Machine Repair Service in West Bengal',
+    headlineBn: 'পশ্চিমবঙ্গে গোদরেজ ফ্রিজ, এসি ও ওয়াশিং মেশিন মেরামত সার্ভিস সাপোর্ট',
+    subheadlineEn: 'Trusted doorstep repairs for Godrej Edge Direct Cool, Eon Frost-Free Fridges, Inverter AC & Eon Washers. 90-min arrival with flat ₹299 visit fee.',
+    subheadlineBn: 'গোদরেজ এজ ও ইয়ন রেফ্রিজারেটর, ইনভার্টার এসি ও ওয়াশিং মেশিনের বিশ্বস্ত ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    coverageDescEn: 'Godrej appliances are known for robust Indian cooling performance. We provide expert repairs for Godrej double door fridge cooling loss, bimetal defrost failures, inverter AC performance issues, and washing machine drain faults.',
+    coverageDescBn: 'গোদরেজ ভারতীয় আবহাওয়ার জন্য উপযোগী নির্ভরযোগ্য ব্র্যান্ড। গোদরেজ ডাবল ডোর ফ্রিজের কুলিং কমে যাওয়া, ডিফ্রস্ট সেন্সর ফল্ট, এসির গ্যাস রিফিল এবং ওয়াশিং মেশিনের ড্রেন সমস্যায় আমরা অভিজ্ঞ সেবা দিই।',
+    errorCodes: [
+      {
+        code: 'Godrej Fridge Lower Section Not Cooling',
+        issueEn: 'Freezer compartment has thick ice but lower vegetable basket is warm',
+        issueBn: 'ডিপে অতিরিক্ত বরফ কিন্তু নিচের সবজির চেম্বার গরম',
+        solutionEn: 'Replace bimetal defrost thermostat, inspect defrost timer, and defrost choked air duct.',
+        solutionBn: 'ডিফ্রস্ট থার্মোস্ট্যাট সেন্সর পরিবর্তন এবং জমে থাকা বরফের পথ পরিষ্কার।'
+      },
+      {
+        code: 'Inverter AC Low Cooling / High Amps',
+        issueEn: 'AC trips or runs continuously without reaching set temperature',
+        issueBn: 'এসি দীর্ঘক্ষণ চললেও ঘর ঠান্ডা হয় না বা বারবার ট্রিপ করে',
+        solutionEn: 'Clean choked condenser coil with chemical jet pump and inspect fan motor capacitor.',
+        solutionBn: 'কেমিক্যাল জেট ওয়াশ দিয়ে আউটডোর কয়েল পরিষ্কার এবং ফ্যান ক্যাপাসিটর চেক।'
+      }
+    ],
+    searchedKeywords: [
+      'godrej service centre',
+      'godrej service centre near me',
+      'godrej service centre kolkata',
+      'godrej service centre kolkata phone number',
+      'godrej customer care number',
+      'godrej customer care',
+      'godrej customer care number 24x7',
+      'godrej customer care toll free number',
+      'godrej smart care service centre kolkata',
+      'godrej fridge repair near me',
+      'godrej fridge repair kolkata',
+      'godrej refrigerator customer care number',
+      'godrej double door fridge not cooling',
+      'godrej single door fridge cooling loss',
+      'godrej ac repair near me',
+      'godrej ac repair kolkata',
+      'godrej ac service request',
+      'godrej inverter ac not cooling properly',
+      'godrej ac error code list',
+      'godrej washing machine customer care number',
+      'godrej washing machine repair near me',
+      'godrej top load washing machine repair',
+      'godrej washing machine not draining water'
+    ],
+    faqs: [
+      {
+        qEn: 'Why is the bottom section of my Godrej fridge not cooling?',
+        qBn: 'গোদরেজ ফ্রিজের নিচের চেম্বার ঠান্ডা হচ্ছে না কেন?',
+        aEn: 'A faulty defrost thermostat allows ice to choke the duct leading to the lower section. Our technician replaces the bimetal sensor at your home. Call +91 6291674186.',
+        aBn: 'ডিফ্রস্ট সেন্সর খারাপ হলে বরফ জমে বাতাস চলাচলের পথ বন্ধ হয়ে যায়। আমাদের টেকনিশিয়ান স্পটেই সেন্সর বদলে দেন।'
+      },
+      {
+        qEn: 'What is the Godrej refrigerator repair helpline in Kolkata?',
+        qBn: 'কলকাতায় গোদরেজ ফ্রিজ মেরামতের ফোন নম্বর কোনটি?',
+        aEn: 'Dial +91 6291674186 or WhatsApp us for same-day doorstep service with a flat ₹299 inspection fee.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে। পরিদর্শন ফি মাত্র ₹২৯৯।'
+      }
+    ]
+  },
+
+  'haier': {
+    slug: 'haier',
+    name: 'Haier',
+    headlineEn: 'Haier AC, Refrigerator & Washing Machine Service Centre Support in Kolkata',
+    headlineBn: 'কলকাতায় হায়ার এসি, ফ্রিজ ও ওয়াশিং মেশিন সার্ভিস সেন্টার সাপোর্ট',
+    subheadlineEn: 'Fast doorstep repair for Haier Triple Inverter AC, Bottom Mounted Refrigerator, Deep Freezers & Washers. Express 90-min visit with ₹299 diagnosis fee.',
+    subheadlineBn: 'হায়ার ট্রিপল ইনভার্টার এসি, বটম মাউন্টেড ফ্রিজ ও ওয়াশিং মেশিনের দ্রুত ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    coverageDescEn: 'Haier appliances feature innovative designs like bottom-mounted fridges and self-clean ACs. We provide certified repairs for Haier AC E7 inverter errors, refrigerator defrost failures, and washing machine E2 drain errors.',
+    coverageDescBn: 'হায়ার ইনভার্টার এসির E7 এরর কোড, সেলফ-ক্লিন ফিচার ফল্ট, ফ্রিজের কুলিং লস এবং ওয়াশিং মেশিনের ড্রেন সমস্যায় আমাদের প্রকৌশলীরা বিশেষভাবে প্রশিক্ষিত।',
+    errorCodes: [
+      {
+        code: 'E7 Inverter Error Code (AC)',
+        issueEn: 'Communication fault between indoor and outdoor control boards',
+        issueBn: 'ইনডোর ও আউটডোর কন্ট্রোল বোর্ডের মধ্যে সিগন্যাল সংযোগ বিচ্ছিন্ন',
+        solutionEn: 'Check DC communication line, inspect IPM driver module on outdoor PCB, and replace faulty circuitry.',
+        solutionBn: 'কমিউনিকেশন লাইন চেক, আউটডোর আইপিএম মডিউল টেস্ট এবং সার্কিট মেরামত।'
+      },
+      {
+        code: 'Top Load Washer E2 Drain Error',
+        issueEn: 'Water not draining out of the tub within specified time limit',
+        issueBn: 'নির্ধারিত সময়ের মধ্যে ড্রাম থেকে জল নিষ্কাশন না হওয়া',
+        solutionEn: 'Clear lint and coin obstruction from drain valve and test drain motor puller solenoid.',
+        solutionBn: 'ড্রেন ভালভে আটকে থাকা ময়লা পরিষ্কার এবং ড্রেন মোটর পরীক্ষা।'
+      }
+    ],
+    searchedKeywords: [
+      'haier service centre',
+      'haier service centre near me',
+      'haier service centre kolkata',
+      'haier service centre kolkata contact number',
+      'haier customer care number',
+      'haier customer care',
+      'haier customer care number 24x7',
+      'haier customer care toll free number india',
+      'haier ac repair near me',
+      'haier ac repair kolkata',
+      'haier ac service near me',
+      'haier ac not cooling',
+      'haier inverter ac e7 error code',
+      'haier ac gas filling charges',
+      'haier fridge repair near me',
+      'haier refrigerator customer care number',
+      'haier double door fridge not cooling bottom',
+      'haier deep freezer repair kolkata',
+      'haier washing machine customer care number',
+      'haier washing machine repair near me',
+      'haier top load washing machine e2 error',
+      'haier front load washing machine repair'
+    ],
+    faqs: [
+      {
+        qEn: 'What does E7 error mean on Haier inverter AC?',
+        qBn: 'হায়ার ইনভার্টার এসিতে E7 এরর কোডের মানে কী?',
+        aEn: 'E7 indicates communication breakdown between the indoor and outdoor units. Our technician tests and fixes the PCB circuitry on-site. Call +91 6291674186.',
+        aBn: 'E7 হলো ইনডোর ও আউটডোর পিসিবির যোগাযোগ বিচ্ছিন্ন হওয়া। আমাদের প্রকৌশলী স্পটেই টেস্ট করে সারিয়ে দেন।'
+      },
+      {
+        qEn: 'How to contact Haier customer repair support in Kolkata?',
+        qBn: 'কলকাতায় হায়ার কাস্টমার সাপোর্টের ফোন নম্বর কোনটি?',
+        aEn: 'Call +91 6291674186 or WhatsApp for express 90-minute doorstep service with 30-day warranty.',
+        aBn: 'সরাসরি ডায়াল করুন +91 6291674186 অথবা হোয়াটসঅ্যাপে বুক করুন।'
+      }
+    ]
+  },
+
+  'panasonic': {
+    slug: 'panasonic',
+    name: 'Panasonic',
+    headlineEn: 'Panasonic AC, Washing Machine & Refrigerator Repair in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় প্যানাসনিক এসি, ওয়াশিং মেশিন ও ফ্রিজ মেরামত সাপোর্ট',
+    subheadlineEn: 'Certified doorstep diagnostics for Panasonic Miraie Inverter AC, StainMaster Washers & Econavi Fridges. 90-min arrival with flat ₹299 inspection fee.',
+    subheadlineBn: 'প্যানাসনিক মিরাই ইনভার্টার এসি, ওয়াশিং মেশিন ও ইকোন্যাভি ফ্রিজের বিশেষজ্ঞ ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সার্ভিস।',
+    coverageDescEn: 'Panasonic appliances feature Japanese precision and smart IoT connectivity. We resolve Panasonic H11 communication errors, timer LED blinking, washing machine U11/U12 errors, and Econavi inverter fridge diagnostics.',
+    coverageDescBn: 'প্যানাসনিক ইনভার্টার এসির H11 এরর কোড, টাইমার লাইট ব্লিংকিং, ওয়াশিং মেশিনের U11/U12 এরর এবং ফ্রিজের ইনভার্টার পিসিবি মেরামতে আমরা দক্ষ টেকনিশিয়ান প্রদান করি।',
+    errorCodes: [
+      {
+        code: 'H11 Communication Error (AC)',
+        issueEn: 'Indoor unit and outdoor unit failed to synchronize communication data',
+        issueBn: 'ইনডোর ও আউটডোর ইউনিটের মধ্যে ডাটা কমিউনিকেশন ব্যর্থতা',
+        solutionEn: 'Inspect connecting signal cable, check terminal block voltage, and service outdoor mainboard.',
+        solutionBn: 'সিগন্যাল কেবল পরীক্ষা, টার্মিনাল ভোল্টেজ চেক এবং আউটডোর মাদারবোর্ড মেরামত।'
+      },
+      {
+        code: 'Timer LED Blinking Continuously',
+        issueEn: 'Compressor stops cooling and timer lamp blinks in sequence',
+        issueBn: 'কম্প্রেসার বন্ধ হয়ে যাওয়া এবং টাইমার লাইট একনাগাড়ে ব্লিংক করা',
+        solutionEn: 'Retrieve fault code using remote check button, inspect pipe thermistor, and reset microcontroller.',
+        solutionBn: 'রিমোটের চেক বাটন দিয়ে এরর কোড বের করা এবং পাইপ থার্মিস্টর সেন্সর পরিবর্তন।'
+      }
+    ],
+    searchedKeywords: [
+      'panasonic service centre',
+      'panasonic service centre near me',
+      'panasonic service centre kolkata',
+      'panasonic service centre kolkata phone number',
+      'panasonic customer care number',
+      'panasonic customer care',
+      'panasonic customer care number 24x7',
+      'panasonic ac repair near me',
+      'panasonic ac repair kolkata',
+      'panasonic ac service request',
+      'panasonic ac not cooling',
+      'panasonic inverter ac h11 error code',
+      'panasonic ac timer blinking',
+      'panasonic fridge repair near me',
+      'panasonic washing machine customer care number',
+      'panasonic washing machine repair near me',
+      'panasonic top load washing machine u11 error',
+      'panasonic top load washing machine u12 error'
+    ],
+    faqs: [
+      {
+        qEn: 'What does H11 error code mean in Panasonic inverter AC?',
+        qBn: 'প্যানাসনিক ইনভার্টার এসিতে H11 এরর কোডের অর্থ কী?',
+        aEn: 'H11 indicates communication failure between indoor and outdoor units. Our senior technician carries diagnostic tools to fix the signal bus on-site. Call +91 6291674186.',
+        aBn: 'H11 হলো ইনডোর ও আউটডোরের সংকেত বিচ্ছিন্ন হওয়া। আমাদের সিনিয়র টেকনিশিয়ান স্পটেই টেস্ট করে সারিয়ে দেন।'
+      },
+      {
+        qEn: 'How to contact Panasonic appliance repair in Kolkata?',
+        qBn: 'কলকাতায় প্যানাসনিক অ্যাপ্লায়েন্স মেরামতের ফোন নম্বর কোনটি?',
+        aEn: 'Call +91 6291674186 or WhatsApp for same-day service with flat ₹299 visit fee.',
+        aBn: 'তাৎক্ষণিক বুকিংয়ের জন্য কল করুন +91 6291674186 নম্বরে।'
+      }
+    ]
+  },
+
+  'bosch': {
+    slug: 'bosch',
+    name: 'Bosch',
+    headlineEn: 'Bosch Washing Machine, Refrigerator & Microwave Service Support in West Bengal',
+    headlineBn: 'পশ্চিমবঙ্গে বশ ওয়াশিং মেশিন, ফ্রিজ ও মাইক্রোওয়েভ ডোরস্টেপ সার্ভিস',
+    subheadlineEn: 'Specialist repair for Bosch Serie 4, Serie 6, Serie 8 Front Load Washers, Maxx Fridges & Microwaves. Fast 90-min arrival with ₹299 diagnosis fee.',
+    subheadlineBn: 'বশ ফ্রন্ট লোড ওয়াশিং মেশিন, ফ্রিজ ও মাইক্রোওয়েভের সার্টিফাইড ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    coverageDescEn: 'Bosch is globally renowned for German engineering standards. We provide certified repairs for Bosch washing machine E18 drain pump errors, E23/E29 water inlet faults, drum bearing replacements, and refrigerator cooling loss.',
+    coverageDescBn: 'বশ বিশ্বখ্যাত জার্মান প্রযুক্তির ব্র্যান্ড। বশ ওয়াশিং মেশিনের E18 ড্রেন এরর, E23/E29 ওয়াটার ভালভ ত্রুটি, ড্রাম বেয়ারিং পরিবর্তন এবং ফ্রিজের কুলিং সমস্যায় আমরা দক্ষ টেকনিশিয়ান ও জেনুইন যন্ত্রাংশ দিই।',
+    errorCodes: [
+      {
+        code: 'E18 Error Code (Washer)',
+        issueEn: 'Washing machine not pumping out water during rinse/spin cycle',
+        issueBn: 'রিন্স বা স্পিনের সময় মেশিন থেকে জল ড্রেন না হওয়া',
+        solutionEn: 'Clean coin trap pump filter, check drain hose for blockages, and test drain pump motor.',
+        solutionBn: 'পাম্প ফিল্টারের কয়েন ট্র্যাপ পরিষ্কার, ড্রেন পাইপ চেক এবং ড্রেন মোটর পরীক্ষা।'
+      },
+      {
+        code: 'E23 / E29 Aquastop Error Code',
+        issueEn: 'Aquastop safety system activated or water inlet timeout',
+        issueBn: 'অ্যাকোয়াস্টপ সেফটি সিস্টেম সক্রিয় হওয়া বা জল না ঢোকা',
+        solutionEn: 'Inspect bottom tray float switch for water leak and test inlet solenoid valves.',
+        solutionBn: 'নিচের ট্রের ফ্লোট সুইচ পরীক্ষা এবং ইনলেট সলেনয়েড ভালভ টেস্ট।'
+      }
+    ],
+    searchedKeywords: [
+      'bosch service centre',
+      'bosch service centre near me',
+      'bosch service centre kolkata',
+      'bosch customer care number',
+      'bosch customer care number 24x7',
+      'bosch washing machine repair near me',
+      'bosch washing machine service kolkata',
+      'bosch front load washing machine repair',
+      'bosch washing machine e18 error code',
+      'bosch washing machine e29 error code',
+      'bosch washing machine e23 error code',
+      'bosch fridge repair near me',
+      'bosch dishwasher repair kolkata'
+    ],
+    faqs: [
+      {
+        qEn: 'How to fix E18 error on Bosch washing machine?',
+        qBn: 'বশ ওয়াশিং মেশিনের E18 এরর কীভাবে ঠিক করবেন?',
+        aEn: 'E18 indicates the drain filter or pump is blocked. Our technician safely opens the pump chamber, cleans debris, or replaces the pump at your doorstep. Call +91 6291674186.',
+        aBn: 'E18 হলো ড্রেন ফিল্টার বা পাম্প আটকে যাওয়ার লক্ষণ। আমাদের টেকনিশিয়ান স্পটেই ফিল্টার পরিষ্কার বা নতুন পাম্প লাগিয়ে দেন।'
+      },
+      {
+        qEn: 'Who repairs Bosch washing machines at doorstep in Kolkata?',
+        qBn: 'কলকাতায় বশ ওয়াশিং মেশিনের ডোরস্টেপ সার্ভিস কারা দেয়?',
+        aEn: 'Our certified engineers repair all Bosch front-load models across Kolkata and Howrah. Call +91 6291674186.',
+        aBn: 'আমাদের সার্টিফাইড টেকনিশিয়ানরা সমগ্র কলকাতা ও হাওড়ায় বশ ওয়াশিং মেশিনের ডোরস্টেপ সার্ভিস দেন। কল করুন: +91 6291674186।'
+      }
+    ]
+  },
+
+  'siemens': {
+    slug: 'siemens',
+    name: 'Siemens',
+    headlineEn: 'Siemens Washing Machine & Refrigerator Repair Service in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় সিমেন্স ওয়াশিং মেশিন ও ফ্রিজ ডোরস্টেপ মেরামত সাপোর্ট',
+    subheadlineEn: 'German engineering precision repair for Siemens iQ300, iQ500, iQ700 Front Load Washers & Fridges. 90-min visit with flat ₹299 inspection fee.',
+    subheadlineBn: 'সিমেন্স আইকিউ৩০০, আইকিউ৫০০ ও আইকিউ৭০০ ফ্রন্ট লোড ওয়াশিং মেশিন ও ফ্রিজের প্রিমিয়াম ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সার্ভিস।',
+    coverageDescEn: 'Siemens home appliances are built with high-precision engineering. We repair Siemens iQDrive brushless motors, E18 drain pump errors, door interlock latch failures, and frost-free refrigerator cooling issues.',
+    coverageDescBn: 'সিমেন্স প্রিমিয়াম জার্মান অ্যাপ্লায়েন্স। সিমেন্স আইকিউ-ড্রাইভ মোটর, E18 ড্রেন এরর, ডোর লক এবং ফ্রস্ট-ফ্রি ফ্রিজের কুলিং সমস্যার জন্য আমরা দক্ষ বিশেষজ্ঞ টেকনিশিয়ান পাঠাই।',
+    errorCodes: [
+      {
+        code: 'E18 Drain Timeout Error',
+        issueEn: 'Waste water cannot be pumped away during wash cycle',
+        issueBn: 'ওয়াশ সাইকেলে জল ড্রেন পাম্প দিয়ে নিষ্কাশন না হওয়া',
+        solutionEn: 'Unscrew drain filter cover, remove lint/foreign objects, and test drain pump impellers.',
+        solutionBn: 'ড্রেন ফিল্টার খুলে ময়লা পরিষ্কার এবং ড্রেন পাম্পের ইম্পেলার টেস্ট।'
+      }
+    ],
+    searchedKeywords: [
+      'siemens service centre kolkata',
+      'siemens customer care number',
+      'siemens washing machine repair near me',
+      'siemens front load washing machine e18 error',
+      'siemens refrigerator repair kolkata'
+    ],
+    faqs: [
+      {
+        qEn: 'How to contact Siemens washing machine repair in Kolkata?',
+        qBn: 'কলকাতায় সিমেন্স ওয়াশিং মেশিন মেরামতের ফোন নম্বর কোনটি?',
+        aEn: 'Call our direct helpline +91 6291674186 or WhatsApp us for instant doorstep booking across Kolkata with a 30-day warranty.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে বুক করুন।'
+      }
+    ]
+  },
+
+  'sony': {
+    slug: 'sony',
+    name: 'Sony',
+    headlineEn: 'Sony Bravia LED & 4K Smart TV Repair Service in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় সোনি ব্রাভিয়া এলইডি ও স্মার্ট টিভি ডোরস্টেপ মেরামত সাপোর্ট',
+    subheadlineEn: 'Certified doorstep technician for Sony Bravia OLED, 4K HDR, Google TV display panels, motherboards & backlights. Same-day visit with flat ₹299 inspection fee.',
+    subheadlineBn: 'সোনি ব্রাভিয়া ওলেড, ৪কে এইচডিআর ও গুগল টিভির ডিসপ্লে প্যানেল, মাদারবোর্ড ও ব্যাকলাইটের দক্ষ ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফি।',
+    coverageDescEn: 'Sony Bravia televisions provide industry-leading picture clarity. We specialize in diagnosing Sony red standby light blinking codes (6 blinks, 4 blinks), sound-with-no-picture backlight failure, and T-Con display line issues.',
+    coverageDescBn: 'সোনি ব্রাভিয়া টিভির লাল লাইট ব্লিংকিং কোড (৬ বার, ৪ বার ব্লিংক), টিভিতে শব্দ আছে কিন্তু পর্দা কালো ব্যাকলাইট সমস্যা এবং ডিসপ্লেতে লাইন পড়ার সমস্যা আমরা নিপুণভাবে সমাধান করি।',
+    errorCodes: [
+      {
+        code: 'Red Light Blinking 6 Times',
+        issueEn: 'TV turns on, Sony logo appears for 2 seconds, then screen goes dark and red LED blinks 6 times',
+        issueBn: 'টিভি অন হয়ে সোনি লোগো ২ সেকেন্ড এসে বন্ধ হয়ে যায় এবং লাল লাইট ৬ বার ব্লিংক করে',
+        solutionEn: 'Inspect backlight inverter driver board and replace burnt LED backlight strips with genuine aluminum-core LEDs.',
+        solutionBn: 'ব্যাকলাইট ইনভার্টার ড্রাইভার পরীক্ষা এবং নষ্ট এলইডি স্ট্রিপ নতুন অরিজিনাল স্ট্রিপ দিয়ে প্রতিস্থাপন।'
+      },
+      {
+        code: 'TV Has Sound But Screen Is Black',
+        issueEn: 'Audio / sound plays perfectly from channels or apps, but display is completely dark/blank',
+        issueBn: 'টিভিতে চ্যানেল বা ইউটিউবের শব্দ পরিষ্কার শোনা যাচ্ছে কিন্তু পর্দা সম্পূর্ণ কালো',
+        solutionEn: 'Flashlight test panel, test power board LED booster circuit, and replace burnt backlight array.',
+        solutionBn: 'ফ্ল্যাশলাইট টেস্ট করে প্যানেল পরীক্ষা, পাওয়ার বোর্ড বুস্টার চেক এবং ব্যাকলাইট অ্যারে পরিবর্তন।'
+      },
+      {
+        code: 'Red Light Blinking 4 / 5 Times',
+        issueEn: 'T-Con timing controller board communication fault or panel gate COF IC failure',
+        issueBn: 'টি-কন বোর্ড কমিউনিকেশন ফল্ট বা প্যানেল ড্রাইভার আইসির ত্রুটি',
+        solutionEn: 'Test T-Con board 12V supply fuse, repair shorted ceramic capacitors on panel source PCB.',
+        solutionBn: 'টি-কন বোর্ডের ১২ ভোল্ট ফিউজ পরীক্ষা এবং শর্ট হওয়া ক্যাপাসিটর সারিয়ে তোলা।'
+      }
+    ],
+    searchedKeywords: [
+      'sony service centre',
+      'sony service centre near me',
+      'sony service centre kolkata',
+      'sony service centre kolkata phone number',
+      'sony customer care number',
+      'sony customer care number 24x7',
+      'sony tv repair near me',
+      'sony tv repair kolkata',
+      'sony led tv repair doorstep kolkata',
+      'sony bravia tv screen black sound coming',
+      'sony bravia tv red light blinking 6 times',
+      'sony bravia tv red light blinking 4 times',
+      'sony smart tv display lines repair',
+      'sony led tv backlight replacement price'
+    ],
+    faqs: [
+      {
+        qEn: 'Why is my Sony Bravia TV red light blinking 6 times?',
+        qBn: 'সোনি ব্রাভিয়া টিভির লাল লাইট ৬ বার ব্লিংক করছে কেন?',
+        aEn: '6 red blinks indicates a backlight circuit failure or power supply issue. Our technician tests the inverter board and replaces the backlight strips on-site. Call +91 6291674186.',
+        aBn: '৬ বার লাল লাইট ব্লিংক করা মানে ব্যাকলাইট সার্কিট বা পাওয়ার সাপ্লাইয়ে ত্রুটি। আমাদের টেকনিশিয়ান স্পটেই টেস্ট করে সারিয়ে দেন।'
+      },
+      {
+        qEn: 'Why does my Sony TV have sound but no picture?',
+        qBn: 'সোনি টিভিতে শব্দ আসছে কিন্তু ছবি নেই কেন?',
+        aEn: 'This happens when the LED backlight array burns out while the motherboard and speakers function normally. We replace the LED backlight strips with original components and warranty. Call +91 6291674186.',
+        aBn: 'মাদারবোর্ড ভালো থাকা সত্ত্বেও ব্যাকলাইট কেটে গেলে এমন হয়। আমরা স্পটেই নতুন জেনুইন ব্যাকলাইট লাগিয়ে দিই।'
+      },
+      {
+        qEn: 'How to book Sony LED TV repair in Kolkata?',
+        qBn: 'কলকাতায় সোনি এলইডি টিভি মেরামতের জন্য কীভাবে বুক করবেন?',
+        aEn: 'Dial +91 6291674186 or WhatsApp us for doorstep inspection at flat ₹299 across Kolkata and Howrah.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 অথবা হোয়াটসঅ্যাপে বুক করুন।'
+      }
+    ]
   }
 };

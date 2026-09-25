@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getCategories, getBlogPosts } from '@/lib/db';
 import { SITE_URL } from '@/lib/seo';
+import { brandSeoCatalog } from '@/lib/brand-seo-data';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [categories, blogPosts] = await Promise.all([
@@ -118,9 +119,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   }
 
-  // Brand Landing Pages (O General, Lloyd, Blue Star, Daikin, Mitsubishi, IFB, Whirlpool, Hitachi)
+  // Brand Landing Pages (All major brands from brandSeoCatalog)
   const brandUrls: MetadataRoute.Sitemap = [];
-  const brandSlugs = ['o-general', 'lloyd', 'blue-star', 'daikin', 'mitsubishi', 'ifb', 'whirlpool', 'hitachi'];
+  const brandSlugs = Object.keys(brandSeoCatalog);
   for (const slug of brandSlugs) {
     const enUrl = `${SITE_URL}/brands/${slug}`;
     const bnUrl = `${SITE_URL}/bn/brands/${slug}`;

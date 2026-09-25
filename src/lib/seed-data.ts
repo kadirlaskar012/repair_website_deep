@@ -599,7 +599,48 @@ export const initialSearchKeywords: SearchKeywordItem[] = [
   { id: 'kw-wp-3', keyword: 'Whirlpool washing machine e1 error', keywordBn: 'ওয়ার্লপুল ওয়াশিং মেশিন E1 এরর', categoryId: 'washing-machine-repair', targetUrl: '/brands/whirlpool' },
   { id: 'kw-ht-1', keyword: 'Hitachi service centre kolkata phone number', keywordBn: 'হিটাচি সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/hitachi' },
   { id: 'kw-ht-2', keyword: 'Hitachi ac repair service near me', keywordBn: 'হিটাচি এসি মেরামত সার্ভিস', categoryId: 'ac-repair', targetUrl: '/brands/hitachi' },
-  { id: 'kw-ht-3', keyword: 'Hitachi inverter fridge repair', keywordBn: 'হিটাচি ইনভার্টার ফ্রিজ মেরামত', categoryId: 'fridge-repair', targetUrl: '/brands/hitachi' }
+  { id: 'kw-ht-3', keyword: 'Hitachi inverter fridge repair', keywordBn: 'হিটাচি ইনভার্টার ফ্রিজ মেরামত', categoryId: 'fridge-repair', targetUrl: '/brands/hitachi' },
+  // Voltas
+  { id: 'kw-vt-1', keyword: 'Voltas service centre kolkata contact number', keywordBn: 'ভোল্টাস সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/voltas' },
+  { id: 'kw-vt-2', keyword: 'Voltas customer care number 24x7', keywordBn: 'ভোল্টাস কাস্টমার কেয়ার নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/voltas' },
+  { id: 'kw-vt-3', keyword: 'Voltas ac not cooling but fan is running', keywordBn: 'ভোল্টাস এসি ফ্যান চলছে কিন্তু ঠান্ডা হচ্ছে না', categoryId: 'ac-repair', targetUrl: '/brands/voltas' },
+  { id: 'kw-vt-4', keyword: 'Voltas ac inverter e6 f1 error code', keywordBn: 'ভোল্টাস এসি ইনভার্টার এরর কোড', categoryId: 'ac-repair', targetUrl: '/brands/voltas' },
+  // Samsung
+  { id: 'kw-sm-1', keyword: 'Samsung service centre kolkata phone number', keywordBn: 'স্যামসাং সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/samsung' },
+  { id: 'kw-sm-2', keyword: 'Samsung customer care number 24x7', keywordBn: 'স্যামসাং কাস্টমার কেয়ার নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/samsung' },
+  { id: 'kw-sm-3', keyword: 'Samsung washing machine 4e 5e error', keywordBn: 'স্যামসাং ওয়াশিং মেশিন 4E 5E এরর', categoryId: 'washing-machine-repair', targetUrl: '/brands/samsung' },
+  { id: 'kw-sm-4', keyword: 'Samsung double door fridge not cooling bottom', keywordBn: 'স্যামসাং ফ্রিজের নিচের অংশ ঠান্ডা হচ্ছে না', categoryId: 'fridge-repair', targetUrl: '/brands/samsung' },
+  { id: 'kw-sm-5', keyword: 'Samsung led tv screen black sound coming', keywordBn: 'স্যামসাং টিভিতে শব্দ আছে কিন্তু পর্দা কালো', categoryId: 'led-tv-repair', targetUrl: '/brands/samsung' },
+  // LG
+  { id: 'kw-lg-1', keyword: 'LG service centre kolkata phone number', keywordBn: 'এলজি সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/lg' },
+  { id: 'kw-lg-2', keyword: 'LG customer care number 24x7', keywordBn: 'এলজি কাস্টমার কেয়ার নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/lg' },
+  { id: 'kw-lg-3', keyword: 'LG dual inverter ac ch05 ch10 error', keywordBn: 'এলজি ডুয়াল ইনভার্টার এসি CH05 এরর', categoryId: 'ac-repair', targetUrl: '/brands/lg' },
+  { id: 'kw-lg-4', keyword: 'LG washing machine OE IE dE error', keywordBn: 'এলজি ওয়াশিং মেশিন OE IE এরর', categoryId: 'washing-machine-repair', targetUrl: '/brands/lg' },
+  { id: 'kw-lg-5', keyword: 'LG linear inverter fridge cooling problem', keywordBn: 'এলজি লিনিয়ার ইনভার্টার ফ্রিজ মেরামত', categoryId: 'fridge-repair', targetUrl: '/brands/lg' },
+  // Carrier
+  { id: 'kw-cr-1', keyword: 'Carrier service centre kolkata contact number', keywordBn: 'ক্যারিয়ার সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/carrier' },
+  { id: 'kw-cr-2', keyword: 'Carrier customer care number 24x7', keywordBn: 'ক্যারিয়ার কাস্টমার কেয়ার নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/carrier' },
+  { id: 'kw-cr-3', keyword: 'Carrier ac not cooling but fan is running', keywordBn: 'ক্যারিয়ার এসি ফ্যান চলছে ঠান্ডা হচ্ছে না', categoryId: 'ac-repair', targetUrl: '/brands/carrier' },
+  { id: 'kw-cr-4', keyword: 'Carrier inverter ac e1 e4 error code', keywordBn: 'ক্যারিয়ার ইনভার্টার এসি E1 E4 এরর', categoryId: 'ac-repair', targetUrl: '/brands/carrier' },
+  // Godrej
+  { id: 'kw-gd-1', keyword: 'Godrej service centre kolkata phone number', keywordBn: 'গোদরেজ সার্ভিস সেন্টার কলকাতা', categoryId: 'fridge-repair', targetUrl: '/brands/godrej' },
+  { id: 'kw-gd-2', keyword: 'Godrej customer care number 24x7', keywordBn: 'গোদরেজ কাস্টমার কেয়ার নম্বর', categoryId: 'fridge-repair', targetUrl: '/brands/godrej' },
+  { id: 'kw-gd-3', keyword: 'Godrej double door fridge not cooling', keywordBn: 'গোদরেজ ডাবল ডোর ফ্রিজ ঠান্ডা হচ্ছে না', categoryId: 'fridge-repair', targetUrl: '/brands/godrej' },
+  // Haier
+  { id: 'kw-hr-1', keyword: 'Haier service centre kolkata contact number', keywordBn: 'হায়ার সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/haier' },
+  { id: 'kw-hr-2', keyword: 'Haier customer care number 24x7', keywordBn: 'হায়ার কাস্টমার কেয়ার নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/haier' },
+  { id: 'kw-hr-3', keyword: 'Haier inverter ac e7 error code', keywordBn: 'হায়ার ইনভার্টার এসি E7 এরর', categoryId: 'ac-repair', targetUrl: '/brands/haier' },
+  // Panasonic
+  { id: 'kw-pn-1', keyword: 'Panasonic service centre kolkata phone number', keywordBn: 'প্যানাসনিক সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/panasonic' },
+  { id: 'kw-pn-2', keyword: 'Panasonic inverter ac h11 error code', keywordBn: 'প্যানাসনিক ইনভার্টার এসি H11 এরর', categoryId: 'ac-repair', targetUrl: '/brands/panasonic' },
+  // Bosch & Siemens
+  { id: 'kw-bs-w1', keyword: 'Bosch washing machine repair service kolkata', keywordBn: 'বশ ওয়াশিং মেশিন মেরামত কলকাতা', categoryId: 'washing-machine-repair', targetUrl: '/brands/bosch' },
+  { id: 'kw-bs-w2', keyword: 'Bosch washing machine e18 e29 error code', keywordBn: 'বশ ওয়াশিং মেশিন E18 এরর', categoryId: 'washing-machine-repair', targetUrl: '/brands/bosch' },
+  { id: 'kw-sm-w1', keyword: 'Siemens washing machine service kolkata', keywordBn: 'সিমেন্স ওয়াশিং মেশিন মেরামত কলকাতা', categoryId: 'washing-machine-repair', targetUrl: '/brands/siemens' },
+  // Sony
+  { id: 'kw-sn-1', keyword: 'Sony service centre kolkata tv led repair', keywordBn: 'সোনি সার্ভিস সেন্টার কলকাতা টিভি মেরামত', categoryId: 'led-tv-repair', targetUrl: '/brands/sony' },
+  { id: 'kw-sn-2', keyword: 'Sony bravia tv red light blinking 6 times', keywordBn: 'সোনি ব্রাভিয়া টিভি লাল লাইট ৬ বার ব্লিংক', categoryId: 'led-tv-repair', targetUrl: '/brands/sony' },
+  { id: 'kw-sn-3', keyword: 'Sony tv screen black sound coming', keywordBn: 'সোনি টিভিতে শব্দ আছে ছবি নেই', categoryId: 'led-tv-repair', targetUrl: '/brands/sony' }
 ];
 
 export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[]; bn: { q: string; a: string }[] }> = {
