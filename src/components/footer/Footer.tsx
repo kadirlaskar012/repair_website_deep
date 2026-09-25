@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Phone, MessageCircle, Mail, MapPin, Clock, ShieldCheck, Wrench } from 'lucide-react';
 import { Category, LocationItem, SiteSettings, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
+import { brandSeoCatalog } from '@/lib/brand-seo-data';
 
 interface FooterProps {
   settings: SiteSettings;
@@ -196,7 +197,7 @@ export default function Footer({ settings, categories, locations, lang }: Footer
         </div>
 
         {/* Service Areas List */}
-        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '24px', marginBottom: '32px' }}>
+        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '24px', marginBottom: '24px' }}>
           <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: '#FFFFFF', marginBottom: '10px' }}>
             {t.footerServiceAreas}:
           </div>
@@ -207,6 +208,27 @@ export default function Footer({ settings, categories, locations, lang }: Footer
                   {isBn ? loc.nameBn : loc.name}
                 </a>
                 {idx < locations.length - 1 && ' • '}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Top Brands Directory (Contextual SEO Interlinking) */}
+        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '20px', marginBottom: '32px' }}>
+          <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: '#FFFFFF', marginBottom: '10px' }}>
+            {isBn ? 'জনপ্রিয় ব্র্যান্ড ডোরস্টেপ সাপোর্ট ও মেরামত:' : 'Top Brand Repair & Doorstep Service:'}
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', fontSize: '0.8125rem' }}>
+            {Object.values(brandSeoCatalog).map((b, idx, arr) => (
+              <span key={b.slug} style={{ color: '#88A39C' }}>
+                <Link
+                  href={isBn ? `/bn/brands/${b.slug}` : `/brands/${b.slug}`}
+                  style={{ color: '#B5C7C3', textDecoration: 'none' }}
+                  className="footer-link"
+                >
+                  {b.name} Service
+                </Link>
+                {idx < arr.length - 1 && ' • '}
               </span>
             ))}
           </div>

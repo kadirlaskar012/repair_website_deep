@@ -837,6 +837,112 @@ export default function BrandPageView({
         </div>
       </section>
 
+      {/* RELATED APPLIANCE SERVICES & PEER BRANDS (SEO Interlinking Network) */}
+      <section style={{ padding: '44px 0', borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-bg-base)' }}>
+        <div className="container">
+          <div style={{ maxWidth: '880px', margin: '0 auto' }}>
+            <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+              <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-text)', margin: '0 0 6px' }}>
+                {isBn ? `${brand.name} এর পাশাপাশি অন্যান্য হোম সার্ভিস ও ব্র্যান্ড নেটওয়ার্ক` : `Related Services & Other Brands We Service`}
+              </h2>
+              <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', margin: 0 }}>
+                {isBn
+                  ? 'আপনার বাড়ির অন্যান্য যন্ত্রপাতির জন্য আমাদের প্রত্যয়িত প্রকৌশলী ও ₹২৯৯ পরিদর্শন বুক করুন'
+                  : 'Fast 90-minute doorstep service across all major appliance categories and brands in West Bengal'}
+              </p>
+            </div>
+
+            {/* Flat Pill Row 1: Primary Categories */}
+            <div style={{ marginBottom: '20px' }}>
+              <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', marginBottom: '10px', textAlign: 'center', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                {isBn ? 'প্রধান সার্ভিস ক্যাটাগরি:' : 'Primary Doorstep Services:'}
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
+                {categories.map((c) => (
+                  <Link
+                    key={c.id}
+                    href={isBn ? `/bn/${c.slug}` : `/${c.slug}`}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      backgroundColor: 'var(--color-bg-card)',
+                      border: '1px solid var(--color-border)',
+                      borderRadius: '8px',
+                      padding: '8px 14px',
+                      fontSize: '0.8125rem',
+                      fontWeight: 600,
+                      color: 'var(--color-text)',
+                      textDecoration: 'none',
+                      transition: 'all 0.15s ease'
+                    }}
+                    className="hover-card"
+                  >
+                    <span>{isBn ? c.nameBn : c.name}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Flat Pill Row 2: Peer Brands */}
+            <div style={{ marginBottom: '20px' }}>
+              <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', marginBottom: '10px', textAlign: 'center', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                {isBn ? 'অন্যান্য শীর্ষ ব্র্যান্ড সাপোর্ট:' : 'Other Major Brands We Support:'}
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
+                {brands
+                  .filter((b) => b.id !== brand.id)
+                  .slice(0, 14)
+                  .map((b) => (
+                    <Link
+                      key={b.id}
+                      href={isBn ? `/bn/brands/${b.id}` : `/brands/${b.id}`}
+                      style={{
+                        backgroundColor: 'var(--color-bg-card)',
+                        border: '1px solid var(--color-border)',
+                        borderRadius: '20px',
+                        padding: '6px 14px',
+                        fontSize: '0.78125rem',
+                        fontWeight: 600,
+                        color: 'var(--color-text-muted)',
+                        textDecoration: 'none',
+                        transition: 'all 0.15s ease'
+                      }}
+                      className="hover-card"
+                    >
+                      {b.name} Service
+                    </Link>
+                  ))}
+              </div>
+            </div>
+
+            {/* Flat Pill Row 3: Service Localities */}
+            <div>
+              <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', marginBottom: '10px', textAlign: 'center', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                {isBn ? `${brand.name} ডোরস্টেপ কভারেজ অঞ্চল:` : `${brand.name} Doorstep Coverage Areas:`}
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', justifyContent: 'center' }}>
+                {locations.slice(0, 8).map((loc) => (
+                  <span
+                    key={loc.id}
+                    style={{
+                      fontSize: '0.75rem',
+                      color: 'var(--color-text-light)',
+                      backgroundColor: 'var(--color-bg-card)',
+                      border: '1px solid var(--color-border-light)',
+                      borderRadius: '6px',
+                      padding: '4px 10px'
+                    }}
+                  >
+                    📍 {isBn ? loc.nameBn : loc.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* INDEPENDENT SERVICE DISCLAIMER */}
       <section style={{ padding: '24px 0', borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-bg)' }}>
         <div className="container">

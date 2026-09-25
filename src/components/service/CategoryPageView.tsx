@@ -569,6 +569,68 @@ export default function CategoryPageView({
               </div>
             </div>
 
+            {/* Supported Brands for this Category (Interlinking Hub) */}
+            <div
+              style={{
+                backgroundColor: 'var(--color-bg-card)',
+                border: '1px solid var(--color-border-light)',
+                borderRadius: 'var(--radius-lg)',
+                padding: '24px',
+                marginBottom: '40px',
+                boxShadow: 'var(--shadow-xs)'
+              }}
+            >
+              <div style={{ marginBottom: '16px' }}>
+                <h4 style={{ fontSize: '1.0625rem', fontWeight: 800, margin: 0, color: 'var(--color-text-main)' }}>
+                  {isBn ? `${category.nameBn} এর জন্য শীর্ষ সমর্থিত ব্র্যান্ডসমূহ` : `Supported Brands for ${category.name}`}
+                </h4>
+                <p style={{ fontSize: '0.8125rem', color: 'var(--color-text-muted)', margin: '4px 0 0 0' }}>
+                  {isBn
+                    ? 'নির্দিষ্ট ব্র্যান্ডের ডায়াগনোসিস ও এরর কোড দেখতে ক্লিক করুন'
+                    : 'Click any brand to view dedicated error code diagnostics & doorstep booking'}
+                </p>
+              </div>
+
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))',
+                  gap: '10px'
+                }}
+              >
+                {(brands.filter((b) => b.categoryIds.includes(category.id)).length > 0
+                  ? brands.filter((b) => b.categoryIds.includes(category.id))
+                  : brands.slice(0, 12)
+                ).map((b) => {
+                  const targetUrl = isBn ? `/bn/brands/${b.id}` : `/brands/${b.id}`;
+                  return (
+                    <Link
+                      key={b.id}
+                      href={targetUrl}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        padding: '10px 14px',
+                        borderRadius: '8px',
+                        backgroundColor: 'var(--color-bg-base)',
+                        border: '1px solid var(--color-border)',
+                        color: 'var(--color-text-main)',
+                        fontSize: '0.8125rem',
+                        fontWeight: 600,
+                        textDecoration: 'none',
+                        textAlign: 'center',
+                        transition: 'all 0.15s ease'
+                      }}
+                      className="hover-card"
+                    >
+                      <span>{b.name}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+
             {/* 5. Service Areas / Localities Strip */}
             <div
               style={{
