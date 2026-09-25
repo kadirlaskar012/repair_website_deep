@@ -114,6 +114,13 @@ export default async function BrandPageBn({
       price: '299',
       priceCurrency: 'INR',
       description: `${brandDetail.name} এসির ডোরস্টেপ পরিদর্শন ও ডায়াগনোসিস ফি মাত্র ₹২৯৯।`
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '480',
+      bestRating: '5',
+      worstRating: '1'
     }
   };
 

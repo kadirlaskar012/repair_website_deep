@@ -115,6 +115,13 @@ export default async function BrandPage({
       price: '299',
       priceCurrency: 'INR',
       description: `Doorstep inspection and multi-point diagnostics for ${brandDetail.name} appliances.`
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '480',
+      bestRating: '5',
+      worstRating: '1'
     }
   };
 

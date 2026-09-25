@@ -1,7 +1,14 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter, Space_Grotesk, Noto_Sans_Bengali } from 'next/font/google';
 import './globals.css';
 import { SITE_URL } from '@/lib/seo';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#0f766e'
+};
 
 const inter = Inter({
   subsets: ['latin'],

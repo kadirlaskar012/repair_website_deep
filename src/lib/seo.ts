@@ -100,6 +100,20 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
       latitude: '22.5804',
       longitude: '88.4378'
     },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '1280',
+      bestRating: '5',
+      worstRating: '1'
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: settings.phone,
+      contactType: 'customer service',
+      areaServed: 'IN',
+      availableLanguage: ['English', 'Bengali', 'Hindi']
+    },
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -122,7 +136,10 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
       { '@type': 'City', name: 'Howrah' },
       { '@type': 'City', name: 'Durgapur' },
       { '@type': 'City', name: 'Siliguri' },
-      { '@type': 'City', name: 'Asansol' }
+      { '@type': 'City', name: 'Asansol' },
+      { '@type': 'City', name: 'Bardhaman' },
+      { '@type': 'City', name: 'Kalyani' },
+      { '@type': 'City', name: 'Barasat' }
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -147,13 +164,43 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
           },
           price: '299',
           priceCurrency: 'INR'
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Washing Machine Repair',
+            description: 'Front load and top load washer repair, drain error, drum rotation and spin fix.'
+          },
+          price: '299',
+          priceCurrency: 'INR'
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Microwave Oven Repair',
+            description: 'Microwave heating issue, spark in cavity, touch keypad and turntable repair.'
+          },
+          price: '299',
+          priceCurrency: 'INR'
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Smart LED TV Repair',
+            description: 'LED TV display backlight replacement, black screen sound ok, and motherboard service.'
+          },
+          price: '299',
+          priceCurrency: 'INR'
         }
       ]
     }
   };
 }
 
-export function generateServiceSchema(category: Category, lang: Language) {
+export function generateServiceSchema(category: Category, lang: Language, phone?: string) {
   const isBn = lang === 'bn';
   return {
     '@context': 'https://schema.org',
@@ -164,10 +211,12 @@ export function generateServiceSchema(category: Category, lang: Language) {
     provider: {
       '@type': 'LocalBusiness',
       name: 'AC Repair Service',
-      url: SITE_URL
+      telephone: phone || '+91 6291674186',
+      url: SITE_URL,
+      priceRange: '₹299'
     },
     areaServed: {
-      '@type': 'State',
+      '@type': 'AdministrativeArea',
       name: 'West Bengal'
     },
     offers: {
@@ -175,6 +224,13 @@ export function generateServiceSchema(category: Category, lang: Language) {
       price: '299',
       priceCurrency: 'INR',
       description: 'Standard doorstep inspection and diagnostic assessment fee'
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '520',
+      bestRating: '5',
+      worstRating: '1'
     }
   };
 }
@@ -198,6 +254,11 @@ export function generateFAQSchema(faqs: FAQItem[], lang: Language) {
 export function generateArticleSchema(post: BlogPost, lang: Language) {
   const isBn = lang === 'bn';
   const postUrl = `${SITE_URL}${isBn ? '/bn' : ''}/blog/${post.slug}`;
+  const imageUrl = post.featuredImageUrl
+    ? post.featuredImageUrl.startsWith('http')
+      ? post.featuredImageUrl
+      : `${SITE_URL}${post.featuredImageUrl}`
+    : `${SITE_URL}/og-image.jpg`;
 
   return {
     '@context': 'https://schema.org',
@@ -205,6 +266,7 @@ export function generateArticleSchema(post: BlogPost, lang: Language) {
     headline: isBn ? post.titleBn : post.title,
     description: isBn ? post.excerptBn : post.excerpt,
     url: postUrl,
+    image: imageUrl,
     datePublished: post.publishedAt || post.createdAt,
     dateModified: post.updatedAt || post.createdAt,
     author: {

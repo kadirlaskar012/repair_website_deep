@@ -75,7 +75,7 @@ export default async function BengaliCategoryPage({
     }
   ];
 
-  const serviceSchema = generateServiceSchema(category, 'bn');
+  const serviceSchema = generateServiceSchema(category, 'bn', settings.phone);
   const faqSchema = generateFAQSchema(
     rawFaqs.map((f) => ({ question: f.q, questionBn: f.q, answer: f.a, answerBn: f.a })),
     'bn'

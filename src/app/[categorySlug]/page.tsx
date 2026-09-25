@@ -75,7 +75,7 @@ export default async function CategoryPage({
     }
   ];
 
-  const serviceSchema = generateServiceSchema(category, 'en');
+  const serviceSchema = generateServiceSchema(category, 'en', settings.phone);
   const faqSchema = generateFAQSchema(
     rawFaqs.map((f) => ({ question: f.q, questionBn: f.q, answer: f.a, answerBn: f.a })),
     'en'
