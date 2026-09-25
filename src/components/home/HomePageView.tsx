@@ -12,7 +12,6 @@ import WidePromoBannerTwo from '@/components/home/WidePromoBannerTwo';
 import TrustSection from '@/components/home/TrustSection';
 import BrandsSection from '@/components/home/BrandsSection';
 import PricingSection from '@/components/home/PricingSection';
-import RepairCostCalculator from '@/components/home/RepairCostCalculator';
 import ReviewsSection from '@/components/home/ReviewsSection';
 import HomeSeoContent from '@/components/home/HomeSeoContent';
 import HomeFaqSection from '@/components/home/HomeFaqSection';
@@ -69,12 +68,6 @@ export default function HomePageView({
 
   const handleDirectBooking = () => {
     setBookingProblem('');
-    setIsBookingOpen(true);
-  };
-
-  const handleOpenBookingWithIssue = (serviceName: string) => {
-    setSelectedProblem(null);
-    setBookingProblem(serviceName);
     setIsBookingOpen(true);
   };
 
@@ -147,14 +140,7 @@ export default function HomePageView({
           lang={lang}
         />
 
-        {/* 9. Interactive Repair Cost Estimator & Rate Card (High-Intent SEO Utility) */}
-        <RepairCostCalculator
-          lang={lang}
-          onOpenBookingWithIssue={handleOpenBookingWithIssue}
-          phone={settings.phone}
-        />
-
-        {/* 10. Pricing / Diagnosis Explanation (₹299 Visit Fee) */}
+        {/* 9. Pricing / Diagnosis Explanation (₹299 Visit Fee) */}
         <PricingSection
           lang={lang}
           onOpenBooking={handleDirectBooking}
