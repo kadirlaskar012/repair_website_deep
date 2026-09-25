@@ -216,15 +216,6 @@ export default function Header({
               )}
             </button>
 
-            {/* Direct Book CTA (Tablet & Desktop >= 768px) */}
-            <button
-              onClick={onOpenBooking}
-              className="btn btn-primary btn-sm desktop-book-btn"
-            >
-              <Calendar size={15} />
-              <span>{t.bookNow}</span>
-            </button>
-
             {/* Mobile / Tablet Menu Trigger (< 1140px) */}
             <button
               onClick={() => setMobileMenuOpen(true)}

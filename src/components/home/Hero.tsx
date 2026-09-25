@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Search, MapPin, ArrowRight, Wrench, Snowflake, Refrigerator, Disc3, Radio, Tv, Flame, Sparkles, ChevronDown } from 'lucide-react';
+import { Search, MapPin, ArrowRight, Wrench, Snowflake, Refrigerator, Disc3, Radio, Tv, Flame, Sparkles, ChevronDown, Calendar } from 'lucide-react';
 import { Category, LocationItem, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
 
@@ -281,6 +281,40 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
                 <span>{isBn ? 'খুঁজুন' : 'Search'}</span>
               </button>
             </div>
+          </div>
+
+          {/* Hero Action CTA - Book Appointment Button */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '12px',
+              flexWrap: 'wrap',
+              marginTop: '20px',
+              marginBottom: '28px'
+            }}
+          >
+            <button
+              onClick={onOpenBooking}
+              type="button"
+              className="btn btn-primary"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '10px',
+                padding: '13px 30px',
+                fontSize: '0.9375rem',
+                fontWeight: 700,
+                borderRadius: 'var(--radius-full)',
+                boxShadow: '0 8px 24px -4px rgba(239, 68, 68, 0.4)',
+                cursor: 'pointer',
+                transition: 'transform 0.15s ease, box-shadow 0.15s ease'
+              }}
+            >
+              <Calendar size={18} />
+              <span>{isBn ? 'অ্যাপয়েন্টমেন্ট বুক করুন' : 'Book Appointment'}</span>
+            </button>
           </div>
 
           {/* Quick Category Icons - Responsive Grid (NO SLIDER) */}
