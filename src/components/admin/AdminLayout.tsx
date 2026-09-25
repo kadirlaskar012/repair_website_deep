@@ -114,8 +114,8 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           <Link href="/admin" className="admin-brand-link">
             <div className="admin-brand-icon" style={{ padding: 0, overflow: 'hidden' }}>
               <img
-                src="/logo-icon.png"
-                alt="AC Repair Service"
+                src="/logo-icon.svg"
+                alt="Appliance Seva"
                 width={36}
                 height={36}
                 style={{ width: '100%', height: '100%', objectFit: 'contain' }}
@@ -123,7 +123,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
             </div>
             {!collapsed && (
               <div className="admin-brand-text">
-                <div className="admin-brand-title">AC REPAIR SERVICE</div>
+                <div className="admin-brand-title">APPLIANCE SEVA</div>
                 <div className="admin-brand-subtitle">Admin Control Panel</div>
               </div>
             )}
@@ -271,15 +271,15 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
               <div className="admin-brand-link">
                 <div className="admin-brand-icon" style={{ padding: 0, overflow: 'hidden' }}>
                   <img
-                    src="/logo-icon.png"
-                    alt="AC Repair Service"
+                    src="/logo-icon.svg"
+                    alt="Appliance Seva"
                     width={36}
                     height={36}
                     style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                   />
                 </div>
                 <div className="admin-brand-text">
-                  <div className="admin-brand-title">AC REPAIR SERVICE</div>
+                  <div className="admin-brand-title">APPLIANCE SEVA</div>
                   <div className="admin-brand-subtitle">Admin Portal</div>
                 </div>
               </div>

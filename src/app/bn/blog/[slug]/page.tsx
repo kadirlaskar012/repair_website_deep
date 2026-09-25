@@ -37,7 +37,7 @@ export async function generateMetadata({
   if (!post) return {};
 
   return buildPageMetadata({
-    title: `${post.titleBn} | এসি মেরামত পরিষেবা`,
+    title: `${post.titleBn} | অ্যাপ্লায়েন্স সেবা`,
     description: post.excerptBn || post.excerpt,
     path: `/blog/${post.slug}`,
     lang: 'bn',

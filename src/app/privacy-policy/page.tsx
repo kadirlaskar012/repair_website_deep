@@ -6,8 +6,8 @@ import { buildPageMetadata } from '@/lib/seo';
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
-    title: 'Privacy Policy | AC Repair Service',
-    description: 'Privacy policy and data protection standards for AC Repair Service operations across West Bengal.',
+    title: 'Privacy Policy | Appliance Seva',
+    description: 'Privacy policy and data protection standards for Appliance Seva operations across West Bengal.',
     path: '/privacy-policy',
     lang: 'en'
   });

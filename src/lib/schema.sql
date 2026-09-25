@@ -1,4 +1,4 @@
--- Hostinger MySQL Schema for AC Repair Service
+-- Hostinger MySQL Schema for Appliance Seva
 
 CREATE TABLE IF NOT EXISTS `users` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,

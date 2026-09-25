@@ -1,55 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 68" width="340" height="68">
   <defs>
-    <linearGradient id="shieldGradFull" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F5143"/>
-      <stop offset="50%" stop-color="#146C5B"/>
-      <stop offset="100%" stop-color="#09382E"/>
+    <!-- Background Shield Gradient -->
+    <linearGradient id="logoBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="55%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#022C22"/>
     </linearGradient>
-    <linearGradient id="glowBorderFull" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#34D399" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#10B981" stop-opacity="0.3"/>
+
+    <!-- Neon Mint Glow Border -->
+    <linearGradient id="logoGlowBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0.4"/>
     </linearGradient>
-    <linearGradient id="goldGradFull" x1="0%" y1="0%" x2="100%" y2="100%">
+
+    <!-- Golden Star Accent -->
+    <linearGradient id="logoGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FDE68A"/>
       <stop offset="50%" stop-color="#F59E0B"/>
       <stop offset="100%" stop-color="#D97706"/>
     </linearGradient>
-    <linearGradient id="iceGradFull" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#BAE6FD"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
+
+    <!-- Cooling Frost Wave Gradient -->
+    <linearGradient id="logoFrostWave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A7F3D0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#67E8F9" stop-opacity="0.9"/>
     </linearGradient>
-    <filter id="subtleShadowFull" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
+
+    <filter id="logoDropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#011B15" flood-opacity="0.35"/>
     </filter>
   </defs>
 
-  <!-- Left Emblem (52x52) -->
-  <g transform="translate(6, 6)">
-    <rect x="0" y="0" width="52" height="52" rx="14" fill="url(#shieldGradFull)" stroke="url(#glowBorderFull)" stroke-width="1.6"/>
-    <path d="M 8 30 C 14 18, 24 16, 38 18" fill="none" stroke="url(#iceGradFull)" stroke-width="2.6" stroke-linecap="round" opacity="0.6"/>
-    <path d="M 12 36 C 18 28, 26 24, 40 25" fill="none" stroke="url(#iceGradFull)" stroke-width="1.8" stroke-linecap="round" opacity="0.4"/>
-    
-    <!-- Precision Wrench -->
-    <g transform="translate(25, 27) rotate(-45) translate(-25, -27)" filter="url(#subtleShadowFull)">
-      <path d="M 23 11 C 19 11, 16 14, 16 18 C 16 20.5, 17.2 22.8, 19 24 L 22 41 C 22.5 42, 23.8 43, 25 43 C 26.2 43, 27.5 42, 28 41 L 31 24 C 32.8 22.8, 34 20.5, 34 18 C 34 14, 31 11, 27 11 Z" fill="#FFFFFF"/>
-      <path d="M 22 10 L 25 15 L 28 10 Z" fill="url(#shieldGradFull)"/>
-      <circle cx="25" cy="18" r="2.8" fill="url(#shieldGradFull)"/>
-      <circle cx="25" cy="37" r="1.8" fill="url(#shieldGradFull)"/>
+  <!-- Left Emblem (54x54) -->
+  <g transform="translate(6, 7)">
+    <!-- Base Squircle -->
+    <rect x="0" y="0" width="54" height="54" rx="15" fill="url(#logoBgGrad)" stroke="url(#logoGlowBorder)" stroke-width="1.8"/>
+
+    <!-- Subtle Tech Breeze / Cooling Arcs -->
+    <path d="M 10 32 C 18 20, 30 18, 46 20" fill="none" stroke="url(#logoFrostWave)" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+    <path d="M 8 38 C 18 29, 28 26, 42 27" fill="none" stroke="url(#logoFrostWave)" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+
+    <!-- 'A' Monogram Framework -->
+    <g filter="url(#logoDropShadow)">
+      <path d="M 27 11 
+               L 40 40 
+               L 33.8 40 
+               L 29.8 30.5 
+               L 24.2 30.5 
+               L 20.2 40 
+               L 14 40 
+               Z 
+               M 27 20.8 
+               L 25.1 26.2 
+               L 28.9 26.2 
+               Z" 
+            fill="#FFFFFF" 
+            fill-rule="evenodd"
+            opacity="0.95"/>
+
+      <!-- Dynamic Gold Wave 'S' (Seva) -->
+      <path d="M 33 24.5
+               C 30.5 22.5, 24.5 23, 23 25.5
+               C 21.5 28, 25 30, 29.5 31.5
+               C 34 33, 35.5 35.5, 33.5 38.5
+               C 31.5 41, 25.5 41, 22 38.5"
+            fill="none"
+            stroke="url(#logoGoldGrad)"
+            stroke-width="2.8"
+            stroke-linecap="round"/>
+
+      <circle cx="27" cy="15.5" r="1.8" fill="#0D9488"/>
     </g>
 
-    <!-- Spark -->
-    <g transform="translate(40, 11) scale(0.75)">
-      <path d="M 0 -7 Q 0 0 7 0 Q 0 0 0 7 Q 0 0 -7 0 Q 0 0 0 -7 Z" fill="url(#goldGradFull)"/>
-      <circle cx="0" cy="0" r="1.2" fill="#FFFFFF"/>
+    <!-- Top-Right 5-Star Spark -->
+    <g transform="translate(42, 12) scale(0.75)" filter="url(#logoDropShadow)">
+      <path d="M 0 -8 Q 0 0 8 0 Q 0 0 0 8 Q 0 0 -8 0 Q 0 0 0 -8 Z" fill="url(#logoGoldGrad)"/>
+      <circle cx="0" cy="0" r="1.5" fill="#FFFFFF"/>
     </g>
   </g>
 
-  <!-- Typography: AC REPAIR SERVICE -->
-  <text x="70" y="32" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" letter-spacing="-0.02em" fill="#0F2620">AC REPAIR <tspan fill="#146C5B">SERVICE</tspan></text>
+  <!-- Brand Typography -->
+  <!-- Main Title: APPLIANCE SEVA -->
+  <text x="72" y="34" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.025em">
+    <tspan fill="#064E3B">APPLIANCE</tspan>
+    <tspan fill="#0D9488"> SEVA</tspan>
+  </text>
 
-  <!-- Verified Trust Badge Pill & SEO Tagline -->
-  <rect x="70" y="39" width="16" height="16" rx="8" fill="#10B981" fill-opacity="0.15"/>
-  <path d="M 74 47 L 77 50 L 82 44" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-  
-  <text x="91" y="51" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.04em" fill="#4B635D">DOORSTEP CARE <tspan fill="#E8A33D">•</tspan> WEST BENGAL</text>
+  <!-- Golden 4-point spark next to SEVA -->
+  <g transform="translate(262, 23) scale(0.6)">
+    <path d="M 0 -8 Q 0 0 8 0 Q 0 0 0 8 Q 0 0 -8 0 Q 0 0 0 -8 Z" fill="url(#logoGoldGrad)"/>
+  </g>
+
+  <!-- Tagline Pill & Verified Badge -->
+  <g transform="translate(72, 42)">
+    <!-- Verified Green Check Circle -->
+    <circle cx="7" cy="8" r="7" fill="#10B981" fill-opacity="0.16"/>
+    <path d="M 4 8 L 6.5 10.5 L 10.5 5.5" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Doorstep Repair Sub-Tagline -->
+    <text x="20" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="0.05em" fill="#3D5A53">
+      DOORSTEP REPAIR <tspan fill="#F59E0B">•</tspan> WEST BENGAL
+    </text>
+  </g>
 </svg>

@@ -2,7 +2,7 @@ import { Language } from './types';
 
 export const i18n = {
   en: {
-    siteTitle: 'AC Repair Service | Doorstep Appliance Repair in West Bengal',
+    siteTitle: 'Appliance Seva | Doorstep Appliance Repair in West Bengal',
     siteTagline: 'Professional multi-brand appliance repair & diagnosis at just ₹299',
     home: 'Home',
     services: 'Services',
@@ -32,7 +32,7 @@ export const i18n = {
     allBrands: 'All Supported Brands',
     commonProblems: 'Common Problems & Symptoms',
     clickToDiagnose: 'Click any problem to view causes and book technician',
-    trustHeading: 'Why West Bengal Trusts AC Repair Service',
+    trustHeading: 'Why West Bengal Trusts Appliance Seva',
     trustSubtitle: 'Committed to honesty, technical excellence, and transparent customer care',
     brandsHeading: 'Multi-Brand Expertise',
     brandsSubtitle: 'Certified diagnosis and genuine spare parts for all leading appliance brands',
@@ -57,7 +57,7 @@ export const i18n = {
     bookOnline: 'Book Online Form',
     faqsHeading: 'Frequently Asked Questions',
     faqsSubtitle: 'Everything you need to know about our doorstep repair process',
-    footerAbout: 'AC Repair Service is West Bengal’s trusted doorstep appliance repair specialist providing prompt diagnosis and repairs for ACs, Refrigerators, Washing Machines, Microwaves, and LED TVs.',
+    footerAbout: 'Appliance Seva is West Bengal’s trusted doorstep appliance repair specialist providing prompt diagnosis and repairs for ACs, Refrigerators, Washing Machines, Microwaves, and LED TVs.',
     footerQuickLinks: 'Quick Links',
     footerServices: 'Our Services',
     footerServiceAreas: 'Service Areas in West Bengal',
@@ -100,7 +100,7 @@ export const i18n = {
     modalClose: 'Close'
   },
   bn: {
-    siteTitle: 'এসি মেরামত পরিষেবা | পশ্চিমবঙ্গে আপনার দরজায় অ্যাপ্লায়েন্স সার্ভিস',
+    siteTitle: 'অ্যাপ্লায়েন্স সেবা | পশ্চিমবঙ্গে আপনার দরজায় অ্যাপ্লায়েন্স সার্ভিস',
     siteTagline: 'মাত্র ₹২৯৯-এ পেশাদার মাল্টি-ব্র্যান্ড হোম অ্যাপ্লায়েন্স মেরামত ও রোগ নির্ণয়',
     home: 'হোম',
     services: 'সার্ভিসসমূহ',
@@ -130,7 +130,7 @@ export const i18n = {
     allBrands: 'সমস্ত সমর্থিত ব্র্যান্ড',
     commonProblems: 'সাধারণ সমস্যা ও লক্ষণসমূহ',
     clickToDiagnose: 'সমস্যার কারণ ও বুকিংয়ের জন্য যে কোনো সমস্যায় ক্লিক করুন',
-    trustHeading: 'কেন পশ্চিমবঙ্গ আমাদের ওপর ভরসা করে',
+    trustHeading: 'কেন পশ্চিমবঙ্গ অ্যাপ্লায়েন্স সেবাকে বিশ্বাস করে',
     trustSubtitle: 'সততা, প্রযুক্তিগত দক্ষতা এবং স্বচ্ছ গ্রাহক সেবার প্রতি আমাদের অটল অঙ্গীকার',
     brandsHeading: 'সকল শীর্ষ ব্র্যান্ডের মেরামত',
     brandsSubtitle: 'শীর্ষস্থানীয় ব্র্যান্ডের জন্য অভিজ্ঞ টেকনিশিয়ান এবং জেনুইন পার্টস',
@@ -155,7 +155,7 @@ export const i18n = {
     bookOnline: 'অনলাইন বুকিং ফর্ম',
     faqsHeading: 'সাধারণ জিজ্ঞাসাসমূহ',
     faqsSubtitle: 'আমাদের ডোরস্টেপ সেবা প্রক্রিয়া সম্পর্কে বিস্তারিত জানুন',
-    footerAbout: 'এসি মেরামত পরিষেবা হলো পশ্চিমবঙ্গ জুড়ে এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন এবং টিভির বিশ্বস্ত ডোরস্টেপ মেরামত সেবাদাতা প্রতিষ্ঠান।',
+    footerAbout: 'অ্যাপ্লায়েন্স সেবা হলো পশ্চিমবঙ্গ জুড়ে এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন এবং টিভির বিশ্বস্ত ডোরস্টেপ মেরামত সেবাদাতা প্রতিষ্ঠান।',
     footerQuickLinks: 'প্রয়োজনীয় লিংক',
     footerServices: 'আমাদের সেবাসমূহ',
     footerServiceAreas: 'পশ্চিমবঙ্গে সেবা অঞ্চলসমূহ',

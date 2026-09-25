@@ -15,8 +15,8 @@ export const revalidate = 1800; // ISR 30 mins
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
-    title: 'Appliance Repair Blog & Troubleshooting Guides | AC Repair Service',
-    description: 'Expert maintenance guides, troubleshooting tips, and appliance advice for homes across West Bengal.',
+    title: 'Appliance Repair Blog & Troubleshooting Guides | Appliance Seva',
+    description: 'Expert maintenance guides, troubleshooting tips, and appliance advice for homes across West Bengal by Appliance Seva.',
     path: '/blog',
     lang: 'en'
   });

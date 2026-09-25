@@ -15,7 +15,7 @@ export const revalidate = 1800; // ISR 30 mins
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
-    title: 'অ্যাপ্লায়েন্স মেরামত ও রক্ষণাবেক্ষণ ব্লগ | এসি মেরামত পরিষেবা',
+    title: 'অ্যাপ্লায়েন্স মেরামত ও রক্ষণাবেক্ষণ ব্লগ | অ্যাপ্লায়েন্স সেবা',
     description: 'পশ্চিমবঙ্গের আবহাওয়ায় এসি, ফ্রিজ ও হোম অ্যাপ্লায়েন্সের যত্ন এবং সমস্যা সমাধানের সম্পূর্ণ নির্দেশিকা।',
     path: '/blog',
     lang: 'bn'

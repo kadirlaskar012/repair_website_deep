@@ -6,7 +6,7 @@ import { Wrench, Lock, Mail, AlertCircle, ArrowRight } from 'lucide-react';
 
 export default function AdminLoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState('admin@acrepairservice.com');
+  const [email, setEmail] = useState('admin@applianceseva.com');
   const [password, setPassword] = useState('Admin@2026');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -70,7 +70,7 @@ export default function AdminLoginPage() {
             Admin Portal
           </h1>
           <p style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>
-            Sign in to manage AC Repair Service
+            Sign in to manage Appliance Seva
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export default function AdminLoginPage() {
                 style={{ paddingLeft: '40px' }}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@acrepairservice.com"
+                placeholder="admin@applianceseva.com"
                 required
               />
             </div>
@@ -143,7 +143,7 @@ export default function AdminLoginPage() {
         </form>
 
         <div style={{ marginTop: '24px', textAlign: 'center', fontSize: '0.8125rem', color: 'var(--color-text-muted)' }}>
-          Default Credentials: <code style={{ background: '#EEF2F0', padding: '2px 6px', borderRadius: '4px' }}>admin@acrepairservice.com</code> / <code style={{ background: '#EEF2F0', padding: '2px 6px', borderRadius: '4px' }}>Admin@2026</code>
+          Default Credentials: <code style={{ background: '#EEF2F0', padding: '2px 6px', borderRadius: '4px' }}>admin@applianceseva.com</code> / <code style={{ background: '#EEF2F0', padding: '2px 6px', borderRadius: '4px' }}>Admin@2026</code>
         </div>
       </div>
     </div>

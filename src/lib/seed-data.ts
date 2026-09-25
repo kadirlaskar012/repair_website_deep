@@ -1,11 +1,11 @@
 import { SiteSettings, Category, Problem, Brand, LocationItem, TrustItem, Review, BlogPost, SearchKeywordItem } from './types';
 
 export const initialSiteSettings: SiteSettings = {
-  businessName: 'AC Repair Service',
-  businessNameBn: 'এসি মেরামত পরিষেবা',
+  businessName: 'Appliance Seva',
+  businessNameBn: 'অ্যাপ্লায়েন্স সেবা',
   phone: '+91 6291674186',
   whatsapp: '+91 6291674186',
-  email: 'service@acrepairservice.com',
+  email: 'service@applianceseva.com',
   address: 'Salt Lake Sector V, Kolkata, West Bengal - 700091',
   addressBn: 'সল্টলেক সেক্টর ৫, কলকাতা, পশ্চিমবঙ্গ - ৭০০০৯১',
   serviceArea: 'West Bengal, India (Kolkata, Howrah, Durgapur, Siliguri, Asansol & surrounding regions)',
@@ -881,7 +881,7 @@ The run capacitor provides the continuous torque needed by the compressor motor.
 ---
 
 ### Transparent Diagnosis at ₹299
-Never pay arbitrary diagnostic charges. AC Repair Service offers complete doorstep multi-point inspection across West Bengal for a flat ₹299 visit fee. Any repair or gas recharge is quoted upfront and executed only upon your confirmation.`,
+Never pay arbitrary diagnostic charges. Appliance Seva offers complete doorstep multi-point inspection across West Bengal for a flat ₹299 visit fee. Any repair or gas recharge is quoted upfront and executed only upon your confirmation.`,
     contentBn: `## আপনার এসি কেন পর্যাপ্ত ঠান্ডা বাতাস দিচ্ছে না?
 
 পশ্চিমবঙ্গের তীব্র গরম এবং বর্ষার আর্দ্র আবহাওয়ায় এসি না চলা একটি অত্যন্ত কষ্টকর অভিজ্ঞতা। ইনডোর ফ্যান চলার পরও ঘরের তাপমাত্রা না কমার পেছনে কিছু সুনির্দিষ্ট প্রযুক্তিগত কারণ থাকে।
@@ -905,7 +905,7 @@ Never pay arbitrary diagnostic charges. AC Repair Service offers complete doorst
 আমাদের দক্ষ টেকনিশিয়ান আপনার বাড়িতে এসে সম্পূর্ণ এসি পরীক্ষা করেন মাত্র ₹২৯৯ ভিজিট ফিতে। মেরামতের খরচ আগেই জানানো হয় এবং আপনার অনুমোদনের পরেই কাজ সম্পন্ন হয়।`,
     focusKeyword: 'AC not cooling Kolkata West Bengal',
     secondaryKeywords: ['AC gas refill price Kolkata', 'split AC cooling repair', 'AC servicing West Bengal', 'air conditioner repair Salt Lake'],
-    metaTitle: 'AC Not Cooling? 5 Common Causes & Solutions in Kolkata | AC Repair Service',
+    metaTitle: 'AC Not Cooling? 5 Common Causes & Solutions in Kolkata | Appliance Seva',
     metaDesc: 'Split AC blowing warm air in West Bengal heat? Learn the top 5 causes from gas leaks to dirty coils and get certified doorstep diagnosis at just ₹299.',
     ogTitle: 'Why Your AC Is Not Cooling - Top 5 Causes Explained',
     ogDesc: 'Expert guide to diagnosing and fixing AC cooling problems in West Bengal.',
@@ -979,7 +979,7 @@ If you notice clicking noises from the back, water pooling under the crisper, or
 যদি ফ্রিজের পেছন থেকে অস্বাভাবিক শব্দ পান বা মেঝেতে জল জমতে দেখেন, তবে আর দেরি করবেন না। আমাদের প্রত্যয়িত টেকনিশিয়ান মাত্র ₹২৯৯ ডায়াগনস্টিক ফিতে আপনার বাড়িতে পৌঁছে সঠিক সমাধান করে দেবেন।`,
     focusKeyword: 'refrigerator maintenance tips West Bengal',
     secondaryKeywords: ['fridge not cooling solutions', 'fridge repair Kolkata', 'refrigerator compressor protection'],
-    metaTitle: 'Refrigerator Care Tips in Summer | AC Repair Service West Bengal',
+    metaTitle: 'Refrigerator Care Tips in Summer | Appliance Seva West Bengal',
     metaDesc: 'Protect your fridge from breaking down in hot West Bengal weather. Practical tips to save electricity, maintain compressor life, and prevent food spoilage.',
     ogTitle: 'How to Prevent Refrigerator Breakdowns in Summer',
     ogDesc: 'Expert tips on keeping your fridge in peak condition throughout humid summer months.',

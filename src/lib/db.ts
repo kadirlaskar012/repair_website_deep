@@ -47,7 +47,7 @@ const inMemory = {
   admins: [
     {
       id: 1,
-      email: process.env.ADMIN_EMAIL || 'admin@acrepairservice.com',
+      email: process.env.ADMIN_EMAIL || 'admin@applianceseva.com',
       passwordHash: bcrypt.hashSync(process.env.ADMIN_PASSWORD || 'Admin@2026', 10),
       name: 'Super Admin',
       createdAt: new Date().toISOString()

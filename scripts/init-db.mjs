@@ -47,7 +47,7 @@ async function run() {
     }
 
     // 3. Seed default admin user
-    const adminEmail = process.env.ADMIN_EMAIL || 'admin@acrepairservice.com';
+    const adminEmail = process.env.ADMIN_EMAIL || 'admin@applianceseva.com';
     const adminPass = process.env.ADMIN_PASSWORD || 'Admin@2026';
     const hash = await bcrypt.hash(adminPass, 10);
 

@@ -12,7 +12,7 @@ export async function sendBookingLeadEmail(toEmail: string, booking: Booking): P
   const port = parseInt(process.env.SMTP_PORT || '587', 10);
   const user = process.env.SMTP_USER;
   const pass = process.env.SMTP_PASS;
-  const from = process.env.SMTP_FROM || `AC Repair Service <noreply@acrepairservice.com>`;
+  const from = process.env.SMTP_FROM || `Appliance Seva <noreply@applianceseva.com>`;
 
   const emailSubject = `[NEW LEAD] ${booking.serviceName || booking.service} - ${booking.name} (${booking.bookingId})`;
 
@@ -41,7 +41,7 @@ export async function sendBookingLeadEmail(toEmail: string, booking: Booking): P
         <div class="container">
           <div class="header">
             <h1>New Service Booking Received</h1>
-            <p>A new customer booking request has been submitted on acrepairservice.com</p>
+            <p>A new customer booking request has been submitted on applianceseva.com</p>
           </div>
           <div class="content">
             <span class="badge">BOOKING ID: ${booking.bookingId}</span>
@@ -85,7 +85,7 @@ export async function sendBookingLeadEmail(toEmail: string, booking: Booking): P
             </table>
           </div>
           <div class="footer">
-            <p>Sent automatically from AC Repair Service Lead Engine &bull; West Bengal Doorstep Operations</p>
+            <p>Sent automatically from Appliance Seva Lead Engine &bull; West Bengal Doorstep Operations</p>
           </div>
         </div>
       </body>

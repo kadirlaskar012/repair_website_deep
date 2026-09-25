@@ -37,7 +37,7 @@ export async function generateMetadata({
   if (!post) return {};
 
   return buildPageMetadata({
-    title: post.metaTitle || `${post.title} | AC Repair Service`,
+    title: post.metaTitle || `${post.title} | Appliance Seva`,
     description: post.metaDesc || post.excerpt,
     path: `/blog/${post.slug}`,
     lang: 'en',

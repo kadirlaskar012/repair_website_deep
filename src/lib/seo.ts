@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Language, Category, BlogPost, FAQItem, SiteSettings } from './types';
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://acrepairservice.com';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://applianceseva.com';
 
 export function buildPageMetadata({
   title,
@@ -41,7 +41,7 @@ export function buildPageMetadata({
       title,
       description,
       url: canonicalUrl,
-      siteName: 'AC Repair Service',
+      siteName: 'Appliance Seva',
       locale: lang === 'bn' ? 'bn_IN' : 'en_IN',
       type: 'website',
       images: [
@@ -210,7 +210,7 @@ export function generateServiceSchema(category: Category, lang: Language, phone?
     description: isBn ? category.fullDescBn : category.fullDesc,
     provider: {
       '@type': 'LocalBusiness',
-      name: 'AC Repair Service',
+      name: 'Appliance Seva',
       telephone: phone || '+91 6291674186',
       url: SITE_URL,
       priceRange: '₹299'
@@ -271,11 +271,11 @@ export function generateArticleSchema(post: BlogPost, lang: Language) {
     dateModified: post.updatedAt || post.createdAt,
     author: {
       '@type': 'Person',
-      name: post.author || 'AC Repair Service Technical Team'
+      name: post.author || 'Appliance Seva Technical Team'
     },
     publisher: {
       '@type': 'Organization',
-      name: 'AC Repair Service',
+      name: 'Appliance Seva',
       logo: {
         '@type': 'ImageObject',
         url: `${SITE_URL}/logo.svg`

@@ -6,8 +6,8 @@ import { buildPageMetadata } from '@/lib/seo';
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
-    title: 'গোপনীয়তা নীতি | এসি মেরামত পরিষেবা',
-    description: 'এসি মেরামত পরিষেবা এর গোপনীয়তা নীতি ও গ্রাহক তথ্য সুরক্ষার মানদণ্ড।',
+    title: 'গোপনীয়তা নীতি | অ্যাপ্লায়েন্স সেবা',
+    description: 'অ্যাপ্লায়েন্স সেবা এর গোপনীয়তা নীতি ও গ্রাহক তথ্য সুরক্ষার মানদণ্ড।',
     path: '/privacy-policy',
     lang: 'bn'
   });

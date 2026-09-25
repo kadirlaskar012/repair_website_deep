@@ -6,8 +6,8 @@ import { buildPageMetadata } from '@/lib/seo';
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
-    title: 'Terms of Service | AC Repair Service',
-    description: 'Terms of service, ₹299 inspection fee explanation, and 30-day warranty policy for AC Repair Service.',
+    title: 'Terms of Service | Appliance Seva',
+    description: 'Terms of service, ₹299 inspection fee explanation, and 30-day warranty policy for Appliance Seva.',
     path: '/terms-of-service',
     lang: 'en'
   });

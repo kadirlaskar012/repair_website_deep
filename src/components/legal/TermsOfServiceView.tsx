@@ -62,8 +62,8 @@ export default function TermsOfServiceView({
             <div style={{ fontSize: '0.9375rem', lineHeight: 1.7, color: '#2C3A37', display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <p>
                 {isBn
-                  ? `AC Repair Service (acrepairservice.com) এর মাধ্যমে ডোরস্টেপ সার্ভিস বুক করার মাধ্যমে আপনি নিচের শর্তাবলীতে সম্মতি প্রদান করছেন:`
-                  : `By scheduling a doorstep appliance service through AC Repair Service (acrepairservice.com), you acknowledge and agree to the following terms and operational guidelines:`}
+                  ? `Appliance Seva (applianceseva.com) এর মাধ্যমে ডোরস্টেপ সার্ভিস বুক করার মাধ্যমে আপনি নিচের শর্তাবলীতে সম্মতি প্রদান করছেন:`
+                  : `By scheduling a doorstep appliance service through Appliance Seva (applianceseva.com), you acknowledge and agree to the following terms and operational guidelines:`}
               </p>
 
               <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-primary-dark)' }}>
@@ -90,7 +90,7 @@ export default function TermsOfServiceView({
               <p>
                 {isBn
                   ? `আমরা একটি স্বাধীন মাল্টি-ব্র্যান্ড ডোরস্টেপ মেরামতকারী প্রতিষ্ঠান। উল্লিখিত স্যামসাং, এলজি, ভোল্টাস ইত্যাদি ব্র্যান্ড নাম শুধুমাত্র সামঞ্জস্য ও দক্ষতার তথ্য প্রকাশের উদ্দেশ্যে ব্যবহৃত হয়েছে। সমস্ত ট্রেডমার্ক তাদের মূল স্বত্বাধিকারীর সম্পত্তি।`
-                  : `AC Repair Service operates as an independent multi-brand doorstep repair specialist across West Bengal. Brand names such as Samsung, LG, Whirlpool, Voltas, etc. are referenced strictly to indicate compatibility and technician capabilities.`}
+                  : `Appliance Seva operates as an independent multi-brand doorstep repair specialist across West Bengal. Brand names such as Samsung, LG, Whirlpool, Voltas, etc. are referenced strictly to indicate compatibility and technician capabilities.`}
               </p>
 
               <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-primary-dark)' }}>

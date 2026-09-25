@@ -62,8 +62,8 @@ export default function PrivacyPolicyView({
             <div style={{ fontSize: '0.9375rem', lineHeight: 1.7, color: '#2C3A37', display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <p>
                 {isBn
-                  ? `AC Repair Service (acrepairservice.com) এ আমরা আপনার ব্যক্তিগত গোপনীয়তাকে সর্বোচ্চ অগ্রাধিকার প্রদান করি। এই নীতিমালায় আমরা ব্যাখ্যা করেছি কীভাবে পশ্চিমবঙ্গ জুড়ে আমাদের ডোরস্টেপ অ্যাপ্লায়েন্স মেরামত পরিষেবা প্রদানের সময় আপনার তথ্য সংগ্রহ ও ব্যবহার করা হয়।`
-                  : `At AC Repair Service (acrepairservice.com), we respect and protect the privacy of our customers. This Privacy Policy details how we collect, store, and utilize your personal information when scheduling doorstep appliance repair visits across West Bengal.`}
+                  ? `Appliance Seva (applianceseva.com) এ আমরা আপনার ব্যক্তিগত গোপনীয়তাকে সর্বোচ্চ অগ্রাধিকার প্রদান করি। এই নীতিমালায় আমরা ব্যাখ্যা করেছি কীভাবে পশ্চিমবঙ্গ জুড়ে আমাদের ডোরস্টেপ অ্যাপ্লায়েন্স মেরামত পরিষেবা প্রদানের সময় আপনার তথ্য সংগ্রহ ও ব্যবহার করা হয়।`
+                  : `At Appliance Seva (applianceseva.com), we respect and protect the privacy of our customers. This Privacy Policy details how we collect, store, and utilize your personal information when scheduling doorstep appliance repair visits across West Bengal.`}
               </p>
 
               <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-primary-dark)' }}>

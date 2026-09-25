@@ -117,12 +117,12 @@ export default function Header({
         <Link
           href={isBn ? '/bn' : '/'}
           className="header-brand-logo"
-          aria-label="AC Repair Service Home"
+          aria-label="Appliance Seva Home"
         >
           <div className="header-logo-icon">
             <img
-              src="/logo-icon.png"
-              alt="AC Repair Service"
+              src="/logo-icon.svg"
+              alt="Appliance Seva"
               width={50}
               height={50}
               style={{ width: '100%', height: '100%', objectFit: 'contain' }}
@@ -130,7 +130,7 @@ export default function Header({
           </div>
           <div className="header-logo-text">
             <div className="header-logo-title">
-              <span>AC REPAIR</span> <span className="logo-accent">SERVICE</span>
+              <span>APPLIANCE</span> <span className="logo-accent">SEVA</span>
             </div>
             <div className="header-logo-sub">
               {isBn ? (
@@ -250,8 +250,8 @@ export default function Header({
               <div className="mobile-drawer-brand">
                 <div className="header-logo-icon" style={{ width: '44px', height: '44px' }}>
                   <img
-                    src="/logo-icon.png"
-                    alt="AC Repair Service"
+                    src="/logo-icon.svg"
+                    alt="Appliance Seva"
                     width={44}
                     height={44}
                     style={{ width: '100%', height: '100%', objectFit: 'contain' }}
@@ -259,7 +259,7 @@ export default function Header({
                 </div>
                 <div>
                   <div style={{ fontWeight: 800, fontSize: '1.05rem', color: 'var(--color-text-main)', lineHeight: 1.15 }}>
-                    AC REPAIR <span style={{ color: 'var(--color-primary)' }}>SERVICE</span>
+                    APPLIANCE <span style={{ color: 'var(--color-primary)' }}>SEVA</span>
                   </div>
                   <div style={{ fontSize: '0.6875rem', fontWeight: 700, color: 'var(--color-text-muted)' }}>
                     {isBn ? 'ডোরস্টেপ কেয়ার • পশ্চিমবঙ্গ' : 'Doorstep Repair • West Bengal'}

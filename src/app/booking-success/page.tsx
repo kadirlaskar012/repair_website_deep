@@ -6,7 +6,7 @@ import { buildPageMetadata } from '@/lib/seo';
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
-    title: 'Booking Confirmed | AC Repair Service',
+    title: 'Booking Confirmed | Appliance Seva',
     description: 'Your appliance repair service booking has been registered successfully.',
     path: '/booking-success',
     noIndex: true

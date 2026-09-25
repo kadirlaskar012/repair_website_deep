@@ -32,11 +32,13 @@ const notoSansBengali = Noto_Sans_Bengali({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'AC Repair Service | Doorstep AC & Appliance Repair in Kolkata & West Bengal | ₹299 Visit',
-    template: '%s | AC Repair Service'
+    default: 'Appliance Seva | Doorstep Appliance Repair in Kolkata & West Bengal | ₹299 Visit',
+    template: '%s | Appliance Seva'
   },
-  description: 'Verified doorstep AC and home appliance repair across Kolkata, Howrah, Salt Lake & West Bengal. Same-day technician visit for AC, Fridge, Washing Machine, Microwave, and LED TV. 90-day warranty & flat ₹299 diagnosis fee.',
+  description: 'Verified doorstep AC and home appliance repair across Kolkata, Howrah, Salt Lake & West Bengal by Appliance Seva. Same-day technician visit for AC, Fridge, Washing Machine, Microwave, and LED TV. 90-day warranty & flat ₹299 diagnosis fee.',
   keywords: [
+    'Appliance Seva',
+    'Appliance repair Kolkata',
     'AC repair Kolkata',
     'Doorstep appliance repair West Bengal',
     'Split AC repair service Kolkata',
@@ -50,20 +52,20 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon.png', type: 'image/png', sizes: '32x32' }
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
     ],
-    shortcut: '/favicon.ico'
+    shortcut: '/favicon.svg'
   },
   openGraph: {
-    title: 'AC Repair Service | Doorstep AC & Appliance Repair in West Bengal',
+    title: 'Appliance Seva | Doorstep AC & Appliance Repair in West Bengal',
     description: 'Same-day certified technician visit for AC, Fridge, Washing Machine, Microwave & TV. 90-day warranty, 100% genuine parts, transparent ₹299 inspection fee.',
     url: SITE_URL,
-    siteName: 'AC Repair Service',
+    siteName: 'Appliance Seva',
     locale: 'en_IN',
     type: 'website'
   }

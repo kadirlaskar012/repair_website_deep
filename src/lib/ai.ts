@@ -33,7 +33,7 @@ export async function generateBlogWithAI(input: AIGenerationPromptInput): Promis
   const provider = settings.provider || 'gemini';
 
   const systemInstructions = `
-You are an expert technical appliance repair writer and technical SEO specialist for "AC Repair Service", a professional doorstep appliance repair business operating across West Bengal, India.
+You are an expert technical appliance repair writer and technical SEO specialist for "Appliance Seva", a professional doorstep appliance repair business operating across West Bengal, India.
 Generate a comprehensive, highly informative, realistic, and SEO-optimized appliance repair blog article based on the user's prompt.
 Strict rules:
 1. Focus on West Bengal context (climate: humid summers, monsoon moisture, common power fluctuations in Kolkata, Howrah, Durgapur, Siliguri, etc.).

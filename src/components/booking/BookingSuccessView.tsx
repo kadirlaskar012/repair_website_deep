@@ -42,7 +42,7 @@ export default function BookingSuccessView({
   };
 
   const whatsappText = encodeURIComponent(
-    `Hello AC Repair Service, I have scheduled booking ID: ${bookingId}. Please confirm my technician appointment.`
+    `Hello Appliance Seva, I have scheduled booking ID: ${bookingId}. Please confirm my technician appointment.`
   );
 
   return (
