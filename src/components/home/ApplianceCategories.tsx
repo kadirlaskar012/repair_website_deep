@@ -40,7 +40,7 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
     }
   > = {
     'ac-repair': {
-      img: homepageImages.cat_ac || '/images/split_ac_unit.jpg',
+      img: homepageImages.cat_ac || '/images/unit_split_ac.jpg',
       badge: 'Split & Window AC',
       badgeBn: 'স্প্লিট ও উইন্ডো এসি',
       pills: ['Jet Pump Cleaning', 'Gas Leakage Refill', 'PCB Repair'],
@@ -49,7 +49,7 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
       accentColor: '#0284C7'
     },
     'fridge-repair': {
-      img: homepageImages.cat_fridge || '/images/samsung_fridge_unit.jpg',
+      img: homepageImages.cat_fridge || '/images/unit_refrigerator.jpg',
       badge: 'Single & Double Door',
       badgeBn: 'সিঙ্গেল ও ডাবল ডোর',
       pills: ['Cooling Coil Gas', 'Compressor Relay', 'Excess Frost Fix'],
@@ -58,7 +58,7 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
       accentColor: '#0D9488'
     },
     'washing-machine-repair': {
-      img: homepageImages.cat_washing || '/images/front_load_washer.jpg',
+      img: homepageImages.cat_washing || '/images/unit_washing_machine.jpg',
       badge: 'Front & Top Load',
       badgeBn: 'ফ্রন্ট ও টপ লোড',
       pills: ['Motor & Belt Fix', 'Drum Noise / Vibration', 'OE Drain Error'],
@@ -67,7 +67,7 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
       accentColor: '#6366F1'
     },
     'microwave-repair': {
-      img: homepageImages.cat_microwave || '/images/microwave_oven_unit.jpg',
+      img: homepageImages.cat_microwave || '/images/unit_microwave_oven.jpg',
       badge: 'Solo, Grill & Convection',
       badgeBn: 'গ্রিল ও কনভেকশন',
       pills: ['Magnetron Heating', 'Spark Inside Chamber', 'Touch Panel / Keypad'],
@@ -76,7 +76,7 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
       accentColor: '#EA580C'
     },
     'led-tv-repair': {
-      img: homepageImages.cat_led_tv || '/images/smart_led_tv_unit.jpg',
+      img: homepageImages.cat_led_tv || '/images/unit_smart_led_tv.jpg',
       badge: 'Smart LED, 4K & OLED',
       badgeBn: 'স্মার্ট ৪কে ও ওএলইডি',
       pills: ['Black Screen / Backlight', 'Motherboard Power Supply', 'Sound Only No Picture'],
@@ -183,9 +183,13 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
                   style={{
                     position: 'relative',
                     width: '100%',
-                    height: '175px',
+                    height: '185px',
                     overflow: 'hidden',
-                    backgroundColor: 'var(--color-bg-alt)'
+                    backgroundColor: '#F8FAFC',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    borderBottom: '1px solid var(--color-border-light)'
                   }}
                 >
                   <Image
@@ -194,17 +198,9 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
                     style={{
-                      objectFit: 'cover',
-                      transition: 'transform 0.4s ease'
-                    }}
-                  />
-
-                  {/* Gradient Overlay for Text Readability */}
-                  <div
-                    style={{
-                      position: 'absolute',
-                      inset: 0,
-                      background: 'linear-gradient(to top, rgba(15, 23, 42, 0.45) 0%, transparent 60%)'
+                      objectFit: 'contain',
+                      padding: '8px',
+                      transition: 'transform 0.35s ease'
                     }}
                   />
 
@@ -218,52 +214,35 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
                       color: 'var(--color-primary-dark)',
                       fontSize: '0.6875rem',
                       fontWeight: 800,
-                      padding: '4px 9px',
+                      padding: '3px 9px',
                       borderRadius: 'var(--radius-full)',
-                      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.12)',
+                      boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
                       letterSpacing: '0.02em',
-                      backdropFilter: 'blur(4px)'
+                      zIndex: 2
                     }}
                   >
-                    {isBn ? '₹২৯৯ ভিজিট' : '₹299 Visit'}
+                    {isBn ? '₹২৯৯ পরিদর্শন' : '₹299 Inspection'}
                   </span>
 
-                  {/* Top-Right: Appliance Type Pill */}
-                  <span
-                    style={{
-                      position: 'absolute',
-                      top: '10px',
-                      right: '10px',
-                      background: 'rgba(15, 23, 42, 0.85)',
-                      color: '#FFFFFF',
-                      fontSize: '0.65rem',
-                      fontWeight: 700,
-                      padding: '3px 8px',
-                      borderRadius: 'var(--radius-full)',
-                      backdropFilter: 'blur(6px)'
-                    }}
-                  >
-                    {isBn ? meta.badgeBn : meta.badge}
-                  </span>
-
-                  {/* Bottom Icon Avatar */}
+                  {/* Bottom-Right Icon Avatar */}
                   <div
                     style={{
                       position: 'absolute',
                       bottom: '10px',
-                      left: '12px',
-                      width: '34px',
-                      height: '34px',
-                      borderRadius: '10px',
+                      right: '10px',
+                      width: '32px',
+                      height: '32px',
+                      borderRadius: '8px',
                       backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                      boxShadow: '0 4px 10px rgba(0, 0, 0, 0.15)',
+                      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.12)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: meta.accentColor
+                      color: meta.accentColor,
+                      zIndex: 2
                     }}
                   >
-                    <IconComponent size={18} />
+                    <IconComponent size={16} />
                   </div>
                 </div>
 
@@ -279,6 +258,20 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
                   }}
                 >
                   <div>
+                    {/* Appliance Type Badge above Title */}
+                    <div
+                      style={{
+                        fontSize: '0.6875rem',
+                        fontWeight: 700,
+                        color: meta.accentColor,
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.04em',
+                        marginBottom: '4px'
+                      }}
+                    >
+                      {isBn ? meta.badgeBn : meta.badge}
+                    </div>
+
                     <h3
                       style={{
                         fontSize: '1.0625rem',
