@@ -572,7 +572,34 @@ export const initialSearchKeywords: SearchKeywordItem[] = [
   { id: 'kw-10', keyword: 'Microwave not heating', keywordBn: 'মাইক্রোওয়েভ গরম হচ্ছে না', categoryId: 'microwave-repair', problemId: 'mw-not-heating', targetUrl: '/microwave-repair' },
   { id: 'kw-11', keyword: 'Microwave sparks', keywordBn: 'মাইক্রোওয়েভে স্পার্কিং', categoryId: 'microwave-repair', problemId: 'mw-sparks-inside', targetUrl: '/microwave-repair' },
   { id: 'kw-12', keyword: 'LED TV screen black sound only', keywordBn: 'টিভিতে ছবি নেই শব্দ আছে', categoryId: 'led-tv-repair', problemId: 'tv-sound-no-picture', targetUrl: '/led-tv-repair' },
-  { id: 'kw-13', keyword: 'LED TV lines on display', keywordBn: 'টিভির পর্দায় রঙিন লাইন', categoryId: 'led-tv-repair', problemId: 'tv-lines-on-display', targetUrl: '/led-tv-repair' }
+  { id: 'kw-13', keyword: 'LED TV lines on display', keywordBn: 'টিভির পর্দায় রঙিন লাইন', categoryId: 'led-tv-repair', problemId: 'tv-lines-on-display', targetUrl: '/led-tv-repair' },
+  // Brand specific search keywords
+  { id: 'kw-og-1', keyword: 'General service centre kolkata', keywordBn: 'জেনারেল সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/o-general' },
+  { id: 'kw-og-2', keyword: 'General customer care number', keywordBn: 'জেনারেল কাস্টমার কেয়ার নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/o-general' },
+  { id: 'kw-og-3', keyword: 'General ac not cooling properly', keywordBn: 'জেনারেল এসি ঠান্ডা হচ্ছে না', categoryId: 'ac-repair', targetUrl: '/brands/o-general' },
+  { id: 'kw-og-4', keyword: 'General ac inverter error code', keywordBn: 'জেনারেল এসি ইনভার্টার এরর কোড', categoryId: 'ac-repair', targetUrl: '/brands/o-general' },
+  { id: 'kw-ly-1', keyword: 'Lloyd service centre number', keywordBn: 'লয়েড সার্ভিস সেন্টার নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/lloyd' },
+  { id: 'kw-ly-2', keyword: 'Lloyd ac not cooling but fan is running', keywordBn: 'লয়েড এসি ফ্যান চলছে কিন্তু ঠান্ডা হচ্ছে না', categoryId: 'ac-repair', targetUrl: '/brands/lloyd' },
+  { id: 'kw-ly-3', keyword: 'Lloyd washing machine e3 f8 error', keywordBn: 'লয়েড ওয়াশিং মেশিন এরর কোড', categoryId: 'washing-machine-repair', targetUrl: '/brands/lloyd' },
+  { id: 'kw-ly-4', keyword: 'Lloyd fridge double door repair', keywordBn: 'লয়েড ফ্রিজ মেরামত', categoryId: 'fridge-repair', targetUrl: '/brands/lloyd' },
+  { id: 'kw-bs-1', keyword: 'Blue star service centre kolkata', keywordBn: 'ব্লু স্টার সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/blue-star' },
+  { id: 'kw-bs-2', keyword: 'Blue star inverter ac e6 error code', keywordBn: 'ব্লু স্টার ইনভার্টার এসি E6 এরর', categoryId: 'ac-repair', targetUrl: '/brands/blue-star' },
+  { id: 'kw-bs-3', keyword: 'Blue star ac not working with remote', keywordBn: 'ব্লু স্টার এসি রিমোট কাজ করছে না', categoryId: 'ac-repair', targetUrl: '/brands/blue-star' },
+  { id: 'kw-dk-1', keyword: 'Daikin service centre kolkata phone number', keywordBn: 'ডাইকিন সার্ভিস সেন্টার কলকাতা ফোন নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/daikin' },
+  { id: 'kw-dk-2', keyword: 'Daikin customer care 24x7', keywordBn: 'ডাইকিন কাস্টমার কেয়ার', categoryId: 'ac-repair', targetUrl: '/brands/daikin' },
+  { id: 'kw-dk-3', keyword: 'Daikin ac repair near me', keywordBn: 'ডাইকিন এসি মেরামত', categoryId: 'ac-repair', targetUrl: '/brands/daikin' },
+  { id: 'kw-mb-1', keyword: 'Mitsubishi service centre kolkata', keywordBn: 'মিৎসবিশি সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/mitsubishi' },
+  { id: 'kw-mb-2', keyword: 'Mitsubishi ac repair and service', keywordBn: 'মিৎসবিশি এসি মেরামত ও সার্ভিসিং', categoryId: 'ac-repair', targetUrl: '/brands/mitsubishi' },
+  { id: 'kw-ifb-1', keyword: 'IFB customer care number 24x7', keywordBn: 'আইএফবি কাস্টমার কেয়ার নম্বর', categoryId: 'washing-machine-repair', targetUrl: '/brands/ifb' },
+  { id: 'kw-ifb-2', keyword: 'IFB service centre kolkata contact', keywordBn: 'আইএফবি সার্ভিস সেন্টার কলকাতা', categoryId: 'washing-machine-repair', targetUrl: '/brands/ifb' },
+  { id: 'kw-ifb-3', keyword: 'IFB front load washing machine repair', keywordBn: 'আইএফবি ফ্রন্ট লোড ওয়াশিং মেশিন মেরামত', categoryId: 'washing-machine-repair', targetUrl: '/brands/ifb' },
+  { id: 'kw-ifb-4', keyword: 'IFB micro oven repair', keywordBn: 'আইএফবি মাইক্রোওয়েভ ওভেন মেরামত', categoryId: 'microwave-repair', targetUrl: '/brands/ifb' },
+  { id: 'kw-wp-1', keyword: 'Whirlpool service centre kolkata phone number', keywordBn: 'ওয়ার্লপুল সার্ভিস সেন্টার কলকাতা', categoryId: 'fridge-repair', targetUrl: '/brands/whirlpool' },
+  { id: 'kw-wp-2', keyword: 'Whirlpool fridge refrigerator repair', keywordBn: 'ওয়ার্লপুল ফ্রিজ মেরামত', categoryId: 'fridge-repair', targetUrl: '/brands/whirlpool' },
+  { id: 'kw-wp-3', keyword: 'Whirlpool washing machine e1 error', keywordBn: 'ওয়ার্লপুল ওয়াশিং মেশিন E1 এরর', categoryId: 'washing-machine-repair', targetUrl: '/brands/whirlpool' },
+  { id: 'kw-ht-1', keyword: 'Hitachi service centre kolkata phone number', keywordBn: 'হিটাচি সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/hitachi' },
+  { id: 'kw-ht-2', keyword: 'Hitachi ac repair service near me', keywordBn: 'হিটাচি এসি মেরামত সার্ভিস', categoryId: 'ac-repair', targetUrl: '/brands/hitachi' },
+  { id: 'kw-ht-3', keyword: 'Hitachi inverter fridge repair', keywordBn: 'হিটাচি ইনভার্টার ফ্রিজ মেরামত', categoryId: 'fridge-repair', targetUrl: '/brands/hitachi' }
 ];
 
 export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[]; bn: { q: string; a: string }[] }> = {

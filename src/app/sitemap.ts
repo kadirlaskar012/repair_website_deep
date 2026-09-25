@@ -118,5 +118,39 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   }
 
-  return [...staticUrls, ...categoryUrls, ...blogUrls];
+  // Brand Landing Pages (O General, Lloyd, Blue Star, Daikin, Mitsubishi, IFB, Whirlpool, Hitachi)
+  const brandUrls: MetadataRoute.Sitemap = [];
+  const brandSlugs = ['o-general', 'lloyd', 'blue-star', 'daikin', 'mitsubishi', 'ifb', 'whirlpool', 'hitachi'];
+  for (const slug of brandSlugs) {
+    const enUrl = `${SITE_URL}/brands/${slug}`;
+    const bnUrl = `${SITE_URL}/bn/brands/${slug}`;
+
+    brandUrls.push({
+      url: enUrl,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+      alternates: {
+        languages: {
+          en: enUrl,
+          bn: bnUrl
+        }
+      }
+    });
+
+    brandUrls.push({
+      url: bnUrl,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      alternates: {
+        languages: {
+          en: enUrl,
+          bn: bnUrl
+        }
+      }
+    });
+  }
+
+  return [...staticUrls, ...categoryUrls, ...blogUrls, ...brandUrls];
 }

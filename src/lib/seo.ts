@@ -9,7 +9,8 @@ export function buildPageMetadata({
   path = '',
   lang = 'en',
   ogImage = '/og-image.jpg',
-  noIndex = false
+  noIndex = false,
+  keywords
 }: {
   title: string;
   description: string;
@@ -17,6 +18,7 @@ export function buildPageMetadata({
   lang?: Language;
   ogImage?: string;
   noIndex?: boolean;
+  keywords?: string | string[];
 }): Metadata {
   const cleanPath = path.startsWith('/') ? path : `/${path}`;
   const enUrl = `${SITE_URL}${cleanPath === '/' ? '' : cleanPath}`;
@@ -26,6 +28,7 @@ export function buildPageMetadata({
   return {
     title,
     description,
+    keywords,
     alternates: {
       canonical: canonicalUrl,
       languages: {

@@ -1,6 +1,8 @@
 import React from 'react';
+import Link from 'next/link';
 import { Brand, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
+import { brandSeoCatalog } from '@/lib/brand-seo-data';
 
 interface BrandsSectionProps {
   brands: Brand[];
@@ -32,10 +34,15 @@ export default function BrandsSection({ brands, lang }: BrandsSectionProps) {
         >
           {brands.map((b) => {
             const logoSrc = b.logoUrl || `/images/brands/${b.id}.svg`;
+            const hasDedicatedPage = Boolean(brandSeoCatalog[b.id]);
+            const targetUrl = hasDedicatedPage
+              ? isBn
+                ? `/bn/brands/${b.id}`
+                : `/brands/${b.id}`
+              : null;
 
-            return (
+            const cardContent = (
               <div
-                key={b.id}
                 style={{
                   backgroundColor: 'var(--color-bg-card)',
                   border: '1px solid var(--color-border)',
@@ -49,14 +56,14 @@ export default function BrandsSection({ brands, lang }: BrandsSectionProps) {
                   justifyContent: 'center',
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.03)',
                   transition: 'all 0.2s ease',
-                  cursor: 'default'
+                  cursor: targetUrl ? 'pointer' : 'default'
                 }}
                 className="card-hover"
-                title={`${b.name} Authorized Multi-Brand Service`}
+                title={`${b.name} Multi-Brand Doorstep Service`}
               >
                 <img
                   src={logoSrc}
-                  alt={`${b.name} Official Brand Logo`}
+                  alt={`${b.name} Brand Logo`}
                   style={{
                     maxHeight: '40px',
                     maxWidth: '128px',
@@ -66,7 +73,6 @@ export default function BrandsSection({ brands, lang }: BrandsSectionProps) {
                     transition: 'transform 0.2s ease'
                   }}
                   onError={(e) => {
-                    // graceful text fallback if image path ever fails
                     const target = e.currentTarget;
                     target.style.display = 'none';
                     if (target.nextElementSibling) {
@@ -86,8 +92,34 @@ export default function BrandsSection({ brands, lang }: BrandsSectionProps) {
                 >
                   {b.name}
                 </span>
+                {hasDedicatedPage && (
+                  <span
+                    style={{
+                      fontSize: '0.68rem',
+                      color: 'var(--color-primary)',
+                      fontWeight: 600,
+                      marginTop: '4px'
+                    }}
+                  >
+                    {isBn ? 'পরিষেবা দেখুন →' : 'View Service →'}
+                  </span>
+                )}
               </div>
             );
+
+            if (targetUrl) {
+              return (
+                <Link
+                  key={b.id}
+                  href={targetUrl}
+                  style={{ textDecoration: 'none', display: 'block' }}
+                >
+                  {cardContent}
+                </Link>
+              );
+            }
+
+            return <div key={b.id}>{cardContent}</div>;
           })}
         </div>
 
