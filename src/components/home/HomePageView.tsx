@@ -92,13 +92,19 @@ export default function HomePageView({
           phone={settings.phone}
         />
 
-        {/* 2. Top 3 Spotlight Banner Cards (Real Photos) */}
+        {/* 2. PRIMARY 5 APPLIANCE REPAIR CATEGORIES (Prominent Responsive Layout) */}
+        <ApplianceCategories
+          categories={categories}
+          lang={lang}
+        />
+
+        {/* 3. Top 3 Spotlight Banner Cards (Real Photos) */}
         <SpotlightCards
           lang={lang}
           onOpenBooking={handleDirectBooking}
         />
 
-        {/* 3. Most Booked Services (Real Photos & Badges) */}
+        {/* 4. Most Booked Services (Real Photos & Badges) */}
         <MostBookedServices
           categories={categories}
           problems={problems}
@@ -107,17 +113,11 @@ export default function HomePageView({
           onOpenBooking={handleDirectBooking}
         />
 
-        {/* 4. Wide Feature Banner #1 (Sudden Breakdown) */}
+        {/* 5. Wide Feature Banner #1 (Sudden Breakdown) */}
         <WidePromoBanner
           lang={lang}
           onOpenBooking={handleDirectBooking}
           phone={settings.phone}
-        />
-
-        {/* 5. Appliance Repair by Category (Real Appliance Unit Photos) */}
-        <ApplianceCategories
-          categories={categories}
-          lang={lang}
         />
 
         {/* 6. Wide Feature Banner #2 (Genuine Spares & 30-Day Guarantee) */}
