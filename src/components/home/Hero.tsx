@@ -187,7 +187,7 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
             </span>
           </div>
 
-          {/* Main Title - Inspired by HomeTriangle */}
+          {/* Main Title - Home Appliance Care India */}
           <h1
             style={{
               fontSize: 'clamp(2rem, 4.5vw, 3.25rem)',
@@ -199,8 +199,8 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
             }}
           >
             {isBn
-              ? 'আপনার বাড়ির জন্য বিশ্বস্ত হোম অ্যাপ্লায়েন্স মেরামত পরিষেবা'
-              : 'Book reliable appliance repair professionals for your home'}
+              ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া'
+              : 'Home Appliance Care India'}
           </h1>
 
           {/* Subtitle */}

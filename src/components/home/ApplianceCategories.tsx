@@ -128,7 +128,7 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
               marginBottom: '12px'
             }}
           >
-            {isBn ? 'আমাদের প্রধান ৫টি বিশেষায়িত অ্যাপ্লায়েন্স মেরামত সেবা' : 'Our 5 Specialized Appliance Repair Services'}
+            {isBn ? 'আপনার বাড়ির জন্য বিশ্বস্ত হোম অ্যাপ্লায়েন্স মেরামত পেশাদার' : 'Book reliable appliance repair professionals for your home'}
           </h2>
 
           <p
@@ -342,6 +342,29 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
               </Link>
             );
           })}
+        </div>
+
+        {/* Trust badge under category grid */}
+        <div style={{ textAlign: 'center', marginTop: '28px', display: 'flex', justifyContent: 'center' }}>
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '10px',
+              padding: '12px 24px',
+              backgroundColor: 'var(--color-bg-card)',
+              borderRadius: 'var(--radius-full)',
+              border: '1px solid var(--color-border)',
+              boxShadow: 'var(--shadow-xs)'
+            }}
+          >
+            <ShieldCheck size={18} style={{ color: 'var(--color-primary)', flexShrink: 0 }} />
+            <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--color-text-main)' }}>
+              {isBn
+                ? 'আপনার বাড়ির জন্য বিশ্বস্ত হোম অ্যাপ্লায়েন্স মেরামত পেশাদার • ৯০ মিনিটে আগমন'
+                : 'Book reliable appliance repair professionals for your home • 90-Min Doorstep Arrival'}
+            </span>
+          </div>
         </div>
       </div>
     </section>
