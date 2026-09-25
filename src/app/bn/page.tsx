@@ -11,7 +11,8 @@ import {
   getSiteSettings
 } from '@/lib/db';
 import { initialSearchKeywords } from '@/lib/seed-data';
-import { buildPageMetadata, generateLocalBusinessSchema } from '@/lib/seo';
+import { homeFaqs } from '@/lib/seo-data';
+import { buildPageMetadata, generateLocalBusinessSchema, generateFAQSchema } from '@/lib/seo';
 
 export const revalidate = 3600; // ISR 1 hour
 
@@ -37,12 +38,17 @@ export default async function BengaliHomePage() {
   ]);
 
   const localBusinessSchema = generateLocalBusinessSchema(settings);
+  const faqSchema = generateFAQSchema(homeFaqs, 'bn');
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <HomePageView
         categories={categories}

@@ -13,6 +13,8 @@ import TrustSection from '@/components/home/TrustSection';
 import BrandsSection from '@/components/home/BrandsSection';
 import PricingSection from '@/components/home/PricingSection';
 import ReviewsSection from '@/components/home/ReviewsSection';
+import HomeSeoContent from '@/components/home/HomeSeoContent';
+import HomeFaqSection from '@/components/home/HomeFaqSection';
 import CtaBanner from '@/components/home/CtaBanner';
 import Footer from '@/components/footer/Footer';
 import SearchModal from '@/components/search/SearchModal';
@@ -150,7 +152,18 @@ export default function HomePageView({
           lang={lang}
         />
 
-        {/* 11. Final Contact / Booking CTA */}
+        {/* 11. Comprehensive In-Depth SEO Guide & Local Coverage Network */}
+        <HomeSeoContent
+          lang={lang}
+          onOpenBooking={handleDirectBooking}
+        />
+
+        {/* 12. Search-Intent Home FAQs with Schema */}
+        <HomeFaqSection
+          lang={lang}
+        />
+
+        {/* 13. Final Contact / Booking CTA */}
         <CtaBanner
           lang={lang}
           onOpenBooking={handleDirectBooking}
