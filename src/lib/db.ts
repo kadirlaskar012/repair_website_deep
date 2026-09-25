@@ -48,7 +48,8 @@ const inMemory = {
     {
       id: 1,
       email: process.env.ADMIN_EMAIL || 'admin@applianceseva.com',
-      passwordHash: bcrypt.hashSync(process.env.ADMIN_PASSWORD || 'Admin@2026', 10),
+      phone: process.env.ADMIN_PHONE || '6291674186',
+      passwordHash: bcrypt.hashSync(process.env.ADMIN_PASSWORD || '6291674186', 10),
       name: 'Super Admin',
       createdAt: new Date().toISOString()
     }
@@ -733,16 +734,21 @@ export async function updateAISettings(settings: Partial<AISettings>): Promise<A
   return inMemory.aiSettings;
 }
 
-export async function getAdminByEmail(email: string): Promise<AdminUser | null> {
+export async function getAdminByEmail(identifier: string): Promise<AdminUser | null> {
+  const cleanPhone = identifier.replace(/[^\d]/g, '');
   const p = getDbPool();
   if (p) {
     try {
-      const [rows] = await p.query<any[]>('SELECT * FROM users WHERE email = ? LIMIT 1', [email]);
+      const [rows] = await p.query<any[]>(
+        'SELECT * FROM users WHERE email = ? OR REPLACE(phone, "+91", "") = ? OR phone = ? LIMIT 1',
+        [identifier, cleanPhone, identifier]
+      );
       if (rows.length > 0) {
         const r = rows[0];
         return {
           id: r.id,
           email: r.email,
+          phone: r.phone,
           passwordHash: r.password_hash,
           name: r.name,
           createdAt: r.created_at
@@ -752,8 +758,18 @@ export async function getAdminByEmail(email: string): Promise<AdminUser | null> 
       // Fallback
     }
   }
-  return inMemory.admins.find((a) => a.email.toLowerCase() === email.toLowerCase()) || null;
+
+  return (
+    inMemory.admins.find((a) => {
+      const matchEmail = a.email.toLowerCase() === identifier.toLowerCase();
+      const aPhoneClean = (a.phone || '').replace(/[^\d]/g, '');
+      const matchPhone = Boolean(cleanPhone && (aPhoneClean === cleanPhone || aPhoneClean.endsWith(cleanPhone) || cleanPhone.endsWith(aPhoneClean)));
+      return matchEmail || matchPhone;
+    }) || null
+  );
 }
+
+export const getAdminByIdentifier = getAdminByEmail;
 
 export async function getMediaAssets(): Promise<MediaAsset[]> {
   return inMemory.media;

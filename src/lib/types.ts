@@ -175,6 +175,7 @@ export interface AISettings {
 export interface AdminUser {
   id: number;
   email: string;
+  phone?: string;
   passwordHash: string;
   name: string;
   createdAt: string;

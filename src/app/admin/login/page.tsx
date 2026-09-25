@@ -2,12 +2,12 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Wrench, Lock, Mail, AlertCircle, ArrowRight } from 'lucide-react';
+import { Wrench, Lock, Phone, AlertCircle, ArrowRight } from 'lucide-react';
 
 export default function AdminLoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState('admin@applianceseva.com');
-  const [password, setPassword] = useState('Admin@2026');
+  const [mobile, setMobile] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -20,12 +20,12 @@ export default function AdminLoginPage() {
       const res = await fetch('/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email.trim(), password })
+        body: JSON.stringify({ mobile: mobile.trim(), password: password.trim() })
       });
 
       const data = await res.json();
       if (!res.ok || !data.success) {
-        throw new Error(data.error || 'Invalid credentials');
+        throw new Error(data.error || 'Invalid mobile number or PIN');
       }
 
       router.push('/admin');
@@ -96,36 +96,40 @@ export default function AdminLoginPage() {
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
           <div className="form-group" style={{ margin: 0 }}>
-            <label className="form-label">Admin Email</label>
+            <label className="form-label">Mobile Number</label>
             <div style={{ position: 'relative' }}>
               <div style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--color-text-light)' }}>
-                <Mail size={18} />
+                <Phone size={18} />
               </div>
               <input
-                type="email"
+                type="tel"
+                inputMode="numeric"
                 className="form-control"
                 style={{ paddingLeft: '40px' }}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@applianceseva.com"
+                value={mobile}
+                onChange={(e) => setMobile(e.target.value)}
+                placeholder="Enter 10-digit mobile number"
+                autoComplete="username"
                 required
               />
             </div>
           </div>
 
           <div className="form-group" style={{ margin: 0 }}>
-            <label className="form-label">Password</label>
+            <label className="form-label">Password / PIN</label>
             <div style={{ position: 'relative' }}>
               <div style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--color-text-light)' }}>
                 <Lock size={18} />
               </div>
               <input
                 type="password"
+                inputMode="numeric"
                 className="form-control"
                 style={{ paddingLeft: '40px' }}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter password"
+                placeholder="Enter numeric password or PIN"
+                autoComplete="current-password"
                 required
               />
             </div>
@@ -141,10 +145,6 @@ export default function AdminLoginPage() {
             <ArrowRight size={18} />
           </button>
         </form>
-
-        <div style={{ marginTop: '24px', textAlign: 'center', fontSize: '0.8125rem', color: 'var(--color-text-muted)' }}>
-          Default Credentials: <code style={{ background: '#EEF2F0', padding: '2px 6px', borderRadius: '4px' }}>admin@applianceseva.com</code> / <code style={{ background: '#EEF2F0', padding: '2px 6px', borderRadius: '4px' }}>Admin@2026</code>
-        </div>
       </div>
     </div>
   );

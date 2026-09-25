@@ -3,16 +3,18 @@ import { authenticateAdmin, signAdminToken, ADMIN_COOKIE_NAME } from '@/lib/auth
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, password } = await req.json();
+    const body = await req.json();
+    const identifier = body.mobile || body.phone || body.email || body.username || body.identifier;
+    const password = body.password;
 
-    if (!email || !password) {
+    if (!identifier || !password) {
       return NextResponse.json(
-        { success: false, error: 'Email and password are required' },
+        { success: false, error: 'Mobile number and password are required' },
         { status: 400 }
       );
     }
 
-    const admin = await authenticateAdmin(email.trim(), password);
+    const admin = await authenticateAdmin(String(identifier).trim(), String(password).trim());
     if (!admin) {
       return NextResponse.json(
         { success: false, error: 'Invalid admin credentials' },
