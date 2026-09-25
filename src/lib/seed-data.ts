@@ -556,6 +556,34 @@ export const initialReviews: Review[] = [
     date: '2026-09-10',
     isActive: true,
     sortOrder: 4
+  },
+  {
+    id: 'rev-5',
+    customerName: 'Rohan Ganguly',
+    location: 'New Town Action Area 1, Kolkata',
+    serviceCategory: 'AC Repair',
+    rating: 5,
+    comment: 'Super fast response! The technician reached my high-rise apartment in New Town in 75 minutes. Done high-pressure jet pump cleaning and R32 gas refill. AC cooling is fantastic.',
+    commentBn: 'অবিশ্বাস্য দ্রুত সার্ভিস! নিউ টাউনে আমার অ্যাপার্টমেন্টে মাত্র ৭৫ মিনিটে টেকনিশিয়ান এসে পৌঁছান। হাই-প্রেসার জেট পাম্প ওয়াশ ও গ্যাস রিফিল করে দিয়েছেন। দারুণ কুলিং হচ্ছে।',
+    isVerified: true,
+    isDemo: true,
+    date: '2026-09-18',
+    isActive: true,
+    sortOrder: 5
+  },
+  {
+    id: 'rev-6',
+    customerName: 'Srabanti Chakraborty',
+    location: 'Behala Chowrasta, Kolkata',
+    serviceCategory: 'Microwave Oven Repair',
+    rating: 5,
+    comment: 'My IFB convection microwave was sparking inside and refusing to heat food. Technician carried the magnetron and diode, tested on-site, and solved it in 45 minutes.',
+    commentBn: 'আইএফবি মাইক্রোওয়েভে খাবার গরম হচ্ছিল না এবং স্পার্ক করছিল। টেকনিশিয়ান স্পটেই ম্যাগনেট্রন ও ডায়োড পরীক্ষা করে মাত্র ৪৫ মিনিটে সারিয়ে দিয়েছেন।',
+    isVerified: true,
+    isDemo: true,
+    date: '2026-09-21',
+    isActive: true,
+    sortOrder: 6
   }
 ];
 
