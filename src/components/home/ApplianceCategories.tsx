@@ -164,6 +164,8 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
               <Link
                 key={c.id}
                 href={isBn ? `/bn/${c.slug}` : `/${c.slug}`}
+                prefetch={true}
+                scroll={true}
                 className="card card-hover"
                 style={{
                   textDecoration: 'none',

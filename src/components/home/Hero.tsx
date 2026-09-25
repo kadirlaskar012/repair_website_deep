@@ -24,15 +24,19 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const savedName = localStorage.getItem('preferred_location_name');
-    const hash = window.location.hash.replace('#', '').toLowerCase();
-    const matchHash = locations.find((l) => l.hashSlug === hash);
-    if (matchHash) {
-      setSelectedCity(matchHash.name);
-    } else if (savedName && locations.some((l) => l.name === savedName)) {
+    if (savedName && locations.some((l) => l.name === savedName)) {
       setSelectedCity(savedName);
     } else if (kolkata) {
       setSelectedCity(kolkata.name);
     }
+
+    const handleSync = (e: any) => {
+      if (e.detail?.name) {
+        setSelectedCity(e.detail.name);
+      }
+    };
+    window.addEventListener('appliance_location_changed', handleSync);
+    return () => window.removeEventListener('appliance_location_changed', handleSync);
   }, [locations, kolkata]);
 
   // Quick categories matching the circular icon row in reference screenshot
@@ -103,11 +107,13 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
       localStorage.setItem('preferred_location_id', loc.id);
       localStorage.setItem('preferred_location_slug', loc.hashSlug);
       localStorage.setItem('preferred_location_name', loc.name);
-      window.location.hash = loc.hashSlug;
-      // Reload website so user sees that the website updates location-wise
-      setTimeout(() => {
-        window.location.reload();
-      }, 150);
+
+      // Instant cross-component sync
+      window.dispatchEvent(
+        new CustomEvent('appliance_location_changed', {
+          detail: { id: loc.id, name: loc.name, nameBn: loc.nameBn, slug: loc.hashSlug }
+        })
+      );
     }
   };
 
@@ -290,6 +296,8 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
                 <Link
                   key={item.id}
                   href={href}
+                  prefetch={true}
+                  scroll={true}
                   className="quick-icon-item"
                 >
                   <div

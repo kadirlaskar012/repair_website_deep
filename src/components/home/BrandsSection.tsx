@@ -112,6 +112,8 @@ export default function BrandsSection({ brands, lang }: BrandsSectionProps) {
                 <Link
                   key={b.id}
                   href={targetUrl}
+                  prefetch={true}
+                  scroll={true}
                   style={{ textDecoration: 'none', display: 'block' }}
                 >
                   {cardContent}

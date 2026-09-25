@@ -131,6 +131,8 @@ export default function Footer({ settings, categories, locations, lang }: Footer
                 <li key={c.id}>
                   <Link
                     href={isBn ? `/bn/${c.slug}` : `/${c.slug}`}
+                    prefetch={true}
+                    scroll={true}
                     style={{ color: '#B5C7C3', transition: 'color 0.15s' }}
                     className="footer-link"
                   >
@@ -148,22 +150,22 @@ export default function Footer({ settings, categories, locations, lang }: Footer
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.875rem', marginBottom: '20px' }}>
               <li>
-                <Link href={isBn ? '/bn' : '/'} style={{ color: '#B5C7C3' }}>
+                <Link href={isBn ? '/bn' : '/'} prefetch={true} scroll={true} style={{ color: '#B5C7C3' }}>
                   {t.home}
                 </Link>
               </li>
               <li>
-                <Link href={isBn ? '/bn/blog' : '/blog'} style={{ color: '#B5C7C3' }}>
+                <Link href={isBn ? '/bn/blog' : '/blog'} prefetch={true} scroll={true} style={{ color: '#B5C7C3' }}>
                   {isBn ? 'মেরামত ব্লগ' : 'Appliance Repair Blog'}
                 </Link>
               </li>
               <li>
-                <Link href={isBn ? '/bn/privacy-policy' : '/privacy-policy'} style={{ color: '#B5C7C3' }}>
+                <Link href={isBn ? '/bn/privacy-policy' : '/privacy-policy'} prefetch={true} scroll={true} style={{ color: '#B5C7C3' }}>
                   {t.privacyPolicy}
                 </Link>
               </li>
               <li>
-                <Link href={isBn ? '/bn/terms-of-service' : '/terms-of-service'} style={{ color: '#B5C7C3' }}>
+                <Link href={isBn ? '/bn/terms-of-service' : '/terms-of-service'} prefetch={true} scroll={true} style={{ color: '#B5C7C3' }}>
                   {t.termsOfService}
                 </Link>
               </li>
@@ -204,25 +206,34 @@ export default function Footer({ settings, categories, locations, lang }: Footer
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', fontSize: '0.8125rem' }}>
             {locations.map((loc, idx) => (
               <span key={loc.id} style={{ color: '#88A39C' }}>
-                <a
-                  href={`#${loc.hashSlug}`}
-                  onClick={(e) => {
-                    e.preventDefault();
+                <button
+                  type="button"
+                  onClick={() => {
                     if (typeof window !== 'undefined') {
                       localStorage.setItem('preferred_location_id', loc.id);
                       localStorage.setItem('preferred_location_slug', loc.hashSlug);
                       localStorage.setItem('preferred_location_name', loc.name);
-                      window.location.hash = loc.hashSlug;
-                      setTimeout(() => {
-                        window.location.reload();
-                      }, 150);
+                      window.dispatchEvent(
+                        new CustomEvent('appliance_location_changed', {
+                          detail: { id: loc.id, name: loc.name, nameBn: loc.nameBn, slug: loc.hashSlug }
+                        })
+                      );
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
                     }
                   }}
-                  style={{ color: '#B5C7C3', textDecoration: 'none' }}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    font: 'inherit',
+                    color: '#B5C7C3',
+                    cursor: 'pointer',
+                    textDecoration: 'none'
+                  }}
                   className="footer-link"
                 >
                   {isBn ? loc.nameBn : loc.name}
-                </a>
+                </button>
                 {idx < locations.length - 1 && ' • '}
               </span>
             ))}
@@ -239,6 +250,8 @@ export default function Footer({ settings, categories, locations, lang }: Footer
               <span key={b.slug} style={{ color: '#88A39C' }}>
                 <Link
                   href={isBn ? `/bn/brands/${b.slug}` : `/brands/${b.slug}`}
+                  prefetch={true}
+                  scroll={true}
                   style={{ color: '#B5C7C3', textDecoration: 'none' }}
                   className="footer-link"
                 >

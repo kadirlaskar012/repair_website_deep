@@ -71,6 +71,8 @@ export const metadata: Metadata = {
   }
 };
 
+import ScrollRestorer from '@/components/common/ScrollRestorer';
+
 export default function RootLayout({
   children
 }: Readonly<{
@@ -89,7 +91,7 @@ export default function RootLayout({
               (function() {
                 try {
                   var saved = localStorage.getItem('theme');
-                  if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  if (saved === 'dark') {
                     document.documentElement.setAttribute('data-theme', 'dark');
                   } else {
                     document.documentElement.setAttribute('data-theme', 'light');
@@ -101,6 +103,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
+        <ScrollRestorer />
         {children}
       </body>
     </html>

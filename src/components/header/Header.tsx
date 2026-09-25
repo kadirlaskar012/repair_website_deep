@@ -116,6 +116,8 @@ export default function Header({
         {/* Brand Logo */}
         <Link
           href={isBn ? '/bn' : '/'}
+          prefetch={true}
+          scroll={true}
           className="header-brand-logo"
           aria-label="Appliance Seva Home"
         >
@@ -163,6 +165,8 @@ export default function Header({
                 <Link
                   key={link.href}
                   href={link.href}
+                  prefetch={true}
+                  scroll={true}
                   className={`desktop-nav-link ${isActive ? 'active' : ''}`}
                 >
                   <span className="nav-prefix">{link.prefix}</span>
@@ -177,6 +181,8 @@ export default function Header({
             {/* Language Toggle Button: EN-BN without extra text */}
             <Link
               href={targetLangPath}
+              prefetch={true}
+              scroll={true}
               className="header-lang-toggle"
               title={isBn ? 'Switch to English' : 'বাংলায় পরিবর্তন করুন'}
               aria-label="Switch Language EN-BN"
@@ -319,6 +325,8 @@ export default function Header({
                   <Link
                     key={link.href}
                     href={link.href}
+                    prefetch={true}
+                    scroll={true}
                     onClick={() => setMobileMenuOpen(false)}
                     className={`mobile-drawer-link ${isActive ? 'active' : ''}`}
                   >
@@ -330,6 +338,8 @@ export default function Header({
 
               <Link
                 href={isBn ? '/bn/blog' : '/blog'}
+                prefetch={true}
+                scroll={true}
                 onClick={() => setMobileMenuOpen(false)}
                 className="mobile-drawer-link"
                 style={{ marginTop: '6px', borderTop: '1px solid var(--color-border-light)', paddingTop: '14px' }}

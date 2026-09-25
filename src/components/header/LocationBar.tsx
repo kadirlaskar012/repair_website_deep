@@ -17,17 +17,12 @@ export default function LocationBar({ locations, lang, phone = '+91 6291674186' 
   const kolkata = locations.find((l) => l.id === 'loc-kol' || l.name.toLowerCase() === 'kolkata') || locations[0] || null;
   const [selectedLoc, setSelectedLoc] = useState<LocationItem | null>(kolkata);
   const [isOpen, setIsOpen] = useState(false);
-  const [isUpdating, setIsUpdating] = useState(false);
-
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const savedSlug = localStorage.getItem('preferred_location_slug');
     const savedId = localStorage.getItem('preferred_location_id');
-    const hash = window.location.hash.replace('#', '').toLowerCase();
 
-    // Check hash first, then saved preference, fallback to Kolkata
-    const target = hash || savedSlug;
-    let match = target ? locations.find((l) => l.hashSlug === target || l.name.toLowerCase() === target) : null;
+    let match = savedSlug ? locations.find((l) => l.hashSlug === savedSlug || l.name.toLowerCase() === savedSlug) : null;
     if (!match && savedId) {
       match = locations.find((l) => l.id === savedId) || null;
     }
@@ -35,25 +30,32 @@ export default function LocationBar({ locations, lang, phone = '+91 6291674186' 
     const active = match || kolkata;
     if (active) {
       setSelectedLoc(active);
-      localStorage.setItem('preferred_location_id', active.id);
-      localStorage.setItem('preferred_location_slug', active.hashSlug);
-      localStorage.setItem('preferred_location_name', active.name);
     }
-  }, [locations]);
+
+    const handleSync = (e: any) => {
+      if (e.detail?.id) {
+        const found = locations.find((l) => l.id === e.detail.id);
+        if (found) setSelectedLoc(found);
+      }
+    };
+    window.addEventListener('appliance_location_changed', handleSync);
+    return () => window.removeEventListener('appliance_location_changed', handleSync);
+  }, [locations, kolkata]);
 
   const handleSelect = (loc: LocationItem) => {
     setSelectedLoc(loc);
     setIsOpen(false);
-    setIsUpdating(true);
     if (typeof window !== 'undefined') {
       localStorage.setItem('preferred_location_id', loc.id);
       localStorage.setItem('preferred_location_slug', loc.hashSlug);
       localStorage.setItem('preferred_location_name', loc.name);
-      window.location.hash = loc.hashSlug;
-      // Reload page so user sees site updating location-wise
-      setTimeout(() => {
-        window.location.reload();
-      }, 150);
+
+      // Instant zero-latency cross-component update without white flash or network reload
+      window.dispatchEvent(
+        new CustomEvent('appliance_location_changed', {
+          detail: { id: loc.id, name: loc.name, nameBn: loc.nameBn, slug: loc.hashSlug }
+        })
+      );
     }
   };
 
