@@ -287,6 +287,46 @@ export default function SearchModal({
                   </div>
                 </div>
               )}
+
+              {/* Keyword & Brand Matches */}
+              {matchedKeywords.length > 0 && (
+                <div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', marginBottom: '10px' }}>
+                    {lang === 'bn' ? 'ব্র্যান্ড ও সার্ভিস অনুসন্ধান' : 'Brand & Service Matches'}
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    {matchedKeywords.slice(0, 8).map((kw) => {
+                      const targetPath = lang === 'bn' && !kw.targetUrl.startsWith('/bn') ? `/bn${kw.targetUrl}` : kw.targetUrl;
+                      return (
+                        <button
+                          key={kw.id}
+                          type="button"
+                          onClick={() => {
+                            onClose();
+                            router.push(targetPath);
+                          }}
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            padding: '10px 14px',
+                            background: 'var(--color-bg-alt)',
+                            border: '1px solid var(--color-border)',
+                            borderRadius: '8px',
+                            textAlign: 'left',
+                            transition: 'background 0.15s'
+                          }}
+                        >
+                          <span style={{ fontWeight: 600, fontSize: '0.88rem', color: 'var(--color-text-main)' }}>
+                            {lang === 'bn' ? kw.keywordBn : kw.keyword}
+                          </span>
+                          <ArrowRight size={14} style={{ color: 'var(--color-primary)' }} />
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>
