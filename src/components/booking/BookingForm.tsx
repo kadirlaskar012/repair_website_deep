@@ -127,7 +127,7 @@ export default function BookingForm({
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+    <form onSubmit={handleSubmit} className="booking-form-container">
       {submitError && (
         <div
           style={{
@@ -148,7 +148,7 @@ export default function BookingForm({
       )}
 
       {/* Row 1: Name & Mobile */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
+      <div className="booking-form-grid">
         <div className="form-group" style={{ margin: 0 }}>
           <label htmlFor="booking-name" className="form-label">
             {t.fullName} <span className="required">*</span>
@@ -192,7 +192,7 @@ export default function BookingForm({
       </div>
 
       {/* Row 2: Service & Brand */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
+      <div className="booking-form-grid">
         <div className="form-group" style={{ margin: 0 }}>
           <label htmlFor="booking-service" className="form-label">
             {t.selectService} <span className="required">*</span>
@@ -281,7 +281,7 @@ export default function BookingForm({
       </div>
 
       {/* Row 5: Preferred Date & Time */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
+      <div className="booking-form-grid">
         <div className="form-group" style={{ margin: 0 }}>
           <label htmlFor="booking-date" className="form-label">
             {t.preferredDate} <span className="required">*</span>

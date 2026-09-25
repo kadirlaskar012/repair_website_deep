@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { Category, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
+import { lockScroll, unlockScroll } from '@/lib/scrollLock';
 
 interface HeaderProps {
   categories: Category[];
@@ -61,12 +62,12 @@ export default function Header({
   // Prevent background scroll when mobile drawer is open
   useEffect(() => {
     if (mobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      lockScroll();
     } else {
-      document.body.style.overflow = '';
+      unlockScroll();
     }
     return () => {
-      document.body.style.overflow = '';
+      if (mobileMenuOpen) unlockScroll();
     };
   }, [mobileMenuOpen]);
 
@@ -343,7 +344,9 @@ export default function Header({
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  onOpenBooking();
+                  setTimeout(() => {
+                    onOpenBooking();
+                  }, 50);
                 }}
                 className="btn btn-primary"
                 style={{ width: '100%', justifyContent: 'center', padding: '12px 16px' }}

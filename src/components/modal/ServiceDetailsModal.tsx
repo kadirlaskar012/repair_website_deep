@@ -1,9 +1,11 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { X, Phone, MessageCircle, Calendar, AlertCircle, CheckCircle2, Wrench } from 'lucide-react';
 import { Problem, Category, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
+import { lockScroll, unlockScroll } from '@/lib/scrollLock';
 
 interface ServiceDetailsModalProps {
   problem: Problem | null;
@@ -28,17 +30,22 @@ export default function ServiceDetailsModal({
 }: ServiceDetailsModalProps) {
   const t = getDictionary(lang);
   const isBn = lang === 'bn';
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (isOpen && problem) {
+      lockScroll();
     } else {
-      document.body.style.overflow = '';
+      unlockScroll();
     }
     return () => {
-      document.body.style.overflow = '';
+      if (isOpen && problem) unlockScroll();
     };
-  }, [isOpen]);
+  }, [isOpen, problem]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -48,10 +55,18 @@ export default function ServiceDetailsModal({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, onClose]);
 
-  if (!isOpen || !problem) return null;
+  if (!isOpen || !problem || !mounted) return null;
 
-  return (
-    <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true">
+  return createPortal(
+    <div
+      className="modal-overlay"
+      onClick={onClose}
+      onTouchMove={(e) => {
+        if (e.target === e.currentTarget) e.preventDefault();
+      }}
+      role="dialog"
+      aria-modal="true"
+    >
       <div
         className="modal-dialog"
         onClick={(e) => e.stopPropagation()}
@@ -218,6 +233,7 @@ export default function ServiceDetailsModal({
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

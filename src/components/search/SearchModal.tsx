@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import { Search, X, ArrowRight, Wrench, AlertCircle } from 'lucide-react';
 import { Category, Problem, SearchKeywordItem, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
+import { lockScroll, unlockScroll } from '@/lib/scrollLock';
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -28,18 +30,23 @@ export default function SearchModal({
   const router = useRouter();
   const t = getDictionary(lang);
   const [query, setQuery] = useState('');
+  const [mounted, setMounted] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 50);
-      document.body.style.overflow = 'hidden';
+      lockScroll();
     } else {
-      document.body.style.overflow = '';
+      unlockScroll();
       setQuery('');
     }
     return () => {
-      document.body.style.overflow = '';
+      if (isOpen) unlockScroll();
     };
   }, [isOpen]);
 
@@ -53,7 +60,7 @@ export default function SearchModal({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, onClose]);
 
-  if (!isOpen) return null;
+  if (!isOpen || !mounted) return null;
 
   const normalizedQuery = query.toLowerCase().trim();
 
@@ -104,8 +111,16 @@ export default function SearchModal({
     }
   };
 
-  return (
-    <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true">
+  return createPortal(
+    <div
+      className="modal-overlay"
+      onClick={onClose}
+      onTouchMove={(e) => {
+        if (e.target === e.currentTarget) e.preventDefault();
+      }}
+      role="dialog"
+      aria-modal="true"
+    >
       <div
         className="modal-dialog"
         style={{ maxWidth: '640px', padding: '0', overflow: 'hidden' }}
@@ -276,6 +291,7 @@ export default function SearchModal({
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
