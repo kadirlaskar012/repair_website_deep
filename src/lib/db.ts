@@ -29,6 +29,7 @@ import path from 'path';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const BOOKINGS_FILE = path.join(DATA_DIR, 'bookings.json');
+const REVIEWS_FILE = path.join(DATA_DIR, 'reviews.json');
 
 function ensureDataDir() {
   try {
@@ -63,6 +64,32 @@ function savePersistedBookings(bookings: Booking[]) {
   }
 }
 
+function loadPersistedReviews(): Review[] {
+  try {
+    ensureDataDir();
+    if (fs.existsSync(REVIEWS_FILE)) {
+      const content = fs.readFileSync(REVIEWS_FILE, 'utf-8');
+      const parsed = JSON.parse(content);
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+    } else {
+      // First-time initialization
+      fs.writeFileSync(REVIEWS_FILE, JSON.stringify(initialReviews, null, 2), 'utf-8');
+    }
+  } catch (e) {
+    console.warn('Could not read persisted reviews file:', e);
+  }
+  return [...initialReviews];
+}
+
+function savePersistedReviews(reviews: Review[]) {
+  try {
+    ensureDataDir();
+    fs.writeFileSync(REVIEWS_FILE, JSON.stringify(reviews, null, 2), 'utf-8');
+  } catch (e) {
+    console.warn('Could not write persisted reviews file:', e);
+  }
+}
+
 // In-memory runtime state (used as fast fallback & during build if MySQL not connected)
 const inMemory = {
   settings: { ...initialSiteSettings },
@@ -71,7 +98,7 @@ const inMemory = {
   brands: [...initialBrands],
   locations: [...initialLocations],
   trustItems: [...initialTrustItems],
-  reviews: [...initialReviews],
+  reviews: loadPersistedReviews() as Review[],
   blogPosts: [...initialBlogPosts],
   bookings: loadPersistedBookings() as Booking[],
   media: [] as MediaAsset[],
@@ -491,12 +518,44 @@ export async function saveReview(review: Review): Promise<Review> {
   } else {
     inMemory.reviews.push(review);
   }
+  savePersistedReviews(inMemory.reviews);
   return review;
 }
 
 export async function deleteReview(id: string): Promise<boolean> {
   inMemory.reviews = inMemory.reviews.filter((r) => r.id !== id);
+  savePersistedReviews(inMemory.reviews);
   return true;
+}
+
+export async function createCustomerReview(data: {
+  customerName: string;
+  location: string;
+  serviceCategory: string;
+  rating: number;
+  comment: string;
+  mobile?: string;
+}): Promise<Review> {
+  const id = `rev-${Date.now()}`;
+  const nowStr = new Date().toISOString().split('T')[0];
+  const newReview: Review = {
+    id,
+    customerName: data.customerName.trim(),
+    location: data.location.trim(),
+    serviceCategory: data.serviceCategory,
+    rating: Math.min(5, Math.max(1, data.rating)),
+    comment: data.comment.trim(),
+    commentBn: data.comment.trim(),
+    isVerified: true,
+    isDemo: false,
+    date: nowStr,
+    isActive: true,
+    sortOrder: 0
+  };
+
+  inMemory.reviews.unshift(newReview);
+  savePersistedReviews(inMemory.reviews);
+  return newReview;
 }
 
 export async function createBooking(data: Omit<Booking, 'bookingId' | 'createdAt' | 'status'>): Promise<Booking> {
