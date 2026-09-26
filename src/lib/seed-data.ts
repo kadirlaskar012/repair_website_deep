@@ -5,7 +5,7 @@ export const initialSiteSettings: SiteSettings = {
   businessNameBn: 'অ্যাপ্লায়েন্স সেবা',
   phone: '+91 6291674186',
   whatsapp: '+91 6291674186',
-  email: 'service@applianceseva.com',
+  email: 'applianceseva@gmail.com',
   address: 'Salt Lake Sector V, Kolkata, West Bengal - 700091',
   addressBn: 'সল্টলেক সেক্টর ৫, কলকাতা, পশ্চিমবঙ্গ - ৭০০০৯১',
   serviceArea: 'Kolkata, Howrah, Hooghly & Barasat (West Bengal)',

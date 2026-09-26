@@ -110,10 +110,22 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: settings.phone,
+      email: settings.email,
       contactType: 'customer service',
       areaServed: 'IN',
       availableLanguage: ['English', 'Bengali', 'Hindi']
     },
+    knowsAbout: [
+      'Air Conditioner Repair and Jet Servicing',
+      'Split AC Installation and Gas Refilling',
+      'Inverter AC PCB Board Repair',
+      'Double Door and Single Door Refrigerator Repair',
+      'Fridge Cooling Restoration and Gas Charging',
+      'Front Load and Top Load Washing Machine Repair',
+      'Washing Machine Drum and Motor Replacement',
+      'Microwave Oven Heating and Magnetron Repair',
+      'LED TV Display Panel and Motherboard Repair'
+    ],
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',

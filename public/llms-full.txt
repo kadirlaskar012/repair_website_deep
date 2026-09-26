@@ -1,0 +1,72 @@
+# Appliance Seva - Full Knowledge Base & Machine Reference
+
+## 1. Business Profile
+- Legal Entity: Appliance Seva (Home Appliance Care India)
+- Domain: https://applianceseva.com
+- Contact Phone: +91 6291674186
+- Contact WhatsApp: +91 6291674186
+- Contact Email: applianceseva@gmail.com
+- Primary Hub: Salt Lake Sector V, Kolkata, West Bengal 700091
+- Operational Radius: Entire Kolkata Metropolitan Area, Howrah Municipal Corporation, Hooghly District Hubs, Barasat (North 24 Parganas)
+- Business Hours: 08:00 to 21:00 IST every day (including Sunday & public holidays)
+
+## 2. Service Catalog & Common Technical Diagnoses
+
+### Service 1: Air Conditioner (AC) Repair & Maintenance
+- URL: https://applianceseva.com/ac-repair
+- Bengali URL: https://applianceseva.com/bn/ac-repair
+- Diagnosed Faults:
+  - Not Cooling / Weak Airflow: Often caused by clogged evaporator coils, dirty air filters, faulty blower fan, or refrigerant shortage.
+  - Gas Leakage & Low Refrigerant: Comprehensive nitrogen pressure leak test, brazing/soldering of copper pipes, vacuum purging, and gas refill using R32, R410A, or R22.
+  - Indoor Unit Water Dripping: Blocked condensate drain tray or bent drain pipe cleared via high-pressure jet pump.
+  - Frequent Compressor Tripping: Faulty starting capacitor, condenser fan motor overheating, or electrical PCB relay malfunction.
+  - Inverter AC Error Codes: Component-level circuit repair for inverter PCB boards (outdoor and indoor).
+  - Deep Jet Cleaning: Complete waterproof jacket jet servicing with anti-bacterial coil wash.
+
+### Service 2: Refrigerator Repair
+- URL: https://applianceseva.com/fridge-repair
+- Bengali URL: https://applianceseva.com/bn/fridge-repair
+- Diagnosed Faults:
+  - Freezer Working but Fresh Food Section Warm: Defrost timer failure, faulty bi-metal thermostat, broken defrost heater, or blocked air damper duct.
+  - No Cooling / Continuous Running: Gas leakage in capillary tube or evaporator, relay overload protector (OLP) failure, compressor mechanical seizure.
+  - Excessive Frost Build-up: Damaged magnetic door gasket seal or defective auto-defrost circuit.
+  - Loud Humming Noise: Condenser fan obstruction or worn-out compressor mounting rubber bushes.
+
+### Service 3: Washing Machine Repair
+- URL: https://applianceseva.com/washing-machine-repair
+- Bengali URL: https://applianceseva.com/bn/washing-machine-repair
+- Diagnosed Faults:
+  - Drum Not Spinning: Worn motor belt, carbon brush wear, motor capacitor failure, or spider arm breakage.
+  - Water Not Draining: Jammed drain filter, defective drain pump motor, or coin/debris blockage.
+  - Severe Vibration & Banging Noise: Worn suspension shock absorbers, unbalanced load detector, or drum bearing failure.
+  - Water Continuously Filling: Faulty water level pressure sensor (switch) or defective dual inlet solenoid valve.
+
+### Service 4: Microwave Oven Repair
+- URL: https://applianceseva.com/microwave-repair
+- Bengali URL: https://applianceseva.com/bn/microwave-repair
+- Diagnosed Faults:
+  - Runs but Does Not Heat: Burnt-out high-voltage magnetron, defective high-voltage diode, shorted capacitor, or blown ceramic thermal fuse.
+  - Sparking Inside Cavity: Carbon-burned mica waveguide cover sheet or peeling internal enamel paint.
+  - Turntable Not Rotating: Defective low-RPM turntable synchronous motor or broken roller ring guide.
+  - Touchpad Unresponsive: Membrane keypad ribbon cable oxidation or control PCB failure.
+
+### Service 5: LED / Smart TV Repair
+- URL: https://applianceseva.com/tv-repair
+- Bengali URL: https://applianceseva.com/bn/tv-repair
+- Diagnosed Faults:
+  - Sound OK but No Picture / Black Screen: Blown LED backlight strips or defective LED backlight driver circuit.
+  - Horizontal / Vertical Colored Lines on Display: T-Con board timing controller fault, COF ribbon IC bonding issue, or panel driver malfunction.
+  - TV Keeps Restarting / Stuck on Logo: Corrupt eMMC flash memory, firmware crash, or standby power supply fluctuation.
+  - HDMI / Audio Port Failure: Main logic motherboard repair.
+
+## 3. Brand Compatibility Matrix
+Technicians carry specialized diagnostic tools and genuine spares for:
+- Daikin, Voltas, Blue Star, Lloyd, Carrier, Hitachi, O General, Mitsubishi Electric
+- LG, Samsung, Whirlpool, Godrej, Panasonic, Haier, Bosch, IFB, Siemens
+- Sony Bravia, Mi, OnePlus, TCL, Thomson, VU, Sansui, BPL
+
+## 4. Policy, Trust & Guarantees
+- Diagnosis Fee: ₹299 (Covers technician doorstep visit, testing, and estimate).
+- Repair Guarantee: 90 days warranty on replaced parts and technician labor.
+- Booking Channels: Online web portal (https://applianceseva.com), Phone call (+91 6291674186), WhatsApp (+91 6291674186).
+- Customer Rating: 4.9 out of 5 based on 1,250+ verified customer reviews in West Bengal.

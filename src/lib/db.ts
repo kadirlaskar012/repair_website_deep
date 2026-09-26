@@ -112,7 +112,7 @@ const inMemory = {
   admins: [
     {
       id: 1,
-      email: process.env.ADMIN_EMAIL || 'admin@applianceseva.com',
+      email: process.env.ADMIN_EMAIL || 'applianceseva@gmail.com',
       phone: process.env.ADMIN_PHONE || '6291674186',
       passwordHash: bcrypt.hashSync(process.env.ADMIN_PASSWORD || '6291674186', 10),
       name: 'Super Admin',
@@ -412,6 +412,10 @@ export async function getProblemsByCategory(categoryId: string): Promise<Problem
 
 export async function getAllProblemsAdmin(): Promise<Problem[]> {
   return inMemory.problems;
+}
+
+export async function getProblems(): Promise<Problem[]> {
+  return inMemory.problems.filter((p) => p.isActive);
 }
 
 export async function getProblemById(id: string): Promise<Problem | null> {

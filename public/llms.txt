@@ -1,0 +1,33 @@
+# Appliance Seva
+
+> Appliance Seva (https://applianceseva.com) is West Bengal's leading verified doorstep home appliance repair service provider, serving Kolkata, Howrah, Hooghly, and Barasat.
+
+## Organization & Business Overview
+- **Name**: Appliance Seva (অ্যাপ্লায়েন্স সেবা)
+- **Primary Website**: https://applianceseva.com
+- **Helpline / Phone**: +91 6291674186
+- **WhatsApp Support**: +91 6291674186
+- **Official Email**: applianceseva@gmail.com
+- **Operating Hours**: 8:00 AM – 9:00 PM (Monday to Sunday, All 7 Days)
+- **Doorstep Diagnosis & Visit Fee**: Flat ₹299 (Covers technician doorstep visit and comprehensive electrical/mechanical diagnosis)
+- **Warranty**: 90-Day Repair & Spare Parts Warranty
+- **Coverage Areas**: Kolkata (Salt Lake, Newtown, Dum Dum, Garia, Tollygunge, Behala, Jadavpur, Ballygunge, Park Street, Rajarhat), Howrah (Shibpur, Liluah, Salkia), Hooghly (Serampore, Uttarpara, Rishra, Konnagar), and North 24 Parganas (Barasat, Madhyamgram, Airport).
+
+## Core Repair Services
+- **AC Repair & Servicing**: Split & window AC repair, deep jet foam cleaning, R32 / R410A / R22 gas refilling, PCB circuit board repair, compressor replacement, copper pipe leakage fixing, uninstallation & reinstallation. [Link](https://applianceseva.com/ac-repair)
+- **Refrigerator Repair**: Single door, double door, frost-free, side-by-side & inverter fridge repair, gas charging, thermostat replacement, compressor troubleshooting, defrost timer fixes. [Link](https://applianceseva.com/fridge-repair)
+- **Washing Machine Repair**: Front load, top load, semi-automatic & fully automatic washer repair, spin drum repair, drain motor replacement, inlet valve, PCB board diagnostics. [Link](https://applianceseva.com/washing-machine-repair)
+- **Microwave Oven Repair**: Solo, grill & convection microwave oven repair, magnetron replacement, heating issue fixes, capacitor and high-voltage diode replacement, touchpad repair. [Link](https://applianceseva.com/microwave-repair)
+- **LED TV Repair**: LED, OLED, QLED & Smart TV panel repair, backlight strip replacement, motherboard repair, sound restoration, display horizontal/vertical line fixes. [Link](https://applianceseva.com/tv-repair)
+
+## Supported Brands
+All major international and Indian appliance brands: Voltas, Daikin, LG, Samsung, Whirlpool, Lloyd, Blue Star, Panasonic, Godrej, Sony, IFB, Bosch, Haier, Carrier, Hitachi, Mitsubishi, O General, BPL, Videocon.
+
+## Transparent Pricing & Service Policy
+- Doorstep Inspection Fee: ₹299 (Fixed upfront).
+- Quotation: Technicians provide exact part and labor costs before any repair is performed; work only proceeds upon customer approval.
+- Spare Parts: 100% genuine OEM-compatible components.
+- Response Time: 90-minute express doorstep dispatch available across metropolitan hubs.
+
+## Detailed LLM Context
+For comprehensive technical troubleshooting specifications, full service catalogs, and brand compatibility matrices, see [/llms-full.txt](https://applianceseva.com/llms-full.txt).
