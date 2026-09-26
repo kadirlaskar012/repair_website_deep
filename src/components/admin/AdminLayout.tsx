@@ -82,18 +82,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
   };
 
   const menuItems = [
-    { href: '/admin', label: 'Dashboard', icon: <LayoutDashboard size={19} /> },
-    { href: '/admin/homepage-images', label: 'Homepage Images', icon: <ImageIcon size={19} /> },
-    { href: '/admin/bookings', label: 'Booking Leads', icon: <Calendar size={19} /> },
-    { href: '/admin/categories', label: 'Categories', icon: <Layers size={19} /> },
-    { href: '/admin/problems', label: 'Problems & Symptoms', icon: <AlertTriangle size={19} /> },
-    { href: '/admin/brands', label: 'Brands & Logos', icon: <Award size={19} /> },
-    { href: '/admin/locations', label: 'West Bengal Locations', icon: <MapPin size={19} /> },
-    { href: '/admin/reviews', label: 'Customer Reviews', icon: <Star size={19} /> },
-    { href: '/admin/blog', label: 'Blog & Articles', icon: <FileText size={19} /> },
-    { href: '/admin/ai-settings', label: 'AI Configuration', icon: <Sparkles size={19} /> },
-    { href: '/admin/media', label: 'Media Assets', icon: <Layers size={19} /> },
-    { href: '/admin/settings', label: 'Site Settings & Content', icon: <Settings size={19} /> }
+    { href: '/admin/bookings', label: 'Booking Leads', icon: <Calendar size={19} /> }
   ];
 
   return (

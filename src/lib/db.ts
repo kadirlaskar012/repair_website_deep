@@ -24,6 +24,44 @@ import {
   initialBlogPosts
 } from './seed-data';
 import bcrypt from 'bcryptjs';
+import fs from 'fs';
+import path from 'path';
+
+const DATA_DIR = path.join(process.cwd(), 'data');
+const BOOKINGS_FILE = path.join(DATA_DIR, 'bookings.json');
+
+function ensureDataDir() {
+  try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+  } catch (e) {
+    // Ignore in read-only environments
+  }
+}
+
+function loadPersistedBookings(): Booking[] {
+  try {
+    ensureDataDir();
+    if (fs.existsSync(BOOKINGS_FILE)) {
+      const content = fs.readFileSync(BOOKINGS_FILE, 'utf-8');
+      const parsed = JSON.parse(content);
+      if (Array.isArray(parsed)) return parsed;
+    }
+  } catch (e) {
+    console.warn('Could not read persisted bookings file:', e);
+  }
+  return [];
+}
+
+function savePersistedBookings(bookings: Booking[]) {
+  try {
+    ensureDataDir();
+    fs.writeFileSync(BOOKINGS_FILE, JSON.stringify(bookings, null, 2), 'utf-8');
+  } catch (e) {
+    console.warn('Could not write persisted bookings file:', e);
+  }
+}
 
 // In-memory runtime state (used as fast fallback & during build if MySQL not connected)
 const inMemory = {
@@ -35,7 +73,7 @@ const inMemory = {
   trustItems: [...initialTrustItems],
   reviews: [...initialReviews],
   blogPosts: [...initialBlogPosts],
-  bookings: [] as Booking[],
+  bookings: loadPersistedBookings() as Booking[],
   media: [] as MediaAsset[],
   aiSettings: {
     provider: 'gemini' as const,
@@ -442,7 +480,7 @@ export async function createBooking(data: Omit<Booking, 'bookingId' | 'createdAt
   const randomSuffix = Math.floor(1000 + Math.random() * 9000);
   const now = new Date();
   const yearMonth = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}`;
-  const bookingId = `ACR-${yearMonth}-${randomSuffix}`;
+  const bookingId = `AS-${yearMonth}-${randomSuffix}`;
 
   const newBooking: Booking = {
     ...data,
@@ -452,6 +490,7 @@ export async function createBooking(data: Omit<Booking, 'bookingId' | 'createdAt
   };
 
   inMemory.bookings.unshift(newBooking);
+  savePersistedBookings(inMemory.bookings);
 
   const p = getDbPool();
   if (p) {
@@ -511,6 +550,9 @@ export async function getBookings(): Promise<Booking[]> {
       // Fallback
     }
   }
+  if (inMemory.bookings.length === 0) {
+    inMemory.bookings = loadPersistedBookings();
+  }
   return inMemory.bookings;
 }
 
@@ -548,10 +590,25 @@ export async function getBookingById(bookingId: string): Promise<Booking | null>
 export async function updateBookingStatus(bookingId: string, status: Booking['status']): Promise<boolean> {
   const b = inMemory.bookings.find((item) => item.bookingId === bookingId);
   if (b) b.status = status;
+  savePersistedBookings(inMemory.bookings);
   const p = getDbPool();
   if (p) {
     try {
       await p.query('UPDATE bookings SET status = ? WHERE booking_id = ?', [status, bookingId]);
+    } catch (e) {
+      // Ignore
+    }
+  }
+  return true;
+}
+
+export async function deleteBooking(bookingId: string): Promise<boolean> {
+  inMemory.bookings = inMemory.bookings.filter((item) => item.bookingId !== bookingId);
+  savePersistedBookings(inMemory.bookings);
+  const p = getDbPool();
+  if (p) {
+    try {
+      await p.query('DELETE FROM bookings WHERE booking_id = ?', [bookingId]);
     } catch (e) {
       // Ignore
     }

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "bookingId": "AS-202609-1082",
+    "name": "Subhasish Mukherjee",
+    "mobile": "9830123456",
+    "service": "ac-repair",
+    "serviceName": "Split AC Jet Service & Gas Check",
+    "brand": "Voltas",
+    "problem": "AC not cooling properly and strange humming noise from indoor blower",
+    "address": "Flat 3B, Lake Gardens, Kolkata, West Bengal - 700045",
+    "preferredDate": "2026-09-27",
+    "preferredTime": "10:00 AM - 01:00 PM",
+    "status": "pending",
+    "notes": "Customer requested urgent morning inspection",
+    "createdAt": "2026-09-26T06:30:00.000Z"
+  },
+  {
+    "id": 2,
+    "bookingId": "AS-202609-1045",
+    "name": "Ananya Roy",
+    "mobile": "9831987654",
+    "service": "fridge-repair",
+    "serviceName": "Double Door Fridge Cooling Repair",
+    "brand": "Samsung",
+    "problem": "Lower freezer compartment over-freezing, upper fresh food cabinet not chilling",
+    "address": "B-42, Salt Lake Sector 2, Kolkata, West Bengal - 700091",
+    "preferredDate": "2026-09-26",
+    "preferredTime": "02:00 PM - 05:00 PM",
+    "status": "confirmed",
+    "notes": "Technician assigned for doorstep visit",
+    "createdAt": "2026-09-25T14:15:00.000Z"
+  }
+]
