@@ -68,6 +68,9 @@ export const metadata: Metadata = {
     siteName: 'Appliance Seva',
     locale: 'en_IN',
     type: 'website'
+  },
+  verification: {
+    google: 'googlea78375151882c47b'
   }
 };
 
