@@ -13,9 +13,7 @@ import {
   Wrench,
   Calendar,
   Languages,
-  ChevronRight,
-  Sun,
-  Moon
+  ChevronRight
 } from 'lucide-react';
 import { Category, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
@@ -42,22 +40,10 @@ export default function Header({
   const t = getDictionary(lang);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
     setMounted(true);
-    const activeTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-    setTheme(activeTheme);
   }, []);
-
-  const toggleTheme = () => {
-    const nextTheme = theme === 'dark' ? 'light' : 'dark';
-    setTheme(nextTheme);
-    document.documentElement.setAttribute('data-theme', nextTheme);
-    try {
-      localStorage.setItem('theme', nextTheme);
-    } catch (e) {}
-  };
 
   // Prevent background scroll when mobile drawer is open
   useEffect(() => {
@@ -178,20 +164,6 @@ export default function Header({
 
           {/* Right Header Actions */}
           <div className="header-actions">
-            {/* Language Toggle Button: EN-BN without extra text */}
-            <Link
-              href={targetLangPath}
-              prefetch={true}
-              scroll={true}
-              className="header-lang-toggle"
-              title={isBn ? 'Switch to English' : 'বাংলায় পরিবর্তন করুন'}
-              aria-label="Switch Language EN-BN"
-            >
-              <span className={`lang-pill ${!isBn ? 'active' : ''}`}>EN</span>
-              <span className="lang-sep">-</span>
-              <span className={`lang-pill ${isBn ? 'active' : ''}`}>BN</span>
-            </Link>
-
             {/* Search Trigger Button */}
             <button
               onClick={onOpenSearch}
@@ -200,20 +172,6 @@ export default function Header({
               title={t.search}
             >
               <Search size={18} />
-            </button>
-
-            {/* Dark / Light Mode Toggle Button */}
-            <button
-              onClick={toggleTheme}
-              className="header-icon-btn theme-toggle-btn"
-              aria-label={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-              title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-            >
-              {mounted && theme === 'dark' ? (
-                <Sun size={19} className="theme-toggle-icon theme-sun" />
-              ) : (
-                <Moon size={19} className="theme-toggle-icon theme-moon" />
-              )}
             </button>
 
             {/* Mobile / Tablet Menu Trigger (< 1140px) */}
@@ -263,19 +221,7 @@ export default function Header({
                   </div>
                 </div>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <button
-                  onClick={toggleTheme}
-                  className="header-icon-btn theme-toggle-btn"
-                  aria-label={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-                  title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-                >
-                  {mounted && theme === 'dark' ? (
-                    <Sun size={18} className="theme-toggle-icon theme-sun" />
-                  ) : (
-                    <Moon size={18} className="theme-toggle-icon theme-moon" />
-                  )}
-                </button>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
                   className="mobile-drawer-close-btn"

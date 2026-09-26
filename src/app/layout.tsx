@@ -72,6 +72,7 @@ export const metadata: Metadata = {
 };
 
 import ScrollRestorer from '@/components/common/ScrollRestorer';
+import FloatingActionSuite from '@/components/common/FloatingActionSuite';
 
 export default function RootLayout({
   children
@@ -105,6 +106,7 @@ export default function RootLayout({
       <body className="antialiased">
         <ScrollRestorer />
         {children}
+        <FloatingActionSuite />
       </body>
     </html>
   );
