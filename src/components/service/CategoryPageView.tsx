@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Header from '@/components/header/Header';
 import LocationBar from '@/components/header/LocationBar';
 import Footer from '@/components/footer/Footer';
@@ -110,6 +111,14 @@ export default function CategoryPageView({
   const currentSubTypes = subTypes[category.slug] || {
     en: ['Doorstep Inspection', 'Genuine Spares', 'Emergency Fix', 'Multi-point Test'],
     bn: ['ডোরস্টেপ পরিদর্শন', 'আসল পার্টস', 'জরুরি মেরামত', 'মাল্টি-পয়েন্ট টেস্ট']
+  };
+
+  const categoryImages: Record<string, string> = {
+    'ac-repair': '/images/ac_service.jpg',
+    'fridge-repair': '/images/fridge_service.jpg',
+    'washing-machine-repair': '/images/service_washing_machine.jpg',
+    'microwave-repair': '/images/service_microwave_oven.jpg',
+    'led-tv-repair': '/images/service_smart_led_tv.jpg'
   };
 
   return (
@@ -294,22 +303,13 @@ export default function CategoryPageView({
                   boxShadow: '0 14px 36px rgba(0, 0, 0, 0.12)'
                 }}
               >
-                <img
-                  src={
-                    category.slug === 'ac-repair'
-                      ? '/images/ac_service.jpg'
-                      : category.slug === 'fridge-repair'
-                      ? '/images/fridge_service.jpg'
-                      : category.slug === 'washing-machine-repair'
-                      ? '/images/washing_service.jpg'
-                      : category.slug === 'microwave-repair'
-                      ? '/images/microwave_service.jpg'
-                      : '/images/led_tv_service.jpg'
-                  }
+                <Image
+                  src={categoryImages[category.slug] || '/images/ac_service.jpg'}
                   alt={category.name}
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{
-                    width: '100%',
-                    height: '100%',
                     objectFit: 'cover'
                   }}
                 />
@@ -320,6 +320,7 @@ export default function CategoryPageView({
                     bottom: '16px',
                     left: '16px',
                     right: '16px',
+                    zIndex: 2,
                     background: 'rgba(15, 23, 42, 0.88)',
                     backdropFilter: 'blur(8px)',
                     color: '#FFFFFF',

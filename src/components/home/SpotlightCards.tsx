@@ -37,7 +37,7 @@ export default function SpotlightCards({ lang, onOpenBooking }: SpotlightCardsPr
       title: isBn ? 'ওয়াশিং মেশিন পেশাদার সেবা' : 'Professional Washing Machine Care',
       subtitle: isBn ? 'ফ্রন্ট ও টপ লোড ড্রাম সমাধান' : 'Front & Top Load Specialists',
       priceTag: isBn ? '₹২৯৯ পরিদর্শন' : '₹299 Visit Fee',
-      image: homepageImages.hero_washing || '/images/washing_service.jpg',
+      image: homepageImages.hero_washing || '/images/service_washing_machine.jpg',
       slug: 'washing-machine-repair'
     }
   ];

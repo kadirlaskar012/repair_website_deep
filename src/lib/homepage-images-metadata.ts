@@ -33,7 +33,7 @@ export const HOMEPAGE_IMAGE_SLOTS: ImageSlotMeta[] = [
     title: 'Professional Washing Machine Care (Hero)',
     description: 'Main Hero card 3 showing washing machine repair',
     recommendedSize: '1000 x 800 px (JPEG/WebP)',
-    defaultPath: '/images/washing_service.jpg'
+    defaultPath: '/images/service_washing_machine.jpg'
   },
 
   // Most Booked Services
@@ -59,7 +59,7 @@ export const HOMEPAGE_IMAGE_SLOTS: ImageSlotMeta[] = [
     title: 'Front Load Washer Drum & Motor Card',
     description: 'Service card image for washing machine drum and motor service',
     recommendedSize: '800 x 600 px (JPEG/WebP)',
-    defaultPath: '/images/washing_service.jpg'
+    defaultPath: '/images/service_washing_machine.jpg'
   },
   {
     slotId: 'service_microwave',
@@ -67,7 +67,7 @@ export const HOMEPAGE_IMAGE_SLOTS: ImageSlotMeta[] = [
     title: 'Microwave Heating & Magnetron Card',
     description: 'Service card image for microwave heating repair',
     recommendedSize: '800 x 600 px (JPEG/WebP)',
-    defaultPath: '/images/microwave_service.jpg'
+    defaultPath: '/images/service_microwave_oven.jpg'
   },
   {
     slotId: 'service_led_tv',
@@ -75,7 +75,7 @@ export const HOMEPAGE_IMAGE_SLOTS: ImageSlotMeta[] = [
     title: 'Smart LED TV Screen & Board Card',
     description: 'Service card image for smart television display panel service',
     recommendedSize: '800 x 600 px (JPEG/WebP)',
-    defaultPath: '/images/led_tv_service.jpg'
+    defaultPath: '/images/service_smart_led_tv.jpg'
   },
 
   // Appliance Categories
