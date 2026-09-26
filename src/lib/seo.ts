@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Language, Category, BlogPost, FAQItem, SiteSettings } from './types';
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://applianceseva.com';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://applianceseva.com';
 
 export function buildPageMetadata({
   title,
