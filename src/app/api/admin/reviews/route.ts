@@ -19,6 +19,10 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({ success: true, review: saved });
 }
 
+export async function PUT(req: NextRequest) {
+  return POST(req);
+}
+
 export async function DELETE(req: NextRequest) {
   const admin = await getCurrentAdmin();
   if (!admin) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });

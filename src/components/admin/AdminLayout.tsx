@@ -82,7 +82,8 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
   };
 
   const menuItems = [
-    { href: '/admin/bookings', label: 'Booking Leads', icon: <Calendar size={19} /> }
+    { href: '/admin/bookings', label: 'Booking Leads', icon: <Calendar size={19} /> },
+    { href: '/admin/reviews', label: 'Customer Reviews', icon: <Star size={19} /> }
   ];
 
   return (
