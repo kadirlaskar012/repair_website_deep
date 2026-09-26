@@ -27,11 +27,11 @@ export default function PricingSection({ lang, onOpenBooking }: PricingSectionPr
         <div style={{ maxWidth: '820px', margin: '0 auto' }}>
           <div
             style={{
-              backgroundColor: 'var(--color-bg-warm)',
-              border: '2px solid var(--color-primary-light)',
+              backgroundColor: 'var(--color-bg-card)',
+              border: '2px solid rgba(20, 108, 91, 0.25)',
               borderRadius: 'var(--radius-xl)',
               padding: 'clamp(24px, 5vw, 44px)',
-              boxShadow: 'var(--shadow-md)',
+              boxShadow: '0 12px 36px rgba(20, 108, 91, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06)',
               position: 'relative'
             }}
           >

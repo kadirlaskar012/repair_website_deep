@@ -45,9 +45,11 @@ export default function TrustSection({ items, lang }: TrustSectionProps) {
           {items.map((item) => (
             <div
               key={item.id}
-              className="card"
+              className="card card-hover"
               style={{
-                backgroundColor: 'var(--color-bg-warm)',
+                backgroundColor: 'var(--color-bg-card)',
+                border: '1px solid var(--color-border)',
+                boxShadow: 'var(--shadow-card)',
                 padding: '32px 24px',
                 textAlign: 'center',
                 display: 'flex',

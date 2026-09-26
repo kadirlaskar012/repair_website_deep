@@ -54,7 +54,7 @@ export default function BrandsSection({ brands, lang }: BrandsSectionProps) {
                   flexDirection: 'column',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.03)',
+                  boxShadow: 'var(--shadow-card)',
                   transition: 'all 0.2s ease',
                   cursor: targetUrl ? 'pointer' : 'default'
                 }}

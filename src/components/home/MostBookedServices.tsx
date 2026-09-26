@@ -183,7 +183,8 @@ export default function MostBookedServices({
                 flexDirection: 'column',
                 justifyContent: 'space-between',
                 background: 'var(--color-bg-card)',
-                border: '1px solid var(--color-border-light)'
+                border: '1px solid var(--color-border)',
+                boxShadow: 'var(--shadow-card)'
               }}
             >
               {/* Photo Area with Badge */}

@@ -50,7 +50,7 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
           {reviews.map((r) => (
             <div
               key={r.id}
-              className="card"
+              className="card card-hover"
               style={{
                 display: 'flex',
                 flexDirection: 'column',

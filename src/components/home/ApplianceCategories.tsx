@@ -89,7 +89,7 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
   return (
     <section
       style={{
-        backgroundColor: 'var(--color-bg-base)',
+        backgroundColor: 'var(--color-bg-warm)',
         padding: '52px 0',
         borderBottom: '1px solid var(--color-border-light)'
       }}
@@ -175,8 +175,8 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
                   display: 'flex',
                   flexDirection: 'column',
                   background: 'var(--color-bg-card)',
-                  border: '1.5px solid var(--color-border-light)',
-                  boxShadow: 'var(--shadow-xs)',
+                  border: '1px solid var(--color-border)',
+                  boxShadow: 'var(--shadow-card)',
                   transition: 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s, border-color 0.25s'
                 }}
               >
@@ -187,7 +187,7 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
                     width: '100%',
                     height: '185px',
                     overflow: 'hidden',
-                    backgroundColor: '#F8FAFC',
+                    backgroundColor: 'var(--color-bg-alt)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
