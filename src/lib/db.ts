@@ -101,11 +101,33 @@ let isInitialized = false;
 export function getDbPool(): Pool | null {
   if (pool) return pool;
 
+  const databaseUrl = process.env.DATABASE_URL || process.env.MYSQL_URL;
+
+  // 1. Connection via standard DATABASE_URL string (common in Vercel & cloud providers like TiDB, Aiven, PlanetScale)
+  if (databaseUrl) {
+    try {
+      const isSslNeeded = process.env.DB_SSL === 'true' || databaseUrl.includes('ssl') || !databaseUrl.includes('localhost');
+      pool = mysql.createPool({
+        uri: databaseUrl,
+        waitForConnections: true,
+        connectionLimit: 10,
+        queueLimit: 0,
+        enableKeepAlive: true,
+        ssl: isSslNeeded ? { rejectUnauthorized: false } : undefined
+      });
+      return pool;
+    } catch (err) {
+      console.warn('MySQL pool creation via DATABASE_URL failed, falling back:', err);
+    }
+  }
+
+  // 2. Connection via individual environment variables
   const dbHost = process.env.DB_HOST || process.env.MYSQL_HOST;
   const dbUser = process.env.DB_USER || process.env.MYSQL_USER;
   const dbPassword = process.env.DB_PASSWORD || process.env.MYSQL_PASSWORD;
   const dbName = process.env.DB_NAME || process.env.MYSQL_DATABASE;
   const dbPort = parseInt(process.env.DB_PORT || process.env.MYSQL_PORT || '3306', 10);
+  const dbSsl = process.env.DB_SSL === 'true' || (dbHost && dbHost !== 'localhost' && !dbHost.startsWith('127.'));
 
   if (!dbHost || !dbUser || !dbName) {
     return null;
@@ -122,11 +144,12 @@ export function getDbPool(): Pool | null {
       connectionLimit: 10,
       queueLimit: 0,
       enableKeepAlive: true,
-      keepAliveInitialDelay: 0
+      keepAliveInitialDelay: 0,
+      ssl: dbSsl ? { rejectUnauthorized: false } : undefined
     });
     return pool;
   } catch (err) {
-    console.warn('MySQL connection pool creation failed, using in-memory store:', err);
+    console.warn('MySQL connection pool creation failed, using fallback store:', err);
     return null;
   }
 }
