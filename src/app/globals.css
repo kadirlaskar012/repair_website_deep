@@ -2141,7 +2141,7 @@ img, svg {
 }
 
 /* ============================================================
-   Floating Action Suite (Settings Popover, WhatsApp, Go-To-Top)
+   Floating Action Suite (WhatsApp Top, Settings Middle, Top Bottom)
    ============================================================ */
 .floating-action-suite {
   position: fixed;
@@ -2151,7 +2151,7 @@ img, svg {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 12px;
+  gap: 10px;
   pointer-events: none;
 }
 
@@ -2159,13 +2159,18 @@ img, svg {
   box-sizing: border-box;
 }
 
+/* Uniform Size for all 3 Floating Buttons: 48px x 48px */
 .floating-btn {
   pointer-events: auto;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 9999px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  border-radius: 9999px;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -2174,8 +2179,7 @@ img, svg {
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
               background-color 0.2s ease,
-              border-color 0.2s ease,
-              opacity 0.25s ease;
+              border-color 0.2s ease;
 }
 
 .floating-btn:focus-visible {
@@ -2183,39 +2187,82 @@ img, svg {
   outline-offset: 2px;
 }
 
-/* 1. Go To Top Button */
-.floating-top-btn {
-  width: 42px;
-  height: 42px;
-  background-color: var(--color-bg-card);
-  color: var(--color-text-main);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(12px) scale(0.85);
-  pointer-events: none;
-}
-
-.floating-top-btn.visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0) scale(1);
-  pointer-events: auto;
-}
-
-.floating-top-btn:hover {
-  background-color: var(--color-primary);
+/* 1. Floating WhatsApp Button (TOP-MOST) */
+.floating-whatsapp-btn {
+  background-color: #25D366;
   color: #FFFFFF;
-  border-color: var(--color-primary);
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 6px 20px rgba(20, 108, 91, 0.35);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.38);
 }
 
-/* 2. Floating Settings Button */
+.floating-whatsapp-btn:hover {
+  background-color: #20BD5A;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.52);
+}
+
+.floating-whatsapp-btn .wa-icon {
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.18));
+  z-index: 2;
+}
+
+.wa-radar-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 9999px;
+  border: 2px solid #25D366;
+  opacity: 0.6;
+  animation: waPulseRadar 2.5s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes waPulseRadar {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.wa-tooltip-pill {
+  position: absolute;
+  right: calc(100% + 12px);
+  background-color: #0F2F28;
+  color: #FFFFFF;
+  font-size: 0.78125rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.floating-whatsapp-btn:hover .wa-tooltip-pill {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 2. Floating Settings Button & Popover (MIDDLE) */
+.floating-settings-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .floating-settings-btn {
-  width: 48px;
-  height: 48px;
   background-color: var(--color-bg-card);
   color: var(--color-primary);
   border: 1.5px solid var(--color-border);
@@ -2251,8 +2298,8 @@ img, svg {
 .floating-settings-popover {
   pointer-events: auto;
   position: absolute;
-  bottom: calc(100% + 10px);
-  right: 0;
+  bottom: 0;
+  right: calc(100% + 14px);
   min-width: 270px;
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-border);
@@ -2262,7 +2309,7 @@ img, svg {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   animation: popoverFadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 @keyframes popoverFadeIn {
@@ -2382,73 +2429,44 @@ img, svg {
   color: #FFFFFF;
 }
 
-/* 3. Floating WhatsApp CTA Button */
-.floating-whatsapp-btn {
-  width: 56px;
-  height: 56px;
-  background-color: #25D366;
-  color: #FFFFFF;
-  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
-}
-
-.floating-whatsapp-btn:hover {
-  background-color: #20BD5A;
-  transform: translateY(-3px) scale(1.06);
-  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
-}
-
-.floating-whatsapp-btn .wa-icon {
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-  z-index: 2;
-}
-
-.wa-radar-ring {
-  position: absolute;
-  inset: -4px;
-  border-radius: 9999px;
-  border: 2px solid #25D366;
-  opacity: 0.6;
-  animation: waPulseRadar 2.5s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  pointer-events: none;
-  z-index: 1;
-}
-
-@keyframes waPulseRadar {
-  0% {
-    transform: scale(0.95);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.35);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1.4);
-    opacity: 0;
-  }
-}
-
-.wa-tooltip-pill {
-  position: absolute;
-  right: calc(100% + 12px);
-  background-color: #0F2F28;
-  color: #FFFFFF;
-  font-size: 0.78125rem;
-  font-weight: 700;
-  padding: 6px 12px;
-  border-radius: 20px;
-  white-space: nowrap;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-  pointer-events: none;
+/* 3. Go To Top Button Wrapper (AKDAM NICHE - Smooth Zero-Flash Slide) */
+.floating-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 0;
   opacity: 0;
-  transform: translateX(8px);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  transform: translateY(8px) scale(0.85);
+  transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.25s ease,
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              margin-top 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 0;
+  pointer-events: none;
 }
 
-.floating-whatsapp-btn:hover .wa-tooltip-pill {
+.floating-top-wrapper.visible {
+  max-height: 52px;
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0) scale(1);
+  margin-top: 2px;
+  pointer-events: auto;
+}
+
+.floating-top-btn {
+  background-color: var(--color-bg-card);
+  color: var(--color-text-main);
+  border: 1.5px solid var(--color-border);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.floating-top-btn:hover {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  border-color: var(--color-primary);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 22px rgba(20, 108, 91, 0.35);
 }
 
 /* Mobile Adjustments */
@@ -2456,22 +2474,15 @@ img, svg {
   .floating-action-suite {
     bottom: 76px;
     right: 16px;
-    gap: 10px;
+    gap: 8px;
   }
 
-  .floating-top-btn {
-    width: 38px;
-    height: 38px;
-  }
-
-  .floating-settings-btn {
+  /* All 3 Buttons exactly 44px on mobile */
+  .floating-btn {
     width: 44px;
     height: 44px;
-  }
-
-  .floating-whatsapp-btn {
-    width: 50px;
-    height: 50px;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .wa-tooltip-pill {
@@ -2481,5 +2492,6 @@ img, svg {
   .floating-settings-popover {
     min-width: 250px;
     right: 0;
+    bottom: calc(100% + 10px);
   }
 }
