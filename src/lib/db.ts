@@ -1,4 +1,5 @@
 import mysql, { Pool } from 'mysql2/promise';
+import { getMongoDb } from './mongodb';
 import {
   SiteSettings,
   Category,
@@ -290,6 +291,23 @@ export async function initDatabase(): Promise<boolean> {
 // ------------------- Data Access Methods ------------------- //
 
 export async function getSiteSettings(): Promise<SiteSettings> {
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      const col = mongo.collection('site_settings');
+      const doc = await col.findOne({ id: 'primary_settings' });
+      if (doc) {
+        const { _id, id: _, ...settingsData } = doc;
+        inMemory.settings = { ...inMemory.settings, ...settingsData };
+        return inMemory.settings;
+      } else {
+        await col.insertOne({ id: 'primary_settings', ...inMemory.settings });
+      }
+    } catch (e) {
+      console.warn('MongoDB getSiteSettings error:', e);
+    }
+  }
+
   const p = getDbPool();
   if (p) {
     try {
@@ -326,6 +344,20 @@ export async function getSiteSettings(): Promise<SiteSettings> {
 
 export async function updateSiteSettings(settings: Partial<SiteSettings>): Promise<SiteSettings> {
   inMemory.settings = { ...inMemory.settings, ...settings };
+
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      await mongo.collection('site_settings').updateOne(
+        { id: 'primary_settings' },
+        { $set: { id: 'primary_settings', ...inMemory.settings } },
+        { upsert: true }
+      );
+    } catch (e) {
+      console.warn('MongoDB updateSiteSettings error:', e);
+    }
+  }
+
   const p = getDbPool();
   if (p) {
     try {
@@ -508,10 +540,38 @@ export async function saveTrustItem(item: TrustItem): Promise<TrustItem> {
 }
 
 export async function getReviews(): Promise<Review[]> {
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      const col = mongo.collection('reviews');
+      const count = await col.countDocuments();
+      if (count === 0 && inMemory.reviews.length > 0) {
+        await col.insertMany(inMemory.reviews.map((r) => ({ ...r })));
+      }
+      const docs = await col.find({ isActive: true }).sort({ sortOrder: 1, date: -1 }).toArray();
+      if (docs && docs.length > 0) {
+        return docs.map(({ _id, ...rest }) => rest as Review);
+      }
+    } catch (e) {
+      console.warn('MongoDB getReviews error, fallback to memory:', e);
+    }
+  }
   return inMemory.reviews.filter((r) => r.isActive).sort((a, b) => a.sortOrder - b.sortOrder);
 }
 
 export async function getAllReviewsAdmin(): Promise<Review[]> {
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      const col = mongo.collection('reviews');
+      const docs = await col.find({}).sort({ sortOrder: 1, date: -1 }).toArray();
+      if (docs && docs.length > 0) {
+        return docs.map(({ _id, ...rest }) => rest as Review);
+      }
+    } catch (e) {
+      console.warn('MongoDB getAllReviewsAdmin error, fallback to memory:', e);
+    }
+  }
   return inMemory.reviews;
 }
 
@@ -523,12 +583,34 @@ export async function saveReview(review: Review): Promise<Review> {
     inMemory.reviews.push(review);
   }
   savePersistedReviews(inMemory.reviews);
+
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      await mongo.collection('reviews').updateOne(
+        { id: review.id },
+        { $set: { ...review } },
+        { upsert: true }
+      );
+    } catch (e) {
+      console.warn('MongoDB saveReview error:', e);
+    }
+  }
   return review;
 }
 
 export async function deleteReview(id: string): Promise<boolean> {
   inMemory.reviews = inMemory.reviews.filter((r) => r.id !== id);
   savePersistedReviews(inMemory.reviews);
+
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      await mongo.collection('reviews').deleteOne({ id });
+    } catch (e) {
+      console.warn('MongoDB deleteReview error:', e);
+    }
+  }
   return true;
 }
 
@@ -559,6 +641,15 @@ export async function createCustomerReview(data: {
 
   inMemory.reviews.unshift(newReview);
   savePersistedReviews(inMemory.reviews);
+
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      await mongo.collection('reviews').insertOne({ ...newReview });
+    } catch (e) {
+      console.warn('MongoDB insert customer review error:', e);
+    }
+  }
   return newReview;
 }
 
@@ -577,6 +668,15 @@ export async function createBooking(data: Omit<Booking, 'bookingId' | 'createdAt
 
   inMemory.bookings.unshift(newBooking);
   savePersistedBookings(inMemory.bookings);
+
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      await mongo.collection('bookings').insertOne({ ...newBooking });
+    } catch (err) {
+      console.warn('MongoDB insert booking error:', err);
+    }
+  }
 
   const p = getDbPool();
   if (p) {
@@ -610,6 +710,23 @@ export async function createBooking(data: Omit<Booking, 'bookingId' | 'createdAt
 }
 
 export async function getBookings(): Promise<Booking[]> {
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      const list = await mongo
+        .collection('bookings')
+        .find({})
+        .sort({ createdAt: -1 })
+        .limit(500)
+        .toArray();
+      if (list && list.length > 0) {
+        return list.map(({ _id, ...rest }) => rest as Booking);
+      }
+    } catch (e) {
+      console.warn('MongoDB getBookings error, fallback:', e);
+    }
+  }
+
   const p = getDbPool();
   if (p) {
     try {
@@ -643,6 +760,19 @@ export async function getBookings(): Promise<Booking[]> {
 }
 
 export async function getBookingById(bookingId: string): Promise<Booking | null> {
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      const doc = await mongo.collection('bookings').findOne({ bookingId });
+      if (doc) {
+        const { _id, ...rest } = doc;
+        return rest as Booking;
+      }
+    } catch (e) {
+      console.warn('MongoDB getBookingById error, fallback:', e);
+    }
+  }
+
   const p = getDbPool();
   if (p) {
     try {
@@ -677,6 +807,19 @@ export async function updateBookingStatus(bookingId: string, status: Booking['st
   const b = inMemory.bookings.find((item) => item.bookingId === bookingId);
   if (b) b.status = status;
   savePersistedBookings(inMemory.bookings);
+
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      await mongo.collection('bookings').updateOne(
+        { bookingId },
+        { $set: { status, updatedAt: new Date().toISOString() } }
+      );
+    } catch (e) {
+      console.warn('MongoDB updateBookingStatus error:', e);
+    }
+  }
+
   const p = getDbPool();
   if (p) {
     try {
@@ -691,6 +834,16 @@ export async function updateBookingStatus(bookingId: string, status: Booking['st
 export async function deleteBooking(bookingId: string): Promise<boolean> {
   inMemory.bookings = inMemory.bookings.filter((item) => item.bookingId !== bookingId);
   savePersistedBookings(inMemory.bookings);
+
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      await mongo.collection('bookings').deleteOne({ bookingId });
+    } catch (e) {
+      console.warn('MongoDB deleteBooking error:', e);
+    }
+  }
+
   const p = getDbPool();
   if (p) {
     try {
@@ -879,6 +1032,30 @@ export async function updateAISettings(settings: Partial<AISettings>): Promise<A
 
 export async function getAdminByEmail(identifier: string): Promise<AdminUser | null> {
   const cleanPhone = identifier.replace(/[^\d]/g, '');
+
+  const mongo = await getMongoDb();
+  if (mongo) {
+    try {
+      const col = mongo.collection('admins');
+      const count = await col.countDocuments();
+      if (count === 0 && inMemory.admins.length > 0) {
+        await col.insertMany(inMemory.admins.map((a) => ({ ...a })));
+      }
+      const doc = await col.findOne({
+        $or: [
+          { email: identifier.toLowerCase() },
+          ...(cleanPhone ? [{ phone: cleanPhone }, { phone: `+91${cleanPhone}` }] : [])
+        ]
+      });
+      if (doc) {
+        const { _id, ...adminData } = doc;
+        return adminData as AdminUser;
+      }
+    } catch (e) {
+      console.warn('MongoDB getAdminByEmail error, fallback to memory:', e);
+    }
+  }
+
   const p = getDbPool();
   if (p) {
     try {
