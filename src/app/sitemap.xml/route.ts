@@ -12,7 +12,7 @@ export async function GET() {
     getBlogPosts(true)
   ]);
 
-  const now = new Date().toISOString();
+  const today = new Date().toISOString().split('T')[0];
 
   type SitemapItem = {
     url: string;
@@ -33,12 +33,12 @@ export async function GET() {
   ];
 
   for (const p of staticPaths) {
-    const enUrl = `${SITE_URL}${p.path ? `/${p.path}` : ''}`;
+    const enUrl = p.path ? `${SITE_URL}/${p.path}` : `${SITE_URL}/`;
     const bnUrl = `${SITE_URL}/bn${p.path ? `/${p.path}` : ''}`;
 
     items.push({
       url: enUrl,
-      lastmod: now,
+      lastmod: today,
       changefreq: p.changefreq,
       priority: p.priority,
       alternate: bnUrl
@@ -46,7 +46,7 @@ export async function GET() {
 
     items.push({
       url: bnUrl,
-      lastmod: now,
+      lastmod: today,
       changefreq: p.changefreq,
       priority: (parseFloat(p.priority) * 0.9).toFixed(1),
       alternate: enUrl
@@ -60,7 +60,7 @@ export async function GET() {
 
     items.push({
       url: enUrl,
-      lastmod: now,
+      lastmod: today,
       changefreq: 'weekly',
       priority: '0.9',
       alternate: bnUrl
@@ -68,7 +68,7 @@ export async function GET() {
 
     items.push({
       url: bnUrl,
-      lastmod: now,
+      lastmod: today,
       changefreq: 'weekly',
       priority: '0.85',
       alternate: enUrl
@@ -79,7 +79,7 @@ export async function GET() {
   for (const post of blogPosts) {
     const enUrl = `${SITE_URL}/blog/${post.slug}`;
     const bnUrl = `${SITE_URL}/bn/blog/${post.slug}`;
-    const postDate = new Date(post.updatedAt || post.createdAt).toISOString();
+    const postDate = new Date(post.updatedAt || post.createdAt).toISOString().split('T')[0];
 
     items.push({
       url: enUrl,
@@ -107,7 +107,7 @@ export async function GET() {
 
     items.push({
       url: enUrl,
-      lastmod: now,
+      lastmod: today,
       changefreq: 'weekly',
       priority: '0.85',
       alternate: bnUrl
@@ -115,7 +115,7 @@ export async function GET() {
 
     items.push({
       url: bnUrl,
-      lastmod: now,
+      lastmod: today,
       changefreq: 'weekly',
       priority: '0.8',
       alternate: enUrl
@@ -123,7 +123,6 @@ export async function GET() {
   }
 
   const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="${SITE_URL}/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${items
   .map((item) => {
@@ -153,4 +152,8 @@ ${items
       'X-Content-Type-Options': 'nosniff'
     }
   });
+}
+
+export async function HEAD() {
+  return GET();
 }

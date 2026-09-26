@@ -28,6 +28,9 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin', '/admin/*', '/api/admin', '/api/admin/*']
       }))
     ],
-    sitemap: `${SITE_URL}/sitemap.xml`
+    sitemap: [
+      `${SITE_URL}/sitemap.xml`,
+      `${SITE_URL}/sitemap_index.xml`
+    ]
   };
 }
