@@ -123,21 +123,25 @@ export async function GET() {
   }
 
   const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="${SITE_URL}/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${items
-  .map(
-    (item) => `  <url>
+  .map((item) => {
+    const isBengali = item.url.includes('/bn');
+    const enUrl = isBengali && item.alternate ? item.alternate : item.url;
+    const bnUrl = !isBengali && item.alternate ? item.alternate : item.url;
+
+    return `  <url>
     <loc>${item.url}</loc>
     <lastmod>${item.lastmod}</lastmod>
     <changefreq>${item.changefreq}</changefreq>
     <priority>${item.priority}</priority>${
       item.alternate
-        ? `\n    <xhtml:link rel="alternate" hreflang="${item.url.includes('/bn') ? 'en' : 'bn'}" href="${item.alternate}" />`
+        ? `\n    <xhtml:link rel="alternate" hreflang="en" href="${enUrl}" />\n    <xhtml:link rel="alternate" hreflang="bn" href="${bnUrl}" />\n    <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}" />`
         : ''
     }
-  </url>`
-  )
+  </url>`;
+  })
   .join('\n')}
 </urlset>`;
 
