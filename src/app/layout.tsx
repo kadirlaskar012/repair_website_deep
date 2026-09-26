@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import { Inter, Space_Grotesk, Noto_Sans_Bengali } from 'next/font/google';
 import './globals.css';
 import { SITE_URL } from '@/lib/seo';
@@ -107,6 +108,21 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-44B6EKMKNV"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-44B6EKMKNV');
+          `}
+        </Script>
+
         <ScrollRestorer />
         {children}
         <FloatingActionSuite />
