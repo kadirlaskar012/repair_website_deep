@@ -12,7 +12,6 @@ import WidePromoBannerTwo from '@/components/home/WidePromoBannerTwo';
 import TrustSection from '@/components/home/TrustSection';
 import BrandsSection from '@/components/home/BrandsSection';
 import PricingSection from '@/components/home/PricingSection';
-import ReviewsSection from '@/components/home/ReviewsSection';
 import HomeSeoContent from '@/components/home/HomeSeoContent';
 import HomeFaqSection from '@/components/home/HomeFaqSection';
 import CtaBanner from '@/components/home/CtaBanner';
@@ -140,19 +139,13 @@ export default function HomePageView({
           lang={lang}
         />
 
-        {/* 9. Pricing / Diagnosis Explanation (₹299 Visit Fee) */}
+        {/* Pricing / Diagnosis Explanation (₹299 Visit Fee) */}
         <PricingSection
           lang={lang}
           onOpenBooking={handleDirectBooking}
         />
 
-        {/* 10. Customer Reviews (Homepage only) */}
-        <ReviewsSection
-          reviews={reviews}
-          lang={lang}
-        />
-
-        {/* 11. Comprehensive In-Depth SEO Guide & Local Coverage Network */}
+        {/* 10. Comprehensive In-Depth SEO Guide & Local Coverage Network */}
         <HomeSeoContent
           lang={lang}
           onOpenBooking={handleDirectBooking}

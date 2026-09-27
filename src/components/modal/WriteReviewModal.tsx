@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Star, X, CheckCircle2, ShieldCheck, MapPin, Wrench, User, Phone } from 'lucide-react';
+import Link from 'next/link';
+import { Star, X, CheckCircle2, ShieldCheck, MapPin, Wrench, User, Phone, ArrowRight } from 'lucide-react';
 import { Language, Review } from '@/lib/types';
 import { lockScroll, unlockScroll } from '@/lib/scrollLock';
 
@@ -9,7 +10,7 @@ interface WriteReviewModalProps {
   isOpen: boolean;
   onClose: () => void;
   lang: Language;
-  onReviewSubmitted: (newReview: Review) => void;
+  onReviewSubmitted?: (newReview: Review) => void;
 }
 
 export default function WriteReviewModal({
@@ -58,7 +59,7 @@ export default function WriteReviewModal({
   if (!isOpen) return null;
 
   const ratingLabels: Record<number, { en: string; bn: string }> = {
-    1: { en: 'Poor Experience', bn: 'সন্তোষজনক নয়' },
+    1: { en: 'Poor Experience', bn: 'সন্তোষজনক নয়' },
     2: { en: 'Fair / Below Average', bn: 'মোটামুটি' },
     3: { en: 'Good Service', bn: 'ভালো পরিষেবা' },
     4: { en: 'Very Good & Prompt', bn: 'খুব ভালো ও দ্রুত' },
@@ -109,7 +110,7 @@ export default function WriteReviewModal({
       }
 
       setIsSuccess(true);
-      if (data.review) {
+      if (data.review && onReviewSubmitted) {
         onReviewSubmitted(data.review);
       }
 
@@ -131,75 +132,51 @@ export default function WriteReviewModal({
       role="dialog"
       aria-modal="true"
       aria-labelledby="write-review-title"
-      style={{ zIndex: 1000 }}
     >
       <div
-        className="modal-dialog"
+        className="modal-dialog review-modal-dialog"
         onClick={(e) => e.stopPropagation()}
-        style={{
-          maxWidth: '540px',
-          width: '100%',
-          backgroundColor: 'var(--color-bg-card)',
-          borderRadius: '20px',
-          padding: 0,
-          overflow: 'hidden',
-          boxShadow: '0 20px 50px rgba(0, 0, 0, 0.25)',
-          border: '1px solid var(--color-border)'
-        }}
       >
-        {/* Modal Header */}
-        <div
-          style={{
-            padding: '20px 24px',
-            backgroundColor: 'var(--color-bg-warm)',
-            borderBottom: '1px solid var(--color-border-light)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between'
-          }}
-        >
-          <div>
+        {/* Mobile Drag Indicator Bar */}
+        <div className="modal-drag-indicator" aria-hidden="true">
+          <div className="modal-drag-pill" />
+        </div>
+
+        {/* Modal Sticky Header */}
+        <div className="booking-modal-header">
+          <div className="booking-modal-header-left">
             <div
+              className="booking-modal-icon-badge"
               style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px',
-                color: 'var(--color-primary)',
-                fontSize: '0.75rem',
-                fontWeight: 700,
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                marginBottom: '2px'
+                background: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
+                color: '#FFFFFF',
+                boxShadow: '0 2px 8px rgba(217, 119, 6, 0.35)'
               }}
+              aria-hidden="true"
             >
-              <Star size={14} fill="var(--color-primary)" />
-              <span>{isBn ? 'গ্রাহক মতামত' : 'Customer Feedback'}</span>
+              <Star size={20} fill="#FFFFFF" />
             </div>
-            <h2
-              id="write-review-title"
-              style={{
-                margin: 0,
-                fontSize: '1.25rem',
-                fontWeight: 800,
-                color: 'var(--color-text-main)'
-              }}
-            >
-              {isBn ? 'আপনার অভিজ্ঞতা শেয়ার করুন' : 'Write a Customer Review'}
-            </h2>
+            <div>
+              <h3 id="write-review-title" className="booking-modal-title">
+                {isBn ? 'গ্রাহক রিভিউ ও মতামত দিন' : 'Write a Customer Review'}
+              </h3>
+              <p className="booking-modal-subtitle">
+                {isBn ? 'আপনার মূল্যবান মতামত অন্যান্য পরিবারের সিদ্ধান্ত নিতে সাহায্য করবে' : 'Share your honest appliance repair experience'}
+              </p>
+            </div>
           </div>
 
           <button
             onClick={onClose}
-            className="header-icon-btn"
-            style={{ width: '36px', height: '36px' }}
-            aria-label="Close modal"
+            className="booking-modal-close-btn"
+            aria-label={isBn ? 'বন্ধ করুন' : 'Close modal'}
           >
             <X size={18} />
           </button>
         </div>
 
-        {/* Content Body */}
-        <div style={{ padding: '24px' }}>
+        {/* Scrollable Content Body - Guaranteed Responsive Scrolling */}
+        <div className="review-modal-body">
           {isSuccess ? (
             <div style={{ textAlign: 'center', padding: '36px 12px' }}>
               <div
@@ -223,7 +200,7 @@ export default function WriteReviewModal({
               <p style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)', lineHeight: 1.5 }}>
                 {isBn
                   ? 'আপনার মূল্যবান রিভিউটি সফলভাবে প্রকাশিত হয়েছে। এটি অন্যান্য গ্রাহকদের সিদ্ধান্ত নিতে সাহায্য করবে।'
-                  : 'Your review has been successfully submitted and helps other families find verified repair care.'}
+                  : 'Your review has been successfully submitted and helps families across West Bengal find verified care.'}
               </p>
             </div>
           ) : (
@@ -232,11 +209,11 @@ export default function WriteReviewModal({
               <div
                 style={{
                   textAlign: 'center',
-                  padding: '16px',
+                  padding: '14px 16px',
                   backgroundColor: 'var(--color-bg-alt)',
-                  borderRadius: '14px',
+                  borderRadius: '12px',
                   border: '1px solid var(--color-border-light)',
-                  marginBottom: '20px'
+                  marginBottom: '16px'
                 }}
               >
                 <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: 'var(--color-text-muted)', marginBottom: '8px' }}>
@@ -262,20 +239,23 @@ export default function WriteReviewModal({
                       style={{
                         background: 'none',
                         border: 'none',
-                        padding: '4px',
+                        padding: '6px',
                         cursor: 'pointer',
-                        transition: 'transform 0.15s ease'
+                        touchAction: 'manipulation',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
                       }}
                       aria-label={`${s} Stars`}
                     >
                       <Star
-                        size={32}
+                        size={30}
                         fill={s <= currentStar ? '#F59E0B' : 'none'}
                         color={s <= currentStar ? '#F59E0B' : 'var(--color-text-light)'}
                         strokeWidth={1.5}
                         style={{
-                          transform: s <= currentStar ? 'scale(1.1)' : 'scale(1)',
-                          transition: 'all 0.15s ease'
+                          transform: s <= currentStar ? 'scale(1.12)' : 'scale(1)',
+                          transition: 'transform 0.15s ease'
                         }}
                       />
                     </button>
@@ -297,19 +277,18 @@ export default function WriteReviewModal({
                     color: '#B91C1C',
                     borderRadius: '8px',
                     fontSize: '0.875rem',
-                    marginBottom: '16px'
+                    marginBottom: '14px'
                   }}
                 >
                   {errorMsg}
                 </div>
               )}
 
-              {/* Form Grid */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '14px', marginBottom: '14px' }}>
-                {/* Name */}
+              {/* Form Grid Row 1: Name & Location */}
+              <div className="review-form-grid">
                 <div>
-                  <label className="form-label">
-                    <User size={14} style={{ display: 'inline', marginRight: '4px' }} />
+                  <label className="form-label" style={{ fontSize: '0.875rem' }}>
+                    <User size={14} style={{ display: 'inline', marginRight: '4px', verticalAlign: 'middle' }} />
                     {isBn ? 'আপনার নাম' : 'Your Full Name'} <span className="required">*</span>
                   </label>
                   <input
@@ -319,13 +298,13 @@ export default function WriteReviewModal({
                     onChange={(e) => setName(e.target.value)}
                     placeholder={isBn ? 'উদা: সৌমেন ব্যানার্জী' : 'e.g. Soumen Banerjee'}
                     className="form-control"
+                    style={{ fontSize: '16px' }}
                   />
                 </div>
 
-                {/* Location */}
                 <div>
-                  <label className="form-label">
-                    <MapPin size={14} style={{ display: 'inline', marginRight: '4px' }} />
+                  <label className="form-label" style={{ fontSize: '0.875rem' }}>
+                    <MapPin size={14} style={{ display: 'inline', marginRight: '4px', verticalAlign: 'middle' }} />
                     {isBn ? 'এলাকা / শহর' : 'Locality / Area'} <span className="required">*</span>
                   </label>
                   <input
@@ -335,22 +314,23 @@ export default function WriteReviewModal({
                     onChange={(e) => setLocation(e.target.value)}
                     placeholder={isBn ? 'উদা: সল্টলেক, সেক্টর ৫' : 'e.g. Salt Lake, Sector 5'}
                     className="form-control"
+                    style={{ fontSize: '16px' }}
                   />
                 </div>
               </div>
 
-              {/* Service Category & Phone */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '14px', marginBottom: '14px' }}>
+              {/* Form Grid Row 2: Service Category & Mobile */}
+              <div className="review-form-grid">
                 <div>
-                  <label className="form-label">
-                    <Wrench size={14} style={{ display: 'inline', marginRight: '4px' }} />
+                  <label className="form-label" style={{ fontSize: '0.875rem' }}>
+                    <Wrench size={14} style={{ display: 'inline', marginRight: '4px', verticalAlign: 'middle' }} />
                     {isBn ? 'পরিষেবা ক্যাটাগরি' : 'Appliance Serviced'} <span className="required">*</span>
                   </label>
                   <select
                     value={serviceCategory}
                     onChange={(e) => setServiceCategory(e.target.value)}
                     className="form-control"
-                    style={{ cursor: 'pointer' }}
+                    style={{ cursor: 'pointer', fontSize: '16px' }}
                   >
                     <option value="AC Repair">{isBn ? 'এসি মেরামত ও সার্ভিসিং' : 'AC Repair & Service'}</option>
                     <option value="Refrigerator Repair">{isBn ? 'ফ্রিজ মেরামত' : 'Refrigerator Repair'}</option>
@@ -361,23 +341,24 @@ export default function WriteReviewModal({
                 </div>
 
                 <div>
-                  <label className="form-label">
-                    <Phone size={14} style={{ display: 'inline', marginRight: '4px' }} />
-                    {isBn ? 'মোবাইল নম্বর (গোপনীয়)' : 'Mobile No (Private)'}
+                  <label className="form-label" style={{ fontSize: '0.875rem' }}>
+                    <Phone size={14} style={{ display: 'inline', marginRight: '4px', verticalAlign: 'middle' }} />
+                    {isBn ? 'মোবাইল নম্বর' : 'Mobile No'} <span style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>({isBn ? 'ঐচ্ছিক' : 'Optional'})</span>
                   </label>
                   <input
                     type="tel"
                     value={mobile}
                     onChange={(e) => setMobile(e.target.value.replace(/[^\d]/g, '').slice(0, 10))}
-                    placeholder={isBn ? '১০ সংখ্যার নম্বর (ঐচ্ছিক)' : '10-digit number (optional)'}
+                    placeholder={isBn ? '১০ সংখ্যার নম্বর (গোপনীয় থাকবে)' : '10-digit number (kept private)'}
                     className="form-control"
+                    style={{ fontSize: '16px' }}
                   />
                 </div>
               </div>
 
-              {/* Review Text */}
-              <div style={{ marginBottom: '20px' }}>
-                <label className="form-label">
+              {/* Detailed Review Textarea */}
+              <div style={{ marginBottom: '16px' }}>
+                <label className="form-label" style={{ fontSize: '0.875rem' }}>
                   {isBn ? 'আপনার অভিজ্ঞতা ও টেকনিশিয়ানের কাজ কেমন লেগেছে লিখুন' : 'Detailed Review / Feedback'}{' '}
                   <span className="required">*</span>
                 </label>
@@ -388,22 +369,51 @@ export default function WriteReviewModal({
                   onChange={(e) => setComment(e.target.value)}
                   placeholder={
                     isBn
-                      ? 'টেকনিশিয়ানের সময়ানুবর্তিতা, মেরামতের মান এবং আপনার অভিজ্ঞতা সম্পর্কে বিস্তারিত জানান...'
-                      : 'Share your honest feedback on technician punctuality, service quality, and pricing...'
+                      ? 'টেকনিশিয়ানের সময়ানুবর্তিতা, কাজের মান এবং আপনার অভিজ্ঞতা সম্পর্কে বিস্তারিত জানান...'
+                      : 'Share your honest feedback on technician punctuality, repair quality, and pricing...'
                   }
                   className="form-control"
-                  style={{ resize: 'vertical', minHeight: '80px' }}
+                  style={{ resize: 'vertical', minHeight: '80px', fontSize: '16px' }}
                 />
               </div>
 
-              {/* Submit CTA & Trust Note */}
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
+              {/* Direct Link to Dedicated Reviews Page */}
+              <div style={{ marginBottom: '16px', textAlign: 'center' }}>
+                <Link
+                  href={isBn ? '/bn/reviews' : '/reviews'}
+                  onClick={onClose}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    fontSize: '0.8125rem',
+                    color: 'var(--color-primary)',
+                    fontWeight: 600,
+                    textDecoration: 'underline'
+                  }}
+                >
+                  <span>{isBn ? 'সমস্ত প্রকাশিত গ্রাহক রিভিউ দেখুন' : 'View all verified customer reviews'}</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              {/* Action Buttons & Trust Badge */}
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
+                  gap: '12px',
+                  paddingTop: '8px'
+                }}
+              >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
-                  <ShieldCheck size={16} color="var(--color-success)" />
-                  <span>{isBn ? '১০০% আসল ও বিশ্বস্ত গ্রাহক পর্যালোচনা' : '100% genuine verified customer review'}</span>
+                  <ShieldCheck size={16} color="var(--color-success)" style={{ flexShrink: 0 }} />
+                  <span>{isBn ? '১০০% আসল ও যাচাইকৃত পর্যালোচনা' : '100% genuine verified customer review'}</span>
                 </div>
 
-                <div style={{ display: 'flex', gap: '10px' }}>
+                <div style={{ display: 'flex', gap: '10px', width: '100%', justifyContent: 'flex-end' }}>
                   <button
                     type="button"
                     onClick={onClose}
@@ -417,7 +427,12 @@ export default function WriteReviewModal({
                     type="submit"
                     disabled={isSubmitting}
                     className="btn btn-primary"
-                    style={{ minHeight: '42px', padding: '8px 22px' }}
+                    style={{
+                      minHeight: '44px',
+                      padding: '8px 24px',
+                      background: 'linear-gradient(135deg, #0F766E 0%, #115E59 100%)',
+                      fontWeight: 700
+                    }}
                   >
                     {isSubmitting ? (
                       <span>{isBn ? 'জমা হচ্ছে...' : 'Submitting...'}</span>

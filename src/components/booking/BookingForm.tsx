@@ -52,27 +52,20 @@ export default function BookingForm({
     if (initialProblem) setProblem(initialProblem);
   }, [initialCategory, initialBrand, initialProblem]);
 
-  // Validation checks
+  // Validation checks: Name, Mobile, Category (Service) and Brand enable the booking button
   const isNameValid = name.trim().length >= 2;
   // Indian 10-digit mobile number: starts with 6, 7, 8, 9, followed by 9 digits
   const cleanMobile = mobile.replace(/[^\d]/g, '');
   const isMobileValid = /^[6-9]\d{9}$/.test(cleanMobile);
   const isServiceValid = Boolean(service);
   const isBrandValid = Boolean(brand.trim());
-  const isProblemValid = problem.trim().length >= 3;
-  const isAddressValid = address.trim().length >= 8;
-  const isDateValid = Boolean(preferredDate) && preferredDate >= todayStr;
-  const isTimeValid = Boolean(preferredTime);
 
+  // Form is valid and booking button is enabled as soon as name, number, category and brand are selected
   const isFormValid =
     isNameValid &&
     isMobileValid &&
     isServiceValid &&
-    isBrandValid &&
-    isProblemValid &&
-    isAddressValid &&
-    isDateValid &&
-    isTimeValid;
+    isBrandValid;
 
   // Filtered brands for selected service
   const availableBrands = brands.filter(
@@ -98,10 +91,10 @@ export default function BookingForm({
           service,
           serviceName: selectedCat ? (isBn ? selectedCat.nameBn : selectedCat.name) : service,
           brand: brand.trim(),
-          problem: problem.trim(),
-          address: address.trim(),
-          preferredDate,
-          preferredTime,
+          problem: problem.trim() || (isBn ? 'সাধারণ পরিদর্শন ও মেরামত' : 'General repair & inspection'),
+          address: address.trim() || (isBn ? 'ফোনে ঠিকানা জানানো হবে' : 'Address to be confirmed on phone call'),
+          preferredDate: preferredDate || todayStr,
+          preferredTime: preferredTime || '09:00 AM - 12:00 PM',
           lang
         })
       });
@@ -239,10 +232,10 @@ export default function BookingForm({
         </div>
       </div>
 
-      {/* Row 3: Problem Description */}
+      {/* Row 3: Problem Description (Optional) */}
       <div className="form-group" style={{ margin: 0 }}>
         <label htmlFor="booking-problem" className="form-label">
-          {t.problemDetails} <span className="required">*</span>
+          {t.problemDetails} <span style={{ fontSize: '0.8125rem', color: 'var(--color-text-muted)', fontWeight: 'normal' }}>({isBn ? 'ঐচ্ছিক' : 'Optional'})</span>
         </label>
         <input
           id="booking-problem"
@@ -251,18 +244,14 @@ export default function BookingForm({
           className="form-control"
           value={problem}
           onChange={(e) => setProblem(e.target.value)}
-          placeholder={t.problemPlaceholder}
-          required
+          placeholder={isBn ? 'সমস্যা লিখুন (ঐচ্ছিক - যেমন: কুলিং হচ্ছে না, অতিরিক্ত শব্দ)' : 'Describe issue (Optional - e.g. Not cooling, making noise)'}
         />
-        {problem && !isProblemValid && (
-          <div className="form-error">{isBn ? 'অনুগ্রহ করে সমস্যার সংক্ষিপ্ত বিবরণ দিন' : 'Please provide problem details'}</div>
-        )}
       </div>
 
-      {/* Row 4: Address */}
+      {/* Row 4: Address (Optional) */}
       <div className="form-group" style={{ margin: 0 }}>
         <label htmlFor="booking-address" className="form-label">
-          {t.serviceAddress} <span className="required">*</span>
+          {t.serviceAddress} <span style={{ fontSize: '0.8125rem', color: 'var(--color-text-muted)', fontWeight: 'normal' }}>({isBn ? 'ঐচ্ছিক' : 'Optional'})</span>
         </label>
         <textarea
           id="booking-address"
@@ -270,14 +259,10 @@ export default function BookingForm({
           className="form-control"
           value={address}
           onChange={(e) => setAddress(e.target.value)}
-          placeholder={t.addressPlaceholder}
+          placeholder={isBn ? 'ঠিকানা লিখুন (বাড়ি/এলাকার ঠিকানা বা ফোনেও জানাতে পারেন)' : 'Enter address (or confirm on phone call)'}
           autoComplete="street-address"
           rows={2}
-          required
         />
-        {address && !isAddressValid && (
-          <div className="form-error">{isBn ? 'বাড়ি নম্বর, এলাকা ও ল্যান্ডমার্ক সহ সম্পূর্ণ ঠিকানা দিন' : 'Enter complete address with area/PIN'}</div>
-        )}
       </div>
 
       {/* Row 5: Preferred Date & Time */}
@@ -357,7 +342,7 @@ export default function BookingForm({
 
         {!isFormValid && (
           <div style={{ textAlign: 'center', marginTop: '8px', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
-            {t.submitDisabledTip}
+            {isBn ? 'নাম, ১০ সংখ্যার মোবাইল নম্বর, সার্ভিস ও ব্র্যান্ড নির্বাচন করলেই বুকিং বাটন সক্রিয় হবে' : 'Enter Name, 10-digit Mobile, Service and Brand to enable booking'}
           </div>
         )}
       </div>

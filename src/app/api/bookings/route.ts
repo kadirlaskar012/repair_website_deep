@@ -10,10 +10,10 @@ const bookingSchema = z.object({
   service: z.string().min(1, 'Service category is required'),
   serviceName: z.string().optional(),
   brand: z.string().min(1, 'Brand is required'),
-  problem: z.string().min(3, 'Problem description is required'),
-  address: z.string().min(8, 'Address must be at least 8 characters'),
-  preferredDate: z.string().min(10, 'Valid preferred date is required'),
-  preferredTime: z.string().min(3, 'Preferred time slot is required'),
+  problem: z.string().optional().default('General service & inspection'),
+  address: z.string().optional().default('Address to be confirmed on call'),
+  preferredDate: z.string().optional().default(new Date().toISOString().split('T')[0]),
+  preferredTime: z.string().optional().default('09:00 AM - 12:00 PM'),
   notes: z.string().optional(),
   lang: z.enum(['en', 'bn']).optional()
 });

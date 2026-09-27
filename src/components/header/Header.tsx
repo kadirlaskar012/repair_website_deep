@@ -274,12 +274,23 @@ export default function Header({
               })}
 
               <Link
-                href={isBn ? '/bn/blog' : '/blog'}
+                href={isBn ? '/bn/reviews' : '/reviews'}
                 prefetch={true}
                 scroll={true}
                 onClick={() => setMobileMenuOpen(false)}
                 className="mobile-drawer-link"
                 style={{ marginTop: '6px', borderTop: '1px solid var(--color-border-light)', paddingTop: '14px' }}
+              >
+                <span>{isBn ? 'গ্রাহক রিভিউ ও রেটিং ★' : 'Customer Reviews ★'}</span>
+                <ChevronRight size={15} style={{ opacity: 0.4 }} />
+              </Link>
+
+              <Link
+                href={isBn ? '/bn/blog' : '/blog'}
+                prefetch={true}
+                scroll={true}
+                onClick={() => setMobileMenuOpen(false)}
+                className="mobile-drawer-link"
               >
                 <span>{isBn ? 'মেরামত ব্লগ ও গাইড' : 'Repair Blog & Guides'}</span>
                 <ChevronRight size={15} style={{ opacity: 0.4 }} />

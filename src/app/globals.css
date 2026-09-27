@@ -601,6 +601,40 @@ img, svg {
   flex: 1;
 }
 
+/* Review Modal Specialized Styles */
+.review-modal-dialog {
+  max-width: 560px;
+}
+
+.review-modal-body {
+  padding: 24px;
+  max-height: calc(85vh - 75px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  flex: 1;
+}
+
+.review-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 640px) {
+  .review-modal-body {
+    padding: 16px;
+    max-height: calc(88dvh - 74px);
+    padding-bottom: 32px;
+  }
+  .review-form-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
 /* Booking Form Layout Styles */
 .booking-form-container {
   display: flex;
@@ -2250,6 +2284,46 @@ img, svg {
 }
 
 .floating-whatsapp-btn:hover .wa-tooltip-pill {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Floating Review Button (Directly under WhatsApp) */
+.floating-review-btn {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #FFFFFF;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.42);
+}
+
+.floating-review-btn:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #B45309 100%);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 24px rgba(245, 158, 11, 0.58);
+}
+
+.floating-review-btn .review-star-icon {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.review-tooltip-pill {
+  position: absolute;
+  right: calc(100% + 12px);
+  background-color: #2E1B05;
+  color: #FEF3C7;
+  font-size: 0.78125rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.floating-review-btn:hover .review-tooltip-pill {
   opacity: 1;
   transform: translateX(0);
 }

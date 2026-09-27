@@ -11,8 +11,10 @@ import {
   Sun,
   Moon,
   MessageCircle,
-  Check
+  Check,
+  Star
 } from 'lucide-react';
+import WriteReviewModal from '@/components/modal/WriteReviewModal';
 
 interface FloatingActionSuiteProps {
   whatsappNumber?: string;
@@ -25,6 +27,7 @@ export default function FloatingActionSuite({
   const [mounted, setMounted] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const popoverRef = useRef<HTMLDivElement>(null);
   const settingsBtnRef = useRef<HTMLButtonElement>(null);
@@ -121,7 +124,8 @@ export default function FloatingActionSuite({
   if (!mounted) return null;
 
   return (
-    <aside className="floating-action-suite" aria-label="Quick Actions & Settings">
+    <>
+      <aside className="floating-action-suite" aria-label="Quick Actions & Settings">
       {/* 1. Floating WhatsApp CTA Button (TOP-MOST) */}
       <a
         href={waUrl}
@@ -138,7 +142,21 @@ export default function FloatingActionSuite({
         </span>
       </a>
 
-      {/* 2. Floating Settings Button & Popover (MIDDLE) */}
+      {/* 2. Floating Review Button (UNDER WHATSAPP, WHATSAPP REMAINS TOP-MOST) */}
+      <button
+        type="button"
+        onClick={() => setIsReviewModalOpen(true)}
+        className="floating-btn floating-review-btn"
+        aria-label={isBn ? 'গ্রাহক রিভিউ ও মতামত দিন' : 'Write a Customer Review'}
+        title={isBn ? 'গ্রাহক রিভিউ দিন' : 'Write a Review'}
+      >
+        <Star size={20} className="review-star-icon" fill="#FFFFFF" strokeWidth={1.5} />
+        <span className="review-tooltip-pill">
+          {isBn ? 'রিভিউ দিন ★' : 'Customer Review ★'}
+        </span>
+      </button>
+
+      {/* 3. Floating Settings Button & Popover (MIDDLE) */}
       <div className="floating-settings-wrapper">
         {isSettingsOpen && (
           <div
@@ -233,7 +251,7 @@ export default function FloatingActionSuite({
         </button>
       </div>
 
-      {/* 3. Go To Top Button (BOTTOM - AKDAM NICHE) */}
+      {/* 4. Go To Top Button (BOTTOM - AKDAM NICHE) */}
       <div className={`floating-top-wrapper ${showScrollTop ? 'visible' : ''}`}>
         <button
           onClick={handleScrollToTop}
@@ -246,5 +264,13 @@ export default function FloatingActionSuite({
         </button>
       </div>
     </aside>
-  );
+
+    {/* Write Review Modal */}
+    <WriteReviewModal
+      isOpen={isReviewModalOpen}
+      onClose={() => setIsReviewModalOpen(false)}
+      lang={isBn ? 'bn' : 'en'}
+    />
+  </>
+);
 }

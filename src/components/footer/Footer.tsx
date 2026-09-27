@@ -160,6 +160,11 @@ export default function Footer({ settings, categories, locations, lang }: Footer
                 </Link>
               </li>
               <li>
+                <Link href={isBn ? '/bn/reviews' : '/reviews'} prefetch={true} scroll={true} style={{ color: '#B5C7C3' }}>
+                  {isBn ? 'গ্রাহক রিভিউ ও রেটিং' : 'Customer Reviews & Ratings'}
+                </Link>
+              </li>
+              <li>
                 <Link href={isBn ? '/bn/privacy-policy' : '/privacy-policy'} prefetch={true} scroll={true} style={{ color: '#B5C7C3' }}>
                   {t.privacyPolicy}
                 </Link>
