@@ -7,6 +7,7 @@ export const revalidate = 3600;
 export async function GET() {
   const today = new Date().toISOString().split('T')[0];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>${SITE_URL}/sitemap.xml</loc>

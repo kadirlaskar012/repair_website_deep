@@ -13,6 +13,49 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: '/sitemap.xsl',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'text/xsl; charset=utf-8'
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=86400, stale-while-revalidate=604800'
+          },
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*'
+          }
+        ]
+      },
+      {
+        source: '/sitemap.xml',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/xml; charset=utf-8'
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=3600, stale-while-revalidate=86400'
+          }
+        ]
+      },
+      {
+        source: '/sitemap_index.xml',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/xml; charset=utf-8'
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=3600, stale-while-revalidate=86400'
+          }
+        ]
+      },
+      {
         source: '/:all*(svg|jpg|png|webp|avif|woff2|woff)',
         headers: [
           {
