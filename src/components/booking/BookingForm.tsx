@@ -37,11 +37,7 @@ export default function BookingForm({
   const [problem, setProblem] = useState(initialProblem || '');
   const [address, setAddress] = useState('');
   
-  // Date calculation: minimum today (YYYY-MM-DD)
   const todayStr = new Date().toISOString().split('T')[0];
-  const [preferredDate, setPreferredDate] = useState(todayStr);
-  const [preferredTime, setPreferredTime] = useState('09:00 AM - 12:00 PM');
-
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
@@ -93,8 +89,8 @@ export default function BookingForm({
           brand: brand.trim(),
           problem: problem.trim() || (isBn ? 'সাধারণ পরিদর্শন ও মেরামত' : 'General repair & inspection'),
           address: address.trim() || (isBn ? 'ফোনে ঠিকানা জানানো হবে' : 'Address to be confirmed on phone call'),
-          preferredDate: preferredDate || todayStr,
-          preferredTime: preferredTime || '09:00 AM - 12:00 PM',
+          preferredDate: todayStr,
+          preferredTime: isBn ? 'জরুরি / দ্রুততম সময়ে' : 'Immediate / ASAP',
           lang
         })
       });
@@ -104,7 +100,14 @@ export default function BookingForm({
         throw new Error(data.error || 'Failed to submit booking. Please try again.');
       }
 
-      const bookingId = data.booking.bookingId;
+      const booking = data.booking;
+      const bookingId = booking.bookingId;
+      try {
+        if (typeof window !== 'undefined') {
+          sessionStorage.setItem(`booking_${bookingId}`, JSON.stringify(booking));
+        }
+      } catch (e) {}
+
       if (onSuccess) {
         onSuccess(bookingId);
       } else {
@@ -265,43 +268,6 @@ export default function BookingForm({
         />
       </div>
 
-      {/* Row 5: Preferred Date & Time */}
-      <div className="booking-form-grid">
-        <div className="form-group" style={{ margin: 0 }}>
-          <label htmlFor="booking-date" className="form-label">
-            {t.preferredDate} <span className="required">*</span>
-          </label>
-          <input
-            id="booking-date"
-            name="preferredDate"
-            type="date"
-            className="form-control"
-            min={todayStr}
-            value={preferredDate}
-            onChange={(e) => setPreferredDate(e.target.value)}
-            required
-          />
-        </div>
-
-        <div className="form-group" style={{ margin: 0 }}>
-          <label htmlFor="booking-time" className="form-label">
-            {t.preferredTime} <span className="required">*</span>
-          </label>
-          <select
-            id="booking-time"
-            name="preferredTime"
-            className="form-control"
-            value={preferredTime}
-            onChange={(e) => setPreferredTime(e.target.value)}
-            required
-          >
-            <option value="09:00 AM - 12:00 PM">{t.slotMorning}</option>
-            <option value="12:00 PM - 03:00 PM">{t.slotAfternoon}</option>
-            <option value="03:00 PM - 06:00 PM">{t.slotEvening}</option>
-            <option value="06:00 PM - 08:00 PM">{t.slotLate}</option>
-          </select>
-        </div>
-      </div>
 
       {/* ₹299 Pricing Reminder */}
       <div

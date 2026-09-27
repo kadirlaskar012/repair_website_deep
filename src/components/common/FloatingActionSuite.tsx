@@ -32,12 +32,24 @@ export default function FloatingActionSuite({
   const popoverRef = useRef<HTMLDivElement>(null);
   const settingsBtnRef = useRef<HTMLButtonElement>(null);
 
+  const [isModalActive, setIsModalActive] = useState(false);
+
   // Initialize theme & listen to scroll with hysteresis (prevents flickering)
   useEffect(() => {
     setMounted(true);
     const activeTheme =
       document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
     setTheme(activeTheme);
+
+    // Check modal state initially
+    if (typeof document !== 'undefined') {
+      setIsModalActive(document.body.classList.contains('modal-open'));
+    }
+
+    const handleModalChange = (e: any) => {
+      setIsModalActive(Boolean(e.detail?.open));
+    };
+    window.addEventListener('modal-state-change', handleModalChange);
 
     let ticking = false;
     const handleScroll = () => {
@@ -63,6 +75,7 @@ export default function FloatingActionSuite({
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('modal-state-change', handleModalChange);
     };
   }, []);
 
@@ -86,9 +99,20 @@ export default function FloatingActionSuite({
     };
   }, [isSettingsOpen]);
 
-  // Don't render on Admin pages
-  if (pathname.startsWith('/admin')) {
-    return null;
+  // Don't render on Admin, Tracking or Booking Success pages
+  const isExcludedPage =
+    pathname.startsWith('/admin') ||
+    pathname.includes('/track') ||
+    pathname.includes('/booking-success');
+
+  if (isExcludedPage) {
+    return isReviewModalOpen ? (
+      <WriteReviewModal
+        isOpen={isReviewModalOpen}
+        onClose={() => setIsReviewModalOpen(false)}
+        lang={pathname.startsWith('/bn') ? 'bn' : 'en'}
+      />
+    ) : null;
   }
 
   // Calculate Language paths
@@ -125,7 +149,10 @@ export default function FloatingActionSuite({
 
   return (
     <>
-      <aside className="floating-action-suite" aria-label="Quick Actions & Settings">
+      <aside
+        className={`floating-action-suite ${isModalActive || isReviewModalOpen ? 'hide-floating' : ''}`}
+        aria-label="Quick Actions & Settings"
+      >
       {/* 1. Floating WhatsApp CTA Button (TOP-MOST) */}
       <a
         href={waUrl}

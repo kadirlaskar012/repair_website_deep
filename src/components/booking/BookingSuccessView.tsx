@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
   CheckCircle2,
@@ -34,7 +34,31 @@ export default function BookingSuccessView({
 }: BookingSuccessViewProps) {
   const t = getDictionary(lang);
   const isBn = lang === 'bn';
+  const [activeBooking, setActiveBooking] = useState<Booking | null>(booking);
   const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    if (!activeBooking && bookingId) {
+      // 1. Check client session storage for instant data
+      try {
+        const stored = sessionStorage.getItem(`booking_${bookingId}`);
+        if (stored) {
+          setActiveBooking(JSON.parse(stored));
+          return;
+        }
+      } catch (e) {}
+
+      // 2. Fetch from real-time API
+      fetch(`/api/bookings/${encodeURIComponent(bookingId)}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.success && data.booking) {
+            setActiveBooking(data.booking);
+          }
+        })
+        .catch(() => {});
+    }
+  }, [bookingId, activeBooking]);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(bookingId);
@@ -42,9 +66,15 @@ export default function BookingSuccessView({
     setTimeout(() => setCopied(false), 2500);
   };
 
-  const whatsappText = encodeURIComponent(
-    `Hello Appliance Seva, I have scheduled booking ID: ${bookingId}. Please confirm my technician appointment.`
-  );
+  const whatsappMsg = activeBooking
+    ? isBn
+      ? `নমস্কার Appliance Seva,\nআমি একটি সার্ভিস বুকিং করেছি।\n\n📌 বুকিং নম্বর: ${bookingId}\n👤 গ্রাহকের নাম: ${activeBooking.name}\n📞 মোবাইল নম্বর: ${activeBooking.mobile}\n🛠️ সার্ভিস: ${activeBooking.serviceName || activeBooking.service}\n🏷️ ব্র্যান্ড: ${activeBooking.brand}\n⚠️ সমস্যা: ${activeBooking.problem || 'সাধারণ পরিদর্শন ও মেরামত'}\n📍 ঠিকানা: ${activeBooking.address || 'ফোনে জানানো হবে'}\n\nঅনুগ্রহ করে টেকনিশিয়ান ভিজিট দ্রুত নিশ্চিত করুন। ধন্যবাদ!`
+      : `Hello Appliance Seva,\nI have scheduled a service appointment.\n\n📌 Booking ID: ${bookingId}\n👤 Customer Name: ${activeBooking.name}\n📞 Mobile Number: ${activeBooking.mobile}\n🛠️ Service: ${activeBooking.serviceName || activeBooking.service}\n🏷️ Brand: ${activeBooking.brand}\n⚠️ Issue / Problem: ${activeBooking.problem || 'General Inspection & Repair'}\n📍 Address: ${activeBooking.address || 'Address confirmed on call'}\n\nPlease confirm my technician visit at the earliest. Thank you!`
+    : isBn
+      ? `নমস্কার Appliance Seva,\nআমার বুকিং নম্বর: ${bookingId}। অনুগ্রহ করে টেকনিশিয়ান ভিজিট নিশ্চিত করুন।`
+      : `Hello Appliance Seva, I have scheduled booking ID: ${bookingId}. Please confirm my technician appointment.`;
+
+  const whatsappText = encodeURIComponent(whatsappMsg);
 
   return (
     <div style={{ padding: '60px 0', backgroundColor: 'var(--color-bg-warm)', minHeight: '80vh' }}>
@@ -130,7 +160,7 @@ export default function BookingSuccessView({
           </div>
 
           {/* Appointment Summary if booking details present */}
-          {booking && (
+          {activeBooking && (
             <div
               style={{
                 backgroundColor: 'var(--color-bg-warm)',
@@ -147,30 +177,30 @@ export default function BookingSuccessView({
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', fontSize: '0.875rem' }}>
                 <div>
                   <span style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'গ্রাহকের নাম:' : 'Customer Name:'}</span>{' '}
-                  <strong style={{ color: 'var(--color-text-main)' }}>{booking.name}</strong>
+                  <strong style={{ color: 'var(--color-text-main)' }}>{activeBooking.name}</strong>
                 </div>
                 <div>
-                  <span style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'মোবাইল:' : 'Mobile:'}</span>{' '}
-                  <strong style={{ color: 'var(--color-text-main)' }}>{booking.mobile}</strong>
+                  <span style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'মোবাইল নম্বর:' : 'Mobile:'}</span>{' '}
+                  <strong style={{ color: 'var(--color-text-main)' }}>{activeBooking.mobile}</strong>
                 </div>
                 <div>
-                  <span style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'অ্যাপ্লায়েন্স:' : 'Service:'}</span>{' '}
-                  <strong style={{ color: 'var(--color-text-main)' }}>{booking.serviceName || booking.service} ({booking.brand})</strong>
+                  <span style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'অ্যাপ্লায়েন্স ও ব্র্যান্ড:' : 'Service & Brand:'}</span>{' '}
+                  <strong style={{ color: 'var(--color-text-main)' }}>{activeBooking.serviceName || activeBooking.service} ({activeBooking.brand})</strong>
                 </div>
                 <div>
-                  <span style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'তারিখ ও সময়:' : 'Slot:'}</span>{' '}
-                  <strong style={{ color: 'var(--color-text-main)' }}>{booking.preferredDate} ({booking.preferredTime})</strong>
+                  <span style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'সমস্যা / ইস্যু:' : 'Reported Issue:'}</span>{' '}
+                  <strong style={{ color: 'var(--color-text-main)' }}>{activeBooking.problem || (isBn ? 'সাধারণ পরিদর্শন ও মেরামত' : 'General inspection & repair')}</strong>
                 </div>
               </div>
 
               <div style={{ marginTop: '12px', paddingTop: '10px', borderTop: '1px solid var(--color-border-light)', fontSize: '0.8125rem', color: 'var(--color-text-muted)' }}>
-                <span style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'ঠিকানা:' : 'Address:'}</span> {booking.address}
+                <span style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'ঠিকানা:' : 'Address:'}</span> {activeBooking.address}
               </div>
 
               <div style={{ marginTop: '10px', fontSize: '0.8125rem', color: 'var(--color-primary-dark)', fontWeight: 600 }}>
                 {isBn
-                  ? 'ডোরস্টেপ পরিদর্শন ফি: ₹২৯৯ (অন-সাইট ডায়াগনোসিসের সময় প্রযোজ্য)'
-                  : 'Doorstep Inspection Fee: ₹299 (payable upon physical diagnosis)'}
+                  ? '⚡ সার্ভিস শিডিউল: জরুরি / দ্রুততম সময়ে টেকনিশিয়ান ভিজিট (ডোরস্টেপ পরিদর্শন ফি: ₹২৯৯)'
+                  : '⚡ Service Schedule: Immediate / ASAP Doorstep Technician Visit (Inspection Fee: ₹299)'}
               </div>
             </div>
           )}

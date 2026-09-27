@@ -13,7 +13,11 @@ import {
   AlertCircle,
   Truck,
   ShieldCheck,
-  RotateCcw
+  RotateCcw,
+  User,
+  MapPin,
+  Copy,
+  Check
 } from 'lucide-react';
 import { Language, Booking } from '@/lib/types';
 import { lockScroll, unlockScroll } from '@/lib/scrollLock';
@@ -38,6 +42,13 @@ export default function TrackBookingModal({
   const [searched, setSearched] = useState(false);
   const [booking, setBooking] = useState<Booking | null>(null);
   const [errorMessage, setErrorMessage] = useState('');
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = (id: string) => {
+    navigator.clipboard.writeText(id);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   // Lock background scroll when open
   useEffect(() => {
@@ -212,36 +223,79 @@ export default function TrackBookingModal({
               e.preventDefault();
               handleTrack();
             }}
-            style={{ marginBottom: '20px' }}
+            style={{ marginBottom: '22px' }}
           >
-            <label
-              htmlFor="tracking-input"
+            <div
               style={{
-                display: 'block',
-                fontSize: '0.875rem',
-                fontWeight: 700,
-                color: 'var(--color-text-main)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
                 marginBottom: '8px'
               }}
             >
-              {isBn ? 'বুকিং নম্বর লিখুন:' : 'Enter Booking Number:'}
-            </label>
+              <label
+                htmlFor="tracking-input"
+                style={{
+                  fontSize: '0.875rem',
+                  fontWeight: 700,
+                  color: 'var(--color-text-main)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px'
+                }}
+              >
+                <Search size={15} style={{ color: 'var(--color-primary)' }} />
+                <span>{isBn ? 'আপনার বুকিং নম্বরটি লিখুন:' : 'Enter Your Booking ID:'}</span>
+              </label>
 
-            <div style={{ display: 'flex', gap: '8px' }}>
-              <div style={{ position: 'relative', flex: 1 }}>
+              {bookingIdInput && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setBookingIdInput('');
+                    setBooking(null);
+                    setErrorMessage('');
+                  }}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: 'var(--color-text-muted)',
+                    fontSize: '0.75rem',
+                    cursor: 'pointer',
+                    textDecoration: 'underline'
+                  }}
+                >
+                  {isBn ? 'মুছে ফেলুন' : 'Clear'}
+                </button>
+              )}
+            </div>
+
+            <div
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '8px',
+                position: 'relative'
+              }}
+            >
+              <div style={{ position: 'relative', flex: '1 1 240px' }}>
                 <input
                   id="tracking-input"
                   type="text"
                   value={bookingIdInput}
                   onChange={(e) => setBookingIdInput(e.target.value)}
-                  placeholder={isBn ? 'উদা: AS-84920147' : 'e.g. AS-84920147'}
+                  placeholder={isBn ? 'উদা: AS-84920147 বা ACR-XXXX' : 'e.g. AS-84920147 or ACR-XXXX'}
                   className="form-control"
                   style={{
                     paddingLeft: '14px',
-                    fontSize: '16px',
+                    paddingRight: '14px',
+                    height: '46px',
+                    fontSize: '15px',
                     fontWeight: 600,
                     letterSpacing: '0.04em',
-                    textTransform: 'uppercase'
+                    textTransform: 'uppercase',
+                    borderColor: 'var(--color-border)',
+                    boxShadow: '0 2px 6px rgba(0, 0, 0, 0.03)'
                   }}
                   autoFocus
                 />
@@ -252,21 +306,35 @@ export default function TrackBookingModal({
                 disabled={loading || !bookingIdInput.trim()}
                 className="btn btn-primary"
                 style={{
-                  minHeight: '44px',
-                  padding: '8px 20px',
+                  minHeight: '46px',
+                  padding: '8px 22px',
                   fontWeight: 700,
-                  flexShrink: 0
+                  flexShrink: 0,
+                  borderRadius: 'var(--radius-md)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  boxShadow: '0 3px 12px rgba(15, 118, 110, 0.25)'
                 }}
               >
                 {loading ? (
-                  <span>{isBn ? 'খোঁজা হচ্ছে...' : 'Tracking...'}</span>
+                  <>
+                    <RotateCcw size={16} className="animate-spin" />
+                    <span>{isBn ? 'খোঁজা হচ্ছে...' : 'Tracking...'}</span>
+                  </>
                 ) : (
                   <>
                     <Search size={16} />
-                    <span>{isBn ? 'ট্র্যাক করুন' : 'Track'}</span>
+                    <span>{isBn ? 'লাইভ ট্র্যাক করুন' : 'Track Status'}</span>
                   </>
                 )}
               </button>
+            </div>
+
+            <div style={{ marginTop: '6px', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
+              {isBn
+                ? '💡 বুকিং করার সময় প্রাপ্ত রেফারেন্স নম্বর (যেমন: AS-84920147) দিন'
+                : '💡 Enter the booking reference code provided upon appointment confirmation'}
             </div>
           </form>
 
@@ -317,23 +385,45 @@ export default function TrackBookingModal({
                 style={{
                   backgroundColor: 'var(--color-bg-card)',
                   border: '1.5px solid var(--color-border)',
-                  borderRadius: '14px',
-                  padding: '16px 18px',
-                  marginBottom: '20px',
+                  borderRadius: '16px',
+                  padding: '16px 20px',
+                  marginBottom: '16px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
                   flexWrap: 'wrap',
                   gap: '12px',
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.04)'
+                  boxShadow: '0 3px 12px rgba(0,0,0,0.04)'
                 }}
               >
                 <div>
                   <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', fontWeight: 600, textTransform: 'uppercase' }}>
-                    {isBn ? 'বুকিং রেফারেন্স আইডি' : 'Booking Reference'}
+                    {isBn ? 'বুকিং রেফারেন্স নম্বর' : 'Booking Reference'}
                   </div>
-                  <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-primary)', letterSpacing: '0.04em' }}>
-                    {booking.bookingId}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '2px' }}>
+                    <span style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-primary)', letterSpacing: '0.04em' }}>
+                      {booking.bookingId}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => handleCopy(booking.bookingId)}
+                      title={isBn ? 'কপি করুন' : 'Copy ID'}
+                      style={{
+                        background: 'none',
+                        border: '1px solid var(--color-border)',
+                        borderRadius: '6px',
+                        padding: '4px 8px',
+                        fontSize: '0.75rem',
+                        color: 'var(--color-text-muted)',
+                        cursor: 'pointer',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px'
+                      }}
+                    >
+                      {copied ? <Check size={14} color="var(--color-success)" /> : <Copy size={14} />}
+                      <span>{copied ? (isBn ? 'কপি হয়েছে' : 'Copied') : (isBn ? 'কপি' : 'Copy')}</span>
+                    </button>
                   </div>
                 </div>
 
@@ -341,9 +431,9 @@ export default function TrackBookingModal({
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
-                    gap: '6px',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
+                    gap: '8px',
+                    padding: '8px 16px',
+                    borderRadius: '24px',
                     fontSize: '0.8125rem',
                     fontWeight: 700,
                     backgroundColor:
@@ -393,6 +483,194 @@ export default function TrackBookingModal({
                 </div>
               </div>
 
+              {/* Customer & Appliance Details Card (Requested by user) */}
+              <div
+                style={{
+                  backgroundColor: 'var(--color-bg-card)',
+                  border: '1.5px solid var(--color-border)',
+                  borderRadius: '16px',
+                  padding: '18px 20px',
+                  marginBottom: '16px',
+                  boxShadow: '0 3px 12px rgba(0, 0, 0, 0.03)'
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: '0.8125rem',
+                    fontWeight: 700,
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em',
+                    color: 'var(--color-primary-dark)',
+                    marginBottom: '14px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    borderBottom: '1px solid var(--color-border-light)',
+                    paddingBottom: '8px'
+                  }}
+                >
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <User size={15} />
+                    <span>{isBn ? 'গ্রাহক ও অ্যাপ্লায়েন্স বিবরণ' : 'Customer & Appliance Details'}</span>
+                  </span>
+                  <span
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      fontSize: '0.6875rem',
+                      fontWeight: 700,
+                      backgroundColor: 'rgba(16, 185, 129, 0.12)',
+                      color: '#065F46',
+                      padding: '3px 8px',
+                      borderRadius: '12px'
+                    }}
+                  >
+                    <ShieldCheck size={12} />
+                    <span>{isBn ? '৯০ দিন ওয়ারেন্টি' : '90-Day Warranty'}</span>
+                  </span>
+                </div>
+
+                <div
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                    gap: '12px',
+                    fontSize: '0.875rem'
+                  }}
+                >
+                  {/* Customer Name */}
+                  <div
+                    style={{
+                      padding: '10px 12px',
+                      backgroundColor: 'var(--color-bg-warm)',
+                      borderRadius: '10px',
+                      border: '1px solid var(--color-border-light)'
+                    }}
+                  >
+                    <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '3px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <User size={13} />
+                      <span>{isBn ? 'গ্রাহকের নাম' : 'Customer Name'}</span>
+                    </div>
+                    <div style={{ fontWeight: 700, color: 'var(--color-text-main)', fontSize: '0.9375rem' }}>
+                      {booking.name}
+                    </div>
+                  </div>
+
+                  {/* Customer Mobile */}
+                  <div
+                    style={{
+                      padding: '10px 12px',
+                      backgroundColor: 'var(--color-bg-warm)',
+                      borderRadius: '10px',
+                      border: '1px solid var(--color-border-light)'
+                    }}
+                  >
+                    <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '3px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <Phone size={13} />
+                      <span>{isBn ? 'মোবাইল নম্বর' : 'Phone Number'}</span>
+                    </div>
+                    <div>
+                      <a
+                        href={`tel:${booking.mobile}`}
+                        style={{
+                          fontWeight: 700,
+                          color: 'var(--color-primary)',
+                          fontSize: '0.9375rem',
+                          textDecoration: 'none'
+                        }}
+                      >
+                        {booking.mobile}
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Appliance Category & Brand */}
+                  <div
+                    style={{
+                      padding: '10px 12px',
+                      backgroundColor: 'var(--color-bg-warm)',
+                      borderRadius: '10px',
+                      border: '1px solid var(--color-border-light)'
+                    }}
+                  >
+                    <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '3px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <Wrench size={13} />
+                      <span>{isBn ? 'অ্যাপ্লায়েন্স ও ব্র্যান্ড' : 'Service & Brand'}</span>
+                    </div>
+                    <div style={{ fontWeight: 700, color: 'var(--color-text-main)', fontSize: '0.9375rem' }}>
+                      {booking.serviceName || booking.service} {booking.brand ? `• ${booking.brand}` : ''}
+                    </div>
+                  </div>
+
+                  {/* Problem / Issue */}
+                  <div
+                    style={{
+                      padding: '10px 12px',
+                      backgroundColor: 'var(--color-bg-warm)',
+                      borderRadius: '10px',
+                      border: '1px solid var(--color-border-light)'
+                    }}
+                  >
+                    <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '3px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <AlertCircle size={13} />
+                      <span>{isBn ? 'সমস্যা / ইস্যু' : 'Reported Issue'}</span>
+                    </div>
+                    <div style={{ fontWeight: 700, color: 'var(--color-text-main)', fontSize: '0.9375rem' }}>
+                      {booking.problem || (isBn ? 'সাধারণ পরিদর্শন ও মেরামত' : 'General repair & inspection')}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Service Address & Schedule */}
+                <div
+                  style={{
+                    marginTop: '12px',
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                    gap: '10px'
+                  }}
+                >
+                  {booking.address && (
+                    <div
+                      style={{
+                        padding: '10px 12px',
+                        backgroundColor: 'var(--color-bg-warm)',
+                        borderRadius: '10px',
+                        border: '1px solid var(--color-border-light)',
+                        display: 'flex',
+                        alignItems: 'flex-start',
+                        gap: '8px'
+                      }}
+                    >
+                      <MapPin size={15} style={{ color: 'var(--color-primary)', marginTop: '2px', flexShrink: 0 }} />
+                      <div style={{ fontSize: '0.8125rem', color: 'var(--color-text-main)' }}>
+                        <strong style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'ঠিকানা: ' : 'Address: '}</strong>
+                        {booking.address}
+                      </div>
+                    </div>
+                  )}
+
+                  <div
+                    style={{
+                      padding: '10px 12px',
+                      backgroundColor: 'var(--color-bg-warm)',
+                      borderRadius: '10px',
+                      border: '1px solid var(--color-border-light)',
+                      display: 'flex',
+                      alignItems: 'flex-start',
+                      gap: '8px'
+                    }}
+                  >
+                    <Clock size={15} style={{ color: 'var(--color-primary)', marginTop: '2px', flexShrink: 0 }} />
+                    <div style={{ fontSize: '0.8125rem', color: 'var(--color-text-main)' }}>
+                      <strong style={{ color: 'var(--color-text-muted)' }}>{isBn ? 'সার্ভিস শিডিউল: ' : 'Schedule: '}</strong>
+                      {booking.preferredTime || (isBn ? 'জরুরি / দ্রুততম সময়ে' : 'Immediate / ASAP')}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Progress Stepper Timeline */}
               {booking.status !== 'cancelled' && (
                 <div
@@ -401,7 +679,7 @@ export default function TrackBookingModal({
                     border: '1px solid var(--color-border-light)',
                     borderRadius: '14px',
                     padding: '18px 16px',
-                    marginBottom: '20px'
+                    marginBottom: '16px'
                   }}
                 >
                   <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: 'var(--color-text-main)', marginBottom: '16px' }}>
@@ -466,43 +744,13 @@ export default function TrackBookingModal({
                 </div>
               )}
 
-              {/* Booking Key Info Grid */}
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-                  gap: '12px',
-                  marginBottom: '20px'
-                }}
-              >
-                <div style={{ padding: '12px 14px', backgroundColor: 'var(--color-bg-card)', border: '1px solid var(--color-border-light)', borderRadius: '10px' }}>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', display: 'flex', alignItems: 'center', gap: '4px', marginBottom: '2px' }}>
-                    <Wrench size={13} />
-                    <span>{isBn ? 'অ্যাপ্লায়েন্স ও ব্র্যান্ড' : 'Service & Brand'}</span>
-                  </div>
-                  <div style={{ fontSize: '0.9375rem', fontWeight: 700, color: 'var(--color-text-main)' }}>
-                    {booking.serviceName || booking.service} {booking.brand ? `(${booking.brand})` : ''}
-                  </div>
-                </div>
-
-                <div style={{ padding: '12px 14px', backgroundColor: 'var(--color-bg-card)', border: '1px solid var(--color-border-light)', borderRadius: '10px' }}>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', display: 'flex', alignItems: 'center', gap: '4px', marginBottom: '2px' }}>
-                    <Calendar size={13} />
-                    <span>{isBn ? 'নির্ধারিত তারিখ ও সময়' : 'Appointment Slot'}</span>
-                  </div>
-                  <div style={{ fontSize: '0.9375rem', fontWeight: 700, color: 'var(--color-text-main)' }}>
-                    {booking.preferredDate} • {booking.preferredTime}
-                  </div>
-                </div>
-              </div>
-
               {/* Customer Care Direct Actions */}
               <div
                 style={{
                   padding: '16px',
                   backgroundColor: 'rgba(37, 211, 102, 0.08)',
                   border: '1px solid rgba(37, 211, 102, 0.3)',
-                  borderRadius: '12px',
+                  borderRadius: '14px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
@@ -512,17 +760,19 @@ export default function TrackBookingModal({
               >
                 <div>
                   <div style={{ fontWeight: 700, color: '#0F5132', fontSize: '0.875rem' }}>
-                    {isBn ? 'বুকিং সংক্রান্ত প্রশ্ন আছে?' : 'Have Questions About This Booking?'}
+                    {isBn ? 'টেকনিশিয়ান আপডেট চান?' : 'Need Live Technician Updates?'}
                   </div>
                   <div style={{ fontSize: '0.78125rem', color: '#155724' }}>
-                    {isBn ? 'আমাদের টিম তাৎক্ষণিক সাহায্য করবে' : 'Our team can assist with technician status'}
+                    {isBn ? 'সরাসরি হেল্পডেস্ক বা টেকনিশিয়ানের সাথে চ্যাট করুন' : 'Connect instantly with our coordination desk'}
                   </div>
                 </div>
 
                 <div style={{ display: 'flex', gap: '8px' }}>
                   <a
                     href={`https://wa.me/916291674186?text=${encodeURIComponent(
-                      `Hello Appliance Seva, I want an update regarding my booking ID ${booking.bookingId} (${booking.serviceName || booking.service}).`
+                      isBn
+                        ? `নমস্কার Appliance Seva,\nআমার বুকিং নম্বর: ${booking.bookingId}\nগ্রাহক: ${booking.name}\nমোবাইল: ${booking.mobile}\nসার্ভিস: ${booking.serviceName || booking.service} (${booking.brand})\nসমস্যা: ${booking.problem || 'সাধারণ মেরামত'}\n\nদয়া করে টেকনিশিয়ান আপডেট দিন।`
+                        : `Hello Appliance Seva,\nBooking ID: ${booking.bookingId}\nCustomer: ${booking.name}\nMobile: ${booking.mobile}\nService: ${booking.serviceName || booking.service} (${booking.brand})\nIssue: ${booking.problem || 'General Repair'}\n\nPlease share technician arrival update.`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -532,7 +782,7 @@ export default function TrackBookingModal({
                       color: '#FFFFFF',
                       fontSize: '0.8125rem',
                       fontWeight: 700,
-                      padding: '8px 14px',
+                      padding: '9px 16px',
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '6px',
@@ -540,7 +790,7 @@ export default function TrackBookingModal({
                       textDecoration: 'none'
                     }}
                   >
-                    <MessageCircle size={15} />
+                    <MessageCircle size={16} />
                     <span>WhatsApp</span>
                   </a>
 
@@ -550,7 +800,7 @@ export default function TrackBookingModal({
                     style={{
                       fontSize: '0.8125rem',
                       fontWeight: 700,
-                      padding: '8px 14px',
+                      padding: '9px 16px',
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '6px',
@@ -558,7 +808,7 @@ export default function TrackBookingModal({
                     }}
                   >
                     <Phone size={15} />
-                    <span>Call</span>
+                    <span>{isBn ? 'কল করুন' : 'Call'}</span>
                   </a>
                 </div>
               </div>

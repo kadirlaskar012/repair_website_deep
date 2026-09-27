@@ -2187,6 +2187,15 @@ img, svg {
   align-items: flex-end;
   gap: 10px;
   pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+body.modal-open .floating-action-suite,
+.floating-action-suite.hide-floating {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translateX(40px) !important;
 }
 
 .floating-action-suite * {

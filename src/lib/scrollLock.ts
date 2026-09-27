@@ -24,6 +24,8 @@ export function lockScroll() {
     document.body.style.left = '0';
     document.body.style.right = '0';
     document.body.style.width = '100%';
+    document.body.classList.add('modal-open');
+    window.dispatchEvent(new CustomEvent('modal-state-change', { detail: { open: true } }));
   }
   lockCount++;
 }
@@ -44,6 +46,8 @@ export function unlockScroll() {
     document.body.style.right = '';
     document.body.style.width = '';
     document.body.style.paddingRight = '';
+    document.body.classList.remove('modal-open');
+    window.dispatchEvent(new CustomEvent('modal-state-change', { detail: { open: false } }));
 
     // Restore exact scroll position
     window.scrollTo(0, scrollY);
