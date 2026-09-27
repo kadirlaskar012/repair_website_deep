@@ -15,6 +15,7 @@ import {
   Star
 } from 'lucide-react';
 import WriteReviewModal from '@/components/modal/WriteReviewModal';
+import ReviewsQuickPreviewModal from '@/components/modal/ReviewsQuickPreviewModal';
 
 interface FloatingActionSuiteProps {
   whatsappNumber?: string;
@@ -27,7 +28,8 @@ export default function FloatingActionSuite({
   const [mounted, setMounted] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+  const [isPreviewReviewsOpen, setIsPreviewReviewsOpen] = useState(false);
+  const [isWriteReviewOpen, setIsWriteReviewOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const popoverRef = useRef<HTMLDivElement>(null);
   const settingsBtnRef = useRef<HTMLButtonElement>(null);
@@ -106,13 +108,21 @@ export default function FloatingActionSuite({
     pathname.includes('/booking-success');
 
   if (isExcludedPage) {
-    return isReviewModalOpen ? (
-      <WriteReviewModal
-        isOpen={isReviewModalOpen}
-        onClose={() => setIsReviewModalOpen(false)}
-        lang={pathname.startsWith('/bn') ? 'bn' : 'en'}
-      />
-    ) : null;
+    return (
+      <>
+        <ReviewsQuickPreviewModal
+          isOpen={isPreviewReviewsOpen}
+          onClose={() => setIsPreviewReviewsOpen(false)}
+          onOpenWriteReview={() => setIsWriteReviewOpen(true)}
+          lang={pathname.startsWith('/bn') ? 'bn' : 'en'}
+        />
+        <WriteReviewModal
+          isOpen={isWriteReviewOpen}
+          onClose={() => setIsWriteReviewOpen(false)}
+          lang={pathname.startsWith('/bn') ? 'bn' : 'en'}
+        />
+      </>
+    );
   }
 
   // Calculate Language paths
@@ -150,7 +160,7 @@ export default function FloatingActionSuite({
   return (
     <>
       <aside
-        className={`floating-action-suite ${isModalActive || isReviewModalOpen ? 'hide-floating' : ''}`}
+        className={`floating-action-suite ${isModalActive || isPreviewReviewsOpen || isWriteReviewOpen ? 'hide-floating' : ''}`}
         aria-label="Quick Actions & Settings"
       >
       {/* 1. Floating WhatsApp CTA Button (TOP-MOST) */}
@@ -169,17 +179,17 @@ export default function FloatingActionSuite({
         </span>
       </a>
 
-      {/* 2. Floating Review Button (UNDER WHATSAPP, WHATSAPP REMAINS TOP-MOST) */}
+      {/* 2. Floating Review Button (UNDER WHATSAPP, OPENS PREVIEW MODAL INSTANTLY) */}
       <button
         type="button"
-        onClick={() => setIsReviewModalOpen(true)}
+        onClick={() => setIsPreviewReviewsOpen(true)}
         className="floating-btn floating-review-btn"
-        aria-label={isBn ? 'গ্রাহক রিভিউ ও মতামত দিন' : 'Write a Customer Review'}
-        title={isBn ? 'গ্রাহক রিভিউ দিন' : 'Write a Review'}
+        aria-label={isBn ? 'গ্রাহকদের রিভিউ ও রেটিং দেখুন' : 'View Customer Reviews'}
+        title={isBn ? 'গ্রাহকদের রিভিউ' : 'Customer Reviews'}
       >
         <Star size={20} className="review-star-icon" fill="#FFFFFF" strokeWidth={1.5} />
         <span className="review-tooltip-pill">
-          {isBn ? 'রিভিউ দিন ★' : 'Customer Review ★'}
+          {isBn ? 'রিভিউ দেখুন ★' : 'Customer Reviews ★'}
         </span>
       </button>
 
@@ -292,10 +302,18 @@ export default function FloatingActionSuite({
       </div>
     </aside>
 
-    {/* Write Review Modal */}
+    {/* Quick Reviews Preview Modal (Instant 0ms display with 'Write a Review' CTA at bottom) */}
+    <ReviewsQuickPreviewModal
+      isOpen={isPreviewReviewsOpen}
+      onClose={() => setIsPreviewReviewsOpen(false)}
+      onOpenWriteReview={() => setIsWriteReviewOpen(true)}
+      lang={isBn ? 'bn' : 'en'}
+    />
+
+    {/* Write Review Modal (Triggered when user clicks 'Write a Review' inside preview modal) */}
     <WriteReviewModal
-      isOpen={isReviewModalOpen}
-      onClose={() => setIsReviewModalOpen(false)}
+      isOpen={isWriteReviewOpen}
+      onClose={() => setIsWriteReviewOpen(false)}
       lang={isBn ? 'bn' : 'en'}
     />
   </>

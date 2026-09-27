@@ -245,18 +245,10 @@ export default function AdminReviewsPage() {
     <AdminLayout>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Page Title & Main Actions */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            marginBottom: '24px',
-            flexWrap: 'wrap',
-            gap: '16px'
-          }}
-        >
+        <div className="admin-page-header">
           <div>
             <h1
+              className="admin-page-title"
               style={{
                 fontSize: '1.875rem',
                 fontWeight: 800,
@@ -267,12 +259,12 @@ export default function AdminReviewsPage() {
             >
               Customer Reviews & Ratings
             </h1>
-            <p style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)' }}>
+            <p className="admin-page-subtitle" style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)' }}>
               Manage customer testimonials, doorstep star ratings, and moderation across Kolkata, Howrah, Hooghly & Barasat
             </p>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div className="admin-page-actions" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <button
               onClick={openAddModal}
               className="btn btn-primary btn-sm"
@@ -293,16 +285,10 @@ export default function AdminReviewsPage() {
           </div>
         </div>
 
-        {/* 4 Summary Stat Cards */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-            gap: '16px',
-            marginBottom: '28px'
-          }}
-        >
+        {/* 4 Summary Stat Cards (4 cols on desktop, 2x2 on mobile) */}
+        <div className="admin-stats-grid">
           <div
+            className="admin-stat-card"
             style={{
               backgroundColor: 'var(--color-bg-card)',
               padding: '20px',
@@ -312,6 +298,7 @@ export default function AdminReviewsPage() {
             }}
           >
             <div
+              className="admin-stat-label"
               style={{
                 fontSize: '0.8125rem',
                 fontWeight: 600,
@@ -322,6 +309,7 @@ export default function AdminReviewsPage() {
               TOTAL REVIEWS
             </div>
             <div
+              className="admin-stat-value"
               style={{
                 fontSize: '2rem',
                 fontWeight: 800,
@@ -330,12 +318,13 @@ export default function AdminReviewsPage() {
             >
               {totalCount}
             </div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
+            <div className="admin-stat-subtext" style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
               Published & submitted testimonials
             </div>
           </div>
 
           <div
+            className="admin-stat-card"
             style={{
               backgroundColor: 'var(--color-bg-card)',
               padding: '20px',
@@ -345,6 +334,7 @@ export default function AdminReviewsPage() {
             }}
           >
             <div
+              className="admin-stat-label"
               style={{
                 fontSize: '0.8125rem',
                 fontWeight: 600,
@@ -355,6 +345,7 @@ export default function AdminReviewsPage() {
               AVERAGE RATING
             </div>
             <div
+              className="admin-stat-value"
               style={{
                 fontSize: '2rem',
                 fontWeight: 800,
@@ -371,12 +362,13 @@ export default function AdminReviewsPage() {
                 ))}
               </span>
             </div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
+            <div className="admin-stat-subtext" style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
               Overall customer satisfaction score
             </div>
           </div>
 
           <div
+            className="admin-stat-card"
             style={{
               backgroundColor: 'var(--color-bg-card)',
               padding: '20px',
@@ -386,6 +378,7 @@ export default function AdminReviewsPage() {
             }}
           >
             <div
+              className="admin-stat-label"
               style={{
                 fontSize: '0.8125rem',
                 fontWeight: 600,
@@ -396,6 +389,7 @@ export default function AdminReviewsPage() {
               5-STAR RATINGS
             </div>
             <div
+              className="admin-stat-value"
               style={{
                 fontSize: '2rem',
                 fontWeight: 800,
@@ -407,12 +401,13 @@ export default function AdminReviewsPage() {
                 ({totalCount > 0 ? Math.round((fiveStarCount / totalCount) * 100) : 100}%)
               </span>
             </div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
+            <div className="admin-stat-subtext" style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
               Top satisfied door-step clients
             </div>
           </div>
 
           <div
+            className="admin-stat-card"
             style={{
               backgroundColor: 'var(--color-bg-card)',
               padding: '20px',
@@ -422,6 +417,7 @@ export default function AdminReviewsPage() {
             }}
           >
             <div
+              className="admin-stat-label"
               style={{
                 fontSize: '0.8125rem',
                 fontWeight: 600,
@@ -432,6 +428,7 @@ export default function AdminReviewsPage() {
               VERIFIED REVIEWS
             </div>
             <div
+              className="admin-stat-value"
               style={{
                 fontSize: '2rem',
                 fontWeight: 800,
@@ -440,7 +437,7 @@ export default function AdminReviewsPage() {
             >
               {verifiedCount}
             </div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
+            <div className="admin-stat-subtext" style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>
               Verified authentic service orders
             </div>
           </div>
@@ -815,10 +812,11 @@ export default function AdminReviewsPage() {
                 backgroundColor: 'var(--color-bg-card)',
                 width: '100%',
                 maxWidth: '560px',
+                maxHeight: '92vh',
+                overflowY: 'auto',
                 borderRadius: '20px',
                 border: '1.5px solid var(--color-border)',
-                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)',
-                overflow: 'hidden'
+                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)'
               }}
             >
               {/* Modal Header */}
@@ -857,7 +855,7 @@ export default function AdminReviewsPage() {
 
               {/* Modal Form */}
               <form onSubmit={handleSave} style={{ padding: '24px' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '16px' }}>
                   <div>
                     <label style={{ display: 'block', fontSize: '0.8125rem', fontWeight: 700, marginBottom: '6px' }}>
                       Customer Name *
@@ -887,7 +885,7 @@ export default function AdminReviewsPage() {
                   </div>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '16px' }}>
                   <div>
                     <label style={{ display: 'block', fontSize: '0.8125rem', fontWeight: 700, marginBottom: '6px' }}>
                       Service Category *

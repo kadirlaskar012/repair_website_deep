@@ -190,17 +190,17 @@ export default function AdminBookingsPage() {
     <AdminLayout>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Page Title & Main Actions */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px', flexWrap: 'wrap', gap: '16px' }}>
+        <div className="admin-page-header">
           <div>
-            <h1 style={{ fontSize: '1.875rem', fontWeight: 800, color: 'var(--color-text-main)', letterSpacing: '-0.02em', marginBottom: '4px' }}>
+            <h1 className="admin-page-title" style={{ fontSize: '1.875rem', fontWeight: 800, color: 'var(--color-text-main)', marginBottom: '4px' }}>
               Service Booking Leads
             </h1>
-            <p style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)' }}>
+            <p className="admin-page-subtitle" style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)' }}>
               Real-time doorstep repair appointments with unique booking IDs across Kolkata, Howrah, Hooghly & Barasat
             </p>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div className="admin-page-actions" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <button
               onClick={exportToCSV}
               disabled={bookings.length === 0}
@@ -221,57 +221,37 @@ export default function AdminBookingsPage() {
           </div>
         </div>
 
-        {/* 4 Summary Stat Cards */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-            gap: '16px',
-            marginBottom: '28px'
-          }}
-        >
-          <div style={{ backgroundColor: 'var(--color-bg-card)', padding: '20px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)', boxShadow: 'var(--shadow-xs)' }}>
-            <div style={{ fontSize: '0.8125rem', fontWeight: 600, color: 'var(--color-text-muted)', marginBottom: '6px' }}>TOTAL BOOKING LEADS</div>
-            <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--color-primary)' }}>{stats.total}</div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>All incoming service requests</div>
+        {/* 4 Summary Stat Cards (4 cols on desktop, 2x2 on mobile) */}
+        <div className="admin-stats-grid">
+          <div className="admin-stat-card" style={{ backgroundColor: 'var(--color-bg-card)', padding: '20px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)', boxShadow: 'var(--shadow-xs)' }}>
+            <div className="admin-stat-label" style={{ fontSize: '0.8125rem', fontWeight: 600, color: 'var(--color-text-muted)', marginBottom: '6px' }}>TOTAL BOOKING LEADS</div>
+            <div className="admin-stat-value" style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--color-primary)' }}>{stats.total}</div>
+            <div className="admin-stat-subtext" style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>All incoming service requests</div>
           </div>
 
-          <div style={{ backgroundColor: 'var(--color-bg-card)', padding: '20px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)', boxShadow: 'var(--shadow-xs)' }}>
-            <div style={{ fontSize: '0.8125rem', fontWeight: 600, color: '#A16207', marginBottom: '6px' }}>PENDING / NEW LEADS</div>
-            <div style={{ fontSize: '2rem', fontWeight: 800, color: '#CA8A04' }}>{stats.pending}</div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>Needs technician assignment</div>
+          <div className="admin-stat-card" style={{ backgroundColor: 'var(--color-bg-card)', padding: '20px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)', boxShadow: 'var(--shadow-xs)' }}>
+            <div className="admin-stat-label" style={{ fontSize: '0.8125rem', fontWeight: 600, color: '#A16207', marginBottom: '6px' }}>PENDING / NEW LEADS</div>
+            <div className="admin-stat-value" style={{ fontSize: '2rem', fontWeight: 800, color: '#CA8A04' }}>{stats.pending}</div>
+            <div className="admin-stat-subtext" style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>Needs technician assignment</div>
           </div>
 
-          <div style={{ backgroundColor: 'var(--color-bg-card)', padding: '20px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)', boxShadow: 'var(--shadow-xs)' }}>
-            <div style={{ fontSize: '0.8125rem', fontWeight: 600, color: '#047857', marginBottom: '6px' }}>CONFIRMED & ASSIGNED</div>
-            <div style={{ fontSize: '2rem', fontWeight: 800, color: '#059669' }}>{stats.confirmed}</div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>Technician scheduled / in transit</div>
+          <div className="admin-stat-card" style={{ backgroundColor: 'var(--color-bg-card)', padding: '20px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)', boxShadow: 'var(--shadow-xs)' }}>
+            <div className="admin-stat-label" style={{ fontSize: '0.8125rem', fontWeight: 600, color: '#047857', marginBottom: '6px' }}>CONFIRMED & ASSIGNED</div>
+            <div className="admin-stat-value" style={{ fontSize: '2rem', fontWeight: 800, color: '#059669' }}>{stats.confirmed}</div>
+            <div className="admin-stat-subtext" style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>Technician scheduled / in transit</div>
           </div>
 
-          <div style={{ backgroundColor: 'var(--color-bg-card)', padding: '20px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)', boxShadow: 'var(--shadow-xs)' }}>
-            <div style={{ fontSize: '0.8125rem', fontWeight: 600, color: '#1E40AF', marginBottom: '6px' }}>COMPLETED REPAIRS</div>
-            <div style={{ fontSize: '2rem', fontWeight: 800, color: '#2563EB' }}>{stats.completed}</div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>30-Day warranty active</div>
+          <div className="admin-stat-card" style={{ backgroundColor: 'var(--color-bg-card)', padding: '20px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)', boxShadow: 'var(--shadow-xs)' }}>
+            <div className="admin-stat-label" style={{ fontSize: '0.8125rem', fontWeight: 600, color: '#1E40AF', marginBottom: '6px' }}>COMPLETED REPAIRS</div>
+            <div className="admin-stat-value" style={{ fontSize: '2rem', fontWeight: 800, color: '#2563EB' }}>{stats.completed}</div>
+            <div className="admin-stat-subtext" style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px' }}>30-Day warranty active</div>
           </div>
         </div>
 
         {/* Filter & Live Search Toolbar */}
-        <div
-          style={{
-            backgroundColor: 'var(--color-bg-card)',
-            padding: '16px 20px',
-            borderRadius: 'var(--radius-lg)',
-            border: '1px solid var(--color-border)',
-            marginBottom: '20px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '12px'
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flex: 1, minWidth: '260px' }}>
-            <div style={{ position: 'relative', width: '100%', maxWidth: '400px' }}>
+        <div className="admin-toolbar-row">
+          <div className="admin-toolbar-controls">
+            <div className="admin-toolbar-search" style={{ position: 'relative', width: '100%', maxWidth: '400px' }}>
               <Search size={16} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--color-text-light)' }} />
               <input
                 type="text"
@@ -284,7 +264,7 @@ export default function AdminBookingsPage() {
             </div>
 
             <select
-              className="form-control"
+              className="form-control admin-toolbar-select"
               style={{ maxWidth: '180px', fontSize: '0.875rem', cursor: 'pointer' }}
               value={statusFilter}
               onChange={(e) => setStatusFilter(e.target.value)}
@@ -298,7 +278,7 @@ export default function AdminBookingsPage() {
             </select>
           </div>
 
-          <span style={{ fontSize: '0.8125rem', color: 'var(--color-text-muted)', fontWeight: 600 }}>
+          <span className="admin-toolbar-count" style={{ fontSize: '0.8125rem', color: 'var(--color-text-muted)', fontWeight: 600 }}>
             Showing {filtered.length} of {bookings.length} leads
           </span>
         </div>
@@ -329,156 +309,295 @@ export default function AdminBookingsPage() {
               </p>
             </div>
           ) : (
-            <div style={{ overflowX: 'auto' }}>
-              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.875rem' }}>
-                <thead style={{ backgroundColor: 'var(--color-bg-warm)', borderBottom: '1px solid var(--color-border)' }}>
-                  <tr>
-                    <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Booking ID</th>
-                    <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Customer & Contact</th>
-                    <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Service & Problem</th>
-                    <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Address / Locality</th>
-                    <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Schedule Slot</th>
-                    <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Status</th>
-                    <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)', textAlign: 'right' }}>Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {filtered.map((b) => (
-                    <tr key={b.bookingId} style={{ borderBottom: '1px solid var(--color-border-light)' }} className="hover-card">
-                      {/* Booking ID with Copy */}
-                      <td style={{ padding: '14px 16px', fontWeight: 700 }}>
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-                          <span style={{ color: 'var(--color-primary)', fontFamily: 'monospace', fontSize: '0.875rem', fontWeight: 800 }}>
-                            {b.bookingId}
-                          </span>
-                          <button
-                            onClick={() => handleCopyId(b.bookingId)}
-                            title="Copy Booking ID"
-                            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', color: copiedId === b.bookingId ? '#059669' : 'var(--color-text-light)' }}
-                          >
-                            {copiedId === b.bookingId ? <Check size={14} /> : <Copy size={14} />}
-                          </button>
-                        </div>
-                        <div style={{ fontSize: '0.6875rem', color: 'var(--color-text-muted)', marginTop: '2px' }}>
-                          {b.createdAt ? new Date(b.createdAt).toLocaleDateString('en-IN', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : ''}
-                        </div>
-                      </td>
+            <>
+              {/* 1. DESKTOP VIEW: Clean Structured Data Table (Hidden on Mobile) */}
+              <div className="admin-table-desktop">
+                <div style={{ overflowX: 'auto' }}>
+                  <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.875rem' }}>
+                    <thead style={{ backgroundColor: 'var(--color-bg-warm)', borderBottom: '1px solid var(--color-border)' }}>
+                      <tr>
+                        <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Booking ID</th>
+                        <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Customer & Contact</th>
+                        <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Service & Problem</th>
+                        <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Address / Locality</th>
+                        <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Schedule Slot</th>
+                        <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)' }}>Status</th>
+                        <th style={{ padding: '12px 16px', fontWeight: 700, color: 'var(--color-text-muted)', textAlign: 'right' }}>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {filtered.map((b) => (
+                        <tr key={b.bookingId} style={{ borderBottom: '1px solid var(--color-border-light)' }} className="hover-card">
+                          {/* Booking ID with Copy */}
+                          <td style={{ padding: '14px 16px', fontWeight: 700 }}>
+                            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                              <span style={{ color: 'var(--color-primary)', fontFamily: 'monospace', fontSize: '0.875rem', fontWeight: 800 }}>
+                                {b.bookingId}
+                              </span>
+                              <button
+                                onClick={() => handleCopyId(b.bookingId)}
+                                title="Copy Booking ID"
+                                style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', color: copiedId === b.bookingId ? '#059669' : 'var(--color-text-light)' }}
+                              >
+                                {copiedId === b.bookingId ? <Check size={14} /> : <Copy size={14} />}
+                              </button>
+                            </div>
+                            <div style={{ fontSize: '0.6875rem', color: 'var(--color-text-muted)', marginTop: '2px' }}>
+                              {b.createdAt ? new Date(b.createdAt).toLocaleDateString('en-IN', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : ''}
+                            </div>
+                          </td>
 
-                      {/* Customer & Quick Call / WhatsApp */}
-                      <td style={{ padding: '14px 16px' }}>
-                        <div style={{ fontWeight: 700, color: 'var(--color-text-main)' }}>{b.name}</div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '4px' }}>
-                          <a
-                            href={`tel:${b.mobile}`}
-                            className="btn btn-outline btn-sm"
-                            style={{ padding: '2px 8px', fontSize: '0.75rem', gap: '4px' }}
-                            title="Call customer directly"
-                          >
-                            <Phone size={12} style={{ color: 'var(--color-primary)' }} />
-                            <span>{b.mobile}</span>
-                          </a>
+                          {/* Customer & Quick Call / WhatsApp */}
+                          <td style={{ padding: '14px 16px' }}>
+                            <div style={{ fontWeight: 700, color: 'var(--color-text-main)' }}>{b.name}</div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '4px' }}>
+                              <a
+                                href={`tel:${b.mobile}`}
+                                className="btn btn-outline btn-sm"
+                                style={{ padding: '2px 8px', fontSize: '0.75rem', gap: '4px' }}
+                                title="Call customer directly"
+                              >
+                                <Phone size={12} style={{ color: 'var(--color-primary)' }} />
+                                <span>{b.mobile}</span>
+                              </a>
 
-                          <a
-                            href={`https://wa.me/91${b.mobile.replace(/[^\d]/g, '')}?text=${encodeURIComponent(`Hello ${b.name}, this is Appliance Seva regarding your repair booking ID: ${b.bookingId} for ${b.serviceName || b.service}.`)}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-whatsapp btn-sm"
-                            style={{ padding: '2px 8px', fontSize: '0.75rem', gap: '4px' }}
-                            title="Chat on WhatsApp"
-                          >
-                            <MessageCircle size={12} />
-                            <span>WhatsApp</span>
-                          </a>
-                        </div>
-                      </td>
+                              <a
+                                href={`https://wa.me/91${b.mobile.replace(/[^\d]/g, '')}?text=${encodeURIComponent(`Hello ${b.name}, this is Appliance Seva regarding your repair booking ID: ${b.bookingId} for ${b.serviceName || b.service}.`)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-whatsapp btn-sm"
+                                style={{ padding: '2px 8px', fontSize: '0.75rem', gap: '4px' }}
+                                title="Chat on WhatsApp"
+                              >
+                                <MessageCircle size={12} />
+                                <span>WhatsApp</span>
+                              </a>
+                            </div>
+                          </td>
 
-                      {/* Service & Problem */}
-                      <td style={{ padding: '14px 16px' }}>
-                        <div style={{ fontWeight: 700 }}>{b.serviceName || b.service}</div>
-                        <div style={{ fontSize: '0.78125rem', color: 'var(--color-primary)', fontWeight: 600 }}>Brand: {b.brand}</div>
-                        <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', maxWidth: '220px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={b.problem}>
-                          {b.problem}
-                        </div>
-                      </td>
+                          {/* Service & Problem */}
+                          <td style={{ padding: '14px 16px' }}>
+                            <div style={{ fontWeight: 700 }}>{b.serviceName || b.service}</div>
+                            <div style={{ fontSize: '0.78125rem', color: 'var(--color-primary)', fontWeight: 600 }}>Brand: {b.brand}</div>
+                            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', maxWidth: '220px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={b.problem}>
+                              {b.problem}
+                            </div>
+                          </td>
 
-                      {/* Address */}
-                      <td style={{ padding: '14px 16px', maxWidth: '180px' }}>
-                        <div style={{ fontSize: '0.8125rem', color: 'var(--color-text-main)', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }} title={b.address}>
-                          {b.address}
-                        </div>
-                      </td>
+                          {/* Address */}
+                          <td style={{ padding: '14px 16px', maxWidth: '180px' }}>
+                            <div style={{ fontSize: '0.8125rem', color: 'var(--color-text-main)', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }} title={b.address}>
+                              {b.address}
+                            </div>
+                          </td>
 
-                      {/* Schedule */}
-                      <td style={{ padding: '14px 16px', whiteSpace: 'nowrap' }}>
-                        <div style={{ fontWeight: 600, fontSize: '0.8125rem' }}>{b.preferredDate}</div>
-                        <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>{b.preferredTime}</div>
-                      </td>
+                          {/* Schedule */}
+                          <td style={{ padding: '14px 16px', whiteSpace: 'nowrap' }}>
+                            <div style={{ fontWeight: 600, fontSize: '0.8125rem' }}>{b.preferredDate}</div>
+                            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>{b.preferredTime}</div>
+                          </td>
 
-                      {/* Status */}
-                      <td style={{ padding: '14px 16px', whiteSpace: 'nowrap' }}>
-                        <select
-                          value={b.status}
-                          onChange={(e) => handleStatusChange(b.bookingId, e.target.value as Booking['status'])}
+                          {/* Status */}
+                          <td style={{ padding: '14px 16px', whiteSpace: 'nowrap' }}>
+                            <select
+                              value={b.status}
+                              onChange={(e) => handleStatusChange(b.bookingId, e.target.value as Booking['status'])}
+                              style={{
+                                border: '1px solid var(--color-border)',
+                                borderRadius: 'var(--radius-full)',
+                                padding: '3px 8px',
+                                fontSize: '0.75rem',
+                                fontWeight: 700,
+                                cursor: 'pointer',
+                                backgroundColor:
+                                  b.status === 'confirmed' ? '#DEF7EC' :
+                                  b.status === 'technician_assigned' ? '#E1EFFE' :
+                                  b.status === 'completed' ? '#F3F4F6' :
+                                  b.status === 'cancelled' ? '#FDE8E8' : '#FEF08A',
+                                color:
+                                  b.status === 'confirmed' ? '#03543F' :
+                                  b.status === 'technician_assigned' ? '#1E429F' :
+                                  b.status === 'completed' ? '#1F2A37' :
+                                  b.status === 'cancelled' ? '#9B1C1C' : '#713F12'
+                              }}
+                            >
+                              <option value="pending">Pending</option>
+                              <option value="confirmed">Confirmed</option>
+                              <option value="technician_assigned">Assigned</option>
+                              <option value="completed">Completed</option>
+                              <option value="cancelled">Cancelled</option>
+                            </select>
+                          </td>
+
+                          {/* Actions */}
+                          <td style={{ padding: '14px 16px', textAlign: 'right', whiteSpace: 'nowrap' }}>
+                            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                              <button
+                                onClick={() => setSelectedBooking(b)}
+                                className="btn btn-outline btn-sm"
+                                style={{ padding: '4px 10px', fontSize: '0.75rem' }}
+                              >
+                                Details
+                              </button>
+                              <button
+                                onClick={() => handleDeleteBooking(b.bookingId)}
+                                disabled={deletingId === b.bookingId}
+                                className="btn btn-sm"
+                                style={{ padding: '4px 8px', backgroundColor: 'transparent', color: '#DC2626', border: '1px solid #FCA5A5' }}
+                                title="Delete Lead"
+                              >
+                                <Trash2 size={13} />
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* 2. MOBILE VIEW: Touch-Friendly Lead Cards (Visible on <= 768px, No Horizontal Overflow) */}
+              <div className="admin-cards-mobile">
+                {filtered.map((b) => (
+                  <div key={b.bookingId} className="admin-lead-card">
+                    {/* Top Row: Booking ID + Copy + Status Dropdown */}
+                    <div className="admin-card-header">
+                      <div className="admin-card-id-badge">
+                        <span className="admin-card-id-text">{b.bookingId}</span>
+                        <button
+                          onClick={() => handleCopyId(b.bookingId)}
+                          title="Copy Booking ID"
                           style={{
-                            border: '1px solid var(--color-border)',
-                            borderRadius: 'var(--radius-full)',
-                            padding: '3px 8px',
-                            fontSize: '0.75rem',
-                            fontWeight: 700,
+                            background: 'none',
+                            border: 'none',
                             cursor: 'pointer',
-                            backgroundColor:
-                              b.status === 'confirmed' ? '#DEF7EC' :
-                              b.status === 'technician_assigned' ? '#E1EFFE' :
-                              b.status === 'completed' ? '#F3F4F6' :
-                              b.status === 'cancelled' ? '#FDE8E8' : '#FEF08A',
-                            color:
-                              b.status === 'confirmed' ? '#03543F' :
-                              b.status === 'technician_assigned' ? '#1E429F' :
-                              b.status === 'completed' ? '#1F2A37' :
-                              b.status === 'cancelled' ? '#9B1C1C' : '#713F12'
+                            padding: '3px',
+                            color: copiedId === b.bookingId ? '#059669' : 'var(--color-text-light)'
                           }}
                         >
-                          <option value="pending">Pending</option>
-                          <option value="confirmed">Confirmed</option>
-                          <option value="technician_assigned">Assigned</option>
-                          <option value="completed">Completed</option>
-                          <option value="cancelled">Cancelled</option>
-                        </select>
-                      </td>
+                          {copiedId === b.bookingId ? <Check size={14} /> : <Copy size={14} />}
+                        </button>
+                      </div>
 
-                      {/* Actions */}
-                      <td style={{ padding: '14px 16px', textAlign: 'right', whiteSpace: 'nowrap' }}>
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-                          <button
-                            onClick={() => setSelectedBooking(b)}
-                            className="btn btn-outline btn-sm"
-                            style={{ padding: '4px 10px', fontSize: '0.75rem' }}
-                          >
-                            Details
-                          </button>
-                          <button
-                            onClick={() => handleDeleteBooking(b.bookingId)}
-                            disabled={deletingId === b.bookingId}
-                            className="btn btn-sm"
-                            style={{ padding: '4px 8px', backgroundColor: 'transparent', color: '#DC2626', border: '1px solid #FCA5A5' }}
-                            title="Delete Lead"
-                          >
-                            <Trash2 size={13} />
-                          </button>
+                      {/* Status select dropdown */}
+                      <select
+                        value={b.status}
+                        onChange={(e) => handleStatusChange(b.bookingId, e.target.value as Booking['status'])}
+                        style={{
+                          border: '1px solid var(--color-border)',
+                          borderRadius: 'var(--radius-full)',
+                          padding: '4px 8px',
+                          fontSize: '0.75rem',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                          backgroundColor:
+                            b.status === 'confirmed' ? '#DEF7EC' :
+                            b.status === 'technician_assigned' ? '#E1EFFE' :
+                            b.status === 'completed' ? '#F3F4F6' :
+                            b.status === 'cancelled' ? '#FDE8E8' : '#FEF08A',
+                          color:
+                            b.status === 'confirmed' ? '#03543F' :
+                            b.status === 'technician_assigned' ? '#1E429F' :
+                            b.status === 'completed' ? '#1F2A37' :
+                            b.status === 'cancelled' ? '#9B1C1C' : '#713F12'
+                        }}
+                      >
+                        <option value="pending">Pending</option>
+                        <option value="confirmed">Confirmed</option>
+                        <option value="technician_assigned">Assigned</option>
+                        <option value="completed">Completed</option>
+                        <option value="cancelled">Cancelled</option>
+                      </select>
+                    </div>
+
+                    {/* Customer Row + Direct Touch Call / WhatsApp Buttons */}
+                    <div>
+                      <div className="admin-card-name">
+                        <User size={15} style={{ color: 'var(--color-primary)' }} />
+                        <span>{b.name}</span>
+                      </div>
+
+                      <div className="admin-card-contact-btns">
+                        <a
+                          href={`tel:${b.mobile}`}
+                          className="btn btn-outline admin-card-contact-btn"
+                          title="Call customer directly"
+                        >
+                          <Phone size={13} style={{ color: 'var(--color-primary)' }} />
+                          <span>{b.mobile}</span>
+                        </a>
+
+                        <a
+                          href={`https://wa.me/91${b.mobile.replace(/[^\d]/g, '')}?text=${encodeURIComponent(`Hello ${b.name}, this is Appliance Seva regarding your repair booking ID: ${b.bookingId} for ${b.serviceName || b.service}.`)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-whatsapp admin-card-contact-btn"
+                          title="Chat on WhatsApp"
+                        >
+                          <MessageCircle size={14} />
+                          <span>WhatsApp</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Service & Problem Box */}
+                    <div className="admin-card-service-box">
+                      <div className="admin-card-service-title">
+                        <span>{b.serviceName || b.service}</span>
+                        <span className="admin-card-brand-badge">Brand: {b.brand}</span>
+                      </div>
+                      {b.problem && (
+                        <div className="admin-card-problem-text">
+                          "{b.problem}"
                         </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                      )}
+                    </div>
+
+                    {/* Address & Locality */}
+                    <div className="admin-card-address">
+                      <MapPin size={14} style={{ color: 'var(--color-primary)', flexShrink: 0, marginTop: '2px' }} />
+                      <span>{b.address || 'Kolkata Doorstep Service'}</span>
+                    </div>
+
+                    {/* Meta info: Schedule Slot & Booking Date */}
+                    <div className="admin-card-meta-row">
+                      <span>
+                        {b.preferredDate ? `Slot: ${b.preferredDate} (${b.preferredTime || 'Anytime'})` : 'Doorstep Visit'}
+                      </span>
+                      <span>
+                        {b.createdAt ? new Date(b.createdAt).toLocaleDateString('en-IN', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : ''}
+                      </span>
+                    </div>
+
+                    {/* Action Buttons: Details Modal & Delete */}
+                    <div className="admin-card-actions">
+                      <button
+                        onClick={() => setSelectedBooking(b)}
+                        className="btn btn-outline btn-details"
+                      >
+                        View Full Details
+                      </button>
+                      <button
+                        onClick={() => handleDeleteBooking(b.bookingId)}
+                        disabled={deletingId === b.bookingId}
+                        className="btn-delete"
+                        title="Delete lead"
+                      >
+                        <Trash2 size={15} />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
           )}
         </div>
 
         {/* Lead Details Full Modal */}
         {selectedBooking && (
           <div className="modal-overlay" onClick={() => setSelectedBooking(null)}>
-            <div className="modal-dialog" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '620px', padding: '28px' }}>
+            <div className="modal-dialog admin-details-modal" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '620px', padding: '28px' }}>
               {/* Modal Header */}
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px', borderBottom: '1px solid var(--color-border)', paddingBottom: '14px' }}>
                 <div>
