@@ -1057,9 +1057,12 @@ export async function getAdminByEmail(identifier: string): Promise<AdminUser | n
       if (count === 0 && inMemory.admins.length > 0) {
         await col.insertMany(inMemory.admins.map((a) => ({ ...a })));
       }
+      const isGenericAdmin = identifier.toLowerCase() === 'admin' || identifier.toLowerCase() === 'applianceseva';
       const doc = await col.findOne({
         $or: [
           { email: identifier.toLowerCase() },
+          { name: { $regex: new RegExp(`^${identifier}$`, 'i') } },
+          ...(isGenericAdmin ? [{ role: 'admin' }, { email: 'applianceseva@gmail.com' }] : []),
           ...(cleanPhone ? [{ phone: cleanPhone }, { phone: `+91${cleanPhone}` }] : [])
         ]
       });
@@ -1075,9 +1078,11 @@ export async function getAdminByEmail(identifier: string): Promise<AdminUser | n
   const p = getDbPool();
   if (p) {
     try {
+      const isGenericAdmin = identifier.toLowerCase() === 'admin' || identifier.toLowerCase() === 'applianceseva';
       const [rows] = await p.query<any[]>(
-        'SELECT * FROM users WHERE email = ? OR REPLACE(phone, "+91", "") = ? OR phone = ? LIMIT 1',
-        [identifier, cleanPhone, identifier]
+        'SELECT * FROM users WHERE email = ? OR REPLACE(phone, "+91", "") = ? OR phone = ? OR name = ? ' +
+        (isGenericAdmin ? 'OR role = "admin" ' : '') + 'LIMIT 1',
+        [identifier, cleanPhone, identifier, identifier]
       );
       if (rows.length > 0) {
         const r = rows[0];
@@ -1100,7 +1105,9 @@ export async function getAdminByEmail(identifier: string): Promise<AdminUser | n
       const matchEmail = a.email.toLowerCase() === identifier.toLowerCase();
       const aPhoneClean = (a.phone || '').replace(/[^\d]/g, '');
       const matchPhone = Boolean(cleanPhone && (aPhoneClean === cleanPhone || aPhoneClean.endsWith(cleanPhone) || cleanPhone.endsWith(aPhoneClean)));
-      return matchEmail || matchPhone;
+      const matchName = Boolean(a.name && a.name.toLowerCase() === identifier.toLowerCase());
+      const matchGenericAdmin = identifier.toLowerCase() === 'admin' || identifier.toLowerCase() === 'applianceseva';
+      return matchEmail || matchPhone || matchName || matchGenericAdmin;
     }) || null
   );
 }

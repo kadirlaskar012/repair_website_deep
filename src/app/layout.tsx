@@ -77,6 +77,7 @@ export const metadata: Metadata = {
 
 import ScrollRestorer from '@/components/common/ScrollRestorer';
 import FloatingActionSuite from '@/components/common/FloatingActionSuite';
+import ContentProtection from '@/components/security/ContentProtection';
 
 export default function RootLayout({
   children
@@ -108,6 +109,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
+        <ContentProtection />
         {/* Google tag (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-44B6EKMKNV"

@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
 
     if (!identifier || !password) {
       return NextResponse.json(
-        { success: false, error: 'Mobile number and password are required' },
+        { success: false, error: 'Username and password are required' },
         { status: 400 }
       );
     }
@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     const admin = await authenticateAdmin(String(identifier).trim(), String(password).trim());
     if (!admin) {
       return NextResponse.json(
-        { success: false, error: 'Invalid admin credentials' },
+        { success: false, error: 'Invalid username or password' },
         { status: 401 }
       );
     }
