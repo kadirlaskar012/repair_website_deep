@@ -13,11 +13,13 @@ import {
   Wrench,
   Calendar,
   Languages,
-  ChevronRight
+  ChevronRight,
+  Truck
 } from 'lucide-react';
 import { Category, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
 import { lockScroll, unlockScroll } from '@/lib/scrollLock';
+import TrackBookingModal from '@/components/modal/TrackBookingModal';
 
 interface HeaderProps {
   categories: Category[];
@@ -39,6 +41,7 @@ export default function Header({
   const pathname = usePathname();
   const t = getDictionary(lang);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isTrackModalOpen, setIsTrackModalOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -164,6 +167,32 @@ export default function Header({
 
           {/* Right Header Actions */}
           <div className="header-actions">
+            {/* Track Booking Button */}
+            <button
+              onClick={() => setIsTrackModalOpen(true)}
+              className="header-track-btn"
+              aria-label={isBn ? 'বুকিং ট্র্যাক করুন' : 'Track Booking'}
+              title={isBn ? 'বুকিং ট্র্যাক করুন' : 'Track Booking'}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '6px 13px',
+                borderRadius: '20px',
+                fontSize: '0.8125rem',
+                fontWeight: 700,
+                backgroundColor: 'rgba(15, 118, 110, 0.08)',
+                color: 'var(--color-primary-dark)',
+                border: '1.5px solid var(--color-primary)',
+                cursor: 'pointer',
+                transition: 'all 0.2s ease',
+                height: '38px'
+              }}
+            >
+              <Truck size={15} />
+              <span>{isBn ? 'ট্র্যাক' : 'Track'}</span>
+            </button>
+
             {/* Search Trigger Button */}
             <button
               onClick={onOpenSearch}
@@ -285,16 +314,32 @@ export default function Header({
                 <ChevronRight size={15} style={{ opacity: 0.4 }} />
               </Link>
 
-              <Link
-                href={isBn ? '/bn/blog' : '/blog'}
-                prefetch={true}
-                scroll={true}
-                onClick={() => setMobileMenuOpen(false)}
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  setIsTrackModalOpen(true);
+                }}
                 className="mobile-drawer-link"
+                style={{
+                  background: 'rgba(15, 118, 110, 0.05)',
+                  border: '1px solid rgba(15, 118, 110, 0.2)',
+                  borderRadius: '10px',
+                  width: '100%',
+                  textAlign: 'left',
+                  cursor: 'pointer',
+                  padding: '10px 14px',
+                  marginTop: '10px'
+                }}
               >
-                <span>{isBn ? 'মেরামত ব্লগ ও গাইড' : 'Repair Blog & Guides'}</span>
-                <ChevronRight size={15} style={{ opacity: 0.4 }} />
-              </Link>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <Truck size={17} style={{ color: 'var(--color-primary)' }} />
+                  <span style={{ fontWeight: 700, color: 'var(--color-primary-dark)' }}>
+                    {isBn ? 'বুকিং ট্র্যাক করুন (Track Order)' : 'Track Order Status'}
+                  </span>
+                </div>
+                <ChevronRight size={15} style={{ opacity: 0.7 }} />
+              </button>
             </nav>
 
             {/* Drawer Bottom Actions */}
@@ -338,6 +383,13 @@ export default function Header({
         </div>,
         document.body
       )}
+
+      {/* Real-time Order Tracking Modal */}
+      <TrackBookingModal
+        isOpen={isTrackModalOpen}
+        onClose={() => setIsTrackModalOpen(false)}
+        lang={lang}
+      />
     </header>
   );
 }

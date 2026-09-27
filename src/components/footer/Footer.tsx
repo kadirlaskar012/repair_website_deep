@@ -165,6 +165,11 @@ export default function Footer({ settings, categories, locations, lang }: Footer
                 </Link>
               </li>
               <li>
+                <Link href={isBn ? '/bn/track' : '/track'} prefetch={true} scroll={true} style={{ color: '#B5C7C3' }}>
+                  {isBn ? 'বুকিং ট্র্যাক করুন (Track Booking)' : 'Track Booking Status'}
+                </Link>
+              </li>
+              <li>
                 <Link href={isBn ? '/bn/privacy-policy' : '/privacy-policy'} prefetch={true} scroll={true} style={{ color: '#B5C7C3' }}>
                   {t.privacyPolicy}
                 </Link>

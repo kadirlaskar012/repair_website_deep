@@ -13,7 +13,8 @@ import {
   MapPin,
   Wrench,
   ArrowRight,
-  ShieldCheck
+  ShieldCheck,
+  Truck
 } from 'lucide-react';
 import { Booking, Language, SiteSettings } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
@@ -174,8 +175,17 @@ export default function BookingSuccessView({
             </div>
           )}
 
-          {/* 2 Primary Immediate Actions: Call Coordinator & WhatsApp Desk */}
+          {/* Primary Immediate Actions: Track Live, Call Coordinator & WhatsApp Desk */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '24px' }}>
+            <Link
+              href={isBn ? `/bn/track?id=${bookingId}` : `/track?id=${bookingId}`}
+              className="btn btn-primary btn-lg"
+              style={{ width: '100%', justifyContent: 'center' }}
+            >
+              <Truck size={20} />
+              <span>{isBn ? 'লাইভ বুকিং স্ট্যাটাস ট্র্যাক করুন' : 'Track Booking Status Live'}</span>
+            </Link>
+
             <a
               href={`https://wa.me/${settings.whatsapp.replace(/[^\d]/g, '')}?text=${whatsappText}`}
               target="_blank"

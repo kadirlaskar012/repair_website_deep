@@ -654,10 +654,10 @@ export async function createCustomerReview(data: {
 }
 
 export async function createBooking(data: Omit<Booking, 'bookingId' | 'createdAt' | 'status'>): Promise<Booking> {
-  const randomSuffix = Math.floor(1000 + Math.random() * 9000);
+  // Generate AS- followed by exact 8-digit number (e.g. AS-84920147)
+  const eightDigitNumber = Math.floor(10000000 + Math.random() * 90000000);
   const now = new Date();
-  const yearMonth = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}`;
-  const bookingId = `AS-${yearMonth}-${randomSuffix}`;
+  const bookingId = `AS-${eightDigitNumber}`;
 
   const newBooking: Booking = {
     ...data,
@@ -760,10 +760,23 @@ export async function getBookings(): Promise<Booking[]> {
 }
 
 export async function getBookingById(bookingId: string): Promise<Booking | null> {
+  if (!bookingId) return null;
+  const raw = bookingId.trim().toUpperCase().replace(/\s+/g, '');
+  const possibleIds = [
+    raw,
+    raw.startsWith('AS-') ? raw : `AS-${raw}`,
+    raw.replace(/^AS-/, '')
+  ];
+
   const mongo = await getMongoDb();
   if (mongo) {
     try {
-      const doc = await mongo.collection('bookings').findOne({ bookingId });
+      const doc = await mongo.collection('bookings').findOne({
+        $or: [
+          { bookingId: { $in: possibleIds } },
+          { bookingId: { $regex: new RegExp(`^${raw}$`, 'i') } }
+        ]
+      });
       if (doc) {
         const { _id, ...rest } = doc;
         return rest as Booking;
@@ -776,7 +789,10 @@ export async function getBookingById(bookingId: string): Promise<Booking | null>
   const p = getDbPool();
   if (p) {
     try {
-      const [rows] = await p.query<any[]>('SELECT * FROM bookings WHERE booking_id = ? LIMIT 1', [bookingId]);
+      const [rows] = await p.query<any[]>(
+        'SELECT * FROM bookings WHERE booking_id IN (?, ?, ?) LIMIT 1',
+        [possibleIds[0], possibleIds[1], possibleIds[2]]
+      );
       if (rows.length > 0) {
         const r = rows[0];
         return {
@@ -800,7 +816,7 @@ export async function getBookingById(bookingId: string): Promise<Booking | null>
       // Fallback
     }
   }
-  return inMemory.bookings.find((b) => b.bookingId === bookingId) || null;
+  return inMemory.bookings.find((b) => possibleIds.includes(b.bookingId?.toUpperCase())) || null;
 }
 
 export async function updateBookingStatus(bookingId: string, status: Booking['status']): Promise<boolean> {

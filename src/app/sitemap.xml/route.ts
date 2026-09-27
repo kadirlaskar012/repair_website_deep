@@ -29,6 +29,7 @@ export async function GET() {
     { path: '', priority: '1.0', changefreq: 'daily' },
     { path: 'blog', priority: '0.8', changefreq: 'daily' },
     { path: 'reviews', priority: '0.8', changefreq: 'daily' },
+    { path: 'track', priority: '0.7', changefreq: 'daily' },
     { path: 'privacy-policy', priority: '0.3', changefreq: 'monthly' },
     { path: 'terms-of-service', priority: '0.3', changefreq: 'monthly' }
   ];
