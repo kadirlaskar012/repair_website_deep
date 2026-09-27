@@ -79,14 +79,22 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
   return {
     '@context': 'https://schema.org',
     '@type': 'HomeAndConstructionBusiness',
-    name: settings.businessName,
+    name: 'Home Appliance Care India - Appliance Seva',
+    alternateName: [
+      'Home Appliance Care India',
+      'Home appliance care india near me',
+      'home appliance repair service',
+      'Home appliance care india reviews',
+      'Appliance Seva'
+    ],
+    description: 'Home Appliance Care India by Appliance Seva: Premier doorstep home appliance repair service across India & West Bengal. Rated 4.9/5 by 1280+ customers.',
     url: SITE_URL,
     telephone: settings.phone,
     email: settings.email,
     priceRange: '₹₹',
     image: `${SITE_URL}/icon-512.png`,
     logo: `${SITE_URL}/logo.svg`,
-    slogan: 'Doorstep AC & Appliance Repair in West Bengal | 90-Min Response • 90-Day Warranty',
+    slogan: 'Home Appliance Care India | Doorstep Home Appliance Repair Service Near Me | 90-Min Response • 90-Day Warranty',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Salt Lake Sector V',

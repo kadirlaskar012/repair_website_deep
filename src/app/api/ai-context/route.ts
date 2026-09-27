@@ -21,10 +21,20 @@ export async function GET() {
       description: 'Standardized machine-readable reference for AI search engines, LLM retrieval systems, and conversational agents.',
       lastUpdated: new Date().toISOString(),
       business: {
-        name: settings.businessName,
-        nameBn: settings.businessNameBn,
+        brandEntity: 'Home Appliance Care India',
+        name: 'Home Appliance Care India (Appliance Seva)',
+        nameBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (অ্যাপ্লায়েন্স সেবা)',
+        primaryKeywords: [
+          'Home Appliance Care India',
+          'Home appliance care india reviews',
+          'Home appliance care india near me',
+          'home appliance repair service'
+        ],
         type: 'Home Appliance Repair & Maintenance Service',
         website: SITE_URL,
+        reviewsRating: '4.9/5 (1280+ Verified Customer Reviews)',
+        reviewsUrl: `${SITE_URL}/reviews`,
+        trackingUrl: `${SITE_URL}/track`,
         phone: settings.phone,
         whatsapp: settings.whatsapp,
         email: settings.email,

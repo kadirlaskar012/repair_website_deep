@@ -19,8 +19,18 @@ export const revalidate = 3600; // ISR 1 hour
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
   return buildPageMetadata({
-    title: `${settings.businessNameBn} | পশ্চিমবঙ্গে আপনার দরজায় অ্যাপ্লায়েন্স সার্ভিস | ₹২৯৯ ফি`,
-    description: 'কলকাতা ও পশ্চিমবঙ্গ জুড়ে বিশ্বস্ত হোম অ্যাপ্লায়েন্স মেরামত পরিষেবা। এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভি মেরামত। মাত্র ₹২৯৯ স্বচ্ছ ডায়াগনোসিস ফি।',
+    title: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া | ডোরস্টেপ হোম অ্যাপ্লায়েন্স রিপেয়ার সার্ভিস',
+    description: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India): পশ্চিমবঙ্গ ও কলকাতা জুড়ে #১ ডোরস্টেপ সার্ভিস। ৪.৯★ গ্রাহক রিভিউ (reviews)। আপনার নিকটবর্তী (near me) দক্ষ টেকনিশিয়ান। এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভি মেরামত মাত্র ₹২৯৯ ফি ও ৯০ দিনের ওয়ারেন্টি।',
+    keywords: [
+      'Home Appliance Care India',
+      'Home appliance care india reviews',
+      'Home appliance care india near me',
+      'home appliance repair service',
+      'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া',
+      'ডোরস্টেপ হোম অ্যাপ্লায়েন্স সার্ভিস',
+      'অ্যাপ্লায়েন্স সেবা',
+      'AC repair near me'
+    ],
     path: '/',
     lang: 'bn'
   });

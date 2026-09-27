@@ -33,23 +33,22 @@ const notoSansBengali = Noto_Sans_Bengali({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Appliance Seva | Doorstep Appliance Repair in Kolkata & West Bengal | ₹299 Visit',
-    template: '%s | Appliance Seva'
+    default: 'Home Appliance Care India | Doorstep Home Appliance Repair Service | Appliance Seva',
+    template: '%s | Home Appliance Care India'
   },
-  description: 'Verified doorstep AC and home appliance repair across Kolkata, Howrah, Salt Lake & West Bengal by Appliance Seva. Same-day technician visit for AC, Fridge, Washing Machine, Microwave, and LED TV. 90-day warranty & flat ₹299 diagnosis fee.',
+  description: 'Home Appliance Care India by Appliance Seva: Premier doorstep home appliance repair service across India & West Bengal. Rated 4.9★ in customer reviews. Find expert technicians near me for AC, Fridge, Washing Machine, Microwave & TV. ₹299 inspection & 90-day warranty.',
   keywords: [
+    'Home Appliance Care India',
+    'Home appliance care india reviews',
+    'Home appliance care india near me',
+    'home appliance repair service',
+    'home appliance repair service near me',
     'Appliance Seva',
     'Appliance repair Kolkata',
     'AC repair Kolkata',
     'Doorstep appliance repair West Bengal',
-    'Split AC repair service Kolkata',
-    'Refrigerator repair Salt Lake',
-    'Washing machine service Howrah',
-    'Microwave oven repair West Bengal',
-    'LED TV repair Kolkata',
-    'AC gas refill Kolkata',
-    'Home appliance service ₹299 visit',
-    'Emergency AC technician Kolkata'
+    'Refrigerator repair near me',
+    'Washing machine repair service'
   ],
   icons: {
     icon: [
@@ -63,10 +62,10 @@ export const metadata: Metadata = {
     shortcut: '/favicon.svg'
   },
   openGraph: {
-    title: 'Appliance Seva | Doorstep AC & Appliance Repair in West Bengal',
-    description: 'Same-day certified technician visit for AC, Fridge, Washing Machine, Microwave & TV. 90-day warranty, 100% genuine parts, transparent ₹299 inspection fee.',
+    title: 'Home Appliance Care India | Doorstep Home Appliance Repair Service',
+    description: 'Verified doorstep AC and home appliance repair service across India & West Bengal. 4.9★ reviews, 90-day warranty, transparent ₹299 inspection fee.',
     url: SITE_URL,
-    siteName: 'Appliance Seva',
+    siteName: 'Home Appliance Care India',
     locale: 'en_IN',
     type: 'website'
   },

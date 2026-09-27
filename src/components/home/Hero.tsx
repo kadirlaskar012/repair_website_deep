@@ -187,10 +187,10 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
             </span>
           </div>
 
-          {/* Main Title - Home Appliance Care India */}
+          {/* Main Title - Home Appliance Care India & Repair Service */}
           <h1
             style={{
-              fontSize: 'clamp(2rem, 4.5vw, 3.25rem)',
+              fontSize: 'clamp(1.9rem, 4.2vw, 3.1rem)',
               fontWeight: 800,
               color: 'var(--color-text-main)',
               letterSpacing: '-0.03em',
@@ -198,25 +198,87 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
               marginBottom: '14px'
             }}
           >
-            {isBn
-              ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া'
-              : 'Home Appliance Care India'}
+            {isBn ? (
+              <>
+                হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া
+                <span style={{ display: 'block', fontSize: '0.65em', fontWeight: 700, color: 'var(--color-primary)', marginTop: '6px' }}>
+                  ডোরস্টেপ হোম অ্যাপ্লায়েন্স রিপেয়ার সার্ভিস
+                </span>
+              </>
+            ) : (
+              <>
+                Home Appliance Care India
+                <span style={{ display: 'block', fontSize: '0.65em', fontWeight: 700, color: 'var(--color-primary)', marginTop: '6px' }}>
+                  Doorstep Home Appliance Repair Service
+                </span>
+              </>
+            )}
           </h1>
 
-          {/* Subtitle */}
+          {/* Subtitle targeting "near me" and "reviews" */}
           <p
             style={{
               fontSize: 'clamp(0.9375rem, 1.8vw, 1.125rem)',
               color: 'var(--color-text-muted)',
               lineHeight: 1.6,
-              maxWidth: '680px',
-              margin: '0 auto 28px auto'
+              maxWidth: '720px',
+              margin: '0 auto 18px auto'
             }}
           >
             {isBn
-              ? 'কলকাতা, হাওড়া, হুগলি ও বারাসাত জুড়ে স্প্লিট এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভির ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ পরিদর্শনে সার্টিফাইড বিশেষজ্ঞ ও ৯০ দিনের ওয়ারেন্টি।'
-              : 'Expert doorstep technicians across Kolkata, Howrah, Hooghly & Barasat for AC, Refrigerator, Washing Machine, Microwave & TV. 90-day warranty with flat ₹299 inspection fee.'}
+              ? 'আপনার নিকটবর্তী (near me) বিশ্বস্ত টেকনিশিয়ান। ৪.৯★ রেটিং ও গ্রাহক রিভিউ (reviews) সহ এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভি মেরামত মাত্র ₹২৯৯ পরিদর্শনে ও ৯০ দিনের ওয়ারেন্টি।'
+              : 'Find certified doorstep technicians near me with 4.9★ verified customer reviews. Same-day repair service for AC, Refrigerator, Washing Machine, Microwave & TV at flat ₹299 inspection.'}
           </p>
+
+          {/* Quick Trust Highlights linking to Reviews & Near Me */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexWrap: 'wrap',
+              gap: '10px',
+              marginBottom: '26px'
+            }}
+          >
+            <Link
+              href={isBn ? '/bn/reviews' : '/reviews'}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '5px 12px',
+                borderRadius: '20px',
+                backgroundColor: 'rgba(232, 163, 61, 0.12)',
+                color: '#B27318',
+                fontSize: '0.8125rem',
+                fontWeight: 700,
+                textDecoration: 'none',
+                border: '1px solid rgba(232, 163, 61, 0.25)'
+              }}
+            >
+              <span>★ 4.9/5 Rating (1,280+ Reviews)</span>
+              <span style={{ fontSize: '0.6875rem', textDecoration: 'underline' }}>{isBn ? 'রিভিউ দেখুন' : 'Read Reviews'}</span>
+            </Link>
+
+            <span
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '5px 12px',
+                borderRadius: '20px',
+                backgroundColor: 'rgba(20, 108, 91, 0.08)',
+                color: 'var(--color-primary-dark)',
+                fontSize: '0.8125rem',
+                fontWeight: 700,
+                border: '1px solid rgba(20, 108, 91, 0.2)'
+              }}
+            >
+              <MapPin size={13} style={{ color: 'var(--color-primary)' }} />
+              <span>{isBn ? 'আপনার নিকটবর্তী সার্ভিস (Near Me)' : 'Technicians Near Me'}</span>
+            </span>
+          </div>
 
           {/* HomeTriangle-Style Unified Search & Location Bar */}
           <div className="hero-search-bar">

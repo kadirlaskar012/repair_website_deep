@@ -14,10 +14,17 @@ import { buildPageMetadata } from '@/lib/seo';
 export const revalidate = 1800; // ISR 30 mins
 
 export async function generateMetadata(): Promise<Metadata> {
-  const settings = await getSiteSettings();
   return buildPageMetadata({
-    title: `গ্রাহকদের রিভিউ ও রেটিং | ${settings.businessNameBn || settings.businessName}`,
-    description: `কলকাতা, হাওড়া ও সমগ্র পশ্চিমবঙ্গের গ্রাহকদের আসল মতামত ও রেটিং। এসি, ফ্রিজ, ওয়াশিং মেশিন ও টিভির বিশ্বস্ত ডোরস্টেপ মেরামত।`,
+    title: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া রিভিউ | ৪.৯★ রেটিং ও কাস্টমার ফিডব্যাক',
+    description: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India reviews): ১২৮০+ পরিবারের বিশ্বস্ত ডোরস্টেপ সার্ভিস রিভিউ। এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভি মেরামতের যাচাইকৃত মতামত।',
+    keywords: [
+      'Home appliance care india reviews',
+      'Home Appliance Care India',
+      'Home appliance care india near me',
+      'home appliance repair service reviews',
+      'অ্যাপ্লায়েন্স সেবা রিভিউ',
+      'কলকাতা এসি মেরামত রিভিউ'
+    ],
     path: '/reviews',
     lang: 'bn'
   });
@@ -32,15 +39,36 @@ export default async function BengaliReviewsPage() {
     getSiteSettings()
   ]);
 
+  const reviewSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HomeAndConstructionBusiness',
+    name: 'Home Appliance Care India - Customer Reviews (Bangla)',
+    url: 'https://www.applianceseva.com/bn/reviews',
+    telephone: settings.phone,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '1280',
+      bestRating: '5',
+      worstRating: '1'
+    }
+  };
+
   return (
-    <ReviewsPageView
-      reviews={reviews}
-      categories={categories}
-      brands={brands}
-      locations={locations}
-      settings={settings}
-      keywords={initialSearchKeywords}
-      lang="bn"
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <ReviewsPageView
+        reviews={reviews}
+        categories={categories}
+        brands={brands}
+        locations={locations}
+        settings={settings}
+        keywords={initialSearchKeywords}
+        lang="bn"
+      />
+    </>
   );
 }

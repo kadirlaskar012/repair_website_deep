@@ -19,8 +19,19 @@ export const revalidate = 3600; // ISR 1 hour
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
   return buildPageMetadata({
-    title: `${settings.businessName} | Doorstep Appliance Repair in West Bengal | ₹299 Visit`,
-    description: 'Expert doorstep appliance repair across Kolkata & West Bengal. Certified technicians for AC, Refrigerator, Washing Machine, Microwave, and LED TV. Transparent ₹299 visit fee.',
+    title: 'Home Appliance Care India | Doorstep Home Appliance Repair Service',
+    description: 'Home Appliance Care India by Appliance Seva: Top-rated doorstep home appliance repair service across India & West Bengal. 4.9★ reviews from 1280+ customers. Expert technicians near me for AC, Refrigerator, Washing Machine, Microwave & TV. ₹299 inspection & 90-day warranty.',
+    keywords: [
+      'Home Appliance Care India',
+      'Home appliance care india reviews',
+      'Home appliance care india near me',
+      'home appliance repair service',
+      'home appliance repair service near me',
+      'Doorstep AC repair Kolkata',
+      'Refrigerator repair near me',
+      'Washing machine service near me',
+      'Appliance Seva'
+    ],
     path: '/',
     lang: 'en'
   });

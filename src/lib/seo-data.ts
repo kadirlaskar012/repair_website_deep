@@ -36,6 +36,24 @@ export const homeFaqs: FAQItem[] = [
     questionBn: 'পশ্চিমবঙ্গে রবিবার বা ছুটির দিনে কি টেকনিশিয়ান বুক করা যায়?',
     answer: 'Yes! We operate 7 days a week, 365 days a year from 8:00 AM to 9:00 PM. Weekend and festival slots can be booked seamlessly via our online booking form, WhatsApp chat, or direct helpline.',
     answerBn: 'হ্যাঁ! আমরা সপ্তাহের ৭ দিন, সকাল ৮টা থেকে রাত ৯টা পর্যন্ত অবিরাম সেবা প্রদান করি। রবিবার বা উৎসবের দিনেও আপনি ওয়েবসাইট, হোয়াটসঅ্যাপ বা হেল্পলাইনের মাধ্যমে সুবিধাজনক সময়ে বুক করতে পারেন।'
+  },
+  {
+    question: 'How do I find Home Appliance Care India repair service near me?',
+    questionBn: 'আমার নিকটবর্তী (near me) হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া সার্ভিস কীভাবে পাব?',
+    answer: 'Home Appliance Care India by Appliance Seva covers all major zones across Kolkata, Howrah, Hooghly, North 24 Parganas, and South 24 Parganas. Simply select your city or pincode on our website or call +91 6291674186 for an express 90-minute doorstep technician dispatch near you.',
+    answerBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া সমগ্র কলকাতা, হাওড়া, হুগলি, উত্তর ও দক্ষিণ ২৪ পরগনা জুড়ে দ্রুত সেবা প্রদান করে। আমাদের ওয়েবসাইটে আপনার এলাকা নির্বাচন করুন বা +91 6291674186 নম্বরে কল করলেই ৯০ মিনিটে আপনার নিকটবর্তী সার্টিফাইড টেকনিশিয়ান পৌঁছে যাবেন।'
+  },
+  {
+    question: 'Where can I read genuine Home Appliance Care India reviews and customer ratings?',
+    questionBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়ার আসল গ্রাহক রিভিউ (reviews) কোথায় দেখতে পাব?',
+    answer: 'You can read 1,280+ verified homeowner reviews on our dedicated Reviews page (https://www.applianceseva.com/reviews). We hold a 4.9/5 star average rating for transparent ₹299 inspection, genuine parts, and 90-day warranty.',
+    answerBn: 'আমাদের ওয়েবসাইটের ডেডিকেটেড রিভিউ পেজে (https://www.applianceseva.com/bn/reviews) ১২৮০+ যাচাইকৃত গ্রাহক রিভিউ দেখতে পারেন। স্বচ্ছ ₹২৯৯ পরিদর্শন ফি, আসল পার্টস ও ৯০ দিনের ওয়ারেন্টির জন্য আমাদের গ্রাহক রেটিং ৪.৯/৫ স্টার।'
+  },
+  {
+    question: 'Why choose Home Appliance Care India for doorstep home appliance repair service?',
+    questionBn: 'ডোরস্টেপ হোম অ্যাপ্লায়েন্স রিপেয়ার সার্ভিসের (home appliance repair service) জন্য কেন হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া সেরা?',
+    answer: 'We provide multi-brand certified technicians for AC, Refrigerator, Washing Machine, Microwave, and LED TV. With our fixed ₹299 diagnostic fee, same-day doorstep arrival, real-time booking tracking (AS-XXXXXXXX), and 90-day service warranty, we are India and West Bengal’s most dependable repair partner.',
+    answerBn: 'আমরা এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভির জন্য সার্টিফাইড টেকনিশিয়ান প্রদান করি। নির্দিষ্ট ₹২৯৯ ভিজিট ফি, একই দিনে বাড়িতে আগমন, রিয়েলটাইম বুকিং ট্র্যাকিং (AS-XXXXXXXX) এবং ৯০ দিনের ওয়ারেন্টি সহ আমরা পশ্চিমবঙ্গ ও ভারতের সবচেয়ে নির্ভরযোগ্য সার্ভিস পার্টনার।'
   }
 ];
 
