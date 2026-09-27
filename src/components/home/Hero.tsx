@@ -243,6 +243,7 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
           >
             <Link
               href={isBn ? '/bn/reviews' : '/reviews'}
+              prefetch={true}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',

@@ -539,7 +539,19 @@ export async function saveTrustItem(item: TrustItem): Promise<TrustItem> {
   return item;
 }
 
+let reviewsCache: { data: Review[]; timestamp: number } | null = null;
+const REVIEWS_CACHE_TTL_MS = 60 * 1000; // 60 seconds
+
+export function invalidateReviewsCache() {
+  reviewsCache = null;
+}
+
 export async function getReviews(): Promise<Review[]> {
+  const now = Date.now();
+  if (reviewsCache && now - reviewsCache.timestamp < REVIEWS_CACHE_TTL_MS) {
+    return reviewsCache.data;
+  }
+
   const mongo = await getMongoDb();
   if (mongo) {
     try {
@@ -557,13 +569,17 @@ export async function getReviews(): Promise<Review[]> {
       }
       const docs = await col.find({ isActive: true }).sort({ sortOrder: 1, date: -1 }).toArray();
       if (docs && docs.length > 0) {
-        return docs.map(({ _id, ...rest }) => rest as Review);
+        const result = docs.map(({ _id, ...rest }) => rest as Review);
+        reviewsCache = { data: result, timestamp: now };
+        return result;
       }
     } catch (e) {
       console.warn('MongoDB getReviews error, fallback to memory:', e);
     }
   }
-  return inMemory.reviews.filter((r) => r.isActive).sort((a, b) => a.sortOrder - b.sortOrder);
+  const result = inMemory.reviews.filter((r) => r.isActive).sort((a, b) => a.sortOrder - b.sortOrder);
+  reviewsCache = { data: result, timestamp: now };
+  return result;
 }
 
 export async function getAllReviewsAdmin(): Promise<Review[]> {
@@ -583,6 +599,7 @@ export async function getAllReviewsAdmin(): Promise<Review[]> {
 }
 
 export async function saveReview(review: Review): Promise<Review> {
+  invalidateReviewsCache();
   const idx = inMemory.reviews.findIndex((r) => r.id === review.id);
   if (idx >= 0) {
     inMemory.reviews[idx] = review;
@@ -607,6 +624,7 @@ export async function saveReview(review: Review): Promise<Review> {
 }
 
 export async function deleteReview(id: string): Promise<boolean> {
+  invalidateReviewsCache();
   inMemory.reviews = inMemory.reviews.filter((r) => r.id !== id);
   savePersistedReviews(inMemory.reviews);
 
@@ -629,6 +647,7 @@ export async function createCustomerReview(data: {
   comment: string;
   mobile?: string;
 }): Promise<Review> {
+  invalidateReviewsCache();
   const id = `rev-${Date.now()}`;
   const nowStr = new Date().toISOString().split('T')[0];
   const newReview: Review = {

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
 import { getCurrentAdmin } from '@/lib/auth';
 import { getAllReviewsAdmin, saveReview, deleteReview } from '@/lib/db';
 
@@ -16,6 +17,14 @@ export async function POST(req: NextRequest) {
 
   const body = await req.json();
   const saved = await saveReview(body);
+  try {
+    revalidatePath('/reviews');
+    revalidatePath('/bn/reviews');
+    revalidatePath('/');
+    revalidatePath('/bn');
+  } catch (e) {
+    // Ignore outside active Next request context
+  }
   return NextResponse.json({ success: true, review: saved });
 }
 
@@ -32,5 +41,13 @@ export async function DELETE(req: NextRequest) {
   if (!id) return NextResponse.json({ error: 'ID is required' }, { status: 400 });
 
   await deleteReview(id);
+  try {
+    revalidatePath('/reviews');
+    revalidatePath('/bn/reviews');
+    revalidatePath('/');
+    revalidatePath('/bn');
+  } catch (e) {
+    // Ignore outside active Next request context
+  }
   return NextResponse.json({ success: true });
 }

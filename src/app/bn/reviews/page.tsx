@@ -11,8 +11,7 @@ import {
 import { initialSearchKeywords } from '@/lib/seed-data';
 import { buildPageMetadata } from '@/lib/seo';
 
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
+export const revalidate = 60; // ISR: pre-rendered static HTML served instantly, revalidated every 60s in background
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({

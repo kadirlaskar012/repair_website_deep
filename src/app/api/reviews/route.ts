@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
 import { z } from 'zod';
 import { getReviews, createCustomerReview } from '@/lib/db';
 
@@ -36,6 +37,15 @@ export async function POST(req: NextRequest) {
       comment: validated.comment,
       mobile: validated.mobile
     });
+
+    try {
+      revalidatePath('/reviews');
+      revalidatePath('/bn/reviews');
+      revalidatePath('/');
+      revalidatePath('/bn');
+    } catch (e) {
+      // Ignore if called in environment without active Next router context
+    }
 
     return NextResponse.json({
       success: true,

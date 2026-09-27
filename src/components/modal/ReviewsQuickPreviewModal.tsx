@@ -457,6 +457,7 @@ export default function ReviewsQuickPreviewModal({
         >
           <Link
             href={isBn ? '/bn/reviews' : '/reviews'}
+            prefetch={true}
             onClick={onClose}
             style={{
               fontSize: '0.8125rem',

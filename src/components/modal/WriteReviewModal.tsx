@@ -381,6 +381,7 @@ export default function WriteReviewModal({
               <div style={{ marginBottom: '16px', textAlign: 'center' }}>
                 <Link
                   href={isBn ? '/bn/reviews' : '/reviews'}
+                  prefetch={true}
                   onClick={onClose}
                   style={{
                     display: 'inline-flex',
