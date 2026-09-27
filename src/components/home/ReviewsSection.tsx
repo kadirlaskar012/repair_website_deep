@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Star, ShieldCheck, MapPin, Edit3, CheckCircle2, Filter, Award, MessageSquare, Search, X, ChevronDown } from 'lucide-react';
 import { Review, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
@@ -20,6 +20,13 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [visibleCount, setVisibleCount] = useState<number>(18);
   const [isWriteModalOpen, setIsWriteModalOpen] = useState(false);
+
+  // Keep reviewsList synced with reviews prop
+  useEffect(() => {
+    if (reviews && reviews.length > 0) {
+      setReviewsList(reviews);
+    }
+  }, [reviews]);
 
   // Filter tabs definition covering all categories
   const filterTabs = [
