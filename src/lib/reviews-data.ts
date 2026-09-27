@@ -4,7 +4,7 @@ import { Review } from './types';
 export const initialReviews: Review[] = [
   {
     "id": "rev-1",
-    "customerName": "Anirban Mukherjee",
+    "customerName": "Souvik Mukherjee",
     "location": "Rajarhat Main Road, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -18,7 +18,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-2",
-    "customerName": "Anirban Banerjee",
+    "customerName": "Pooja Roy",
     "location": "Garia Station Road, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -32,7 +32,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-3",
-    "customerName": "Anirban Chatterjee",
+    "customerName": "Arindam Paul",
     "location": "Sodepur, North 24 Pgs",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -46,7 +46,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-4",
-    "customerName": "Anirban Bhattacharya",
+    "customerName": "Riya Bhowmick",
     "location": "Ruby General Hospital Area, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -60,7 +60,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-5",
-    "customerName": "Anirban Chakraborty",
+    "customerName": "Debashis Adhikary",
     "location": "Bally, Howrah",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -74,7 +74,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-6",
-    "customerName": "Anirban Ganguly",
+    "customerName": "Ananya Laha",
     "location": "Salt Lake Sector 1, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -88,7 +88,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-7",
-    "customerName": "Anirban Goswami",
+    "customerName": "Pritam Poddar",
     "location": "Park Street, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -102,7 +102,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-8",
-    "customerName": "Anirban Sanyal",
+    "customerName": "Swagata Bhaduri",
     "location": "Tollygunge, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -116,7 +116,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-9",
-    "customerName": "Anirban Bose",
+    "customerName": "Subhashish Dasgupta",
     "location": "Kestopur VIP Road, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -130,7 +130,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-10",
-    "customerName": "Anirban Dutta",
+    "customerName": "Mousumi Hazra",
     "location": "EM Bypass, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -144,7 +144,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-11",
-    "customerName": "Anirban Ghosh",
+    "customerName": "Rajat Chattopadhyay",
     "location": "Uttarpara, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -158,7 +158,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-12",
-    "customerName": "Anirban Mitra",
+    "customerName": "Shreya Mandal",
     "location": "Noida Sector 18, Delhi NCR",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -172,7 +172,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-13",
-    "customerName": "Anirban Guha",
+    "customerName": "Abhijit Chakraborty",
     "location": "Rohini Sector 9, New Delhi",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -186,7 +186,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-14",
-    "customerName": "Anirban Sen",
+    "customerName": "Sneha Majumdar",
     "location": "Koramangala 4th Block, Bangalore",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -200,7 +200,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-15",
-    "customerName": "Anirban Pal",
+    "customerName": "Kaushik Sarkar",
     "location": "Hinjewadi Phase 1, Pune",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -214,7 +214,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-16",
-    "customerName": "Anirban Roy",
+    "customerName": "Payel Pal",
     "location": "New Town Action Area 2, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -228,7 +228,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-17",
-    "customerName": "Anirban Das",
+    "customerName": "Sayan Mallick",
     "location": "Behala Sakher Bazar, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 4,
@@ -242,7 +242,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-18",
-    "customerName": "Anirban Mondal",
+    "customerName": "Madhumita Panja",
     "location": "Madhyamgram, North 24 Pgs",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -256,7 +256,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-19",
-    "customerName": "Anirban Saha",
+    "customerName": "Nilanjan Ghatak",
     "location": "Hatibagan, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -270,7 +270,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-20",
-    "customerName": "Anirban Majumdar",
+    "customerName": "Sharmistha Maitra",
     "location": "Salkia, Howrah",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -284,7 +284,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-21",
-    "customerName": "Anirban Bhowmick",
+    "customerName": "Animesh Kole",
     "location": "Chandannagar, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 4,
@@ -298,7 +298,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-22",
-    "customerName": "Anirban Samanta",
+    "customerName": "Tanushree Gangopadhyay",
     "location": "New Town Action Area 3, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -312,7 +312,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-23",
-    "customerName": "Anirban Nandi",
+    "customerName": "Sandip Maji",
     "location": "Jadavpur, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -326,7 +326,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-24",
-    "customerName": "Anirban Halder",
+    "customerName": "Sanchita Banerjee",
     "location": "Barrackpore, North 24 Pgs",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -340,7 +340,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-25",
-    "customerName": "Anirban Kundu",
+    "customerName": "Tanmay Das",
     "location": "Kasba New Market, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 4,
@@ -354,7 +354,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-26",
-    "customerName": "Anirban Barman",
+    "customerName": "Debolina Guha",
     "location": "Liluah, Howrah",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -368,7 +368,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-27",
-    "customerName": "Anirban Biswas",
+    "customerName": "Tathagata Karmakar",
     "location": "Bandel, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -382,7 +382,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-28",
-    "customerName": "Anirban Pramanik",
+    "customerName": "Rimpa Bagchi",
     "location": "Saket, South Delhi",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -396,7 +396,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-29",
-    "customerName": "Anirban Adhikary",
+    "customerName": "Suman Roychowdhury",
     "location": "Vashi Sector 17, Navi Mumbai",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -410,7 +410,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-30",
-    "customerName": "Anirban Karmakar",
+    "customerName": "Barnali Dan",
     "location": "Banjara Hills, Hyderabad",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -424,7 +424,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-31",
-    "customerName": "Anirban Bagchi",
+    "customerName": "Pradip Rakshit",
     "location": "Salt Lake Sector 5, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -438,7 +438,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-32",
-    "customerName": "Anirban Sharma",
+    "customerName": "Pampa Sengupta",
     "location": "New Alipore, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -452,7 +452,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-33",
-    "customerName": "Anirban Verma",
+    "customerName": "Biswajit Sasmal",
     "location": "Nagerbazar, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -466,7 +466,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-34",
-    "customerName": "Anirban Gupta",
+    "customerName": "Sonali Chowdhury",
     "location": "Ultadanga, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -480,7 +480,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-35",
-    "customerName": "Anirban Singh",
+    "customerName": "Dipankar Rudra",
     "location": "Kalighat, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -494,7 +494,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-36",
-    "customerName": "Anirban Mehra",
+    "customerName": "Koyel Ganguly",
     "location": "Serampore, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -508,7 +508,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-37",
-    "customerName": "Anirban Agarwal",
+    "customerName": "Supratim Bose",
     "location": "New Town Action Area 1, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -522,7 +522,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-38",
-    "customerName": "Anirban Tiwari",
+    "customerName": "Priyanka Naskar",
     "location": "Behala Chowrasta, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -536,7 +536,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-39",
-    "customerName": "Anirban Pandey",
+    "customerName": "Prosenjit Samanta",
     "location": "Barasat Champadali, North 24 Pgs",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -550,7 +550,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-40",
-    "customerName": "Anirban Mittal",
+    "customerName": "Sutapa Barman",
     "location": "Shyambazar Five Point, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -564,7 +564,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-41",
-    "customerName": "Anirban Mishra",
+    "customerName": "Anupam Sadhukhan",
     "location": "Shibpur, Howrah",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -578,7 +578,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-42",
-    "customerName": "Anirban Chauhan",
+    "customerName": "Moumita Sanyal",
     "location": "Chinsurah, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -592,7 +592,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-43",
-    "customerName": "Anirban Malhotra",
+    "customerName": "Somnath Tarafdar",
     "location": "Cyber City, Gurgaon",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -606,7 +606,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-44",
-    "customerName": "Anirban Singhania",
+    "customerName": "Aparna De",
     "location": "Borivali West, Mumbai",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -620,7 +620,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-45",
-    "customerName": "Anirban Jain",
+    "customerName": "Partha Bandyopadhyay",
     "location": "Gachibowli, Hyderabad",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -634,7 +634,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-46",
-    "customerName": "Anirban Saxena",
+    "customerName": "Indrani Bera",
     "location": "Salt Lake Sector 2, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -648,7 +648,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-47",
-    "customerName": "Anirban Rawat",
+    "customerName": "Arup Chatterjee",
     "location": "Ballygunge Circular Road, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -662,7 +662,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-48",
-    "customerName": "Anirban Kashyap",
+    "customerName": "Sunita Sen",
     "location": "Southern Avenue, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -676,7 +676,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-49",
-    "customerName": "Anirban Kapoor",
+    "customerName": "Alok Mondal",
     "location": "Baguiati, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -690,7 +690,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-50",
-    "customerName": "Anirban Bhatia",
+    "customerName": "Shalini Dey",
     "location": "Santoshpur, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -704,7 +704,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-51",
-    "customerName": "Anirban Kohli",
+    "customerName": "Joydeep Mitra",
     "location": "Konnagar, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -718,7 +718,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-52",
-    "customerName": "Anirban Chopra",
+    "customerName": "Rupa Majhi",
     "location": "Salt Lake Sector 3, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -732,7 +732,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-53",
-    "customerName": "Anirban Arora",
+    "customerName": "Debopam Dutta Gupta",
     "location": "Alipore, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -746,7 +746,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-54",
-    "customerName": "Anirban Dubey",
+    "customerName": "Tumpa Sinha",
     "location": "Dum Dum Cantonment, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -760,7 +760,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-55",
-    "customerName": "Anirban Tripathi",
+    "customerName": "Manish Ghoshal",
     "location": "Lake Town Block A, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -774,7 +774,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-56",
-    "customerName": "Anirban Yadav",
+    "customerName": "Piyali Paria",
     "location": "Gariahat, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -788,7 +788,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-57",
-    "customerName": "Anirban Srivastava",
+    "customerName": "Siddhartha Samaddar",
     "location": "Rishra, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -802,7 +802,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-58",
-    "customerName": "Anirban Choudhary",
+    "customerName": "Supriya Karan",
     "location": "Indirapuram, Ghaziabad",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -816,7 +816,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-59",
-    "customerName": "Anirban Rathore",
+    "customerName": "Kingshuk Ghosh",
     "location": "Bandra West, Mumbai",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -830,7 +830,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-60",
-    "customerName": "Anirban Shukla",
+    "customerName": "Archana Saha",
     "location": "HSR Layout Sector 2, Bangalore",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -844,7 +844,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-61",
-    "customerName": "Anirban Thakur",
+    "customerName": "Arnab Halder",
     "location": "Kothrud, Pune",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -858,7 +858,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-62",
-    "customerName": "Anirban Garg",
+    "customerName": "Kakoli Pramanik",
     "location": "Rajarhat Main Road, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -872,7 +872,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-63",
-    "customerName": "Anirban Bansal",
+    "customerName": "Chiranjit Basak",
     "location": "Garia Station Road, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -886,7 +886,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-64",
-    "customerName": "Anirban Iyer",
+    "customerName": "Jhuma Goswami",
     "location": "Sodepur, North 24 Pgs",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -900,7 +900,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-65",
-    "customerName": "Anirban Iyengar",
+    "customerName": "Tuhin Lahiri",
     "location": "Ruby General Hospital Area, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -914,7 +914,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-66",
-    "customerName": "Anirban Nair",
+    "customerName": "Rinku Choudhury",
     "location": "Bally, Howrah",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -928,7 +928,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-67",
-    "customerName": "Anirban Menon",
+    "customerName": "Shantanu Santra",
     "location": "Salt Lake Sector 1, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -942,7 +942,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-68",
-    "customerName": "Anirban Pillai",
+    "customerName": "Sumita Mukhopadhyay",
     "location": "Park Street, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -956,7 +956,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-69",
-    "customerName": "Anirban Rao",
+    "customerName": "Avik Jana",
     "location": "Tollygunge, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -970,7 +970,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-70",
-    "customerName": "Anirban Reddy",
+    "customerName": "Rita Bhattacharya",
     "location": "Kestopur VIP Road, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -984,7 +984,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-71",
-    "customerName": "Anirban Swaminathan",
+    "customerName": "Bikash Dutta",
     "location": "EM Bypass, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -998,7 +998,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-72",
-    "customerName": "Anirban Krishnan",
+    "customerName": "Soma Biswas",
     "location": "Uttarpara, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 4,
@@ -1012,7 +1012,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-73",
-    "customerName": "Anirban Sundaram",
+    "customerName": "Debjyoti Kundu",
     "location": "Noida Sector 18, Delhi NCR",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1026,7 +1026,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-74",
-    "customerName": "Anirban Venkatraman",
+    "customerName": "Papia Seal",
     "location": "Rohini Sector 9, New Delhi",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1040,7 +1040,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-75",
-    "customerName": "Anirban Prasad",
+    "customerName": "Prasenjit Patra",
     "location": "Koramangala 4th Block, Bangalore",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1054,7 +1054,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-76",
-    "customerName": "Anirban Balakrishnan",
+    "customerName": "Nandita Sen Sharma",
     "location": "Hinjewadi Phase 1, Pune",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1068,7 +1068,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-77",
-    "customerName": "Anirban Subramaniam",
+    "customerName": "Saptarshi Ray",
     "location": "New Town Action Area 2, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1082,7 +1082,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-78",
-    "customerName": "Anirban Nambiar",
+    "customerName": "Chaitali Acharya",
     "location": "Behala Sakher Bazar, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1096,7 +1096,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-79",
-    "customerName": "Anirban Murthy",
+    "customerName": "Indranil Bhattacharjee",
     "location": "Madhyamgram, North 24 Pgs",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1110,7 +1110,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-80",
-    "customerName": "Anirban Patel",
+    "customerName": "Arpita Talukdar",
     "location": "Hatibagan, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1124,7 +1124,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-81",
-    "customerName": "Anirban Shah",
+    "customerName": "Bappaditya Mukherjee",
     "location": "Salkia, Howrah",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1138,7 +1138,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-82",
-    "customerName": "Anirban Joshi",
+    "customerName": "Susmita Roy",
     "location": "Chandannagar, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1152,7 +1152,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-83",
-    "customerName": "Anirban Mehta",
+    "customerName": "Debasish Paul",
     "location": "New Town Action Area 3, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1166,7 +1166,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-84",
-    "customerName": "Anirban Kulkarni",
+    "customerName": "Ruma Bhowmick",
     "location": "Jadavpur, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1180,7 +1180,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-85",
-    "customerName": "Anirban Deshmukh",
+    "customerName": "Subrata Adhikary",
     "location": "Barrackpore, North 24 Pgs",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1194,7 +1194,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-86",
-    "customerName": "Anirban Patil",
+    "customerName": "Mita Laha",
     "location": "Kasba New Market, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1208,7 +1208,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-87",
-    "customerName": "Anirban Sawant",
+    "customerName": "Samarjit Poddar",
     "location": "Liluah, Howrah",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1222,7 +1222,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-88",
-    "customerName": "Anirban Shinde",
+    "customerName": "Rumela Bhaduri",
     "location": "Bandel, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 4,
@@ -1236,7 +1236,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-89",
-    "customerName": "Anirban Gaikwad",
+    "customerName": "Aniket Dasgupta",
     "location": "Saket, South Delhi",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1250,7 +1250,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-90",
-    "customerName": "Anirban Bhosale",
+    "customerName": "Swati Hazra",
     "location": "Vashi Sector 17, Navi Mumbai",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1264,7 +1264,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-91",
-    "customerName": "Anirban Pawar",
+    "customerName": "Ranajit Chattopadhyay",
     "location": "Banjara Hills, Hyderabad",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1278,7 +1278,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-92",
-    "customerName": "Anirban More",
+    "customerName": "Trisha Mandal",
     "location": "Salt Lake Sector 5, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1292,7 +1292,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-93",
-    "customerName": "Anirban Chavan",
+    "customerName": "Tapas Chakraborty",
     "location": "New Alipore, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 4,
@@ -1306,7 +1306,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-94",
-    "customerName": "Anirban Solanki",
+    "customerName": "Ankita Majumdar",
     "location": "Nagerbazar, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1320,7 +1320,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-95",
-    "customerName": "Anirban Panchal",
+    "customerName": "Subham Sarkar",
     "location": "Ultadanga, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1334,7 +1334,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-96",
-    "customerName": "Anirban Khan",
+    "customerName": "Paulami Pal",
     "location": "Kalighat, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1348,7 +1348,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-97",
-    "customerName": "Anirban Ahmed",
+    "customerName": "Mainak Mallick",
     "location": "Serampore, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1362,7 +1362,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-98",
-    "customerName": "Anirban Ali",
+    "customerName": "Anindita Panja",
     "location": "New Town Action Area 1, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1376,7 +1376,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-99",
-    "customerName": "Anirban Siddiqui",
+    "customerName": "Sayantan Ghatak",
     "location": "Behala Chowrasta, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1390,7 +1390,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-100",
-    "customerName": "Anirban Akhtar",
+    "customerName": "Ipsita Maitra",
     "location": "Barasat Champadali, North 24 Pgs",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1404,7 +1404,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-101",
-    "customerName": "Anirban Mallick",
+    "customerName": "Snehasis Kole",
     "location": "Shyambazar Five Point, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1418,7 +1418,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-102",
-    "customerName": "Anirban Parveen",
+    "customerName": "Sarmistha Gangopadhyay",
     "location": "Shibpur, Howrah",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1432,7 +1432,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-103",
-    "customerName": "Anirban Ansari",
+    "customerName": "Amit Maji",
     "location": "Chinsurah, Hooghly",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1446,7 +1446,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-104",
-    "customerName": "Anirban Qureshi",
+    "customerName": "Gargi Banerjee",
     "location": "Cyber City, Gurgaon",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1460,7 +1460,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-105",
-    "customerName": "Anirban Mirza",
+    "customerName": "Rahul Das",
     "location": "Borivali West, Mumbai",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1474,7 +1474,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-106",
-    "customerName": "Anirban Hassan",
+    "customerName": "Sreemoyee Guha",
     "location": "Gachibowli, Hyderabad",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1488,7 +1488,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-107",
-    "customerName": "Anirban Begum",
+    "customerName": "Rohit Karmakar",
     "location": "Salt Lake Sector 2, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 4,
@@ -1502,7 +1502,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-108",
-    "customerName": "Anirban Hossain",
+    "customerName": "Baishakhi Bagchi",
     "location": "Ballygunge Circular Road, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1516,7 +1516,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-109",
-    "customerName": "Anirban Rahman",
+    "customerName": "Vikash Roychowdhury",
     "location": "Southern Avenue, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1530,7 +1530,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-110",
-    "customerName": "Anirban Laskar",
+    "customerName": "Paramita Dan",
     "location": "Baguiati, Kolkata",
     "serviceCategory": "AC Repair",
     "rating": 5,
@@ -1544,7 +1544,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-111",
-    "customerName": "Anirban Molla",
+    "customerName": "Kunal Rakshit",
     "location": "Chandannagar, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1558,7 +1558,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-112",
-    "customerName": "Sourav Mukherjee",
+    "customerName": "Sampurna Sengupta",
     "location": "New Town Action Area 3, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1572,7 +1572,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-113",
-    "customerName": "Sourav Banerjee",
+    "customerName": "Rupam Sasmal",
     "location": "Jadavpur, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 4,
@@ -1586,7 +1586,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-114",
-    "customerName": "Sourav Chatterjee",
+    "customerName": "Rituparna Chowdhury",
     "location": "Barrackpore, North 24 Pgs",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1600,7 +1600,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-115",
-    "customerName": "Sourav Bhattacharya",
+    "customerName": "Sanjay Rudra",
     "location": "Kasba New Market, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1614,7 +1614,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-116",
-    "customerName": "Sourav Chakraborty",
+    "customerName": "Piyashi Ganguly",
     "location": "Liluah, Howrah",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1628,7 +1628,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-117",
-    "customerName": "Sourav Ganguly",
+    "customerName": "Gautam Bose",
     "location": "Bandel, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1642,7 +1642,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-118",
-    "customerName": "Sourav Goswami",
+    "customerName": "Tanusree Naskar",
     "location": "Saket, South Delhi",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1656,7 +1656,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-119",
-    "customerName": "Sourav Sanyal",
+    "customerName": "Manoj Samanta",
     "location": "Vashi Sector 17, Navi Mumbai",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1670,7 +1670,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-120",
-    "customerName": "Sourav Bose",
+    "customerName": "Debjani Barman",
     "location": "Banjara Hills, Hyderabad",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1684,7 +1684,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-121",
-    "customerName": "Sourav Dutta",
+    "customerName": "Rajesh Sadhukhan",
     "location": "Salt Lake Sector 5, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1698,7 +1698,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-122",
-    "customerName": "Sourav Ghosh",
+    "customerName": "Nibedita Sanyal",
     "location": "New Alipore, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1712,7 +1712,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-123",
-    "customerName": "Sourav Mitra",
+    "customerName": "Surajit Tarafdar",
     "location": "Nagerbazar, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1726,7 +1726,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-124",
-    "customerName": "Sourav Guha",
+    "customerName": "Monalisa De",
     "location": "Ultadanga, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1740,7 +1740,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-125",
-    "customerName": "Sourav Sen",
+    "customerName": "Dipak Bandyopadhyay",
     "location": "Kalighat, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1754,7 +1754,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-126",
-    "customerName": "Sourav Pal",
+    "customerName": "Jhilik Bera",
     "location": "Serampore, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1768,7 +1768,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-127",
-    "customerName": "Sourav Roy",
+    "customerName": "Uttam Chatterjee",
     "location": "New Town Action Area 1, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1782,7 +1782,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-128",
-    "customerName": "Sourav Das",
+    "customerName": "Suchitra Sen",
     "location": "Behala Chowrasta, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1796,7 +1796,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-129",
-    "customerName": "Sourav Mondal",
+    "customerName": "Prabir Mondal",
     "location": "Barasat Champadali, North 24 Pgs",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1810,7 +1810,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-130",
-    "customerName": "Sourav Saha",
+    "customerName": "Anuradha Dey",
     "location": "Shyambazar Five Point, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1824,7 +1824,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-131",
-    "customerName": "Sourav Majumdar",
+    "customerName": "Subal Mitra",
     "location": "Shibpur, Howrah",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1838,7 +1838,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-132",
-    "customerName": "Sourav Bhowmick",
+    "customerName": "Sudeshna Majhi",
     "location": "Chinsurah, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1852,7 +1852,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-133",
-    "customerName": "Sourav Samanta",
+    "customerName": "Narayan Dutta Gupta",
     "location": "Cyber City, Gurgaon",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1866,7 +1866,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-134",
-    "customerName": "Sourav Nandi",
+    "customerName": "Debsmita Sinha",
     "location": "Borivali West, Mumbai",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1880,7 +1880,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-135",
-    "customerName": "Sourav Halder",
+    "customerName": "Sujit Ghoshal",
     "location": "Gachibowli, Hyderabad",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1894,7 +1894,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-136",
-    "customerName": "Sourav Kundu",
+    "customerName": "Madhurima Paria",
     "location": "Salt Lake Sector 2, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1908,7 +1908,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-137",
-    "customerName": "Sourav Barman",
+    "customerName": "Gopal Samaddar",
     "location": "Ballygunge Circular Road, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1922,7 +1922,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-138",
-    "customerName": "Sourav Biswas",
+    "customerName": "Sayani Karan",
     "location": "Southern Avenue, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1936,7 +1936,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-139",
-    "customerName": "Sourav Pramanik",
+    "customerName": "Subhendu Ghosh",
     "location": "Baguiati, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1950,7 +1950,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-140",
-    "customerName": "Sourav Adhikary",
+    "customerName": "Sangita Saha",
     "location": "Santoshpur, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1964,7 +1964,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-141",
-    "customerName": "Sourav Karmakar",
+    "customerName": "Pulak Halder",
     "location": "Konnagar, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1978,7 +1978,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-142",
-    "customerName": "Sourav Bagchi",
+    "customerName": "Madhuri Pramanik",
     "location": "Salt Lake Sector 3, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -1992,7 +1992,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-143",
-    "customerName": "Sourav Sharma",
+    "customerName": "Debu Basak",
     "location": "Alipore, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2006,7 +2006,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-144",
-    "customerName": "Sourav Verma",
+    "customerName": "Anamika Goswami",
     "location": "Dum Dum Cantonment, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2020,7 +2020,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-145",
-    "customerName": "Sourav Gupta",
+    "customerName": "Brijesh Lahiri",
     "location": "Lake Town Block A, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 4,
@@ -2034,7 +2034,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-146",
-    "customerName": "Sourav Singh",
+    "customerName": "Ritika Choudhury",
     "location": "Gariahat, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2048,7 +2048,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-147",
-    "customerName": "Sourav Mehra",
+    "customerName": "Ashish Santra",
     "location": "Rishra, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 4,
@@ -2062,7 +2062,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-148",
-    "customerName": "Sourav Agarwal",
+    "customerName": "Kasturi Mukhopadhyay",
     "location": "Indirapuram, Ghaziabad",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2076,7 +2076,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-149",
-    "customerName": "Sourav Tiwari",
+    "customerName": "Deep Jana",
     "location": "Bandra West, Mumbai",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2090,7 +2090,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-150",
-    "customerName": "Sourav Pandey",
+    "customerName": "Aditi Bhattacharya",
     "location": "HSR Layout Sector 2, Bangalore",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2104,7 +2104,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-151",
-    "customerName": "Sourav Mittal",
+    "customerName": "Arpan Dutta",
     "location": "Kothrud, Pune",
     "serviceCategory": "Fridge Repair",
     "rating": 4,
@@ -2118,7 +2118,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-152",
-    "customerName": "Sourav Mishra",
+    "customerName": "Debalina Biswas",
     "location": "Rajarhat Main Road, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2132,7 +2132,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-153",
-    "customerName": "Sourav Chauhan",
+    "customerName": "Soumyajit Kundu",
     "location": "Garia Station Road, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2146,7 +2146,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-154",
-    "customerName": "Sourav Malhotra",
+    "customerName": "Subhra Seal",
     "location": "Sodepur, North 24 Pgs",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2160,7 +2160,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-155",
-    "customerName": "Sourav Singhania",
+    "customerName": "Subhadeep Patra",
     "location": "Ruby General Hospital Area, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2174,7 +2174,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-156",
-    "customerName": "Sourav Jain",
+    "customerName": "Trina Sen Sharma",
     "location": "Bally, Howrah",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2188,7 +2188,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-157",
-    "customerName": "Sourav Saxena",
+    "customerName": "Ritwik Ray",
     "location": "Salt Lake Sector 1, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2202,7 +2202,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-158",
-    "customerName": "Sourav Rawat",
+    "customerName": "Rohini Acharya",
     "location": "Park Street, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2216,7 +2216,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-159",
-    "customerName": "Sourav Kashyap",
+    "customerName": "Anup Bhattacharjee",
     "location": "Tollygunge, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2230,7 +2230,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-160",
-    "customerName": "Sourav Kapoor",
+    "customerName": "Piyasa Talukdar",
     "location": "Kestopur VIP Road, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2244,7 +2244,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-161",
-    "customerName": "Sourav Bhatia",
+    "customerName": "Joy Mukherjee",
     "location": "EM Bypass, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2258,7 +2258,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-162",
-    "customerName": "Sourav Kohli",
+    "customerName": "Somashree Roy",
     "location": "Uttarpara, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2272,7 +2272,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-163",
-    "customerName": "Sourav Chopra",
+    "customerName": "Sukalyan Paul",
     "location": "Noida Sector 18, Delhi NCR",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2286,7 +2286,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-164",
-    "customerName": "Sourav Arora",
+    "customerName": "Chandrima Bhowmick",
     "location": "Rohini Sector 9, New Delhi",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2300,7 +2300,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-165",
-    "customerName": "Sourav Dubey",
+    "customerName": "Tarun Adhikary",
     "location": "Koramangala 4th Block, Bangalore",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2314,7 +2314,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-166",
-    "customerName": "Sourav Tripathi",
+    "customerName": "Debopriya Laha",
     "location": "Hinjewadi Phase 1, Pune",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2328,7 +2328,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-167",
-    "customerName": "Sourav Yadav",
+    "customerName": "Palash Poddar",
     "location": "New Town Action Area 2, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2342,7 +2342,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-168",
-    "customerName": "Sourav Srivastava",
+    "customerName": "Sharmila Bhaduri",
     "location": "Behala Sakher Bazar, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 4,
@@ -2356,7 +2356,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-169",
-    "customerName": "Sourav Choudhary",
+    "customerName": "Manas Dasgupta",
     "location": "Madhyamgram, North 24 Pgs",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2370,7 +2370,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-170",
-    "customerName": "Sourav Rathore",
+    "customerName": "Debosmita Hazra",
     "location": "Hatibagan, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2384,7 +2384,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-171",
-    "customerName": "Sourav Shukla",
+    "customerName": "Prasanta Chattopadhyay",
     "location": "Salkia, Howrah",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2398,7 +2398,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-172",
-    "customerName": "Sourav Thakur",
+    "customerName": "Poushali Mandal",
     "location": "Chandannagar, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 4,
@@ -2412,7 +2412,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-173",
-    "customerName": "Sourav Garg",
+    "customerName": "Subir Chakraborty",
     "location": "New Town Action Area 3, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2426,7 +2426,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-174",
-    "customerName": "Sourav Bansal",
+    "customerName": "Barnashree Majumdar",
     "location": "Jadavpur, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2440,7 +2440,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-175",
-    "customerName": "Sourav Iyer",
+    "customerName": "Sanjib Sarkar",
     "location": "Barrackpore, North 24 Pgs",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2454,7 +2454,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-176",
-    "customerName": "Sourav Iyengar",
+    "customerName": "Debadrita Pal",
     "location": "Kasba New Market, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2468,7 +2468,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-177",
-    "customerName": "Sourav Nair",
+    "customerName": "Ashoke Mallick",
     "location": "Liluah, Howrah",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2482,7 +2482,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-178",
-    "customerName": "Sourav Menon",
+    "customerName": "Amrita Panja",
     "location": "Bandel, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2496,7 +2496,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-179",
-    "customerName": "Sourav Pillai",
+    "customerName": "Biplab Ghatak",
     "location": "Saket, South Delhi",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2510,7 +2510,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-180",
-    "customerName": "Sourav Rao",
+    "customerName": "Ishita Maitra",
     "location": "Vashi Sector 17, Navi Mumbai",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2524,7 +2524,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-181",
-    "customerName": "Sourav Reddy",
+    "customerName": "Shyamal Kole",
     "location": "Banjara Hills, Hyderabad",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2538,7 +2538,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-182",
-    "customerName": "Sourav Swaminathan",
+    "customerName": "Raktima Gangopadhyay",
     "location": "Salt Lake Sector 5, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2552,7 +2552,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-183",
-    "customerName": "Sourav Krishnan",
+    "customerName": "Madhab Maji",
     "location": "New Alipore, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2566,7 +2566,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-184",
-    "customerName": "Sourav Sundaram",
+    "customerName": "Sagarika Banerjee",
     "location": "Nagerbazar, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2580,7 +2580,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-185",
-    "customerName": "Sourav Venkatraman",
+    "customerName": "Anik Das",
     "location": "Ultadanga, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2594,7 +2594,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-186",
-    "customerName": "Sourav Prasad",
+    "customerName": "Ushashi Guha",
     "location": "Kalighat, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2608,7 +2608,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-187",
-    "customerName": "Sourav Balakrishnan",
+    "customerName": "Sudipta Karmakar",
     "location": "Serampore, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2622,7 +2622,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-188",
-    "customerName": "Sourav Subramaniam",
+    "customerName": "Malini Bagchi",
     "location": "New Town Action Area 1, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2636,7 +2636,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-189",
-    "customerName": "Sourav Nambiar",
+    "customerName": "Ayan Roychowdhury",
     "location": "Behala Chowrasta, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2650,7 +2650,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-190",
-    "customerName": "Sourav Murthy",
+    "customerName": "Anwesha Dan",
     "location": "Barasat Champadali, North 24 Pgs",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2664,7 +2664,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-191",
-    "customerName": "Sourav Patel",
+    "customerName": "Subhro Rakshit",
     "location": "Shyambazar Five Point, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2678,7 +2678,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-192",
-    "customerName": "Sourav Shah",
+    "customerName": "Somasree Sengupta",
     "location": "Shibpur, Howrah",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2692,7 +2692,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-193",
-    "customerName": "Sourav Joshi",
+    "customerName": "Krishnendu Sasmal",
     "location": "Chinsurah, Hooghly",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2706,7 +2706,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-194",
-    "customerName": "Sourav Mehta",
+    "customerName": "Arundhati Chowdhury",
     "location": "Cyber City, Gurgaon",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2720,7 +2720,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-195",
-    "customerName": "Sourav Kulkarni",
+    "customerName": "Joyjit Rudra",
     "location": "Borivali West, Mumbai",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2734,7 +2734,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-196",
-    "customerName": "Sourav Deshmukh",
+    "customerName": "Madhushree Ganguly",
     "location": "Gachibowli, Hyderabad",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2748,7 +2748,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-197",
-    "customerName": "Sourav Patil",
+    "customerName": "Aniruddha Bose",
     "location": "Salt Lake Sector 2, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2762,7 +2762,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-198",
-    "customerName": "Sourav Sawant",
+    "customerName": "Poulami Naskar",
     "location": "Ballygunge Circular Road, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2776,7 +2776,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-199",
-    "customerName": "Sourav Shinde",
+    "customerName": "Bodhisattva Samanta",
     "location": "Southern Avenue, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2790,7 +2790,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-200",
-    "customerName": "Sourav Gaikwad",
+    "customerName": "Monidipa Barman",
     "location": "Baguiati, Kolkata",
     "serviceCategory": "Fridge Repair",
     "rating": 5,
@@ -2804,7 +2804,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-201",
-    "customerName": "Sourav Bhosale",
+    "customerName": "Agniva Sadhukhan",
     "location": "Dum Dum Cantonment, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2818,7 +2818,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-202",
-    "customerName": "Sourav Pawar",
+    "customerName": "Debashree Sanyal",
     "location": "Lake Town Block A, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2832,7 +2832,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-203",
-    "customerName": "Sourav More",
+    "customerName": "Debarghya Tarafdar",
     "location": "Gariahat, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2846,7 +2846,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-204",
-    "customerName": "Sourav Chavan",
+    "customerName": "Kuheli De",
     "location": "Rishra, Hooghly",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2860,7 +2860,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-205",
-    "customerName": "Sourav Solanki",
+    "customerName": "Sayak Bandyopadhyay",
     "location": "Indirapuram, Ghaziabad",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2874,7 +2874,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-206",
-    "customerName": "Sourav Panchal",
+    "customerName": "Mitali Bera",
     "location": "Bandra West, Mumbai",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2888,7 +2888,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-207",
-    "customerName": "Sourav Khan",
+    "customerName": "Rishav Chatterjee",
     "location": "HSR Layout Sector 2, Bangalore",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2902,7 +2902,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-208",
-    "customerName": "Sourav Ahmed",
+    "customerName": "Dola Sen",
     "location": "Kothrud, Pune",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2916,7 +2916,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-209",
-    "customerName": "Sourav Ali",
+    "customerName": "Sanket Mondal",
     "location": "Rajarhat Main Road, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2930,7 +2930,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-210",
-    "customerName": "Sourav Siddiqui",
+    "customerName": "Suparna Dey",
     "location": "Garia Station Road, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2944,7 +2944,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-211",
-    "customerName": "Sourav Akhtar",
+    "customerName": "Arka Mitra",
     "location": "Sodepur, North 24 Pgs",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2958,7 +2958,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-212",
-    "customerName": "Sourav Mallick",
+    "customerName": "Mahuya Majhi",
     "location": "Ruby General Hospital Area, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2972,7 +2972,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-213",
-    "customerName": "Sourav Parveen",
+    "customerName": "Sambit Dutta Gupta",
     "location": "Bally, Howrah",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -2986,7 +2986,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-214",
-    "customerName": "Sourav Ansari",
+    "customerName": "Chaiti Sinha",
     "location": "Salt Lake Sector 1, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3000,7 +3000,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-215",
-    "customerName": "Sourav Qureshi",
+    "customerName": "Utsav Ghoshal",
     "location": "Park Street, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3014,7 +3014,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-216",
-    "customerName": "Sourav Mirza",
+    "customerName": "Indira Paria",
     "location": "Tollygunge, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3028,7 +3028,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-217",
-    "customerName": "Sourav Hassan",
+    "customerName": "Niladri Samaddar",
     "location": "Kestopur VIP Road, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 4,
@@ -3042,7 +3042,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-218",
-    "customerName": "Sourav Begum",
+    "customerName": "Rumki Karan",
     "location": "EM Bypass, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3056,7 +3056,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-219",
-    "customerName": "Sourav Hossain",
+    "customerName": "Tridib Ghosh",
     "location": "Uttarpara, Hooghly",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3070,7 +3070,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-220",
-    "customerName": "Sourav Rahman",
+    "customerName": "Laboni Saha",
     "location": "Noida Sector 18, Delhi NCR",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3084,7 +3084,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-221",
-    "customerName": "Sourav Laskar",
+    "customerName": "Debmalya Halder",
     "location": "Rohini Sector 9, New Delhi",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3098,7 +3098,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-222",
-    "customerName": "Sourav Molla",
+    "customerName": "Bristi Pramanik",
     "location": "Koramangala 4th Block, Bangalore",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3112,7 +3112,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-223",
-    "customerName": "Debabrata Mukherjee",
+    "customerName": "Arghya Basak",
     "location": "Hinjewadi Phase 1, Pune",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3126,7 +3126,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-224",
-    "customerName": "Debabrata Banerjee",
+    "customerName": "Parna Goswami",
     "location": "New Town Action Area 2, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3140,7 +3140,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-225",
-    "customerName": "Debabrata Chatterjee",
+    "customerName": "Debraj Lahiri",
     "location": "Behala Sakher Bazar, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3154,7 +3154,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-226",
-    "customerName": "Debabrata Bhattacharya",
+    "customerName": "Pratik Choudhury",
     "location": "Madhyamgram, North 24 Pgs",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3168,7 +3168,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-227",
-    "customerName": "Debabrata Chakraborty",
+    "customerName": "Arkopravo Santra",
     "location": "Hatibagan, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3182,7 +3182,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-228",
-    "customerName": "Debabrata Ganguly",
+    "customerName": "Rajib Mukhopadhyay",
     "location": "Salkia, Howrah",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3196,7 +3196,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-229",
-    "customerName": "Debabrata Goswami",
+    "customerName": "Sudip Jana",
     "location": "Chandannagar, Hooghly",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3210,7 +3210,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-230",
-    "customerName": "Debabrata Sanyal",
+    "customerName": "Abir Bhattacharya",
     "location": "New Town Action Area 3, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3224,7 +3224,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-231",
-    "customerName": "Debabrata Bose",
+    "customerName": "Sourabh Dutta",
     "location": "Jadavpur, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3238,7 +3238,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-232",
-    "customerName": "Debabrata Dutta",
+    "customerName": "Samrat Biswas",
     "location": "Barrackpore, North 24 Pgs",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3252,7 +3252,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-233",
-    "customerName": "Debabrata Ghosh",
+    "customerName": "Avishek Kundu",
     "location": "Kasba New Market, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 4,
@@ -3266,7 +3266,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-234",
-    "customerName": "Debabrata Mitra",
+    "customerName": "Prateek Seal",
     "location": "Liluah, Howrah",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3280,7 +3280,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-235",
-    "customerName": "Debabrata Guha",
+    "customerName": "Pinaki Patra",
     "location": "Bandel, Hooghly",
     "serviceCategory": "Washing Machine Repair",
     "rating": 4,
@@ -3294,7 +3294,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-236",
-    "customerName": "Debabrata Sen",
+    "customerName": "Nilabja Sen Sharma",
     "location": "Saket, South Delhi",
     "serviceCategory": "Washing Machine Repair",
     "rating": 4,
@@ -3308,7 +3308,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-237",
-    "customerName": "Debabrata Pal",
+    "customerName": "Debabrata Ray",
     "location": "Vashi Sector 17, Navi Mumbai",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3322,7 +3322,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-238",
-    "customerName": "Debabrata Roy",
+    "customerName": "Kalyan Acharya",
     "location": "Banjara Hills, Hyderabad",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3336,7 +3336,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-239",
-    "customerName": "Debabrata Das",
+    "customerName": "Tamal Bhattacharjee",
     "location": "Salt Lake Sector 5, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3350,7 +3350,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-240",
-    "customerName": "Debabrata Mondal",
+    "customerName": "Barun Talukdar",
     "location": "New Alipore, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3364,7 +3364,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-241",
-    "customerName": "Debabrata Saha",
+    "customerName": "Chirantan Mukherjee",
     "location": "Nagerbazar, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3378,7 +3378,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-242",
-    "customerName": "Debabrata Majumdar",
+    "customerName": "Subhadip Roy",
     "location": "Ultadanga, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3392,7 +3392,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-243",
-    "customerName": "Debabrata Bhowmick",
+    "customerName": "Debjit Paul",
     "location": "Kalighat, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3406,7 +3406,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-244",
-    "customerName": "Debabrata Samanta",
+    "customerName": "Satyajit Bhowmick",
     "location": "Serampore, Hooghly",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3420,7 +3420,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-245",
-    "customerName": "Debabrata Nandi",
+    "customerName": "Raktim Adhikary",
     "location": "New Town Action Area 1, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3434,7 +3434,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-246",
-    "customerName": "Debabrata Halder",
+    "customerName": "Bivas Laha",
     "location": "Behala Chowrasta, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 4,
@@ -3448,7 +3448,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-247",
-    "customerName": "Debabrata Kundu",
+    "customerName": "Debananda Poddar",
     "location": "Barasat Champadali, North 24 Pgs",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3462,7 +3462,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-248",
-    "customerName": "Debabrata Barman",
+    "customerName": "Chinmoy Bhaduri",
     "location": "Shyambazar Five Point, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3476,7 +3476,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-249",
-    "customerName": "Debabrata Biswas",
+    "customerName": "Souvik Talukdar",
     "location": "Shibpur, Howrah",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3490,7 +3490,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-250",
-    "customerName": "Debabrata Pramanik",
+    "customerName": "Pooja Mukherjee",
     "location": "Chinsurah, Hooghly",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3504,7 +3504,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-251",
-    "customerName": "Debabrata Adhikary",
+    "customerName": "Arindam Roy",
     "location": "Cyber City, Gurgaon",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3518,7 +3518,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-252",
-    "customerName": "Debabrata Karmakar",
+    "customerName": "Riya Paul",
     "location": "Borivali West, Mumbai",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3532,7 +3532,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-253",
-    "customerName": "Debabrata Bagchi",
+    "customerName": "Debashis Bhowmick",
     "location": "Gachibowli, Hyderabad",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3546,7 +3546,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-254",
-    "customerName": "Debabrata Sharma",
+    "customerName": "Ananya Adhikary",
     "location": "Salt Lake Sector 2, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3560,7 +3560,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-255",
-    "customerName": "Debabrata Verma",
+    "customerName": "Pritam Laha",
     "location": "Ballygunge Circular Road, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3574,7 +3574,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-256",
-    "customerName": "Debabrata Gupta",
+    "customerName": "Swagata Poddar",
     "location": "Southern Avenue, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3588,7 +3588,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-257",
-    "customerName": "Debabrata Singh",
+    "customerName": "Subhashish Bhaduri",
     "location": "Baguiati, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3602,7 +3602,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-258",
-    "customerName": "Debabrata Mehra",
+    "customerName": "Mousumi Dasgupta",
     "location": "Santoshpur, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3616,7 +3616,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-259",
-    "customerName": "Debabrata Agarwal",
+    "customerName": "Rajat Hazra",
     "location": "Konnagar, Hooghly",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3630,7 +3630,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-260",
-    "customerName": "Debabrata Tiwari",
+    "customerName": "Shreya Chattopadhyay",
     "location": "Salt Lake Sector 3, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3644,7 +3644,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-261",
-    "customerName": "Debabrata Pandey",
+    "customerName": "Abhijit Mandal",
     "location": "Alipore, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3658,7 +3658,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-262",
-    "customerName": "Debabrata Mittal",
+    "customerName": "Sneha Chakraborty",
     "location": "Dum Dum Cantonment, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3672,7 +3672,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-263",
-    "customerName": "Debabrata Mishra",
+    "customerName": "Kaushik Majumdar",
     "location": "Lake Town Block A, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3686,7 +3686,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-264",
-    "customerName": "Debabrata Chauhan",
+    "customerName": "Payel Sarkar",
     "location": "Gariahat, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3700,7 +3700,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-265",
-    "customerName": "Debabrata Malhotra",
+    "customerName": "Sayan Pal",
     "location": "Rishra, Hooghly",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3714,7 +3714,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-266",
-    "customerName": "Debabrata Singhania",
+    "customerName": "Madhumita Mallick",
     "location": "Indirapuram, Ghaziabad",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3728,7 +3728,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-267",
-    "customerName": "Debabrata Jain",
+    "customerName": "Nilanjan Panja",
     "location": "Bandra West, Mumbai",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3742,7 +3742,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-268",
-    "customerName": "Debabrata Saxena",
+    "customerName": "Sharmistha Ghatak",
     "location": "HSR Layout Sector 2, Bangalore",
     "serviceCategory": "Washing Machine Repair",
     "rating": 4,
@@ -3756,7 +3756,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-269",
-    "customerName": "Debabrata Rawat",
+    "customerName": "Animesh Maitra",
     "location": "Kothrud, Pune",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3770,7 +3770,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-270",
-    "customerName": "Debabrata Kashyap",
+    "customerName": "Tanushree Kole",
     "location": "Rajarhat Main Road, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3784,7 +3784,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-271",
-    "customerName": "Debabrata Kapoor",
+    "customerName": "Sandip Gangopadhyay",
     "location": "Garia Station Road, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3798,7 +3798,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-272",
-    "customerName": "Debabrata Bhatia",
+    "customerName": "Sanchita Maji",
     "location": "Sodepur, North 24 Pgs",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3812,7 +3812,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-273",
-    "customerName": "Debabrata Kohli",
+    "customerName": "Tanmay Banerjee",
     "location": "Ruby General Hospital Area, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3826,7 +3826,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-274",
-    "customerName": "Debabrata Chopra",
+    "customerName": "Debolina Das",
     "location": "Bally, Howrah",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3840,7 +3840,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-275",
-    "customerName": "Debabrata Arora",
+    "customerName": "Tathagata Guha",
     "location": "Salt Lake Sector 1, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3854,7 +3854,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-276",
-    "customerName": "Debabrata Dubey",
+    "customerName": "Rimpa Karmakar",
     "location": "Park Street, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3868,7 +3868,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-277",
-    "customerName": "Debabrata Tripathi",
+    "customerName": "Suman Bagchi",
     "location": "Tollygunge, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3882,7 +3882,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-278",
-    "customerName": "Debabrata Yadav",
+    "customerName": "Barnali Roychowdhury",
     "location": "Kestopur VIP Road, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3896,7 +3896,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-279",
-    "customerName": "Debabrata Srivastava",
+    "customerName": "Pradip Dan",
     "location": "EM Bypass, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3910,7 +3910,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-280",
-    "customerName": "Debabrata Choudhary",
+    "customerName": "Pampa Rakshit",
     "location": "Uttarpara, Hooghly",
     "serviceCategory": "Washing Machine Repair",
     "rating": 4,
@@ -3924,7 +3924,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-281",
-    "customerName": "Debabrata Rathore",
+    "customerName": "Biswajit Sengupta",
     "location": "Noida Sector 18, Delhi NCR",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3938,7 +3938,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-282",
-    "customerName": "Debabrata Shukla",
+    "customerName": "Sonali Sasmal",
     "location": "Rohini Sector 9, New Delhi",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3952,7 +3952,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-283",
-    "customerName": "Debabrata Thakur",
+    "customerName": "Dipankar Chowdhury",
     "location": "Koramangala 4th Block, Bangalore",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3966,7 +3966,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-284",
-    "customerName": "Debabrata Garg",
+    "customerName": "Koyel Rudra",
     "location": "Hinjewadi Phase 1, Pune",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3980,7 +3980,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-285",
-    "customerName": "Debabrata Bansal",
+    "customerName": "Supratim Ganguly",
     "location": "New Town Action Area 2, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -3994,7 +3994,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-286",
-    "customerName": "Debabrata Iyer",
+    "customerName": "Priyanka Bose",
     "location": "Behala Sakher Bazar, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -4008,7 +4008,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-287",
-    "customerName": "Debabrata Iyengar",
+    "customerName": "Prosenjit Naskar",
     "location": "Madhyamgram, North 24 Pgs",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -4022,7 +4022,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-288",
-    "customerName": "Debabrata Nair",
+    "customerName": "Sutapa Samanta",
     "location": "Hatibagan, Kolkata",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -4036,7 +4036,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-289",
-    "customerName": "Debabrata Menon",
+    "customerName": "Anupam Barman",
     "location": "Salkia, Howrah",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -4050,7 +4050,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-290",
-    "customerName": "Debabrata Pillai",
+    "customerName": "Moumita Sadhukhan",
     "location": "Chandannagar, Hooghly",
     "serviceCategory": "Washing Machine Repair",
     "rating": 5,
@@ -4064,7 +4064,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-291",
-    "customerName": "Debabrata Rao",
+    "customerName": "Somnath Sanyal",
     "location": "Liluah, Howrah",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4078,7 +4078,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-292",
-    "customerName": "Debabrata Reddy",
+    "customerName": "Aparna Tarafdar",
     "location": "Bandel, Hooghly",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4092,7 +4092,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-293",
-    "customerName": "Debabrata Swaminathan",
+    "customerName": "Partha De",
     "location": "Saket, South Delhi",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4106,7 +4106,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-294",
-    "customerName": "Debabrata Krishnan",
+    "customerName": "Indrani Bandyopadhyay",
     "location": "Vashi Sector 17, Navi Mumbai",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4120,7 +4120,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-295",
-    "customerName": "Debabrata Sundaram",
+    "customerName": "Arup Bera",
     "location": "Banjara Hills, Hyderabad",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4134,7 +4134,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-296",
-    "customerName": "Debabrata Venkatraman",
+    "customerName": "Sunita Chatterjee",
     "location": "Salt Lake Sector 5, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4148,7 +4148,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-297",
-    "customerName": "Debabrata Prasad",
+    "customerName": "Alok Sen",
     "location": "New Alipore, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4162,7 +4162,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-298",
-    "customerName": "Debabrata Balakrishnan",
+    "customerName": "Shalini Mondal",
     "location": "Nagerbazar, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4176,7 +4176,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-299",
-    "customerName": "Debabrata Subramaniam",
+    "customerName": "Joydeep Dey",
     "location": "Ultadanga, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4190,7 +4190,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-300",
-    "customerName": "Debabrata Nambiar",
+    "customerName": "Rupa Mitra",
     "location": "Kalighat, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4204,7 +4204,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-301",
-    "customerName": "Debabrata Murthy",
+    "customerName": "Debopam Majhi",
     "location": "Serampore, Hooghly",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4218,7 +4218,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-302",
-    "customerName": "Debabrata Patel",
+    "customerName": "Tumpa Dutta Gupta",
     "location": "New Town Action Area 1, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4232,7 +4232,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-303",
-    "customerName": "Debabrata Shah",
+    "customerName": "Manish Sinha",
     "location": "Behala Chowrasta, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4246,7 +4246,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-304",
-    "customerName": "Debabrata Joshi",
+    "customerName": "Piyali Ghoshal",
     "location": "Barasat Champadali, North 24 Pgs",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4260,7 +4260,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-305",
-    "customerName": "Debabrata Mehta",
+    "customerName": "Siddhartha Paria",
     "location": "Shyambazar Five Point, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4274,7 +4274,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-306",
-    "customerName": "Debabrata Kulkarni",
+    "customerName": "Supriya Samaddar",
     "location": "Shibpur, Howrah",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4288,7 +4288,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-307",
-    "customerName": "Debabrata Deshmukh",
+    "customerName": "Kingshuk Karan",
     "location": "Chinsurah, Hooghly",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4302,7 +4302,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-308",
-    "customerName": "Debabrata Patil",
+    "customerName": "Archana Ghosh",
     "location": "Cyber City, Gurgaon",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4316,7 +4316,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-309",
-    "customerName": "Debabrata Sawant",
+    "customerName": "Arnab Saha",
     "location": "Borivali West, Mumbai",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4330,7 +4330,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-310",
-    "customerName": "Debabrata Shinde",
+    "customerName": "Kakoli Halder",
     "location": "Gachibowli, Hyderabad",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4344,7 +4344,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-311",
-    "customerName": "Debabrata Gaikwad",
+    "customerName": "Chiranjit Pramanik",
     "location": "Salt Lake Sector 2, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4358,7 +4358,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-312",
-    "customerName": "Debabrata Bhosale",
+    "customerName": "Jhuma Basak",
     "location": "Ballygunge Circular Road, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4372,7 +4372,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-313",
-    "customerName": "Debabrata Pawar",
+    "customerName": "Tuhin Goswami",
     "location": "Southern Avenue, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4386,7 +4386,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-314",
-    "customerName": "Debabrata More",
+    "customerName": "Rinku Lahiri",
     "location": "Baguiati, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4400,7 +4400,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-315",
-    "customerName": "Debabrata Chavan",
+    "customerName": "Shantanu Choudhury",
     "location": "Santoshpur, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4414,7 +4414,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-316",
-    "customerName": "Debabrata Solanki",
+    "customerName": "Sumita Santra",
     "location": "Konnagar, Hooghly",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 4,
@@ -4428,7 +4428,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-317",
-    "customerName": "Debabrata Panchal",
+    "customerName": "Avik Mukhopadhyay",
     "location": "Salt Lake Sector 3, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4442,7 +4442,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-318",
-    "customerName": "Debabrata Khan",
+    "customerName": "Rita Jana",
     "location": "Alipore, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4456,7 +4456,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-319",
-    "customerName": "Debabrata Ahmed",
+    "customerName": "Bikash Bhattacharya",
     "location": "Dum Dum Cantonment, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4470,7 +4470,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-320",
-    "customerName": "Debabrata Ali",
+    "customerName": "Soma Dutta",
     "location": "Lake Town Block A, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4484,7 +4484,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-321",
-    "customerName": "Debabrata Siddiqui",
+    "customerName": "Debjyoti Biswas",
     "location": "Gariahat, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4498,7 +4498,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-322",
-    "customerName": "Debabrata Akhtar",
+    "customerName": "Papia Kundu",
     "location": "Rishra, Hooghly",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 4,
@@ -4512,7 +4512,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-323",
-    "customerName": "Debabrata Mallick",
+    "customerName": "Prasenjit Seal",
     "location": "Indirapuram, Ghaziabad",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 4,
@@ -4526,7 +4526,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-324",
-    "customerName": "Debabrata Parveen",
+    "customerName": "Nandita Patra",
     "location": "Bandra West, Mumbai",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4540,7 +4540,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-325",
-    "customerName": "Debabrata Ansari",
+    "customerName": "Saptarshi Sen Sharma",
     "location": "HSR Layout Sector 2, Bangalore",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4554,7 +4554,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-326",
-    "customerName": "Debabrata Qureshi",
+    "customerName": "Chaitali Ray",
     "location": "Kothrud, Pune",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 4,
@@ -4568,7 +4568,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-327",
-    "customerName": "Debabrata Mirza",
+    "customerName": "Indranil Acharya",
     "location": "Rajarhat Main Road, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4582,7 +4582,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-328",
-    "customerName": "Debabrata Hassan",
+    "customerName": "Arpita Bhattacharjee",
     "location": "Garia Station Road, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4596,7 +4596,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-329",
-    "customerName": "Debabrata Begum",
+    "customerName": "Bappaditya Talukdar",
     "location": "Sodepur, North 24 Pgs",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4610,7 +4610,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-330",
-    "customerName": "Debabrata Hossain",
+    "customerName": "Susmita Mukherjee",
     "location": "Ruby General Hospital Area, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4624,7 +4624,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-331",
-    "customerName": "Debabrata Rahman",
+    "customerName": "Debasish Roy",
     "location": "Bally, Howrah",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4638,7 +4638,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-332",
-    "customerName": "Debabrata Laskar",
+    "customerName": "Ruma Paul",
     "location": "Salt Lake Sector 1, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4652,7 +4652,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-333",
-    "customerName": "Debabrata Molla",
+    "customerName": "Subrata Bhowmick",
     "location": "Park Street, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4666,7 +4666,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-334",
-    "customerName": "Rohan Mukherjee",
+    "customerName": "Mita Adhikary",
     "location": "Tollygunge, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4680,7 +4680,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-335",
-    "customerName": "Rohan Banerjee",
+    "customerName": "Samarjit Laha",
     "location": "Kestopur VIP Road, Kolkata",
     "serviceCategory": "Microwave Oven Repair",
     "rating": 5,
@@ -4694,7 +4694,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-336",
-    "customerName": "Rohan Chatterjee",
+    "customerName": "Rumela Poddar",
     "location": "Gariahat, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4708,7 +4708,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-337",
-    "customerName": "Rohan Bhattacharya",
+    "customerName": "Aniket Bhaduri",
     "location": "Rishra, Hooghly",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4722,7 +4722,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-338",
-    "customerName": "Rohan Chakraborty",
+    "customerName": "Swati Dasgupta",
     "location": "Salt Lake Sector 5, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4736,7 +4736,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-339",
-    "customerName": "Rohan Ganguly",
+    "customerName": "Ranajit Hazra",
     "location": "New Alipore, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4750,7 +4750,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-340",
-    "customerName": "Rohan Goswami",
+    "customerName": "Trisha Chattopadhyay",
     "location": "Nagerbazar, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4764,7 +4764,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-341",
-    "customerName": "Rohan Sanyal",
+    "customerName": "Tapas Mandal",
     "location": "Ultadanga, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4778,7 +4778,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-342",
-    "customerName": "Rohan Bose",
+    "customerName": "Ankita Chakraborty",
     "location": "Kalighat, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4792,7 +4792,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-343",
-    "customerName": "Rohan Dutta",
+    "customerName": "Subham Majumdar",
     "location": "Serampore, Hooghly",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4806,7 +4806,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-344",
-    "customerName": "Rohan Ghosh",
+    "customerName": "Paulami Sarkar",
     "location": "DLF Phase 3, Gurgaon",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4820,7 +4820,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-345",
-    "customerName": "Rohan Mitra",
+    "customerName": "Mainak Pal",
     "location": "Powai Hiranandani, Mumbai",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4834,7 +4834,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-346",
-    "customerName": "Rohan Guha",
+    "customerName": "Anindita Mallick",
     "location": "Hitec City, Hyderabad",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4848,7 +4848,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-347",
-    "customerName": "Rohan Sen",
+    "customerName": "Sayantan Panja",
     "location": "Salt Lake Sector 1, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4862,7 +4862,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-348",
-    "customerName": "Rohan Pal",
+    "customerName": "Ipsita Ghatak",
     "location": "Park Street, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4876,7 +4876,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-349",
-    "customerName": "Rohan Roy",
+    "customerName": "Snehasis Maitra",
     "location": "Tollygunge, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4890,7 +4890,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-350",
-    "customerName": "Rohan Das",
+    "customerName": "Sarmistha Kole",
     "location": "Kestopur VIP Road, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4904,7 +4904,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-351",
-    "customerName": "Rohan Mondal",
+    "customerName": "Amit Gangopadhyay",
     "location": "EM Bypass, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4918,7 +4918,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-352",
-    "customerName": "Rohan Saha",
+    "customerName": "Gargi Maji",
     "location": "Uttarpara, Hooghly",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4932,7 +4932,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-353",
-    "customerName": "Rohan Majumdar",
+    "customerName": "Rahul Banerjee",
     "location": "Salt Lake Sector 2, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4946,7 +4946,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-354",
-    "customerName": "Rohan Bhowmick",
+    "customerName": "Sreemoyee Das",
     "location": "Ballygunge Circular Road, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 4,
@@ -4960,7 +4960,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-355",
-    "customerName": "Rohan Samanta",
+    "customerName": "Rohit Guha",
     "location": "Southern Avenue, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4974,7 +4974,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-356",
-    "customerName": "Rohan Nandi",
+    "customerName": "Baishakhi Karmakar",
     "location": "Baguiati, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -4988,7 +4988,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-357",
-    "customerName": "Rohan Halder",
+    "customerName": "Vikash Bagchi",
     "location": "Santoshpur, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5002,7 +5002,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-358",
-    "customerName": "Rohan Kundu",
+    "customerName": "Paramita Roychowdhury",
     "location": "Konnagar, Hooghly",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5016,7 +5016,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-359",
-    "customerName": "Rohan Barman",
+    "customerName": "Kunal Dan",
     "location": "Noida Sector 137, Delhi NCR",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5030,7 +5030,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-360",
-    "customerName": "Rohan Biswas",
+    "customerName": "Sampurna Rakshit",
     "location": "Andheri West, Mumbai",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5044,7 +5044,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-361",
-    "customerName": "Rohan Pramanik",
+    "customerName": "Rupam Sengupta",
     "location": "Indiranagar 100ft Rd, Bangalore",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5058,7 +5058,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-362",
-    "customerName": "Rohan Adhikary",
+    "customerName": "Rituparna Sasmal",
     "location": "Baner Road, Pune",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5072,7 +5072,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-363",
-    "customerName": "Rohan Karmakar",
+    "customerName": "Sanjay Chowdhury",
     "location": "New Town Action Area 3, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5086,7 +5086,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-364",
-    "customerName": "Rohan Bagchi",
+    "customerName": "Piyashi Rudra",
     "location": "Jadavpur, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5100,7 +5100,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-365",
-    "customerName": "Rohan Sharma",
+    "customerName": "Gautam Ganguly",
     "location": "Barrackpore, North 24 Pgs",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5114,7 +5114,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-366",
-    "customerName": "Rohan Verma",
+    "customerName": "Tanusree Bose",
     "location": "Kasba New Market, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5128,7 +5128,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-367",
-    "customerName": "Rohan Gupta",
+    "customerName": "Manoj Naskar",
     "location": "Liluah, Howrah",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5142,7 +5142,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-368",
-    "customerName": "Rohan Singh",
+    "customerName": "Debjani Samanta",
     "location": "Bandel, Hooghly",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5156,7 +5156,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-369",
-    "customerName": "Rohan Mehra",
+    "customerName": "Rajesh Barman",
     "location": "Rajarhat Main Road, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5170,7 +5170,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-370",
-    "customerName": "Rohan Agarwal",
+    "customerName": "Nibedita Sadhukhan",
     "location": "Garia Station Road, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5184,7 +5184,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-371",
-    "customerName": "Rohan Tiwari",
+    "customerName": "Surajit Sanyal",
     "location": "Sodepur, North 24 Pgs",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5198,7 +5198,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-372",
-    "customerName": "Rohan Pandey",
+    "customerName": "Monalisa Tarafdar",
     "location": "Ruby General Hospital Area, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5212,7 +5212,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-373",
-    "customerName": "Rohan Mittal",
+    "customerName": "Dipak De",
     "location": "Bally, Howrah",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5226,7 +5226,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-374",
-    "customerName": "Rohan Mishra",
+    "customerName": "Jhilik Bandyopadhyay",
     "location": "Noida Sector 62, Delhi NCR",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5240,7 +5240,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-375",
-    "customerName": "Rohan Chauhan",
+    "customerName": "Uttam Bera",
     "location": "Dwarka Sector 10, New Delhi",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5254,7 +5254,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-376",
-    "customerName": "Rohan Malhotra",
+    "customerName": "Suchitra Chatterjee",
     "location": "Whitefield, Bangalore",
     "serviceCategory": "Water Purifier Repair",
     "rating": 4,
@@ -5268,7 +5268,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-377",
-    "customerName": "Rohan Singhania",
+    "customerName": "Prabir Sen",
     "location": "Wakad, Pune",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5282,7 +5282,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-378",
-    "customerName": "Rohan Jain",
+    "customerName": "Anuradha Mondal",
     "location": "New Town Action Area 1, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5296,7 +5296,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-379",
-    "customerName": "Rohan Saxena",
+    "customerName": "Subal Dey",
     "location": "Behala Chowrasta, Kolkata",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5310,7 +5310,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-380",
-    "customerName": "Rohan Rawat",
+    "customerName": "Sudeshna Mitra",
     "location": "Barasat Champadali, North 24 Pgs",
     "serviceCategory": "Water Purifier Repair",
     "rating": 5,
@@ -5324,7 +5324,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-381",
-    "customerName": "Rohan Kashyap",
+    "customerName": "Narayan Majhi",
     "location": "Bandra West, Mumbai",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5338,7 +5338,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-382",
-    "customerName": "Rohan Kapoor",
+    "customerName": "Debsmita Dutta Gupta",
     "location": "HSR Layout Sector 2, Bangalore",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5352,7 +5352,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-383",
-    "customerName": "Rohan Bhatia",
+    "customerName": "Sujit Sinha",
     "location": "Kothrud, Pune",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5366,7 +5366,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-384",
-    "customerName": "Rohan Kohli",
+    "customerName": "Madhurima Ghoshal",
     "location": "Rajarhat Main Road, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5380,7 +5380,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-385",
-    "customerName": "Rohan Chopra",
+    "customerName": "Gopal Paria",
     "location": "Garia Station Road, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5394,7 +5394,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-386",
-    "customerName": "Rohan Arora",
+    "customerName": "Sayani Samaddar",
     "location": "Sodepur, North 24 Pgs",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5408,7 +5408,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-387",
-    "customerName": "Rohan Dubey",
+    "customerName": "Subhendu Karan",
     "location": "Ruby General Hospital Area, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5422,7 +5422,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-388",
-    "customerName": "Rohan Tripathi",
+    "customerName": "Sangita Ghosh",
     "location": "Bally, Howrah",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5436,7 +5436,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-389",
-    "customerName": "Rohan Yadav",
+    "customerName": "Pulak Saha",
     "location": "Salt Lake Sector 1, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5450,7 +5450,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-390",
-    "customerName": "Rohan Srivastava",
+    "customerName": "Madhuri Halder",
     "location": "Park Street, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5464,7 +5464,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-391",
-    "customerName": "Rohan Choudhary",
+    "customerName": "Debu Pramanik",
     "location": "Tollygunge, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5478,7 +5478,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-392",
-    "customerName": "Rohan Rathore",
+    "customerName": "Anamika Basak",
     "location": "Kestopur VIP Road, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5492,7 +5492,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-393",
-    "customerName": "Rohan Shukla",
+    "customerName": "Brijesh Goswami",
     "location": "EM Bypass, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5506,7 +5506,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-394",
-    "customerName": "Rohan Thakur",
+    "customerName": "Ritika Lahiri",
     "location": "Uttarpara, Hooghly",
     "serviceCategory": "Chimney Repair",
     "rating": 4,
@@ -5520,7 +5520,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-395",
-    "customerName": "Rohan Garg",
+    "customerName": "Ashish Choudhury",
     "location": "Noida Sector 18, Delhi NCR",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5534,7 +5534,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-396",
-    "customerName": "Rohan Bansal",
+    "customerName": "Kasturi Santra",
     "location": "Rohini Sector 9, New Delhi",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5548,7 +5548,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-397",
-    "customerName": "Rohan Iyer",
+    "customerName": "Deep Mukhopadhyay",
     "location": "Koramangala 4th Block, Bangalore",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5562,7 +5562,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-398",
-    "customerName": "Rohan Iyengar",
+    "customerName": "Aditi Jana",
     "location": "Hinjewadi Phase 1, Pune",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5576,7 +5576,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-399",
-    "customerName": "Rohan Nair",
+    "customerName": "Arpan Bhattacharya",
     "location": "New Town Action Area 2, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5590,7 +5590,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-400",
-    "customerName": "Rohan Menon",
+    "customerName": "Debalina Dutta",
     "location": "Behala Sakher Bazar, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5604,7 +5604,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-401",
-    "customerName": "Rohan Pillai",
+    "customerName": "Soumyajit Biswas",
     "location": "Madhyamgram, North 24 Pgs",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5618,7 +5618,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-402",
-    "customerName": "Rohan Rao",
+    "customerName": "Subhra Kundu",
     "location": "Hatibagan, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5632,7 +5632,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-403",
-    "customerName": "Rohan Reddy",
+    "customerName": "Subhadeep Seal",
     "location": "Salkia, Howrah",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5646,7 +5646,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-404",
-    "customerName": "Rohan Swaminathan",
+    "customerName": "Trina Patra",
     "location": "Chandannagar, Hooghly",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5660,7 +5660,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-405",
-    "customerName": "Rohan Krishnan",
+    "customerName": "Ritwik Sen Sharma",
     "location": "New Town Action Area 3, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5674,7 +5674,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-406",
-    "customerName": "Rohan Sundaram",
+    "customerName": "Rohini Ray",
     "location": "Jadavpur, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5688,7 +5688,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-407",
-    "customerName": "Rohan Venkatraman",
+    "customerName": "Anup Acharya",
     "location": "Barrackpore, North 24 Pgs",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5702,7 +5702,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-408",
-    "customerName": "Rohan Prasad",
+    "customerName": "Piyasa Bhattacharjee",
     "location": "Kasba New Market, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5716,7 +5716,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-409",
-    "customerName": "Rohan Balakrishnan",
+    "customerName": "Joy Talukdar",
     "location": "Liluah, Howrah",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5730,7 +5730,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-410",
-    "customerName": "Rohan Subramaniam",
+    "customerName": "Somashree Mukherjee",
     "location": "Bandel, Hooghly",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5744,7 +5744,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-411",
-    "customerName": "Rohan Nambiar",
+    "customerName": "Sukalyan Roy",
     "location": "Saket, South Delhi",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5758,7 +5758,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-412",
-    "customerName": "Rohan Murthy",
+    "customerName": "Chandrima Paul",
     "location": "Vashi Sector 17, Navi Mumbai",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5772,7 +5772,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-413",
-    "customerName": "Rohan Patel",
+    "customerName": "Tarun Bhowmick",
     "location": "Banjara Hills, Hyderabad",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5786,7 +5786,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-414",
-    "customerName": "Rohan Shah",
+    "customerName": "Debopriya Adhikary",
     "location": "Salt Lake Sector 5, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5800,7 +5800,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-415",
-    "customerName": "Rohan Joshi",
+    "customerName": "Palash Laha",
     "location": "New Alipore, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 4,
@@ -5814,7 +5814,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-416",
-    "customerName": "Rohan Mehta",
+    "customerName": "Sharmila Poddar",
     "location": "Nagerbazar, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5828,7 +5828,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-417",
-    "customerName": "Rohan Kulkarni",
+    "customerName": "Manas Bhaduri",
     "location": "Ultadanga, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5842,7 +5842,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-418",
-    "customerName": "Rohan Deshmukh",
+    "customerName": "Debosmita Dasgupta",
     "location": "Kalighat, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5856,7 +5856,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-419",
-    "customerName": "Rohan Patil",
+    "customerName": "Prasanta Hazra",
     "location": "Serampore, Hooghly",
     "serviceCategory": "Chimney Repair",
     "rating": 5,
@@ -5870,7 +5870,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-420",
-    "customerName": "Rohan Sawant",
+    "customerName": "Poushali Chattopadhyay",
     "location": "New Town Action Area 1, Kolkata",
     "serviceCategory": "Chimney Repair",
     "rating": 4,
@@ -5884,7 +5884,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-421",
-    "customerName": "Rohan Shinde",
+    "customerName": "Subir Mandal",
     "location": "Nagerbazar, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -5898,7 +5898,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-422",
-    "customerName": "Rohan Gaikwad",
+    "customerName": "Barnashree Chakraborty",
     "location": "Ultadanga, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -5912,7 +5912,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-423",
-    "customerName": "Rohan Bhosale",
+    "customerName": "Sanjib Majumdar",
     "location": "Kalighat, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -5926,7 +5926,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-424",
-    "customerName": "Rohan Pawar",
+    "customerName": "Debadrita Sarkar",
     "location": "Serampore, Hooghly",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -5940,7 +5940,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-425",
-    "customerName": "Rohan More",
+    "customerName": "Ashoke Pal",
     "location": "New Town Action Area 1, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -5954,7 +5954,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-426",
-    "customerName": "Rohan Chavan",
+    "customerName": "Amrita Mallick",
     "location": "Behala Chowrasta, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -5968,7 +5968,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-427",
-    "customerName": "Rohan Solanki",
+    "customerName": "Biplab Panja",
     "location": "Barasat Champadali, North 24 Pgs",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -5982,7 +5982,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-428",
-    "customerName": "Rohan Panchal",
+    "customerName": "Ishita Ghatak",
     "location": "Shyambazar Five Point, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -5996,7 +5996,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-429",
-    "customerName": "Rohan Khan",
+    "customerName": "Shyamal Maitra",
     "location": "Shibpur, Howrah",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6010,7 +6010,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-430",
-    "customerName": "Rohan Ahmed",
+    "customerName": "Raktima Kole",
     "location": "Chinsurah, Hooghly",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6024,7 +6024,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-431",
-    "customerName": "Rohan Ali",
+    "customerName": "Madhab Gangopadhyay",
     "location": "Cyber City, Gurgaon",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6038,7 +6038,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-432",
-    "customerName": "Rohan Siddiqui",
+    "customerName": "Sagarika Maji",
     "location": "Borivali West, Mumbai",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6052,7 +6052,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-433",
-    "customerName": "Rohan Akhtar",
+    "customerName": "Anik Banerjee",
     "location": "Gachibowli, Hyderabad",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6066,7 +6066,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-434",
-    "customerName": "Rohan Mallick",
+    "customerName": "Ushashi Das",
     "location": "Salt Lake Sector 2, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6080,7 +6080,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-435",
-    "customerName": "Rohan Parveen",
+    "customerName": "Sudipta Guha",
     "location": "Ballygunge Circular Road, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6094,7 +6094,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-436",
-    "customerName": "Rohan Ansari",
+    "customerName": "Malini Karmakar",
     "location": "Southern Avenue, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6108,7 +6108,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-437",
-    "customerName": "Rohan Qureshi",
+    "customerName": "Ayan Bagchi",
     "location": "Baguiati, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6122,7 +6122,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-438",
-    "customerName": "Rohan Mirza",
+    "customerName": "Anwesha Roychowdhury",
     "location": "Santoshpur, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6136,7 +6136,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-439",
-    "customerName": "Rohan Hassan",
+    "customerName": "Subhro Dan",
     "location": "Konnagar, Hooghly",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6150,7 +6150,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-440",
-    "customerName": "Rohan Begum",
+    "customerName": "Somasree Rakshit",
     "location": "Salt Lake Sector 3, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6164,7 +6164,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-441",
-    "customerName": "Rohan Hossain",
+    "customerName": "Krishnendu Sengupta",
     "location": "Alipore, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6178,7 +6178,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-442",
-    "customerName": "Rohan Rahman",
+    "customerName": "Arundhati Sasmal",
     "location": "Dum Dum Cantonment, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6192,7 +6192,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-443",
-    "customerName": "Rohan Laskar",
+    "customerName": "Joyjit Chowdhury",
     "location": "Lake Town Block A, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6206,7 +6206,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-444",
-    "customerName": "Rohan Molla",
+    "customerName": "Madhushree Rudra",
     "location": "Gariahat, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6220,7 +6220,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-445",
-    "customerName": "Tanmoy Mukherjee",
+    "customerName": "Aniruddha Ganguly",
     "location": "Rishra, Hooghly",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6234,7 +6234,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-446",
-    "customerName": "Tanmoy Banerjee",
+    "customerName": "Poulami Bose",
     "location": "Indirapuram, Ghaziabad",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6248,7 +6248,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-447",
-    "customerName": "Tanmoy Chatterjee",
+    "customerName": "Bodhisattva Naskar",
     "location": "Bandra West, Mumbai",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6262,7 +6262,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-448",
-    "customerName": "Tanmoy Bhattacharya",
+    "customerName": "Monidipa Samanta",
     "location": "HSR Layout Sector 2, Bangalore",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6276,7 +6276,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-449",
-    "customerName": "Tanmoy Chakraborty",
+    "customerName": "Agniva Barman",
     "location": "Kothrud, Pune",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6290,7 +6290,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-450",
-    "customerName": "Tanmoy Ganguly",
+    "customerName": "Debashree Sadhukhan",
     "location": "Rajarhat Main Road, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6304,7 +6304,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-451",
-    "customerName": "Tanmoy Goswami",
+    "customerName": "Debarghya Sanyal",
     "location": "Garia Station Road, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6318,7 +6318,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-452",
-    "customerName": "Tanmoy Sanyal",
+    "customerName": "Kuheli Tarafdar",
     "location": "Sodepur, North 24 Pgs",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6332,7 +6332,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-453",
-    "customerName": "Tanmoy Bose",
+    "customerName": "Sayak De",
     "location": "Ruby General Hospital Area, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6346,7 +6346,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-454",
-    "customerName": "Tanmoy Dutta",
+    "customerName": "Mitali Bandyopadhyay",
     "location": "Bally, Howrah",
     "serviceCategory": "LED TV Repair",
     "rating": 4,
@@ -6360,7 +6360,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-455",
-    "customerName": "Tanmoy Ghosh",
+    "customerName": "Rishav Bera",
     "location": "Salt Lake Sector 1, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6374,7 +6374,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-456",
-    "customerName": "Tanmoy Mitra",
+    "customerName": "Dola Chatterjee",
     "location": "Park Street, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6388,7 +6388,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-457",
-    "customerName": "Tanmoy Guha",
+    "customerName": "Sanket Sen",
     "location": "Tollygunge, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6402,7 +6402,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-458",
-    "customerName": "Tanmoy Sen",
+    "customerName": "Suparna Mondal",
     "location": "Kestopur VIP Road, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6416,7 +6416,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-459",
-    "customerName": "Tanmoy Pal",
+    "customerName": "Arka Dey",
     "location": "EM Bypass, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6430,7 +6430,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-460",
-    "customerName": "Tanmoy Roy",
+    "customerName": "Mahuya Mitra",
     "location": "Uttarpara, Hooghly",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6444,7 +6444,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-461",
-    "customerName": "Tanmoy Das",
+    "customerName": "Sambit Majhi",
     "location": "Noida Sector 18, Delhi NCR",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6458,7 +6458,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-462",
-    "customerName": "Tanmoy Mondal",
+    "customerName": "Chaiti Dutta Gupta",
     "location": "Rohini Sector 9, New Delhi",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6472,7 +6472,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-463",
-    "customerName": "Tanmoy Saha",
+    "customerName": "Utsav Sinha",
     "location": "Koramangala 4th Block, Bangalore",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6486,7 +6486,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-464",
-    "customerName": "Tanmoy Majumdar",
+    "customerName": "Indira Ghoshal",
     "location": "Hinjewadi Phase 1, Pune",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6500,7 +6500,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-465",
-    "customerName": "Tanmoy Bhowmick",
+    "customerName": "Niladri Paria",
     "location": "New Town Action Area 2, Kolkata",
     "serviceCategory": "LED TV Repair",
     "rating": 5,
@@ -6514,7 +6514,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-466",
-    "customerName": "Tanmoy Samanta",
+    "customerName": "Rumki Samaddar",
     "location": "Serampore, Hooghly",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6528,7 +6528,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-467",
-    "customerName": "Tanmoy Nandi",
+    "customerName": "Tridib Karan",
     "location": "DLF Phase 3, Gurgaon",
     "serviceCategory": "Geyser Repair",
     "rating": 4,
@@ -6542,7 +6542,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-468",
-    "customerName": "Tanmoy Halder",
+    "customerName": "Laboni Ghosh",
     "location": "Powai Hiranandani, Mumbai",
     "serviceCategory": "Geyser Repair",
     "rating": 4,
@@ -6556,7 +6556,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-469",
-    "customerName": "Tanmoy Kundu",
+    "customerName": "Debmalya Saha",
     "location": "Hitec City, Hyderabad",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6570,7 +6570,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-470",
-    "customerName": "Tanmoy Barman",
+    "customerName": "Bristi Halder",
     "location": "Salt Lake Sector 1, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6584,7 +6584,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-471",
-    "customerName": "Tanmoy Biswas",
+    "customerName": "Arghya Pramanik",
     "location": "Park Street, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6598,7 +6598,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-472",
-    "customerName": "Tanmoy Pramanik",
+    "customerName": "Parna Basak",
     "location": "Tollygunge, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 4,
@@ -6612,7 +6612,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-473",
-    "customerName": "Tanmoy Adhikary",
+    "customerName": "Debraj Goswami",
     "location": "Kestopur VIP Road, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6626,7 +6626,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-474",
-    "customerName": "Tanmoy Karmakar",
+    "customerName": "Pratik Lahiri",
     "location": "EM Bypass, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6640,7 +6640,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-475",
-    "customerName": "Tanmoy Bagchi",
+    "customerName": "Arkopravo Choudhury",
     "location": "Uttarpara, Hooghly",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6654,7 +6654,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-476",
-    "customerName": "Tanmoy Sharma",
+    "customerName": "Rajib Santra",
     "location": "Salt Lake Sector 2, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6668,7 +6668,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-477",
-    "customerName": "Tanmoy Verma",
+    "customerName": "Sudip Mukhopadhyay",
     "location": "Ballygunge Circular Road, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6682,7 +6682,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-478",
-    "customerName": "Tanmoy Gupta",
+    "customerName": "Abir Jana",
     "location": "Southern Avenue, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6696,7 +6696,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-479",
-    "customerName": "Tanmoy Singh",
+    "customerName": "Sourabh Bhattacharya",
     "location": "Baguiati, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6710,7 +6710,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-480",
-    "customerName": "Tanmoy Mehra",
+    "customerName": "Samrat Dutta",
     "location": "Santoshpur, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6724,7 +6724,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-481",
-    "customerName": "Tanmoy Agarwal",
+    "customerName": "Avishek Biswas",
     "location": "Konnagar, Hooghly",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6738,7 +6738,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-482",
-    "customerName": "Tanmoy Tiwari",
+    "customerName": "Prateek Kundu",
     "location": "Noida Sector 137, Delhi NCR",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6752,7 +6752,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-483",
-    "customerName": "Tanmoy Pandey",
+    "customerName": "Pinaki Seal",
     "location": "Andheri West, Mumbai",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6766,7 +6766,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-484",
-    "customerName": "Tanmoy Mittal",
+    "customerName": "Nilabja Patra",
     "location": "Indiranagar 100ft Rd, Bangalore",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6780,7 +6780,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-485",
-    "customerName": "Tanmoy Mishra",
+    "customerName": "Debabrata Sen Sharma",
     "location": "Baner Road, Pune",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6794,7 +6794,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-486",
-    "customerName": "Tanmoy Chauhan",
+    "customerName": "Kalyan Ray",
     "location": "New Town Action Area 3, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6808,7 +6808,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-487",
-    "customerName": "Tanmoy Malhotra",
+    "customerName": "Tamal Acharya",
     "location": "Jadavpur, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6822,7 +6822,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-488",
-    "customerName": "Tanmoy Singhania",
+    "customerName": "Barun Bhattacharjee",
     "location": "Barrackpore, North 24 Pgs",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6836,7 +6836,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-489",
-    "customerName": "Tanmoy Jain",
+    "customerName": "Chirantan Talukdar",
     "location": "Kasba New Market, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6850,7 +6850,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-490",
-    "customerName": "Tanmoy Saxena",
+    "customerName": "Subhadip Mukherjee",
     "location": "Liluah, Howrah",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6864,7 +6864,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-491",
-    "customerName": "Tanmoy Rawat",
+    "customerName": "Debjit Roy",
     "location": "Bandel, Hooghly",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6878,7 +6878,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-492",
-    "customerName": "Tanmoy Kashyap",
+    "customerName": "Satyajit Paul",
     "location": "Rajarhat Main Road, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6892,7 +6892,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-493",
-    "customerName": "Tanmoy Kapoor",
+    "customerName": "Raktim Bhowmick",
     "location": "Garia Station Road, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6906,7 +6906,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-494",
-    "customerName": "Tanmoy Bhatia",
+    "customerName": "Bivas Adhikary",
     "location": "Sodepur, North 24 Pgs",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6920,7 +6920,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-495",
-    "customerName": "Tanmoy Kohli",
+    "customerName": "Debananda Laha",
     "location": "Ruby General Hospital Area, Kolkata",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6934,7 +6934,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-496",
-    "customerName": "Tanmoy Chopra",
+    "customerName": "Chinmoy Poddar",
     "location": "Bally, Howrah",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6948,7 +6948,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-497",
-    "customerName": "Tanmoy Arora",
+    "customerName": "Souvik Bhattacharjee",
     "location": "Noida Sector 62, Delhi NCR",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6962,7 +6962,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-498",
-    "customerName": "Tanmoy Dubey",
+    "customerName": "Pooja Talukdar",
     "location": "Dwarka Sector 10, New Delhi",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6976,7 +6976,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-499",
-    "customerName": "Tanmoy Tripathi",
+    "customerName": "Arindam Mukherjee",
     "location": "Whitefield, Bangalore",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
@@ -6990,7 +6990,7 @@ export const initialReviews: Review[] = [
   },
   {
     "id": "rev-500",
-    "customerName": "Tanmoy Yadav",
+    "customerName": "Riya Roy",
     "location": "Wakad, Pune",
     "serviceCategory": "Geyser Repair",
     "rating": 5,
