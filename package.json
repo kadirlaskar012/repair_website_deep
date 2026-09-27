@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/generate-sitemap.mjs && next build",
     "start": "next start",
     "lint": "eslint",
+    "sitemap:gen": "node scripts/generate-sitemap.mjs",
     "db:init": "node scripts/init-db.mjs"
   },
   "dependencies": {
