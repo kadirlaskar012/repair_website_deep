@@ -27,7 +27,12 @@ const categorySlugs = [
 
 const blogSlugs = [
   'ac-not-cooling-top-reasons-solutions-kolkata',
-  'refrigerator-maintenance-tips-prevent-food-spoilage'
+  'refrigerator-maintenance-tips-prevent-food-spoilage',
+  'ac-gas-refill-price-leakage-repair-cost-guide',
+  'refrigerator-not-cooling-light-is-on-repair-guide',
+  'washing-machine-not-spinning-or-draining-fix-guide',
+  'microwave-oven-not-heating-food-repair-guide',
+  'led-tv-sound-ok-no-picture-black-screen-fix'
 ];
 
 const brandSlugs = [

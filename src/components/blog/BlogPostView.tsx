@@ -58,44 +58,160 @@ export default function BlogPostView({
   const content = isBn ? post.contentBn : post.content;
   const excerpt = isBn ? post.excerptBn : post.excerpt;
 
-  // Simple clean markdown-to-HTML parser for safe rendering
+  // Inline parser for markdown links [text](url) and bold **text**
+  const parseInlineMarkdown = (line: string): React.ReactNode => {
+    const parts: React.ReactNode[] = [];
+    const regex = /(\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*)/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(line)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push(line.substring(lastIndex, match.index));
+      }
+      if (match[2] && match[3]) {
+        const label = match[2];
+        const href = match[3];
+        parts.push(
+          <Link
+            key={match.index}
+            href={href}
+            prefetch={true}
+            style={{
+              color: 'var(--color-primary)',
+              fontWeight: 600,
+              textDecoration: 'underline',
+              textUnderlineOffset: '3px'
+            }}
+          >
+            {label}
+          </Link>
+        );
+      } else if (match[4]) {
+        parts.push(
+          <strong key={match.index} style={{ fontWeight: 700, color: 'var(--color-text-main)' }}>
+            {match[4]}
+          </strong>
+        );
+      }
+      lastIndex = regex.lastIndex;
+    }
+
+    if (lastIndex < line.length) {
+      parts.push(line.substring(lastIndex));
+    }
+
+    return parts.length > 0 ? parts : line;
+  };
+
+  // Structured content parser for articles with headings, lists, quotes, and links
   const renderFormattedContent = (text: string) => {
-    // If text already has HTML or markdown
     const paragraphs = text.split('\n\n');
     return paragraphs.map((para, i) => {
       const p = para.trim();
+      if (!p) return null;
+
       if (p.startsWith('### ')) {
         return (
-          <h3 key={i} style={{ fontSize: '1.25rem', fontWeight: 700, margin: '24px 0 10px 0', color: 'var(--color-text-main)' }}>
-            {p.replace('### ', '')}
+          <h3
+            key={i}
+            style={{
+              fontSize: '1.25rem',
+              fontWeight: 700,
+              margin: '28px 0 12px 0',
+              color: 'var(--color-text-main)',
+              lineHeight: 1.4
+            }}
+          >
+            {parseInlineMarkdown(p.replace('### ', ''))}
           </h3>
         );
       }
+
       if (p.startsWith('## ')) {
         return (
-          <h2 key={i} style={{ fontSize: '1.5rem', fontWeight: 800, margin: '32px 0 14px 0', color: 'var(--color-primary-dark)' }}>
-            {p.replace('## ', '')}
+          <h2
+            key={i}
+            style={{
+              fontSize: '1.5rem',
+              fontWeight: 800,
+              margin: '36px 0 16px 0',
+              color: 'var(--color-primary-dark)',
+              lineHeight: 1.3
+            }}
+          >
+            {parseInlineMarkdown(p.replace('## ', ''))}
           </h2>
         );
       }
+
       if (p.startsWith('- ') || p.startsWith('* ')) {
         const items = p.split('\n').filter(Boolean);
         return (
-          <ul key={i} style={{ margin: '12px 0 20px 24px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+          <ul
+            key={i}
+            style={{
+              margin: '14px 0 22px 24px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+              listStyleType: 'disc'
+            }}
+          >
             {items.map((item, idx) => (
-              <li key={idx} style={{ fontSize: '1rem', lineHeight: 1.6 }}>
-                {item.replace(/^[-*]\s+/, '')}
+              <li key={idx} style={{ fontSize: '1rem', lineHeight: 1.65 }}>
+                {parseInlineMarkdown(item.replace(/^[-*]\s+/, ''))}
               </li>
             ))}
           </ul>
         );
       }
-      if (p.startsWith('---')) {
-        return <hr key={i} style={{ border: 'none', borderTop: '1px solid var(--color-border)', margin: '32px 0' }} />;
+
+      if (p.startsWith('> ')) {
+        return (
+          <blockquote
+            key={i}
+            style={{
+              margin: '20px 0',
+              padding: '16px 20px',
+              backgroundColor: 'rgba(20, 108, 91, 0.06)',
+              borderLeft: '4px solid var(--color-primary)',
+              borderRadius: '0 8px 8px 0',
+              fontStyle: 'italic',
+              fontSize: '1rem',
+              lineHeight: 1.65,
+              color: 'var(--color-primary-dark)'
+            }}
+          >
+            {parseInlineMarkdown(p.replace(/^>\s+/, ''))}
+          </blockquote>
+        );
       }
+
+      if (p.startsWith('---')) {
+        return (
+          <hr
+            key={i}
+            style={{
+              border: 'none',
+              borderTop: '1px solid var(--color-border)',
+              margin: '36px 0'
+            }}
+          />
+        );
+      }
+
       return (
-        <p key={i} style={{ fontSize: '1.0625rem', lineHeight: 1.75, color: '#2C3A37', marginBottom: '18px' }}>
-          {p}
+        <p
+          key={i}
+          style={{
+            fontSize: '1.0625rem',
+            lineHeight: 1.8,
+            color: '#2C3A37',
+            marginBottom: '20px'
+          }}
+        >
+          {parseInlineMarkdown(p)}
         </p>
       );
     });
