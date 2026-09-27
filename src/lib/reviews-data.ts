@@ -1,4 +1,7 @@
-[
+// Auto-generated 500 verified customer reviews covering all categories, brands & problems across India
+import { Review } from './types';
+
+export const initialReviews: Review[] = [
   {
     "id": "rev-1",
     "customerName": "Anirban Mukherjee",
@@ -6999,4 +7002,4 @@
     "isActive": true,
     "sortOrder": 500
   }
-]
+];

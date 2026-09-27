@@ -545,8 +545,15 @@ export async function getReviews(): Promise<Review[]> {
     try {
       const col = mongo.collection('reviews');
       const count = await col.countDocuments();
-      if (count === 0 && inMemory.reviews.length > 0) {
-        await col.insertMany(inMemory.reviews.map((r) => ({ ...r })));
+      if (count < inMemory.reviews.length && inMemory.reviews.length > 0) {
+        const bulkOps = inMemory.reviews.map((r) => ({
+          updateOne: {
+            filter: { id: r.id },
+            update: { $set: { ...r } },
+            upsert: true
+          }
+        }));
+        await col.bulkWrite(bulkOps);
       }
       const docs = await col.find({ isActive: true }).sort({ sortOrder: 1, date: -1 }).toArray();
       if (docs && docs.length > 0) {

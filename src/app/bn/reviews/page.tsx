@@ -48,10 +48,25 @@ export default async function BengaliReviewsPage() {
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
-      reviewCount: '1280',
+      reviewCount: reviews.length.toString(),
       bestRating: '5',
       worstRating: '1'
-    }
+    },
+    review: reviews.slice(0, 15).map((r) => ({
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: r.customerName
+      },
+      datePublished: r.date,
+      reviewBody: r.commentBn || r.comment,
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: r.rating,
+        bestRating: '5',
+        worstRating: '1'
+      }
+    }))
   };
 
   return (

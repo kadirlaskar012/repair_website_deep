@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Star, ShieldCheck, MapPin, Edit3, CheckCircle2, Filter, Award, MessageSquare } from 'lucide-react';
+import { Star, ShieldCheck, MapPin, Edit3, CheckCircle2, Filter, Award, MessageSquare, Search, X, ChevronDown } from 'lucide-react';
 import { Review, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
 import WriteReviewModal from '@/components/modal/WriteReviewModal';
@@ -17,25 +17,62 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
 
   const [reviewsList, setReviewsList] = useState<Review[]>(reviews);
   const [selectedFilter, setSelectedFilter] = useState<string>('all');
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [visibleCount, setVisibleCount] = useState<number>(18);
   const [isWriteModalOpen, setIsWriteModalOpen] = useState(false);
 
-  // Filter tabs definition
+  // Filter tabs definition covering all categories
   const filterTabs = [
-    { id: 'all', label: isBn ? 'সকল রিভিউ (All)' : 'All Reviews' },
-    { id: 'ac', label: isBn ? 'এসি (AC)' : 'AC Repair', match: 'AC' },
+    { id: 'all', label: isBn ? 'সকল রিভিউ (500+)' : 'All Reviews (500+)' },
+    { id: 'ac', label: isBn ? 'এসি সার্ভিস (AC)' : 'AC Repair', match: 'AC' },
     { id: 'fridge', label: isBn ? 'ফ্রিজ (Fridge)' : 'Refrigerator', match: 'Fridge' },
     { id: 'washing', label: isBn ? 'ওয়াশিং মেশিন' : 'Washing Machine', match: 'Washing' },
     { id: 'microwave', label: isBn ? 'মাইক্রোওয়েভ' : 'Microwave', match: 'Microwave' },
-    { id: 'tv', label: isBn ? 'এলইডি টিভি (TV)' : 'LED TV', match: 'TV' }
+    { id: 'ro', label: isBn ? 'ওয়াটার পিউরিফায়ার (RO)' : 'Water Purifier (RO)', match: 'Water Purifier' },
+    { id: 'chimney', label: isBn ? 'কিচেন চিমনি' : 'Kitchen Chimney', match: 'Chimney' },
+    { id: 'tv', label: isBn ? 'এলইডি টিভি (TV)' : 'LED Smart TV', match: 'TV' },
+    { id: 'geyser', label: isBn ? 'গিজার হিটার' : 'Geyser & Heater', match: 'Geyser' }
   ];
 
-  // Filtered reviews
+  // Filtered reviews by category & instant search query
   const filteredReviews = reviewsList.filter((r) => {
-    if (selectedFilter === 'all') return true;
-    const tab = filterTabs.find((t) => t.id === selectedFilter);
-    if (!tab || !tab.match) return true;
-    return r.serviceCategory.toLowerCase().includes(tab.match.toLowerCase());
+    // Category match
+    if (selectedFilter !== 'all') {
+      const tab = filterTabs.find((t) => t.id === selectedFilter);
+      if (tab && tab.match && !r.serviceCategory.toLowerCase().includes(tab.match.toLowerCase())) {
+        return false;
+      }
+    }
+    // Search query match (name, location, category, comment, commentBn)
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase().trim();
+      const matchName = r.customerName.toLowerCase().includes(q);
+      const matchLoc = r.location.toLowerCase().includes(q);
+      const matchCat = r.serviceCategory.toLowerCase().includes(q);
+      const matchComment = r.comment.toLowerCase().includes(q);
+      const matchCommentBn = (r.commentBn || '').toLowerCase().includes(q);
+      if (!matchName && !matchLoc && !matchCat && !matchComment && !matchCommentBn) {
+        return false;
+      }
+    }
+    return true;
   });
+
+  const displayedReviews = filteredReviews.slice(0, visibleCount);
+
+  const handleFilterChange = (tabId: string) => {
+    setSelectedFilter(tabId);
+    setVisibleCount(18);
+  };
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
+    setVisibleCount(18);
+  };
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => Math.min(prev + 18, filteredReviews.length));
+  };
 
   const handleReviewSubmitted = (newReview: Review) => {
     setReviewsList([newReview, ...reviewsList]);
@@ -222,7 +259,7 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
             return (
               <button
                 key={tab.id}
-                onClick={() => setSelectedFilter(tab.id)}
+                onClick={() => handleFilterChange(tab.id)}
                 style={{
                   padding: '8px 16px',
                   borderRadius: 'var(--radius-full)',
@@ -241,6 +278,72 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
               </button>
             );
           })}
+        </div>
+
+        {/* Instant Search Bar */}
+        <div
+          style={{
+            position: 'relative',
+            maxWidth: '540px',
+            marginBottom: '28px'
+          }}
+        >
+          <Search
+            size={18}
+            style={{
+              position: 'absolute',
+              left: '16px',
+              top: '50%',
+              transform: 'translateY(-50%)',
+              color: 'var(--color-text-muted)',
+              pointerEvents: 'none'
+            }}
+          />
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={handleSearchChange}
+            placeholder={
+              isBn
+                ? 'নাম, শহর বা ব্র্যান্ড দিয়ে রিভিউ খুঁজুন (যেমন: Howrah, Daikin, গ্যাস লিক...)'
+                : 'Search reviews by customer name, city, brand or issue (e.g. Salt Lake, Samsung, drain)...'
+            }
+            style={{
+              width: '100%',
+              padding: '12px 42px 12px 44px',
+              borderRadius: '30px',
+              border: '1.5px solid var(--color-border)',
+              backgroundColor: 'var(--color-bg-base)',
+              fontSize: '0.875rem',
+              color: 'var(--color-text-main)',
+              outline: 'none',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+              transition: 'border-color 0.2s ease'
+            }}
+          />
+          {searchQuery && (
+            <button
+              type="button"
+              onClick={() => {
+                setSearchQuery('');
+                setVisibleCount(18);
+              }}
+              style={{
+                position: 'absolute',
+                right: '14px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                background: 'none',
+                border: 'none',
+                color: 'var(--color-text-muted)',
+                cursor: 'pointer',
+                padding: '4px'
+              }}
+              aria-label="Clear search"
+            >
+              <X size={16} />
+            </button>
+          )}
         </div>
 
         {/* Reviews Grid */}
@@ -274,7 +377,7 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
               gap: '24px'
             }}
           >
-            {filteredReviews.map((r) => {
+            {displayedReviews.map((r) => {
               const initials = r.customerName
                 .split(' ')
                 .map((n) => n[0])
@@ -427,6 +530,76 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
                 </div>
               );
             })}
+          </div>
+        )}
+
+        {/* Load More Button & Progress Counter */}
+        {filteredReviews.length > visibleCount && (
+          <div style={{ marginTop: '40px', textAlign: 'center' }}>
+            <div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                fontSize: '0.875rem',
+                color: 'var(--color-text-muted)',
+                marginBottom: '12px',
+                fontWeight: 600
+              }}
+            >
+              <span>
+                {isBn
+                  ? `মোট ${filteredReviews.length}টি ভেরিফায়েড রিভিউর মধ্যে ${displayedReviews.length}টি প্রদর্শিত`
+                  : `Showing ${displayedReviews.length} of ${filteredReviews.length} verified customer reviews`}
+              </span>
+            </div>
+
+            {/* Visual Progress Bar */}
+            <div
+              style={{
+                maxWidth: '280px',
+                height: '6px',
+                backgroundColor: 'rgba(0,0,0,0.06)',
+                borderRadius: '10px',
+                margin: '0 auto 20px auto',
+                overflow: 'hidden'
+              }}
+            >
+              <div
+                style={{
+                  width: `${Math.round((displayedReviews.length / filteredReviews.length) * 100)}%`,
+                  height: '100%',
+                  backgroundColor: 'var(--color-primary)',
+                  borderRadius: '10px',
+                  transition: 'width 0.3s ease'
+                }}
+              />
+            </div>
+
+            <div>
+              <button
+                type="button"
+                onClick={handleLoadMore}
+                className="btn btn-outline"
+                style={{
+                  padding: '12px 32px',
+                  borderRadius: '30px',
+                  fontSize: '0.9375rem',
+                  fontWeight: 700,
+                  borderColor: 'var(--color-primary)',
+                  color: 'var(--color-primary)',
+                  backgroundColor: 'var(--color-bg-base)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  boxShadow: '0 4px 14px rgba(20, 108, 91, 0.12)',
+                  cursor: 'pointer'
+                }}
+              >
+                <span>{isBn ? 'আরও রিভিউ দেখুন (+১৮)' : 'Load More Reviews (+18)'}</span>
+                <ChevronDown size={18} />
+              </button>
+            </div>
           </div>
         )}
 
