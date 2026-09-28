@@ -26,6 +26,7 @@ const categorySlugs = [
 ];
 
 const blogSlugs = [
+  'home-appliance-care-india-doorstep-repair-service-guide',
   'ac-not-cooling-top-reasons-solutions-kolkata',
   'refrigerator-maintenance-tips-prevent-food-spoilage',
   'ac-gas-refill-price-leakage-repair-cost-guide',

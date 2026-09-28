@@ -37,7 +37,7 @@ export async function generateMetadata({
   if (!post) return {};
 
   return buildPageMetadata({
-    title: post.metaTitle || `${post.title} | Appliance Seva`,
+    title: post.metaTitle || `${post.title} | Home Appliance Care India`,
     description: post.metaDesc || post.excerpt,
     path: `/blog/${post.slug}`,
     lang: 'en',
