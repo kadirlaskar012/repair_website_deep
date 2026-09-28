@@ -56,13 +56,13 @@ export default function HomeFaqSection({ lang }: HomeFaqSectionProps) {
             }}
           >
             {isBn
-              ? 'হোম অ্যাপ্লায়েন্স মেরামত সম্পর্কিত সাধারণ জিজ্ঞাস্য'
-              : 'Everything You Need to Know About Our Doorstep Service'}
+              ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া সম্পর্কিত সাধারণ জিজ্ঞাস্য (FAQ)'
+              : 'Home Appliance Care India — Frequently Asked Questions'}
           </h2>
           <p style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)', marginTop: '8px' }}>
             {isBn
-              ? 'পরিদর্শন ফি, সময়সূচি, আসল পার্টস ও ওয়ারেন্টি সংক্রান্ত সমস্ত তথ্য'
-              : 'Answers to common questions about technician arrival, ₹299 inspection fee, and warranties'}
+              ? 'পরিদর্শন ফি, ৯০ মিনিটে টেকনিশিয়ান আগমন, আসল পার্টস ও ওয়ারেন্টি সংক্রান্ত সমস্ত তথ্য'
+              : 'Answers to common questions about technician arrival, ₹299 inspection fee, genuine parts and 90-day warranty'}
           </p>
         </div>
 

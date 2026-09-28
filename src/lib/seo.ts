@@ -41,7 +41,7 @@ export function buildPageMetadata({
       title,
       description,
       url: canonicalUrl,
-      siteName: 'Appliance Seva',
+      siteName: 'Home Appliance Care India',
       locale: lang === 'bn' ? 'bn_IN' : 'en_IN',
       type: 'website',
       images: [
@@ -79,15 +79,20 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
   return {
     '@context': 'https://schema.org',
     '@type': 'HomeAndConstructionBusiness',
-    name: 'Home Appliance Care India - Appliance Seva',
+    name: 'Home Appliance Care India',
+    legalName: 'Home Appliance Care India',
     alternateName: [
+      'home Appliance Care India',
       'Home Appliance Care India',
       'Home appliance care india near me',
       'home appliance repair service',
       'Home appliance care india reviews',
+      'Home appliance care india customer care number',
+      'Home appliance care india Kolkata',
+      'HomeApplianceCareIndia',
       'Appliance Seva'
     ],
-    description: 'Home Appliance Care India by Appliance Seva: Premier doorstep home appliance repair service across India & West Bengal. Rated 4.9/5 by 1280+ customers.',
+    description: 'Home Appliance Care India: India and West Bengal’s trusted multi-brand doorstep home appliance repair and maintenance service network. Rated 4.9/5 by 1280+ verified customers. Certified engineers for AC, Refrigerator, Washing Machine, Microwave & TV.',
     url: SITE_URL,
     telephone: settings.phone,
     email: settings.email,
@@ -151,11 +156,18 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
       }
     ],
     areaServed: [
+      { '@type': 'Country', name: 'India' },
       { '@type': 'AdministrativeArea', name: 'West Bengal' },
       { '@type': 'City', name: 'Kolkata' },
-      { '@type': 'City', name: 'Howrah' },
-      { '@type': 'City', name: 'Hooghly' },
-      { '@type': 'City', name: 'Barasat' }
+      { '@type': 'Place', name: 'Barrackpur', postalCode: '700120' },
+      { '@type': 'Place', name: 'Behala', postalCode: '700034' },
+      { '@type': 'Place', name: 'Barasat', postalCode: '700124' },
+      { '@type': 'Place', name: 'Habra', postalCode: '743263' },
+      { '@type': 'Place', name: 'Garia', postalCode: '700084' },
+      { '@type': 'Place', name: 'New Town', postalCode: '700156' },
+      { '@type': 'Place', name: 'Dumdum', postalCode: '700028' },
+      { '@type': 'Place', name: 'Park Street', postalCode: '700016' },
+      { '@type': 'Place', name: 'Howrah', postalCode: '711101' }
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -216,6 +228,41 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
   };
 }
 
+export function generateWebSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Home Appliance Care India',
+    alternateName: [
+      'home Appliance Care India',
+      'Home Appliance Care India Doorstep Service',
+      'Home Appliance Care India Near Me'
+    ],
+    url: SITE_URL,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SITE_URL}/?q={search_term_string}`
+      },
+      'query-input': 'required name=search_term_string'
+    }
+  };
+}
+
+export function generateBrandSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Brand',
+    name: 'Home Appliance Care India',
+    alternateName: 'home Appliance Care India',
+    description: 'Premier multi-brand doorstep home appliance repair and maintenance service network.',
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.svg`,
+    slogan: 'India’s Trusted Doorstep Home Appliance Repair & Care Network'
+  };
+}
+
 export function generateServiceSchema(category: Category, lang: Language, phone?: string) {
   const isBn = lang === 'bn';
   return {
@@ -226,7 +273,7 @@ export function generateServiceSchema(category: Category, lang: Language, phone?
     description: isBn ? category.fullDescBn : category.fullDesc,
     provider: {
       '@type': 'LocalBusiness',
-      name: 'Appliance Seva',
+      name: 'Home Appliance Care India',
       telephone: phone || '+91 6291674186',
       url: SITE_URL,
       priceRange: '₹299'
@@ -287,11 +334,11 @@ export function generateArticleSchema(post: BlogPost, lang: Language) {
     dateModified: post.updatedAt || post.createdAt,
     author: {
       '@type': 'Person',
-      name: post.author || 'Appliance Seva Technical Team'
+      name: post.author || 'Home Appliance Care India Technical Team'
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Appliance Seva',
+      name: 'Home Appliance Care India',
       logo: {
         '@type': 'ImageObject',
         url: `${SITE_URL}/logo.svg`

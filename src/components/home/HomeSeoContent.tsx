@@ -103,8 +103,8 @@ export default function HomeSeoContent({ lang, onOpenBooking }: HomeSeoContentPr
             }}
           >
             {isBn
-              ? 'কলকাতা ও পশ্চিমবঙ্গের #১ বিশ্বস্ত হোম অ্যাপ্লায়েন্স মেরামত পরিষেবা'
-              : 'Reliable Doorstep AC & Appliance Repair Services in Kolkata & West Bengal'}
+              ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India) — ভারত ও পশ্চিমবঙ্গের বিশ্বস্ত ডোরস্টেপ রিপেয়ার নেটওয়ার্ক'
+              : 'Home Appliance Care India — India’s Trusted Doorstep Home Appliance Repair & Care Network'}
           </h2>
 
           <p
@@ -117,8 +117,8 @@ export default function HomeSeoContent({ lang, onOpenBooking }: HomeSeoContentPr
             }}
           >
             {isBn
-              ? 'বাড়ির দৈনন্দিন প্রয়োজনীয় যন্ত্রপাতি—যেমন এয়ার কন্ডিশনার, রেফ্রিজারেটর, ওয়াশিং মেশিন, মাইক্রোওয়েভ ওভেন বা স্মার্ট এলইডি টিভি—হঠাৎ বিকল হলে দৈনন্দিন জীবন থমকে যায়। আমাদের লক্ষ্য হল পশ্চিমবঙ্গের প্রতিটি গৃহস্থালীর কাছে দ্রুত, স্বচ্ছ এবং সাশ্রয়ী মূল্যে নির্ভরযোগ্য ডোরস্টেপ সমাধান পৌঁছে দেওয়া। মাত্র ₹২৯৯ পরিদর্শনে সার্টিফাইড বিশেষজ্ঞ টেকনিশিয়ান আপনার বাড়িতে পৌঁছে সম্পূর্ণ ডায়াগনোসিস সম্পন্ন করেন।'
-              : 'When critical household appliances breakdown unexpectedly—whether an AC during sweltering Kolkata heat, a non-cooling refrigerator, or a jammed washing machine—finding a prompt and dependable technician is crucial. We bring certified engineering expertise right to your doorstep across Kolkata, Howrah, and West Bengal districts with transparent ₹299 inspection pricing, upfront repair estimates, and guaranteed OEM parts.'}
+              ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India) হল ভারতের অন্যতম বিশ্বস্ত ও দ্রুততম মাল্টি-ব্র্যান্ড ডোরস্টেপ হোম অ্যাপ্লায়েন্স সার্ভিসিং নেটওয়ার্ক। আমাদের অভিজ্ঞ ও প্রত্যয়িত ইঞ্জিনিয়াররা এয়ার কন্ডিশনার (AC), রেফ্রিজারেটর (ফ্রিজ), ওয়াশিং মেশিন, মাইক্রোওয়েভ ওভেন এবং স্মার্ট এলইডি টিভির যাবতীয় জটিল সমস্যা মাত্র ৯০ মিনিটে আপনার বাড়িতে পৌঁছে নিখুঁতভাবে সমাধান করেন। মাত্র ₹২৯৯ স্থির পরিদর্শন ফিতে শতভাগ স্বচ্ছ ডায়াগনোসিস ও কোটেশন প্রদান করা হয়।'
+              : 'Home Appliance Care India is India and West Bengal’s premier multi-brand doorstep home appliance repair and maintenance service network. When critical household appliances breakdown unexpectedly—whether an AC not cooling during scorching summer heat, a refrigerator compressor failure, or a noisy washing machine drum—Home Appliance Care India dispatches certified engineering technicians right to your doorstep within 90 minutes. With transparent ₹299 inspection pricing, upfront repair estimates, and guaranteed 100% OEM spare parts, we ensure seamless care for every home.'}
           </p>
 
           <p
@@ -130,8 +130,8 @@ export default function HomeSeoContent({ lang, onOpenBooking }: HomeSeoContentPr
             }}
           >
             {isBn
-              ? 'ভোল্টাস, ডাইকিন, এলজি, স্যামসাং, গোদরেজ, ওয়ার্লপুল, আইএফবি, বোশ এবং ব্লু স্টার সহ সমস্ত শীর্ষস্থানীয় ব্র্যান্ডের জন্য আমাদের প্রকৌশলীরা প্রশিক্ষিত। প্রতিটি কাজ সম্পন্ন করার পর গ্রাহক পান ৩০ দিনের লিখিত সার্ভিস ওয়ারেন্টি।'
-              : 'Our verified technicians specialize in major brands including Voltas, Daikin, LG, Samsung, Whirlpool, Godrej, IFB, Bosch, Hitachi, Carrier, and Blue Star. Every completed repair comes with a 30-day workmanship warranty and transparent billing.'}
+              ? 'ব্যারাকপুর, বেহালা, বারাসাত, হাবড়া, গড়িয়া, নিউ টাউন, দমদম, পার্ক স্ট্রিট ও হাওড়া-সহ সমগ্র অঞ্চলে ভোল্টাস, ডাইকিন, এলজি, স্যামসাং, গোদরেজ, ওয়ার্লপুল, আইএফবি, বোশ এবং ব্লু স্টার সহ সমস্ত শীর্ষ ব্র্যান্ডের আসল যন্ত্রাংশ ও লিখিত ৯০ দিনের ওয়ারেন্টি প্রদান করে হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া।'
+              : 'Home Appliance Care India operates across 9 dedicated regional hubs—including Barrackpur, Behala, Barasat, Habra, Garia, New town, Dumdum, Park street, and Howrah. Our factory-trained specialists service all major brands including Voltas, Daikin, LG, Samsung, Whirlpool, Godrej, IFB, Bosch, Hitachi, Carrier, and Blue Star, backed by our 90-day comprehensive service warranty.'}
           </p>
         </div>
 
@@ -233,13 +233,13 @@ export default function HomeSeoContent({ lang, onOpenBooking }: HomeSeoContentPr
             <div>
               <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-text-main)', margin: 0 }}>
                 {isBn
-                  ? 'কলকাতা ও পশ্চিমবঙ্গের প্রধান সেবা এলাকা ও পিনকোড কভারেজ'
-                  : 'Doorstep Service Hubs & Pincode Coverage in Kolkata & West Bengal'}
+                  ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া ৯টি প্রধান হাব ও পিনকোড কভারেজ'
+                  : 'Home Appliance Care India — 9 Regional Doorstep Hubs & PIN Code Coverage'}
               </h3>
               <p style={{ fontSize: '0.8125rem', color: 'var(--color-text-muted)', margin: '4px 0 0 0' }}>
                 {isBn
-                  ? '৯ মিনিটে দ্রুত আগমন নিশ্চিত করতে প্রতিটি প্রধান অঞ্চলে আমাদের নিবেদিত টেকনিশিয়ান হাব প্রস্তুত রয়েছে।'
-                  : 'Fast 90-minute technician dispatch network mapped across top residential and commercial hubs.'}
+                  ? 'প্রতিটি নির্দিষ্ট এলাকায় ৯০ মিনিটে দ্রুত টেকনিশিয়ান আগমন নিশ্চিত করতে আমাদের আঞ্চলিক হাব সক্রিয় রয়েছে।'
+                  : 'Fast 90-minute doorstep technician dispatch active across our 9 primary regional service hubs.'}
               </p>
             </div>
           </div>

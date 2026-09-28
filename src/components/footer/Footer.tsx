@@ -93,25 +93,25 @@ export default function Footer({ settings, categories, locations, lang }: Footer
               <div style={{ width: '56px', height: '56px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img
                   src="/logo-icon.svg"
-                  alt="Appliance Seva"
+                  alt="Home Appliance Care India"
                   width={56}
                   height={56}
                   style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.4))' }}
                 />
               </div>
               <div>
-                <span style={{ fontSize: '1.25rem', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.02em', display: 'block', lineHeight: 1.15 }}>
-                  APPLIANCE <span style={{ color: 'var(--color-accent)' }}>SEVA</span>
+                <span style={{ fontSize: '1.2rem', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.02em', display: 'block', lineHeight: 1.15 }}>
+                  HOME APPLIANCE CARE <span style={{ color: 'var(--color-accent)' }}>INDIA</span>
                 </span>
                 <span style={{ fontSize: '0.6875rem', fontWeight: 700, color: '#34D399', letterSpacing: '0.04em' }}>
-                  {isBn ? 'ডোরস্টেপ অ্যাপ্লায়েন্স কেয়ার • পশ্চিমবঙ্গ' : 'DOORSTEP APPLIANCE CARE • WEST BENGAL'}
+                  {isBn ? 'ডোরস্টেপ অ্যাপ্লায়েন্স কেয়ার ও রিপেয়ার নেটওয়ার্ক' : 'DOORSTEP APPLIANCE CARE & REPAIR NETWORK • INDIA'}
                 </span>
               </div>
             </div>
             <p style={{ fontSize: '0.875rem', lineHeight: 1.6, marginBottom: '20px' }}>
               {isBn 
-                ? 'কলকাতা ও পশ্চিমবঙ্গ জুড়ে ডোরস্টেপ এসি এবং হোম অ্যাপ্লায়েন্স মেরামত। প্রত্যয়িত দক্ষ টেকনিশিয়ান, ৯০ দিনের গ্যারান্টি এবং স্বচ্ছ ₹২৯৯ পরিদর্শন ফি।'
-                : 'West Bengal’s trusted doorstep air conditioner and home appliance repair by Appliance Seva. Certified multi-brand engineers, 90-day warranty, and fixed ₹299 inspection fee.'}
+                ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India): পশ্চিমবঙ্গ ও কলকাতা জুড়ে ডোরস্টেপ এসি এবং হোম অ্যাপ্লায়েন্স মেরামত। প্রত্যয়িত দক্ষ টেকনিশিয়ান, ৯০ দিনের গ্যারান্টি এবং স্বচ্ছ ₹২৯৯ পরিদর্শন ফি।'
+                : 'Home Appliance Care India is India & West Bengal’s trusted doorstep air conditioner and home appliance repair network. Certified multi-brand engineers across 9 regional hubs, 90-day warranty, and fixed ₹299 inspection fee.'}
             </p>
             <div style={{ fontSize: '0.8125rem', color: '#88A39C', display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>

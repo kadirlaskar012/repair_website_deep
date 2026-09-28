@@ -33,22 +33,25 @@ const notoSansBengali = Noto_Sans_Bengali({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Home Appliance Care India | Doorstep Home Appliance Repair Service | Appliance Seva',
+    default: 'Home Appliance Care India | Doorstep Home Appliance Repair Service',
     template: '%s | Home Appliance Care India'
   },
-  description: 'Home Appliance Care India by Appliance Seva: Premier doorstep home appliance repair service across India & West Bengal. Rated 4.9★ in customer reviews. Find expert technicians near me for AC, Fridge, Washing Machine, Microwave & TV. ₹299 inspection & 90-day warranty.',
+  description: 'Home Appliance Care India: Official doorstep home appliance repair and maintenance service network across India & West Bengal. Rated 4.9★ in verified customer reviews. Certified technicians near me for AC, Refrigerator, Washing Machine, Microwave & TV. Flat ₹299 inspection & 90-day warranty.',
   keywords: [
+    'home Appliance Care India',
     'Home Appliance Care India',
-    'Home appliance care india reviews',
     'Home appliance care india near me',
+    'Home appliance care india reviews',
+    'Home appliance care india customer care number',
+    'Home appliance care india Kolkata',
     'home appliance repair service',
     'home appliance repair service near me',
-    'Appliance Seva',
-    'Appliance repair Kolkata',
-    'AC repair Kolkata',
+    'doorstep appliance repair Kolkata',
     'Doorstep appliance repair West Bengal',
+    'AC repair Kolkata',
     'Refrigerator repair near me',
-    'Washing machine repair service'
+    'Washing machine repair service',
+    'Appliance Seva'
   ],
   icons: {
     icon: [

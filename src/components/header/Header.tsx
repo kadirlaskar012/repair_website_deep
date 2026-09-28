@@ -108,12 +108,12 @@ export default function Header({
           prefetch={true}
           scroll={true}
           className="header-brand-logo"
-          aria-label="Appliance Seva Home"
+          aria-label="Home Appliance Care India Home"
         >
           <div className="header-logo-icon">
             <img
               src="/logo-icon.svg"
-              alt="Appliance Seva"
+              alt="Home Appliance Care India"
               width={50}
               height={50}
               style={{ width: '100%', height: '100%', objectFit: 'contain' }}
@@ -121,20 +121,20 @@ export default function Header({
           </div>
           <div className="header-logo-text">
             <div className="header-logo-title">
-              <span>APPLIANCE</span> <span className="logo-accent">SEVA</span>
+              <span>HOME APPLIANCE CARE</span> <span className="logo-accent">INDIA</span>
             </div>
             <div className="header-logo-sub">
               {isBn ? (
                 <>
-                  <span>ডোরস্টেপ কেয়ার</span>
+                  <span>ডোরস্টেপ রিপেয়ার</span>
                   <span className="verified-dot" />
-                  <span>পশ্চিমবঙ্গ</span>
+                  <span>ভারত ও পশ্চিমবঙ্গ</span>
                 </>
               ) : (
                 <>
-                  <span>DOORSTEP REPAIR</span>
+                  <span>DOORSTEP REPAIR NETWORK</span>
                   <span className="verified-dot" />
-                  <span>WEST BENGAL</span>
+                  <span>INDIA</span>
                 </>
               )}
             </div>
@@ -235,18 +235,18 @@ export default function Header({
                 <div className="header-logo-icon" style={{ width: '44px', height: '44px' }}>
                   <img
                     src="/logo-icon.svg"
-                    alt="Appliance Seva"
+                    alt="Home Appliance Care India"
                     width={44}
                     height={44}
                     style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                   />
                 </div>
                 <div>
-                  <div style={{ fontWeight: 800, fontSize: '1.05rem', color: 'var(--color-text-main)', lineHeight: 1.15 }}>
-                    APPLIANCE <span style={{ color: 'var(--color-primary)' }}>SEVA</span>
+                  <div style={{ fontWeight: 800, fontSize: '0.9375rem', color: 'var(--color-text-main)', lineHeight: 1.15 }}>
+                    HOME APPLIANCE CARE <span style={{ color: 'var(--color-primary)' }}>INDIA</span>
                   </div>
                   <div style={{ fontSize: '0.6875rem', fontWeight: 700, color: 'var(--color-text-muted)' }}>
-                    {isBn ? 'ডোরস্টেপ কেয়ার • পশ্চিমবঙ্গ' : 'Doorstep Repair • West Bengal'}
+                    {isBn ? 'ডোরস্টেপ সার্ভিস • ভারত ও পশ্চিমবঙ্গ' : 'Doorstep Repair Network • India'}
                   </div>
                 </div>
               </div>

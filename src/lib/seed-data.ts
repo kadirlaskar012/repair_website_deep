@@ -1,23 +1,23 @@
 import { SiteSettings, Category, Problem, Brand, LocationItem, TrustItem, Review, BlogPost, SearchKeywordItem } from './types';
 
 export const initialSiteSettings: SiteSettings = {
-  businessName: 'Appliance Seva',
-  businessNameBn: 'অ্যাপ্লায়েন্স সেবা',
+  businessName: 'Home Appliance Care India',
+  businessNameBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া',
   phone: '+91 6291674186',
   whatsapp: '+91 6291674186',
   email: 'applianceseva@gmail.com',
   address: 'Salt Lake Sector V, Kolkata, West Bengal - 700091',
   addressBn: 'সল্টলেক সেক্টর ৫, কলকাতা, পশ্চিমবঙ্গ - ৭০০০৯১',
-  serviceArea: 'Kolkata, Howrah, Hooghly & Barasat (West Bengal)',
-  serviceAreaBn: 'কলকাতা, হাওড়া, হুগলি এবং বারাসাত (পশ্চিমবঙ্গ)',
+  serviceArea: 'Barrackpur, Behala, Barasat, Habra, Garia, New town, Dumdum, Park street, Howrah & West Bengal',
+  serviceAreaBn: 'ব্যারাকপুর, বেহালা, বারাসাত, হাবড়া, গড়িয়া, নিউ টাউন, দমদম, পার্ক স্ট্রিট, হাওড়া ও পশ্চিমবঙ্গ',
   workingHours: '8:00 AM - 9:00 PM (All 7 Days)',
   workingHoursBn: 'সকাল ৮:০০ - রাত ৯:০০ (সপ্তাহের ৭ দিনই)',
   visitFee: 299,
   currency: '₹',
   pricingDisclaimer: '₹299 is ONLY the visit & diagnosis fee. The actual repair cost is confirmed after thorough inspection by the certified technician and strictly upon your approval before any repair work begins.',
   pricingDisclaimerBn: '₹২৯৯ শুধুমাত্র ভিজিট এবং রোগ নির্ণয় ফি। কোনো মেরামতের কাজ শুরু করার আগে প্রত্যয়িত টেকনিশিয়ানের পুঙ্খানুপুঙ্খ পরিদর্শনের পরে এবং সম্পূর্ণ আপনার অনুমোদনের পরেই প্রকৃত মেরামতের খরচ চূড়ান্ত করা হয়।',
-  emergencyNotice: 'Same-day doorstep technician visit available across Kolkata, Howrah, Hooghly, and Barasat.',
-  emergencyNoticeBn: 'কলকাতা, হাওড়া, হুগলি এবং বারাসাতে একই দিনে ডোরস্টেপ টেকনিশিয়ান ভিজিটের সুবিধা উপলব্ধ।'
+  emergencyNotice: 'Home Appliance Care India: Express 90-minute doorstep technician arrival across Barrackpur, Behala, Barasat, Habra, Garia, New town, Dumdum, Park street, Howrah & West Bengal.',
+  emergencyNoticeBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া: ব্যারাকপুর, বেহালা, বারাসাত, হাবড়া, গড়িয়া, নিউ টাউন, দমদম, পার্ক স্ট্রিট, হাওড়া ও পশ্চিমবঙ্গ জুড়ে ৯০ মিনিটে ডোরস্টেপ টেকনিশিয়ান আগমন।'
 };
 
 export const initialCategories: Category[] = [
@@ -33,10 +33,10 @@ export const initialCategories: Category[] = [
     iconName: 'air-vent',
     sortOrder: 1,
     isActive: true,
-    metaTitle: 'Professional AC Repair & Servicing in West Bengal | ₹299 Visit',
-    metaTitleBn: 'পশ্চিমবঙ্গে বিশ্বস্ত এসি মেরামত ও সার্ভিসিং | ₹২৯৯ ভিজিট ফি',
-    metaDesc: 'Expert doorstep AC repair service in Kolkata & West Bengal. Split & Window AC cooling issues, jet cleaning, gas charging. Transparent ₹299 inspection fee.',
-    metaDescBn: 'কলকাতা ও পশ্চিমবঙ্গে বিশ্বস্ত এসি মেরামত ও সার্ভিসিং। স্প্লিট ও উইন্ডো এসি কুলিং সমস্যা, জেট ওয়াশ ও গ্যাস রিফিল। স্বচ্ছ ₹২৯৯ পরিদর্শন ফি।'
+    metaTitle: 'Professional AC Repair & Servicing | Home Appliance Care India',
+    metaTitleBn: 'বিশ্বস্ত এসি মেরামত ও সার্ভিসিং | Home Appliance Care India',
+    metaDesc: 'Expert doorstep AC repair service by Home Appliance Care India. Split & Window AC cooling issues, jet cleaning, gas charging. Transparent ₹299 inspection fee.',
+    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India)-র বিশ্বস্ত এসি মেরামত ও সার্ভিসিং। স্প্লিট ও উইন্ডো এসি কুলিং সমস্যা, জেট ওয়াশ ও গ্যাস রিফিল। স্বচ্ছ ₹২৯৯ পরিদর্শন ফি।'
   },
   {
     id: 'fridge-repair',
@@ -50,10 +50,10 @@ export const initialCategories: Category[] = [
     iconName: 'refrigerator',
     sortOrder: 2,
     isActive: true,
-    metaTitle: 'Doorstep Refrigerator & Fridge Repair in West Bengal | ₹299 Diagnosis',
-    metaTitleBn: 'পশ্চিমবঙ্গে নির্ভরযোগ্য ফ্রিজ মেরামত সার্ভিস | ₹২৯৯ পরিদর্শন ফি',
-    metaDesc: 'Reliable fridge repair service in West Bengal. Fix cooling failure, gas leak, defrost issue, compressor noise. Same-day ₹299 inspection visit.',
-    metaDescBn: 'পশ্চিমবঙ্গে নির্ভরযোগ্য ডোরস্টেপ ফ্রিজ মেরামত। কুলিং বন্ধ, গ্যাস লিকেজ, কম্প্রেসার ও ডিফ্রস্ট সমস্যার দ্রুত সমাধান। মাত্র ₹২৯৯ ভিজিট চার্জ।'
+    metaTitle: 'Doorstep Refrigerator & Fridge Repair | Home Appliance Care India',
+    metaTitleBn: 'নির্ভরযোগ্য ফ্রিজ মেরামত সার্ভিস | Home Appliance Care India',
+    metaDesc: 'Reliable fridge repair service by Home Appliance Care India. Fix cooling failure, gas leak, defrost issue, compressor noise. Same-day ₹299 inspection visit.',
+    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র ডোরস্টেপ ফ্রিজ মেরামত। কুলিং বন্ধ, গ্যাস লিকেজ, কম্প্রেসার ও ডিফ্রস্ট সমস্যার দ্রুত সমাধান। মাত্র ₹২৯৯ ভিজিট চার্জ।'
   },
   {
     id: 'washing-machine-repair',
@@ -67,10 +67,10 @@ export const initialCategories: Category[] = [
     iconName: 'washing-machine',
     sortOrder: 3,
     isActive: true,
-    metaTitle: 'Washing Machine Repair Service in West Bengal | ₹299 Inspection',
-    metaTitleBn: 'পশ্চিমবঙ্গে বিশ্বস্ত ওয়াশিং মেশিন মেরামত | ₹২৯৯ ভিজিট ফি',
-    metaDesc: 'Fast doorstep washing machine repair in Kolkata & West Bengal. Front load & top load motor, spin, drain, PCB fixes. Verified technicians.',
-    metaDescBn: 'কলকাতা ও পশ্চিমবঙ্গে দ্রুত ওয়াশিং মেশিন মেরামত পরিষেবা। ফ্রন্ট লোড ও টপ লোড ড্রেন, মোটর ও ইলেকট্রনিক বোর্ড মেরামত। স্বচ্ছ ₹২৯৯ ফি।'
+    metaTitle: 'Washing Machine Repair Service | Home Appliance Care India',
+    metaTitleBn: 'বিশ্বস্ত ওয়াশিং মেশিন মেরামত | Home Appliance Care India',
+    metaDesc: 'Fast doorstep washing machine repair by Home Appliance Care India. Front load & top load motor, spin, drain, PCB fixes. Verified technicians.',
+    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র দ্রুত ওয়াশিং মেশিন মেরামত পরিষেবা। ফ্রন্ট লোড ও টপ লোড ড্রেন, মোটর ও ইলেকট্রনিক বোর্ড মেরামত। স্বচ্ছ ₹২৯৯ ফি।'
   },
   {
     id: 'microwave-repair',
@@ -84,10 +84,10 @@ export const initialCategories: Category[] = [
     iconName: 'microwave',
     sortOrder: 4,
     isActive: true,
-    metaTitle: 'Microwave Oven Repair at Doorstep in West Bengal | ₹299 Visit',
-    metaTitleBn: 'পশ্চিমবঙ্গে মাইক্রোওয়েভ ওভেন মেরামত পরিষেবা | ₹২৯৯ ভিজিট ফি',
-    metaDesc: 'Doorstep microwave oven repair in West Bengal. Magnetron heating issues, spark repair, touchpad fixing for all leading brands. Only ₹299 inspection.',
-    metaDescBn: 'পশ্চিমবঙ্গে ডোরস্টেপ মাইক্রোওয়েভ ওভেন মেরামত। গরম না হওয়া, স্পার্কিং, টাচপ্যাড ত্রুটি নিরসন। ₹২৯৯ স্বচ্ছ ভিজিট ও রোগ নির্ণয় চার্জ।'
+    metaTitle: 'Microwave Oven Repair at Doorstep | Home Appliance Care India',
+    metaTitleBn: 'মাইক্রোওয়েভ ওভেন মেরামত পরিষেবা | Home Appliance Care India',
+    metaDesc: 'Doorstep microwave oven repair by Home Appliance Care India. Magnetron heating issues, spark repair, touchpad fixing for all leading brands. Only ₹299 inspection.',
+    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র ডোরস্টেপ মাইক্রোওয়েভ ওভেন মেরামত। গরম না হওয়া, স্পার্কিং, টাচপ্যাড ত্রুটি নিরসন। ₹২৯৯ স্বচ্ছ ভিজিট ও রোগ নির্ণয় চার্জ।'
   },
   {
     id: 'led-tv-repair',
@@ -101,10 +101,10 @@ export const initialCategories: Category[] = [
     iconName: 'tv',
     sortOrder: 5,
     isActive: true,
-    metaTitle: 'LED & Smart TV Repair Service in West Bengal | ₹299 Inspection',
-    metaTitleBn: 'পশ্চিমবঙ্গে এলইডি ও স্মার্ট টিভি মেরামত | ₹২৯৯ ভিজিট ফি',
-    metaDesc: 'Professional LED & Smart TV repair in West Bengal. Fix black screen, backlight, sound issues, power supply for Samsung, Sony, LG & more.',
-    metaDescBn: 'পশ্চিমবঙ্গে পেশাদার এলইডি ও স্মার্ট টিভি মেরামত পরিষেবা। ব্যাকলাইট, ডিসপ্লে, সাউন্ড ও মাদারবোর্ড সমস্যার সমাধান। মাত্র ₹২৯৯ পরিদর্শন ফি।'
+    metaTitle: 'LED & Smart TV Repair Service | Home Appliance Care India',
+    metaTitleBn: 'এলইডি ও স্মার্ট টিভি মেরামত | Home Appliance Care India',
+    metaDesc: 'Professional LED & Smart TV repair by Home Appliance Care India. Fix black screen, backlight, sound issues, power supply for Samsung, Sony, LG & more.',
+    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র পেশাদার এলইডি ও স্মার্ট টিভি মেরামত পরিষেবা। ব্যাকলাইট, ডিসপ্লে, সাউন্ড ও মাদারবোর্ড সমস্যার সমাধান। মাত্র ₹২৯৯ পরিদর্শন ফি।'
   }
 ];
 
@@ -610,6 +610,10 @@ export const initialTrustItems: TrustItem[] = [
 export { initialReviews } from './reviews-data';
 
 export const initialSearchKeywords: SearchKeywordItem[] = [
+  { id: 'kw-haci-1', keyword: 'home Appliance Care India', keywordBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া', categoryId: 'ac-repair', targetUrl: '/' },
+  { id: 'kw-haci-2', keyword: 'Home appliance care india near me', keywordBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া নিকটবর্তী সার্ভিস', categoryId: 'ac-repair', targetUrl: '/' },
+  { id: 'kw-haci-3', keyword: 'Home appliance care india reviews', keywordBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া গ্রাহক রিভিউ', categoryId: 'ac-repair', targetUrl: '/reviews' },
+  { id: 'kw-haci-4', keyword: 'Home appliance care india phone number', keywordBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া ফোন নম্বর', categoryId: 'ac-repair', targetUrl: '/' },
   { id: 'kw-1', keyword: 'AC gas refill', keywordBn: 'এসি গ্যাস রিফিল', categoryId: 'ac-repair', problemId: 'ac-gas-leakage', targetUrl: '/ac-repair' },
   { id: 'kw-2', keyword: 'AC not cooling', keywordBn: 'এসি ঠান্ডা হচ্ছে না', categoryId: 'ac-repair', problemId: 'ac-not-cooling', targetUrl: '/ac-repair' },
   { id: 'kw-3', keyword: 'AC water leakage', keywordBn: 'এসি থেকে জল পড়া', categoryId: 'ac-repair', problemId: 'ac-water-leakage', targetUrl: '/ac-repair' },
