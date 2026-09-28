@@ -190,7 +190,15 @@ export default function Footer({ settings, categories, locations, lang }: Footer
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', fontSize: '0.875rem' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                 <MapPin size={18} style={{ color: 'var(--color-accent)', flexShrink: 0, marginTop: '2px' }} />
-                <span>{isBn ? settings.addressBn : settings.address}</span>
+                <div>
+                  <strong style={{ display: 'block', color: '#FFFFFF', fontSize: '0.8125rem', marginBottom: '2px' }}>
+                    {isBn ? 'প্রধান অফিস (Central HQ):' : 'Central Registered Office:'}
+                  </strong>
+                  <span>{isBn ? settings.addressBn : settings.address}</span>
+                  <div style={{ marginTop: '6px', fontSize: '0.75rem', color: '#34D399', fontWeight: 600 }}>
+                    {isBn ? '✓ ৯টি আঞ্চলিক শাখা অফিস ও সার্ভিস হাব' : '✓ 9 Regional Branch Hubs (Details below)'}
+                  </div>
+                </div>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <Phone size={18} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />
@@ -208,44 +216,107 @@ export default function Footer({ settings, categories, locations, lang }: Footer
           </div>
         </div>
 
-        {/* Service Areas List */}
-        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '24px', marginBottom: '24px' }}>
-          <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: '#FFFFFF', marginBottom: '10px' }}>
-            {t.footerServiceAreas}:
+        {/* Local Branch Offices & Doorstep Hubs Network (Smart Section) */}
+        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '28px', marginBottom: '32px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px', marginBottom: '16px' }}>
+            <div>
+              <div style={{ fontSize: '0.9375rem', fontWeight: 800, color: '#FFFFFF', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <MapPin size={18} style={{ color: 'var(--color-accent)' }} />
+                <span>{isBn ? 'আমাদের অফিস ও আঞ্চলিক সার্ভিস হাবসমূহ' : 'Our Office Branches & Local Service Hubs'}</span>
+              </div>
+              <p style={{ fontSize: '0.78125rem', color: '#88A39C', margin: '4px 0 0 0' }}>
+                {isBn
+                  ? 'আপনার এলাকার নিকটবর্তী অফিস ও ডোরস্টেপ সার্ভিস সেন্টার থেকে দ্রুততম সময়ে (৯০ মিনিটে) টেকনিশিয়ান আগমন'
+                  : 'Fast doorstep technician dispatch (within 90 mins) from our local branch offices and service hubs'}
+              </p>
+            </div>
+            <div style={{ fontSize: '0.75rem', color: '#34D399', fontWeight: 700, background: 'rgba(52, 211, 153, 0.1)', padding: '4px 10px', borderRadius: '12px', border: '1px solid rgba(52, 211, 153, 0.25)' }}>
+              {isBn ? '● ৯টি এলাকায় অফিস সার্ভিস সক্রিয়' : '● 9 Regional Hubs Active'}
+            </div>
           </div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', fontSize: '0.8125rem' }}>
-            {locations.map((loc, idx) => (
-              <span key={loc.id} style={{ color: '#88A39C' }}>
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (typeof window !== 'undefined') {
-                      localStorage.setItem('preferred_location_id', loc.id);
-                      localStorage.setItem('preferred_location_slug', loc.hashSlug);
-                      localStorage.setItem('preferred_location_name', loc.name);
-                      window.dispatchEvent(
-                        new CustomEvent('appliance_location_changed', {
-                          detail: { id: loc.id, name: loc.name, nameBn: loc.nameBn, slug: loc.hashSlug }
-                        })
-                      );
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }
-                  }}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    font: 'inherit',
-                    color: '#B5C7C3',
-                    cursor: 'pointer',
-                    textDecoration: 'none'
-                  }}
-                  className="footer-link"
-                >
-                  {isBn ? loc.nameBn : loc.name}
-                </button>
-                {idx < locations.length - 1 && ' • '}
-              </span>
+
+          {/* Responsive Grid of Local Office Hubs */}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '14px'
+            }}
+          >
+            {locations.map((loc) => (
+              <div
+                key={loc.id}
+                style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.04)',
+                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  borderRadius: '12px',
+                  padding: '14px 16px',
+                  transition: 'background 0.2s, border-color 0.2s'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <MapPin size={14} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />
+                    <span style={{ fontWeight: 700, fontSize: '0.875rem', color: '#FFFFFF' }}>
+                      {isBn ? loc.nameBn : loc.name}
+                    </span>
+                  </div>
+                  {loc.pincode && (
+                    <span
+                      style={{
+                        fontSize: '0.6875rem',
+                        fontWeight: 700,
+                        backgroundColor: 'rgba(232, 163, 61, 0.15)',
+                        color: 'var(--color-accent)',
+                        padding: '2px 8px',
+                        borderRadius: '10px',
+                        border: '1px solid rgba(232, 163, 61, 0.3)'
+                      }}
+                    >
+                      PIN: {loc.pincode}
+                    </span>
+                  )}
+                </div>
+
+                <div style={{ fontSize: '0.78125rem', color: '#B5C7C3', lineHeight: 1.5, marginBottom: '8px' }}>
+                  {isBn ? (loc.addressBn || loc.address) : (loc.address || loc.addressBn)}
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.71875rem' }}>
+                  <span style={{ color: '#34D399', display: 'inline-flex', alignItems: 'center', gap: '4px', fontWeight: 600 }}>
+                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#34D399' }} />
+                    <span>{isBn ? 'ডোরস্টেপ টেকনিশিয়ান সক্রিয়' : 'Technicians Available'}</span>
+                  </span>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (typeof window !== 'undefined') {
+                        localStorage.setItem('preferred_location_id', loc.id);
+                        localStorage.setItem('preferred_location_slug', loc.hashSlug);
+                        localStorage.setItem('preferred_location_name', loc.name);
+                        window.dispatchEvent(
+                          new CustomEvent('appliance_location_changed', {
+                            detail: { id: loc.id, name: loc.name, nameBn: loc.nameBn, slug: loc.hashSlug }
+                          })
+                        );
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }
+                    }}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      color: 'var(--color-accent)',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      padding: 0,
+                      textDecoration: 'underline'
+                    }}
+                  >
+                    {isBn ? 'এলাকা বেছে নিন' : 'Select Area'}
+                  </button>
+                </div>
+              </div>
             ))}
           </div>
         </div>

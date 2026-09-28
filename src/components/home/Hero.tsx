@@ -18,16 +18,17 @@ interface HeroProps {
 export default function Hero({ categories, locations, lang, onOpenSearch, onOpenBooking, phone }: HeroProps) {
   const t = getDictionary(lang);
   const isBn = lang === 'bn';
-  const kolkata = locations.find((l) => l.name.toLowerCase() === 'kolkata' || l.id === 'loc-kol') || locations[0];
-  const [selectedCity, setSelectedCity] = useState<string>(kolkata ? kolkata.name : 'Kolkata');
+  const defaultLoc = locations[0];
+  const [selectedCity, setSelectedCity] = useState<string>(defaultLoc ? defaultLoc.name : 'Barrackpur');
+  const activeLoc = locations.find((l) => l.name === selectedCity) || locations[0] || null;
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const savedName = localStorage.getItem('preferred_location_name');
     if (savedName && locations.some((l) => l.name === savedName)) {
       setSelectedCity(savedName);
-    } else if (kolkata) {
-      setSelectedCity(kolkata.name);
+    } else if (defaultLoc) {
+      setSelectedCity(defaultLoc.name);
     }
 
     const handleSync = (e: any) => {
@@ -37,7 +38,7 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
     };
     window.addEventListener('appliance_location_changed', handleSync);
     return () => window.removeEventListener('appliance_location_changed', handleSync);
-  }, [locations, kolkata]);
+  }, [locations, defaultLoc]);
 
   // Quick categories matching the circular icon row in reference screenshot
   const quickItems = [
@@ -182,8 +183,8 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
             <Sparkles size={14} style={{ color: 'var(--color-accent)' }} />
             <span>
               {isBn
-                ? `${selectedCity === 'Howrah' ? 'হাওড়া' : selectedCity === 'Hooghly' ? 'হুগলি' : selectedCity === 'Barasat' ? 'বারাসাত' : 'কলকাতা'}-য় #১ বিশ্বস্ত ডোরস্টেপ সার্ভিস • ৯০ মিনিটে আগমন`
-                : `#1 Doorstep Appliance Repair in ${selectedCity} • 90-Min Response`}
+                ? `${activeLoc ? `${activeLoc.nameBn}${activeLoc.pincode ? ` (${activeLoc.pincode})` : ''}` : 'ব্যারাকপুর'}-এ #১ বিশ্বস্ত ডোরস্টেপ সার্ভিস • ৯০ মিনিটে আগমন`
+                : `#1 Doorstep Appliance Repair in ${activeLoc ? `${activeLoc.name}${activeLoc.pincode ? ` (${activeLoc.pincode})` : ''}` : 'Barrackpur'} • 90-Min Response`}
             </span>
           </div>
 
@@ -281,48 +282,78 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
             </span>
           </div>
 
-          {/* HomeTriangle-Style Unified Search & Location Bar */}
-          <div className="hero-search-bar">
-            {/* Left Segment: Location Selector */}
-            <div className="hero-search-location">
-              <MapPin size={18} style={{ color: 'var(--color-primary)', flexShrink: 0 }} />
-              <div style={{ textAlign: 'left', flex: 1, minWidth: 0 }}>
-                <label
-                  htmlFor="hero-city-select"
-                  style={{ display: 'block', fontSize: '0.6875rem', fontWeight: 600, color: 'var(--color-text-light)', textTransform: 'uppercase', cursor: 'pointer' }}
-                >
-                  {isBn ? 'শহর / অবস্থান' : 'Location'}
-                </label>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  <select
-                    id="hero-city-select"
-                    name="selectedCity"
-                    aria-label={isBn ? 'শহর / অবস্থান নির্বাচন' : 'Select city or location'}
-                    value={selectedCity}
-                    onChange={handleCityChange}
-                    style={{
-                      border: 'none',
-                      background: 'transparent',
-                      fontSize: '0.875rem',
-                      fontWeight: 700,
-                      color: 'var(--color-text-main)',
-                      outline: 'none',
-                      cursor: 'pointer',
-                      width: '100%',
-                      padding: 0
-                    }}
-                  >
-                    {locations.map((loc) => (
-                      <option key={loc.id} value={loc.name}>
-                        {isBn ? loc.nameBn : loc.name}
-                      </option>
-                    ))}
-                  </select>
+          {/* 1. DEDICATED LOCATION SELECTION BOX (Separate Box Placed Above Search) */}
+          <div className="hero-location-card">
+            <div className="hero-location-header">
+              <div className="hero-location-badge">
+                <MapPin size={18} className="hero-location-icon" />
+                <div style={{ textAlign: 'left' }}>
+                  <span className="hero-location-title">
+                    {isBn ? 'আপনার এলাকা / সার্ভিস লোকেশন নির্বাচন করুন:' : 'Select Your Service Location:'}
+                  </span>
+                  <span className="hero-location-sub">
+                    {isBn ? '৯টি সক্রিয় ডোরস্টেপ হাব • ৯০ মিনিটে টেকনিশিয়ান' : '9 Active Doorstep Service Hubs • 90-Min Response'}
+                  </span>
                 </div>
+              </div>
+
+              {/* Location Select Dropdown with PIN codes */}
+              <div className="hero-location-select-wrap">
+                <select
+                  id="hero-city-select"
+                  name="selectedCity"
+                  aria-label={isBn ? 'শহর / অবস্থান নির্বাচন' : 'Select city or location'}
+                  value={selectedCity}
+                  onChange={handleCityChange}
+                  className="hero-location-select"
+                >
+                  {locations.map((loc) => (
+                    <option key={loc.id} value={loc.name}>
+                      {isBn
+                        ? `${loc.nameBn} - ${loc.pincode || ''}`
+                        : `${loc.name} - ${loc.pincode || ''}`}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown size={14} className="hero-location-chevron" />
               </div>
             </div>
 
-            {/* Right Segment: Search Trigger */}
+            {/* Quick 1-Tap Location Chips */}
+            <div className="hero-location-chips">
+              {locations.map((loc) => {
+                const isSelected = selectedCity === loc.name;
+                return (
+                  <button
+                    key={loc.id}
+                    type="button"
+                    onClick={() => {
+                      setSelectedCity(loc.name);
+                      if (typeof window !== 'undefined') {
+                        localStorage.setItem('preferred_location_id', loc.id);
+                        localStorage.setItem('preferred_location_slug', loc.hashSlug);
+                        localStorage.setItem('preferred_location_name', loc.name);
+                        window.dispatchEvent(
+                          new CustomEvent('appliance_location_changed', {
+                            detail: { id: loc.id, name: loc.name, nameBn: loc.nameBn, slug: loc.hashSlug }
+                          })
+                        );
+                      }
+                    }}
+                    className={`hero-location-chip ${isSelected ? 'active' : ''}`}
+                    title={isBn ? `${loc.nameBn} (${loc.pincode}) নির্বাচন করুন` : `Select ${loc.name} (${loc.pincode})`}
+                  >
+                    <MapPin size={11} />
+                    <span>{isBn ? loc.nameBn : loc.name}</span>
+                    {loc.pincode && <span className="hero-location-chip-pin">{loc.pincode}</span>}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* 2. STANDALONE SEARCH BOX (Placed Directly Below Location Box) */}
+          <div className="hero-search-bar">
             <div
               onClick={onOpenSearch}
               role="button"
@@ -330,16 +361,16 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
               onKeyDown={(e) => { if (e.key === 'Enter') onOpenSearch(); }}
               className="hero-search-trigger"
             >
-              <Search size={18} style={{ color: 'var(--color-text-light)', flexShrink: 0 }} />
+              <Search size={20} style={{ color: 'var(--color-primary)', flexShrink: 0 }} />
               <span className="hero-search-placeholder">
                 {isBn
-                  ? 'এসি গ্যাস রিফিল, ফ্রিজ ঠান্ডা না হওয়া, ওয়াশিং মেশিন মেরামত খুঁজুন...'
+                  ? 'এসি গ্যাস রিফিল, ফ্রিজ ঠান্ডা না হওয়া, ওয়াশিং মেশিন বা ওভেন মেরামত খুঁজুন...'
                   : 'Search for AC repair, fridge cooling, washing machine noise...'}
               </span>
 
               <button
                 type="button"
-                className="btn btn-primary btn-sm hero-search-button"
+                className="btn btn-primary hero-search-button"
               >
                 <span>{isBn ? 'খুঁজুন' : 'Search'}</span>
               </button>

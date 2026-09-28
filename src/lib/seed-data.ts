@@ -458,10 +458,123 @@ export const initialBrands: Brand[] = [
 ];
 
 export const initialLocations: LocationItem[] = [
-  { id: 'loc-kol', name: 'Kolkata', nameBn: 'কলকাতা', hashSlug: 'kolkata', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 1, isActive: true },
-  { id: 'loc-hwh', name: 'Howrah', nameBn: 'হাওড়া', hashSlug: 'howrah', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 2, isActive: true },
-  { id: 'loc-hgy', name: 'Hooghly', nameBn: 'হুগলি', hashSlug: 'hooghly', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 3, isActive: true },
-  { id: 'loc-bst', name: 'Barasat', nameBn: 'বারাসাত', hashSlug: 'barasat', state: 'West Bengal', stateBn: 'পশ্চিমবঙ্গ', sortOrder: 4, isActive: true }
+  {
+    id: 'loc-barrackpur',
+    name: 'Barrackpur',
+    nameBn: 'ব্যারাকপুর',
+    hashSlug: 'barrackpur',
+    pincode: '700120',
+    address: 'Station Road, Barrackpur, North 24 Parganas - 700120',
+    addressBn: 'স্টেশন রোড, ব্যারাকপুর, উত্তর ২৪ পরগনা - ৭০০১২০',
+    state: 'West Bengal',
+    stateBn: 'পশ্চিমবঙ্গ',
+    sortOrder: 1,
+    isActive: true
+  },
+  {
+    id: 'loc-behala',
+    name: 'Behala',
+    nameBn: 'বেহালা',
+    hashSlug: 'behala',
+    pincode: '700034',
+    address: 'Diamond Harbour Road, Behala Chowrasta, Kolkata - 700034',
+    addressBn: 'ডায়মন্ড হারবার রোড, বেহালা চৌরাস্তা, কলকাতা - ৭০০০৩৪',
+    state: 'West Bengal',
+    stateBn: 'পশ্চিমবঙ্গ',
+    sortOrder: 2,
+    isActive: true
+  },
+  {
+    id: 'loc-barasat',
+    name: 'Barasat',
+    nameBn: 'বারাসাত',
+    hashSlug: 'barasat',
+    pincode: '700124',
+    address: 'Champadali More, Barasat, North 24 Parganas - 700124',
+    addressBn: 'চাঁপাডালি মোড়, বারাসাত, উত্তর ২৪ পরগনা - ৭০০১২৪',
+    state: 'West Bengal',
+    stateBn: 'পশ্চিমবঙ্গ',
+    sortOrder: 3,
+    isActive: true
+  },
+  {
+    id: 'loc-habra',
+    name: 'Habra',
+    nameBn: 'হাবড়া',
+    hashSlug: 'habra',
+    pincode: '743263',
+    address: 'Jessore Road, Habra, North 24 Parganas - 743263',
+    addressBn: 'যশোর রোড, হাবড়া, উত্তর ২৪ পরগনা - ৭৪৩২৬৩',
+    state: 'West Bengal',
+    stateBn: 'পশ্চিমবঙ্গ',
+    sortOrder: 4,
+    isActive: true
+  },
+  {
+    id: 'loc-garia',
+    name: 'Garia',
+    nameBn: 'গড়িয়া',
+    hashSlug: 'garia',
+    pincode: '700084',
+    address: 'Garia Main Road, Mahamayatala, Kolkata - 700084',
+    addressBn: 'গড়িয়া মেইন রোড, মহামায়াতলা, কলকাতা - ৭০০০৮৪',
+    state: 'West Bengal',
+    stateBn: 'পশ্চিমবঙ্গ',
+    sortOrder: 5,
+    isActive: true
+  },
+  {
+    id: 'loc-newtown',
+    name: 'New Town',
+    nameBn: 'নিউ টাউন',
+    hashSlug: 'new-town',
+    pincode: '700156',
+    address: 'Action Area I, New Town, Rajarhat, Kolkata - 700156',
+    addressBn: 'অ্যাকশন এরিয়া ১, নিউ টাউন, রাজারহাট, কলকাতা - ৭০০১৫৬',
+    state: 'West Bengal',
+    stateBn: 'পশ্চিমবঙ্গ',
+    sortOrder: 6,
+    isActive: true
+  },
+  {
+    id: 'loc-dumdum',
+    name: 'Dumdum',
+    nameBn: 'দমদম',
+    hashSlug: 'dumdum',
+    pincode: '700028',
+    address: 'Nagerbazar More, Dumdum, Kolkata - 700028',
+    addressBn: 'নাগেরবাজার মোড়, দমদম, কলকাতা - ৭০০০২৮',
+    state: 'West Bengal',
+    stateBn: 'পশ্চিমবঙ্গ',
+    sortOrder: 7,
+    isActive: true
+  },
+  {
+    id: 'loc-parkstreet',
+    name: 'Park Street',
+    nameBn: 'পার্ক স্ট্রিট',
+    hashSlug: 'park-street',
+    pincode: '700016',
+    address: 'Mother Teresa Sarani, Park Street, Kolkata - 700016',
+    addressBn: 'মাদার টেরিজা সরণি, পার্ক স্ট্রিট, কলকাতা - ৭০০০১৬',
+    state: 'West Bengal',
+    stateBn: 'পশ্চিমবঙ্গ',
+    sortOrder: 8,
+    isActive: true
+  },
+  {
+    id: 'loc-howrah',
+    name: 'Howrah',
+    nameBn: 'হাওড়া',
+    hashSlug: 'howrah',
+    pincode: '711101',
+    address: 'GT Road, Howrah Maidan, Howrah - 711101',
+    addressBn: 'জি টি রোড, হাওড়া ময়দান, হাওড়া - ৭১১১০১',
+    state: 'West Bengal',
+    stateBn: 'পশ্চিমবঙ্গ',
+    sortOrder: 9,
+    isActive: true
+  }
 ];
 
 export const initialTrustItems: TrustItem[] = [

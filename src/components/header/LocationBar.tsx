@@ -14,8 +14,8 @@ interface LocationBarProps {
 export default function LocationBar({ locations, lang, phone = '+91 6291674186' }: LocationBarProps) {
   const t = getDictionary(lang);
   // Default to Kolkata immediately
-  const kolkata = locations.find((l) => l.id === 'loc-kol' || l.name.toLowerCase() === 'kolkata') || locations[0] || null;
-  const [selectedLoc, setSelectedLoc] = useState<LocationItem | null>(kolkata);
+  const defaultLoc = locations[0] || null;
+  const [selectedLoc, setSelectedLoc] = useState<LocationItem | null>(defaultLoc);
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -27,7 +27,7 @@ export default function LocationBar({ locations, lang, phone = '+91 6291674186' 
       match = locations.find((l) => l.id === savedId) || null;
     }
 
-    const active = match || kolkata;
+    const active = match || defaultLoc;
     if (active) {
       setSelectedLoc(active);
     }
@@ -40,7 +40,7 @@ export default function LocationBar({ locations, lang, phone = '+91 6291674186' 
     };
     window.addEventListener('appliance_location_changed', handleSync);
     return () => window.removeEventListener('appliance_location_changed', handleSync);
-  }, [locations, kolkata]);
+  }, [locations, defaultLoc]);
 
   const handleSelect = (loc: LocationItem) => {
     setSelectedLoc(loc);
@@ -85,7 +85,15 @@ export default function LocationBar({ locations, lang, phone = '+91 6291674186' 
             aria-expanded={isOpen}
             aria-label={t.selectLocation}
           >
-            <span>{selectedLoc ? (lang === 'bn' ? selectedLoc.nameBn : selectedLoc.name) : (lang === 'bn' ? 'কলকাতা' : 'Kolkata')}</span>
+            <span>
+              {selectedLoc
+                ? lang === 'bn'
+                  ? `${selectedLoc.nameBn}${selectedLoc.pincode ? ` (${selectedLoc.pincode})` : ''}`
+                  : `${selectedLoc.name}${selectedLoc.pincode ? ` (${selectedLoc.pincode})` : ''}`
+                : lang === 'bn'
+                ? 'ব্যারাকপুর (৭০০১২০)'
+                : 'Barrackpur (700120)'}
+            </span>
             <ChevronDown size={13} style={{ transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} />
           </button>
 
@@ -136,7 +144,14 @@ export default function LocationBar({ locations, lang, phone = '+91 6291674186' 
                         textAlign: 'left'
                       }}
                     >
-                      <span>{lang === 'bn' ? loc.nameBn : loc.name}</span>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <span>{lang === 'bn' ? loc.nameBn : loc.name}</span>
+                        {loc.pincode && (
+                          <span style={{ fontSize: '0.6875rem', opacity: 0.75, background: 'rgba(0,0,0,0.06)', padding: '1px 5px', borderRadius: '4px' }}>
+                            {loc.pincode}
+                          </span>
+                        )}
+                      </div>
                       {isCur && <Check size={14} />}
                     </button>
                   );

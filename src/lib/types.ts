@@ -73,7 +73,10 @@ export interface LocationItem {
   id: string;
   name: string;
   nameBn: string;
-  hashSlug: string; // e.g. 'kolkata', 'howrah'
+  hashSlug: string; // e.g. 'barrackpur', 'behala'
+  pincode?: string; // e.g. '700120'
+  address?: string;
+  addressBn?: string;
   state: string; // 'West Bengal'
   stateBn: string; // 'পশ্চিমবঙ্গ'
   sortOrder: number;
