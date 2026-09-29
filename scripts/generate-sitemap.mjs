@@ -22,7 +22,7 @@ const categorySlugs = [
   'fridge-repair',
   'washing-machine-repair',
   'microwave-repair',
-  'tv-repair'
+  'led-tv-repair'
 ];
 
 const blogSlugs = [

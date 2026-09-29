@@ -8,7 +8,7 @@
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
       <head>
-        <title>XML Sitemap | Appliance Seva</title>
+        <title>XML Sitemap | Home Appliance Care India</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style type="text/css">
@@ -189,10 +189,10 @@
           <div class="header">
             <div class="brand-row">
               <div class="logo-badge">
-                <img src="/logo-icon.svg" alt="Appliance Seva" width="32" height="32" style="width: 100%; height: 100%; object-fit: contain;" />
+                <img src="/logo-icon.svg" alt="Home Appliance Care India" width="32" height="32" style="width: 100%; height: 100%; object-fit: contain;" />
               </div>
               <div>
-                <h1>Appliance Seva • XML Sitemap</h1>
+                <h1>Home Appliance Care India • XML Sitemap</h1>
               </div>
             </div>
             <p>
@@ -286,7 +286,7 @@
 
           <!-- Footer -->
           <div class="footer">
-            <span>© 2026 Appliance Seva • Doorstep Home Appliance Repair in Kolkata &amp; West Bengal</span>
+            <span>© 2026 Home Appliance Care India • Doorstep Multi-Brand Appliance Repair in Kolkata &amp; West Bengal</span>
             <a href="/" target="_blank">Return to Homepage →</a>
           </div>
         </div>
