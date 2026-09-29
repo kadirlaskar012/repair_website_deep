@@ -102,6 +102,11 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
     image: `${SITE_URL}/icon-512.png`,
     logo: `${SITE_URL}/logo.svg`,
     slogan: 'Home Appliance Care India | Doorstep Home Appliance Repair Service Near Me | 90-Min Response • 90-Day Warranty',
+    hasMap: 'https://maps.app.goo.gl/ftLwKsuLEC5a3DZB9',
+    sameAs: [
+      'https://maps.app.goo.gl/ftLwKsuLEC5a3DZB9',
+      'https://www.google.com/maps/place/Home+Appliance+Care+India/@22.5001566,88.3178919,12z/data=!4m7!3m6!1s0x3a027ba01cb2e381:0xb455147ce984c87e!8m2!3d22.5001566!4d88.3178919'
+    ],
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Salt Lake Sector V',
@@ -112,8 +117,8 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '22.5804',
-      longitude: '88.4378'
+      latitude: '22.5001566',
+      longitude: '88.3178919'
     },
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -261,7 +266,69 @@ export function generateBrandSchema() {
     description: 'Premier multi-brand doorstep home appliance repair and maintenance service network.',
     url: SITE_URL,
     logo: `${SITE_URL}/logo.svg`,
-    slogan: 'India’s Trusted Doorstep Home Appliance Repair & Care Network'
+    slogan: 'India’s Trusted Doorstep Home Appliance Repair & Care Network',
+    sameAs: [
+      'https://maps.app.goo.gl/ftLwKsuLEC5a3DZB9'
+    ]
+  };
+}
+
+export function generateSiteNavigationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Home Appliance Care India Navigation',
+    itemListElement: [
+      {
+        '@type': 'SiteNavigationElement',
+        position: 1,
+        name: 'AC Repair & Servicing',
+        description: 'Doorstep air conditioner inspection, jet cleaning, gas charging and PCB repair in Kolkata & West Bengal.',
+        url: `${SITE_URL}/ac-repair`
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 2,
+        name: 'Refrigerator Repair',
+        description: 'Frost-free and inverter fridge repair, gas charging, defrost kit and compressor service.',
+        url: `${SITE_URL}/fridge-repair`
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 3,
+        name: 'Washing Machine Repair',
+        description: 'Front load and top load washing machine repair, drain error, drum rotation and motor service.',
+        url: `${SITE_URL}/washing-machine-repair`
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 4,
+        name: 'Microwave Oven Repair',
+        description: 'Convection and grill microwave heating, magnetron replacement and touch panel fixing.',
+        url: `${SITE_URL}/microwave-repair`
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 5,
+        name: 'Smart LED TV Repair',
+        description: 'LED TV display backlight replacement, black screen sound ok, and motherboard repair.',
+        url: `${SITE_URL}/led-tv-repair`
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 6,
+        name: '1,280+ Customer Reviews',
+        description: 'Verified 4.9★ ratings and customer testimonials across West Bengal.',
+        url: `${SITE_URL}/reviews`
+      },
+      {
+        '@type': 'SiteNavigationElement',
+        position: 7,
+        name: 'Track Booking Status',
+        description: 'Real-time live technician dispatch and service booking tracking desk.',
+        url: `${SITE_URL}/track`
+      }
+    ]
   };
 }
 

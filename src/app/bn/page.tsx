@@ -17,7 +17,8 @@ import {
   generateLocalBusinessSchema,
   generateFAQSchema,
   generateWebSiteSchema,
-  generateBrandSchema
+  generateBrandSchema,
+  generateSiteNavigationSchema
 } from '@/lib/seo';
 
 export const revalidate = 3600; // ISR 1 hour
@@ -59,6 +60,7 @@ export default async function BengaliHomePage() {
   const websiteSchema = generateWebSiteSchema();
   const brandSchema = generateBrandSchema();
   const faqSchema = generateFAQSchema(homeFaqs, 'bn');
+  const siteNavigationSchema = generateSiteNavigationSchema();
 
   return (
     <>
@@ -77,6 +79,10 @@ export default async function BengaliHomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }}
       />
       <HomePageView
         categories={categories}

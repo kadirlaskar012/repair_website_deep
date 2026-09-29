@@ -113,11 +113,35 @@ export default function Footer({ settings, categories, locations, lang }: Footer
                 ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India): পশ্চিমবঙ্গ ও কলকাতা জুড়ে ডোরস্টেপ এসি এবং হোম অ্যাপ্লায়েন্স মেরামত। প্রত্যয়িত দক্ষ টেকনিশিয়ান, ৯০ দিনের গ্যারান্টি এবং স্বচ্ছ ₹২৯৯ পরিদর্শন ফি।'
                 : 'Home Appliance Care India is India & West Bengal’s trusted doorstep air conditioner and home appliance repair network. Certified multi-brand engineers across 9 regional hubs, 90-day warranty, and fixed ₹299 inspection fee.'}
             </p>
-            <div style={{ fontSize: '0.8125rem', color: '#88A39C', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div style={{ fontSize: '0.8125rem', color: '#88A39C', display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Clock size={15} style={{ color: 'var(--color-accent)' }} />
                 <span>{isBn ? settings.workingHoursBn : settings.workingHours}</span>
               </div>
+              <a
+                href="https://maps.app.goo.gl/ftLwKsuLEC5a3DZB9"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  backgroundColor: 'rgba(52, 211, 153, 0.1)',
+                  border: '1px solid rgba(52, 211, 153, 0.3)',
+                  borderRadius: '8px',
+                  padding: '7px 12px',
+                  color: '#34D399',
+                  fontSize: '0.75rem',
+                  fontWeight: 600,
+                  textDecoration: 'none',
+                  width: 'fit-content',
+                  transition: 'background-color 0.2s'
+                }}
+              >
+                <MapPin size={14} />
+                <span>{isBn ? 'Google Maps-এ ভেরিফায়েড প্রোফাইল' : 'Verified on Google Maps'}</span>
+                <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>↗</span>
+              </a>
             </div>
           </div>
 
@@ -198,6 +222,24 @@ export default function Footer({ settings, categories, locations, lang }: Footer
                   <div style={{ marginTop: '6px', fontSize: '0.75rem', color: '#34D399', fontWeight: 600 }}>
                     {isBn ? '✓ ৯টি আঞ্চলিক শাখা অফিস ও সার্ভিস হাব' : '✓ 9 Regional Branch Hubs (Details below)'}
                   </div>
+                  <a
+                    href="https://maps.app.goo.gl/ftLwKsuLEC5a3DZB9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      marginTop: '6px',
+                      fontSize: '0.75rem',
+                      color: 'var(--color-accent)',
+                      textDecoration: 'underline',
+                      textUnderlineOffset: '3px'
+                    }}
+                  >
+                    <span>{isBn ? 'Google Maps-এ লোকেশন দেখুন' : 'View on Google Maps'}</span>
+                    <span style={{ fontSize: '0.7rem' }}>↗</span>
+                  </a>
                 </div>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>

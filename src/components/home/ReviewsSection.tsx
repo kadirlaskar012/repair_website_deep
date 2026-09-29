@@ -197,7 +197,7 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
             {/* Google Reviews Badge */}
             <a
-              href="https://www.google.com/search?q=Appliance+Seva+Kolkata"
+              href="https://maps.app.goo.gl/ftLwKsuLEC5a3DZB9"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"
