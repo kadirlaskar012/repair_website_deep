@@ -37,7 +37,7 @@ export async function generateMetadata({
   return buildPageMetadata({
     title: `${brandDetail.name} সার্ভিস সেন্টার সাপোর্ট ও মেরামত কলকাতা | ₹২৯৯ পরিদর্শন`,
     description: brandDetail.subheadlineBn,
-    path: `/bn/brands/${brandDetail.slug}`,
+    path: `/brands/${brandDetail.slug}`,
     lang: 'bn',
     keywords: brandDetail.searchedKeywords.join(', ')
   });

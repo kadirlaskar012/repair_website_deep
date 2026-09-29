@@ -104,6 +104,11 @@ export default function RootLayout({
                   } else {
                     document.documentElement.setAttribute('data-theme', 'light');
                   }
+                  if (window.location.pathname.startsWith('/bn')) {
+                    document.documentElement.setAttribute('lang', 'bn');
+                  } else {
+                    document.documentElement.setAttribute('lang', 'en');
+                  }
                 } catch(e) {}
               })();
             `

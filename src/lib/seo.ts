@@ -20,7 +20,9 @@ export function buildPageMetadata({
   noIndex?: boolean;
   keywords?: string | string[];
 }): Metadata {
-  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+  const rawPath = path.startsWith('/') ? path : `/${path}`;
+  const strippedPath = rawPath.replace(/^\/bn(\/|$)/, '/');
+  const cleanPath = strippedPath.startsWith('/') ? strippedPath : `/${strippedPath}`;
   const enUrl = `${SITE_URL}${cleanPath === '/' ? '' : cleanPath}`;
   const bnUrl = `${SITE_URL}/bn${cleanPath === '/' ? '' : cleanPath}`;
   const canonicalUrl = lang === 'bn' ? bnUrl : enUrl;

@@ -63,6 +63,43 @@ const nextConfig: NextConfig = {
             value: 'public, max-age=31536000, immutable'
           }
         ]
+      },
+      {
+        source: '/bn/:path*',
+        headers: [
+          {
+            key: 'Content-Language',
+            value: 'bn'
+          }
+        ]
+      },
+      {
+        source: '/bn',
+        headers: [
+          {
+            key: 'Content-Language',
+            value: 'bn'
+          }
+        ]
+      }
+    ];
+  },
+  async redirects() {
+    return [
+      {
+        source: '/bn/bn/:path*',
+        destination: '/bn/:path*',
+        permanent: true
+      },
+      {
+        source: '/tv-repair',
+        destination: '/led-tv-repair',
+        permanent: true
+      },
+      {
+        source: '/bn/tv-repair',
+        destination: '/bn/led-tv-repair',
+        permanent: true
       }
     ];
   }
