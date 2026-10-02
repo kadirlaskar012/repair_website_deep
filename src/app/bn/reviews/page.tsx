@@ -54,6 +54,21 @@ export default async function BengaliReviewsPage() {
     },
     review: reviews.slice(0, 15).map((r) => ({
       '@type': 'Review',
+      itemReviewed: {
+        '@type': 'HomeAndConstructionBusiness',
+        name: 'Home Appliance Care India',
+        url: 'https://www.applianceseva.com/bn',
+        telephone: settings.phone,
+        priceRange: '₹₹',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Salt Lake Sector V',
+          addressLocality: 'Kolkata',
+          addressRegion: 'West Bengal',
+          postalCode: '700091',
+          addressCountry: 'IN'
+        }
+      },
       author: {
         '@type': 'Person',
         name: r.customerName

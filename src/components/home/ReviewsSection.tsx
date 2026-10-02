@@ -6,6 +6,8 @@ import { Review, Language } from '@/lib/types';
 import { getDictionary } from '@/lib/i18n';
 import WriteReviewModal from '@/components/modal/WriteReviewModal';
 
+import { sortReviewsNewestFirst } from '@/lib/review-utils';
+
 interface ReviewsSectionProps {
   reviews: Review[];
   lang: Language;
@@ -15,18 +17,35 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
   const t = getDictionary(lang);
   const isBn = lang === 'bn';
 
-  const [reviewsList, setReviewsList] = useState<Review[]>(reviews);
+  const [reviewsList, setReviewsList] = useState<Review[]>(() => sortReviewsNewestFirst(reviews || []));
   const [selectedFilter, setSelectedFilter] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [visibleCount, setVisibleCount] = useState<number>(18);
   const [isWriteModalOpen, setIsWriteModalOpen] = useState(false);
 
-  // Keep reviewsList synced with reviews prop
+  // Keep reviewsList synced with reviews prop and always sorted newest first
   useEffect(() => {
     if (reviews && reviews.length > 0) {
-      setReviewsList(reviews);
+      setReviewsList(sortReviewsNewestFirst(reviews));
     }
   }, [reviews]);
+
+  // Real-time client mount sync to ensure newly submitted reviews appear immediately
+  useEffect(() => {
+    let isMounted = true;
+    fetch('/api/reviews')
+      .then((res) => res.json())
+      .then((data) => {
+        if (isMounted && data.success && Array.isArray(data.reviews) && data.reviews.length > 0) {
+          setReviewsList(sortReviewsNewestFirst(data.reviews));
+        }
+      })
+      .catch((err) => console.warn('Could not refresh reviews:', err));
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   // Filter tabs definition covering all categories
   const filterTabs = [
@@ -82,32 +101,13 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
   };
 
   const handleReviewSubmitted = (newReview: Review) => {
-    setReviewsList([newReview, ...reviewsList]);
-  };
-
-  // Structured Data Schema for Google Review Snippets
-  const reviewSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: isBn ? 'অ্যাপ্লায়েন্স সেবা' : 'Appliance Seva',
-    image: 'https://applianceseva.com/logo-icon.svg',
-    telephone: '+916291674186',
-    priceRange: '₹₹',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Salt Lake Sector V',
-      addressLocality: 'Kolkata',
-      addressRegion: 'West Bengal',
-      postalCode: '700091',
-      addressCountry: 'IN'
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '1280',
-      bestRating: '5',
-      worstRating: '1'
-    }
+    // Put newly posted review at the very top (sobar age dekhabe)
+    setReviewsList((prev) => {
+      const remaining = prev.filter((r) => r.id !== newReview.id);
+      return sortReviewsNewestFirst([newReview, ...remaining]);
+    });
+    setSelectedFilter('all');
+    setSearchQuery('');
   };
 
   return (
@@ -119,12 +119,6 @@ export default function ReviewsSection({ reviews, lang }: ReviewsSectionProps) {
         borderTop: '1px solid var(--color-border-light)'
       }}
     >
-      {/* Schema.org Aggregate Rating Script for SEO Google Rich Snippet */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
-      />
-
       <div className="container">
         {/* Section Header */}
         <div className="section-title-wrap" style={{ marginBottom: '32px' }}>

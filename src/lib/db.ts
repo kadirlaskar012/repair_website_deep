@@ -24,6 +24,8 @@ import {
   initialReviews,
   initialBlogPosts
 } from './seed-data';
+import { sortReviewsNewestFirst } from './review-utils';
+export { sortReviewsNewestFirst } from './review-utils';
 import bcrypt from 'bcryptjs';
 import fs from 'fs';
 import path from 'path';
@@ -71,15 +73,15 @@ function loadPersistedReviews(): Review[] {
     if (fs.existsSync(REVIEWS_FILE)) {
       const content = fs.readFileSync(REVIEWS_FILE, 'utf-8');
       const parsed = JSON.parse(content);
-      if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      if (Array.isArray(parsed) && parsed.length > 0) return sortReviewsNewestFirst(parsed);
     } else {
       // First-time initialization
-      fs.writeFileSync(REVIEWS_FILE, JSON.stringify(initialReviews, null, 2), 'utf-8');
+      fs.writeFileSync(REVIEWS_FILE, JSON.stringify(sortReviewsNewestFirst(initialReviews), null, 2), 'utf-8');
     }
   } catch (e) {
     console.warn('Could not read persisted reviews file:', e);
   }
-  return [...initialReviews];
+  return sortReviewsNewestFirst(initialReviews);
 }
 
 function savePersistedReviews(reviews: Review[]) {
@@ -567,9 +569,9 @@ export async function getReviews(): Promise<Review[]> {
         }));
         await col.bulkWrite(bulkOps);
       }
-      const docs = await col.find({ isActive: true }).sort({ sortOrder: 1, date: -1 }).toArray();
+      const docs = await col.find({ isActive: true }).toArray();
       if (docs && docs.length > 0) {
-        const result = docs.map(({ _id, ...rest }) => rest as Review);
+        const result = sortReviewsNewestFirst(docs.map(({ _id, ...rest }) => rest as Review));
         reviewsCache = { data: result, timestamp: now };
         return result;
       }
@@ -577,7 +579,7 @@ export async function getReviews(): Promise<Review[]> {
       console.warn('MongoDB getReviews error, fallback to memory:', e);
     }
   }
-  const result = inMemory.reviews.filter((r) => r.isActive).sort((a, b) => a.sortOrder - b.sortOrder);
+  const result = sortReviewsNewestFirst(inMemory.reviews.filter((r) => r.isActive));
   reviewsCache = { data: result, timestamp: now };
   return result;
 }
@@ -587,15 +589,15 @@ export async function getAllReviewsAdmin(): Promise<Review[]> {
   if (mongo) {
     try {
       const col = mongo.collection('reviews');
-      const docs = await col.find({}).sort({ sortOrder: 1, date: -1 }).toArray();
+      const docs = await col.find({}).toArray();
       if (docs && docs.length > 0) {
-        return docs.map(({ _id, ...rest }) => rest as Review);
+        return sortReviewsNewestFirst(docs.map(({ _id, ...rest }) => rest as Review));
       }
     } catch (e) {
       console.warn('MongoDB getAllReviewsAdmin error, fallback to memory:', e);
     }
   }
-  return inMemory.reviews;
+  return sortReviewsNewestFirst(inMemory.reviews);
 }
 
 export async function saveReview(review: Review): Promise<Review> {
@@ -604,8 +606,9 @@ export async function saveReview(review: Review): Promise<Review> {
   if (idx >= 0) {
     inMemory.reviews[idx] = review;
   } else {
-    inMemory.reviews.push(review);
+    inMemory.reviews.unshift(review);
   }
+  inMemory.reviews = sortReviewsNewestFirst(inMemory.reviews);
   savePersistedReviews(inMemory.reviews);
 
   const mongo = await getMongoDb();
@@ -661,11 +664,12 @@ export async function createCustomerReview(data: {
     isVerified: true,
     isDemo: false,
     date: nowStr,
-    isActive: true,
+    isActive: true, // Auto published immediately without admin approval
     sortOrder: 0
   };
 
-  inMemory.reviews.unshift(newReview);
+  // Prepend and sort newest first
+  inMemory.reviews = sortReviewsNewestFirst([newReview, ...inMemory.reviews.filter((r) => r.id !== newReview.id)]);
   savePersistedReviews(inMemory.reviews);
 
   const mongo = await getMongoDb();

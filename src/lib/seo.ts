@@ -356,13 +356,6 @@ export function generateServiceSchema(category: Category, lang: Language, phone?
       price: '299',
       priceCurrency: 'INR',
       description: 'Standard doorstep inspection and diagnostic assessment fee'
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '520',
-      bestRating: '5',
-      worstRating: '1'
     }
   };
 }

@@ -199,8 +199,8 @@ export default function WriteReviewModal({
               </h3>
               <p style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)', lineHeight: 1.5 }}>
                 {isBn
-                  ? 'আপনার মূল্যবান রিভিউটি সফলভাবে প্রকাশিত হয়েছে। এটি অন্যান্য গ্রাহকদের সিদ্ধান্ত নিতে সাহায্য করবে।'
-                  : 'Your review has been successfully submitted and helps families across West Bengal find verified care.'}
+                  ? 'আপনার মূল্যবান রিভিউটি সরাসরি ওয়েবসাইটে লাইভ প্রকাশিত হয়েছে এবং সবার আগে প্রদর্শিত হচ্ছে।'
+                  : 'Your review has been published live on the website and is now featured at the top!'}
               </p>
             </div>
           ) : (

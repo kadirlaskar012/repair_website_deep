@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
 import { z } from 'zod';
-import { getReviews, createCustomerReview } from '@/lib/db';
+import { getReviews, createCustomerReview, sortReviewsNewestFirst } from '@/lib/db';
+
+export const dynamic = 'force-dynamic';
 
 const reviewSubmissionSchema = z.object({
   customerName: z.string().min(2, 'Name must be at least 2 characters'),
@@ -15,7 +17,14 @@ const reviewSubmissionSchema = z.object({
 export async function GET() {
   try {
     const reviews = await getReviews();
-    return NextResponse.json({ success: true, reviews });
+    return NextResponse.json(
+      { success: true, reviews: sortReviewsNewestFirst(reviews) },
+      {
+        headers: {
+          'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate'
+        }
+      }
+    );
   } catch (error: any) {
     return NextResponse.json(
       { success: false, error: error.message || 'Failed to fetch reviews' },
@@ -29,6 +38,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const validated = reviewSubmissionSchema.parse(body);
 
+    // Automatically published live on website without requiring admin approval
     const review = await createCustomerReview({
       customerName: validated.customerName,
       location: validated.location,
@@ -47,11 +57,18 @@ export async function POST(req: NextRequest) {
       // Ignore if called in environment without active Next router context
     }
 
-    return NextResponse.json({
-      success: true,
-      message: 'Review submitted successfully',
-      review
-    });
+    return NextResponse.json(
+      {
+        success: true,
+        message: 'Review posted live to website successfully without admin approval',
+        review
+      },
+      {
+        headers: {
+          'Cache-Control': 'no-store'
+        }
+      }
+    );
   } catch (error: any) {
     if (error instanceof z.ZodError) {
       const issueMsg = error.issues?.[0]?.message || 'Validation failed';

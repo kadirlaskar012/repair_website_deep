@@ -21,7 +21,7 @@ import {
   generateSiteNavigationSchema
 } from '@/lib/seo';
 
-export const revalidate = 3600; // ISR 1 hour
+export const revalidate = 60; // ISR: revalidated every 60s
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
