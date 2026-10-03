@@ -416,24 +416,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/blue-star" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/brands/hitachi</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/hitachi" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/hitachi" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/hitachi" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/bn/brands/hitachi</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/hitachi" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/hitachi" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/hitachi" />
-  </url>
-  <url>
     <loc>https://www.applianceseva.com/brands/daikin</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -450,42 +432,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/daikin" />
     <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/daikin" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/daikin" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/brands/carrier</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/carrier" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/carrier" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/carrier" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/bn/brands/carrier</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/carrier" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/carrier" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/carrier" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/brands/voltas</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/voltas" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/voltas" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/voltas" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/bn/brands/voltas</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/voltas" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/voltas" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/voltas" />
   </url>
   <url>
     <loc>https://www.applianceseva.com/brands/mitsubishi</loc>
@@ -506,40 +452,76 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/mitsubishi" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/brands/panasonic</loc>
+    <loc>https://www.applianceseva.com/brands/ifb</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/panasonic" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/panasonic" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/panasonic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/ifb" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/ifb" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/ifb" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/bn/brands/panasonic</loc>
+    <loc>https://www.applianceseva.com/bn/brands/ifb</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/panasonic" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/panasonic" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/panasonic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/ifb" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/ifb" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/ifb" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/brands/lg</loc>
+    <loc>https://www.applianceseva.com/brands/whirlpool</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/lg" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/lg" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/lg" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/whirlpool" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/whirlpool" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/whirlpool" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/bn/brands/lg</loc>
+    <loc>https://www.applianceseva.com/bn/brands/whirlpool</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/lg" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/lg" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/lg" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/whirlpool" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/whirlpool" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/whirlpool" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/hitachi</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/hitachi" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/hitachi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/hitachi" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/hitachi</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/hitachi" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/hitachi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/hitachi" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/voltas</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/voltas" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/voltas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/voltas" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/voltas</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/voltas" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/voltas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/voltas" />
   </url>
   <url>
     <loc>https://www.applianceseva.com/brands/samsung</loc>
@@ -560,22 +542,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/samsung" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/brands/whirlpool</loc>
+    <loc>https://www.applianceseva.com/brands/lg</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/whirlpool" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/whirlpool" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/whirlpool" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/lg" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/lg" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/lg" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/bn/brands/whirlpool</loc>
+    <loc>https://www.applianceseva.com/bn/brands/lg</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/whirlpool" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/whirlpool" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/whirlpool" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/lg" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/lg" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/lg" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/carrier</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/carrier" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/carrier" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/carrier" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/carrier</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/carrier" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/carrier" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/carrier" />
   </url>
   <url>
     <loc>https://www.applianceseva.com/brands/godrej</loc>
@@ -614,22 +614,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/haier" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/brands/ifb</loc>
+    <loc>https://www.applianceseva.com/brands/panasonic</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/ifb" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/ifb" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/ifb" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/panasonic" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/panasonic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/panasonic" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/bn/brands/ifb</loc>
+    <loc>https://www.applianceseva.com/bn/brands/panasonic</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/ifb" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/ifb" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/ifb" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/panasonic" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/panasonic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/panasonic" />
   </url>
   <url>
     <loc>https://www.applianceseva.com/brands/bosch</loc>
@@ -668,22 +668,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/siemens" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/brands/electrolux</loc>
+    <loc>https://www.applianceseva.com/brands/sony</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/electrolux" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/electrolux" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/electrolux" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/sony" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/sony" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/sony" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/bn/brands/electrolux</loc>
+    <loc>https://www.applianceseva.com/bn/brands/sony</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/electrolux" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/electrolux" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/electrolux" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/sony" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/sony" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/sony" />
   </url>
   <url>
     <loc>https://www.applianceseva.com/brands/toshiba</loc>
@@ -722,94 +722,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/tcl" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/brands/sony</loc>
+    <loc>https://www.applianceseva.com/brands/mi</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/sony" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/sony" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/sony" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/mi" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/mi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/mi" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/bn/brands/sony</loc>
+    <loc>https://www.applianceseva.com/bn/brands/mi</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/sony" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/sony" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/sony" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/mi" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/mi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/mi" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/brands/onida</loc>
+    <loc>https://www.applianceseva.com/brands/oneplus</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/onida" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/onida" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/onida" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/oneplus" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/oneplus" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/oneplus" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/bn/brands/onida</loc>
+    <loc>https://www.applianceseva.com/bn/brands/oneplus</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/onida" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/onida" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/onida" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/brands/sansui</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/sansui" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/sansui" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/sansui" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/bn/brands/sansui</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/sansui" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/sansui" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/sansui" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/brands/bpl</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/bpl" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/bpl" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/bpl" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/bn/brands/bpl</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/bpl" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/bpl" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/bpl" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/brands/videocon</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/videocon" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/videocon" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/videocon" />
-  </url>
-  <url>
-    <loc>https://www.applianceseva.com/bn/brands/videocon</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/videocon" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/videocon" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/videocon" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/oneplus" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/oneplus" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/oneplus" />
   </url>
   <url>
     <loc>https://www.applianceseva.com/brands/kelvinator</loc>
@@ -830,40 +776,94 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/kelvinator" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/brands/singer</loc>
+    <loc>https://www.applianceseva.com/brands/electrolux</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/singer" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/singer" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/singer" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/electrolux" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/electrolux" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/electrolux" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/bn/brands/singer</loc>
+    <loc>https://www.applianceseva.com/bn/brands/electrolux</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/singer" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/singer" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/singer" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/electrolux" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/electrolux" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/electrolux" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/brands/kenstar</loc>
+    <loc>https://www.applianceseva.com/brands/kent</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/kenstar" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/kenstar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/kenstar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/kent" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/kent" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/kent" />
   </url>
   <url>
-    <loc>https://www.applianceseva.com/bn/brands/kenstar</loc>
+    <loc>https://www.applianceseva.com/bn/brands/kent</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/kenstar" />
-    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/kenstar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/kenstar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/kent" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/kent" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/kent" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/aquaguard</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/aquaguard" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/aquaguard" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/aquaguard" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/aquaguard</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/aquaguard" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/aquaguard" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/aquaguard" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/livpure</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/livpure" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/livpure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/livpure" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/livpure</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/livpure" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/livpure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/livpure" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/pureit</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/pureit" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/pureit" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/pureit" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/pureit</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/pureit" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/pureit" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/pureit" />
   </url>
   <url>
     <loc>https://www.applianceseva.com/brands/akai</loc>
@@ -882,6 +882,42 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/akai" />
     <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/akai" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/akai" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/videocon</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/videocon" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/videocon" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/videocon" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/videocon</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/videocon" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/videocon" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/videocon" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/onida</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/onida" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/onida" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/onida" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/onida</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/onida" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/onida" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/onida" />
   </url>
   <url>
     <loc>https://www.applianceseva.com/brands/midea</loc>

@@ -38,11 +38,12 @@ const blogSlugs = [
 ];
 
 const brandSlugs = [
-  'o-general', 'lloyd', 'blue-star', 'hitachi', 'daikin', 'carrier', 'voltas',
-  'mitsubishi', 'panasonic', 'lg', 'samsung', 'whirlpool', 'godrej', 'haier',
-  'ifb', 'bosch', 'siemens', 'electrolux', 'toshiba', 'tcl', 'sony', 'onida',
-  'sansui', 'bpl', 'videocon', 'kelvinator', 'singer', 'kenstar',
-  'akai', 'midea', 'marq', 'croma'
+  'o-general', 'lloyd', 'blue-star', 'daikin', 'mitsubishi', 'ifb',
+  'whirlpool', 'hitachi', 'voltas', 'samsung', 'lg', 'carrier',
+  'godrej', 'haier', 'panasonic', 'bosch', 'siemens', 'sony',
+  'toshiba', 'tcl', 'mi', 'oneplus', 'kelvinator', 'electrolux',
+  'kent', 'aquaguard', 'livpure', 'pureit', 'akai', 'videocon',
+  'onida', 'midea', 'marq', 'croma'
 ];
 
 const locationSlugs = [
