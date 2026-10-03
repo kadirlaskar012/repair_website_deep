@@ -139,7 +139,7 @@ export default function HomePageView({
           lang={lang}
         />
 
-        {/* Pricing / Diagnosis Explanation (₹299 Visit Fee) */}
+        {/* Pricing / Diagnosis Explanation */}
         <PricingSection
           lang={lang}
           onOpenBooking={handleDirectBooking}

@@ -240,7 +240,7 @@ export default function CategoryPageView({
                   ))}
                 </div>
 
-                {/* Fixed ₹299 Visit Badge */}
+                {/* Transparent Pricing Badge */}
                 <div
                   style={{
                     display: 'inline-flex',
@@ -256,9 +256,9 @@ export default function CategoryPageView({
                     marginBottom: '24px'
                   }}
                 >
-                  <span>{isBn ? 'স্থির ডোরস্টেপ ভিজিট ও রোগ নির্ণয় ফি:' : 'Fixed Doorstep Inspection Fee:'}</span>
-                  <strong style={{ color: '#000000', fontSize: '1.0625rem', fontWeight: 800 }}>₹299</strong>
-                  <span style={{ fontSize: '0.75rem', opacity: 0.85 }}>({isBn ? 'স্বচ্ছ কোটেশন' : 'Upfront Quote'})</span>
+                  <span>{isBn ? 'স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জ:' : 'Transparent Pricing:'}</span>
+                  <strong style={{ color: '#000000', fontSize: '0.9375rem', fontWeight: 800 }}>{isBn ? 'ফোনে কথা বলে জানুন' : 'Discuss on Call'}</strong>
+                  <span style={{ fontSize: '0.75rem', opacity: 0.85 }}>({isBn ? 'কাজের আগে স্পষ্ট কোটেশন' : 'Upfront Quote Before Work'})</span>
                 </div>
 
                 {/* CTAs: 3 channels (Book, Call, WhatsApp) */}
@@ -404,7 +404,7 @@ export default function CategoryPageView({
                 </div>
                 <div>
                   <div style={{ fontWeight: 800, fontSize: '0.875rem', color: 'var(--color-text-main)' }}>
-                    {isBn ? 'স্বচ্ছ ₹২৯৯ পরিদর্শন' : '₹299 Upfront Visit'}
+                    {isBn ? 'স্বচ্ছ ও সাশ্রয়ী ভিজিট' : 'Transparent Upfront Pricing'}
                   </div>
                   <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
                     {isBn ? 'কোনো গোপন চার্জ নেই' : 'No hidden fee protocol'}
@@ -480,7 +480,7 @@ export default function CategoryPageView({
                     {isBn ? 'ডোরস্টেপ ডায়াগনোসিস' : 'Doorstep Visit'}
                   </h4>
                   <p style={{ fontSize: '0.78125rem', color: 'var(--color-text-muted)', lineHeight: 1.45 }}>
-                    {isBn ? 'দক্ষ টেকনিশিয়ান ₹২৯৯ ফিতে আপনার বাড়ি এসে সমস্যা চিহ্নিত করবেন।' : 'Certified tech arrives to inspect at ₹299 flat fee.'}
+                    {isBn ? 'দক্ষ টেকনিশিয়ান আপনার বাড়ি এসে সমস্যা চিহ্নিত করবেন।' : 'Certified tech arrives to inspect and test all components.'}
                   </p>
                 </div>
 
@@ -510,7 +510,7 @@ export default function CategoryPageView({
               </div>
             </div>
 
-            {/* 4. ₹299 Pricing / Diagnosis Explanation Box */}
+            {/* 4. Pricing / Diagnosis Explanation Box */}
             <div
               style={{
                 backgroundColor: 'var(--color-bg-card)',
@@ -526,7 +526,7 @@ export default function CategoryPageView({
                   {isBn ? 'মূল্য নীতি' : 'Pricing Protocol'}
                 </span>
                 <span style={{ fontSize: '0.875rem', fontWeight: 700, color: 'var(--color-text-main)' }}>
-                  {isBn ? 'স্বচ্ছ ₹২৯৯ পরিদর্শন ও ডায়াগনোসিস ফি' : 'Transparent ₹299 Inspection & Diagnosis Fee'}
+                  {isBn ? 'স্বচ্ছ ও সাশ্রয়ী মূল্য নির্ধারণ' : 'Transparent Upfront Pricing'}
                 </span>
               </div>
 
@@ -547,10 +547,10 @@ export default function CategoryPageView({
               >
                 <AlertCircle size={20} style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <strong>{isBn ? 'গুরুত্বপূর্ণ বিজ্ঞপ্তি:' : 'Important Notice:'}</strong>{' '}
+                  <strong>{isBn ? 'স্বচ্ছ মূল্য ব্যবস্থা:' : 'Pricing Transparency:'}</strong>{' '}
                   {isBn
-                    ? '₹২৯৯ শুধুমাত্র বাড়িতে এসে টেকনিশিয়ানের পুঙ্খানুপুঙ্খ পরিদর্শন এবং রোগ নির্ণয় ফি। কোনো মেরামতের কাজ শুরু করার আগে টেকনিশিয়ান স্পটেই সম্পূর্ণ কোটেশন জানিয়ে আপনার অনুমোদন নেবেন।'
-                    : '₹299 is ONLY the visit and diagnosis fee. Repair cost is confirmed after technician diagnosis and strictly upon customer approval before any repair work begins.'}
+                    ? 'আমরা সম্পূর্ণ স্বচ্ছ ও সাশ্রয়ী মূল্যে বিশ্বাসী। আপনি ফোনে কথা বলে প্রাথমিক খরচের ধারণা নিতে পারেন। টেকনিশিয়ান এসে রোগ নির্ণয় করে কাজ শুরুর আগেই সম্পূর্ণ কোটেশন জানিয়ে আপনার অনুমোদন নেবেন।'
+                    : 'We believe in 100% upfront pricing transparency. You can discuss the issue over phone for an initial estimate, and our technician provides a confirmed quotation upon inspection before any work begins.'}
                 </div>
               </div>
 
@@ -687,8 +687,8 @@ export default function CategoryPageView({
               </h3>
               <p style={{ fontSize: '1rem', color: '#D4E8E3', maxWidth: '620px', margin: '0 auto 28px auto', lineHeight: 1.5 }}>
                 {isBn
-                  ? 'কলকাতা ও পশ্চিমবঙ্গের সমস্ত প্রধান জেলায় একই দিনে অভিজ্ঞ টেকনিশিয়ান পাওয়া যায়। মাত্র ₹২৯৯ পরিদর্শনে সমস্যা চিহ্নিত করুন।'
-                  : 'Same-day technician visit across Kolkata and major West Bengal districts. Get complete multi-point diagnosis at just ₹299.'}
+                  ? 'কলকাতা ও পশ্চিমবঙ্গের সমস্ত প্রধান জেলায় একই দিনে অভিজ্ঞ টেকনিশিয়ান পাওয়া যায়। সাশ্রয়ী পরিদর্শনে দ্রুত সমস্যা সমাধান করুন।'
+                  : 'Same-day technician visit across Kolkata and major West Bengal districts. Get complete multi-point diagnosis with transparent pricing.'}
               </p>
 
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', gap: '14px' }}>
@@ -762,7 +762,7 @@ export default function CategoryPageView({
           style={{ flex: 1, padding: '10px 12px', fontSize: '0.875rem' }}
         >
           <Calendar size={16} />
-          <span>{isBn ? 'বুকিং (₹২৯৯)' : 'Book @ ₹299'}</span>
+          <span>{isBn ? 'সার্ভিস বুক করুন' : 'Book Service'}</span>
         </button>
         <a
           href={`tel:${settings.phone}`}

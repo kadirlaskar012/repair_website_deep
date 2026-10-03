@@ -665,7 +665,7 @@ export default function AdminBookingsPage() {
 
                   <div>
                     <label style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--color-text-light)', textTransform: 'uppercase' }}>Inspection Protocol</label>
-                    <div style={{ fontWeight: 700, color: '#A16207' }}>Fixed ₹299 Doorstep Diagnosis</div>
+                    <div style={{ fontWeight: 700, color: '#A16207' }}>Standard Doorstep Diagnosis & Inspection</div>
                   </div>
                 </div>
 

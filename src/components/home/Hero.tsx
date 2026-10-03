@@ -92,7 +92,7 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
     },
     {
       id: 'diagnosis',
-      title: isBn ? '₹২৯৯ পরিদর্শন' : '₹299 Diagnosis',
+      title: isBn ? 'স্বচ্ছ পরিদর্শন' : 'Doorstep Diagnosis',
       slug: '#pricing',
       icon: Sparkles,
       color: '#D97706',
@@ -227,8 +227,8 @@ export default function Hero({ categories, locations, lang, onOpenSearch, onOpen
             }}
           >
             {isBn
-              ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India): আপনার নিকটবর্তী (near me) বিশ্বস্ত টেকনিশিয়ান নেটওয়ার্ক। ৪.৯★ রেটিং ও গ্রাহক রিভিউ (reviews) সহ এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভি মেরামত মাত্র ₹২৯৯ পরিদর্শনে ও ৯০ দিনের ওয়ারেন্টি।'
-              : 'Welcome to Home Appliance Care India — India’s certified doorstep technician network near me with 4.9★ verified customer reviews. Fast 90-minute arrival across 9 regional hubs at flat ₹299 inspection.'}
+              ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India): আপনার নিকটবর্তী (near me) বিশ্বস্ত টেকনিশিয়ান নেটওয়ার্ক। ৪.৯★ রেটিং ও গ্রাহক রিভিউ (reviews) সহ এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভি মেরামত স্বচ্ছ সাশ্রয়ী পরিদর্শনে ও ৯০ দিনের ওয়ারেন্টি।'
+              : 'Welcome to Home Appliance Care India — India’s certified doorstep technician network near me with 4.9★ verified customer reviews. Fast 90-minute arrival across 9 regional hubs with transparent pricing.'}
           </p>
 
           {/* Quick Trust Highlights linking to Reviews & Near Me */}

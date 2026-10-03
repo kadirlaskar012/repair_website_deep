@@ -32,7 +32,7 @@ export default function ProblemsList({
             </p>
           </div>
           <span style={{ fontSize: '0.8125rem', fontWeight: 700, color: 'var(--color-primary-dark)', background: 'var(--color-primary-light)', padding: '4px 10px', borderRadius: '4px' }}>
-            {isBn ? 'স্থির ₹২৯৯ ডায়াগনোসিস' : 'Flat ₹299 Diagnosis'}
+            {isBn ? 'স্বচ্ছ ডোরস্টেপ ডায়াগনোসিস' : 'Doorstep Diagnosis & Quote'}
           </span>
         </div>
       </div>

@@ -315,7 +315,7 @@ export default function BrandPageView({
                 <CheckCircle2 size={20} style={{ color: '#16a34a', flexShrink: 0 }} />
                 <div style={{ textAlign: 'left' }}>
                   <div style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-text)' }}>
-                    {isBn ? 'মাত্র ₹২৯৯ পরিদর্শন ফি' : 'Flat ₹299 Visit Fee'}
+                    {isBn ? 'স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জ' : 'Transparent & Affordable Rates'}
                   </div>
                   <div style={{ fontSize: '0.75rem', color: 'var(--color-text-light)' }}>
                     {isBn ? 'স্বচ্ছ ও আগাম মূল্য' : 'Transparent Diagnostic'}
@@ -521,7 +521,7 @@ export default function BrandPageView({
                 }}
               >
                 <Calendar size={16} />
-                <span>{isBn ? `₹২৯৯ পরিদর্শনে ${brand.name} মেরামত বুক করুন` : `Book ₹299 Diagnostic for ${brand.name}`}</span>
+                <span>{isBn ? `${brand.name} ডোরস্টেপ মেরামত বুক করুন` : `Book Doorstep Repair for ${brand.name}`}</span>
               </button>
             </div>
           </div>
@@ -661,7 +661,7 @@ export default function BrandPageView({
                   2
                 </div>
                 <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--color-text)', marginBottom: '8px' }}>
-                  {isBn ? '২. মাত্র ₹২৯৯ ডায়াগনোসিস' : '2. Flat ₹299 Diagnosis'}
+                  {isBn ? '২. ডোরস্টেপ রোগ নির্ণয়' : '2. Doorstep Diagnosis'}
                 </h3>
                 <p style={{ fontSize: '0.88rem', color: 'var(--color-text-muted)', lineHeight: 1.5, margin: 0 }}>
                   {isBn
@@ -847,7 +847,7 @@ export default function BrandPageView({
               </h2>
               <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', margin: 0 }}>
                 {isBn
-                  ? 'আপনার বাড়ির অন্যান্য যন্ত্রপাতির জন্য আমাদের প্রত্যয়িত প্রকৌশলী ও ₹২৯৯ পরিদর্শন বুক করুন'
+                  ? 'আপনার বাড়ির অন্যান্য যন্ত্রপাতির জন্য আমাদের প্রত্যয়িত প্রকৌশলী ও ডোরস্টেপ সার্ভিস বুক করুন'
                   : 'Fast 90-minute doorstep service across all major appliance categories and brands in West Bengal'}
               </p>
             </div>
@@ -980,8 +980,8 @@ export default function BrandPageView({
             </h2>
             <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.9)', margin: '0 0 24px', lineHeight: 1.6 }}>
               {isBn
-                ? `মাত্র ₹২৯৯ ভিজিট ফিতে ৯০ মিনিটের মধ্যে অভিজ্ঞ টেকনিশিয়ান পান। সরাসরি কল করুন আমাদের হেল্পলাইনে:`
-                : `Senior certified technicians arriving at your doorstep in 90 minutes. Flat ₹299 inspection with 30-day warranty.`}
+                ? `স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জে ৯০ মিনিটের মধ্যে অভিজ্ঞ টেকনিশিয়ান পান। সরাসরি কল করুন আমাদের হেল্পলাইনে:`
+                : `Senior certified technicians arriving at your doorstep in 90 minutes. Transparent pricing with 30-day warranty.`}
             </p>
 
             <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>

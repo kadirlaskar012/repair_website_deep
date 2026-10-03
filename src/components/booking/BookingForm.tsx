@@ -269,7 +269,7 @@ export default function BookingForm({
       </div>
 
 
-      {/* ₹299 Pricing Reminder */}
+      {/* Transparent Pricing Reminder */}
       <div
         style={{
           background: 'var(--color-primary-light)',
@@ -284,7 +284,7 @@ export default function BookingForm({
       >
         <CheckCircle2 size={16} style={{ flexShrink: 0 }} />
         <span>
-          <strong>₹299</strong> {isBn ? 'পরিদর্শন ও রোগ নির্ণয় চার্জ। আসল মেরামতের খরচ টেকনিশিয়ানের পরিদর্শনের পর আপনার অনুমোদনে সম্পন্ন হবে।' : 'Doorstep inspection fee applies. Total repair quotation confirmed before work starts.'}
+          <strong>{isBn ? 'স্বচ্ছ মূল্য:' : 'Transparent Pricing:'}</strong> {isBn ? 'ফোনে কথা বলে সঠিক খরচের ধারণা নিন। কাজ শুরুর আগেই সম্পূর্ণ কোটেশন জানিয়ে অনুমোদন নেওয়া হয়।' : 'Discuss on call for estimate. Total repair quotation confirmed upfront before work starts.'}
         </span>
       </div>
 

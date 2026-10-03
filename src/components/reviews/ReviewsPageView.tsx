@@ -137,8 +137,8 @@ export default function ReviewsPageView({
                 }}
               >
                 {isBn
-                  ? 'আমাদের টেকনিশিয়ানদের সময়ানুবর্তিতা, মেরামতের গুণমান, ৯০ দিনের ওয়ারেন্টি এবং ₹২৯৯ ফিক্সড পরিদর্শন ফি সম্পর্কে সরাসরি গৃহস্থ গ্রাহকদের মূল্যায়ন দেখুন।'
-                  : 'Read genuine reviews from families across Kolkata, Salt Lake, Howrah, and districts regarding technician punctuality, transparent ₹299 inspection fee, and 90-day spare parts warranty.'}
+                  ? 'আমাদের টেকনিশিয়ানদের সময়ানুবর্তিতা, মেরামতের গুণমান, ৯০ দিনের ওয়ারেন্টি এবং স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ সম্পর্কে সরাসরি গৃহস্থ গ্রাহকদের মূল্যায়ন দেখুন।'
+                  : 'Read genuine reviews from families across Kolkata, Salt Lake, Howrah, and districts regarding technician punctuality, transparent upfront pricing, and 90-day spare parts warranty.'}
               </p>
             </div>
           </div>

@@ -14,7 +14,7 @@ export function formatWhatsAppBookingMessage(booking: Booking): string {
     `*Preferred Date:* ${booking.preferredDate}`,
     `*Preferred Time:* ${booking.preferredTime}`,
     ``,
-    `_Standard Diagnosis Fee: ₹299 (Inspection & Estimate)_`
+    `_Pricing: Transparent estimate discussed on call & confirmed on inspection_`
   ].join('\n');
 }
 
@@ -58,7 +58,7 @@ export async function sendOwnerCallMeBotNotification(booking: Booking): Promise<
     `📍 *Address:* ${booking.address}`,
     `📅 *Date:* ${booking.preferredDate} (${booking.preferredTime})`,
     ``,
-    `💰 *Visit Fee:* ₹299 (Standard)`
+    `💰 *Pricing:* Discuss on call / quote on inspection`
   ].join('\n');
 
   try {

@@ -90,8 +90,8 @@ export default function WidePromoBanner({ lang, onOpenBooking, phone }: WideProm
               }}
             >
               {isBn
-                ? 'কলকাতা ও পশ্চিমবঙ্গের যে কোনো প্রান্তে মাত্র ৬০ মিনিটে সার্টিফাইড টেকনিশিয়ান। স্বচ্ছ ₹২৯৯ পরিদর্শনে ১০০% জেনুইন পার্টসের নিশ্চয়তা।'
-                : 'Certified doorstep appliance specialists across Kolkata, Howrah & West Bengal. Fixed ₹299 inspection with genuine spare parts warranty.'}
+                ? 'কলকাতা ও পশ্চিমবঙ্গের যে কোনো প্রান্তে মাত্র ৬০ মিনিটে সার্টিফাইড টেকনিশিয়ান। সাশ্রয়ী ডোরস্টেপ পরিদর্শনে ১০০% জেনুইন পার্টসের নিশ্চয়তা।'
+                : 'Certified doorstep appliance specialists across Kolkata, Howrah & West Bengal. Doorstep inspection with transparent upfront pricing and genuine spare parts warranty.'}
             </p>
 
             <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '14px' }}>

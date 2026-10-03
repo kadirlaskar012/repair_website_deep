@@ -6,8 +6,8 @@ import { buildPageMetadata } from '@/lib/seo';
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
-    title: 'Terms of Service | Appliance Seva',
-    description: 'Terms of service, ₹299 inspection fee explanation, and 30-day warranty policy for Appliance Seva.',
+    title: 'Terms of Service | Home Appliance Care India',
+    description: 'Terms of service, transparent pricing policy, and 30-day warranty guidelines for Home Appliance Care India.',
     path: '/terms-of-service',
     lang: 'en'
   });

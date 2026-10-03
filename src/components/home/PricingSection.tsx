@@ -49,7 +49,7 @@ export default function PricingSection({ lang, onOpenBooking }: PricingSectionPr
                   letterSpacing: '0.04em'
                 }}
               >
-                {isBn ? 'প্রমিত ডোরস্টেপ ফি' : 'Standard Doorstep Fee'}
+                {isBn ? 'স্বচ্ছ ও সাশ্রয়ী সার্ভিস' : 'Transparent & Affordable Pricing'}
               </span>
 
               <span style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)', fontWeight: 600 }}>
@@ -58,12 +58,12 @@ export default function PricingSection({ lang, onOpenBooking }: PricingSectionPr
             </div>
 
             {/* Price Headline */}
-            <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '16px' }}>
-              <span style={{ fontSize: 'clamp(2.5rem, 6vw, 3.5rem)', fontWeight: 800, color: 'var(--color-primary)', lineHeight: 1 }}>
-                ₹299
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '16px' }}>
+              <span style={{ fontSize: 'clamp(1.75rem, 4vw, 2.25rem)', fontWeight: 800, color: 'var(--color-primary)', lineHeight: 1.2 }}>
+                {isBn ? 'স্বচ্ছ ও সাশ্রয়ী মূল্য ব্যবস্থা' : 'Transparent & Honest Pricing'}
               </span>
-              <span style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--color-text-main)' }}>
-                {isBn ? 'ভিজিট ও ডায়াগনোসিস ফি' : 'Visit & Diagnosis Fee'}
+              <span style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--color-text-muted)' }}>
+                {isBn ? 'ফোনে কথা বলে সঠিক খরচের ধারণা নিন • কাজের আগে স্পষ্ট কোটেশন' : 'Discuss on call for initial estimate • Upfront quote before repair begins'}
               </span>
             </div>
 
@@ -82,17 +82,17 @@ export default function PricingSection({ lang, onOpenBooking }: PricingSectionPr
             >
               <AlertCircle size={22} style={{ color: 'var(--color-accent-dark)', flexShrink: 0, marginTop: '2px' }} />
               <div style={{ fontSize: '0.9375rem', color: '#68450F', lineHeight: 1.5 }}>
-                <strong>{isBn ? 'গুরুত্বপূর্ণ স্পষ্টীকরণ:' : 'Important Notice:'}</strong>{' '}
+                <strong>{isBn ? 'মূল্য সংক্রান্ত স্বচ্ছতা:' : 'Pricing Transparency:'}</strong>{' '}
                 {isBn
-                  ? '₹২৯৯ শুধুমাত্র বাড়িতে এসে টেকনিশিয়ানের পুঙ্খানুপুঙ্খ পরিদর্শন এবং রোগ নির্ণয় ফি। মেরামতের আসল খরচ টেকনিশিয়ান স্পটেই পরীক্ষা করে কোটেশন দেন এবং আপনার সম্পূর্ণ অনুমোদনের পরেই যেকোনো মেরামতের কাজ শুরু হয়।'
-                  : '₹299 is ONLY the visit, inspection & diagnosis fee. It is NOT the repair price. Repair cost is confirmed after technician diagnosis and strictly upon customer approval before any repair work begins.'}
+                  ? 'আমরা সম্পূর্ণ স্বচ্ছ ও সাশ্রয়ী মূল্যে বিশ্বাসী। আপনি ফোনে কথা বলে প্রাথমিক খরচের ধারণা নিতে পারেন। এরপর টেকনিশিয়ান স্পটেই পুঙ্খানুপুঙ্খ পরীক্ষা করে কাজ শুরুর আগেই সঠিক কোটেশন জানিয়ে অনুমোদন নেন।'
+                  : 'We believe in 100% upfront transparency. Discuss your appliance issue over the phone to get an immediate estimate. Our certified technician inspects the unit on-site and provides an exact quotation before any repair begins.'}
               </div>
             </div>
 
             {/* Checklist of What's Included */}
             <div style={{ marginBottom: '32px' }}>
               <div style={{ fontWeight: 700, fontSize: '1rem', marginBottom: '14px', color: 'var(--color-text-main)' }}>
-                {isBn ? '₹২৯৯ ডায়াগনোসিস ফির মধ্যে অন্তর্ভুক্ত:' : 'What is included in the ₹299 inspection:'}
+                {isBn ? 'আমাদের সেবার মধ্যে অন্তর্ভুক্ত:' : 'What is included in our service:'}
               </div>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 {[
@@ -118,7 +118,7 @@ export default function PricingSection({ lang, onOpenBooking }: PricingSectionPr
               className="btn btn-primary btn-lg"
               style={{ width: '100%' }}
             >
-              <span>{isBn ? 'মাত্র ₹২৯৯-এ পরিদর্শন বুক করুন' : 'Book Technician Diagnosis at ₹299'}</span>
+              <span>{isBn ? 'ডোরস্টেপ টেকনিশিয়ান বুক করুন' : 'Schedule Doorstep Technician'}</span>
               <ArrowRight size={18} />
             </button>
           </div>

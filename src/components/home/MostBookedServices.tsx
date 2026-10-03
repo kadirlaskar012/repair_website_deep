@@ -116,8 +116,8 @@ export default function MostBookedServices({
         commonCausesBn: 'যন্ত্রাংশের ক্ষয়ক্ষতি বা বৈদ্যুতিক সেন্সর ত্রুটি',
         solutionNote: 'Certified diagnosis and genuine replacement parts',
         solutionNoteBn: 'সার্টিফাইড রোগ নির্ণয় ও জেনুইন পার্টস প্রতিস্থাপন',
-        diagnosticFeeNote: 'Fixed ₹299 inspection fee applies',
-        diagnosticFeeNoteBn: 'স্থির ₹২৯৯ পরিদর্শন ও ডায়াগনোসিস ফি প্রযোজ্য',
+        diagnosticFeeNote: 'Transparent doorstep inspection with upfront estimate',
+        diagnosticFeeNoteBn: 'স্বচ্ছ ডোরস্টেপ পরিদর্শন ও কাজের পূর্বে সঠিক খরচের ধারণা দেওয়া হয়',
         sortOrder: 1,
         isActive: true
       });
@@ -278,7 +278,7 @@ export default function MostBookedServices({
                   }}
                 >
                   <div style={{ fontSize: '0.8125rem', fontWeight: 800, color: 'var(--color-primary)' }}>
-                    {isBn ? '₹২৯৯ পরিদর্শন' : '₹299 Visit'}
+                    {isBn ? 'স্বচ্ছ পরিদর্শন' : 'Doorstep Visit'}
                   </div>
 
                   <span

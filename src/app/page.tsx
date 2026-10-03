@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
   return buildPageMetadata({
     title: 'Home Appliance Care India | #1 Doorstep Home Appliance Repair Service',
-    description: 'Home Appliance Care India: Official doorstep home appliance repair and maintenance service across India & West Bengal. Rated 4.9★ by 1,280+ customers. Expert technicians near me for AC, Refrigerator, Washing Machine, Microwave & TV. Flat ₹299 inspection & 90-day warranty.',
+    description: 'Home Appliance Care India: Official doorstep home appliance repair and maintenance service across India & West Bengal. Rated 4.9★ by 1,280+ customers. Expert technicians near me for AC, Refrigerator, Washing Machine, Microwave & TV. Transparent pricing & 90-day warranty.',
     keywords: [
       'home Appliance Care India',
       'Home Appliance Care India',

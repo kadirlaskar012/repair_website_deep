@@ -62,7 +62,7 @@ export default function HomeFaqSection({ lang }: HomeFaqSectionProps) {
           <p style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)', marginTop: '8px' }}>
             {isBn
               ? 'পরিদর্শন ফি, ৯০ মিনিটে টেকনিশিয়ান আগমন, আসল পার্টস ও ওয়ারেন্টি সংক্রান্ত সমস্ত তথ্য'
-              : 'Answers to common questions about technician arrival, ₹299 inspection fee, genuine parts and 90-day warranty'}
+              : 'Answers to common questions about technician arrival, transparent pricing, genuine parts and 90-day warranty'}
           </p>
         </div>
 

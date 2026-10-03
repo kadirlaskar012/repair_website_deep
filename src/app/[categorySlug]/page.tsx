@@ -37,7 +37,7 @@ export async function generateMetadata({
   if (!category) return {};
 
   return buildPageMetadata({
-    title: category.metaTitle || `${category.name} in West Bengal | ₹299 Doorstep Diagnosis`,
+    title: category.metaTitle || `${category.name} in West Bengal | Doorstep Service & Repair`,
     description: category.metaDesc || category.shortDesc,
     path: `/${category.slug}`,
     lang: 'en'
@@ -66,8 +66,8 @@ export default async function CategoryPage({
 
   const rawFaqs = initialCategoryFaqs[category.id]?.en || [
     {
-      q: `What does the ₹299 inspection fee for ${category.name} include?`,
-      a: 'The ₹299 fee covers on-site multi-point diagnostics by a certified technician. Any repair work or parts replacement is quoted upfront and done only after your approval.'
+      q: `How are service and repair charges calculated for ${category.name}?`,
+      a: 'We offer 100% transparent and affordable pricing. You can discuss the issue over phone to get an initial estimate, and our certified technician performs on-site multi-point diagnostics. Any repair work or parts replacement is quoted upfront and done only after your approval.'
     },
     {
       q: `Do you provide a service warranty on ${category.name}?`,

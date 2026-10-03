@@ -37,7 +37,7 @@ export async function generateMetadata({
   if (!category) return {};
 
   return buildPageMetadata({
-    title: category.metaTitleBn || `${category.nameBn} - ডোরস্টেপ সার্ভিস | ₹২৯৯ পরিদর্শন ফি`,
+    title: category.metaTitleBn || `${category.nameBn} - ডোরস্টেপ সার্ভিস ও মেরামত | নির্ভরযোগ্য সেবা`,
     description: category.metaDescBn || category.shortDescBn,
     path: `/${category.slug}`,
     lang: 'bn'
@@ -66,8 +66,8 @@ export default async function BengaliCategoryPage({
 
   const rawFaqs = initialCategoryFaqs[category.id]?.bn || [
     {
-      q: `₹২৯৯ পরিদর্শন ফির মধ্যে কী কী অন্তর্ভুক্ত?`,
-      a: 'টেকনিশিয়ান আপনার বাড়িতে এসে সম্পূর্ণ রোগ নির্ণয় করেন। কাজের পূর্বে আপনাকে সঠিক কোটেশন জানানো হয় এবং আপনার অনুমোদনের পরেই কাজ হয়।'
+      q: `সার্ভিস ও মেরামতের খরচ কীভাবে নির্ধারিত হয়?`,
+      a: 'আমরা সম্পূর্ণ স্বচ্ছ ও সাশ্রয়ী খরচে বিশ্বাসী। ফোনে কথা বলে প্রাথমিক ধারণা নিন এবং টেকনিশিয়ান এসে পুঙ্খানুপুঙ্খ রোগ নির্ণয় করে কাজের আগেই সম্পূর্ণ কোটেশন জানিয়ে অনুমোদন নেন।'
     },
     {
       q: `আপনারা কি মেরামতের ওপর ওয়ারেন্টি দেন?`,

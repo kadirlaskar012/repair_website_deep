@@ -140,8 +140,8 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
             }}
           >
             {isBn
-              ? 'নিচের যেকোনো ক্যাটাগরিতে ক্লিক করে সমস্যা নির্বাচন করুন। অভিজ্ঞ টেকনিশিয়ানের ডোরস্টেপ ভিজিট মাত্র ₹২৯৯ এবং রয়েছে ৩০ দিনের গ্যারান্টি।'
-              : 'Click any category below to explore dedicated problem diagnostics, transparent ₹299 inspection charges, and instant doorstep booking across Kolkata & West Bengal.'}
+              ? 'নিচের যেকোনো ক্যাটাগরিতে ক্লিক করে সমস্যা নির্বাচন করুন। অভিজ্ঞ টেকনিশিয়ানের সাশ্রয়ী ডোরস্টেপ সার্ভিস এবং রয়েছে ৩০ দিনের গ্যারান্টি।'
+              : 'Click any category below to explore dedicated problem diagnostics, transparent upfront pricing, and instant doorstep booking across Kolkata & West Bengal.'}
           </p>
         </div>
 
@@ -223,7 +223,7 @@ export default function ApplianceCategories({ categories, lang }: ApplianceCateg
                       zIndex: 2
                     }}
                   >
-                    {isBn ? '₹২৯৯ পরিদর্শন' : '₹299 Inspection'}
+                    {isBn ? 'স্বচ্ছ পরিদর্শন' : 'Doorstep Service'}
                   </span>
 
                   {/* Bottom-Right Icon Avatar */}

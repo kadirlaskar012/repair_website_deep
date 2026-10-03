@@ -29,8 +29,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'O General',
     headlineEn: 'O General AC Repair & Service Centre Support in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় ও জেনারেল এসি মেরামত ও ডোরস্টেপ সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Certified doorstep service for O General Inverter, Split & Heavy-Duty ACs. Fast 90-minute arrival across Kolkata, Salt Lake & Howrah with flat ₹299 inspection fee.',
-    subheadlineBn: 'ও জেনারেল ইনভার্টার, স্প্লিট ও হেভি-ডিউটি এসির সার্টিফাইড ডোরস্টেপ সার্ভিস। কলকাতা, সল্টলেক ও হাওড়ায় ৯০ মিনিটে টেকনিশিয়ান ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Certified doorstep service for O General Inverter, Split & Heavy-Duty ACs. Fast 90-minute arrival across Kolkata, Salt Lake & Howrah with transparent & affordable pricing.',
+    subheadlineBn: 'ও জেনারেল ইনভার্টার, স্প্লিট ও হেভি-ডিউটি এসির সার্টিফাইড ডোরস্টেপ সার্ভিস। কলকাতা, সল্টলেক ও হাওড়ায় ৯০ মিনিটে টেকনিশিয়ান ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'O General air conditioners are built for intense tropical climates. Our senior technicians specialize in O General inverter PCB diagnostics, hyper-tropical rotary compressor repair, R32/R410A gas refilling, and cooling restoration.',
     coverageDescBn: 'ও জেনারেল এসি চরম তাপমাত্রায় ঠান্ডার জন্য পরিচিত। আমাদের বিশেষজ্ঞ ইঞ্জিনিয়াররা ও জেনারেল ইনভার্টার পিসিবি, ট্রপিক্যাল রোটারি কম্প্রেসার, খাঁটি রেফ্রিজারেন্ট রিফিল এবং সম্পূর্ণ কুলিং পুনরুদ্ধারে দক্ষ।',
     errorCodes: [
@@ -90,8 +90,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
         aBn: 'আমাদের সরাসরি হেল্পলাইন +91 6291674186 নম্বরে কল করুন বা হোয়াটসঅ্যাপ করুন। ৯০ মিনিটের মধ্যে অভিজ্ঞ টেকনিশিয়ান আপনার ঠিকানায় পৌঁছে যাবেন।'
       },
       {
-        qEn: 'What does the ₹299 inspection fee cover for O General AC?',
-        qBn: 'ও জেনারেল এসির ₹২৯৯ পরিদর্শনে কী কী দেখা হয়?',
+        qEn: 'How are service charges calculated for O General AC?',
+        qBn: 'ও জেনারেল এসির সার্ভিস চার্জ কীভাবে নির্ধারিত হয়?',
         aEn: 'It covers comprehensive diagnosis: gas pressure test, electrical voltage check, compressor startup load test, and PCB diagnostics. Total repair cost is approved by you upfront before work starts.',
         aBn: 'এতে গ্যাস প্রেশার টেস্ট, ভোল্টেজ পরীক্ষা, কম্প্রেসার স্টার্টআপ লোড এবং পিসিবি চেক অন্তর্ভুক্ত। কোনো মেরামতের কাজ শুরুর আগে সম্পূর্ণ খরচ জানিয়ে অনুমোদন নেওয়া হয়।'
       },
@@ -109,8 +109,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Lloyd',
     headlineEn: 'Lloyd AC, Refrigerator & Washing Machine Service Centre Support in West Bengal',
     headlineBn: 'পশ্চিমবঙ্গে লয়েড এসি, ফ্রিজ ও ওয়াশিং মেশিন ডোরস্টেপ সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Instant doorstep technician for Lloyd Split AC, Double Door Fridge & Top/Front Load Washers. Emergency 90-min service across Kolkata with ₹299 visit fee.',
-    subheadlineBn: 'লয়েড স্প্লিট এসি, ডাবল ডোর ফ্রিজ ও ওয়াশিং মেশিনের নির্ভরযোগ্য ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ পরিদর্শনে অভিজ্ঞ টেকনিশিয়ান পান।',
+    subheadlineEn: 'Instant doorstep technician for Lloyd Split AC, Double Door Fridge & Top/Front Load Washers. Emergency 90-min service across Kolkata with transparent & affordable pricing.',
+    subheadlineBn: 'লয়েড স্প্লিট এসি, ডাবল ডোর ফ্রিজ ও ওয়াশিং মেশিনের নির্ভরযোগ্য ডোরস্টেপ সমাধান। স্বচ্ছ ও সাশ্রয়ী খরচে অভিজ্ঞ টেকনিশিয়ান পান।',
     coverageDescEn: 'Lloyd (Havells) appliances are known for rapid cooling and smart inverter technology. We provide expert repairs for Lloyd AC fan running without cooling, washing machine error codes (E3, F8, E2), and refrigerator cooling loss.',
     coverageDescBn: 'লয়েড অ্যাপ্লায়েন্সের ফ্যান চলা কিন্তু ঠান্ডা না হওয়া, ওয়াশিং মেশিনের এরর কোড (E3, F8, E2) এবং ফ্রিজের কুলিং সমস্যার জন্য আমরা দক্ষ টেকনিশিয়ান ও আসল যন্ত্রাংশ দিয়ে তাৎক্ষণিক সার্ভিস দিই।',
     errorCodes: [
@@ -183,8 +183,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'Why is my Lloyd AC not cooling though the fan is running?',
         qBn: 'লয়েড এসির ফ্যান চলছে কিন্তু ঠান্ডা হচ্ছে না কেন?',
-        aEn: 'This commonly happens when the outdoor compressor capacitor is weak, cooling gas has leaked, or the remote temperature is set improperly. Book a ₹299 inspection and our technician will test the compressor and gas pressure on-site.',
-        aBn: 'কম্প্রেসার ক্যাপাসিটর নষ্ট হলে, গ্যাস লিকেজ হলে বা রিমোট সেটিংয়ে সমস্যা থাকলে এমন হয়। ₹২৯৯ পরিদর্শনে বুক করলে আমাদের টেকনিশিয়ান স্পটেই টেস্ট করে দেবেন।'
+        aEn: 'This commonly happens when the outdoor compressor capacitor is weak, cooling gas has leaked, or the remote temperature is set improperly. Book a doorstep inspection and our technician will test the compressor and gas pressure on-site.',
+        aBn: 'কম্প্রেসার ক্যাপাসিটর নষ্ট হলে, গ্যাস লিকেজ হলে বা রিমোট সেটিংয়ে সমস্যা থাকলে এমন হয়। ডোরস্টেপ পরিদর্শনে বুক করলে আমাদের টেকনিশিয়ান স্পটেই টেস্ট করে কাজের আগেই খরচের সঠিক ধারণা দেবেন।'
       },
       {
         qEn: 'How to fix E3 or F8 error on Lloyd washing machine?',
@@ -206,8 +206,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Blue Star',
     headlineEn: 'Blue Star AC & Commercial Refrigerator Repair Service in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় ব্লু স্টার এসি ও রেফ্রিজারেটর মেরামত ও সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Professional doorstep service for Blue Star Inverter, 5-Star Split, Cassette AC & Deep Freezers. Same-day visit with flat ₹299 inspection fee.',
-    subheadlineBn: 'ব্লু স্টার ইনভার্টার, ৫-স্টার স্প্লিট ও ক্যাসেট এসির বিশ্বস্ত ডোরস্টেপ সার্ভিস। একই দিনে টেকনিশিয়ান ভিজিট ও মাত্র ₹২৯৯ ডায়াগনোসিস ফি।',
+    subheadlineEn: 'Professional doorstep service for Blue Star Inverter, 5-Star Split, Cassette AC & Deep Freezers. Same-day visit with transparent & affordable pricing.',
+    subheadlineBn: 'ব্লু স্টার ইনভার্টার, ৫-স্টার স্প্লিট ও ক্যাসেট এসির বিশ্বস্ত ডোরস্টেপ সার্ভিস। একই দিনে টেকনিশিয়ান ভিজিট ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Blue Star is a pioneer in commercial and residential cooling. Our engineers handle Blue Star inverter AC E6 error codes, indoor-outdoor communication faults, capacitor failure, and precision R32/R410A gas refills.',
     coverageDescBn: 'ব্লু স্টার রেসিডেন্সিয়াল ও কমার্শিয়াল এসিতে শীর্ষস্থানীয়। ব্লু স্টার ইনভার্টার এসির E6 এরর কোড, পিসিবি সার্কিট ফল্ট এবং সঠিক গ্যাসের চাপ পুনরুদ্ধারে আমাদের টেকনিশিয়ানরা বিশেষজ্ঞ।',
     errorCodes: [
@@ -276,8 +276,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'What are the inspection charges for Blue Star AC in Kolkata?',
         qBn: 'কলকাতায় ব্লু স্টার এসির ভিজিট ও পরিদর্শন চার্জ কত?',
-        aEn: 'Our doorstep inspection charge is flat ₹299 across Kolkata and West Bengal. Any parts or gas refill is quoted upfront after multi-point testing.',
-        aBn: 'আমাদের ডোরস্টেপ ভিজিট ফি মাত্র ₹২৯৯। কোনো যন্ত্রাংশ বা গ্যাস রিফিল প্রয়োজন হলে আগে জানিয়ে অনুমোদন নেওয়া হয়।'
+        aEn: 'Our doorstep service charges are completely transparent and affordable across Kolkata and West Bengal. Any parts or gas refill is quoted upfront after multi-point testing.',
+        aBn: 'আমাদের ডোরস্টেপ কাজের আগেই সম্পূর্ণ কোটেশন জানিয়ে দেওয়া হয়। কোনো যন্ত্রাংশ বা গ্যাস রিফিল প্রয়োজন হলে আগে জানিয়ে অনুমোদন নেওয়া হয়।'
       },
       {
         qEn: 'How do I book Blue Star AC repair today?',
@@ -293,8 +293,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Daikin',
     headlineEn: 'Daikin AC Repair & Service Centre Support in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় ডাইকিন এসি মেরামত ও ডোরস্টেপ সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Specialist doorstep technicians for Daikin Neo-Swing Inverter, Split & Multi-Split ACs. 90-minute response with transparent ₹299 diagnosis fee.',
-    subheadlineBn: 'ডাইকিন নিও-সুইং ইনভার্টার ও স্প্লিট এসির দক্ষ ডোরস্টেপ সার্ভিস। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Specialist doorstep technicians for Daikin Neo-Swing Inverter, Split & Multi-Split ACs. 90-minute response with transparent & affordable pricing.',
+    subheadlineBn: 'ডাইকিন নিও-সুইং ইনভার্টার ও স্প্লিট এসির দক্ষ ডোরস্টেপ সার্ভিস। কলকাতায় ৯০ মিনিটে আগমন ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Daikin ACs are world leaders in energy-efficient inverter technology. We handle Daikin swing compressor diagnostics, optical display error codes, inverter PCB failure, and certified R32 refrigerant recharging.',
     coverageDescBn: 'ডাইকিন ইনভার্টার এসির নিও-সুইং কম্প্রেসার টেস্ট, পিসিবি সার্কিট মেরামত এবং খাঁটি R32 রেফ্রিজারেন্ট গ্যাস রিফিলের জন্য আমাদের প্রকৌশলীরা বিশেষভাবে প্রশিক্ষিত।',
     errorCodes: [
@@ -359,7 +359,7 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'What is the Daikin AC service phone number in Kolkata?',
         qBn: 'কলকাতায় ডাইকিন এসি সার্ভিসের ফোন নম্বর কোনটি?',
-        aEn: 'Dial +91 6291674186 for immediate technician booking at flat ₹299 visit fee with 30-day warranty.',
+        aEn: 'Dial +91 6291674186 for immediate technician booking at affordable, transparent rates with 30-day warranty.',
         aBn: 'তাৎক্ষণিক বুকিংয়ের জন্য সরাসরি +91 6291674186 নম্বরে ডায়াল করুন।'
       },
       {
@@ -376,8 +376,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Mitsubishi',
     headlineEn: 'Mitsubishi Heavy & Electric AC Repair Service in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় মিৎসবিশি এসি মেরামত ও ডোরস্টেপ সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Expert repair for Mitsubishi Heavy Industries & Mitsubishi Electric Inverter ACs. Doorstep visit in 90 minutes with flat ₹299 inspection fee.',
-    subheadlineBn: 'মিৎসবিশি হেভি ইন্ডাস্ট্রিজ ও মিৎসবিশি ইলেকট্রিক ইনভার্টার এসির বিশেষজ্ঞ ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সার্ভিস।',
+    subheadlineEn: 'Expert repair for Mitsubishi Heavy Industries & Mitsubishi Electric Inverter ACs. Doorstep visit in 90 minutes with transparent & affordable pricing.',
+    subheadlineBn: 'মিৎসবিশি হেভি ইন্ডাস্ট্রিজ ও মিৎসবিশি ইলেকট্রিক ইনভার্টার এসির বিশেষজ্ঞ ডোরস্টেপ সমাধান। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত সার্ভিস।',
     coverageDescEn: 'Mitsubishi ACs deliver exceptional long-throw cooling and silent operation. Our technicians specialize in PAM inverter control boards, silent scroll compressor diagnostics, electronic expansion valves (EEV), and micro-leak repairs.',
     coverageDescBn: 'মিৎসবিশি এসি দীর্ঘস্থায়ী কুলিংয়ের জন্য সুপরিচিত। আমাদের প্রকৌশলীরা মিৎসবিশি পিএএম ইনভার্টার কন্ট্রোল বোর্ড, ইইভি ভালভ এবং স্ক্রোল কম্প্রেসার মেরামতে উচ্চ দক্ষতাসম্পন্ন।',
     errorCodes: [
@@ -434,8 +434,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How much is the diagnosis fee for Mitsubishi AC?',
         qBn: 'মিৎসবিশি এসির রোগ নির্ণয় ফি কত?',
-        aEn: 'Flat ₹299 inspection fee covers on-site multi-meter testing, gas pressure check, and error code diagnostics.',
-        aBn: 'মাত্র ₹২৯৯ ফিতে টেকনিশিয়ান বাড়িতে এসে সম্পূর্ণ মাল্টিমিটার ও গ্যাস প্রেশার টেস্ট সম্পন্ন করেন।'
+        aEn: 'Doorstep inspection covers on-site multi-meter testing, gas pressure check, and error code diagnostics.',
+        aBn: 'টেকনিশিয়ান বাড়িতে এসে সম্পূর্ণ মাল্টিমিটার ও গ্যাস প্রেশার টেস্ট করে কাজের আগেই কোটেশন জানান।'
       }
     ]
   },
@@ -445,8 +445,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'IFB',
     headlineEn: 'IFB Washing Machine, AC & Microwave Oven Service Centre Support in West Bengal',
     headlineBn: 'পশ্চিমবঙ্গে আইএফবি ওয়াশিং মেশিন, এসি ও মাইক্রোওয়েভ ওভেন সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Specialist doorstep technicians for IFB Front & Top Load Washers, Air Conditioners & Convection Microwaves. Fast 90-min visit with ₹299 diagnosis fee.',
-    subheadlineBn: 'আইএফবি ফ্রন্ট ও টপ লোড ওয়াশিং মেশিন, এসি ও মাইক্রোওয়েভ ওভেনের সার্টিফাইড ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সমাধান।',
+    subheadlineEn: 'Specialist doorstep technicians for IFB Front & Top Load Washers, Air Conditioners & Convection Microwaves. Fast 90-min visit with transparent & affordable pricing.',
+    subheadlineBn: 'আইএফবি ফ্রন্ট ও টপ লোড ওয়াশিং মেশিন, এসি ও মাইক্রোওয়েভ ওভেনের সার্টিফাইড ডোরস্টেপ সার্ভিস। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত সমাধান।',
     coverageDescEn: 'IFB is India’s foremost front-load washing machine and appliance pioneer. We repair IFB washing machine drum noise, spider arm fracture, error codes (dOOr, tAP, Pr5, E01, E02), AC cooling issues, and microwave heating failures.',
     coverageDescBn: 'আইএফবি ফ্রন্ট লোড ওয়াশিং মেশিনের ড্রাম ও বেয়ারিং সমস্যা, এরর কোড (dOOr, tAP, Pr5), এসির গ্যাস রিফিল এবং মাইক্রোওয়েভ ওভেনের খাবার গরম না হওয়ার ত্রুটি আমরা নিপুণভাবে সমাধান করি।',
     errorCodes: [
@@ -540,8 +540,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How do I call IFB doorstep technician in Kolkata?',
         qBn: 'কলকাতায় আইএফবি টেকনিশিয়ান ডাকার ফোন নম্বর কোনটি?',
-        aEn: 'Call +91 6291674186 or WhatsApp us for same-day service across Kolkata with a flat ₹299 diagnosis fee.',
-        aBn: 'একই দিনে সার্ভিসের জন্য সরাসরি +91 6291674186 নম্বরে কল করুন। ভিজিট ফি মাত্র ₹২৯৯।'
+        aEn: 'Call +91 6291674186 or WhatsApp us for same-day service across Kolkata with transparent upfront quotation.',
+        aBn: 'একই দিনে সার্ভিসের জন্য সরাসরি +91 6291674186 নম্বরে কল করুন। কাজের আগেই সম্পূর্ণ কোটেশন জানিয়ে দেওয়া হয়।'
       }
     ]
   },
@@ -551,8 +551,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Whirlpool',
     headlineEn: 'Whirlpool Refrigerator, Washing Machine, AC & Microwave Repair in West Bengal',
     headlineBn: 'পশ্চিমবঙ্গে ওয়ার্লপুল ফ্রিজ, ওয়াশিং মেশিন, এসি ও মাইক্রোওয়েভ মেরামত সার্ভিস সাপোর্ট',
-    subheadlineEn: 'Doorstep certified repair for Whirlpool 6th Sense Fridges, 360 BloomWash Washers, Split AC & Microwaves. Fast 90-min arrival with flat ₹299 inspection fee.',
-    subheadlineBn: 'ওয়ার্লপুল সিক্সথ সেন্স ফ্রিজ, ওয়াশিং মেশিন ও এসির সার্টিফাইড ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Doorstep certified repair for Whirlpool 6th Sense Fridges, 360 BloomWash Washers, Split AC & Microwaves. Fast 90-min arrival with transparent & affordable pricing.',
+    subheadlineBn: 'ওয়ার্লপুল সিক্সথ সেন্স ফ্রিজ, ওয়াশিং মেশিন ও এসির সার্টিফাইড ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Whirlpool appliances feature intelligent 6th Sense technology. We provide expert troubleshooting for Whirlpool refrigerator defrost sensor failures, cooling loss, washing machine E1 water inlet errors, and AC servicing.',
     coverageDescBn: 'ওয়ার্লপুল সিক্সথ সেন্স রেফ্রিজারেটরের ডিফ্রোস্ট হিটার ফল্ট, নিচের চেম্বারে ঠান্ডা না হওয়া, ওয়াশিং মেশিনের E1 এরর কোড এবং এসির গ্যাস রিফিলে আমাদের দীর্ঘ অভিজ্ঞতা রয়েছে।',
     errorCodes: [
@@ -650,8 +650,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Hitachi',
     headlineEn: 'Hitachi AC & Inverter Refrigerator Repair in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় হিটাচি এসি ও ইনভার্টার ফ্রিজ মেরামত সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Certified doorstep service for Hitachi Kashikoi Inverter AC, French Door & Multi-Door Refrigerators. Express 90-min visit with flat ₹299 diagnosis fee.',
-    subheadlineBn: 'হিটাচি ইনভার্টার এসি ও মাল্টি-ডোর ফ্রিজের দক্ষ ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ডায়াগনোসিস ফি।',
+    subheadlineEn: 'Certified doorstep service for Hitachi Kashikoi Inverter AC, French Door & Multi-Door Refrigerators. Express 90-min visit with transparent & affordable pricing.',
+    subheadlineBn: 'হিটাচি ইনভার্টার এসি ও মাল্টি-ডোর ফ্রিজের দক্ষ ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Hitachi appliances are renowned for high Japanese engineering standards. We provide specialized repairs for Hitachi Expandable Inverter ACs, Dual Fan Refrigerator defrost systems, inverter PCB motherboards, and fan motor replacements.',
     coverageDescBn: 'হিটাচি জাপানি প্রযুক্তির বিশ্বস্ত ব্র্যান্ড। হিটাচি এক্সপ্যান্ডেবল ইনভার্টার এসি, ডুয়াল ফ্যান ফ্রিজের ডিফ্রস্ট সিস্টেম এবং পিসিবি মাদারবোর্ড মেরামতে আমাদের প্রকৌশলীরা বিশেষভাবে প্রশিক্ষিত।',
     errorCodes: [
@@ -726,8 +726,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Voltas',
     headlineEn: 'Voltas AC & Beko Refrigerator Repair & Service Centre Support in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় ভোল্টাস এসি ও বেকো ফ্রিজ মেরামত ও ডোরস্টেপ সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Certified doorstep service for Voltas Inverter AC, Maha Adjustable Split AC, Window AC & Beko Fridges. 90-min arrival across Kolkata with flat ₹299 visit fee.',
-    subheadlineBn: 'ভোল্টাস ইনভার্টার এসি, স্প্লিট ও উইন্ডো এসি এবং বেকো রেফ্রিজারেটরের নির্ভরযোগ্য ডোরস্টেপ সার্ভিস। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Certified doorstep service for Voltas Inverter AC, Maha Adjustable Split AC, Window AC & Beko Fridges. 90-min arrival across Kolkata with transparent & affordable pricing.',
+    subheadlineBn: 'ভোল্টাস ইনভার্টার এসি, স্প্লিট ও উইন্ডো এসি এবং বেকো রেফ্রিজারেটরের নির্ভরযোগ্য ডোরস্টেপ সার্ভিস। কলকাতায় ৯০ মিনিটে আগমন ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Voltas is India’s most popular air conditioning brand. Our certified engineers specialize in Voltas inverter PCB board repairs, rotary compressor capacitor replacements, pure R32/R410A gas refilling, and cooling restoration.',
     coverageDescBn: 'ভোল্টাস ভারতের সর্বাধিক বিক্রিত এসি ব্র্যান্ড। ভোল্টাস ইনভার্টার পিসিবি মেরামত, কম্প্রেসার ক্যাপাসিটর পরিবর্তন, সঠিক গ্যাস চার্জিং এবং সম্পূর্ণ কুলিং পুনরুদ্ধারে আমাদের দীর্ঘ অভিজ্ঞতা রয়েছে।',
     errorCodes: [
@@ -790,8 +790,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'Why is my Voltas AC fan running but not cooling?',
         qBn: 'ভোল্টাস এসির ফ্যান চলছে কিন্তু ঠান্ডা হচ্ছে না কেন?',
-        aEn: 'This commonly happens when the compressor capacitor fails, cooling gas leaks, or the outdoor coil is choked with dirt. Our technician diagnoses this on-site for flat ₹299. Call +91 6291674186.',
-        aBn: 'কম্প্রেসার ক্যাপাসিটর খারাপ হলে বা গ্যাস লিকেজ হলে এমন হয়। আমাদের টেকনিশিয়ান মাত্র ₹২৯৯ পরিদর্শনে বাড়িতে এসে সঠিক কারণ নির্ণয় করেন।'
+        aEn: 'This commonly happens when the compressor capacitor fails, cooling gas leaks, or the outdoor coil is choked with dirt. Our technician diagnoses this on-site with upfront quotation. Call +91 6291674186.',
+        aBn: 'কম্প্রেসার ক্যাপাসিটর খারাপ হলে বা গ্যাস লিকেজ হলে এমন হয়। আমাদের টেকনিশিয়ান ডোরস্টেপ পরিদর্শনে এসে সঠিক কারণ নির্ণয় করে কাজের আগেই কোটেশন দেন।'
       },
       {
         qEn: 'What does E6 error code mean in Voltas inverter AC?',
@@ -813,8 +813,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Samsung',
     headlineEn: 'Samsung AC, Refrigerator, Washing Machine & TV Service Centre Support in West Bengal',
     headlineBn: 'পশ্চিমবঙ্গে স্যামসাং এসি, ফ্রিজ, ওয়াশিং মেশিন ও টিভি ডোরস্টেপ সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Certified multi-brand doorstep specialists for Samsung Digital Inverter AC, Curd Maestro Fridge, EcoBubble Washers & Crystal 4K LED TV. 90-min arrival with ₹299 diagnosis fee.',
-    subheadlineBn: 'স্যামসাং ডিজিটাল ইনভার্টার এসি, ফ্রিজ, ইকো-বাবল ওয়াশিং মেশিন ও স্মার্ট টিভির বিশেষজ্ঞ ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Certified multi-brand doorstep specialists for Samsung Digital Inverter AC, Curd Maestro Fridge, EcoBubble Washers & Crystal 4K LED TV. 90-min arrival with transparent & affordable pricing.',
+    subheadlineBn: 'স্যামসাং ডিজিটাল ইনভার্টার এসি, ফ্রিজ, ইকো-বাবল ওয়াশিং মেশিন ও স্মার্ট টিভির বিশেষজ্ঞ ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Samsung home appliances feature advanced smart inverter tech. We provide certified repairs for Samsung washing machine 4E/5E/dE error codes, refrigerator defrost problems, AC C4 sensor errors, and LED TV display panel repairs.',
     coverageDescBn: 'স্যামসাং ওয়াশিং মেশিনের 4E/5E/dE এরর কোড, ফ্রিজের নিচের চেম্বার ঠান্ডা না হওয়া, ইনভার্টার এসির গ্যাস রিফিল এবং স্মার্ট টিভির ডিসপ্লে প্যানেল সমস্যার জন্য আমরা অভিজ্ঞ প্রকৌশলী দিয়ে তাৎক্ষণিক সেবা দিই।',
     errorCodes: [
@@ -897,8 +897,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'What is the Samsung appliance repair customer number in Kolkata?',
         qBn: 'কলকাতায় স্যামসাং অ্যাপ্লায়েন্স মেরামতের ফোন নম্বর কোনটি?',
-        aEn: 'Call +91 6291674186 or WhatsApp for same-day doorstep technician visit with transparent ₹299 inspection fee.',
-        aBn: 'একই দিনে ডোরস্টেপ সার্ভিসের জন্য সরাসরি কল করুন +91 6291674186 নম্বরে। পরিদর্শন ফি মাত্র ₹২৯৯।'
+        aEn: 'Call +91 6291674186 or WhatsApp for same-day doorstep technician visit with transparent upfront quotation.',
+        aBn: 'একই দিনে ডোরস্টেপ সার্ভিসের জন্য সরাসরি কল করুন +91 6291674186 নম্বরে। কাজের আগেই সম্পূর্ণ কোটেশন জানিয়ে দেওয়া হয়।'
       }
     ]
   },
@@ -908,8 +908,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'LG',
     headlineEn: 'LG Dual Inverter AC, Refrigerator, Washing Machine & TV Repair Service in West Bengal',
     headlineBn: 'পশ্চিমবঙ্গে এলজি ডুয়াল ইনভার্টার এসি, ফ্রিজ, ওয়াশিং মেশিন ও টিভি সার্ভিস সাপোর্ট',
-    subheadlineEn: 'Express 90-min doorstep service for LG Smart Inverter AC, Door-in-Door Refrigerator, AI DD Washers & OLED/NanoCell TV. Flat ₹299 visit fee.',
-    subheadlineBn: 'এলজি ডুয়াল ইনভার্টার এসি, স্মার্ট ফ্রিজ, এআই ওয়াশিং মেশিন ও এলইডি টিভির দক্ষ ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ পরিদর্শনে দ্রুত সার্ভিস।',
+    subheadlineEn: 'Express 90-min doorstep service for LG Smart Inverter AC, Door-in-Door Refrigerator, AI DD Washers & OLED/NanoCell TV. Transparent & affordable pricing.',
+    subheadlineBn: 'এলজি ডুয়াল ইনভার্টার এসি, স্মার্ট ফ্রিজ, এআই ওয়াশিং মেশিন ও এলইডি টিভির দক্ষ ডোরস্টেপ সমাধান। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত সার্ভিস।',
     coverageDescEn: 'LG appliances lead in inverter motor and compressor reliability. We resolve LG Dual Inverter AC CH05/CH10 error codes, washing machine OE/IE/UE errors, Linear Inverter fridge cooling issues, and LED TV backlight faults.',
     coverageDescBn: 'এলজি ডুয়াল ইনভার্টার এসির CH05/CH10 এরর কোড, ওয়াশিং মেশিনের OE/IE/UE ড্রেন ও স্পিন ত্রুটি, লিনিয়ার ইনভার্টার ফ্রিজের গ্যাস লিকেজ এবং এলইডি টিভির ব্যাকলাইট সমস্যায় আমাদের বিশেষ দক্ষতা রয়েছে।',
     errorCodes: [
@@ -997,8 +997,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Carrier',
     headlineEn: 'Carrier AC Repair & Service Centre Support in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় ক্যারিয়ার এসি মেরামত ও ডোরস্টেপ সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Professional repair for Carrier Inverter, Split, Window & Cassette AC units. 90-min doorstep arrival across Kolkata with flat ₹299 inspection fee.',
-    subheadlineBn: 'ক্যারিয়ার ইনভার্টার, স্প্লিট, উইন্ডো ও ক্যাসেট এসির সার্টিফাইড ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Professional repair for Carrier Inverter, Split, Window & Cassette AC units. 90-min doorstep arrival across Kolkata with transparent & affordable pricing.',
+    subheadlineBn: 'ক্যারিয়ার ইনভার্টার, স্প্লিট, উইন্ডো ও ক্যাসেট এসির সার্টিফাইড ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Carrier is an iconic global air conditioning pioneer. We specialize in Carrier inverter AC E1/E4 error code diagnostics, compressor protection tripping, copper coil leak repairs, and precise R32/R410A gas recharging.',
     coverageDescBn: 'ক্যারিয়ার বিশ্বজুড়ে এয়ার কন্ডিশনারের পথিকৃৎ। ক্যারিয়ার ইনভার্টার এসির E1/E4 এরর কোড, কম্প্রেসার ট্রিপিং, কপার কয়েল লিকেজ মেরামত এবং নিখুঁত গ্যাস রিফিলে আমাদের টেকনিশিয়ানরা বিশেষভাবে প্রশিক্ষিত।',
     errorCodes: [
@@ -1047,8 +1047,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'Why is my Carrier AC not cooling though the fan is working?',
         qBn: 'ক্যারিয়ার এসির ফ্যান চলছে কিন্তু ঠান্ডা হচ্ছে না কেন?',
-        aEn: 'Usually caused by a weak compressor capacitor or gas leakage. Our technician tests this on-site with a flat ₹299 inspection fee. Call +91 6291674186.',
-        aBn: 'ক্যাপাসিটর দুর্বল হলে বা গ্যাস লিকেজ হলে এমন হয়। আমাদের টেকনিশিয়ান মাত্র ₹২৯৯ ফিতে স্পটেই টেস্ট করে দেন।'
+        aEn: 'Usually caused by a weak compressor capacitor or gas leakage. Our technician tests this on-site with transparent upfront quotation. Call +91 6291674186.',
+        aBn: 'ক্যাপাসিটর দুর্বল হলে বা গ্যাস লিকেজ হলে এমন হয়। আমাদের টেকনিশিয়ান স্পটেই টেস্ট করে কাজের আগেই সঠিক কোটেশন দেন।'
       },
       {
         qEn: 'What does E1 or E4 error mean on Carrier AC?',
@@ -1070,8 +1070,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Godrej',
     headlineEn: 'Godrej Refrigerator, AC & Washing Machine Repair Service in West Bengal',
     headlineBn: 'পশ্চিমবঙ্গে গোদরেজ ফ্রিজ, এসি ও ওয়াশিং মেশিন মেরামত সার্ভিস সাপোর্ট',
-    subheadlineEn: 'Trusted doorstep repairs for Godrej Edge Direct Cool, Eon Frost-Free Fridges, Inverter AC & Eon Washers. 90-min arrival with flat ₹299 visit fee.',
-    subheadlineBn: 'গোদরেজ এজ ও ইয়ন রেফ্রিজারেটর, ইনভার্টার এসি ও ওয়াশিং মেশিনের বিশ্বস্ত ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Trusted doorstep repairs for Godrej Edge Direct Cool, Eon Frost-Free Fridges, Inverter AC & Eon Washers. 90-min arrival with transparent & affordable pricing.',
+    subheadlineBn: 'গোদরেজ এজ ও ইয়ন রেফ্রিজারেটর, ইনভার্টার এসি ও ওয়াশিং মেশিনের বিশ্বস্ত ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Godrej appliances are known for robust Indian cooling performance. We provide expert repairs for Godrej double door fridge cooling loss, bimetal defrost failures, inverter AC performance issues, and washing machine drain faults.',
     coverageDescBn: 'গোদরেজ ভারতীয় আবহাওয়ার জন্য উপযোগী নির্ভরযোগ্য ব্র্যান্ড। গোদরেজ ডাবল ডোর ফ্রিজের কুলিং কমে যাওয়া, ডিফ্রস্ট সেন্সর ফল্ট, এসির গ্যাস রিফিল এবং ওয়াশিং মেশিনের ড্রেন সমস্যায় আমরা অভিজ্ঞ সেবা দিই।',
     errorCodes: [
@@ -1125,8 +1125,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'What is the Godrej refrigerator repair helpline in Kolkata?',
         qBn: 'কলকাতায় গোদরেজ ফ্রিজ মেরামতের ফোন নম্বর কোনটি?',
-        aEn: 'Dial +91 6291674186 or WhatsApp us for same-day doorstep service with a flat ₹299 inspection fee.',
-        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে। পরিদর্শন ফি মাত্র ₹২৯৯।'
+        aEn: 'Dial +91 6291674186 or WhatsApp us for same-day doorstep service with transparent upfront quotation.',
+        aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে। কাজের আগেই সম্পূর্ণ কোটেশন জানিয়ে দেওয়া হয়।'
       }
     ]
   },
@@ -1136,8 +1136,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Haier',
     headlineEn: 'Haier AC, Refrigerator & Washing Machine Service Centre Support in Kolkata',
     headlineBn: 'কলকাতায় হায়ার এসি, ফ্রিজ ও ওয়াশিং মেশিন সার্ভিস সেন্টার সাপোর্ট',
-    subheadlineEn: 'Fast doorstep repair for Haier Triple Inverter AC, Bottom Mounted Refrigerator, Deep Freezers & Washers. Express 90-min visit with ₹299 diagnosis fee.',
-    subheadlineBn: 'হায়ার ট্রিপল ইনভার্টার এসি, বটম মাউন্টেড ফ্রিজ ও ওয়াশিং মেশিনের দ্রুত ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Fast doorstep repair for Haier Triple Inverter AC, Bottom Mounted Refrigerator, Deep Freezers & Washers. Express 90-min visit with transparent & affordable pricing.',
+    subheadlineBn: 'হায়ার ট্রিপল ইনভার্টার এসি, বটম মাউন্টেড ফ্রিজ ও ওয়াশিং মেশিনের দ্রুত ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Haier appliances feature innovative designs like bottom-mounted fridges and self-clean ACs. We provide certified repairs for Haier AC E7 inverter errors, refrigerator defrost failures, and washing machine E2 drain errors.',
     coverageDescBn: 'হায়ার ইনভার্টার এসির E7 এরর কোড, সেলফ-ক্লিন ফিচার ফল্ট, ফ্রিজের কুলিং লস এবং ওয়াশিং মেশিনের ড্রেন সমস্যায় আমাদের প্রকৌশলীরা বিশেষভাবে প্রশিক্ষিত।',
     errorCodes: [
@@ -1201,8 +1201,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Panasonic',
     headlineEn: 'Panasonic AC, Washing Machine & Refrigerator Repair in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় প্যানাসনিক এসি, ওয়াশিং মেশিন ও ফ্রিজ মেরামত সাপোর্ট',
-    subheadlineEn: 'Certified doorstep diagnostics for Panasonic Miraie Inverter AC, StainMaster Washers & Econavi Fridges. 90-min arrival with flat ₹299 inspection fee.',
-    subheadlineBn: 'প্যানাসনিক মিরাই ইনভার্টার এসি, ওয়াশিং মেশিন ও ইকোন্যাভি ফ্রিজের বিশেষজ্ঞ ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সার্ভিস।',
+    subheadlineEn: 'Certified doorstep diagnostics for Panasonic Miraie Inverter AC, StainMaster Washers & Econavi Fridges. 90-min arrival with transparent & affordable pricing.',
+    subheadlineBn: 'প্যানাসনিক মিরাই ইনভার্টার এসি, ওয়াশিং মেশিন ও ইকোন্যাভি ফ্রিজের বিশেষজ্ঞ ডোরস্টেপ সমাধান। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত সার্ভিস।',
     coverageDescEn: 'Panasonic appliances feature Japanese precision and smart IoT connectivity. We resolve Panasonic H11 communication errors, timer LED blinking, washing machine U11/U12 errors, and Econavi inverter fridge diagnostics.',
     coverageDescBn: 'প্যানাসনিক ইনভার্টার এসির H11 এরর কোড, টাইমার লাইট ব্লিংকিং, ওয়াশিং মেশিনের U11/U12 এরর এবং ফ্রিজের ইনভার্টার পিসিবি মেরামতে আমরা দক্ষ টেকনিশিয়ান প্রদান করি।',
     errorCodes: [
@@ -1251,7 +1251,7 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How to contact Panasonic appliance repair in Kolkata?',
         qBn: 'কলকাতায় প্যানাসনিক অ্যাপ্লায়েন্স মেরামতের ফোন নম্বর কোনটি?',
-        aEn: 'Call +91 6291674186 or WhatsApp for same-day service with flat ₹299 visit fee.',
+        aEn: 'Call +91 6291674186 or WhatsApp for same-day service with transparent & affordable pricing.',
         aBn: 'তাৎক্ষণিক বুকিংয়ের জন্য কল করুন +91 6291674186 নম্বরে।'
       }
     ]
@@ -1262,8 +1262,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Bosch',
     headlineEn: 'Bosch Washing Machine, Refrigerator & Microwave Service Support in West Bengal',
     headlineBn: 'পশ্চিমবঙ্গে বশ ওয়াশিং মেশিন, ফ্রিজ ও মাইক্রোওয়েভ ডোরস্টেপ সার্ভিস',
-    subheadlineEn: 'Specialist repair for Bosch Serie 4, Serie 6, Serie 8 Front Load Washers, Maxx Fridges & Microwaves. Fast 90-min arrival with ₹299 diagnosis fee.',
-    subheadlineBn: 'বশ ফ্রন্ট লোড ওয়াশিং মেশিন, ফ্রিজ ও মাইক্রোওয়েভের সার্টিফাইড ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Specialist repair for Bosch Serie 4, Serie 6, Serie 8 Front Load Washers, Maxx Fridges & Microwaves. Fast 90-min arrival with transparent & affordable pricing.',
+    subheadlineBn: 'বশ ফ্রন্ট লোড ওয়াশিং মেশিন, ফ্রিজ ও মাইক্রোওয়েভের সার্টিফাইড ডোরস্টেপ সমাধান। কলকাতায় ৯০ মিনিটে আগমন ও স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Bosch is globally renowned for German engineering standards. We provide certified repairs for Bosch washing machine E18 drain pump errors, E23/E29 water inlet faults, drum bearing replacements, and refrigerator cooling loss.',
     coverageDescBn: 'বশ বিশ্বখ্যাত জার্মান প্রযুক্তির ব্র্যান্ড। বশ ওয়াশিং মেশিনের E18 ড্রেন এরর, E23/E29 ওয়াটার ভালভ ত্রুটি, ড্রাম বেয়ারিং পরিবর্তন এবং ফ্রিজের কুলিং সমস্যায় আমরা দক্ষ টেকনিশিয়ান ও জেনুইন যন্ত্রাংশ দিই।',
     errorCodes: [
@@ -1318,8 +1318,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Siemens',
     headlineEn: 'Siemens Washing Machine & Refrigerator Repair Service in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় সিমেন্স ওয়াশিং মেশিন ও ফ্রিজ ডোরস্টেপ মেরামত সাপোর্ট',
-    subheadlineEn: 'German engineering precision repair for Siemens iQ300, iQ500, iQ700 Front Load Washers & Fridges. 90-min visit with flat ₹299 inspection fee.',
-    subheadlineBn: 'সিমেন্স আইকিউ৩০০, আইকিউ৫০০ ও আইকিউ৭০০ ফ্রন্ট লোড ওয়াশিং মেশিন ও ফ্রিজের প্রিমিয়াম ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সার্ভিস।',
+    subheadlineEn: 'German engineering precision repair for Siemens iQ300, iQ500, iQ700 Front Load Washers & Fridges. 90-min visit with transparent & affordable pricing.',
+    subheadlineBn: 'সিমেন্স আইকিউ৩০০, আইকিউ৫০০ ও আইকিউ৭০০ ফ্রন্ট লোড ওয়াশিং মেশিন ও ফ্রিজের প্রিমিয়াম ডোরস্টেপ সমাধান। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত সার্ভিস।',
     coverageDescEn: 'Siemens home appliances are built with high-precision engineering. We repair Siemens iQDrive brushless motors, E18 drain pump errors, door interlock latch failures, and frost-free refrigerator cooling issues.',
     coverageDescBn: 'সিমেন্স প্রিমিয়াম জার্মান অ্যাপ্লায়েন্স। সিমেন্স আইকিউ-ড্রাইভ মোটর, E18 ড্রেন এরর, ডোর লক এবং ফ্রস্ট-ফ্রি ফ্রিজের কুলিং সমস্যার জন্য আমরা দক্ষ বিশেষজ্ঞ টেকনিশিয়ান পাঠাই।',
     errorCodes: [
@@ -1353,8 +1353,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Sony',
     headlineEn: 'Sony Bravia LED & 4K Smart TV Repair Service in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় সোনি ব্রাভিয়া এলইডি ও স্মার্ট টিভি ডোরস্টেপ মেরামত সাপোর্ট',
-    subheadlineEn: 'Certified doorstep technician for Sony Bravia OLED, 4K HDR, Google TV display panels, motherboards & backlights. Same-day visit with flat ₹299 inspection fee.',
-    subheadlineBn: 'সোনি ব্রাভিয়া ওলেড, ৪কে এইচডিআর ও গুগল টিভির ডিসপ্লে প্যানেল, মাদারবোর্ড ও ব্যাকলাইটের দক্ষ ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Certified doorstep technician for Sony Bravia OLED, 4K HDR, Google TV display panels, motherboards & backlights. Same-day visit with transparent & affordable pricing.',
+    subheadlineBn: 'সোনি ব্রাভিয়া ওলেড, ৪কে এইচডিআর ও গুগল টিভির ডিসপ্লে প্যানেল, মাদারবোর্ড ও ব্যাকলাইটের দক্ষ ডোরস্টেপ সার্ভিস। স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Sony Bravia televisions provide industry-leading picture clarity. We specialize in diagnosing Sony red standby light blinking codes (6 blinks, 4 blinks), sound-with-no-picture backlight failure, and T-Con display line issues.',
     coverageDescBn: 'সোনি ব্রাভিয়া টিভির লাল লাইট ব্লিংকিং কোড (৬ বার, ৪ বার ব্লিংক), টিভিতে শব্দ আছে কিন্তু পর্দা কালো ব্যাকলাইট সমস্যা এবং ডিসপ্লেতে লাইন পড়ার সমস্যা আমরা নিপুণভাবে সমাধান করি।',
     errorCodes: [
@@ -1412,7 +1412,7 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How to book Sony LED TV repair in Kolkata?',
         qBn: 'কলকাতায় সোনি এলইডি টিভি মেরামতের জন্য কীভাবে বুক করবেন?',
-        aEn: 'Dial +91 6291674186 or WhatsApp us for doorstep inspection at flat ₹299 across Kolkata and Howrah.',
+        aEn: 'Dial +91 6291674186 or WhatsApp us for doorstep inspection with transparent rates across Kolkata and Howrah.',
         aBn: 'সরাসরি কল করুন +91 6291674186 অথবা হোয়াটসঅ্যাপে বুক করুন।'
       }
     ]
@@ -1423,8 +1423,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Toshiba',
     headlineEn: 'Toshiba AC, Washing Machine & Refrigerator Repair Service in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় তোশিবা এসি, ওয়াশিং মেশিন ও ফ্রিজ ডোরস্টেপ সার্ভিস',
-    subheadlineEn: 'Japanese engineering precision repair for Toshiba Inverter AC, Top & Front Load Washers, and Fridges. 90-min visit with flat ₹299 inspection fee.',
-    subheadlineBn: 'তোশিবা ইনভার্টার এসি, ওয়াশিং মেশিন ও ফ্রিজের প্রিমিয়াম ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত ও নির্ভরযোগ্য সার্ভিস।',
+    subheadlineEn: 'Japanese engineering precision repair for Toshiba Inverter AC, Top & Front Load Washers, and Fridges. 90-min visit with transparent & affordable pricing.',
+    subheadlineBn: 'তোশিবা ইনভার্টার এসি, ওয়াশিং মেশিন ও ফ্রিজের প্রিমিয়াম ডোরস্টেপ সমাধান। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত ও নির্ভরযোগ্য সার্ভিস।',
     coverageDescEn: 'Toshiba home appliances deliver Japanese reliability. We diagnose Toshiba DC hybrid inverter AC error codes, washing machine drain/lid switch issues, and multi-door refrigerator inverter cooling system failures.',
     coverageDescBn: 'তোশিবা ইনভার্টার এসির ফল্ট কোড, ওয়াশিং মেশিনের ড্রেন ও লিড লক এরর এবং ফ্রিজের ইনভার্টার কুলিং সমস্যা নিপুণভাবে সমাধানে আমাদের টেকনিশিয়ানরা বিশেষজ্ঞ।',
     errorCodes: [
@@ -1467,7 +1467,7 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How to contact Toshiba repair support in Kolkata?',
         qBn: 'তোশিবা মেরামতের জন্য যোগাযোগ নম্বর কোনটি?',
-        aEn: 'Call +91 6291674186 or WhatsApp us for instant doorstep booking at flat ₹299 inspection charge.',
+        aEn: 'Call +91 6291674186 or WhatsApp us for instant doorstep booking with transparent & affordable rates.',
         aBn: 'তাৎক্ষণিক বুকিংয়ের জন্য ডায়াল করুন +91 6291674186 অথবা হোয়াটসঅ্যাপে মেসেজ করুন।'
       }
     ]
@@ -1478,8 +1478,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'TCL',
     headlineEn: 'TCL Smart LED TV & Inverter AC Repair Service in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় টিসিএল স্মার্ট এলইডি টিভি ও এসি ডোরস্টেপ সার্ভিস',
-    subheadlineEn: 'Specialist doorstep repair for TCL 4K UHD, QLED Android/Google Smart TVs & Inverter ACs. Same-day visit with flat ₹299 inspection fee.',
-    subheadlineBn: 'টিসিএল ৪কে ইউএইচডি, কিউলেড গুগল টিভি এবং ইনভার্টার এসির বিশেষজ্ঞ ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সমাধান।',
+    subheadlineEn: 'Specialist doorstep repair for TCL 4K UHD, QLED Android/Google Smart TVs & Inverter ACs. Same-day visit with transparent & affordable pricing.',
+    subheadlineBn: 'টিসিএল ৪কে ইউএইচডি, কিউলেড গুগল টিভি এবং ইনভার্টার এসির বিশেষজ্ঞ ডোরস্টেপ সার্ভিস। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত সমাধান।',
     coverageDescEn: 'TCL produces advanced smart TVs and air conditioners. We resolve TCL TV sound-with-black-screen backlight issues, bootloop / logo stuck errors, horizontal display lines, and TCL inverter AC E4 cooling faults.',
     coverageDescBn: 'টিসিএল স্মার্ট টিভির ডিসপ্লে সমস্যা (শব্দ আছে কিন্তু ছবি নেই), টিসিএল লোগোতে আটকে থাকা, পর্দায় দাগ এবং ইনভার্টার এসির কুলিং সমস্যার দ্রুত সমাধান দিই।',
     errorCodes: [
@@ -1529,7 +1529,7 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How to book TCL TV repair in Kolkata?',
         qBn: 'কলকাতায় টিসিএল টিভি মেরামতের জন্য কীভাবে বুক করবেন?',
-        aEn: 'Dial +91 6291674186 or WhatsApp for same-day doorstep service at flat ₹299 inspection visit fee.',
+        aEn: 'Dial +91 6291674186 or WhatsApp for same-day doorstep service with transparent & affordable rates.',
         aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে বুক করুন।'
       }
     ]
@@ -1540,8 +1540,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Mi / Xiaomi',
     headlineEn: 'Mi & Redmi Smart LED TV Repair Service Support in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় এমআই ও রেডমি স্মার্ট টিভি ডোরস্টেপ মেরামত সাপোর্ট',
-    subheadlineEn: 'Specialist repair for Mi 4A, 4X, 5A, Horizon Edition & Redmi 4K Smart TVs. Backlight replacement, display panel repair & motherboard servicing at flat ₹299 visit fee.',
-    subheadlineBn: 'এমআই ৪এ, ৪এক্স, হরাইজন এডিশন ও রেডমি ৪কে স্মার্ট টিভির ব্যাকলাইট, ডিসপ্লে ও মাদারবোর্ডের বিশেষজ্ঞ ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Specialist repair for Mi 4A, 4X, 5A, Horizon Edition & Redmi 4K Smart TVs. Backlight replacement, display panel repair & motherboard servicing with transparent & affordable pricing.',
+    subheadlineBn: 'এমআই ৪এ, ৪এক্স, হরাইজন এডিশন ও রেডমি ৪কে স্মার্ট টিভির ব্যাকলাইট, ডিসপ্লে ও মাদারবোর্ডের বিশেষজ্ঞ ডোরস্টেপ সমাধান। স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'Xiaomi/Redmi TVs are hugely popular across Kolkata. We solve common Mi TV problems including black screen with audio, stuck on "Mi" logo, ghosting/double image, HDMI port failure, and power board capacitor burnout.',
     coverageDescBn: 'কলকাতায় এমআই ও রেডমি টিভির স্ক্রিন অন্ধকার হয়ে যাওয়া (শব্দ আছে), এমআই লোগোতে আটকে থাকা, ডিসপ্লেতে ডাবল ইমেজ এবং পাওয়ার বোর্ডের সমস্যা আমরা স্পটেই ঠিক করি।',
     errorCodes: [
@@ -1598,8 +1598,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How much is the inspection fee for Mi TV repair?',
         qBn: 'এমআই টিভি পরিদর্শনের ফি কত?',
-        aEn: 'Doorstep inspection is only ₹299 across Kolkata and Howrah. Call +91 6291674186.',
-        aBn: 'কলকাতা ও হাওড়ায় হোম ভিজিট চার্জ মাত্র ₹২৯৯।'
+        aEn: 'Doorstep inspection is budget-friendly with upfront estimate across Kolkata and Howrah. Call +91 6291674186.',
+        aBn: 'কলকাতা ও হাওড়ায় ডোরস্টেপ সার্ভিস চার্জ অত্যন্ত সাশ্রয়ী এবং স্বচ্ছ।'
       }
     ]
   },
@@ -1609,8 +1609,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'OnePlus',
     headlineEn: 'OnePlus Smart LED & QLED TV Repair Service Support in Kolkata',
     headlineBn: 'কলকাতায় ওয়ানপ্লাস স্মার্ট টিভি ডোরস্টেপ মেরামত সাপোর্ট',
-    subheadlineEn: 'Expert doorstep technician for OnePlus Y Series, U Series & Q Series 4K QLED Smart TVs. Display panel, backlight & motherboard diagnostics at flat ₹299 visit fee.',
-    subheadlineBn: 'ওয়ানপ্লাস ওয়াই সিরিজ, ইউ সিরিজ ও কিউলেড টিভির ডিসপ্লে, ব্যাকলাইট ও মাদারবোর্ডের বিশেষজ্ঞ ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফি।',
+    subheadlineEn: 'Expert doorstep technician for OnePlus Y Series, U Series & Q Series 4K QLED Smart TVs. Display panel, backlight & motherboard diagnostics with transparent & affordable pricing.',
+    subheadlineBn: 'ওয়ানপ্লাস ওয়াই সিরিজ, ইউ সিরিজ ও কিউলেড টিভির ডিসপ্লে, ব্যাকলাইট ও মাদারবোর্ডের বিশেষজ্ঞ ডোরস্টেপ সমাধান। স্বচ্ছ সাশ্রয়ী সার্ভিস চার্জ।',
     coverageDescEn: 'OnePlus Smart TVs feature premium bezels and OxygenOS integration. We fix OnePlus TV sound-with-no-picture issues, vertical green/pink lines, bootloop, and remote pairing problems.',
     coverageDescBn: 'ওয়ানপ্লাস স্মার্ট টিভির শব্দ থাকা সত্ত্বেও ছবি না আসা, ডিসপ্লেতে সবুজ বা গোলাপি লাইন, রিস্টার্ট সমস্যা এবং মাদারবোর্ড ত্রুটি আমরা দ্রুত ও নির্ভরযোগ্যভাবে সমাধান করি।',
     errorCodes: [
@@ -1653,7 +1653,7 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How to contact OnePlus TV customer repair support in Kolkata?',
         qBn: 'কলকাতায় ওয়ানপ্লাস টিভি মেরামতের জন্য কীভাবে যোগাযোগ করবেন?',
-        aEn: 'Dial +91 6291674186 or WhatsApp for same-day doorstep inspection at flat ₹299 across Kolkata and Howrah.',
+        aEn: 'Dial +91 6291674186 or WhatsApp for same-day doorstep inspection with transparent rates across Kolkata and Howrah.',
         aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে মেসেজ পাঠান।'
       }
     ]
@@ -1664,8 +1664,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Kelvinator',
     headlineEn: 'Kelvinator Refrigerator & AC Repair Service Support in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় কেলভিনেটর ফ্রিজ ও এসি ডোরস্টেপ মেরামত সাপোর্ট',
-    subheadlineEn: 'Reliable doorstep repair for Kelvinator Single Door, Double Door Frost-Free Fridges & ACs. 90-min arrival with flat ₹299 inspection fee.',
-    subheadlineBn: 'কেলভিনেটর সিঙ্গেল ডোর, ডাবল ডোর ফ্রস্ট-ফ্রি ফ্রিজ ও এসির বিশ্বস্ত ডোরস্টেপ সমাধান। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সেবা।',
+    subheadlineEn: 'Reliable doorstep repair for Kelvinator Single Door, Double Door Frost-Free Fridges & ACs. 90-min arrival with transparent & affordable pricing.',
+    subheadlineBn: 'কেলভিনেটর সিঙ্গেল ডোর, ডাবল ডোর ফ্রস্ট-ফ্রি ফ্রিজ ও এসির বিশ্বস্ত ডোরস্টেপ সমাধান। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত সেবা।',
     coverageDescEn: 'Kelvinator refrigerators are celebrated for deep cooling. We fix refrigerator compressor not starting, cooling coil freezing while lower cabinet is warm, gas leakage, thermostat defects, and AC servicing.',
     coverageDescBn: 'কেলভিনেটর ফ্রিজে গ্যাস লিকেজ, কম্প্রেসার স্টার্ট না হওয়া, ডিপে অতিরিক্ত বরফ জমে নিচে ঠান্ডা না হওয়া এবং এসির গ্যাস রিফিলিংয়ের নির্ভরযোগ্য সেবা প্রদান করি।',
     errorCodes: [
@@ -1707,7 +1707,7 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How to book Kelvinator fridge repair in Kolkata?',
         qBn: 'কলকাতায় কেলভিনেটর ফ্রিজ মেরামতের জন্য যোগাযোগ নম্বর কোনটি?',
-        aEn: 'Call +91 6291674186 or WhatsApp for same-day doorstep service at flat ₹299 inspection visit charge.',
+        aEn: 'Call +91 6291674186 or WhatsApp for same-day doorstep service with transparent & affordable rates.',
         aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপ করুন।'
       }
     ]
@@ -1718,8 +1718,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Electrolux',
     headlineEn: 'Electrolux Washing Machine & Refrigerator Repair in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় ইলেকট্রোলাক্স ওয়াশিং মেশিন ও ফ্রিজ ডোরস্টেপ সার্ভিস',
-    subheadlineEn: 'Specialist repair for Electrolux Front Load & Top Load Washing Machines, UltimateCare washers & Fridges. 90-min arrival with flat ₹299 inspection fee.',
-    subheadlineBn: 'ইলেকট্রোলাক্স ফ্রন্ট লোড ও টপ লোড ওয়াশিং মেশিন এবং ফ্রিজের বিশেষজ্ঞ ডোরস্টেপ সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত ও নির্ভরযোগ্য সমাধান।',
+    subheadlineEn: 'Specialist repair for Electrolux Front Load & Top Load Washing Machines, UltimateCare washers & Fridges. 90-min arrival with transparent & affordable pricing.',
+    subheadlineBn: 'ইলেকট্রোলাক্স ফ্রন্ট লোড ও টপ লোড ওয়াশিং মেশিন এবং ফ্রিজের বিশেষজ্ঞ ডোরস্টেপ সার্ভিস। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত ও নির্ভরযোগ্য সমাধান।',
     coverageDescEn: 'Electrolux washing machines offer Scandinavian engineering. We resolve Electrolux E10 water inlet timeout, E20 drain pump errors, E40 door lock faults, drum bearing noise, and refrigerator inverter cooling issues.',
     coverageDescBn: 'ইলেকট্রোলাক্স ওয়াশিং মেশিনের E10 ওয়াটার এরর, E20 ড্রেন পাম্প এরর, E40 ডোর লক এরর, ড্রামে অতিরিক্ত শব্দ এবং ফ্রিজের কুলিং সমস্যার জন্য আমরা দক্ষ টেকনিশিয়ান প্রদান করি।',
     errorCodes: [
@@ -1778,8 +1778,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Kent RO',
     headlineEn: 'Kent RO Water Purifier Repair & Filter Service in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় কেন্ট আরও ওয়াটার পিউরিফায়ার মেরামত ও ফিল্টার সার্ভিস',
-    subheadlineEn: 'Doorstep service for Kent Grand Plus, Prime, Pearl & Mineral RO systems. Membrane replacement, UV lamp repair, and filter changes at flat ₹299 inspection fee.',
-    subheadlineBn: 'কেন্ট গ্র্যান্ড প্লাস, প্রাইম ও মিনারেল আরও ওয়াটার পিউরিফায়ারের জেনুইন ফিল্টার ও মেমব্রেন সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত ডোরস্টেপ সমাধান।',
+    subheadlineEn: 'Doorstep service for Kent Grand Plus, Prime, Pearl & Mineral RO systems. Membrane replacement, UV lamp repair, and filter changes with transparent upfront quotation.',
+    subheadlineBn: 'কেন্ট গ্র্যান্ড প্লাস, প্রাইম ও মিনারেল আরও ওয়াটার পিউরিফায়ারের জেনুইন ফিল্টার ও মেমব্রেন সার্ভিস। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত ডোরস্টেপ সমাধান।',
     coverageDescEn: 'Kent is India’s premier RO water purifier brand. We fix continuous alarm beeping, filter life expired alerts, low water flow, tank water leakage, booster pump pressure drop, and foul taste.',
     coverageDescBn: 'কেন্ট পিউরিফায়ারে একনাগাড়ে অ্যালার্ম বাজা, ফিল্টার পরিবর্তনের নোটিফিকেশন, ট্যাঙ্কে জল না জমা, বুস্টার পাম্পের প্রেসার কমে যাওয়া ও জলের স্বাদের সমস্যা আমরা দক্ষ টেকনিশিয়ান দিয়ে সমাধান করি।',
     errorCodes: [
@@ -1830,8 +1830,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How much does Kent RO filter service cost?',
         qBn: 'কেন্ট আরও ফিল্টার সার্ভিসের খরচ কত?',
-        aEn: 'Doorstep inspection is flat ₹299. Genuine sediment, carbon, and RO membrane replacements are shared with transparent pricing before work. Call +91 6291674186.',
-        aBn: 'ভিজিট চার্জ মাত্র ₹২৯৯। কোনো ফিল্টার পরিবর্তনের প্রয়োজন হলে আগেই রেট জানিয়ে অনুমোদন নেওয়া হয়।'
+        aEn: 'Doorstep inspection provides transparent upfront estimate. Genuine sediment, carbon, and RO membrane replacements are shared with transparent pricing before work. Call +91 6291674186.',
+        aBn: 'ভিজিট চার্জ অত্যন্ত সাশ্রয়ী। কোনো ফিল্টার পরিবর্তনের প্রয়োজন হলে আগেই রেট জানিয়ে অনুমোদন নেওয়া হয়।'
       },
       {
         qEn: 'How to book Kent RO repair in Kolkata?',
@@ -1847,8 +1847,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Aquaguard',
     headlineEn: 'Aquaguard & Eureka Forbes Water Purifier Service Support in Kolkata & West Bengal',
     headlineBn: 'কলকাতায় অ্যাকোয়াগার্ড ও ইউরেকা ফোর্বস ওয়াটার পিউরিফায়ার সার্ভিস',
-    subheadlineEn: 'Doorstep maintenance for Aquaguard Enhance, Magna, Geneus & Neo RO+UV Purifiers. Genuine filter cartridges, booster pumps & membrane replacement at ₹299 visit fee.',
-    subheadlineBn: 'অ্যাকোয়াগার্ড এনহ্যান্স, ম্যাগনা ও নিও আরও+ইউভি পিউরিফায়ারের জেনুইন ফিল্টার ও মেমব্রেন সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত ডোরস্টেপ সমাধান।',
+    subheadlineEn: 'Doorstep maintenance for Aquaguard Enhance, Magna, Geneus & Neo RO+UV Purifiers. Genuine filter cartridges, booster pumps & membrane replacement with transparent & affordable pricing.',
+    subheadlineBn: 'অ্যাকোয়াগার্ড এনহ্যান্স, ম্যাগনা ও নিও আরও+ইউভি পিউরিফায়ারের জেনুইন ফিল্টার ও মেমব্রেন সার্ভিস। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত ডোরস্টেপ সমাধান।',
     coverageDescEn: 'Aquaguard water purifiers are trusted by millions. We resolve Aquaguard red light blinking, electronic life lock alert, water leaking from base, low water output, and motor humming sounds.',
     coverageDescBn: 'অ্যাকোয়াগার্ডে লাল বাতি ব্লিংক করা, জল লিকেজ হওয়া, জল আসতে দেরি হওয়া, ট্যাঙ্কে নোংরা গন্ধ বা অস্বচ্ছ স্বাদের সমস্যায় আমরা অরিজিনাল পার্টস ও অভিজ্ঞ টেকনিশিয়ান প্রদান করি।',
     errorCodes: [
@@ -1891,7 +1891,7 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How to book Aquaguard water purifier repair in Kolkata?',
         qBn: 'কলকাতায় অ্যাকোয়াগার্ড মেরামতের জন্য কীভাবে বুক করবেন?',
-        aEn: 'Call +91 6291674186 or WhatsApp for same-day doorstep inspection across Kolkata and Howrah at flat ₹299.',
+        aEn: 'Call +91 6291674186 or WhatsApp for same-day doorstep inspection across Kolkata and Howrah with transparent pricing.',
         aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে মেসেজ পাঠান।'
       }
     ]
@@ -1902,8 +1902,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Livpure',
     headlineEn: 'Livpure RO Water Purifier Repair & Maintenance Service in Kolkata',
     headlineBn: 'কলকাতায় লিভপিওর আরও ওয়াটার পিউরিফায়ার ডোরস্টেপ সার্ভিস',
-    subheadlineEn: 'Doorstep repair for Livpure Glo, Bolt, Platino & Pep RO systems. Filter replacement, booster pump repair & membrane maintenance at flat ₹299 inspection visit fee.',
-    subheadlineBn: 'লিভপিওর গ্লো, বোল্ট ও পেপ আরও ওয়াটার পিউরিফায়ারের ফিল্টার, বুস্টার পাম্প ও মেমব্রেন সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত ডোরস্টেপ সমাধান।',
+    subheadlineEn: 'Doorstep repair for Livpure Glo, Bolt, Platino & Pep RO systems. Filter replacement, booster pump repair & membrane maintenance with transparent & affordable rates.',
+    subheadlineBn: 'লিভপিওর গ্লো, বোল্ট ও পেপ আরও ওয়াটার পিউরিফায়ারের ফিল্টার, বুস্টার পাম্প ও মেমব্রেন সার্ভিস। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত ডোরস্টেপ সমাধান।',
     coverageDescEn: 'Livpure provides smart RO purification systems. We resolve purifier not turning on, wastewater leaking continuously while pure water tank is empty, low TDS issues, and power SMPS failures.',
     coverageDescBn: 'লিভপিওরের পাওয়ার অন না হওয়া, অনবরত ড্রেন দিয়ে জল বয়ে যাওয়া কিন্তু ফিল্টারে জল না জমা, টিডিএস অস্বাভাবিক হওয়া ও পাম্পের ত্রুটির দক্ষ সমাধান দিই।',
     errorCodes: [
@@ -1938,7 +1938,7 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How to contact Livpure RO service support in Kolkata?',
         qBn: 'কলকাতায় লিভপিওর আরও সার্ভিসের ফোন নম্বর কোনটি?',
-        aEn: 'Call our direct helpline +91 6291674186 or WhatsApp us for instant doorstep booking at flat ₹299 inspection fee.',
+        aEn: 'Call our direct helpline +91 6291674186 or WhatsApp us for instant doorstep booking with transparent upfront quotation.',
         aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে বুক করুন।'
       },
       {
@@ -1955,8 +1955,8 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
     name: 'Pureit',
     headlineEn: 'Pureit RO Water Purifier Repair & GKK Replacement Service in Kolkata',
     headlineBn: 'কলকাতায় পিউরিট আরও ওয়াটার পিউরিফায়ার ও জিকেকে পরিবর্তন সার্ভিস',
-    subheadlineEn: 'Doorstep service for Pureit Classic, Marvella, Copper & Advanced RO systems. Germkill Kit (GKK) change, booster pump servicing, and leak repairs at ₹299 visit fee.',
-    subheadlineBn: 'পিউরিট ক্লাসিক, মারভেলা, কপার ও অ্যাডভান্সড আরও পিউরিফায়ারের জিকেকে কিট পরিবর্তন ও মেমব্রেন সার্ভিস। মাত্র ₹২৯৯ ভিজিট ফিতে দ্রুত সমাধান।',
+    subheadlineEn: 'Doorstep service for Pureit Classic, Marvella, Copper & Advanced RO systems. Germkill Kit (GKK) change, booster pump servicing, and leak repairs with transparent & affordable pricing.',
+    subheadlineBn: 'পিউরিট ক্লাসিক, মারভেলা, কপার ও অ্যাডভান্সড আরও পিউরিফায়ারের জিকেকে কিট পরিবর্তন ও মেমব্রেন সার্ভিস। স্বচ্ছ ও সাশ্রয়ী খরচে দ্রুত সমাধান।',
     coverageDescEn: 'Hindustan Unilever Pureit purifiers ensure safe drinking water. We handle Pureit GKK red alert lockout, internal water leakage, booster pump pressure drop, and taste enhancement cartridge replacement.',
     coverageDescBn: 'পিউরিটে লাল সংকেত (জিকেকে এক্সপায়ার), ওয়াটার লিকেজ, মোটর বন্ধ হওয়া এবং ফিল্টারের ত্রুটি সারাতে আমরা অরিজিনাল কিট ও দক্ষ মেকানিক প্রদান করি।',
     errorCodes: [
@@ -1998,7 +1998,7 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       {
         qEn: 'How to book Pureit water purifier repair in Kolkata?',
         qBn: 'কলকাতায় পিউরিট পিউরিফায়ার মেরামতের জন্য কীভাবে বুক করবেন?',
-        aEn: 'Call +91 6291674186 or WhatsApp us for doorstep visit at flat ₹299 inspection charge across Kolkata and Howrah.',
+        aEn: 'Call +91 6291674186 or WhatsApp us for doorstep visit with transparent rates across Kolkata and Howrah.',
         aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে মেসেজ পাঠান।'
       }
     ]

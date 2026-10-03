@@ -275,7 +275,7 @@ export default function SearchModal({
                                 {cat ? (lang === 'bn' ? cat.nameBn : cat.name) : 'Appliance'}
                               </span>
                               <span>&bull;</span>
-                              <span>₹299 Diagnosis</span>
+                              <span>{lang === 'bn' ? 'স্বচ্ছ ডায়াগনোসিস' : 'Doorstep Diagnosis'}</span>
                             </div>
                           </div>
                           <span style={{ fontSize: '0.75rem', color: 'var(--color-primary)', fontWeight: 600, padding: '4px 8px', background: 'var(--color-primary-light)', borderRadius: '4px', whiteSpace: 'nowrap' }}>

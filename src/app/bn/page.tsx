@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
   return buildPageMetadata({
     title: 'Home Appliance Care India - হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া | ডোরস্টেপ রিপেয়ার',
-    description: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India): ভারত ও পশ্চিমবঙ্গের #১ ডোরস্টেপ হোম অ্যাপ্লায়েন্স রিপেয়ার সার্ভিস। ৪.৯★ গ্রাহক রিভিউ (reviews)। আপনার নিকটবর্তী (near me) দক্ষ টেকনিশিয়ান। এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভি মেরামত মাত্র ₹২৯৯ ফি ও ৯০ দিনের ওয়ারেন্টি।',
+    description: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India): ভারত ও পশ্চিমবঙ্গের #১ ডোরস্টেপ হোম অ্যাপ্লায়েন্স রিপেয়ার সার্ভিস। ৪.৯★ গ্রাহক রিভিউ (reviews)। আপনার নিকটবর্তী (near me) দক্ষ টেকনিশিয়ান। এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভি মেরামত স্বচ্ছ সাশ্রয়ী ফি ও ৯০ দিনের ওয়ারেন্টি।',
     keywords: [
       'home Appliance Care India',
       'Home Appliance Care India',

@@ -8,10 +8,10 @@ export const homeFaqs: FAQItem[] = [
     answerBn: 'আমরা সল্টলেক, নিউ টাউন, গড়িয়া, বেহালা, হাওড়া, যাদবপুর এবং দমদম সহ সমগ্র কলকাতার সমস্ত প্রধান অঞ্চলে ৯০ মিনিটের দ্রুত ডোরস্টেপ সার্ভিস প্রদান করি। আপনি তৎক্ষণাৎ ইমার্জেন্সি স্লট নিতে পারেন অথবা আপনার সুবিধাজনক ৩ ঘণ্টার সময়সূচি বেছে নিতে পারেন।'
   },
   {
-    question: 'What is included in the flat ₹299 doorstep inspection & diagnosis fee?',
-    questionBn: 'স্থির ₹২৯৯ ডোরস্টেপ পরিদর্শন ও রোগ নির্ণয় ফি-তে কী কী অন্তর্ভুক্ত রয়েছে?',
-    answer: 'The ₹299 fee covers on-site visit by an experienced technician, complete multi-point diagnostic check (electrical load, multimeter, gas pressure, compressor health, and mechanical parts), and an upfront transparent quote. If you proceed with the suggested repair, the diagnosis fee is clearly accounted for.',
-    answerBn: '₹২৯৯ ভিজিট ফিতে অভিজ্ঞ টেকনিশিয়ানের বাড়িতে এসে পুঙ্খানুপুঙ্খ পরীক্ষা (মাল্টিমিটার, গ্যাস প্রেশার, কম্প্রেসর স্বাস্থ্য ও মেকানিক্যাল পার্টস টেস্ট) এবং স্বচ্ছ কাজের কোটেশন অন্তর্ভুক্ত। আপনি মেরামত করালে সম্পূর্ণ খরচ আগেই জানিয়ে অনুমোদন নেওয়া হয়।'
+    question: 'How do your doorstep inspection and repair charges work?',
+    questionBn: 'আপনাদের ডোরস্টেপ পরিদর্শন ও সার্ভিসিং চার্জ কীভাবে নির্ধারিত হয়?',
+    answer: 'We offer completely transparent and affordable pricing. You can discuss the appliance issue over phone to get an initial estimate. Our certified technician visits your doorstep, performs a complete multi-point diagnostic check (electrical load, multimeter, gas pressure, compressor health, and mechanical parts), and provides an upfront quotation before starting any repair.',
+    answerBn: 'আমরা সম্পূর্ণ স্বচ্ছ ও সাশ্রয়ী মূল্যে সেবা প্রদান করি। আপনি ফোনে কথা বলেই প্রাথমিক খরচের ধারণা পেতে পারেন। এরপর অভিজ্ঞ টেকনিশিয়ান আপনার বাড়িতে এসে পুঙ্খানুপুঙ্খ পরীক্ষা (মাল্টিমিটার, গ্যাস প্রেশার, কম্প্রেসর স্বাস্থ্য ও মেকানিক্যাল পার্টস টেস্ট) করে কাজ শুরুর আগেই সঠিক কোটেশন জানিয়ে অনুমোদন নেন।'
   },
   {
     question: 'Which home appliance brands do you repair?',
@@ -28,8 +28,8 @@ export const homeFaqs: FAQItem[] = [
   {
     question: 'What should I do if my AC is running but not blowing cold air?',
     questionBn: 'যদি আমার এসি চলে কিন্তু ঠান্ডা বাতাস না দেয় তবে আমার কী করা উচিত?',
-    answer: 'First check if the remote is in "Cool" mode and the air filters are clean. Common reasons include low refrigerant gas (leakage), clogged condenser coils, or a faulty compressor capacitor. Book a ₹299 inspection so our technician can perform a manifold gauge leak test and rectify the issue promptly.',
-    answerBn: 'প্রথমে রিমোটে "Cool" মোড সেট করা আছে কিনা এবং এয়ার ফিল্টার পরিষ্কার কিনা দেখে নিন। সাধারণ কারণগুলির মধ্যে রয়েছে রেফ্রিজারেন্ট গ্যাস লিক, কনডেন্সার কয়লা ময়লা জমা, বা কম্প্রেসর ক্যাপাসিটর খারাপ হওয়া। ₹২৯৯ পরিদর্শনে বুক করলে আমাদের টেকনিশিয়ান স্পটেই প্রেশার গেজ টেস্ট করে সমাধান করে দেবেন।'
+    answer: 'First check if the remote is in "Cool" mode and the air filters are clean. Common reasons include low refrigerant gas (leakage), clogged condenser coils, or a faulty compressor capacitor. Book a doorstep inspection so our technician can perform a manifold gauge leak test and rectify the issue promptly.',
+    answerBn: 'প্রথমে রিমোটে "Cool" মোড সেট করা আছে কিনা এবং এয়ার ফিল্টার পরিষ্কার কিনা দেখে নিন। সাধারণ কারণগুলির মধ্যে রয়েছে রেফ্রিজারেন্ট গ্যাস লিক, কনডেন্সার কয়লা ময়লা জমা, বা কম্প্রেসর ক্যাপাসিটর খারাপ হওয়া। ডোরস্টেপ পরিদর্শনে বুক করলে আমাদের টেকনিশিয়ান স্পটেই প্রেশার গেজ টেস্ট করে দ্রুত সমাধান করে দেবেন।'
   },
   {
     question: 'Can I book an appliance technician on Sundays or public holidays in West Bengal?',
@@ -46,14 +46,14 @@ export const homeFaqs: FAQItem[] = [
   {
     question: 'Where can I read genuine Home Appliance Care India reviews and customer ratings?',
     questionBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়ার আসল গ্রাহক রিভিউ (reviews) কোথায় দেখতে পাব?',
-    answer: 'You can read 1,280+ verified homeowner reviews on our dedicated Reviews page (https://www.applianceseva.com/reviews). We hold a 4.9/5 star average rating for transparent ₹299 inspection, genuine parts, and 90-day warranty.',
-    answerBn: 'আমাদের ওয়েবসাইটের ডেডিকেটেড রিভিউ পেজে (https://www.applianceseva.com/bn/reviews) ১২৮০+ যাচাইকৃত গ্রাহক রিভিউ দেখতে পারেন। স্বচ্ছ ₹২৯৯ পরিদর্শন ফি, আসল পার্টস ও ৯০ দিনের ওয়ারেন্টির জন্য আমাদের গ্রাহক রেটিং ৪.৯/৫ স্টার।'
+    answer: 'You can read 1,280+ verified homeowner reviews on our dedicated Reviews page (https://www.applianceseva.com/reviews). We hold a 4.9/5 star average rating for transparent pricing, genuine parts, and 90-day warranty.',
+    answerBn: 'আমাদের ওয়েবসাইটের ডেডিকেটেড রিভিউ পেজে (https://www.applianceseva.com/bn/reviews) ১২৮০+ যাচাইকৃত গ্রাহক রিভিউ দেখতে পারেন। সম্পূর্ণ স্বচ্ছ সাশ্রয়ী চার্জ, আসল পার্টস ও ৯০ দিনের ওয়ারেন্টির জন্য আমাদের গ্রাহক রেটিং ৪.৯/৫ স্টার।'
   },
   {
     question: 'Why choose Home Appliance Care India for doorstep home appliance repair service?',
     questionBn: 'ডোরস্টেপ হোম অ্যাপ্লায়েন্স রিপেয়ার সার্ভিসের (home appliance repair service) জন্য কেন হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া সেরা?',
-    answer: 'Home Appliance Care India provides multi-brand certified technicians for AC, Refrigerator, Washing Machine, Microwave, and LED TV. With our fixed ₹299 diagnostic fee, 90-minute doorstep arrival, real-time booking tracking, and 90-day service warranty, we are India and West Bengal’s most dependable repair partner.',
-    answerBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভির জন্য সার্টিফাইড টেকনিশিয়ান প্রদান করে। নির্দিষ্ট ₹২৯৯ ভিজিট ফি, একই দিনে ৯০ মিনিটে বাড়িতে আগমন, রিয়েলটাইম বুকিং ট্র্যাকিং এবং ৯০ দিনের ওয়ারেন্টি সহ আমরা পশ্চিমবঙ্গ ও ভারতের সবচেয়ে নির্ভরযোগ্য সার্ভিস পার্টনার।'
+    answer: 'Home Appliance Care India provides multi-brand certified technicians for AC, Refrigerator, Washing Machine, Microwave, and LED TV. With our transparent upfront pricing, 90-minute doorstep arrival, real-time booking tracking, and 90-day service warranty, we are India and West Bengal’s most dependable repair partner.',
+    answerBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেন ও টিভির জন্য সার্টিফাইড টেকনিশিয়ান প্রদান করে। স্বচ্ছ ও সাশ্রয়ী মূল্য, একই দিনে ৯০ মিনিটে বাড়িতে আগমন, রিয়েলটাইম বুকিং ট্র্যাকিং এবং ৯০ দিনের ওয়ারেন্টি সহ আমরা পশ্চিমবঙ্গ ও ভারতের সবচেয়ে নির্ভরযোগ্য সার্ভিস পার্টনার।'
   },
   {
     question: 'What is the Home Appliance Care India customer care phone number?',

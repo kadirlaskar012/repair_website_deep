@@ -35,7 +35,7 @@ export async function generateMetadata({
   if (!brandDetail) return {};
 
   return buildPageMetadata({
-    title: `${brandDetail.name} সার্ভিস সেন্টার সাপোর্ট ও মেরামত কলকাতা | ₹২৯৯ পরিদর্শন`,
+    title: `${brandDetail.name} সার্ভিস সেন্টার সাপোর্ট ও মেরামত কলকাতা | ডোরস্টেপ সার্ভিস`,
     description: brandDetail.subheadlineBn,
     path: `/brands/${brandDetail.slug}`,
     lang: 'bn',
@@ -103,7 +103,7 @@ export default async function BrandPageBn({
         addressRegion: 'West Bengal',
         addressCountry: 'IN'
       },
-      priceRange: '₹299'
+      priceRange: '₹₹'
     },
     areaServed: {
       '@type': 'AdministrativeArea',
@@ -111,9 +111,8 @@ export default async function BrandPageBn({
     },
     offers: {
       '@type': 'Offer',
-      price: '299',
       priceCurrency: 'INR',
-      description: `${brandDetail.name} এসির ডোরস্টেপ পরিদর্শন ও ডায়াগনোসিস ফি মাত্র ₹২৯৯।`
+      description: `${brandDetail.name} অ্যাপ্লায়েন্সের ডোরস্টেপ পরিদর্শন ও স্বচ্ছ কোটেশন সহ মেরামত সেবা।`
     }
   };
 

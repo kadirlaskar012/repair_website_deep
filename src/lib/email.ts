@@ -79,8 +79,8 @@ export async function sendBookingLeadEmail(toEmail: string, booking: Booking): P
                 <td class="value">${booking.preferredTime}</td>
               </tr>
               <tr>
-                <td class="label">Diagnosis Fee</td>
-                <td class="value">₹299 (Inspection & Estimate)</td>
+                <td class="label">Pricing</td>
+                <td class="value">Discuss on call / Upfront quote on inspection</td>
               </tr>
             </table>
           </div>

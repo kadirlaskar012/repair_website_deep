@@ -134,7 +134,7 @@ export default function CategoryGrid({ categories, lang }: CategoryGridProps) {
                       borderRadius: 'var(--radius-full)'
                     }}
                   >
-                    {isBn ? '₹২৯৯ পরিদর্শন' : '₹299 Diagnosis'}
+                    {isBn ? 'স্বচ্ছ ডায়াগনোসিস' : 'Doorstep Diagnosis'}
                   </span>
                 </div>
 

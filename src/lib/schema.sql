@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `site_settings` (
   `service_area_bn` TEXT NOT NULL,
   `working_hours` VARCHAR(100) NOT NULL,
   `working_hours_bn` VARCHAR(100) NOT NULL,
-  `visit_fee` INT NOT NULL DEFAULT 299,
+  `visit_fee` INT NOT NULL DEFAULT 0,
   `currency` VARCHAR(10) NOT NULL DEFAULT '₹',
   `pricing_disclaimer` TEXT NOT NULL,
   `pricing_disclaimer_bn` TEXT NOT NULL,

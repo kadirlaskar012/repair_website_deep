@@ -163,7 +163,7 @@ export default function LocationBar({ locations, lang, phone = '+91 6291674186' 
 
         <div className="location-bar-right">
           <span className="location-promo-text">
-            {lang === 'bn' ? 'ফ্ল্যাট ₹২৯৯ পরিদর্শন ও ডায়াগনোসিস' : 'Flat ₹299 Visit & Inspection'}
+            {lang === 'bn' ? 'স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জ' : 'Transparent & Affordable Pricing'}
           </span>
           <a
             href={`tel:${phone.replace(/[^\d+]/g, '')}`}

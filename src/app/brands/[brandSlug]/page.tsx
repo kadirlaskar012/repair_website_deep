@@ -36,7 +36,7 @@ export async function generateMetadata({
   if (!brandDetail) return {};
 
   return buildPageMetadata({
-    title: `${brandDetail.name} Service Centre Support & Repair in Kolkata | ₹299 Visit`,
+    title: `${brandDetail.name} Service Centre Support & Repair in Kolkata | Doorstep Service`,
     description: brandDetail.subheadlineEn,
     path: `/brands/${brandDetail.slug}`,
     lang: 'en',
@@ -104,7 +104,7 @@ export default async function BrandPage({
         addressRegion: 'West Bengal',
         addressCountry: 'IN'
       },
-      priceRange: '₹299'
+      priceRange: '₹₹'
     },
     areaServed: {
       '@type': 'AdministrativeArea',
@@ -112,9 +112,8 @@ export default async function BrandPage({
     },
     offers: {
       '@type': 'Offer',
-      price: '299',
       priceCurrency: 'INR',
-      description: `Doorstep inspection and multi-point diagnostics for ${brandDetail.name} appliances.`
+      description: `Doorstep inspection and multi-point diagnostics for ${brandDetail.name} appliances with upfront quotation.`
     }
   };
 

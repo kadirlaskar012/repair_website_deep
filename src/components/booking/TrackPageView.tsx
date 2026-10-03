@@ -150,7 +150,7 @@ export default function TrackPageView({
     {
       step: 3,
       title: isBn ? 'ডোরস্টেপ পরিদর্শন ও ডায়াগনোসিস' : 'Inspection / In Progress',
-      desc: isBn ? 'স্বচ্ছ ₹২৯৯ পরিদর্শন ফি' : 'Doorstep ₹299 inspection'
+      desc: isBn ? 'স্বচ্ছ ডোরস্টেপ ডায়াগনোসিস' : 'Doorstep diagnosis & quote'
     },
     {
       step: 4,

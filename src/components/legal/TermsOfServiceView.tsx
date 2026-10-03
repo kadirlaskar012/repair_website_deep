@@ -67,12 +67,12 @@ export default function TermsOfServiceView({
               </p>
 
               <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-primary-dark)' }}>
-                {isBn ? '১. ₹২৯৯ পরিদর্শন ও ডায়াগনোসিস ফি' : '1. Standard ₹299 Visit & Diagnosis Fee'}
+                {isBn ? '১. স্বচ্ছ পরিদর্শন ও মূল্য নির্ধারণ' : '1. Transparent Inspection & Upfront Pricing'}
               </h2>
               <p>
                 {isBn
-                  ? `₹২৯৯ হলো টেকনিশিয়ানের বাড়িতে এসে পুঙ্খানুপুঙ্খ পরীক্ষা এবং রোগ নির্ণয়ের নির্ধারিত ফি। এটি কোনো চূড়ান্ত মেরামতের মূল্য নয়। কোনো যন্ত্রাংশ প্রতিস্থাপন বা মেরামত শুরুর পূর্বে টেকনিশিয়ান স্পটেই সম্পূর্ণ কোটেশন জানিয়ে আপনার অনুমোদন নেবেন। আপনি মেরামতে সম্মতি না দিলেও শুধুমাত্র ₹২৯৯ পরিদর্শন ফি প্রযোজ্য হবে।`
-                  : `₹299 represents exclusively the doorstep visit and physical diagnosis fee. It is NOT the repair price. Before any repair work or spare parts replacement begins, our technician provides an itemized quotation. Work commences strictly after your explicit approval. If you decline repair after diagnosis, only the ₹299 inspection fee is payable.`}
+                  ? `আমরা সম্পূর্ণ স্বচ্ছ মূল্যে বিশ্বাসী। আপনি ফোনে কথা বলে আপনার অ্যাপ্লায়েন্সের সমস্যার প্রাথমিক খরচের ধারণা পেতে পারেন। টেকনিশিয়ানের বাড়িতে এসে পুঙ্খানুপুঙ্খ পরীক্ষা এবং রোগ নির্ণয়ের পর কোনো যন্ত্রাংশ প্রতিস্থাপন বা মেরামত শুরুর পূর্বে স্পটেই সম্পূর্ণ কোটেশন জানিয়ে আপনার অনুমোদন নেওয়া হয়। আপনার সম্মতির পরেই মেরামত কাজ শুরু হয়।`
+                  : `We are committed to 100% transparent and upfront pricing. Customers can discuss appliance issues over phone to get an initial estimate. Upon physical doorstep inspection, our certified technician provides a clear, itemized quotation before any repair work or parts replacement begins. Work commences strictly after your explicit approval.`}
               </p>
 
               <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-primary-dark)' }}>

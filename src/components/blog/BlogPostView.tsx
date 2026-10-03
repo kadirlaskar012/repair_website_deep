@@ -376,8 +376,8 @@ export default function BlogPostView({
               </div>
               <p style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)', maxWidth: '540px', lineHeight: 1.5 }}>
                 {isBn
-                  ? 'আমাদের সার্টিফাইড টেকনিশিয়ান আপনার দরজায় এসে পরীক্ষা করবেন মাত্র ₹২৯৯ ফি-তে। কাজের পূর্বে সম্পূর্ণ কোটেশন প্রদান করা হয়।'
-                  : 'Certified technicians at your doorstep across Kolkata & West Bengal. Complete physical inspection at a flat ₹299 fee.'}
+                  ? 'আমাদের সার্টিফাইড টেকনিশিয়ান আপনার দরজায় এসে পরীক্ষা করবেন সাশ্রয়ী ফি-তে। কাজের পূর্বে সম্পূর্ণ স্বচ্ছ কোটেশন প্রদান করা হয়।'
+                  : 'Certified technicians at your doorstep across Kolkata & West Bengal. Complete physical inspection with upfront transparent pricing.'}
               </p>
 
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>

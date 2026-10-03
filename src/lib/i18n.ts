@@ -3,7 +3,7 @@ import { Language } from './types';
 export const i18n = {
   en: {
     siteTitle: 'Home Appliance Care India | Doorstep Appliance Repair Network',
-    siteTagline: 'Professional multi-brand appliance repair & diagnosis at just ₹299',
+    siteTagline: 'Professional multi-brand doorstep appliance repair & honest diagnosis',
     home: 'Home',
     services: 'Services',
     search: 'Search Services...',
@@ -17,9 +17,9 @@ export const i18n = {
     bookNow: 'Book Service',
     callNow: 'Call Now',
     whatsappChat: 'WhatsApp Us',
-    diagnosisFee: '₹299 Visit & Diagnosis Fee',
-    diagnosisExplanation: '₹299 is strictly the physical visit and multi-point diagnosis fee. The exact repair estimate is quoted on-site and performed only with your approval.',
-    diagnosisBadge: 'Fixed ₹299 Diagnosis',
+    diagnosisFee: 'Transparent & Affordable Pricing',
+    diagnosisExplanation: 'We offer upfront transparent estimates. You can discuss the issue over phone, and the exact repair estimate is confirmed on-site before any work begins.',
+    diagnosisBadge: 'Transparent Upfront Pricing',
     heroBadge: 'West Bengal Doorstep Appliance Specialists',
     heroTitle: 'Reliable Appliance Repair at Your Doorstep in West Bengal',
     heroSubtitle: 'Certified technicians for AC, Refrigerator, Washing Machine, Microwave & LED TV. Transparent diagnosis, genuine spare parts, and 30-day service warranty.',
@@ -39,8 +39,8 @@ export const i18n = {
     pricingHeading: 'Simple, Honest & Transparent Pricing',
     pricingSubtitle: 'No hidden charges. No inflated estimates. You approve the quote before we touch a screw.',
     pricingCardTitle: 'Doorstep Inspection & Multi-Point Diagnosis',
-    pricingCardFee: '₹299',
-    pricingCardFeeNote: 'Fixed standard inspection charge',
+    pricingCardFee: 'Affordable',
+    pricingCardFeeNote: 'Transparent pricing discussed on call',
     pricingPoint1: 'Physical on-site inspection by a certified technician',
     pricingPoint2: 'Comprehensive electrical, mechanical & circuit testing',
     pricingPoint3: 'Transparent quotation provided before repair begins',
@@ -96,12 +96,12 @@ export const i18n = {
     copied: 'Copied!',
 
     // Modal
-    modalDiagnosticNote: 'Standard ₹299 inspection fee applies. Parts and repair quoted upfront.',
+    modalDiagnosticNote: 'Transparent & affordable pricing. Exact repair quotation provided upfront before work starts.',
     modalClose: 'Close'
   },
   bn: {
     siteTitle: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া | ডোরস্টেপ রিপেয়ার ও সার্ভিস',
-    siteTagline: 'মাত্র ₹২৯৯-এ পেশাদার মাল্টি-ব্র্যান্ড হোম অ্যাপ্লায়েন্স মেরামত ও রোগ নির্ণয়',
+    siteTagline: 'পেশাদার মাল্টি-ব্র্যান্ড হোম অ্যাপ্লায়েন্স মেরামত ও স্বচ্ছ রোগ নির্ণয়',
     home: 'হোম',
     services: 'সার্ভিসসমূহ',
     search: 'সার্ভিস খুঁজুন...',
@@ -115,9 +115,9 @@ export const i18n = {
     bookNow: 'সার্ভিস বুক করুন',
     callNow: 'কল করুন',
     whatsappChat: 'হোয়াটসঅ্যাপ করুন',
-    diagnosisFee: '₹২৯৯ পরিদর্শন ও ডায়াগনোসিস ফি',
-    diagnosisExplanation: '₹২৯৯ শুধুমাত্র অন-সাইট পরিদর্শন এবং রোগ নির্ণয় ফি। মেরামতের আসল খরচ টেকনিশিয়ানের পরীক্ষার পর এবং আপনার সম্পূর্ণ অনুমোদনের পরেই নির্ধারিত হয়।',
-    diagnosisBadge: 'নির্ধারিত ₹২৯৯ ডায়াগনোসিস ফি',
+    diagnosisFee: 'স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জ',
+    diagnosisExplanation: 'আমরা সম্পূর্ণ স্বচ্ছ খরচে বিশ্বাসী। ফোনে কথা বলে প্রাথমিক ধারণা নিন এবং টেকনিশিয়ান এসে কাজ শুরুর আগেই সঠিক কোটেশন জানিয়ে অনুমোদন নেন।',
+    diagnosisBadge: 'স্বচ্ছ ও সেরা রেটের নিশ্চয়তা',
     heroBadge: 'পশ্চিমবঙ্গের বিশ্বস্ত ডোরস্টেপ অ্যাপ্লায়েন্স বিশেষজ্ঞ',
     heroTitle: 'পশ্চিমবঙ্গে আপনার ঘরেই নির্ভরযোগ্য অ্যাপ্লায়েন্স মেরামত পরিষেবা',
     heroSubtitle: 'এসি, ফ্রিজ, ওয়াশিং মেশিন, মাইক্রোওয়েভ ও এলইডি টিভির জন্য দক্ষ টেকনিশিয়ান। স্বচ্ছ ডায়াগনোসিস, আসল যন্ত্রাংশ এবং ৩০ দিনের সার্ভিস ওয়ারেন্টি।',
@@ -137,8 +137,8 @@ export const i18n = {
     pricingHeading: 'সহজ, সৎ ও স্বচ্ছ মূল্য ব্যবস্থা',
     pricingSubtitle: 'কোনো লুকানো চার্জ নেই। কোনো বাড়তি কোটেশন নেই। আপনার অনুমোদনের পরেই কাজ শুরু হয়।',
     pricingCardTitle: 'ডোরস্টেপ পরিদর্শন ও মাল্টি-পয়েন্ট ডায়াগনোসিস',
-    pricingCardFee: '₹২৯৯',
-    pricingCardFeeNote: 'স্থির পরিদর্শন ও পরীক্ষা চার্জ',
+    pricingCardFee: 'সাশ্রয়ী মূল্য',
+    pricingCardFeeNote: 'ফোনে কথা বলে সঠিক খরচের ধারণা',
     pricingPoint1: 'প্রত্যয়িত টেকনিশিয়ান দ্বারা বাড়িতে এসে শারীরিক পরিদর্শন',
     pricingPoint2: 'সম্পূর্ণ ইলেকট্রিক্যাল, মেকানিক্যাল এবং সার্কিট টেস্ট',
     pricingPoint3: 'কাজ শুরুর আগেই পুঙ্খানুপুঙ্খ কোটেশন ও খরচ নির্ধারণ',
@@ -194,7 +194,7 @@ export const i18n = {
     copied: 'কপি হয়েছে!',
 
     // Modal
-    modalDiagnosticNote: 'নির্ধারিত ₹২৯৯ পরিদর্শন ফি প্রযোজ্য। যেকোনো যন্ত্রাংশ বা মেরামতের খরচ কাজের আগে জানানো হয়।',
+    modalDiagnosticNote: 'স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জ। যেকোনো মেরামতের খরচ কাজে হাত দেওয়ার আগেই জানানো হয়।',
     modalClose: 'বন্ধ করুন'
   }
 };

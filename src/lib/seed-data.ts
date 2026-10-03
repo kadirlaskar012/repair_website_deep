@@ -12,10 +12,10 @@ export const initialSiteSettings: SiteSettings = {
   serviceAreaBn: 'ব্যারাকপুর, বেহালা, বারাসাত, হাবড়া, গড়িয়া, নিউ টাউন, দমদম, পার্ক স্ট্রিট, হাওড়া ও পশ্চিমবঙ্গ',
   workingHours: '8:00 AM - 9:00 PM (All 7 Days)',
   workingHoursBn: 'সকাল ৮:০০ - রাত ৯:০০ (সপ্তাহের ৭ দিনই)',
-  visitFee: 299,
+  visitFee: 0,
   currency: '₹',
-  pricingDisclaimer: '₹299 is ONLY the visit & diagnosis fee. The actual repair cost is confirmed after thorough inspection by the certified technician and strictly upon your approval before any repair work begins.',
-  pricingDisclaimerBn: '₹২৯৯ শুধুমাত্র ভিজিট এবং রোগ নির্ণয় ফি। কোনো মেরামতের কাজ শুরু করার আগে প্রত্যয়িত টেকনিশিয়ানের পুঙ্খানুপুঙ্খ পরিদর্শনের পরে এবং সম্পূর্ণ আপনার অনুমোদনের পরেই প্রকৃত মেরামতের খরচ চূড়ান্ত করা হয়।',
+  pricingDisclaimer: 'Transparent & upfront pricing. Inspection and exact repair estimates are discussed and confirmed strictly upon your approval before any repair work begins.',
+  pricingDisclaimerBn: 'স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জ। কোনো কাজ শুরুর আগে টেকনিশিয়ান স্পটে পরিদর্শন করে আপনার অনুমোদনেই চূড়ান্ত খরচের হিসাব নিশ্চিত করবেন।',
   emergencyNotice: 'Home Appliance Care India: Express 90-minute doorstep technician arrival across Barrackpur, Behala, Barasat, Habra, Garia, New town, Dumdum, Park street, Howrah & West Bengal.',
   emergencyNoticeBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া: ব্যারাকপুর, বেহালা, বারাসাত, হাবড়া, গড়িয়া, নিউ টাউন, দমদম, পার্ক স্ট্রিট, হাওড়া ও পশ্চিমবঙ্গ জুড়ে ৯০ মিনিটে ডোরস্টেপ টেকনিশিয়ান আগমন।'
 };
@@ -35,8 +35,8 @@ export const initialCategories: Category[] = [
     isActive: true,
     metaTitle: 'Professional AC Repair & Servicing | Home Appliance Care India',
     metaTitleBn: 'বিশ্বস্ত এসি মেরামত ও সার্ভিসিং | Home Appliance Care India',
-    metaDesc: 'Expert doorstep AC repair service by Home Appliance Care India. Split & Window AC cooling issues, jet cleaning, gas charging. Transparent ₹299 inspection fee.',
-    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India)-র বিশ্বস্ত এসি মেরামত ও সার্ভিসিং। স্প্লিট ও উইন্ডো এসি কুলিং সমস্যা, জেট ওয়াশ ও গ্যাস রিফিল। স্বচ্ছ ₹২৯৯ পরিদর্শন ফি।'
+    metaDesc: 'Expert doorstep AC repair service by Home Appliance Care India. Split & Window AC cooling issues, jet cleaning, gas charging. Affordable rates & 90-day warranty.',
+    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India)-র বিশ্বস্ত এসি মেরামত ও সার্ভিসিং। স্প্লিট ও উইন্ডো এসি কুলিং সমস্যা, জেট ওয়াশ ও গ্যাস রিফিল। সাশ্রয়ী সার্ভিস ও ৯০ দিনের ওয়ারেন্টি।'
   },
   {
     id: 'fridge-repair',
@@ -52,8 +52,8 @@ export const initialCategories: Category[] = [
     isActive: true,
     metaTitle: 'Doorstep Refrigerator & Fridge Repair | Home Appliance Care India',
     metaTitleBn: 'নির্ভরযোগ্য ফ্রিজ মেরামত সার্ভিস | Home Appliance Care India',
-    metaDesc: 'Reliable fridge repair service by Home Appliance Care India. Fix cooling failure, gas leak, defrost issue, compressor noise. Same-day ₹299 inspection visit.',
-    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র ডোরস্টেপ ফ্রিজ মেরামত। কুলিং বন্ধ, গ্যাস লিকেজ, কম্প্রেসার ও ডিফ্রস্ট সমস্যার দ্রুত সমাধান। মাত্র ₹২৯৯ ভিজিট চার্জ।'
+    metaDesc: 'Reliable fridge repair service by Home Appliance Care India. Fix cooling failure, gas leak, defrost issue, compressor noise. Same-day doorstep inspection visit.',
+    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র ডোরস্টেপ ফ্রিজ মেরামত। কুলিং বন্ধ, গ্যাস লিকেজ, কম্প্রেসার ও ডিফ্রস্ট সমস্যার দ্রুত সমাধান। সাশ্রয়ী ডোরস্টেপ পরিদর্শন।'
   },
   {
     id: 'washing-machine-repair',
@@ -70,7 +70,7 @@ export const initialCategories: Category[] = [
     metaTitle: 'Washing Machine Repair Service | Home Appliance Care India',
     metaTitleBn: 'বিশ্বস্ত ওয়াশিং মেশিন মেরামত | Home Appliance Care India',
     metaDesc: 'Fast doorstep washing machine repair by Home Appliance Care India. Front load & top load motor, spin, drain, PCB fixes. Verified technicians.',
-    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র দ্রুত ওয়াশিং মেশিন মেরামত পরিষেবা। ফ্রন্ট লোড ও টপ লোড ড্রেন, মোটর ও ইলেকট্রনিক বোর্ড মেরামত। স্বচ্ছ ₹২৯৯ ফি।'
+    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র দ্রুত ওয়াশিং মেশিন মেরামত পরিষেবা। ফ্রন্ট লোড ও টপ লোড ড্রেন, মোটর ও ইলেকট্রনিক বোর্ড মেরামত। সাশ্রয়ী রেট ও ৯০ দিনের ওয়ারেন্টি।'
   },
   {
     id: 'microwave-repair',
@@ -86,8 +86,8 @@ export const initialCategories: Category[] = [
     isActive: true,
     metaTitle: 'Microwave Oven Repair at Doorstep | Home Appliance Care India',
     metaTitleBn: 'মাইক্রোওয়েভ ওভেন মেরামত পরিষেবা | Home Appliance Care India',
-    metaDesc: 'Doorstep microwave oven repair by Home Appliance Care India. Magnetron heating issues, spark repair, touchpad fixing for all leading brands. Only ₹299 inspection.',
-    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র ডোরস্টেপ মাইক্রোওয়েভ ওভেন মেরামত। গরম না হওয়া, স্পার্কিং, টাচপ্যাড ত্রুটি নিরসন। ₹২৯৯ স্বচ্ছ ভিজিট ও রোগ নির্ণয় চার্জ।'
+    metaDesc: 'Doorstep microwave oven repair by Home Appliance Care India. Magnetron heating issues, spark repair, touchpad fixing for all leading brands. Affordable inspection & warranty.',
+    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র ডোরস্টেপ মাইক্রোওয়েভ ওভেন মেরামত। গরম না হওয়া, স্পার্কিং, টাচপ্যাড ত্রুটি নিরসন। সাশ্রয়ী ডোরস্টেপ পরিদর্শন ও ওয়ারেন্টি।'
   },
   {
     id: 'led-tv-repair',
@@ -104,7 +104,7 @@ export const initialCategories: Category[] = [
     metaTitle: 'LED & Smart TV Repair Service | Home Appliance Care India',
     metaTitleBn: 'এলইডি ও স্মার্ট টিভি মেরামত | Home Appliance Care India',
     metaDesc: 'Professional LED & Smart TV repair by Home Appliance Care India. Fix black screen, backlight, sound issues, power supply for Samsung, Sony, LG & more.',
-    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র পেশাদার এলইডি ও স্মার্ট টিভি মেরামত পরিষেবা। ব্যাকলাইট, ডিসপ্লে, সাউন্ড ও মাদারবোর্ড সমস্যার সমাধান। মাত্র ₹২৯৯ পরিদর্শন ফি।'
+    metaDescBn: 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া-র পেশাদার এলইডি ও স্মার্ট টিভি মেরামত পরিষেবা। ব্যাকলাইট, ডিসপ্লে, সাউন্ড ও মাদারবোর্ড সমস্যার সমাধান। সাশ্রয়ী ডোরস্টেপ পরিদর্শন।'
   }
 ];
 
@@ -123,8 +123,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'রেফ্রিজারেন্ট গ্যাস লিকেজ, আটকে থাকা এয়ার ফিল্টার বা দুর্বল ক্যাপাসিটর।',
     solutionNote: 'Technician conducts leak detection pressure test, thoroughly cleans coils, and checks electrical draw.',
     solutionNoteBn: 'টেকনিশিয়ান প্রেসার টেস্টের মাধ্যমে লিকেজ পরীক্ষা করেন, কয়েল পরিষ্কার করেন এবং বৈদ্যুতিক লোড পরীক্ষা করেন।',
-    diagnosticFeeNote: 'Includes full multi-point diagnostic check for ₹299. Any spare parts or gas refill quoted transparently.',
-    diagnosticFeeNoteBn: '₹২৯৯ ফিতে সম্পূর্ণ মাল্টি-পয়েন্ট ডায়াগনস্টিক অন্তর্ভুক্ত। খুচরা যন্ত্রাংশ বা গ্যাসের দাম আলাদা ও স্বচ্ছভাবে জানানো হয়।',
+    diagnosticFeeNote: 'Includes full multi-point diagnostic check. Any spare parts or gas refill quoted transparently.',
+    diagnosticFeeNoteBn: 'সম্পূর্ণ মাল্টি-পয়েন্ট ডায়াগনস্টিক অন্তর্ভুক্ত। খুচরা যন্ত্রাংশ বা গ্যাসের দাম আলাদা ও স্বচ্ছভাবে কাজের আগেই জানানো হয়।',
     sortOrder: 1,
     isActive: true
   },
@@ -141,8 +141,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'ড্রেন পাইপে ধুলো বা শেওলা জমে জটলা, ইউনিট সমান না থাকা বা ড্রেন ট্রে ফেটে যাওয়া।',
     solutionNote: 'High-pressure vacuum flushing of the drain line, leveling check, and tray resealing.',
     solutionNoteBn: 'উচ্চ চাপের সাহায্যে ড্রেন লাইন ফ্লাশিং ও পরিষ্কার এবং ট্রের ত্রুটি মেরামত।',
-    diagnosticFeeNote: 'Diagnosis covered under ₹299 visit fee. Complete unblocking and flushing cost confirmed beforehand.',
-    diagnosticFeeNoteBn: '₹২৯৯ পরিদর্শন ফির আওতায় পরীক্ষা সম্পন্ন হয়। পুরো পাইপ ক্লিনিংয়ের খরচ পূর্বেই জানিয়ে অনুমোদন নেওয়া হয়।',
+    diagnosticFeeNote: 'Diagnosis covered under doorstep inspection. Complete unblocking and flushing cost confirmed beforehand.',
+    diagnosticFeeNoteBn: 'ডোরস্টেপ পরিদর্শনের আওতায় পরীক্ষা সম্পন্ন হয়। পুরো পাইপ ক্লিনিংয়ের খরচ পূর্বেই জানিয়ে অনুমোদন নেওয়া হয়।',
     sortOrder: 2,
     isActive: true
   },
@@ -159,8 +159,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'ফ্লেয়ার নাট আলগা হওয়া, কয়েলে ছোট ফুটো বা কম্পনের কারণে পাইপের জয়েন্টে ফাটল।',
     solutionNote: 'Nitrogen pressure testing, soap bubble inspection, brazing weld repair, vacuuming, and pure OEM refrigerant refill by weight.',
     solutionNoteBn: 'নাইট্রোজেন প্রেসার টেস্ট, ওয়েল্ডিং মেরামত, ভ্যাকুয়াম এবং ওজন মেপে খাঁটি গ্যাস রিফিল।',
-    diagnosticFeeNote: 'Diagnosis is ₹299. Gas charging rates vary strictly by refrigerant type (R32/R410A) and approved in advance.',
-    diagnosticFeeNoteBn: 'ডায়াগনোসিস মাত্র ₹২৯৯। গ্যাসের চার্জ রেফ্রিজারেন্টের ধরন অনুযায়ী কাজের আগে জানিয়ে দেওয়া হয়।',
+    diagnosticFeeNote: 'Accurate gas pressure check. Gas charging rates vary strictly by refrigerant type (R32/R410A) and approved in advance.',
+    diagnosticFeeNoteBn: 'সঠিক গ্যাস প্রেশার টেস্ট। গ্যাসের চার্জ রেফ্রিজারেন্টের ধরন অনুযায়ী কাজের আগে জানিয়ে অনুমোদন নেওয়া হয়।',
     sortOrder: 3,
     isActive: true
   },
@@ -177,8 +177,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'পিসিবি ফিউজ কেটে যাওয়া, কম্প্রেসারে শর্ট সার্কিট, হাই ভোল্টেজ বা ট্রান্সফরমার নষ্ট হওয়া।',
     solutionNote: 'Comprehensive multimeter voltage continuity test, electrical trace isolation, and PCB component repair.',
     solutionNoteBn: 'মাল্টিমিটার দিয়ে ভোল্টেজ ও সার্কিট পরীক্ষা এবং সঠিক কম্পোনেন্ট বা পিসিবি মেরামত।',
-    diagnosticFeeNote: 'Full electrical and PCB inspection under ₹299 fee.',
-    diagnosticFeeNoteBn: 'সম্পূর্ণ ইলেকট্রিক্যাল ও পিসিবি পরিদর্শন মাত্র ₹২৯৯ ফি-তে অন্তর্ভুক্ত।',
+    diagnosticFeeNote: 'Full electrical and PCB inspection by certified technician.',
+    diagnosticFeeNoteBn: 'সম্পূর্ণ ইলেকট্রিক্যাল ও পিসিবি পরিদর্শন দক্ষ টেকনিশিয়ান দ্বারা সম্পন্ন।',
     sortOrder: 4,
     isActive: true
   },
@@ -195,8 +195,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'কুলিং কয়েলের গভীরে এবং ড্রেন ট্রেতে ব্যাকটেরিয়া ও ছত্রাকের সংক্রমণ।',
     solutionNote: 'Anti-bacterial foam jet pump wash, sanitized blower deep scrubbing, and deodorizing treatment.',
     solutionNoteBn: 'অ্যান্টি-ব্যাকটেরিয়াল ফোম জেট ক্লিনিং এবং ড্রেন ট্রের গভীর জীবাণুমুক্তকরণ।',
-    diagnosticFeeNote: 'Diagnosis ₹299. Deep jet cleaning packages quoted transparently.',
-    diagnosticFeeNoteBn: 'পরিদর্শন ₹২৯৯। ডিপ জেট ক্লিনিং প্যাকেজের রেট স্বচ্ছভাবে জানানো হয়।',
+    diagnosticFeeNote: 'Thorough inspection. Deep jet cleaning packages quoted transparently.',
+    diagnosticFeeNoteBn: 'ডোরস্টেপ পরিদর্শন। ডিপ জেট ক্লিনিং প্যাকেজের রেট স্বচ্ছভাবে কাজের আগে জানানো হয়।',
     sortOrder: 5,
     isActive: true
   },
@@ -215,8 +215,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'গ্যাস শেষ হওয়া, স্টার্ট রিলে নষ্ট, ক্যাপিলারি পাইপ জ্যাম বা থার্মোস্ট্যাট খারাপ হওয়া।',
     solutionNote: 'Refrigerant pressure gauge test, relay & overload protector test, and thermal sensor calibration.',
     solutionNoteBn: 'প্রেসার গেজ দিয়ে গ্যাসের চাপ পরিমাপ, রিলে পরীক্ষা এবং থার্মাল সেন্সর চেক।',
-    diagnosticFeeNote: 'Detailed diagnosis covered under ₹299 inspection visit.',
-    diagnosticFeeNoteBn: '₹২৯৯ পরিদর্শন চার্জে পুঙ্খানুপুঙ্খ টেস্ট সম্পন্ন হয়।',
+    diagnosticFeeNote: 'Detailed diagnosis covered under doorstep inspection visit.',
+    diagnosticFeeNoteBn: 'ডোরস্টেপ পরিদর্শন চার্জে পুঙ্খানুপুঙ্খ টেস্ট সম্পন্ন হয়।',
     sortOrder: 1,
     isActive: true
   },
@@ -233,8 +233,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'ডিফ্রস্ট টাইমার বিকল, বাইমেটাল সেন্সর খারাপ, হিটার নষ্ট বা দরজার রবার লুজ হওয়া।',
     solutionNote: 'Complete circuit continuity check on the defrost heater, sensor replacement, and door seal alignment.',
     solutionNoteBn: 'ডিফ্রস্ট সার্কিট ও সেন্সর পরীক্ষা, নতুন সেন্সর লাগানো এবং দরজার রবার সিল ঠিক করা।',
-    diagnosticFeeNote: 'Diagnosis visit ₹299. Component replacement charges shared prior to work.',
-    diagnosticFeeNoteBn: 'ভিজিট ফি ₹২৯৯। কোনো যন্ত্রাংশ পরিবর্তনের দরকার হলে আগেই মূল্য জানানো হয়।',
+    diagnosticFeeNote: 'Complete inspection visit. Component replacement charges shared prior to work.',
+    diagnosticFeeNoteBn: 'পরিদর্শন ভিজিট। কোনো যন্ত্রাংশ পরিবর্তনের দরকার হলে আগেই মূল্য জানানো হয়।',
     sortOrder: 2,
     isActive: true
   },
@@ -251,8 +251,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'ডিফ্রস্ট ড্রেন পাইপ জ্যাম বা বরফে জমে থাকা, পেছনের ট্রে ফেটে যাওয়া।',
     solutionNote: 'Hot flush clearance of internal drain hole, inspection of drain pan, and evaporator gutter clearing.',
     solutionNoteBn: 'ভেতরের ড্রেন লাইন ফ্লাশ করে জটলা ছাড়ানো এবং ড্রেন প্যান মেরামত।',
-    diagnosticFeeNote: 'Full drain and gasket check under ₹299 inspection fee.',
-    diagnosticFeeNoteBn: 'সম্পূর্ণ ড্রেন ও গ্যাসকেট পরীক্ষা ₹২৯৯ ফি-তে অন্তর্ভুক্ত।',
+    diagnosticFeeNote: 'Full drain and gasket check under doorstep inspection.',
+    diagnosticFeeNoteBn: 'সম্পূর্ণ ড্রেন ও গ্যাসকেট পরীক্ষা ডোরস্টেপ পরিদর্শনে অন্তর্ভুক্ত।',
     sortOrder: 3,
     isActive: true
   },
@@ -271,8 +271,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'ড্রাইভ বেল্ট ছিঁড়ে যাওয়া, মোটরের কার্বন ব্রাশ ক্ষয়, দরজার লক সুইচ খারাপ বা পুলি নষ্ট।',
     solutionNote: 'Belt tension inspection, motor test, door safety interlock switch verification, and clutch check.',
     solutionNoteBn: 'বেল্ট টেনশন চেক, মোটর টেস্ট, ডোর ইন্টারলক সুইচ এবং ড্রাম বিয়ারিং পরীক্ষা।',
-    diagnosticFeeNote: 'Diagnosis visit ₹299. Original drive belt or switch replacement quoted on spot.',
-    diagnosticFeeNoteBn: 'পরিদর্শন ফি মাত্র ₹২৯৯। নতুন বেল্ট বা সুইচের খরচ টেকনিশিয়ান স্পটেই জানিয়ে দেন।',
+    diagnosticFeeNote: 'Affordable doorstep diagnosis. Genuine drive belt or switch replacement quoted upfront on call or on-spot.',
+    diagnosticFeeNoteBn: 'সাশ্রয়ী ডোরস্টেপ ডায়াগনোসিস। নতুন ড্রাইভ বেল্ট বা সুইচের সঠিক খরচ কাজে হাত দেওয়ার আগেই জানানো হয়।',
     sortOrder: 1,
     isActive: true
   },
@@ -289,8 +289,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'ড্রেন ফিল্টারে কয়েন, আলপিন বা সুতো আটকে যাওয়া অথবা ড্রেন পাম্পের মোটর জ্যাম হওয়া।',
     solutionNote: 'Emergency tub drain, filter extraction, pump impeller rotation test, and hose clearance.',
     solutionNoteBn: 'ম্যানুয়াল ড্রেন, ফিল্টার ও পাম্প থেকে ময়লা পরিষ্কার এবং ড্রেন হোস পরীক্ষা।',
-    diagnosticFeeNote: 'Comprehensive drain assembly diagnosis for ₹299.',
-    diagnosticFeeNoteBn: 'সম্পূর্ণ ড্রেন সিস্টেম পরিদর্শন ₹২৯৯ ফি-তে অন্তর্ভুক্ত।',
+    diagnosticFeeNote: 'Comprehensive drain assembly inspection with clear, upfront quotation before repair.',
+    diagnosticFeeNoteBn: 'সম্পূর্ণ ড্রেন সিস্টেম নিখুঁত পরীক্ষা এবং কাজ শুরুর আগেই স্বচ্ছ কোটেশন।',
     sortOrder: 2,
     isActive: true
   },
@@ -307,8 +307,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'শক অ্যাবজরবার নষ্ট হওয়া, সাসপেনশন স্প্রিং কাটা বা ড্রামের বিয়ারিং ও স্পাইডার আর্ম ভেঙে যাওয়া।',
     solutionNote: 'Shock absorber dampening check, suspension balance leveling, and drum bearing shaft inspection.',
     solutionNoteBn: 'শক অ্যাবজরবার ও সাসপেনশন টেস্ট এবং বিয়ারিং শ্যাফ্ট পরীক্ষা।',
-    diagnosticFeeNote: 'Complete mechanical diagnosis covered under ₹299 visit fee.',
-    diagnosticFeeNoteBn: 'সম্পূর্ণ মেকানিক্যাল ডায়াগনস্টিক ₹২৯৯ ফি-তে অন্তর্ভুক্ত।',
+    diagnosticFeeNote: 'Complete mechanical inspection with transparent estimate provided upfront.',
+    diagnosticFeeNoteBn: 'সম্পূর্ণ মেকানিক্যাল ড্রাম ও সাসপেনশন পরীক্ষা এবং কাজ শুরুর আগেই স্পষ্ট খরচের ধারণা।',
     sortOrder: 3,
     isActive: true
   },
@@ -327,8 +327,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'হাই-ভোল্টেজ ডায়োড বা ফিউজ উড়ে যাওয়া, ম্যাগনেট্রন নষ্ট বা ক্যাপাসিটর খারাপ হওয়া।',
     solutionNote: 'Discharge capacitor safely, test diode with multimeter, check magnetron resistance, and replace faulty high-voltage component.',
     solutionNoteBn: 'ক্যাপাসিটর ডিসচার্জ করে সাবধানে পরীক্ষা, ডায়োড ও ম্যাগনেট্রন রেজিস্ট্যান্স টেস্ট এবং সমাধান।',
-    diagnosticFeeNote: 'High-voltage safety inspection and diagnosis under ₹299 visit fee.',
-    diagnosticFeeNoteBn: 'হাই-ভোল্টেজ নিরাপত্তা পরীক্ষা ও ডায়াগনোসিস মাত্র ₹২৯৯ ফি।',
+    diagnosticFeeNote: 'High-voltage safety inspection and accurate repair estimate provided upfront.',
+    diagnosticFeeNoteBn: 'হাই-ভোল্টেজ নিরাপত্তা পরীক্ষা ও কাজ শুরুর আগেই নির্ভরযোগ্য খরচের বিবরণ।',
     sortOrder: 1,
     isActive: true
   },
@@ -345,8 +345,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'ওয়েভগাইড মাইকা শিটে তেল বা ঝোল জমে পুড়ে যাওয়া বা ভেতরের এনামেল কোটিং উঠে মেটাল বেরিয়ে পড়া।',
     solutionNote: 'Replace burnt mica waveguide cover, polish cavity paint burns, and sanitize cooking chamber.',
     solutionNoteBn: 'নতুন মাইকা শিট প্রতিস্থাপন এবং ভেতরের ক্যাভিটি পুঙ্খানুপুঙ্খ মেরামত।',
-    diagnosticFeeNote: 'Diagnosis visit ₹299. Waveguide cover replacement charged transparently.',
-    diagnosticFeeNoteBn: 'পরিদর্শন ফি ₹২৯৯। নতুন মাইকা কভারের খরচ সামান্য এবং কাজের আগে জানানো হয়।',
+    diagnosticFeeNote: 'Doorstep cavity inspection. Affordable waveguide cover replacement quoted transparently.',
+    diagnosticFeeNoteBn: 'ডোরস্টেপ পরিদর্শন। নতুন মাইকা কভারের সাশ্রয়ী খরচ কাজের আগেই জানানো হয়।',
     sortOrder: 2,
     isActive: true
   },
@@ -363,8 +363,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'কিপ্যাডের ভেতরে জলীয় বাষ্প ঢোকা, রিবন তারে মরচে ধরা বা মেমব্রেন সুইচ নষ্ট হওয়া।',
     solutionNote: 'Ribbon cable cleaning, connection seating verification, or keypad membrane panel replacement.',
     solutionNoteBn: 'রিবন কেবল পরিষ্কার, কানেক্টর চেক অথবা নতুন মেমব্রেন কিপ্যাড প্যানেল প্রতিস্থাপন।',
-    diagnosticFeeNote: 'Touchpad and motherboard testing under ₹299 inspection fee.',
-    diagnosticFeeNoteBn: 'টাচপ্যাড ও সার্কিট বোর্ড টেস্টিং ₹২৯৯ ফি-তে অন্তর্ভুক্ত।',
+    diagnosticFeeNote: 'Touchpad and motherboard testing with transparent price estimate upfront.',
+    diagnosticFeeNoteBn: 'টাচপ্যাড ও সার্কিট বোর্ড টেস্টিং এবং কাজ শুরুর আগেই স্পষ্ট খরচের বিবরণ।',
     sortOrder: 3,
     isActive: true
   },
@@ -383,8 +383,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'প্যানেলের ভেতরের এলইডি ব্যাকলাইট স্ট্রিপ কেটে যাওয়া বা ব্যাকলাইট ড্রাইভার বোর্ড খারাপ হওয়া।',
     solutionNote: 'Panel teardown test, individual LED voltage diode probe, and full set OEM backlight replacement with thermal tape.',
     solutionNoteBn: 'প্যানেল খুলে ব্যাকলাইট ভোল্টেজ পরীক্ষা এবং ব্র্যান্ডের আসল ব্যাকলাইট সেট প্রতিস্থাপন।',
-    diagnosticFeeNote: 'Panel inspection and bench diagnostic covered under ₹299 fee.',
-    diagnosticFeeNoteBn: 'প্যানেল ও ব্যাকলাইট পরিদর্শন ₹২৯৯ ফি-তে অন্তর্ভুক্ত।',
+    diagnosticFeeNote: 'Panel inspection and diagnostic check with transparent quotation before repair.',
+    diagnosticFeeNoteBn: 'প্যানেল ও ব্যাকলাইট পুঙ্খানুপুঙ্খ পরিদর্শন এবং কাজ শুরুর আগেই সঠিক খরচের ধারণা।',
     sortOrder: 1,
     isActive: true
   },
@@ -401,8 +401,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'টি-কন বোর্ড ত্রুটি, এলভিডিএস তার লুজ হওয়া বা প্যানেল সিওএফ বন্ডিংয়ের সমস্যা।',
     solutionNote: 'T-Con board test, ribbon terminal de-oxidation, and voltage clock line bypass or bonding diagnostic.',
     solutionNoteBn: 'টি-কন বোর্ড পরীক্ষা, কেবল পরিষ্কার এবং সিওএফ ভোল্টেজ লাইন চেক।',
-    diagnosticFeeNote: 'Detailed screen diagnostics under ₹299 visit fee.',
-    diagnosticFeeNoteBn: 'সম্পূর্ণ স্ক্রিন রোগ নির্ণয় ₹২৯৯ ফি-তে অন্তর্ভুক্ত।',
+    diagnosticFeeNote: 'Detailed screen diagnostics with clear, upfront estimate before proceeding.',
+    diagnosticFeeNoteBn: 'সম্পূর্ণ স্ক্রিন নিখুঁত রোগ নির্ণয় এবং যেকোনো কাজ শুরুর আগেই স্বচ্ছ কোটেশন।',
     sortOrder: 2,
     isActive: true
   },
@@ -419,8 +419,8 @@ export const initialProblems: Problem[] = [
     commonCausesBn: 'পাওয়ার সাপ্লাই বোর্ডে (SMPS) ক্যাপাসিটর বা ডায়োড নষ্ট, মাদারবোর্ড শর্ট বা সফটওয়্যার ক্র্যাশ।',
     solutionNote: 'SMPS secondary output rail voltage measurement (12V, 5V, 24V), motherboard repair, and firmware re-flash.',
     solutionNoteBn: 'পাওয়ার বোর্ডের ভোল্টেজ পরীক্ষা এবং মাদারবোর্ড বা সফটওয়্যার পুনরুদ্ধার।',
-    diagnosticFeeNote: 'Power and motherboard diagnostic check under ₹299 visit fee.',
-    diagnosticFeeNoteBn: 'পাওয়ার বোর্ড ও মাদারবোর্ড পরিদর্শন ₹২৯৯ ফি-তে অন্তর্ভুক্ত।',
+    diagnosticFeeNote: 'Power and motherboard diagnostic check with transparent, budget-friendly quotation.',
+    diagnosticFeeNoteBn: 'পাওয়ার বোর্ড ও মাদারবোর্ড নিখুঁত পরীক্ষা এবং সাশ্রয়ী ও স্বচ্ছ কোটেশন।',
     sortOrder: 3,
     isActive: true
   }
@@ -591,8 +591,8 @@ export const initialTrustItems: TrustItem[] = [
     id: 'trust-2',
     title: 'Transparent Pricing',
     titleBn: 'স্বচ্ছ মূল্য নির্ধারণ',
-    subtitle: 'Flat ₹299 inspection fee. Exact repair quotation provided upfront before any work commences.',
-    subtitleBn: 'মাত্র ₹২৯৯ ভিজিট ও ডায়াগনোসিস ফি। কোনো কাজ শুরুর আগেই সম্পূর্ণ কোটেশন প্রদান।',
+    subtitle: 'Transparent, budget-friendly pricing. Get clear estimates on call and upfront quotation before any work commences.',
+    subtitleBn: 'স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জ। ফোনে কথা বলে সঠিক খরচের ধারণা এবং কাজের আগেই স্পষ্ট কোটেশন।',
     iconName: 'badge-percent',
     sortOrder: 2
   },
@@ -733,8 +733,8 @@ export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[
   'ac-repair': {
     en: [
       {
-        q: 'What does the ₹299 AC visit fee include?',
-        a: 'The ₹299 fee covers a complete physical diagnosis at your doorstep by our certified technician. The technician checks compressor amp draw, gas pressure, electrical wiring, filter status, and PCB operation. You will receive an exact quote before any repair work or parts replacement begins.'
+        q: 'How are AC inspection and repair charges calculated?',
+        a: 'We believe in 100% transparent and affordable pricing. You can discuss the issue over phone to get an initial estimate, and our certified technician inspects compressor amp draw, gas pressure, electrical wiring, filter status, and PCB operation at your doorstep. You will receive an exact quote before any repair work begins.'
       },
       {
         q: 'How fast can a technician arrive in Kolkata and West Bengal?',
@@ -751,8 +751,8 @@ export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[
     ],
     bn: [
       {
-        q: '₹২৯৯ এসি ভিজিট ফির মধ্যে কী কী অন্তর্ভুক্ত?',
-        a: '₹২৯৯ ফিতে আপনার দরজায় এসে সার্টিফাইড টেকনিশিয়ান দ্বারা সম্পূর্ণ রোগ নির্ণয় করা হয়। এতে কম্প্রেসার লোড, গ্যাস প্রেশার, ওয়্যারিং, ফিল্টার এবং পিসিবি চেক অন্তর্ভুক্ত। কোনো যন্ত্রাংশ প্রতিস্থাপন বা মেরামতের আগে আপনাকে সঠিক কোটেশন জানানো হয়।'
+        q: 'এসি সার্ভিস ও মেরামতের খরচ কীভাবে নির্ধারিত হয়?',
+        a: 'আমরা সম্পূর্ণ স্বচ্ছ ও সাশ্রয়ী মূল্যে বিশ্বাসী। আপনি ফোনে কথা বলেই প্রাথমিক খরচের ধারণা পেতে পারেন। এরপর সার্টিফাইড টেকনিশিয়ান দরজায় এসে কম্প্রেসার লোড, গ্যাস প্রেশার, ওয়্যারিং ও পিসিবি চেক করে কাজ শুরুর আগেই সঠিক কোটেশন জানিয়ে দেন।'
       },
       {
         q: 'কলকাতা এবং পশ্চিমবঙ্গে কত দ্রুত টেকনিশিয়ান পাওয়া যায়?',
@@ -772,7 +772,7 @@ export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[
     en: [
       {
         q: 'Why is my refrigerator not cooling while the light is on?',
-        a: 'This usually indicates a malfunctioning compressor relay, a tripped overload protector, loss of refrigerant gas, or a failed thermostat. Our technician diagnoses the exact root cause during the ₹299 inspection visit.'
+        a: 'This usually indicates a malfunctioning compressor relay, a tripped overload protector, loss of refrigerant gas, or a failed thermostat. Our technician diagnoses the root cause during doorstep inspection and gives an upfront quote before repair.'
       },
       {
         q: 'Is it safe to repair inverter refrigerators at home?',
@@ -786,7 +786,7 @@ export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[
     bn: [
       {
         q: 'ফ্রিজের লাইট জ্বলছে কিন্তু ঠান্ডা হচ্ছে না কেন?',
-        a: 'সাধারণত কম্প্রেসার রিলে খারাপ হওয়া, গ্যাস লিক হওয়া বা থার্মোস্ট্যাট বিকল হওয়ার কারণে এটি ঘটে। আমাদের টেকনিশিয়ান ₹২৯৯ ভিজিটেই সঠিক কারণ চিহ্নিত করেন।'
+        a: 'সাধারণত কম্প্রেসার রিলে খারাপ হওয়া, গ্যাস লিক হওয়া বা থার্মোস্ট্যাট বিকল হওয়ার কারণে এটি ঘটে। আমাদের টেকনিশিয়ান ডোরস্টেপ পরিদর্শনে রোগ নির্ণয় করে কাজ শুরুর আগেই স্পষ্ট কোটেশন দেন।'
       },
       {
         q: 'বাড়িতে ইনভার্টার ফ্রিজ মেরামত করা কি নিরাপদ?',
@@ -802,7 +802,7 @@ export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[
     en: [
       {
         q: 'Why is my washing machine shaking violently during spin cycle?',
-        a: 'Violent vibration is typically caused by worn shock absorbers, weakened suspension springs, an uneven floor balance, or a damaged drum bearing spider. Our technician inspects the suspension during the ₹299 visit.'
+        a: 'Violent vibration is typically caused by worn shock absorbers, weakened suspension springs, an uneven floor balance, or a damaged drum bearing spider. Our technician inspects the assembly and provides a transparent quote before repair.'
       },
       {
         q: 'Can you fix error codes on digital front load washing machines?',
@@ -812,7 +812,7 @@ export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[
     bn: [
       {
         q: 'স্পিন করার সময় ওয়াশিং মেশিন অতিরিক্ত কাঁপছে কেন?',
-        a: 'শক অ্যাবজরবার দুর্বল হওয়া, সাসপেনশন স্প্রিং ক্ষতিগ্রস্ত হওয়া বা ড্রামের বিয়ারিং লুজ হওয়ার কারণে এমন হয়। ₹২৯৯ পরিদর্শনে টেকনিশিয়ান এটি পুঙ্খানুপুঙ্খ পরীক্ষা করেন।'
+        a: 'শক অ্যাবজরবার দুর্বল হওয়া, সাসপেনশন স্প্রিং ক্ষতিগ্রস্ত হওয়া বা ড্রামের বিয়ারিং লুজ হওয়ার কারণে এমন হয়। টেকনিশিয়ান ডোরস্টেপ পরিদর্শনে এটি পুঙ্খানুপুঙ্খ পরীক্ষা করে কাজ শুরুর আগেই সঠিক কোটেশন দেন।'
       },
       {
         q: 'আপনারা কি ফ্রন্ট লোড মেশিনের ডিজিটাল এরর কোড ঠিক করতে পারেন?',

@@ -187,8 +187,8 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
             name: 'AC Repair & Diagnosis',
             description: 'Doorstep air conditioner inspection, gas refill and cooling repair.'
           },
-          price: '299',
-          priceCurrency: 'INR'
+          priceCurrency: 'INR',
+          description: 'Affordable doorstep AC service with transparent quotation'
         },
         {
           '@type': 'Offer',
@@ -197,8 +197,8 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
             name: 'Refrigerator Repair',
             description: 'Doorstep fridge repair, defrost problem and compressor inspection.'
           },
-          price: '299',
-          priceCurrency: 'INR'
+          priceCurrency: 'INR',
+          description: 'Affordable doorstep fridge repair with upfront quotation'
         },
         {
           '@type': 'Offer',
@@ -207,8 +207,8 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
             name: 'Washing Machine Repair',
             description: 'Front load and top load washer repair, drain error, drum rotation and spin fix.'
           },
-          price: '299',
-          priceCurrency: 'INR'
+          priceCurrency: 'INR',
+          description: 'Affordable doorstep washing machine repair with upfront quotation'
         },
         {
           '@type': 'Offer',
@@ -217,8 +217,8 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
             name: 'Microwave Oven Repair',
             description: 'Microwave heating issue, spark in cavity, touch keypad and turntable repair.'
           },
-          price: '299',
-          priceCurrency: 'INR'
+          priceCurrency: 'INR',
+          description: 'Affordable doorstep microwave oven repair with upfront quotation'
         },
         {
           '@type': 'Offer',
@@ -227,8 +227,8 @@ export function generateLocalBusinessSchema(settings: SiteSettings) {
             name: 'Smart LED TV Repair',
             description: 'LED TV display backlight replacement, black screen sound ok, and motherboard service.'
           },
-          price: '299',
-          priceCurrency: 'INR'
+          priceCurrency: 'INR',
+          description: 'Affordable doorstep smart LED TV repair with upfront quotation'
         }
       ]
     }
@@ -345,7 +345,7 @@ export function generateServiceSchema(category: Category, lang: Language, phone?
       name: 'Home Appliance Care India',
       telephone: phone || '+91 6291674186',
       url: SITE_URL,
-      priceRange: '₹299'
+      priceRange: '₹₹'
     },
     areaServed: {
       '@type': 'AdministrativeArea',
@@ -353,9 +353,8 @@ export function generateServiceSchema(category: Category, lang: Language, phone?
     },
     offers: {
       '@type': 'Offer',
-      price: '299',
       priceCurrency: 'INR',
-      description: 'Standard doorstep inspection and diagnostic assessment fee'
+      description: 'Affordable doorstep inspection and repair with upfront quotation'
     }
   };
 }

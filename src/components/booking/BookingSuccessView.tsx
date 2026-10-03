@@ -199,8 +199,8 @@ export default function BookingSuccessView({
 
               <div style={{ marginTop: '10px', fontSize: '0.8125rem', color: 'var(--color-primary-dark)', fontWeight: 600 }}>
                 {isBn
-                  ? '⚡ সার্ভিস শিডিউল: জরুরি / দ্রুততম সময়ে টেকনিশিয়ান ভিজিট (ডোরস্টেপ পরিদর্শন ফি: ₹২৯৯)'
-                  : '⚡ Service Schedule: Immediate / ASAP Doorstep Technician Visit (Inspection Fee: ₹299)'}
+                  ? '⚡ সার্ভিস শিডিউল: জরুরি / দ্রুততম সময়ে টেকনিশিয়ান ভিজিট (স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জ)'
+                  : '⚡ Service Schedule: Immediate / ASAP Doorstep Technician Visit (Transparent Upfront Pricing)'}
               </div>
             </div>
           )}

@@ -117,8 +117,8 @@ export default function HomeSeoContent({ lang, onOpenBooking }: HomeSeoContentPr
             }}
           >
             {isBn
-              ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India) হল ভারতের অন্যতম বিশ্বস্ত ও দ্রুততম মাল্টি-ব্র্যান্ড ডোরস্টেপ হোম অ্যাপ্লায়েন্স সার্ভিসিং নেটওয়ার্ক। আমাদের অভিজ্ঞ ও প্রত্যয়িত ইঞ্জিনিয়াররা এয়ার কন্ডিশনার (AC), রেফ্রিজারেটর (ফ্রিজ), ওয়াশিং মেশিন, মাইক্রোওয়েভ ওভেন এবং স্মার্ট এলইডি টিভির যাবতীয় জটিল সমস্যা মাত্র ৯০ মিনিটে আপনার বাড়িতে পৌঁছে নিখুঁতভাবে সমাধান করেন। মাত্র ₹২৯৯ স্থির পরিদর্শন ফিতে শতভাগ স্বচ্ছ ডায়াগনোসিস ও কোটেশন প্রদান করা হয়।'
-              : 'Home Appliance Care India is India and West Bengal’s premier multi-brand doorstep home appliance repair and maintenance service network. When critical household appliances breakdown unexpectedly—whether an AC not cooling during scorching summer heat, a refrigerator compressor failure, or a noisy washing machine drum—Home Appliance Care India dispatches certified engineering technicians right to your doorstep within 90 minutes. With transparent ₹299 inspection pricing, upfront repair estimates, and guaranteed 100% OEM spare parts, we ensure seamless care for every home.'}
+              ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India) হল ভারতের অন্যতম বিশ্বস্ত ও দ্রুততম মাল্টি-ব্র্যান্ড ডোরস্টেপ হোম অ্যাপ্লায়েন্স সার্ভিসিং নেটওয়ার্ক। আমাদের অভিজ্ঞ ও প্রত্যয়িত ইঞ্জিনিয়াররা এয়ার কন্ডিশনার (AC), রেফ্রিজারেটর (ফ্রিজ), ওয়াশিং মেশিন, মাইক্রোওয়েভ ওভেন এবং স্মার্ট এলইডি টিভির যাবতীয় জটিল সমস্যা মাত্র ৯০ মিনিটে আপনার বাড়িতে পৌঁছে নিখুঁতভাবে সমাধান করেন। স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জে শতভাগ স্পষ্ট ডায়াগনোসিস ও কোটেশন প্রদান করা হয়।'
+              : 'Home Appliance Care India is India and West Bengal’s premier multi-brand doorstep home appliance repair and maintenance service network. When critical household appliances breakdown unexpectedly—whether an AC not cooling during scorching summer heat, a refrigerator compressor failure, or a noisy washing machine drum—Home Appliance Care India dispatches certified engineering technicians right to your doorstep within 90 minutes. With transparent upfront pricing, honest repair estimates, and guaranteed 100% OEM spare parts, we ensure seamless care for every home.'}
           </p>
 
           <p
@@ -318,7 +318,7 @@ export default function HomeSeoContent({ lang, onOpenBooking }: HomeSeoContentPr
           <div style={{ padding: '16px' }}>
             <CheckCircle2 size={28} style={{ color: 'var(--color-primary)', margin: '0 auto 10px auto' }} />
             <h4 style={{ fontSize: '0.9375rem', fontWeight: 700, color: 'var(--color-text-main)', marginBottom: '4px' }}>
-              {isBn ? 'স্বচ্ছ ₹২৯৯ ভিজিট' : 'Flat ₹299 Visit'}
+              {isBn ? 'স্বচ্ছ ও সাশ্রয়ী চার্জ' : 'Transparent Pricing'}
             </h4>
             <p style={{ fontSize: '0.78125rem', color: 'var(--color-text-muted)' }}>
               {isBn ? 'কোনো গোপন চার্জ নেই, সম্পূর্ণ স্বচ্ছতা।' : 'No hidden fee upfront diagnosis.'}

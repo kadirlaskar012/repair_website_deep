@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     default: 'Home Appliance Care India | Doorstep Home Appliance Repair Service',
     template: '%s | Home Appliance Care India'
   },
-  description: 'Home Appliance Care India: Official doorstep home appliance repair and maintenance service network across India & West Bengal. Rated 4.9★ in verified customer reviews. Certified technicians near me for AC, Refrigerator, Washing Machine, Microwave & TV. Flat ₹299 inspection & 90-day warranty.',
+  description: 'Home Appliance Care India: Official doorstep home appliance repair and maintenance service network across India & West Bengal. Rated 4.9★ in verified customer reviews. Certified technicians near me for AC, Refrigerator, Washing Machine, Microwave & TV. Transparent pricing & 90-day warranty.',
   keywords: [
     'home Appliance Care India',
     'Home Appliance Care India',
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Home Appliance Care India | Doorstep Home Appliance Repair Service',
-    description: 'Verified doorstep AC and home appliance repair service across India & West Bengal. 4.9★ reviews, 90-day warranty, transparent ₹299 inspection fee.',
+    description: 'Verified doorstep AC and home appliance repair service across India & West Bengal. 4.9★ reviews, 90-day warranty, transparent upfront pricing.',
     url: SITE_URL,
     siteName: 'Home Appliance Care India',
     locale: 'en_IN',

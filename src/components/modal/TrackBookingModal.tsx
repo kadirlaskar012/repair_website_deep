@@ -154,7 +154,7 @@ export default function TrackBookingModal({
     {
       step: 3,
       title: isBn ? 'পরিদর্শন ও মেরামত চলছে' : 'Inspection / In Progress',
-      desc: isBn ? 'ডোরস্টেপ পরিদর্শন ও ডায়াগনোসিস' : 'Doorstep ₹299 inspection'
+      desc: isBn ? 'ডোরস্টেপ পরিদর্শন ও ডায়াগনোসিস' : 'Doorstep diagnosis & quote'
     },
     {
       step: 4,

@@ -39,7 +39,7 @@ export default function Footer({ settings, categories, locations, lang }: Footer
             </div>
             <div>
               <div style={{ color: '#FFFFFF', fontWeight: 700, fontSize: '0.9375rem' }}>
-                {isBn ? 'স্বচ্ছ ₹২৯৯ পরিদর্শন ফি' : 'Fixed ₹299 Diagnosis Fee'}
+                {isBn ? 'স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জ' : 'Transparent & Affordable Pricing'}
               </div>
               <div style={{ fontSize: '0.8125rem', opacity: 0.8 }}>
                 {isBn ? 'অনুমোদনের পরেই মেরামত শুরু' : 'Quote approved before repair'}
@@ -110,8 +110,8 @@ export default function Footer({ settings, categories, locations, lang }: Footer
             </div>
             <p style={{ fontSize: '0.875rem', lineHeight: 1.6, marginBottom: '20px' }}>
               {isBn 
-                ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India): পশ্চিমবঙ্গ ও কলকাতা জুড়ে ডোরস্টেপ এসি এবং হোম অ্যাপ্লায়েন্স মেরামত। প্রত্যয়িত দক্ষ টেকনিশিয়ান, ৯০ দিনের গ্যারান্টি এবং স্বচ্ছ ₹২৯৯ পরিদর্শন ফি।'
-                : 'Home Appliance Care India is India & West Bengal’s trusted doorstep air conditioner and home appliance repair network. Certified multi-brand engineers across 9 regional hubs, 90-day warranty, and fixed ₹299 inspection fee.'}
+                ? 'হোম অ্যাপ্লায়েন্স কেয়ার ইন্ডিয়া (Home Appliance Care India): পশ্চিমবঙ্গ ও কলকাতা জুড়ে ডোরস্টেপ এসি এবং হোম অ্যাপ্লায়েন্স মেরামত। প্রত্যয়িত দক্ষ টেকনিশিয়ান, ৯০ দিনের গ্যারান্টি এবং স্বচ্ছ ও সাশ্রয়ী সার্ভিস চার্জ।'
+                : 'Home Appliance Care India is India & West Bengal’s trusted doorstep air conditioner and home appliance repair network. Certified multi-brand engineers across 9 regional hubs, 90-day warranty, and transparent upfront pricing.'}
             </p>
             <div style={{ fontSize: '0.8125rem', color: '#88A39C', display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>

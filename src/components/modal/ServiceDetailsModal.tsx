@@ -166,7 +166,7 @@ export default function ServiceDetailsModal({
             </div>
           </div>
 
-          {/* Mandatory ₹299 Visit & Diagnosis Notice */}
+          {/* Transparent Visit & Diagnosis Notice */}
           <div
             style={{
               backgroundColor: 'var(--color-primary-light)',
@@ -181,7 +181,7 @@ export default function ServiceDetailsModal({
             <AlertCircle size={20} style={{ color: 'var(--color-primary)', flexShrink: 0, marginTop: '2px' }} />
             <div>
               <div style={{ fontSize: '0.875rem', fontWeight: 700, color: 'var(--color-primary-dark)', marginBottom: '2px' }}>
-                {isBn ? '₹২৯৯ পরিদর্শন ও ডায়াগনোসিস ফি' : 'Fixed ₹299 Visit & Diagnosis Fee'}
+                {isBn ? 'স্বচ্ছ পরিদর্শন ও ডায়াগনোসিস' : 'Transparent Doorstep Diagnosis'}
               </div>
               <div style={{ fontSize: '0.8125rem', color: 'var(--color-text-muted)', lineHeight: 1.4 }}>
                 {isBn ? problem.diagnosticFeeNoteBn : problem.diagnosticFeeNote}
