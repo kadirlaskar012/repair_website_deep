@@ -177,7 +177,13 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'lloyd front load washing machine 7kg',
       'lloyd front load washing machine price',
       'lloyd front load washing machine error code list',
-      'lloyd front load washing machine 8kg'
+      'lloyd front load washing machine 8kg',
+      'lloyd customer care near me',
+      'lloyd customer care toll free number india 24x7',
+      'lloyd customer care number delhi delhi 24x7',
+      'lloyd customer care number kolkata',
+      'lloyd customer care number delhi',
+      'lloyd customer care number washing machine'
     ],
     faqs: [
       {
@@ -539,7 +545,22 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'ifb micro oven service',
       'ifb micro oven customer care number',
       'ifb micro oven service centre',
-      'ifb micro oven service centre near me'
+      'ifb micro oven service centre near me',
+      'ifb service centre near me',
+      'ifb service centre',
+      'ifb service centre number',
+      'ifb service centre goa',
+      'ifb service centre bhubaneswar',
+      'ifb service centre lucknow',
+      'ifb service centre gurgaon',
+      'ifb service centre patna',
+      'ifb customer care toll free number',
+      'ifb customer care number washing machine',
+      'ifb customer care near me toll free number',
+      'ifb customer care no',
+      'ifb customer care near me',
+      'ifb customer care number hyderabad',
+      'ifb customer care number kolkata'
     ],
     faqs: [
       {
@@ -638,7 +659,23 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'whirlpool micro oven price',
       'whirlpool micro oven service centre',
       'whirlpool micro oven service center in hyderabad',
-      'whirlpool micro oven combo'
+      'whirlpool micro oven combo',
+      'whirlpool service centre near me',
+      'whirlpool service centre',
+      'whirlpool service centre number',
+      'whirlpool service centre lucknow',
+      'whirlpool service centre patna',
+      'whirlpool service centre ranchi',
+      'whirlpool service centre thrissur',
+      'whirlpool service centre nagpur',
+      'whirlpool service centre indore',
+      'whirlpool customer care number near me',
+      'whirlpool customer care no',
+      'whirlpool customer care number delhi',
+      'whirlpool customer care number chennai',
+      'whirlpool customer care number delhi 24x7',
+      'whirlpool customer care number hyderabad',
+      'whirlpool customer care number kolkata'
     ],
     faqs: [
       {
@@ -824,7 +861,29 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'voltas ac gas refilling charges kolkata',
       'voltas fridge repair near me',
       'voltas beko refrigerator customer care',
-      'voltas beko double door fridge not cooling'
+      'voltas beko double door fridge not cooling',
+      'voltas service centre jamshedpur',
+      'voltas service centre lucknow',
+      'voltas service centre delhi',
+      'voltas service centre guwahati',
+      'voltas service centre patna',
+      'voltas service centre ranchi',
+      'voltas service centre contact number',
+      'voltas customer care toll free number india 24x7',
+      'voltas customer care number delhi 24x7',
+      'voltas customer care no',
+      'voltas customer care toll free number',
+      'tata voltas customer care',
+      'tata voltas customer care number',
+      'voltas customer care number delhi',
+      'voltas customer care number whatsapp',
+      'voltas customer care number chennai',
+      'voltas customer care number lucknow',
+      'voltas customer care number jaipur',
+      'ac voltas customer care number',
+      'voltas customer care number washing machine',
+      'voltas customer care number toll free',
+      'voltas customer care number ac'
     ],
     faqs: [
       {
@@ -919,7 +978,29 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'samsung microwave oven not heating',
       'samsung led tv repair kolkata',
       'samsung tv screen black sound coming',
-      'samsung smart tv display lines repair'
+      'samsung smart tv display lines repair',
+      'samsung service centre patna',
+      'samsung service centre lucknow',
+      'samsung service centre jaipur',
+      'samsung service centre noida',
+      'samsung service centre pune',
+      'samsung service centre indore',
+      'samsung service centre kanpur',
+      'samsung service centre delhi',
+      'samsung service centre thane',
+      'samsung service centre nagpur',
+      'samsung service centre bhopal',
+      'samsung service centre ranchi',
+      'samsung service centre jodhpur',
+      'samsung service centre varanasi',
+      'samsung customer care near me',
+      'samsung customer care toll free number',
+      'samsung customer care email id',
+      'samsung customer care no delhi',
+      'samsung customer care number hyderabad',
+      'samsung customer care number chennai',
+      'samsung customer care no',
+      'samsung customer care email'
     ],
     faqs: [
       {
@@ -1008,7 +1089,20 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'lg microwave oven repair near me',
       'lg microwave oven service centre kolkata',
       'lg led tv screen repair kolkata',
-      'lg smart tv horizontal lines on screen'
+      'lg smart tv horizontal lines on screen',
+      'lg service centre number',
+      'lg service centre near me phone number',
+      'lg service centre delhi',
+      'lg service centre hyderabad',
+      'lg service centre lucknow',
+      'lg customer care toll free number india 24x7',
+      'lg customer care toll free number',
+      'lg customer care complaint whatsapp number',
+      'lg customer care no',
+      'lg customer care complaint phone number',
+      'lg customer care near me',
+      'lg customer care number delhi',
+      'lg customer care number kolkata'
     ],
     faqs: [
       {
@@ -1161,7 +1255,14 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'godrej washing machine customer care number',
       'godrej washing machine repair near me',
       'godrej top load washing machine repair',
-      'godrej washing machine not draining water'
+      'godrej washing machine not draining water',
+      'godrej service centre number',
+      'godrej customer care no',
+      'godrej customer care number delhi 24x7',
+      'godrej customer care number delhi',
+      'godrej customer care number ac',
+      'godrej customer care number india',
+      'godrej customer care ac service number'
     ],
     faqs: [
       {
@@ -2369,6 +2470,163 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
         qBn: 'আপনারা কি মিডিয়া এসির আসল পার্টস দেন?',
         aEn: 'Yes, we supply OEM capacitors, sensors, fan motors, and PCB boards with a 30-day service warranty.',
         aBn: 'হ্যাঁ, আমরা আসল পার্টস ব্যবহার করি এবং প্রতিটি কাজের ওপর ৩০ দিনের সার্ভিস ওয়ারেন্টি প্রদান করি।'
+      }
+    ]
+  },
+  'marq': {
+    slug: 'marq',
+    name: 'MarQ',
+    headlineEn: 'MarQ by Flipkart Service Centre Support & Doorstep Appliance Repair in Kolkata',
+    headlineBn: 'কলকাতায় ফ্লিপকার্ট মার্ক (MarQ) সার্ভিস সেন্টার সাপোর্ট ও ডোরস্টেপ মেরামত',
+    subheadlineEn: 'Certified doorstep repair for MarQ Inverter ACs, Washing Machines, Refrigerators, Smart TVs & Microwave Ovens across Kolkata, Howrah & West Bengal.',
+    subheadlineBn: 'ফ্লিপকার্ট মার্ক ইনভার্টার এসি, ওয়াশিং মেশিন, ফ্রিজ ও স্মার্ট টিভির দক্ষ ডোরস্টেপ মেরামত। দ্রুত টেকনিশিয়ান ও সাশ্রয়ী চার্জ।',
+    coverageDescEn: 'MarQ appliances engineered by Flipkart deliver reliable modern convenience. Our certified engineers specialize in MarQ Split Inverter AC gas refill and PCB repair, front/top load washing machine motor repairs, frost-free refrigerator cooling faults, and Smart LED TV display repairs.',
+    coverageDescBn: 'ফ্লিপকার্ট মার্ক হোম অ্যাপ্লায়েন্সের সমস্ত সমস্যার দ্রুত ও সাশ্রয়ী সমাধান। আমাদের ইঞ্জিনিয়াররা মার্ক এসির কুলিং ত্রুটি, ওয়াশিং মেশিনের স্পিন ও ড্রেন সমস্যা এবং স্মার্ট টিভির ব্যাকলাইট নিখুঁতভাবে সারিয়ে তোলেন।',
+    errorCodes: [
+      {
+        code: 'MarQ AC E1 / E4 Sensor & Low Cooling',
+        issueEn: 'Indoor unit flashes E1/E4 error and blower does not release chilled air',
+        issueBn: 'এসির ডিসপ্লেতে E1 বা E4 এরর দেখাচ্ছে এবং ঠান্ডা বাতাস আসছে না',
+        solutionEn: 'Check thermistor sensor resistance with multimeter, test gas suction pressure, and seal outdoor condenser micro-leaks.',
+        solutionBn: 'থার্মিস্টর সেন্সর পরীক্ষা, গ্যাস প্রেশার টেস্ট এবং কন্ডেনসার পাইপ লিকেজ মেরামত।'
+      },
+      {
+        code: 'MarQ Washing Machine E3 / Unbalance Fault',
+        issueEn: 'Washing machine beeps continuously during spin cycle without draining water',
+        issueBn: 'স্পিন সাইকেলে মেশিন একনাগাড়ে বিপ করছে এবং ড্রাম ঘুরছে না',
+        solutionEn: 'Inspect suspension damper rods, clean drain pump debris trap, and check door interlock sensor.',
+        solutionBn: 'সাসপেনশন ড্যাম্পার স্প্রিং ব্যালেন্স করা, ড্রেন ফিল্টার পরিষ্কার এবং ডোর সুইচ চেক।'
+      },
+      {
+        code: 'MarQ Smart TV Red Light Blinking (No Display)',
+        issueEn: 'TV turns on with audio but screen stays completely black or flashes MarQ logo',
+        issueBn: 'সাউন্ড পরিষ্কার আসছে কিন্তু স্ক্রিন কালো অথবা ফ্লিপকার্ট মার্ক লোগো আটকে রিবুট হচ্ছে',
+        solutionEn: 'Replace faulty constant-current LED backlight diodes and reprogram mainboard eMMC firmware if bootlooping.',
+        solutionBn: 'খারাপ এলইডি ব্যাকলাইট স্ট্রিপ প্রতিস্থাপন এবং মাদারবোর্ড ফার্মওয়্যার রিসেট।'
+      }
+    ],
+    searchedKeywords: [
+      'marq service centre near me',
+      'marq service centre',
+      'marq service centre number',
+      'marq service centre guwahati',
+      'marq service centre bangalore',
+      'marq customer care',
+      'marq customer care number',
+      'marq customer care whatsapp number',
+      'marq customer care near me',
+      'marq customer care number 24x7',
+      'flipkart marq customer care number 24x7',
+      'marq customer care toll free number',
+      'flipkart marq customer care number',
+      'marq customer care number delhi',
+      'marq customer care number chennai',
+      'marq customer care kolkata',
+      'marq customer care delhi',
+      'marq customer care number hyderabad',
+      'marq customer care new number',
+      'marq ac repair service kolkata',
+      'marq washing machine repair near me',
+      'flipkart marq tv repair doorstep'
+    ],
+    faqs: [
+      {
+        qEn: 'How can I contact for MarQ appliance repair in Kolkata?',
+        qBn: 'কলকাতায় ফ্লিপকার্ট মার্ক অ্যাপ্লায়েন্স মেরামতের জন্য কীভাবে যোগাযোগ করব?',
+        aEn: 'Call our direct helpline +91 6291674186 or WhatsApp us. Certified multi-brand technicians arrive within 90 minutes across Kolkata and Howrah.',
+        aBn: 'আমাদের হেল্পলাইন +91 6291674186 নম্বরে কল করুন বা হোয়াটসঅ্যাপ করুন। ৯০ মিনিটের মধ্যে অভিজ্ঞ টেকনিশিয়ান আপনার বাড়িতে পৌঁছে যাবেন।'
+      },
+      {
+        qEn: 'Do you repair MarQ washing machines and ACs with genuine parts?',
+        qBn: 'আপনারা কি মার্ক ওয়াশিং মেশিন ও এসিতে আসল পার্টস ব্যবহার করেন?',
+        aEn: 'Yes, we supply OEM-grade compatible capacitors, drain pumps, sensors, and compressor valves with a 30-day service warranty.',
+        aBn: 'হ্যাঁ, আমরা জেনুইন কোয়ালিটি পার্টস ব্যবহার করি এবং প্রতিটি কাজের ওপর ৩০ দিনের ওয়ারেন্টি প্রদান করি।'
+      },
+      {
+        qEn: 'What are the doorstep visit charges for MarQ appliances?',
+        qBn: 'মার্ক অ্যাপ্লায়েন্স পরিদর্শনের খরচ কত?',
+        aEn: 'We provide completely transparent and affordable doorstep inspection. An upfront quote is given before any repair work starts.',
+        aBn: 'আমরা সম্পূর্ণ স্বচ্ছ ও সাশ্রয়ী চার্জ অফার করি। কাজের আগেই খরচের স্পষ্ট হিসাব জানিয়ে আপনার সম্মতি নেওয়া হয়।'
+      }
+    ]
+  },
+
+  'croma': {
+    slug: 'croma',
+    name: 'Croma',
+    headlineEn: 'Croma (Tata Enterprise) Service Centre Support & Doorstep Appliance Repair in Kolkata',
+    headlineBn: 'কলকাতায় ক্রোমা (Tata Enterprise) সার্ভিস সেন্টার সাপোর্ট ও ডোরস্টেপ মেরামত',
+    subheadlineEn: 'Certified doorstep repair for Croma Inverter ACs, Washing Machines, Refrigerators, Microwaves & LED TVs across Kolkata, Salt Lake & Howrah.',
+    subheadlineBn: 'টাটা ক্রোমা এসি, ওয়াশিং মেশিন, ফ্রিজ, মাইক্রোওয়েভ ও টিভির নির্ভরযোগ্য ডোরস্টেপ সার্ভিস। ৯০ মিনিটে আগমন ও সাশ্রয়ী রেট।',
+    coverageDescEn: 'Croma products by Tata are built to stringent quality standards. Our experienced field engineers specialize in Croma Inverter AC gas refilling, 5-star frost-free refrigerator defrost cycle repairs, washing machine PCB motor drive fixing, and microwave magnetron replacements.',
+    coverageDescBn: 'টাটা এন্টারপ্রাইজ ক্রোমার আধুনিক হোম অ্যাপ্লায়েন্সের জন্য আমাদের রয়েছে প্রশিক্ষিত টেকনিশিয়ান দল। ক্রোমা এসি কুলিং সমস্যা, ফ্রিজ ঠান্ডা না হওয়া এবং ওয়াশিং মেশিনের মোটর ত্রুটি স্পটেই নিখুঁতভাবে সারিয়ে তোলা হয়।',
+    errorCodes: [
+      {
+        code: 'Croma Inverter AC Low Cooling / Micro Gas Leak',
+        issueEn: 'Indoor fan works normally but compressor cuts off without cooling the room',
+        issueBn: 'ইনডোর ফ্যান চলছে কিন্তু কম্প্রেসার ঘন ঘন বন্ধ হয়ে রুম ঠান্ডা হচ্ছে না',
+        solutionEn: 'Check manifold gauge pressure, test condenser U-bends for oil trace leaks, flush copper lines, and top-up pure R32/R410A gas.',
+        solutionBn: 'গেজ দিয়ে গ্যাসের চাপ পরীক্ষা, কপার পাইপের লিকেজ মেরামত এবং নিখুঁতভাবে গ্যাস রিফিল।'
+      },
+      {
+        code: 'Croma Washing Machine E2 / Drain Timeout Fault',
+        issueEn: 'Washing machine pauses during cycle with E2 error code and water remains in tub',
+        issueBn: 'মেশিনের ড্রামে জল জমে রয়েছে এবং E2 এরর কোড দেখিয়ে থেমে গেছে',
+        solutionEn: 'Unscrew coin collector drain cap, remove entangled thread/coins from impeller, and replace worn drainage solenoid.',
+        solutionBn: 'কয়েন কালেক্টর ক্যাপ খুলে পরিষ্কার করা এবং ড্রেন পাম্প মোটর মেরামত।'
+      },
+      {
+        code: 'Croma Refrigerator Defrost Sensor Failure',
+        issueEn: 'Deep freeze creates solid ice blocks but fresh food compartment at the bottom stays warm',
+        issueBn: 'ডিপ ফ্রিজে অতিরিক্ত বরফ জমেছে কিন্তু নিচের সাধারণ অংশে ঠান্ডা হচ্ছে না',
+        solutionEn: 'Test defrost bimetal thermostat and heating element resistance, clear frozen drain trough, and replace faulty defrost timer/sensor.',
+        solutionBn: 'ডিফ্রস্ট হিটার ও বায়োমেটাল সেন্সর পরীক্ষা এবং ড্রেন পাইপের বরফ গলিয়ে ক্লিয়ার করা।'
+      }
+    ],
+    searchedKeywords: [
+      'croma service centre',
+      'croma service centre in kolkata',
+      'croma service centre number',
+      'croma service centre near me',
+      'croma service centre delhi',
+      'tata croma service centre number',
+      'tata croma service centre',
+      'croma service centre mumbai',
+      'croma service centre in thane',
+      'croma service centre noida',
+      'croma service centre number mumbai',
+      'croma service centre phone number',
+      'croma customer care number',
+      'croma customer care',
+      'croma customer care toll-free number india 24x7',
+      'croma customer care toll free number india 24x7',
+      'croma customer care whatsapp number',
+      'croma customer care number delhi',
+      'croma customer care no',
+      'tata croma customer care toll free number',
+      'croma customer care number delhi delhi 24x7',
+      'tata croma ac repair kolkata',
+      'croma fridge repair near me',
+      'croma washing machine service kolkata'
+    ],
+    faqs: [
+      {
+        qEn: 'How to book doorstep service for Croma appliances in Kolkata?',
+        qBn: 'কলকাতায় ক্রোমা অ্যাপ্লায়েন্স সার্ভিসের জন্য কীভাবে টেকনিশিয়ান বুক করবেন?',
+        aEn: 'Call our direct hotline +91 6291674186 or tap WhatsApp. We dispatch certified engineers across Kolkata, Salt Lake, and Howrah in 90 minutes.',
+        aBn: 'আমাদের হটলাইন +91 6291674186 নম্বরে সরাসরি কল বা হোয়াটসঅ্যাপ করুন। ৯০ মিনিটের মধ্যে টেকনিশিয়ান আপনার বাড়িতে পৌঁছে যাবেন।'
+      },
+      {
+        qEn: 'Are genuine replacement parts used for Croma appliances?',
+        qBn: 'আপনারা কি ক্রোমা অ্যাপ্লায়েন্সে আসল যন্ত্রাংশ ব্যবহার করেন?',
+        aEn: 'Yes, we supply OEM-grade certified capacitors, fan motors, sensors, and PCB modules with a 30-day warranty.',
+        aBn: 'হ্যাঁ, আমরা সার্টিফাইড আসল পার্টস ব্যবহার করি এবং প্রতিটি কাজের ওপর ৩০ দিনের ওয়ারেন্টি প্রদান করি।'
+      },
+      {
+        qEn: 'What is the doorstep inspection fee for Croma products?',
+        qBn: 'ক্রোমা প্রোডাক্টের ডোরস্টেপ পরিদর্শনের চার্জ কত?',
+        aEn: 'We follow a 100% transparent and affordable inspection policy. You receive a clear, upfront quote before work begins.',
+        aBn: 'আমরা সম্পূর্ণ স্বচ্ছ ও সাশ্রয়ী পরিদর্শন অফার করি। কাজের পূর্বেই খরচের পূর্ণ হিসাব দেওয়া হয়।'
       }
     ]
   }

@@ -458,7 +458,9 @@ export const initialBrands: Brand[] = [
   {"id":"akai","name":"Akai","logoUrl":"/images/brands/akai.svg","categoryIds":["led-tv-repair","washing-machine-repair","ac-repair"],"sortOrder":29,"isActive":true,"isPopular":true},
   {"id":"videocon","name":"Videocon","logoUrl":"/images/brands/videocon.svg","categoryIds":["washing-machine-repair","fridge-repair","ac-repair","led-tv-repair"],"sortOrder":30,"isActive":true,"isPopular":true},
   {"id":"onida","name":"Onida","logoUrl":"/images/brands/onida.svg","categoryIds":["ac-repair","led-tv-repair","washing-machine-repair","microwave-repair"],"sortOrder":31,"isActive":true,"isPopular":true},
-  {"id":"midea","name":"Midea","logoUrl":"/images/brands/midea.svg","categoryIds":["ac-repair","washing-machine-repair","microwave-repair"],"sortOrder":32,"isActive":true,"isPopular":true}
+  {"id":"midea","name":"Midea","logoUrl":"/images/brands/midea.svg","categoryIds":["ac-repair","washing-machine-repair","microwave-repair"],"sortOrder":32,"isActive":true,"isPopular":true},
+  {"id":"marq","name":"MarQ","logoUrl":"/images/brands/marq.svg","categoryIds":["ac-repair","washing-machine-repair","fridge-repair","led-tv-repair","microwave-repair"],"sortOrder":33,"isActive":true,"isPopular":true},
+  {"id":"croma","name":"Croma","logoUrl":"/images/brands/croma.svg","categoryIds":["ac-repair","washing-machine-repair","fridge-repair","led-tv-repair","microwave-repair"],"sortOrder":34,"isActive":true,"isPopular":true}
 ];
 
 export const initialLocations: LocationItem[] = [
@@ -761,7 +763,28 @@ export const initialSearchKeywords: SearchKeywordItem[] = [
   { id: 'kw-ht-4', keyword: 'Hitachi customer care toll free number india 24x7', keywordBn: 'হিটাচি কাস্টমার কেয়ার টোল ফ্রি নম্বর ২৪x৭', categoryId: 'ac-repair', targetUrl: '/brands/hitachi' },
   { id: 'kw-bs-4', keyword: 'Blue star customer care toll free number kolkata', keywordBn: 'ব্লু স্টার কাস্টমার কেয়ার টোল ফ্রি নম্বর কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/blue-star' },
   { id: 'kw-cr-5', keyword: 'Carrier customer care toll free number india 24x7', keywordBn: 'ক্যারিয়ার কাস্টমার কেয়ার টোল ফ্রি নম্বর ভারত ২৪x৭', categoryId: 'ac-repair', targetUrl: '/brands/carrier' },
-  { id: 'kw-mb-3', keyword: 'Mitsubishi customer care toll free number india', keywordBn: 'মিৎসুবিশি কাস্টমার কেয়ার টোল ফ্রি নম্বর ভারত', categoryId: 'ac-repair', targetUrl: '/brands/mitsubishi' }
+  { id: 'kw-mb-3', keyword: 'Mitsubishi customer care toll free number india', keywordBn: 'মিৎসুবিশি কাস্টমার কেয়ার টোল ফ্রি নম্বর ভারত', categoryId: 'ac-repair', targetUrl: '/brands/mitsubishi' },
+  // MarQ by Flipkart
+  { id: 'kw-mq-1', keyword: 'Marq service centre near me', keywordBn: 'মার্ক সার্ভিস সেন্টার আমার কাছে', categoryId: 'ac-repair', targetUrl: '/brands/marq' },
+  { id: 'kw-mq-2', keyword: 'Flipkart marq customer care number 24x7', keywordBn: 'ফ্লিপকার্ট মার্ক কাস্টমার কেয়ার নম্বর ২৪x৭', categoryId: 'washing-machine-repair', targetUrl: '/brands/marq' },
+  { id: 'kw-mq-3', keyword: 'Marq customer care kolkata', keywordBn: 'মার্ক কাস্টমার কেয়ার কলকাতা', categoryId: 'led-tv-repair', targetUrl: '/brands/marq' },
+  { id: 'kw-mq-4', keyword: 'Marq customer care whatsapp number', keywordBn: 'মার্ক কাস্টমার কেয়ার হোয়াটসঅ্যাপ নম্বর', categoryId: 'fridge-repair', targetUrl: '/brands/marq' },
+  // Croma / Tata Croma
+  { id: 'kw-cr-c1', keyword: 'Croma service centre in kolkata', keywordBn: 'ক্রোমা সার্ভিস সেন্টার কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/croma' },
+  { id: 'kw-cr-c2', keyword: 'Tata croma customer care toll free number', keywordBn: 'টাটা ক্রোমা কাস্টমার কেয়ার টোল ফ্রি নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/croma' },
+  { id: 'kw-cr-c3', keyword: 'Croma customer care whatsapp number', keywordBn: 'ক্রোমা কাস্টমার কেয়ার হোয়াটসঅ্যাপ নম্বর', categoryId: 'washing-machine-repair', targetUrl: '/brands/croma' },
+  { id: 'kw-cr-c4', keyword: 'Croma service centre near me', keywordBn: 'ক্রোমা সার্ভিস সেন্টার আমার কাছে', categoryId: 'led-tv-repair', targetUrl: '/brands/croma' },
+  // Additional batch keywords
+  { id: 'kw-gd-4', keyword: 'Godrej customer care number 24x7', keywordBn: 'গোদরেজ কাস্টমার কেয়ার নম্বর ২৪x৭', categoryId: 'fridge-repair', targetUrl: '/brands/godrej' },
+  { id: 'kw-ly-5', keyword: 'Lloyd customer care toll free number india 24x7', keywordBn: 'লয়েড কাস্টমার কেয়ার টোল ফ্রি নম্বর ভারত ২৪x৭', categoryId: 'ac-repair', targetUrl: '/brands/lloyd' },
+  { id: 'kw-ly-6', keyword: 'Lloyd customer care number kolkata', keywordBn: 'লয়েড কাস্টমার কেয়ার নম্বর কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/lloyd' },
+  { id: 'kw-sm-6', keyword: 'Samsung service centre kolkata', keywordBn: 'স্যামসাং সার্ভিস সেন্টার কলকাতা', categoryId: 'washing-machine-repair', targetUrl: '/brands/samsung' },
+  { id: 'kw-ifb-5', keyword: 'IFB customer care toll free number india 24x7', keywordBn: 'আইএফবি কাস্টমার কেয়ার টোল ফ্রি নম্বর ভারত ২৪x৭', categoryId: 'washing-machine-repair', targetUrl: '/brands/ifb' },
+  { id: 'kw-vt-5', keyword: 'Tata voltas customer care number', keywordBn: 'টাটা ভোল্টাস কাস্টমার কেয়ার নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/voltas' },
+  { id: 'kw-vt-6', keyword: 'Voltas customer care whatsapp number', keywordBn: 'ভোল্টাস কাস্টমার কেয়ার হোয়াটসঅ্যাপ নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/voltas' },
+  { id: 'kw-wp-4', keyword: 'Whirlpool customer care number 24x7 near me', keywordBn: 'হোয়ার্লপুল কাস্টমার কেয়ার নম্বর ২৪x৭', categoryId: 'fridge-repair', targetUrl: '/brands/whirlpool' },
+  { id: 'kw-lg-6', keyword: 'LG customer care toll free number india 24x7', keywordBn: 'এলজি কাস্টমার কেয়ার টোল ফ্রি নম্বর ভারত ২৪x৭', categoryId: 'washing-machine-repair', targetUrl: '/brands/lg' },
+  { id: 'kw-lg-7', keyword: 'LG service centre near me phone number', keywordBn: 'এলজি সার্ভিস সেন্টার ফোন নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/lg' }
 ];
 
 export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[]; bn: { q: string; a: string }[] }> = {
