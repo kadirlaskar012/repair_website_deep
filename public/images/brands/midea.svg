@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <g transform="translate(10, 8)">
+    <circle cx="10" cy="18" r="7" fill="none" stroke="#0099DA" stroke-width="3"/>
+    <text x="24" y="24" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="900" fill="#0099DA" letter-spacing="1px">Midea</text>
+    <text x="25" y="33" font-family="Arial, sans-serif" font-size="6.5" font-weight="700" fill="#444" letter-spacing="1.2px">CARRIER MIDEA</text>
+  </g>
+</svg>

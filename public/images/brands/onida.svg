@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <g transform="translate(10, 8)">
+    <rect x="6" y="8" width="14" height="14" rx="3" fill="#D31145"/>
+    <text x="26" y="23" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="900" fill="#D31145" letter-spacing="1.5px">ONIDA</text>
+    <text x="27" y="32" font-family="Arial, sans-serif" font-size="6.5" font-weight="700" fill="#222" letter-spacing="1.2px">NEIGHBOUR'S ENVY</text>
+  </g>
+</svg>

@@ -454,7 +454,11 @@ export const initialBrands: Brand[] = [
   {"id":"kent","name":"Kent RO","logoUrl":"/images/brands/kent.svg","categoryIds":["fridge-repair"],"sortOrder":25,"isActive":true,"isPopular":true},
   {"id":"aquaguard","name":"Aquaguard","logoUrl":"/images/brands/aquaguard.svg","categoryIds":["fridge-repair"],"sortOrder":26,"isActive":true,"isPopular":true},
   {"id":"livpure","name":"Livpure","logoUrl":"/images/brands/livpure.svg","categoryIds":["fridge-repair"],"sortOrder":27,"isActive":true,"isPopular":true},
-  {"id":"pureit","name":"Pureit","logoUrl":"/images/brands/pureit.svg","categoryIds":["fridge-repair"],"sortOrder":28,"isActive":true,"isPopular":true}
+  {"id":"pureit","name":"Pureit","logoUrl":"/images/brands/pureit.svg","categoryIds":["fridge-repair"],"sortOrder":28,"isActive":true,"isPopular":true},
+  {"id":"akai","name":"Akai","logoUrl":"/images/brands/akai.svg","categoryIds":["led-tv-repair","washing-machine-repair","ac-repair"],"sortOrder":29,"isActive":true,"isPopular":true},
+  {"id":"videocon","name":"Videocon","logoUrl":"/images/brands/videocon.svg","categoryIds":["washing-machine-repair","fridge-repair","ac-repair","led-tv-repair"],"sortOrder":30,"isActive":true,"isPopular":true},
+  {"id":"onida","name":"Onida","logoUrl":"/images/brands/onida.svg","categoryIds":["ac-repair","led-tv-repair","washing-machine-repair","microwave-repair"],"sortOrder":31,"isActive":true,"isPopular":true},
+  {"id":"midea","name":"Midea","logoUrl":"/images/brands/midea.svg","categoryIds":["ac-repair","washing-machine-repair","microwave-repair"],"sortOrder":32,"isActive":true,"isPopular":true}
 ];
 
 export const initialLocations: LocationItem[] = [
@@ -726,7 +730,38 @@ export const initialSearchKeywords: SearchKeywordItem[] = [
   { id: 'kw-lp-2', keyword: 'Livpure ro water not filling in tank', keywordBn: 'লিভপিওর আরও ওয়াটার ট্যাঙ্ক ভরছে না', categoryId: 'fridge-repair', targetUrl: '/brands/livpure' },
   // Pureit
   { id: 'kw-pi-1', keyword: 'Pureit service centre kolkata water purifier', keywordBn: 'পিউরিট সার্ভিস সেন্টার কলকাতা ওয়াটার পিউরিফায়ার', categoryId: 'fridge-repair', targetUrl: '/brands/pureit' },
-  { id: 'kw-pi-2', keyword: 'Pureit gkk replacement red alert lock', keywordBn: 'পিউরিট জিকেকে কিট পরিবর্তন লাল অ্যালার্ট', categoryId: 'fridge-repair', targetUrl: '/brands/pureit' }
+  { id: 'kw-pi-2', keyword: 'Pureit gkk replacement red alert lock', keywordBn: 'পিউরিট জিকেকে কিট পরিবর্তন লাল অ্যালার্ট', categoryId: 'fridge-repair', targetUrl: '/brands/pureit' },
+  // Akai
+  { id: 'kw-ak-1', keyword: 'Akai service centre near me', keywordBn: 'আকাই সার্ভিস সেন্টার আমার কাছে', categoryId: 'led-tv-repair', targetUrl: '/brands/akai' },
+  { id: 'kw-ak-2', keyword: 'Akai service centre in kolkata', keywordBn: 'আকাই সার্ভিস সেন্টার কলকাতা', categoryId: 'led-tv-repair', targetUrl: '/brands/akai' },
+  { id: 'kw-ak-3', keyword: 'Akai customer care number', keywordBn: 'আকাই কাস্টমার কেয়ার নম্বর', categoryId: 'led-tv-repair', targetUrl: '/brands/akai' },
+  { id: 'kw-ak-4', keyword: 'Akai customer care toll free number', keywordBn: 'আকাই কাস্টমার কেয়ার টোল ফ্রি নম্বর', categoryId: 'washing-machine-repair', targetUrl: '/brands/akai' },
+  // Videocon
+  { id: 'kw-vc-1', keyword: 'Videocon service centre near me', keywordBn: 'ভিডিওকন সার্ভিস সেন্টার আমার কাছে', categoryId: 'washing-machine-repair', targetUrl: '/brands/videocon' },
+  { id: 'kw-vc-2', keyword: 'Videocon service centre barrackpore', keywordBn: 'ভিডিওকন সার্ভিস সেন্টার ব্যারাকপুর', categoryId: 'washing-machine-repair', targetUrl: '/brands/videocon' },
+  { id: 'kw-vc-3', keyword: 'Videocon customer care number 24x7', keywordBn: 'ভিডিওকন কাস্টমার কেয়ার নম্বর ২৪x৭', categoryId: 'fridge-repair', targetUrl: '/brands/videocon' },
+  { id: 'kw-vc-4', keyword: 'Videocon customer care number washing machine', keywordBn: 'ভিডিওকন ওয়াশিং মেশিন কাস্টমার কেয়ার নম্বর', categoryId: 'washing-machine-repair', targetUrl: '/brands/videocon' },
+  { id: 'kw-vc-5', keyword: 'Videocon service centre number', keywordBn: 'ভিডিওকন সার্ভিস সেন্টার নম্বর', categoryId: 'led-tv-repair', targetUrl: '/brands/videocon' },
+  // Onida
+  { id: 'kw-on-1', keyword: 'Onida customer care number kolkata', keywordBn: 'ওনিডা কাস্টমার কেয়ার নম্বর কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/onida' },
+  { id: 'kw-on-2', keyword: 'Onida service centre near me', keywordBn: 'ওনিডা সার্ভিস সেন্টার আমার কাছে', categoryId: 'ac-repair', targetUrl: '/brands/onida' },
+  { id: 'kw-on-3', keyword: 'Onida service centre in kolkata', keywordBn: 'ওনিডা সার্ভিস সেন্টার কলকাতা', categoryId: 'led-tv-repair', targetUrl: '/brands/onida' },
+  { id: 'kw-on-4', keyword: 'Onida customer care toll free number', keywordBn: 'ওনিডা কাস্টমার কেয়ার টোল ফ্রি নম্বর', categoryId: 'washing-machine-repair', targetUrl: '/brands/onida' },
+  // Midea / Carrier Midea
+  { id: 'kw-md-1', keyword: 'Carrier midea customer care number', keywordBn: 'ক্যারিয়ার মিডিয়া কাস্টমার কেয়ার নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/midea' },
+  { id: 'kw-md-2', keyword: 'Midea customer care toll free number india', keywordBn: 'মিডিয়া কাস্টমার কেয়ার টোল ফ্রি নম্বর ভারত', categoryId: 'ac-repair', targetUrl: '/brands/midea' },
+  { id: 'kw-md-3', keyword: 'Midea customer care whatsapp number', keywordBn: 'মিডিয়া কাস্টমার কেয়ার হোয়াটসঅ্যাপ নম্বর', categoryId: 'ac-repair', targetUrl: '/brands/midea' },
+  { id: 'kw-md-4', keyword: 'Midea service centre near me', keywordBn: 'মিডিয়া সার্ভিস সেন্টার আমার কাছে', categoryId: 'washing-machine-repair', targetUrl: '/brands/midea' },
+  // Additional Kelvinator & Brand Customer Care & Service Centre Searches
+  { id: 'kw-kv-3', keyword: 'Kelvinator service centre near me contact number', keywordBn: 'কেলভিনেটর সার্ভিস সেন্টার কন্টাক্ট নম্বর', categoryId: 'fridge-repair', targetUrl: '/brands/kelvinator' },
+  { id: 'kw-kv-4', keyword: 'Kelvinator customer care toll free number india', keywordBn: 'কেলভিনেটর কাস্টমার কেয়ার টোল ফ্রি নম্বর ভারত', categoryId: 'fridge-repair', targetUrl: '/brands/kelvinator' },
+  { id: 'kw-hr-4', keyword: 'Haier customer care number kolkata', keywordBn: 'হায়ার কাস্টমার কেয়ার নম্বর কলকাতা', categoryId: 'fridge-repair', targetUrl: '/brands/haier' },
+  { id: 'kw-dk-4', keyword: 'Daikin customer care toll free number india 24x7', keywordBn: 'ডাইকিন কাস্টমার কেয়ার টোল ফ্রি নম্বর ২৪x৭', categoryId: 'ac-repair', targetUrl: '/brands/daikin' },
+  { id: 'kw-pn-3', keyword: 'Panasonic customer care number kolkata 24x7', keywordBn: 'প্যানাসনিক কাস্টমার কেয়ার নম্বর কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/panasonic' },
+  { id: 'kw-ht-4', keyword: 'Hitachi customer care toll free number india 24x7', keywordBn: 'হিটাচি কাস্টমার কেয়ার টোল ফ্রি নম্বর ২৪x৭', categoryId: 'ac-repair', targetUrl: '/brands/hitachi' },
+  { id: 'kw-bs-4', keyword: 'Blue star customer care toll free number kolkata', keywordBn: 'ব্লু স্টার কাস্টমার কেয়ার টোল ফ্রি নম্বর কলকাতা', categoryId: 'ac-repair', targetUrl: '/brands/blue-star' },
+  { id: 'kw-cr-5', keyword: 'Carrier customer care toll free number india 24x7', keywordBn: 'ক্যারিয়ার কাস্টমার কেয়ার টোল ফ্রি নম্বর ভারত ২৪x৭', categoryId: 'ac-repair', targetUrl: '/brands/carrier' },
+  { id: 'kw-mb-3', keyword: 'Mitsubishi customer care toll free number india', keywordBn: 'মিৎসুবিশি কাস্টমার কেয়ার টোল ফ্রি নম্বর ভারত', categoryId: 'ac-repair', targetUrl: '/brands/mitsubishi' }
 ];
 
 export const initialCategoryFaqs: Record<string, { en: { q: string; a: string }[]; bn: { q: string; a: string }[] }> = {

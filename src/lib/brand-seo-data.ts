@@ -264,7 +264,15 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'blue star inverter ac',
       'blue star inverter ac e6 error code',
       'blue star inverter ac 1.5 ton price',
-      'e6 error in blue star inverterac'
+      'e6 error in blue star inverterac',
+      'blue star service centre trivandrum',
+      'ac blue star service centre number',
+      'blue star customer care number chennai 24x7',
+      'blue star customer care number chennai',
+      'blue star customer care app',
+      'blue star customer care whatsapp number',
+      'blue star customer care toll free number',
+      'blue star customer care number kolkata'
     ],
     faqs: [
       {
@@ -347,7 +355,16 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'daikin ac installation charges',
       'daikin ac installation request',
       'daikin ac installation customer care number',
-      'daikin ac installation number'
+      'daikin ac installation number',
+      'daikin service centre',
+      'daikin service centre near me',
+      'daikin service centre number',
+      'daikin service centre toll free number',
+      'daikin customer care toll free number',
+      'daikin customer care whatsapp number',
+      'daikin customer care number delhi',
+      'daikin customer care number hyderabad',
+      'daikin customer care number kolkata'
     ],
     faqs: [
       {
@@ -703,7 +720,30 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'hitachi double door refrigerator size',
       'hitachi double door refrigerator+price in india',
       'hitachi double door refrigerator price',
-      'hitachi double door refrigerator india'
+      'hitachi double door refrigerator india',
+      'hitachi service center',
+      'hitachi service center near me',
+      'hitachi service center mumbai',
+      'hitachi service center chennai',
+      'hitachi service center lucknow',
+      'hitachi service center number',
+      'hitachi service center delhi',
+      'hitachi service center surat',
+      'hitachi service center agra',
+      'hitachi service center kolkata',
+      'hitachi customer care',
+      'hitachi customer care number',
+      'hitachi customer care toll free number india 24x7',
+      'hitachi customer care number 24x7',
+      'hitachi customer care number delhi',
+      'hitachi customer care toll free number',
+      'hitachi customer care whatsapp number',
+      'hitachi customer care number ludhiana',
+      'hitachi customer care app',
+      'hitachi customer care number kolkata',
+      'hitachi customer care number agra',
+      'hitachi customer care number india',
+      'hitachi customer care toll free number india 24x7 delhi'
     ],
     faqs: [
       {
@@ -1041,7 +1081,15 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'carrier inverter ac e4 error code',
       'carrier ac remote setting for cooling',
       'carrier ac gas charging charges kolkata',
-      'carrier cassette ac service kolkata'
+      'carrier cassette ac service kolkata',
+      'ac carrier service centre',
+      'carrier service centre toll free number',
+      'ac carrier service centre number',
+      'carrier customer care toll free number',
+      'carrier customer care toll free number india 24x7',
+      'ac carrier customer care number',
+      'carrier customer care number delhi',
+      'carrier customer care number ac'
     ],
     faqs: [
       {
@@ -1178,7 +1226,22 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'haier washing machine customer care number',
       'haier washing machine repair near me',
       'haier top load washing machine e2 error',
-      'haier front load washing machine repair'
+      'haier front load washing machine repair',
+      'haier service centre number',
+      'haier service centre trivandrum',
+      'haier service centre contact number',
+      'haier customer care number near me',
+      'haier customer care number delhi',
+      'haier customer care no',
+      'haier customer care toll free number',
+      'haier customer care whatsapp number',
+      'haier customer care number chennai',
+      'haier customer care near me',
+      'haier customer care number hyderabad',
+      'haier customer care number bangalore',
+      'haier customer care number mumbai',
+      'haier customer care number ahmedabad',
+      'haier customer care number kolkata'
     ],
     faqs: [
       {
@@ -1239,7 +1302,21 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'panasonic washing machine customer care number',
       'panasonic washing machine repair near me',
       'panasonic top load washing machine u11 error',
-      'panasonic top load washing machine u12 error'
+      'panasonic top load washing machine u12 error',
+      'panasonic service centre number',
+      'panasonic service centre near me contact number',
+      'panasonic service centre photos',
+      'panasonic service centre vijayawada',
+      'panasonic service centre trivandrum',
+      'panasonic service centre thrissur',
+      'panasonic service centre ranchi',
+      'panasonic customer care number near me',
+      'panasonic customer care number delhi',
+      'panasonic customer care number chennai',
+      'panasonic customer care near me',
+      'panasonic customer care toll free number',
+      'panasonic customer care number kolkata',
+      'panasonic customer care number hyderabad'
     ],
     faqs: [
       {
@@ -1695,7 +1772,14 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
       'kelvinator refrigerator not cooling',
       'kelvinator single door fridge cooling problem',
       'kelvinator double door fridge ice melting',
-      'kelvinator ac repair near me'
+      'kelvinator ac repair near me',
+      'kelvinator service centre near me contact number',
+      'kelvinator service centre number',
+      'kelvinator service centre toll free number',
+      'kelvinator service centre in kolkata',
+      'kelvinator customer care whatsapp number',
+      'kelvinator customer care toll free number india',
+      'kelvinator customer care number delhi'
     ],
     faqs: [
       {
@@ -2000,6 +2084,291 @@ export const brandSeoCatalog: Record<string, BrandSeoDetail> = {
         qBn: 'কলকাতায় পিউরিট পিউরিফায়ার মেরামতের জন্য কীভাবে বুক করবেন?',
         aEn: 'Call +91 6291674186 or WhatsApp us for doorstep visit with transparent rates across Kolkata and Howrah.',
         aBn: 'সরাসরি কল করুন +91 6291674186 নম্বরে অথবা হোয়াটসঅ্যাপে মেসেজ পাঠান।'
+      }
+    ]
+  },
+  'akai': {
+    slug: 'akai',
+    name: 'Akai',
+    headlineEn: 'Akai Service Centre Support & Doorstep Appliance Repair in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় আকাই সার্ভিস সেন্টার সাপোর্ট ও ডোরস্টেপ হোম অ্যাপ্লায়েন্স মেরামত',
+    subheadlineEn: 'Certified doorstep repair for Akai LED TVs, Smart TVs, Washing Machines & Air Conditioners. Fast arrival across Kolkata, Salt Lake & Howrah with transparent & affordable pricing.',
+    subheadlineBn: 'আকাই স্মার্ট ও এলইডি টিভি, ওয়াশিং মেশিন এবং এসি মেরামতের জন্য অভিজ্ঞ টেকনিশিয়ান। কলকাতা, সল্টলেক ও হাওড়ায় দ্রুত ডোরস্টেপ সার্ভিস ও সাশ্রয়ী চার্জ।',
+    coverageDescEn: 'Akai appliances offer precision Japanese engineering. Our certified engineers specialize in Akai Smart LED TV display backlight repairs, panel motherboard replacements, washing machine drain motor/spin faults, and split AC cooling gas restoration.',
+    coverageDescBn: 'আকাই অ্যাপ্লায়েন্স জাপানি প্রযুক্তির নির্ভরযোগ্য সরঞ্জাম। আমাদের দক্ষ টেকনিশিয়ানরা আকাই এলইডি টিভির ব্যাকলাইট, মাদারবোর্ড, ওয়াশিং মেশিনের ড্রেন মোটর এবং এসির কুলিং গ্যাস লিকেজ মেরামতে বিশেষভাবে পারদর্শী।',
+    errorCodes: [
+      {
+        code: 'TV Sound OK No Picture (Black Screen)',
+        issueEn: 'Audio is loud and clear but the LED display screen is totally dark',
+        issueBn: 'শব্দ পরিষ্কার আসছে কিন্তু টিভির পর্দা সম্পূর্ণ কালো',
+        solutionEn: 'Inspect LED backlight driver circuit, test constant-current inverter voltage, and replace faulty edge/direct LED strips.',
+        solutionBn: 'ব্যাকলাইট ড্রাইভ সার্কিট পরীক্ষা এবং খারাপ হয়ে যাওয়া এলইডি স্ট্রিপ সম্পূর্ণ পরিবর্তন।'
+      },
+      {
+        code: 'Washing Machine Not Spinning / Draining',
+        issueEn: 'Washer tub fills with water but refuses to spin or drain water out',
+        issueBn: 'ওয়াশিং মেশিনে জল জমা হচ্ছে কিন্তু ড্রাম ঘুরছে না বা জল বের হচ্ছে না',
+        solutionEn: 'Check synchronous drain pump motor, inspect drain filter for lint blockage, and test door safety interlock switch.',
+        solutionBn: 'ড্রেন পাম্প মোটর ও ফিল্টার পরিষ্কার এবং ডোর সেফটি সুইচ মেরামত।'
+      },
+      {
+        code: 'AC Low Cooling / Fan Running',
+        issueEn: 'Blower fan running but compressor tripping before room cools down',
+        issueBn: 'ফ্যান চলছে কিন্তু কম্প্রেসার ঘন ঘন ট্রিপ করে রুম ঠান্ডা হচ্ছে না',
+        solutionEn: 'Measure running capacitor MFD rating, clean clogged condenser fins with high pressure wash, and check refrigerant charge.',
+        solutionBn: 'ক্যাপাসিটর টেস্ট, আউটডোর কন্ডেনসার জেট ওয়াশ এবং রেফ্রিজারেন্ট প্রেশার চেক।'
+      }
+    ],
+    searchedKeywords: [
+      'akai service centre number',
+      'akai service centre near me',
+      'akai service centre',
+      'akai service centre in kolkata',
+      'akai service centre mumbai',
+      'akai customer care number',
+      'akai customer care',
+      'akai customer care toll free number',
+      'akai customer care toll free number india',
+      'akai customer care number delhi',
+      'akai led tv repair kolkata',
+      'akai smart tv black screen repair',
+      'akai washing machine repair near me',
+      'akai ac repair service kolkata'
+    ],
+    faqs: [
+      {
+        qEn: 'How can I contact for Akai appliance repair in Kolkata?',
+        qBn: 'কলকাতায় আকাই টিভি বা ওয়াশিং মেশিন মেরামতের জন্য কীভাবে যোগাযোগ করব?',
+        aEn: 'Call our customer helpline directly at +91 6291674186 or WhatsApp us. Certified doorstep engineers reach your home across Kolkata and Howrah.',
+        aBn: 'সরাসরি আমাদের হেল্পলাইন +91 6291674186 নম্বরে কল বা হোয়াটসঅ্যাপ করুন। দ্রুত টেকনিশিয়ান আপনার দরজায় পৌঁছে যাবেন।'
+      },
+      {
+        qEn: 'Do you repair Akai LED TV backlight and display panels?',
+        qBn: 'আপনারা কি আকাই টিভির ব্যাকলাইট ও ডিসপ্লে প্যানেল মেরামত করেন?',
+        aEn: 'Yes, we specialize in repairing black screens with sound, vertical lines, flickering, and motherboard IC faults with a 30-day warranty.',
+        aBn: 'হ্যাঁ, সাউন্ড আসছে কিন্তু ছবি নেই, স্ক্রিনে দাগ বা ফ্লিকারিং সমস্যার জন্য অরিজিনাল পার্টস সহ ৩০ দিনের ওয়ারেন্টি প্রদান করা হয়।'
+      },
+      {
+        qEn: 'What are the inspection charges for Akai products?',
+        qBn: 'আকাই অ্যাপ্লায়েন্স পরিদর্শনের খরচ কত?',
+        aEn: 'We offer 100% transparent and affordable inspection with an upfront quotation provided before any repair begins.',
+        aBn: 'আমরা সম্পূর্ণ স্বচ্ছ ও সাশ্রয়ী পরিদর্শন ফি অফার করি। কাজের পূর্বেই খরচের পূর্ণ হিসাব দেওয়া হয়।'
+      }
+    ]
+  },
+
+  'videocon': {
+    slug: 'videocon',
+    name: 'Videocon',
+    headlineEn: 'Videocon Service Centre Support & Doorstep Appliance Repair in Kolkata & Barrackpore',
+    headlineBn: 'কলকাতায় ভিডিওকন সার্ভিস সেন্টার সাপোর্ট ও ডোরস্টেপ হোম অ্যাপ্লায়েন্স মেরামত',
+    subheadlineEn: 'Trusted doorstep repair for Videocon Washing Machines, Refrigerators, ACs & LED TVs across Kolkata, Barrackpore, Howrah & North 24 Parganas.',
+    subheadlineBn: 'ভিডিওকন ওয়াশিং মেশিন, ফ্রিজ, এসি ও টিভির নির্ভরযোগ্য ডোরস্টেপ মেরামত। কলকাতা, ব্যারাকপুর, হাওড়া ও ২৪ পরগনায় সাশ্রয়ী সার্ভিস।',
+    coverageDescEn: 'Videocon appliances remain household staples across Bengal. Our experienced engineers provide doorstep servicing for Videocon semi-automatic and front-load washing machines, direct-cool/frost-free refrigerators, split AC gas charging, and LED TVs.',
+    coverageDescBn: 'ভিডিওকন ফ্রিজ ও ওয়াশিং মেশিন এখনো বাংলার বহু ঘরে বিশ্বস্ততার সাথে চলছে। আমাদের অভিজ্ঞ ইঞ্জিনিয়াররা ভিডিওকন ড্রেন সমস্যা, স্পিন মোটর, কুলিং কয়েল ও কম্প্রেসার ত্রুটি দ্রুত মেরামত করেন।',
+    errorCodes: [
+      {
+        code: 'Washing Machine Spin & Drain Motor Fault',
+        issueEn: 'Spin tub vibrates violently, makes grinding sound, or refuses to spin out water',
+        issueBn: 'স্পিন ড্রাম প্রচন্ড শব্দ করছে বা জামাকাপড় শুকানোর ড্রাম ঘুরছে না',
+        solutionEn: 'Check spin motor capacitor, inspect brake pad assembly, balance suspension springs, and test drain valve assembly.',
+        solutionBn: 'মোটর ক্যাপাসিটর, ব্রেক প্যাড ও ড্রেন ভালভ অ্যাসেম্বলি পরীক্ষা ও পরিবর্তন।'
+      },
+      {
+        code: 'Refrigerator Not Cooling / Compressor Humming',
+        issueEn: 'Refrigerator light turns on but cooling compartment stays warm with ticking noise',
+        issueBn: 'ফ্রিজের লাইট জ্বলছে কিন্তু ঠান্ডা হচ্ছে না, কিছুক্ষণ পর পর ক্লিক শব্দ হচ্ছে',
+        solutionEn: 'Test PTC relay and overload protector (OLP) with multimeter, check start capacitor, and inspect condenser fan.',
+        solutionBn: 'পিটিসি রিলে ও ওভারলোড প্রোটেক্টর পরীক্ষা এবং খারাপ থাকলে নতুন রিলে স্থাপন।'
+      },
+      {
+        code: 'Videocon LED TV Display Blank',
+        issueEn: 'Red standby light stays on or blinks, TV does not turn on to picture',
+        issueBn: 'রেড লাইট জ্বলছে কিন্তু রিমোট বা সুইচে টিভি স্ক্রিন চালু হচ্ছে না',
+        solutionEn: 'Diagnose SMPS power supply secondary rails, replace swollen filter electrolytic capacitors, and flash firmware if corrupted.',
+        solutionBn: 'এসএমপিএস পাওয়ার সাপ্লাই ভোল্টেজ পরীক্ষা এবং ক্যাপাসিটর মেরামত।'
+      }
+    ],
+    searchedKeywords: [
+      'videocon service centre',
+      'videocon service centre number',
+      'videocon service centre near me',
+      'videocon service centre toll free number',
+      'videocon service centre hyderabad',
+      'videocon service centre barrackpore',
+      'videocon customer care number',
+      'videocon customer care',
+      'videocon customer care number 24x7',
+      'dth videocon customer care number',
+      'videocon customer care number delhi 24x7',
+      'videocon customer care no',
+      'videocon customer care number telugu',
+      'videocon customer care number karnataka',
+      'videocon customer care number washing machine',
+      'videocon customer care number malayalam',
+      'videocon customer care number kannada 24x7',
+      'videocon washing machine repair kolkata',
+      'videocon fridge repair barrackpore',
+      'videocon led tv repair near me'
+    ],
+    faqs: [
+      {
+        qEn: 'Are spare parts available for Videocon washing machines and refrigerators?',
+        qBn: 'ভিডিওকন ওয়াশিং মেশিন ও ফ্রিজের আসল যন্ত্রাংশ কি পাওয়া যায়?',
+        aEn: 'Yes! We stock compatible high-grade OEM spin motors, gearboxes, wash timers, PTC relays, and thermostats for Videocon appliances.',
+        aBn: 'হ্যাঁ! আমাদের কাছে ভিডিওকন ওয়াশিং মেশিনের মোটর, গিয়ারবক্স, টাইমার এবং ফ্রিজের আসল রিলে ও থার্মোস্ট্যাট রয়েছে।'
+      },
+      {
+        qEn: 'How to contact Videocon service support in Barrackpore and Kolkata?',
+        qBn: 'ব্যারাকপুর এবং কলকাতায় ভিডিওকন সার্ভিসের জন্য কীভাবে যোগাযোগ করব?',
+        aEn: 'Call our direct helpline +91 6291674186 or WhatsApp us. Technicians serve Barrackpore, Dum Dum, Barasat, Kolkata, and Howrah.',
+        aBn: 'আমাদের হেল্পলাইন +91 6291674186 নম্বরে সরাসরি কল বা হোয়াটসঅ্যাপ করুন। একই দিনে ডোরস্টেপ সার্ভিস প্রদান করা হয়।'
+      },
+      {
+        qEn: 'Do you offer a warranty on Videocon repair?',
+        qBn: 'ভিডিওকন মেরামতের ওপর কি ওয়ারেন্টি আছে?',
+        aEn: 'Yes, we provide an official 30-day service warranty on all repair work and parts replaced.',
+        aBn: 'হ্যাঁ, প্রতিটি কাজের ওপর ৩০ দিনের লিখিত সার্ভিস ওয়ারেন্টি দেওয়া হয়।'
+      }
+    ]
+  },
+
+  'onida': {
+    slug: 'onida',
+    name: 'Onida',
+    headlineEn: 'Onida Service Centre Support & Doorstep Appliance Repair in Kolkata',
+    headlineBn: 'কলকাতায় ওনিডা সার্ভিস সেন্টার সাপোর্ট ও ডোরস্টেপ হোম অ্যাপ্লায়েন্স মেরামত',
+    subheadlineEn: 'Fast doorstep repair for Onida Air Conditioners, LED TVs, Washing Machines & Microwave Ovens across Kolkata, Salt Lake & Howrah.',
+    subheadlineBn: 'ওনিডা এসি, স্মার্ট এলইডি টিভি, ওয়াশিং মেশিন ও ওভেনের দ্রুত ডোরস্টেপ সার্ভিস। সাশ্রয়ী রেট ও ৯০ মিনিটের মধ্যে টেকনিশিয়ান।',
+    coverageDescEn: 'Onida is renowned for powerful cooling and consumer electronics. Our certified technicians specialize in Onida Inverter AC error code resolution, gas charging, smart LED TV backlight fixes, washing machine clutch gear repair, and microwave magnetron replacement.',
+    coverageDescBn: 'ওনিডার শক্তিশালী কুলিং ও ইলেকট্রনিক্স সরঞ্জামের জন্য আমাদের রয়েছে দক্ষ কারিগরি দল। ওনিডা ইনভার্টার এসি গ্যাস রিফিল, এলইডি টিভির ডিসপ্লে ও ওয়াশিং মেশিনের যান্ত্রিক ত্রুটি দ্রুত সমাধান করা হয়।',
+    errorCodes: [
+      {
+        code: 'Onida Inverter AC Error Codes (E1 / E2 / E6)',
+        issueEn: 'Indoor display flashing E1 (indoor sensor), E2 (coil sensor), or E6 (communication fault)',
+        issueBn: 'ডিসপ্লেতে E1, E2 বা E6 এরর কোড দেখাচ্ছে এবং কুলিং বন্ধ হয়ে গেছে',
+        solutionEn: 'Test thermistor resistance values, clean indoor dust buildup, and verify communication wire connections between boards.',
+        solutionBn: 'থার্মিস্টর সেন্সর রেজিস্ট্যান্স পরীক্ষা, ওয়্যারিং চেক এবং সেন্সর প্রতিস্থাপন।'
+      },
+      {
+        code: 'Onida Washing Machine Drum Not Rotating',
+        issueEn: 'Motor hums but wash tub does not agitate clothes during cycle',
+        issueBn: 'মোটর চালু হচ্ছে কিন্তু ওয়াশ ড্রাম ঘুরছে না',
+        solutionEn: 'Inspect V-belt tension, check motor starting capacitor, and replace worn drive coupling.',
+        solutionBn: 'ভি-বেল্ট টেনশন চেক, ক্যাপাসিটর পরীক্ষা এবং পুলি কাপলিং মেরামত।'
+      },
+      {
+        code: 'Onida Microwave Oven Not Heating',
+        issueEn: 'Microwave turns on and timer runs but food remains cold',
+        issueBn: 'ওভেন চলছে ও টাইমার ঘুরছে কিন্তু খাবার একদম গরম হচ্ছে না',
+        solutionEn: 'Discharge high-voltage capacitor, test high-voltage diode for short-circuit, and replace weak magnetron tube.',
+        solutionBn: 'হাই-ভোল্টেজ ডায়োড ও ক্যাপাসিটর পরীক্ষা এবং ম্যাগনেট্রন প্রতিস্থাপন।'
+      }
+    ],
+    searchedKeywords: [
+      'onida customer care number',
+      'onida customer care',
+      'onida customer care toll free number',
+      'onida customer care number kolkata',
+      'onida service centre',
+      'onida service centre near me',
+      'onida service centre in kolkata',
+      'onida ac service centre near me',
+      'onida ac customer care number',
+      'onida led tv repair kolkata',
+      'onida washing machine customer care number',
+      'onida microwave repair near me'
+    ],
+    faqs: [
+      {
+        qEn: 'How to book an Onida AC or TV service technician in Kolkata?',
+        qBn: 'কলকাতায় ওনিডা এসি বা টিভির জন্য টেকনিশিয়ান কীভাবে বুক করবেন?',
+        aEn: 'Call our hotline +91 6291674186 or tap WhatsApp. We provide prompt 90-minute doorstep arrival with transparent quotes.',
+        aBn: 'আমাদের হটলাইন +91 6291674186 নম্বরে কল করুন। ৯০ মিনিটের মধ্যে অভিজ্ঞ টেকনিশিয়ান আপনার বাড়িতে পৌঁছে যাবেন।'
+      },
+      {
+        qEn: 'What is the doorstep inspection fee for Onida appliances?',
+        qBn: 'ওনিডা অ্যাপ্লায়েন্স পরিদর্শনের খরচ কত?',
+        aEn: 'We provide completely transparent and affordable doorstep inspection. An upfront quote is given before any tool touches your unit.',
+        aBn: 'আমরা স্বচ্ছ ও সাশ্রয়ী ভিজিট চার্জ অফার করি এবং কাজের আগে খরচের স্পষ্ট হিসাব জানিয়ে অনুমতি নেওয়া হয়।'
+      },
+      {
+        qEn: 'Do you fix Onida Inverter AC error codes?',
+        qBn: 'আপনারা কি ওনিডা ইনভার্টার এসির এরর কোড ঠিক করেন?',
+        aEn: 'Yes, our certified HVAC technicians troubleshoot all sensor, communication (E6), and PCB failures with genuine parts.',
+        aBn: 'হ্যাঁ, আমাদের অভিজ্ঞ ইঞ্জিনিয়াররা সমস্ত সেন্সর ও পিসিবি এরর কোড নিখুঁতভাবে সমাধান করেন।'
+      }
+    ]
+  },
+
+  'midea': {
+    slug: 'midea',
+    name: 'Midea',
+    headlineEn: 'Midea & Carrier Midea Service Centre Support in Kolkata & West Bengal',
+    headlineBn: 'কলকাতায় মিডিয়া ও ক্যারিয়ার মিডিয়া সার্ভিস সেন্টার সাপোর্ট ও ডোরস্টেপ মেরামত',
+    subheadlineEn: 'Certified doorstep repair for Midea / Carrier Midea Inverter ACs, Washing Machines & Microwave Ovens across Kolkata, Howrah & districts.',
+    subheadlineBn: 'মিডিয়া ও ক্যারিয়ার মিডিয়া ইনভার্টার এসি, ওয়াশিং মেশিন ও মাইক্রোওয়েভ ওভেনের সার্টিফাইড ডোরস্টেপ মেরামত। দ্রুত আগমন ও সাশ্রয়ী চার্জ।',
+    coverageDescEn: 'Midea is one of the worlds largest appliance manufacturers, partnered with Carrier in India. Our technicians specialize in Midea Inverter AC E1/EC error codes, R32 refrigerant refilling, front load drum balancing, and PCB circuit repair.',
+    coverageDescBn: 'ক্যারিয়ার মিডিয়া এসির আধুনিক ইনভার্টার প্রযুক্তি অত্যন্ত জনপ্রিয়। আমাদের দক্ষ টেকনিশিয়ানরা মিডিয়া এসির EC এরর (গ্যাস লিকেজ), পিসিবি বোর্ড ও ওয়াশিং মেশিনের মোটর ত্রুটি দ্রুত সারিয়ে তোলেন।',
+    errorCodes: [
+      {
+        code: 'Midea AC EC Error Code (Refrigerant Leakage)',
+        issueEn: 'Indoor display shows EC error and compressor shuts down after 5 minutes',
+        issueBn: 'ডিসপ্লেতে EC এরর কোড দেখাচ্ছে এবং কিছুক্ষণ পর এসি বন্ধ হয়ে যাচ্ছে',
+        solutionEn: 'Perform nitrogen pressure leak test, seal flare joint micro-fissures, vacuum system to 500 microns, and refill genuine R32 gas.',
+        solutionBn: 'নাইট্রোজেন টেস্টের মাধ্যমে গ্যাস লিকেজ মেরামত, নিখুঁত ভ্যাকুয়াম এবং সঠিক ওজনে R32 গ্যাস রিফিল।'
+      },
+      {
+        code: 'Midea Washing Machine E20 / E21 Drain Error',
+        issueEn: 'Washing machine beeps with E20 error code and fails to pump water out',
+        issueBn: 'ওয়াশিং মেশিনে E20 এরর কোড এবং জল বের হতে পারছে না',
+        solutionEn: 'Clear debris from coin trap filter, inspect drain impeller motor for foreign objects, and replace faulty drainage pump.',
+        solutionBn: 'কয়েন ট্র্যাপ ফিল্টার পরিষ্কার, ড্রেন পাম্পের ইমপেলার পরীক্ষা ও মেরামত।'
+      },
+      {
+        code: 'Midea Inverter AC E1 Communication Error',
+        issueEn: 'Indoor unit not communicating with outdoor inverter motherboard',
+        issueBn: 'ইনডোর ও আউটডোরের মধ্যে কমিউনিকেশন বিচ্ছিন্ন হয়ে E1 এরর কোড',
+        solutionEn: 'Check interconnecting power cables, test optical coupler sensors on inverter PCB, and replace faulty communication relays.',
+        solutionBn: 'কমিউনিকেশন ক্যাবল ও অপটিক্যাল কাপলার টেস্ট এবং পিসিবি রিলে মেরামত।'
+      }
+    ],
+    searchedKeywords: [
+      'midea customer care',
+      'carrier midea customer care',
+      'midea customer care number',
+      'carrier midea customer care number',
+      'midea customer care number india',
+      'midea customer care number delhi',
+      'midea customer care toll free number india',
+      'midea customer care no',
+      'midea customer care india',
+      'midea customer care whatsapp number',
+      'midea customer care toll free number',
+      'midea service centre near me',
+      'carrier midea service centre kolkata',
+      'midea ac repair near me',
+      'midea inverter ac ec error fix',
+      'midea washing machine service kolkata'
+    ],
+    faqs: [
+      {
+        qEn: 'How to contact for Carrier Midea AC repair in Kolkata?',
+        qBn: 'কলকাতায় ক্যারিয়ার মিডিয়া এসির মেরামতের জন্য কীভাবে যোগাযোগ করব?',
+        aEn: 'Call our direct helpline +91 6291674186 or WhatsApp us. Certified HVAC engineers arrive within 90 minutes across Kolkata and Salt Lake.',
+        aBn: 'আমাদের হেল্পলাইন +91 6291674186 নম্বরে কল বা হোয়াটসঅ্যাপ করুন। দ্রুত দক্ষ ইঞ্জিনিয়ার পৌঁছে যাবেন।'
+      },
+      {
+        qEn: 'What does the EC error code mean on a Midea AC?',
+        qBn: 'মিডিয়া এসিতে EC এরর কোডের মানে কী?',
+        aEn: 'EC indicates refrigerant leakage or compressor sensor fault. Our technician conducts nitrogen pressure testing to locate and fix leaks safely.',
+        aBn: 'EC এরর মানে হলো এসি থেকে গ্যাস লিক করেছে। আমাদের টেকনিশিয়ান স্পটেই লিকেজ মেরামত করে নতুন গ্যাস রিফিল করে দেন।'
+      },
+      {
+        qEn: 'Do you supply genuine Carrier Midea spare parts?',
+        qBn: 'আপনারা কি মিডিয়া এসির আসল পার্টস দেন?',
+        aEn: 'Yes, we supply OEM capacitors, sensors, fan motors, and PCB boards with a 30-day service warranty.',
+        aBn: 'হ্যাঁ, আমরা আসল পার্টস ব্যবহার করি এবং প্রতিটি কাজের ওপর ৩০ দিনের সার্ভিস ওয়ারেন্টি প্রদান করি।'
       }
     ]
   }
