@@ -478,8 +478,16 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '45 - 60 Mins',
     responseTimeBn: '৪৫ - ৬০ মিনিট',
-    popularLocalities: ['Sector 1', 'Sector 2', 'Sector 3', 'Sector 5', 'Karunamoyee', 'City Centre 1', 'Salt Lake Stadium'],
-    popularLocalitiesBn: ['সেক্টর ১', 'সেক্টর ২', 'সেক্টর ৩', 'সেক্টর ৫', 'করুণাময়ী', 'সিটি সেন্টার ১', 'সল্টলেক স্টেডিয়াম']
+    popularLocalities: [
+      'Sector 1', 'Sector 2', 'Sector 3', 'Sector 5', 'Karunamoyee', 'City Centre 1',
+      'Salt Lake Stadium', 'Ultadanga Hudco', 'Labony Estate', 'Baisakhi', 'Duttabad',
+      'Central Park', 'Nicco Park area', 'Sukanta Nagar', 'FD Block', 'GD Block', 'BJ Block'
+    ],
+    popularLocalitiesBn: [
+      'সেক্টর ১', 'সেক্টর ২', 'সেক্টর ৩', 'সেক্টর ৫', 'করুণাময়ী', 'সিটি সেন্টার ১',
+      'সল্টলেক স্টেডিয়াম', 'উল্টোডাঙা হুডকো', 'লাবণ্য এস্টেট', 'বৈশাখী', 'দত্তাবাদ',
+      'সেন্ট্রাল পার্ক', 'নিকো পার্ক চত্বর', 'সুকান্ত নগর', 'এফডি ব্লক', 'জিডি ব্লক', 'বিজে ব্লক'
+    ]
   },
   {
     id: 'loc-newtown',
@@ -495,8 +503,16 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '45 - 60 Mins',
     responseTimeBn: '৪৫ - ৬০ মিনিট',
-    popularLocalities: ['Action Area 1', 'Action Area 2', 'Action Area 3', 'Eco Space', 'DLF IT Park', 'Shapoorji Complex'],
-    popularLocalitiesBn: ['অ্যাকশন এরিয়া ১', 'অ্যাকশন এরিয়া ২', 'অ্যাকশন এরিয়া ৩', 'ইকো স্পেস', 'ডিএলএফ পার্ক', 'শাপুর্জি কমপ্লেক্স']
+    popularLocalities: [
+      'Action Area 1', 'Action Area 2', 'Action Area 3', 'Eco Space', 'DLF IT Park',
+      'Shapoorji Pallonji Complex', 'Uniworld City', 'Akankha More', 'Candor TechSpace',
+      'Jatragachi', 'Kadambagachi', 'Swapno Bhor', 'Rosedale', 'Eco Park Area', 'Biswa Bangla Gate'
+    ],
+    popularLocalitiesBn: [
+      'অ্যাকশন এরিয়া ১', 'অ্যাকশন এরিয়া ২', 'অ্যাকশন এরিয়া ৩', 'ইকো স্পেস', 'ডিএলএফ পার্ক',
+      'শাপুর্জি কমপ্লেক্স', 'ইউনিওয়ার্ল্ড সিটি', 'আকাঙ্ক্ষা মোড়', 'ক্যান্ডর টেকস্পেস',
+      'যাত্রাডাঙ্গা', 'কদম্বগাছি', 'স্বপ্ন ভোর', 'রোজডেল', 'ইকো পার্ক চত্বর', 'বিশ্ব বাংলা গেট'
+    ]
   },
   {
     id: 'loc-rajarhat',
@@ -512,8 +528,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '45 - 60 Mins',
     responseTimeBn: '৪৫ - ৬০ মিনিট',
-    popularLocalities: ['Chinar Park', 'Rajarhat Chowmatha', 'City Centre 2', 'Kalipark', 'Dashadrone', 'Lohar Bridge'],
-    popularLocalitiesBn: ['চিনার পার্ক', 'রাজারহাট চৌমাথা', 'সিটি সেন্টার ২', 'কালীপার্ক', 'দশদ্রোণ', 'লোহার ব্রিজ']
+    popularLocalities: [
+      'Chinar Park', 'City Centre 2', 'Rajarhat Chowmatha', 'Dashadrone', 'Kalipark',
+      'Atghara', 'Teghoria Crossing', 'Bablatala', 'Reckjoani', 'Salua', 'Lohar Bridge', 'Narayanpur'
+    ],
+    popularLocalitiesBn: [
+      'চিনার পার্ক', 'সিটি সেন্টার ২', 'রাজারহাট চৌমাথা', 'দশদ্রোণ', 'কালীপার্ক',
+      'আটঘরা', 'তেঘড়িয়া ক্রসিং', 'বাবলাতলা', 'রেকজোয়ানি', 'সালুয়া', 'লোহার ব্রিজ', 'নারায়নপুর'
+    ]
   },
   {
     id: 'loc-behala',
@@ -529,8 +551,16 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Behala Chowrasta', 'Taratala', 'Parnasree', 'Manton', 'Sakherbazar', 'Thakurpukur 3A'],
-    popularLocalitiesBn: ['বেহালা চৌরাস্তা', 'তারাতলা', 'পর্ণশ্রী', 'ম্যান্টন', 'সখেরবাজার', 'ঠাকুরপুকুর ৩এ']
+    popularLocalities: [
+      'Behala Chowrasta', 'Taratala', 'Parnasree Pally', 'Manton', 'Sakherbazar',
+      'Silpara', 'James Long Sarani', 'Bakultala', 'Kadamtala Behala', 'Biren Roy Road',
+      'Behala Tram Depot', 'Sarsuna', 'Pathakpara', 'Dharpara'
+    ],
+    popularLocalitiesBn: [
+      'বেহালা চৌরাস্তা', 'তারাতলা', 'পর্ণশ্রী পল্লী', 'ম্যান্টন', 'সখেরবাজার',
+      'শীলপাড়া', 'জেমস লং সরণি', 'বকুলতলা', 'কদমতলা বেহালা', 'বীরেন রায় রোড',
+      'বেহালা ট্রাম ডিপো', 'সরসুনা', 'পাঠকপাড়া', 'ধারপাড়া'
+    ]
   },
   {
     id: 'loc-garia',
@@ -546,8 +576,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Mahamayatala', 'Patuli', 'Kavi Nazrul Metro', 'Baishnabghata', 'Briji', 'Naktala'],
-    popularLocalitiesBn: ['মহামায়াতলা', 'পাটুলী', 'কবি নজরুল মেট্রো', 'বৈষ্ণবঘাটা', 'ব্রিজি', 'নাকতলা']
+    popularLocalities: [
+      'Mahamayatala', 'Patuli', 'Kavi Nazrul Metro', 'Baishnabghata', 'Briji', 'Naktala',
+      'Garia Station Road', 'Kamalgazi', 'Rajpur Sonarpur border', 'Dhalua', 'Brahmapur', 'Boral', 'Kavi Subhash Metro'
+    ],
+    popularLocalitiesBn: [
+      'মহামায়াতলা', 'পাটুলী', 'কবি নজরুল মেট্রো', 'বৈষ্ণবঘাটা', 'ব্রিজি', 'নাকতলা',
+      'গড়িয়া স্টেশন রোড', 'কমলগাজী', 'রাজপুর সোনারপুর সীমান্ত', 'ঢালুয়া', 'ব্রহ্মপুর', 'বোড়াল', 'কবি সুভাষ মেট্রো'
+    ]
   },
   {
     id: 'loc-jadavpur',
@@ -563,8 +599,16 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['8B Bus Stand', 'Sulekha More', 'Santoshpur', 'Ajoy Nagar', 'Baghajatin', 'Sukanta Setu'],
-    popularLocalitiesBn: ['৮বি বাস স্ট্যান্ড', 'সুলেখা মোড়', 'সন্তোষপুর', 'অজয় নগর', 'বাঘাযতীন', 'সুকান্ত সেতু']
+    popularLocalities: [
+      '8B Bus Stand', 'Sulekha More', 'Santoshpur', 'Ajoy Nagar', 'Baghajatin',
+      'Sukanta Setu', 'Ganguly Bagan', 'Central Road', 'Jadavpur University Area',
+      'Ramgarh', 'Bikramgarh', 'Poddar Nagar', 'Peerless Hospital Area'
+    ],
+    popularLocalitiesBn: [
+      '৮বি বাস স্ট্যান্ড', 'সুলেখা মোড়', 'সন্তোষপুর', 'অজয় নগর', 'বাঘাযতীন',
+      'সুকান্ত সেতু', 'গাঙ্গুলী বাগান', 'সেন্ট্রাল রোড', 'যাদবপুর বিশ্ববিদ্যালয় চত্বর',
+      'রামগড়', 'বিক্রমগড়', 'পোদ্দার নগর', 'পিয়ারলেস হাসপাতাল চত্বর'
+    ]
   },
   {
     id: 'loc-tollygunge',
@@ -580,8 +624,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Ranikuthi', 'Karunamoyee Tolly', 'Netaji Nagar', 'Bansdroni', 'Haridevpur', 'Mahanayak Uttam Kumar'],
-    popularLocalitiesBn: ['রানীকুঠি', 'করুণাময়ী টালি', 'নেতাজী নগর', 'বাঁশদ্রোণী', 'হরিদেবপুর', 'উত্তম কুমার মেট্রো']
+    popularLocalities: [
+      'Ranikuthi', 'Karunamoyee Tollygunge', 'Netaji Nagar', 'Bansdroni', 'Haridevpur',
+      'Mahanayak Uttam Kumar Metro', 'Kudghat', 'Regent Park', 'Golf Green', 'Moore Avenue', 'Swiss Park', 'Masterda Surya Sen Metro'
+    ],
+    popularLocalitiesBn: [
+      'রানীকুঠি', 'করুণাময়ী টালিগঞ্জ', 'নেতাজী নগর', 'বাঁশদ্রোণী', 'হরিদেবপুর',
+      'উত্তম কুমার মেট্রো', 'কুদঘাট', 'রিজেন্ট পার্ক', 'গল্ফ গ্রিন', 'মুর অ্যাভিনিউ', 'সুইস পার্ক', 'মাস্টারদা সূর্য সেন মেট্রো'
+    ]
   },
   {
     id: 'loc-ballygunge',
@@ -597,8 +647,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Ballygunge Circular Rd', 'Dover Lane', 'Golpark', 'Gariahat Market', 'Southern Avenue', 'Lake Gardens'],
-    popularLocalitiesBn: ['বালিগঞ্জ সার্কুলার রোড', 'ডোভার লেন', 'গোলপার্ক', 'গড়িয়াহাট মার্কেট', 'সাউদার্ন অ্যাভিনিউ', 'লেক গার্ডেনস']
+    popularLocalities: [
+      'Ballygunge Circular Rd', 'Dover Lane', 'Golpark', 'Gariahat Market', 'Southern Avenue',
+      'Lake Gardens', 'Broad Street', 'Hazra Road', 'Maddox Square', 'Mandeville Gardens', 'Fern Road', 'Cornfield Road'
+    ],
+    popularLocalitiesBn: [
+      'বালিগঞ্জ সার্কুলার রোড', 'ডোভার লেন', 'গোলপার্ক', 'গড়িয়াহাট মার্কেট', 'সাউদার্ন অ্যাভিনিউ',
+      'লেক গার্ডেনস', 'ব্রড স্ট্রিট', 'হাজরা রোড', 'ম্যাডক্স স্কয়ার', 'ম্যান্ডেভিলে গার্ডেনস', 'ফার্ন রোড', 'কর্নফিল্ড রোড'
+    ]
   },
   {
     id: 'loc-alipore',
@@ -614,8 +670,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Chetla', 'Burdwan Road', 'New Alipore Block B/C', 'Taratala Crossing', 'National Library', 'Majerhat'],
-    popularLocalitiesBn: ['চেতলা', 'বর্ধমান রোড', 'নিউ আলিপুর', 'তারাতলা ক্রসিং', 'ন্যাশনাল লাইব্রেরি', 'মাজেরহাট']
+    popularLocalities: [
+      'Burdwan Road', 'New Alipore Block B/C/D', 'Chetla', 'Taratala Crossing', 'National Library',
+      'Majerhat', 'Judges Court Road', 'Hastings', 'Alipore Park Road', 'Belvedere Road', 'Zoological Garden Area'
+    ],
+    popularLocalitiesBn: [
+      'বর্ধমান রোড', 'নিউ আলিপুর', 'চেতলা', 'তারাতলা ক্রসিং', 'ন্যাশনাল লাইব্রেরি',
+      'মাজেরহাট', 'জাজেস কোর্ট রোড', 'হেস্টিংস', 'আলিপুর পার্ক রোড', 'বেলভেডিয়ার রোড', 'চিড়িয়াখানা চত্বর'
+    ]
   },
   {
     id: 'loc-parkstreet',
@@ -631,8 +693,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Camac Street', 'Theatre Road', 'Elgin Road', 'Park Circus', 'Mullick Bazar', 'Bhawanipore'],
-    popularLocalitiesBn: ['ক্যামাক স্ট্রিট', 'থিয়েটার রোড', 'এলগিন রোড', 'পার্ক সার্কাস', 'মল্লিক বাজার', 'ভবানীপুর']
+    popularLocalities: [
+      'Camac Street', 'Theatre Road (Shakespeare Sarani)', 'Elgin Road', 'Park Circus 7 Point',
+      'Mullick Bazar', 'Bhawanipore', 'Ripon Street', 'Russell Street', 'Middleton Row', 'Entally', 'Nonapukur', 'AJC Bose Road'
+    ],
+    popularLocalitiesBn: [
+      'ক্যামাক স্ট্রিট', 'থিয়েটার রোড (শেক্সপিয়র সরণি)', 'এলগিন রোড', 'পার্ক সার্কাস ৭ পয়েন্ট',
+      'মল্লিক বাজার', 'ভবানীপুর', 'রিপন স্ট্রিট', 'রাসেল স্ট্রিট', 'মিডলটন রো', 'এন্টালী', 'নোনাপুকুর', 'এজেসি বোস রোড'
+    ]
   },
   {
     id: 'loc-kasba',
@@ -648,8 +716,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Rajdanga', 'Bosepukur', 'Ruby Hospital More', 'Anandapur', 'EM Bypass Kasba', 'Acropolis Mall area'],
-    popularLocalitiesBn: ['রাজডাঙ্গা', 'বোসপুকুর', 'রুবি মোড়', 'আনন্দপুর', 'ই এম বাইপাস কসবা', 'অ্যাক্রোপলিস মল চত্বর']
+    popularLocalities: [
+      'Rajdanga', 'Bosepukur', 'Ruby Hospital More', 'Anandapur', 'Acropolis Mall Area',
+      'Kasba New Market', 'Haltu', 'Swinhoe Street', 'Tribarna', 'Narkelbagan', 'VIP Nagar', 'Kalikapur', 'Tagore Park'
+    ],
+    popularLocalitiesBn: [
+      'রাজডাঙ্গা', 'বোসপুকুর', 'রুবি হাসপাতাল মোড়', 'আনন্দপুর', 'অ্যাক্রোপলিস মল চত্বর',
+      'কসবা নিউ মার্কেট', 'হালতু', 'সুইনহো স্ট্রিট', 'ত্রিবর্ণ', 'নারকেলবাগান', 'ভিআইপি নগর', 'কালিকাপুর', 'টেগোর পার্ক'
+    ]
   },
   {
     id: 'loc-thakurpukur',
@@ -665,8 +739,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['IIM Calcutta Area', 'Kabardanga', 'Diamond Park', 'Joka Metro Depot', 'Silpara', 'Thakurpukur Bazar'],
-    popularLocalitiesBn: ['আইআইএম ক্যালকাটা চত্বর', 'কবরডাঙ্গা', 'ডায়মন্ড পার্ক', 'জোকা মেট্রো ডিপো', 'শীলপাড়া', 'ঠাকুরপুকুর বাজার']
+    popularLocalities: [
+      'IIM Calcutta Joka', 'Kabardanga', 'Diamond Park', 'Joka Metro Depot', 'Silpara',
+      'Thakurpukur 3A', 'Vivekananda Mission Area', 'Samali', 'Raspunja', 'Bakrahat Road', 'Chowhati Joka'
+    ],
+    popularLocalitiesBn: [
+      'আইআইএম ক্যালকাটা জোকা', 'কবরডাঙ্গা', 'ডায়মন্ড পার্ক', 'জোকা মেট্রো ডিপো', 'শীলপাড়া',
+      'ঠাকুরপুকুর ৩এ', 'বিবেকানন্দ মিশন চত্বর', 'সামালী', 'রাসপুঞ্জ', 'বাকরাহাট রোড', 'চৌহাটি জোকা'
+    ]
   },
   {
     id: 'loc-dumdum',
@@ -682,8 +762,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Nagerbazar', 'Dum Dum Jn', 'Dum Dum Cantonment', 'Airport 1 No Gate', 'Motijheel', 'Gorabazar'],
-    popularLocalitiesBn: ['নাগেরবাজার', 'দমদম জংশন', 'দমদম ক্যান্টনমেন্ট', 'এয়ারপোর্ট ১ নম্বর গেট', 'মতিঝিল', 'গোরাবাজার']
+    popularLocalities: [
+      'Nagerbazar', 'Dum Dum Jn', 'Dum Dum Cantonment', 'Airport 1 No Gate', 'Motijheel',
+      'Gorabazar', 'Seth Bagan', 'Clive House', 'Mall Road', 'Bangur Avenue', 'Amarpalli', 'Jessore Road Dum Dum'
+    ],
+    popularLocalitiesBn: [
+      'নাগেরবাজার', 'দমদম জংশন', 'দমদম ক্যান্টনমেন্ট', 'এয়ারপোর্ট ১ নম্বর গেট', 'মতিঝিল',
+      'গোরাবাজার', 'শেঠ বাগান', 'ক্লাইভ হাউস', 'মল রোড', 'বাঙুর অ্যাভিনিউ', 'অমরপল্লী', 'যশোর রোড দমদম'
+    ]
   },
   {
     id: 'loc-ultadanga',
@@ -699,8 +785,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Phoolbagan', 'VIP Crossing', 'Maniktala', 'Bidhannagar Road Station', 'Kankurgachi CIT Scheme'],
-    popularLocalitiesBn: ['ফুলবাগান', 'ভিআইপি ক্রসিং', 'মানিকতলা', 'বিধাননগর স্টেশন', 'কাঁকুড়গাছি সিআইটি স্কিম']
+    popularLocalities: [
+      'Phoolbagan', 'VIP Crossing Ultadanga', 'Maniktala', 'Bidhannagar Road Station',
+      'Kankurgachi CIT Scheme', 'Telengabagan', 'Gouribari', 'Muraripukur', 'Bagmari', 'Khanna Cinema More', 'Kankurgachi Pantaloons'
+    ],
+    popularLocalitiesBn: [
+      'ফুলবাগান', 'ভিআইপি ক্রসিং উল্টোডাঙা', 'মানিকতলা', 'বিধাননগর রোড স্টেশন',
+      'কাঁকুড়গাছি সিআইটি স্কিম', 'তেলেঙ্গাবাগান', 'গৌরীবাড়ি', 'মুরারিপুকুর', 'বাগমারি', 'খান্না সিনেমা মোড়', 'কাঁকুড়গাছি প্যান্টালুনস'
+    ]
   },
   {
     id: 'loc-shyambazar',
@@ -716,8 +808,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Hatibagan', 'Fariapukur', 'Sovabazar', 'Bagbazar', 'Girish Park', 'Shobhabazar Rajbari area'],
-    popularLocalitiesBn: ['হাতিবাগান', 'ফারিয়াপুকুর', 'শোভাবাজার', 'বাগবাজার', 'গিরিশ পার্ক', 'শোভাবাজার রাজবাড়ি']
+    popularLocalities: [
+      'Five Point Crossing', 'Hatibagan Market', 'Fariapukur', 'Sovabazar Rajbari', 'Bagbazar Ghat',
+      'Girish Park', 'Central Avenue North', 'Bidhan Sarani', 'Hedua Park', 'Kumartuli', 'Shobhabazar Metro', 'Girish Ghosh Sarani'
+    ],
+    popularLocalitiesBn: [
+      'পাঁচ মাথার মোড়', 'হাতিবাগান মার্কেট', 'ফারিয়াপুকুর', 'শোভাবাজার রাজবাড়ি', 'বাগবাজার ঘাট',
+      'গিরিশ পার্ক', 'সেন্ট্রাল অ্যাভিনিউ নর্থ', 'বিধান সরণি', 'হেদুয়া পার্ক', 'কুমোরটুলি', 'শোভাবাজার মেট্রো', 'গিরিশ ঘোষ সরণি'
+    ]
   },
   {
     id: 'loc-baranagar',
@@ -733,8 +831,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Dunlop More', 'Tobin Road', 'Sinthee More', 'Bonhooghly', 'Alambazar', 'Baranagar Bazar'],
-    popularLocalitiesBn: ['ডানলপ মোড়', 'টবিন রোড', 'সাঁথি মোড়', 'বনহুগলী', 'আলমবাজার', 'বরানগর বাজার']
+    popularLocalities: [
+      'Dunlop More', 'Tobin Road', 'Sinthee More', 'Bonhooghly', 'Alambazar',
+      'Baranagar Bazar', 'Kutighat', 'Ananya Cinema Area', 'Neogipara', 'Mondalpara', 'Noapara Metro', 'Palpara'
+    ],
+    popularLocalitiesBn: [
+      'ডানলপ মোড়', 'টবিন রোড', 'সাঁথি মোড়', 'বনহুগলী', 'আলমবাজার',
+      'বরানগর বাজার', 'কুঠিঘাট', 'অনন্যা সিনেমা চত্বর', 'নিওগিপাড়া', 'মন্ডলপাড়া', 'নোয়াপাড়া মেট্রো', 'পালপাড়া'
+    ]
   },
   {
     id: 'loc-belgharia',
@@ -750,8 +854,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Rathtala', 'Nilganj Road', 'Feeder Road', 'Texmaco Area', 'Prafulla Nagar', 'Nimta Crossing'],
-    popularLocalitiesBn: ['রথতলা', 'নীলগঞ্জ রোড', 'ফিডার রোড', 'টেক্সম্যাকো এরিয়া', 'প্রফুল্ল নগর', 'নিমতা ক্রসিং']
+    popularLocalities: [
+      'Rathtala', 'Nilganj Road', 'Feeder Road', 'Texmaco Area', 'Prafulla Nagar',
+      'Nimta Crossing', 'Deshapriya Nagar', 'Rabindranagar', 'Jadu Colony', 'Senpara', 'Belgharia Station Road'
+    ],
+    popularLocalitiesBn: [
+      'রথতলা', 'নীলগঞ্জ রোড', 'ফিডার রোড', 'টেক্সম্যাকো এরিয়া', 'প্রফুল্ল নগর',
+      'নিমতা ক্রসিং', 'দেশপ্রিয় নগর', 'রবীন্দ্রনগর', 'যদু কলোনি', 'সেনপাড়া', 'বেলঘরিয়া স্টেশন রোড'
+    ]
   },
   {
     id: 'loc-sodepur',
@@ -767,8 +877,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Ghola', 'HB Town', 'Amarabati', 'Peerless Nagar', 'Panihati', 'Sodepur Station Road'],
-    popularLocalitiesBn: ['ঘোলা', 'এইচ বি টাউন', 'অমরাবতী', 'পিয়ারলেস নগর', 'পানিহাটি', 'সোদেপুর স্টেশন রোড']
+    popularLocalities: [
+      'Ghola', 'HB Town', 'Amarabati', 'Peerless Nagar', 'Panihati',
+      'Sodepur Station Road', 'Sukchar', 'Agarpara Border', 'Natagarh', 'Deshbandhu Nagar', 'Traffic More Sodepur'
+    ],
+    popularLocalitiesBn: [
+      'ঘোলা', 'এইচ বি টাউন', 'অমরাবতী', 'পিয়ারলেস নগর', 'পানিহাটি',
+      'সোদেপুর স্টেশন রোড', 'সুকচর', 'আগরপাড়া সীমান্ত', 'নাটগড়', 'দেশবন্ধু নগর', 'ট্র্যাফিক মোড় সোদেপুর'
+    ]
   },
   {
     id: 'loc-khardah',
@@ -784,8 +900,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Khardah Station Rd', 'Surya Sen Nagar', 'Patulia', 'Rahara Chowmatha', 'BT Road Khardah'],
-    popularLocalitiesBn: ['খড়দহ স্টেশন রোড', 'সূর্য সেন নগর', 'পাতুলিয়া', 'রহড়া চৌমাথা', 'বিটি রোড খড়দহ']
+    popularLocalities: [
+      'Khardah Station Rd', 'Surya Sen Nagar', 'Patulia', 'Rahara Chowmatha', 'BT Road Khardah',
+      'Titagarh Road', 'Balaram Hospital Area', 'Usha Colony', 'Sadhanpur', 'Khardah Ferry Ghat'
+    ],
+    popularLocalitiesBn: [
+      'খড়দহ স্টেশন রোড', 'সূর্য সেন নগর', 'পাতুলিয়া', 'রহড়া চৌমাথা', 'বিটি রোড খড়দহ',
+      'টিটাগড় রোড', 'বলরাম হাসপাতাল চত্বর', 'ঊষা কলোনি', 'সাধনপুর', 'খড়দহ ফেরিঘাট'
+    ]
   },
   {
     id: 'loc-barrackpur',
@@ -801,8 +923,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Chiria More', 'Anandapuri', 'Palashi', 'Barrackpore Cantonment', 'Titagarh', 'Wireless More'],
-    popularLocalitiesBn: ['চিড়িয়া মোড়', 'আনন্দপুরী', 'পলাশী', 'ব্যারাকপুর ক্যান্টনমেন্ট', 'টিটাগড়', 'ওয়ারলেস মোড়']
+    popularLocalities: [
+      'Chiria More', 'Anandapuri', 'Palashi', 'Barrackpore Cantonment', 'Titagarh',
+      'Wireless More', 'Lalkuthi', 'Talpukur', 'SN Banerjee Road', 'Mangal Pandey Ghat', 'Sukanta Sadan', 'Dhobi Ghat'
+    ],
+    popularLocalitiesBn: [
+      'চিড়িয়া মোড়', 'আনন্দপুরী', 'পলাশী', 'ব্যারাকপুর ক্যান্টনমেন্ট', 'টিটাগড়',
+      'ওয়ারলেস মোড়', 'লালকুঠি', 'তালপুকুর', 'এসএন ব্যানার্জি রোড', 'মঙ্গল পান্ডে ঘাট', 'সুকান্ত সদন', 'ধোবি ঘাট'
+    ]
   },
   {
     id: 'loc-naihati',
@@ -818,8 +946,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Naihati Station Rd', 'Bhatpara', 'Garifa', 'Kankinara', 'Bijpur', 'Gouripore'],
-    popularLocalitiesBn: ['নৈহাটি স্টেশন রোড', 'ভাটপাড়া', 'গরিফা', 'কাঁকিনাড়া', 'বীজপুর', 'গৌরীপুর']
+    popularLocalities: [
+      'Naihati Station Rd', 'Bhatpara', 'Garifa', 'Kankinara', 'Bijpur',
+      'Gouripore', 'Hazinagar', 'Mitrabagan', 'Anandamath', 'Debok', 'Ramchandrapur'
+    ],
+    popularLocalitiesBn: [
+      'নৈহাটি স্টেশন রোড', 'ভাটপাড়া', 'গরিফা', 'কাঁকিনাড়া', 'বীজপুর',
+      'গৌরীপুর', 'হাজিনগর', 'মিত্রবাগান', 'আনন্দমঠ', 'দেবক', 'রামচন্দ্রপুর'
+    ]
   },
   {
     id: 'loc-kaikhali',
@@ -835,8 +969,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '45 - 60 Mins',
     responseTimeBn: '৪৫ - ৬০ মিনিট',
-    popularLocalities: ['Haldiram Crossing', 'Loknath Mandir', 'Teghoria', 'Raghunathpur', 'VIP Road Kaikhali'],
-    popularLocalitiesBn: ['হলদিরাম ক্রসিং', 'লোকনাথ মন্দির', 'তেঘড়িয়া', 'রঘুনাথপুর', 'ভিআইপি রোড কৈখালী']
+    popularLocalities: [
+      'Haldiram Crossing', 'Loknath Mandir', 'Teghoria', 'Raghunathpur', 'VIP Road Kaikhali',
+      'Chiriamore VIP', 'Baguiati Jora Mandir', 'Ashwininagar', 'Mondal Ganti', 'Deshbandhu Nagar VIP'
+    ],
+    popularLocalitiesBn: [
+      'হলদিরাম ক্রসিং', 'লোকনাথ মন্দির', 'তেঘড়িয়া', 'রঘুনাথপুর', 'ভিআইপি রোড কৈখালী',
+      'চিড়িয়া মোড় ভিআইপি', 'বাগুইআটি জোড়া মন্দির', 'অশ্বিনীনগর', 'মন্ডল গাতি', 'দেশবন্ধু নগর ভিআইপি'
+    ]
   },
   {
     id: 'loc-birati',
@@ -852,8 +992,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Nimta', 'Gouripur', 'Airport Gate 2.5', 'Birati Station More', 'Michael Nagar'],
-    popularLocalitiesBn: ['নিমতা', 'গৌরীপুর', 'এয়ারপোর্ট ২.৫ গেট', 'বিরাটি স্টেশন মোড়', 'মাইকেল নগর']
+    popularLocalities: [
+      'Nimta', 'Gouripur', 'Airport Gate 2.5', 'Birati Station More', 'Michael Nagar',
+      'Mahajati Nagar', 'Bisharpara', 'Khalisakota', 'Sukanta Pally', 'Sarat Bose Nagar'
+    ],
+    popularLocalitiesBn: [
+      'নিমতা', 'গৌরীপুর', 'এয়ারপোর্ট ২.৫ গেট', 'বিরাটি স্টেশন মোড়', 'মাইকেল নগর',
+      'মহাজাতি নগর', 'বিশারপাড়া', 'খালিসাকোটা', 'সুকান্ত পল্লী', 'শরৎ বোস নগর'
+    ]
   },
   {
     id: 'loc-madhyamgram',
@@ -869,8 +1015,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Doltala', 'Madhyamgram Chowmatha', 'Sodepur Road', 'Badu Road', 'Basunagar'],
-    popularLocalitiesBn: ['দোলতলা', 'মধ্যমগ্রাম চৌমাথা', 'সোদেপুর রোড', 'বাদু রোড', 'বসু নগর']
+    popularLocalities: [
+      'Doltala', 'Madhyamgram Chowmatha', 'Sodepur Road', 'Badu Road', 'Basunagar',
+      'Bankimpally', 'Udayrajpur', 'Michael Nagar Border', 'Sajirhat', 'Netaji Nagar Madhyamgram'
+    ],
+    popularLocalitiesBn: [
+      'দোলতলা', 'মধ্যমগ্রাম চৌমাথা', 'সোদেপুর রোড', 'বাদু রোড', 'বসু নগর',
+      'বঙ্কিমপল্লী', 'উদয়রাজপুর', 'মাইকেল নগর সীমান্ত', 'সাজিরহাট', 'নেতাজী নগর মধ্যমগ্রাম'
+    ]
   },
   {
     id: 'loc-barasat',
@@ -886,8 +1038,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Champadali More', 'Duckbangla', 'Colony More', 'Hridaypur', 'Sethpukur', 'Barasat Station'],
-    popularLocalitiesBn: ['চাঁপাডালি মোড়', 'ডাকবাংলো', 'কলোনি মোড়', 'হৃদয়পুর', 'শেঠপুকুর', 'বারাসাত স্টেশন']
+    popularLocalities: [
+      'Champadali More', 'Duckbangla', 'Colony More', 'Hridaypur', 'Sethpukur',
+      'Barasat Station', 'Pioneer Park', 'Kazipara', 'Nabapally', 'Kadamgachi', 'Choto Jagulia'
+    ],
+    popularLocalitiesBn: [
+      'চাঁপাডালি মোড়', 'ডাকবাংলো', 'কলোনি মোড়', 'হৃদয়পুর', 'শেঠপুকুর',
+      'বারাসাত স্টেশন', 'পায়োনিয়ার পার্ক', 'কাজিপাড়া', 'নবপল্লী', 'কদমগাছি', 'ছোট জাগুলিয়া'
+    ]
   },
   {
     id: 'loc-habra',
@@ -903,8 +1061,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Habra Town', 'Jessore Road', 'Banipur', 'Ashoknagar', 'Building More', 'Guma'],
-    popularLocalitiesBn: ['হাবড়া টাউন', 'যশোর রোড', 'বাণীপুর', 'অশোকনগর', 'বিল্ডিং মোড়', 'গুমা']
+    popularLocalities: [
+      'Habra Town', 'Jessore Road', 'Banipur', 'Ashoknagar Building More', 'Guma',
+      'Prithiba', 'Kalyangarh', 'Golabari', 'Joygachi', 'Hijalpukuria', 'Manashatala'
+    ],
+    popularLocalitiesBn: [
+      'হাবড়া টাউন', 'যশোর রোড', 'বাণীপুর', 'অশোকনগর বিল্ডিং মোড়', 'গুমা',
+      'পৃথীবা', 'কল্যাণগড়', 'গোলাবাড়ি', 'জয়গাছি', 'হিজলপুকুরিয়া', 'মনসাতলা'
+    ]
   },
   {
     id: 'loc-kalyani',
@@ -920,8 +1084,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Kalyani Block A/B/C/D', 'Central Park', 'Kanchrapara', 'Halisahar', 'Kalyani Ghoshpara'],
-    popularLocalitiesBn: ['কল্যাণী ব্লক এ/বি/সি/ডি', 'সেন্ট্রাল পার্ক', 'কাঁচরাপাড়া', 'হালিশহর', 'কল্যাণী ঘোষপাড়া']
+    popularLocalities: [
+      'Kalyani Block A', 'Kalyani Block B', 'Kalyani Block C', 'Kalyani Block D', 'Central Park',
+      'Kanchrapara Station', 'Halisahar', 'Kalyani Ghoshpara', 'AIIMS Kalyani Area', 'Buddha Park', 'Gayeshpur'
+    ],
+    popularLocalitiesBn: [
+      'কল্যাণী ব্লক এ', 'কল্যাণী ব্লক বি', 'কল্যাণী ব্লক সি', 'কল্যাণী ব্লক ডি', 'সেন্ট্রাল পার্ক',
+      'কাঁচরাপাড়া স্টেশন', 'হালিশহর', 'কল্যাণী ঘোষপাড়া', 'এইমস কল্যাণী চত্বর', 'বুদ্ধ পার্ক', 'গয়েশপুর'
+    ]
   },
   {
     id: 'loc-howrah',
@@ -937,8 +1107,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Howrah Maidan', 'Mandirtala', 'Shibpur', 'B.Garden', 'Kadamtala', 'Avani Riverside Mall'],
-    popularLocalitiesBn: ['হাওড়া ময়দান', 'মন্দিরতলা', 'শিবপুর', 'বি গার্ডেন', 'কদমতলা', 'অবনী মল চত্বর']
+    popularLocalities: [
+      'Howrah Maidan', 'Mandirtala', 'Shibpur Tram Depot', 'B.Garden', 'Kadamtala',
+      'Avani Riverside Mall', 'Kona Expressway', 'Nabanna Area', 'Chatterjeehat', 'Ichapur Howrah'
+    ],
+    popularLocalitiesBn: [
+      'হাওড়া ময়দান', 'মন্দিরতলা', 'শিবপুর ট্রাম ডিপো', 'বি গার্ডেন', 'কদমতলা',
+      'অবনী রিভারসাইড মল', 'কোনা এক্সপ্রেসওয়ে', 'নবান্ন চত্বর', 'চ্যাটার্জীহাট', 'ইছাপুর হাওড়া'
+    ]
   },
   {
     id: 'loc-salkia',
@@ -954,8 +1130,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Bandhaghat', 'Belur Math', 'Liluah', 'Malipanchghara', 'Bally Bazar', 'Ghusuri'],
-    popularLocalitiesBn: ['বাঁধাঘাট', 'বেলুড় মঠ', 'লিলুয়া', 'মালীপাঁচঘড়া', 'বালি বাজার', 'ঘোষুড়ি']
+    popularLocalities: [
+      'Bandhaghat', 'Belur Math', 'Liluah', 'Malipanchghara', 'Bally Bazar',
+      'Ghusuri', 'Salkia Chowrasta', 'Haragunge Bazar', 'Don Bosco Liluah', 'Pilkhana Howrah'
+    ],
+    popularLocalitiesBn: [
+      'বাঁধাঘাট', 'বেলুড় মঠ', 'লিলুয়া', 'মালীপাঁচঘড়া', 'বালি বাজার',
+      'ঘোষুড়ি', 'সালকিয়া চৌরাস্তা', 'হরগঞ্জ বাজার', 'ডন বস্কো লিলুয়া', 'পিলখানা হাওড়া'
+    ]
   },
   {
     id: 'loc-uttarpara',
@@ -971,8 +1153,14 @@ export const initialLocations: LocationItem[] = [
     isActive: true,
     responseTime: '60 - 90 Mins',
     responseTimeBn: '৬০ - ৯০ মিনিট',
-    popularLocalities: ['Hindmotor', 'Konnagar', 'Kotrung', 'Serampore Court', 'Rishra', 'Battala Serampore'],
-    popularLocalitiesBn: ['হিন্দমোটর', 'কোন্নগর', 'কটরুং', 'শ্রীরামপুর কোর্ট', 'রিষড়া', 'বটতলা শ্রীরামপুর']
+    popularLocalities: [
+      'Hindmotor', 'Konnagar', 'Kotrung', 'Serampore Court', 'Rishra',
+      'Battala Serampore', 'Mahesh', 'Rajballavpur', 'Uttarpara Station Road', 'Pearabagan', 'Nabagram Hooghly'
+    ],
+    popularLocalitiesBn: [
+      'হিন্দমোটর', 'কোন্নগর', 'কটরুং', 'শ্রীরামপুর কোর্ট', 'রিষড়া',
+      'বটতলা শ্রীরামপুর', 'মাহেশ', 'রাজবল্লভপুর', 'উত্তরপাড়া স্টেশন রোড', 'পয়রাবাগান', 'নবগ্রাম হুগলি'
+    ]
   }
 ];
 

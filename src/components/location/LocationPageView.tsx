@@ -288,32 +288,79 @@ export default function LocationPageView({
           </div>
         </section>
 
-        {/* Popular Localities in this Area */}
+        {/* Micro-Areas & Neighborhoods Covered (Local SEO Cluster) */}
         {popularAreas.length > 0 && (
-          <section style={{ backgroundColor: '#FFFFFF', borderBottom: '1px solid var(--color-border)', padding: '20px 16px' }}>
+          <section
+            style={{
+              backgroundColor: '#FFFFFF',
+              borderBottom: '1px solid var(--color-border)',
+              padding: '32px 16px',
+              boxShadow: 'var(--shadow-sm)'
+            }}
+          >
             <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px', fontSize: '0.875rem', fontWeight: 700, color: 'var(--color-text-main)' }}>
-                <MapPin size={16} style={{ color: 'var(--color-primary)' }} />
-                <span>{isBn ? `${locName} ও পার্শ্ববর্তী কভার করা অঞ্চলসমূহ:` : `Neighborhoods & Localities Covered in ${locName}:`}</span>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px', marginBottom: '14px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <MapPin size={18} style={{ color: 'var(--color-primary)' }} />
+                  <h2 style={{ fontSize: '1.125rem', fontWeight: 800, color: 'var(--color-text-main)', margin: 0 }}>
+                    {isBn
+                      ? `${locName} ও ৫-৮ কিমি ব্যাসার্ধে কভার করা সমস্ত পাড়া, মোড় ও মেট্রো স্টেশন:`
+                      : `Neighborhoods, Sub-Areas & Metro Stations Covered in & around ${locName}:`}
+                  </h2>
+                </div>
+
+                <span
+                  style={{
+                    fontSize: '0.75rem',
+                    fontWeight: 700,
+                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                    color: '#059669',
+                    border: '1px solid rgba(16, 185, 129, 0.25)',
+                    padding: '4px 10px',
+                    borderRadius: '20px',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '4px'
+                  }}
+                >
+                  ⚡ {isBn ? '৫-৮ কিমি এক্সপ্রেস ডিসপ্যাচ নিশ্চিত' : '5-8 KM Express Dispatch Radius'}
+                </span>
               </div>
+
+              <p style={{ fontSize: '0.84375rem', color: 'var(--color-text-muted)', lineHeight: 1.5, marginBottom: '16px', maxWidth: '900px' }}>
+                {isBn
+                  ? `আপনি ${locName}-এর যেকোনো প্রান্ত, অ্যাপার্টমেন্ট বা কলোনিতে থাকুন না কেন, আমাদের মোবাইল টেকনিশিয়ান ভ্যান টুলস ও আসল স্পেয়ার্স নিয়ে দ্রুত পৌঁছে যায়:`
+                  : `Whether you reside in residential societies, high-rise complexes, or local lanes across ${locName}, our mobile technician units reach your doorstep with genuine spare parts:`}
+              </p>
+
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                 {popularAreas.map((area, idx) => (
                   <span
                     key={idx}
                     style={{
-                      display: 'inline-block',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
                       backgroundColor: 'var(--color-bg-warm)',
                       border: '1px solid var(--color-border)',
-                      padding: '4px 12px',
-                      borderRadius: '16px',
+                      padding: '6px 12px',
+                      borderRadius: '8px',
                       fontSize: '0.8125rem',
                       fontWeight: 600,
-                      color: 'var(--color-text-main)'
+                      color: 'var(--color-text-main)',
+                      transition: 'border-color 0.2s, background-color 0.2s'
                     }}
                   >
-                    📍 {area}
+                    <span style={{ color: 'var(--color-primary)', fontSize: '0.875rem' }}>📍</span>
+                    <span>{area}</span>
                   </span>
                 ))}
+              </div>
+
+              <div style={{ marginTop: '14px', fontSize: '0.78125rem', color: 'var(--color-text-muted)', fontStyle: 'italic' }}>
+                {isBn
+                  ? `* আপনার নির্দিষ্ট গলি বা হাউজিং সোসাইটির নাম তালিকায় না থাকলেও চিন্তা নেই—আমরা ${locName} ও পার্শ্ববর্তী সমস্ত পিনকোড কভার করি।`
+                  : `* Don't see your specific street or society listed above? We cover all lanes, bye-lanes and PIN codes across ${locName} and surrounding districts.`}
               </div>
             </div>
           </section>

@@ -34,8 +34,9 @@ export async function generateMetadata({
   const location = await getLocationBySlug(locationSlug);
   if (!location) return {};
 
-  const title = `Doorstep AC & Appliance Repair in ${location.name}, Kolkata | 45-60 Min Response`;
-  const description = `Certified doorstep repair for AC, Refrigerator, Washing Machine, Microwave & TV in ${location.name} (PIN: ${location.pincode || 'Kolkata'}). 45-60 min arrival, 100% genuine parts, transparent prices & 90-day warranty. Book now!`;
+  const subAreasList = (location.popularLocalities || []).slice(0, 6).join(', ');
+  const title = `Doorstep AC & Appliance Repair in ${location.name} (${subAreasList}) | 45-60 Min`;
+  const description = `Certified doorstep repair for AC, Refrigerator, Washing Machine, Microwave & TV in ${location.name} (PIN: ${location.pincode || 'Kolkata'}). Covering ${subAreasList} & surrounding areas in ${location.responseTime || '45-60 mins'}. 100% genuine parts & 90-day warranty. Book now!`;
 
   return buildPageMetadata({
     title,
@@ -68,6 +69,10 @@ export default async function LocationPage({
     {
       q: `How quickly can an appliance technician reach my doorstep in ${location.name}?`,
       a: `Through our dedicated ${location.name} service hub, our certified technician typically arrives within ${location.responseTime || '45 to 60 minutes'} of booking confirmation.`
+    },
+    {
+      q: `Which sub-areas, neighborhoods and landmarks do you cover around ${location.name}?`,
+      a: `From our dedicated ${location.name} hub, our certified engineers cover all surrounding localities within a 5-8 km radius, including ${(location.popularLocalities || []).join(', ')} with express ${location.responseTime || '45-60 min'} arrival.`
     },
     {
       q: `Which appliances do you repair in ${location.name} (PIN: ${location.pincode})?`,
@@ -110,10 +115,16 @@ export default async function LocationPage({
       postalCode: location.pincode || '700001',
       addressCountry: 'IN'
     },
-    areaServed: {
-      '@type': 'AdministrativeArea',
-      name: `${location.name}, West Bengal`
-    },
+    areaServed: [
+      {
+        '@type': 'AdministrativeArea',
+        name: `${location.name}, West Bengal`
+      },
+      ...((location.popularLocalities || []).map((sub) => ({
+        '@type': 'Place',
+        name: `${sub}, ${location.name}`
+      })))
+    ],
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',

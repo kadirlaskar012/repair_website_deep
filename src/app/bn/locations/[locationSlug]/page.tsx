@@ -34,8 +34,9 @@ export async function generateMetadata({
   const location = await getLocationBySlug(locationSlug);
   if (!location) return {};
 
-  const title = `${location.nameBn}-এ ডোরস্টেপ এসি ও অ্যাপ্লায়েন্স মেরামত | ৪৫-৬০ মিনিটে টেকনিশিয়ান`;
-  const description = `${location.nameBn} (পিন: ${location.pincode || 'কলকাতা'}) এলাকায় এসি, ফ্রিজ, ওয়াশিং মেশিন, মাইক্রোওয়েভ ও টিভির নির্ভরযোগ্য ডোরস্টেপ মেরামত। ৪৫-৬০ মিনিটে আগমন, আসল পার্টস ও ৯০ দিনের ওয়ারেন্টি।`;
+  const subAreasListBn = (location.popularLocalitiesBn || location.popularLocalities || []).slice(0, 6).join('、 ');
+  const title = `${location.nameBn}-এ ডোরস্টেপ এসি ও অ্যাপ্লায়েন্স মেরামত (${subAreasListBn}) | ৪৫-৬০ মিনিট`;
+  const description = `${location.nameBn} (পিন: ${location.pincode || 'কলকাতা'}) সহ ${subAreasListBn} অঞ্চলে এসি, ফ্রিজ, ওয়াশিং মেশিন, ওভেনের ডোরস্টেপ মেরামত। ৪৫-৬০ মিনিটে টেকনিশিয়ান ও ৯০ দিনের ওয়ারেন্টি।`;
 
   return buildPageMetadata({
     title,
@@ -68,6 +69,10 @@ export default async function LocationPageBn({
     {
       q: `${location.nameBn} এলাকায় টেকনিশিয়ান কত তাড়াতাড়ি আমার বাড়ি পৌঁছাবে?`,
       a: `আমাদের ডেডিকেটেড ${location.nameBn} সার্ভিস হাব থেকে বুকিং কনফার্ম হওয়ার ${location.responseTimeBn || '৪৫ থেকে ৬০ মিনিটের'} মধ্যে আমাদের সার্টিফাইড টেকনিশিয়ান আপনার বাড়িতে পৌঁছে যাবে।`
+    },
+    {
+      q: `${location.nameBn}-এর আশেপাশে আপনারা কোন কোন পাড়া, মোড় ও অঞ্চল কভার করেন?`,
+      a: `আমাদের ডেডিকেটেড ${location.nameBn} সার্ভিস হাব থেকে আমাদের টেকনিশিয়ানরা ${(location.popularLocalitiesBn || location.popularLocalities || []).join('、 ')} সহ ৫-৮ কিমি ব্যাসার্ধের সমস্ত এলাকায় মাত্র ৪৫-৬০ মিনিটের মধ্যে ডোরস্টেপ সার্ভিস প্রদান করে।`
     },
     {
       q: `${location.nameBn} (পিন: ${location.pincode}) অঞ্চলে আপনারা কোন কোন অ্যাপ্লায়েন্স মেরামত করেন?`,
@@ -110,10 +115,16 @@ export default async function LocationPageBn({
       postalCode: location.pincode || '700001',
       addressCountry: 'IN'
     },
-    areaServed: {
-      '@type': 'AdministrativeArea',
-      name: `${location.name}, West Bengal`
-    },
+    areaServed: [
+      {
+        '@type': 'AdministrativeArea',
+        name: `${location.name}, West Bengal`
+      },
+      ...(((location.popularLocalitiesBn || location.popularLocalities) || []).map((sub) => ({
+        '@type': 'Place',
+        name: `${sub}, ${location.name}`
+      })))
+    ],
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
