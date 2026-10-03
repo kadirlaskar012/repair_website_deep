@@ -20,6 +20,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/" />
   </url>
   <url>
+    <loc>https://www.applianceseva.com/locations</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations" />
+  </url>
+  <url>
     <loc>https://www.applianceseva.com/blog</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>daily</changefreq>
@@ -846,5 +864,617 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/kenstar" />
     <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/kenstar" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/kenstar" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/akai</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/akai" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/akai" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/akai" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/akai</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/akai" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/akai" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/akai" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/midea</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/midea" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/midea" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/midea" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/midea</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/midea" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/midea" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/midea" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/marq</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/marq" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/marq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/marq" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/marq</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/marq" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/marq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/marq" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/brands/croma</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/croma" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/croma" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/croma" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/brands/croma</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/brands/croma" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/brands/croma" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/brands/croma" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/salt-lake</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/salt-lake" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/salt-lake" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/salt-lake" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/salt-lake</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/salt-lake" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/salt-lake" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/salt-lake" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/new-town</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/new-town" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/new-town" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/new-town" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/new-town</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/new-town" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/new-town" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/new-town" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/rajarhat</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/rajarhat" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/rajarhat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/rajarhat" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/rajarhat</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/rajarhat" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/rajarhat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/rajarhat" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/behala</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/behala" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/behala" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/behala" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/behala</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/behala" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/behala" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/behala" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/garia</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/garia" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/garia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/garia" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/garia</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/garia" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/garia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/garia" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/jadavpur</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/jadavpur" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/jadavpur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/jadavpur" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/jadavpur</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/jadavpur" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/jadavpur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/jadavpur" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/tollygunge</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/tollygunge" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/tollygunge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/tollygunge" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/tollygunge</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/tollygunge" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/tollygunge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/tollygunge" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/ballygunge</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/ballygunge" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/ballygunge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/ballygunge" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/ballygunge</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/ballygunge" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/ballygunge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/ballygunge" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/alipore</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/alipore" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/alipore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/alipore" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/alipore</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/alipore" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/alipore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/alipore" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/park-street</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/park-street" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/park-street" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/park-street" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/park-street</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/park-street" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/park-street" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/park-street" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/kasba</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/kasba" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/kasba" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/kasba" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/kasba</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/kasba" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/kasba" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/kasba" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/thakurpukur</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/thakurpukur" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/thakurpukur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/thakurpukur" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/thakurpukur</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/thakurpukur" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/thakurpukur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/thakurpukur" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/dumdum</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/dumdum" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/dumdum" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/dumdum" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/dumdum</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/dumdum" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/dumdum" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/dumdum" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/ultadanga</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/ultadanga" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/ultadanga" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/ultadanga" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/ultadanga</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/ultadanga" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/ultadanga" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/ultadanga" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/shyambazar</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/shyambazar" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/shyambazar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/shyambazar" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/shyambazar</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/shyambazar" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/shyambazar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/shyambazar" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/baranagar</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/baranagar" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/baranagar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/baranagar" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/baranagar</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/baranagar" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/baranagar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/baranagar" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/belgharia</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/belgharia" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/belgharia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/belgharia" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/belgharia</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/belgharia" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/belgharia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/belgharia" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/sodepur</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/sodepur" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/sodepur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/sodepur" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/sodepur</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/sodepur" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/sodepur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/sodepur" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/khardah</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/khardah" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/khardah" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/khardah" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/khardah</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/khardah" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/khardah" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/khardah" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/barrackpur</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/barrackpur" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/barrackpur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/barrackpur" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/barrackpur</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/barrackpur" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/barrackpur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/barrackpur" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/naihati</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/naihati" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/naihati" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/naihati" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/naihati</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/naihati" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/naihati" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/naihati" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/kaikhali</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/kaikhali" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/kaikhali" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/kaikhali" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/kaikhali</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/kaikhali" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/kaikhali" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/kaikhali" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/birati</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/birati" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/birati" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/birati" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/birati</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/birati" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/birati" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/birati" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/madhyamgram</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/madhyamgram" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/madhyamgram" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/madhyamgram" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/madhyamgram</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/madhyamgram" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/madhyamgram" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/madhyamgram" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/barasat</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/barasat" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/barasat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/barasat" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/barasat</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/barasat" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/barasat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/barasat" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/habra</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/habra" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/habra" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/habra" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/habra</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/habra" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/habra" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/habra" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/kalyani</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/kalyani" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/kalyani" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/kalyani" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/kalyani</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/kalyani" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/kalyani" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/kalyani" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/howrah</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/howrah" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/howrah" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/howrah" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/howrah</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/howrah" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/howrah" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/howrah" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/salkia</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/salkia" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/salkia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/salkia" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/salkia</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/salkia" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/salkia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/salkia" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/locations/uttarpara</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/uttarpara" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/uttarpara" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/uttarpara" />
+  </url>
+  <url>
+    <loc>https://www.applianceseva.com/bn/locations/uttarpara</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.applianceseva.com/locations/uttarpara" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.applianceseva.com/bn/locations/uttarpara" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.applianceseva.com/locations/uttarpara" />
   </url>
 </urlset>

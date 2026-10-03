@@ -299,9 +299,12 @@ export default function Footer({ settings, categories, locations, lang }: Footer
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                     <MapPin size={14} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />
-                    <span style={{ fontWeight: 700, fontSize: '0.875rem', color: '#FFFFFF' }}>
+                    <Link
+                      href={isBn ? `/bn/locations/${loc.hashSlug}` : `/locations/${loc.hashSlug}`}
+                      style={{ fontWeight: 700, fontSize: '0.875rem', color: '#FFFFFF', textDecoration: 'none' }}
+                    >
                       {isBn ? loc.nameBn : loc.name}
-                    </span>
+                    </Link>
                   </div>
                   {loc.pincode && (
                     <span
@@ -330,33 +333,46 @@ export default function Footer({ settings, categories, locations, lang }: Footer
                     <span>{isBn ? 'ডোরস্টেপ টেকনিশিয়ান সক্রিয়' : 'Technicians Available'}</span>
                   </span>
 
-                  <button
-                    type="button"
-                    onClick={() => {
-                      if (typeof window !== 'undefined') {
-                        localStorage.setItem('preferred_location_id', loc.id);
-                        localStorage.setItem('preferred_location_slug', loc.hashSlug);
-                        localStorage.setItem('preferred_location_name', loc.name);
-                        window.dispatchEvent(
-                          new CustomEvent('appliance_location_changed', {
-                            detail: { id: loc.id, name: loc.name, nameBn: loc.nameBn, slug: loc.hashSlug }
-                          })
-                        );
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                      }
-                    }}
-                    style={{
-                      background: 'none',
-                      border: 'none',
-                      color: 'var(--color-accent)',
-                      fontWeight: 700,
-                      cursor: 'pointer',
-                      padding: 0,
-                      textDecoration: 'underline'
-                    }}
-                  >
-                    {isBn ? 'এলাকা বেছে নিন' : 'Select Area'}
-                  </button>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <Link
+                      href={isBn ? `/bn/locations/${loc.hashSlug}` : `/locations/${loc.hashSlug}`}
+                      style={{
+                        color: 'var(--color-accent)',
+                        fontWeight: 700,
+                        textDecoration: 'none'
+                      }}
+                    >
+                      {isBn ? 'হাব বিবরণ →' : 'Hub Details →'}
+                    </Link>
+
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (typeof window !== 'undefined') {
+                          localStorage.setItem('preferred_location_id', loc.id);
+                          localStorage.setItem('preferred_location_slug', loc.hashSlug);
+                          localStorage.setItem('preferred_location_name', loc.name);
+                          window.dispatchEvent(
+                            new CustomEvent('appliance_location_changed', {
+                              detail: { id: loc.id, name: loc.name, nameBn: loc.nameBn, slug: loc.hashSlug }
+                            })
+                          );
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                      }}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        color: '#94A3B8',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        padding: 0,
+                        textDecoration: 'underline'
+                      }}
+                    >
+                      {isBn ? 'বাছাই' : 'Select'}
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}

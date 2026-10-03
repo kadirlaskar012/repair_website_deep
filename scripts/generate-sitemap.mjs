@@ -10,6 +10,7 @@ const today = new Date().toISOString().split('T')[0];
 
 const staticPaths = [
   { path: '', priority: '1.0', changefreq: 'daily' },
+  { path: 'locations', priority: '0.85', changefreq: 'daily' },
   { path: 'blog', priority: '0.8', changefreq: 'daily' },
   { path: 'reviews', priority: '0.9', changefreq: 'daily' },
   { path: 'track', priority: '0.7', changefreq: 'daily' },
@@ -40,7 +41,16 @@ const brandSlugs = [
   'o-general', 'lloyd', 'blue-star', 'hitachi', 'daikin', 'carrier', 'voltas',
   'mitsubishi', 'panasonic', 'lg', 'samsung', 'whirlpool', 'godrej', 'haier',
   'ifb', 'bosch', 'siemens', 'electrolux', 'toshiba', 'tcl', 'sony', 'onida',
-  'sansui', 'bpl', 'videocon', 'kelvinator', 'singer', 'kenstar'
+  'sansui', 'bpl', 'videocon', 'kelvinator', 'singer', 'kenstar',
+  'akai', 'midea', 'marq', 'croma'
+];
+
+const locationSlugs = [
+  'salt-lake', 'new-town', 'rajarhat', 'behala', 'garia', 'jadavpur',
+  'tollygunge', 'ballygunge', 'alipore', 'park-street', 'kasba', 'thakurpukur',
+  'dumdum', 'ultadanga', 'shyambazar', 'baranagar', 'belgharia', 'sodepur',
+  'khardah', 'barrackpur', 'naihati', 'kaikhali', 'birati', 'madhyamgram',
+  'barasat', 'habra', 'kalyani', 'howrah', 'salkia', 'uttarpara'
 ];
 
 const items = [];
@@ -109,6 +119,26 @@ for (const slug of blogSlugs) {
 for (const slug of brandSlugs) {
   const enUrl = `${SITE_URL}/brands/${slug}`;
   const bnUrl = `${SITE_URL}/bn/brands/${slug}`;
+  items.push({
+    url: enUrl,
+    lastmod: today,
+    changefreq: 'weekly',
+    priority: '0.85',
+    alternate: bnUrl
+  });
+  items.push({
+    url: bnUrl,
+    lastmod: today,
+    changefreq: 'weekly',
+    priority: '0.8',
+    alternate: enUrl
+  });
+}
+
+// 5. Locations (30 Local Hubs)
+for (const slug of locationSlugs) {
+  const enUrl = `${SITE_URL}/locations/${slug}`;
+  const bnUrl = `${SITE_URL}/bn/locations/${slug}`;
   items.push({
     url: enUrl,
     lastmod: today,

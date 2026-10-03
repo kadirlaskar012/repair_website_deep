@@ -73,14 +73,22 @@ export interface LocationItem {
   id: string;
   name: string;
   nameBn: string;
-  hashSlug: string; // e.g. 'barrackpur', 'behala'
-  pincode?: string; // e.g. '700120'
+  hashSlug: string; // e.g. 'salt-lake', 'behala'
+  pincode?: string; // e.g. '700091'
   address?: string;
   addressBn?: string;
   state: string; // 'West Bengal'
   stateBn: string; // 'পশ্চিমবঙ্গ'
   sortOrder: number;
   isActive: boolean;
+  hubName?: string;
+  hubNameBn?: string;
+  popularLocalities?: string[];
+  popularLocalitiesBn?: string[];
+  responseTime?: string;
+  responseTimeBn?: string;
+  landmarks?: string[];
+  landmarksBn?: string[];
 }
 
 export interface TrustItem {

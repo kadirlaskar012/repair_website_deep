@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getCategories, getBlogPosts } from '@/lib/db';
+import { getCategories, getBlogPosts, getLocations } from '@/lib/db';
 import { SITE_URL } from '@/lib/seo';
 import { brandSeoCatalog } from '@/lib/brand-seo-data';
 
@@ -7,9 +7,10 @@ export const dynamic = 'force-dynamic';
 export const revalidate = 3600; // Cache 1 hour
 
 export async function GET() {
-  const [categories, blogPosts] = await Promise.all([
+  const [categories, blogPosts, locations] = await Promise.all([
     getCategories(),
-    getBlogPosts(true)
+    getBlogPosts(true),
+    getLocations()
   ]);
 
   const today = new Date().toISOString().split('T')[0];
@@ -27,6 +28,7 @@ export async function GET() {
   // 1. Static Pages
   const staticPaths = [
     { path: '', priority: '1.0', changefreq: 'daily' },
+    { path: 'locations', priority: '0.8', changefreq: 'daily' },
     { path: 'blog', priority: '0.8', changefreq: 'daily' },
     { path: 'reviews', priority: '0.8', changefreq: 'daily' },
     { path: 'track', priority: '0.7', changefreq: 'daily' },
@@ -106,6 +108,28 @@ export async function GET() {
     const cleanSlug = slug.trim().toLowerCase().replace(/\s+/g, '-');
     const enUrl = `${SITE_URL}/brands/${cleanSlug}`;
     const bnUrl = `${SITE_URL}/bn/brands/${cleanSlug}`;
+
+    items.push({
+      url: enUrl,
+      lastmod: today,
+      changefreq: 'weekly',
+      priority: '0.85',
+      alternate: bnUrl
+    });
+
+    items.push({
+      url: bnUrl,
+      lastmod: today,
+      changefreq: 'weekly',
+      priority: '0.8',
+      alternate: enUrl
+    });
+  }
+
+  // 5. Locations (30 Local Hubs)
+  for (const loc of locations) {
+    const enUrl = `${SITE_URL}/locations/${loc.hashSlug}`;
+    const bnUrl = `${SITE_URL}/bn/locations/${loc.hashSlug}`;
 
     items.push({
       url: enUrl,

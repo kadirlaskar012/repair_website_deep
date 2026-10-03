@@ -508,6 +508,15 @@ export async function getLocations(): Promise<LocationItem[]> {
   return inMemory.locations.filter((l) => l.isActive).sort((a, b) => a.sortOrder - b.sortOrder);
 }
 
+export async function getLocationBySlug(slug: string): Promise<LocationItem | null> {
+  const locs = await getLocations();
+  const cleanSlug = slug.toLowerCase().trim();
+  const found = locs.find(
+    (l) => l.hashSlug.toLowerCase() === cleanSlug || l.id === cleanSlug || l.id === `loc-${cleanSlug}`
+  );
+  return found || null;
+}
+
 export async function getAllLocationsAdmin(): Promise<LocationItem[]> {
   return inMemory.locations;
 }
