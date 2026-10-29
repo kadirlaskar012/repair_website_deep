@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import { createBooking, getSiteSettings } from '@/lib/db';
 import { sendBookingLeadEmail } from '@/lib/email';
+import { sendTelegramBookingAlert } from '@/lib/telegram';
 import { dispatchWhatsAppLead, buildWhatsAppLink, formatWhatsAppBookingMessage } from '@/lib/whatsapp';
 
 const bookingSchema = z.object({
@@ -46,6 +47,11 @@ export async function POST(req: NextRequest) {
         console.error('Background lead email dispatch failed:', err);
       });
     }
+
+    // 2b. Telegram alert to admin (awaited so it completes on serverless)
+    await sendTelegramBookingAlert(booking).catch((err) => {
+      console.error('Telegram alert failed:', err);
+    });
 
     // 3. Dispatch / prepare WhatsApp workflow
     const whatsappResult = await dispatchWhatsAppLead(settings.whatsapp, booking);
