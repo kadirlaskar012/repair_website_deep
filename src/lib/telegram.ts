@@ -20,6 +20,34 @@ export async function sendTelegramBookingAlert(booking: any): Promise<void> {
     booking.notes ? `📝 ${esc(booking.notes)}` : '',
   ].filter(Boolean).join('\n');
 
+  await sendTelegram(text);
+}
+
+const STATUS_EMOJI: Record<string, string> = {
+  pending: '⏳', confirmed: '✅', assigned: '👨‍🔧', completed: '🎉', cancelled: '❌',
+};
+
+export async function sendTelegramStatusAlert(booking: any, oldStatus: string, newStatus: string): Promise<void> {
+  const emoji = STATUS_EMOJI[String(newStatus).toLowerCase()] || '🔄';
+  const text = [
+    `${emoji} <b>Status Updated: ${esc(newStatus).toUpperCase()}</b>`,
+    `🆔 ${esc(booking?.bookingId)}`,
+    oldStatus ? `🔁 ${esc(oldStatus)} ➜ ${esc(newStatus)}` : '',
+    booking?.name ? `👤 ${esc(booking.name)}` : '',
+    booking?.mobile ? `📞 <a href="tel:+91${esc(booking.mobile)}">${esc(booking.mobile)}</a>` : '',
+    booking?.service ? `🛠 ${esc(booking.serviceName || booking.service)} (${esc(booking.brand)})` : '',
+    booking?.address ? `📍 ${esc(booking.address)}` : '',
+  ].filter(Boolean).join('\n');
+  await sendTelegram(text);
+}
+
+async function sendTelegram(text: string): Promise<void> {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatIds = (process.env.TELEGRAM_CHAT_ID || '').split(',').map((s) => s.trim()).filter(Boolean);
+  if (!token || chatIds.length === 0) {
+    console.warn('Telegram alert skipped: TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set');
+    return;
+  }
   await Promise.all(
     chatIds.map((chat_id) =>
       fetch(`https://api.telegram.org/bot${token}/sendMessage`, {

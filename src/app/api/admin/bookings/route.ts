@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getCurrentAdmin } from '@/lib/auth';
-import { getBookings, updateBookingStatus, deleteBooking } from '@/lib/db';
+import { getBookings, updateBookingStatus, deleteBooking, getBookingById } from '@/lib/db';
+import { sendTelegramStatusAlert } from '@/lib/telegram';
 
 export async function GET() {
   const admin = await getCurrentAdmin();
@@ -19,7 +20,14 @@ export async function PUT(req: NextRequest) {
     return NextResponse.json({ error: 'bookingId and status are required' }, { status: 400 });
   }
 
+  const before = await getBookingById(bookingId).catch(() => null);
   await updateBookingStatus(bookingId, status);
+  const oldStatus = (before as any)?.status || '';
+  if (String(oldStatus).toLowerCase() !== String(status).toLowerCase()) {
+    await sendTelegramStatusAlert({ ...(before || {}), bookingId }, oldStatus, status).catch((err) =>
+      console.error('Telegram status alert failed:', err)
+    );
+  }
   return NextResponse.json({ success: true, message: 'Status updated' });
 }
 
