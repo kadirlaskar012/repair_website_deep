@@ -1,0 +1,113 @@
+[
+  {
+    "id": "INV-SAMPLE-1",
+    "invoiceNumber": "AS-INV-2026-001001",
+    "type": "service",
+    "status": "finalized",
+    "paymentStatus": "paid",
+    "invoiceDate": "2026-10-30",
+    "dueDate": "2026-10-30",
+    "serviceDate": "2026-10-30",
+    "bookingId": "AS-84920147",
+    "technicianName": "Rajesh Karmakar (Senior AC Specialist)",
+    "secureToken": "as-demo-token-saltlake-2026",
+    "customerId": "CUST-INIT-1",
+    "customerName": "Anirban Mukherjee",
+    "mobile": "9830123456",
+    "whatsapp": "9830123456",
+    "email": "anirban.kol@gmail.com",
+    "houseNumber": "Flat 4B, Tower 2",
+    "streetAddress": "Silver Oak Apartments, Sector V",
+    "locality": "Salt Lake",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "pincode": "700091",
+    "applianceCategory": "Air Conditioner (AC)",
+    "brand": "Daikin",
+    "modelNumber": "FTKF50TV",
+    "serialNumber": "DK2024-8849",
+    "problemDescription": "AC outdoor fan hum but compressor tripping; cooling stopped.",
+    "workPerformed": "Replaced weak 50 MFD capacitor, deep jet pump serviced indoor evaporator, cleared drain choke.",
+    "warrantyDuration": "90 Days",
+    "warrantyStartDate": "2026-10-30",
+    "warrantyEndDate": "2027-01-28",
+    "warrantyTerms": "90 Days Warranty on replacement capacitor. 30 Days Service Guarantee on jet cleaning workmanship.",
+    "items": [
+      {
+        "id": "ITEM-1",
+        "itemType": "service",
+        "description": "AC Deep Cleaning (Jet Wash Foam Service)",
+        "hsnSac": "998717",
+        "quantity": 1,
+        "unitPrice": 699,
+        "discount": 0,
+        "taxRate": 0,
+        "taxAmount": 0,
+        "totalAmount": 699
+      },
+      {
+        "id": "ITEM-2",
+        "itemType": "spare_part",
+        "description": "AC Run Capacitor 50 MFD (Epcos Genuine)",
+        "hsnSac": "85322500",
+        "quantity": 1,
+        "unitPrice": 650,
+        "discount": 0,
+        "taxRate": 0,
+        "taxAmount": 0,
+        "totalAmount": 650
+      },
+      {
+        "id": "ITEM-3",
+        "itemType": "visiting",
+        "description": "Doorstep Technician Inspection & Travel Charge (Adjusted in repair)",
+        "hsnSac": "998717",
+        "quantity": 1,
+        "unitPrice": 300,
+        "discount": 0,
+        "taxRate": 0,
+        "taxAmount": 0,
+        "totalAmount": 300
+      }
+    ],
+    "isGst": false,
+    "serviceSubtotal": 699,
+    "partsSubtotal": 650,
+    "additionalCharges": 300,
+    "subtotal": 1649,
+    "discountTotal": 0,
+    "taxableAmount": 1649,
+    "cgst": 0,
+    "sgst": 0,
+    "igst": 0,
+    "taxTotal": 0,
+    "roundOff": 0,
+    "grandTotal": 1649,
+    "amountPaid": 1649,
+    "balanceDue": 0,
+    "payments": [
+      {
+        "id": "PAY-1",
+        "amount": 1649,
+        "paymentDate": "2026-10-30",
+        "method": "upi",
+        "transactionRef": "UPI/6291674186/AXS129849",
+        "notes": "Paid via Google Pay at doorstep",
+        "recordedAt": "2026-10-30T11:58:25.245Z"
+      }
+    ],
+    "notes": "Thank you for choosing Appliance Seva! Next routine filter wash recommended in 90 days.",
+    "termsAndConditions": "1. All repairs are covered under 30-day workmanship warranty.\n2. Genuine replacement parts carry 90-day manufacturer/dealer warranty.\n3. Inspection fee is waived/adjusted when repairs are completed.\n4. Disputes subject to Kolkata jurisdiction.",
+    "activityLog": [
+      {
+        "id": "LOG-INIT",
+        "action": "CREATED",
+        "description": "Invoice created upon completion of doorstep service",
+        "timestamp": "2026-10-30T11:58:25.245Z"
+      }
+    ],
+    "createdAt": "2026-10-30T11:58:25.245Z",
+    "updatedAt": "2026-10-30T11:58:25.245Z",
+    "finalizedAt": "2026-10-30T11:58:25.245Z"
+  }
+]

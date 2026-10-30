@@ -1,0 +1,22 @@
+[
+  {
+    "id": "CUST-INIT-1",
+    "name": "Anirban Mukherjee",
+    "mobile": "9830123456",
+    "whatsapp": "9830123456",
+    "email": "anirban.kol@gmail.com",
+    "houseNumber": "Flat 4B, Tower 2",
+    "streetAddress": "Silver Oak Apartments, Sector V",
+    "locality": "Salt Lake",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "pincode": "700091",
+    "totalInvoices": 1,
+    "totalBilled": 1649,
+    "totalPaid": 1649,
+    "outstandingBalance": 0,
+    "lastServiceDate": "2026-10-30",
+    "createdAt": "2026-10-30T11:58:25.245Z",
+    "updatedAt": "2026-10-30T11:58:25.245Z"
+  }
+]

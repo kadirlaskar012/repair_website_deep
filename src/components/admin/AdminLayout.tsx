@@ -22,8 +22,18 @@ import {
   Wrench,
   PanelLeftClose,
   PanelLeftOpen,
+  Receipt,
+  FileSpreadsheet,
+  FilePlus,
+  Users,
+  Package,
+  CreditCard,
+  BarChart3,
+  ChevronDown,
+  ChevronUp,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  Sliders
 } from 'lucide-react';
 
 interface AdminLayoutProps {
@@ -81,9 +91,30 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
     }
   };
 
-  const menuItems = [
-    { href: '/admin/bookings', label: 'Booking Leads', icon: <Calendar size={19} /> },
-    { href: '/admin/reviews', label: 'Customer Reviews', icon: <Star size={19} /> }
+  const [invoicesOpen, setInvoicesOpen] = useState(true);
+
+  // Auto-expand invoice section if user is on any /admin/invoices route
+  useEffect(() => {
+    if (pathname && pathname.startsWith('/admin/invoices')) {
+      setInvoicesOpen(true);
+    }
+  }, [pathname]);
+
+  const coreMenuItems = [
+    { href: '/admin/bookings', label: 'Booking Leads', icon: <Calendar size={18} /> },
+    { href: '/admin/reviews', label: 'Customer Reviews', icon: <Star size={18} /> }
+  ];
+
+  const invoiceSubmenus = [
+    { href: '/admin/invoices', label: 'Dashboard', icon: <LayoutDashboard size={16} /> },
+    { href: '/admin/invoices/create', label: 'Create Invoice', icon: <FilePlus size={16} /> },
+    { href: '/admin/invoices/all', label: 'All Invoices', icon: <FileSpreadsheet size={16} /> },
+    { href: '/admin/invoices/customers', label: 'Customers', icon: <Users size={16} /> },
+    { href: '/admin/invoices/services', label: 'Service Catalog', icon: <Wrench size={16} /> },
+    { href: '/admin/invoices/spare-parts', label: 'Spare Parts', icon: <Package size={16} /> },
+    { href: '/admin/invoices/payments', label: 'Payments', icon: <CreditCard size={16} /> },
+    { href: '/admin/invoices/reports', label: 'Reports', icon: <BarChart3 size={16} /> },
+    { href: '/admin/invoices/settings', label: 'Invoice Settings', icon: <Sliders size={16} /> }
   ];
 
   return (
@@ -132,7 +163,10 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
 
         {/* Middle Scrollable Nav Items */}
         <nav className="admin-sidebar-nav">
-          {menuItems.map((item) => {
+          <div className="admin-nav-group-title">
+            {!collapsed && <span>Operations</span>}
+          </div>
+          {coreMenuItems.map((item) => {
             const isActive = pathname === item.href;
             return (
               <Link
@@ -146,6 +180,58 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
               </Link>
             );
           })}
+
+          {/* Dedicated Invoice Management Section */}
+          <div className="admin-nav-group-title" style={{ marginTop: '16px' }}>
+            {!collapsed && <span>Billing &amp; Invoices</span>}
+          </div>
+
+          <div className="admin-nav-parent-group">
+            <button
+              type="button"
+              onClick={() => !collapsed && setInvoicesOpen(!invoicesOpen)}
+              className={`admin-nav-item admin-nav-parent-item ${
+                pathname.startsWith('/admin/invoices') ? 'active-parent' : ''
+              } ${collapsed ? 'item-collapsed' : ''}`}
+              title={collapsed ? 'Invoice Management' : undefined}
+            >
+              <div className="admin-nav-icon">
+                <Receipt size={18} />
+              </div>
+              {!collapsed && (
+                <>
+                  <span className="admin-nav-label" style={{ fontWeight: 700 }}>
+                    Invoice Management
+                  </span>
+                  <div className="admin-nav-chevron">
+                    {invoicesOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                  </div>
+                </>
+              )}
+            </button>
+
+            {/* Submenus */}
+            {(!collapsed ? invoicesOpen : false) && (
+              <div className="admin-nav-submenus">
+                {invoiceSubmenus.map((sub) => {
+                  const isSubActive =
+                    sub.href === '/admin/invoices'
+                      ? pathname === '/admin/invoices'
+                      : pathname === sub.href || pathname.startsWith(`${sub.href}/`);
+                  return (
+                    <Link
+                      key={sub.href}
+                      href={sub.href}
+                      className={`admin-nav-subitem ${isSubActive ? 'subitem-active' : ''}`}
+                    >
+                      <div className="admin-subnav-icon">{sub.icon}</div>
+                      <span>{sub.label}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
+          </div>
         </nav>
 
         {/* Bottom Pinned Actions: Live Site, Logout & Collapse Switcher */}
@@ -285,7 +371,8 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
 
             {/* Drawer Nav List */}
             <nav className="admin-drawer-nav">
-              {menuItems.map((item) => {
+              <div className="admin-drawer-section-title">Operations</div>
+              {coreMenuItems.map((item) => {
                 const isActive = pathname === item.href;
                 return (
                   <Link
@@ -296,6 +383,27 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
                   >
                     <div className="admin-nav-icon">{item.icon}</div>
                     <span>{item.label}</span>
+                  </Link>
+                );
+              })}
+
+              <div className="admin-drawer-section-title" style={{ marginTop: '16px' }}>
+                Invoice &amp; Billing
+              </div>
+              {invoiceSubmenus.map((sub) => {
+                const isSubActive =
+                  sub.href === '/admin/invoices'
+                    ? pathname === '/admin/invoices'
+                    : pathname === sub.href || pathname.startsWith(`${sub.href}/`);
+                return (
+                  <Link
+                    key={sub.href}
+                    href={sub.href}
+                    onClick={() => setMobileDrawerOpen(false)}
+                    className={`admin-drawer-link ${isSubActive ? 'active' : ''}`}
+                  >
+                    <div className="admin-nav-icon">{sub.icon}</div>
+                    <span>{sub.label}</span>
                   </Link>
                 );
               })}

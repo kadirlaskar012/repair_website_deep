@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import { Inter, Space_Grotesk, Noto_Sans_Bengali } from 'next/font/google';
 import './globals.css';
+import './invoice.css';
 import { SITE_URL } from '@/lib/seo';
 
 export const viewport: Viewport = {
