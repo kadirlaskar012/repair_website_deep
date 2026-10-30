@@ -5,6 +5,7 @@ import {
   createInvoice,
   getInvoiceDashboardStats
 } from '@/lib/invoice-db';
+import { sendTelegramInvoiceAlert } from '@/lib/telegram';
 
 export async function GET(req: NextRequest) {
   const admin = await getCurrentAdmin();
@@ -79,6 +80,11 @@ export async function POST(req: NextRequest) {
     }
 
     const invoice = await createInvoice(body);
+
+    // Auto-dispatch instant Telegram invoice alert with PDF & WhatsApp links
+    sendTelegramInvoiceAlert(invoice).catch((err) => {
+      console.warn('Background Telegram invoice alert error:', err);
+    });
 
     return NextResponse.json({
       success: true,

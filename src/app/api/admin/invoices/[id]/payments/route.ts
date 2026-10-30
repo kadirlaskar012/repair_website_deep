@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getCurrentAdmin } from '@/lib/auth';
 import { recordInvoicePayment } from '@/lib/invoice-db';
+import { sendTelegramInvoiceAlert } from '@/lib/telegram';
 
 export async function POST(
   req: NextRequest,
@@ -32,6 +33,12 @@ export async function POST(
 
   if (!result.success) {
     return NextResponse.json({ error: result.error }, { status: 400 });
+  }
+
+  if (result.invoice) {
+    sendTelegramInvoiceAlert(result.invoice).catch((err) => {
+      console.warn('Telegram payment update alert error:', err);
+    });
   }
 
   return NextResponse.json({ success: true, invoice: result.invoice });
