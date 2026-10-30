@@ -23,16 +23,20 @@
   width: 100%;
 }
 
-/* Global Top Announcement Bar */
+/* Global Top Announcement Bar - Ultra Slim */
 .off-topbar {
   background-color: #F8FAFC;
   border-bottom: 1px solid #E2E8F0;
-  padding: 8px 20px;
-  font-size: 12px;
+  height: 28px;
+  padding: 0 20px;
+  font-size: 11px;
   color: #475569;
+  display: flex;
+  align-items: center;
 }
 
 .off-topbar-inner {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
@@ -44,17 +48,17 @@
 .off-status-live {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   font-weight: 600;
   color: #0F172A;
 }
 
 .off-live-dot {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background-color: #10B981;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
   animation: off-dot-pulse 2s infinite ease-in-out;
 }
 
@@ -67,7 +71,7 @@
 .off-topbar-right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   font-weight: 500;
 }
 
@@ -76,7 +80,7 @@
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   font-weight: 600;
   transition: color 0.15s ease;
 }
@@ -85,31 +89,36 @@
   color: #2563EB;
 }
 
-/* Official Header */
+/* Official Header - Sleek 54px Height (Compact Apple/Stripe Style) */
 .off-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  height: 54px;
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
 }
 
 .off-header-inner {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 14px 20px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 16px;
+  height: 100%;
 }
 
 .off-brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   text-decoration: none;
   color: inherit;
   flex-shrink: 0;
@@ -122,34 +131,34 @@
 
 .off-brand-title {
   font-family: var(--font-family-heading, sans-serif);
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 800;
   color: #09090B;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   line-height: 1.15;
 }
 
 .off-brand-badge {
-  font-size: 11px;
+  font-size: 10px;
   color: #64748B;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .off-nav {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 24px;
 }
 
 .off-nav-item {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #475569;
   text-decoration: none;
   transition: all 0.15s ease;
-  padding: 6px 0;
+  padding: 4px 0;
   position: relative;
 }
 
@@ -165,7 +174,7 @@
 .off-nav-item.active::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   right: 0;
   height: 2px;
@@ -182,17 +191,18 @@
 .off-btn-invoice {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-size: 13px;
+  gap: 5px;
+  font-size: 12px;
   font-weight: 600;
   color: #334155;
   background-color: #FFFFFF;
   border: 1px solid #CBD5E1;
-  padding: 8px 14px;
-  border-radius: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
   text-decoration: none;
   transition: all 0.15s ease;
   cursor: pointer;
+  height: 32px;
 }
 
 .off-btn-invoice:hover {
@@ -205,25 +215,27 @@
 .off-btn-book {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 13px;
+  gap: 6px;
+  font-size: 12px;
   font-weight: 600;
   color: #FFFFFF;
   background-color: #09090B;
   border: 1px solid #09090B;
-  padding: 9px 18px;
+  padding: 7px 16px;
   border-radius: 9999px;
   text-decoration: none;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  height: 32px;
+  white-space: nowrap;
 }
 
 .off-btn-book:hover {
   background-color: #18181B;
   border-color: #18181B;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
 }
 
 /* Modern Editorial Hero */
@@ -1227,27 +1239,34 @@
 @media (max-width: 768px) {
   .off-topbar,
   .off-nav {
-    display: none;
+    display: none !important;
+  }
+  .off-header {
+    height: 50px !important;
   }
   .off-header-inner {
-    padding: 10px 14px;
+    padding: 6px 14px;
+    height: 100%;
     gap: 8px;
   }
   .off-brand-title {
-    font-size: 16px;
+    font-size: 15px;
+    letter-spacing: -0.02em;
   }
   .off-brand-badge {
-    font-size: 9px;
+    display: none !important;
   }
   .off-btn-invoice {
-    display: none;
+    display: none !important;
   }
   .off-btn-book {
-    padding: 7px 14px;
+    padding: 6px 14px;
     font-size: 12px;
+    height: 32px;
+    white-space: nowrap;
   }
   .off-hero {
-    padding: 24px 14px;
+    padding: 20px 14px;
   }
   .off-showcase-specs {
     grid-template-columns: 1fr;
