@@ -6,33 +6,33 @@
    ============================================================ */
 
 :root {
-  /* Color Palette */
-  --color-primary: #146C5B;
-  --color-primary-hover: #0F5749;
-  --color-primary-dark: #0A3D33;
-  --color-primary-light: #EAF4F2;
-  --color-primary-subtle: #F2F8F6;
+  /* Color Palette - Ultra-Clean Corporate Tech (Obsidian, Pure White, Sapphire) */
+  --color-primary: #09090B;
+  --color-primary-hover: #18181B;
+  --color-primary-dark: #000000;
+  --color-primary-light: #F1F5F9;
+  --color-primary-subtle: #F8FAFC;
 
-  --color-accent: #E8A33D;
-  --color-accent-hover: #D18D27;
-  --color-accent-dark: #B27318;
-  --color-accent-light: #FDF4E7;
+  --color-accent: #2563EB;
+  --color-accent-hover: #1D4ED8;
+  --color-accent-dark: #1E40AF;
+  --color-accent-light: #EFF6FF;
 
   --color-bg-base: #FFFFFF;
-  --color-bg-warm: #FBFBF9;
-  --color-bg-alt: #F4F6F4;
+  --color-bg-warm: #FAFAFA;
+  --color-bg-alt: #F8FAFC;
   --color-bg-card: #FFFFFF;
   --color-header-bg: rgba(255, 255, 255, 0.96);
   --color-brand-card-bg: #FFFFFF;
 
-  --color-text-main: #14221F;
-  --color-text-muted: #586965;
-  --color-text-light: #899B97;
+  --color-text-main: #09090B;
+  --color-text-muted: #475569;
+  --color-text-light: #64748B;
   --color-text-inverse: #FFFFFF;
 
-  --color-border: #E2E8E5;
-  --color-border-light: #EDF2F0;
-  --color-border-focus: #146C5B;
+  --color-border: #E2E8F0;
+  --color-border-light: #F1F5F9;
+  --color-border-focus: #2563EB;
 
   --color-success: #1E824C;
   --color-warning: #D97706;
@@ -295,27 +295,35 @@ img, svg {
 }
 
 .btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-text-inverse);
-  box-shadow: 0 2px 8px rgba(20, 108, 91, 0.25);
+  background-color: #09090B;
+  color: #FFFFFF;
+  border: 1px solid #09090B;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .btn-primary:hover:not(:disabled) {
-  background-color: var(--color-primary-hover);
+  background-color: #18181B;
+  border-color: #18181B;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(20, 108, 91, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
 }
 
 .btn-accent {
-  background-color: var(--color-accent);
+  background-color: #2563EB;
   color: #FFFFFF;
-  box-shadow: 0 2px 8px rgba(232, 163, 61, 0.3);
+  border: 1px solid #2563EB;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
 }
 
 .btn-accent:hover:not(:disabled) {
-  background-color: var(--color-accent-hover);
+  background-color: #1D4ED8;
+  border-color: #1D4ED8;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(232, 163, 61, 0.4);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
 }
 
 .btn-outline {

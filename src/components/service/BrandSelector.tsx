@@ -27,13 +27,13 @@ export default function BrandSelector({
   );
 
   return (
-    <div style={{ backgroundColor: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-lg)', padding: 'clamp(20px, 4vw, 32px)', marginBottom: '40px' }}>
+    <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '16px', padding: 'clamp(20px, 4vw, 32px)', marginBottom: '40px' }}>
       <div style={{ marginBottom: '20px' }}>
-        <h3 style={{ fontSize: '1.25rem', marginBottom: '6px', color: 'var(--color-text-main)' }}>
+        <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '6px', color: '#09090B' }}>
           {t.selectBrand}
         </h3>
-        <p style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>
-          {isBn ? 'আপনার অ্যাপ্লায়েন্সের ব্র্যান্ড বেছে নিন যাতে উপযুক্ত যন্ত্রাংশ ও টেকনিশিয়ান পাঠানো যায়:' : 'Select your brand to ensure certified specialists and genuine spare parts:'}
+        <p style={{ fontSize: '0.875rem', color: '#64748B' }}>
+          {isBn ? 'আপনার অ্যাপ্লায়েন্সের ব্র্যান্ড বেছে নিন যাতে উপযুক্ত আসল যন্ত্রাংশ ও সার্টিফাইড টেকনিশিয়ান পাঠানো যায়:' : 'Select your brand to ensure certified specialists and 100% genuine OEM spare parts:'}
         </p>
       </div>
 
@@ -67,21 +67,22 @@ export default function BrandSelector({
               key={b.id}
               onClick={() => onSelectBrand(isSelected ? '' : b.name)}
               style={{
-                padding: '14px 10px',
-                borderRadius: 'var(--radius-md)',
-                border: isSelected ? '2px solid var(--color-primary)' : '1.5px solid var(--color-border-light)',
-                backgroundColor: isSelected ? 'var(--color-primary-light)' : 'var(--color-bg-warm)',
-                color: isSelected ? 'var(--color-primary-dark)' : 'var(--color-text-main)',
+                padding: '14px 12px',
+                borderRadius: '12px',
+                border: isSelected ? '2px solid #09090B' : '1px solid #E2E8F0',
+                backgroundColor: isSelected ? '#EFF6FF' : '#FFFFFF',
+                color: isSelected ? '#09090B' : '#334155',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '6px',
+                gap: '8px',
                 fontWeight: 700,
-                fontSize: '0.9375rem',
-                letterSpacing: '0.02em',
-                transition: 'all 0.15s',
-                position: 'relative'
+                fontSize: '0.875rem',
+                letterSpacing: '0.01em',
+                transition: 'all 0.15s ease',
+                position: 'relative',
+                boxShadow: isSelected ? '0 3px 10px rgba(0, 0, 0, 0.08)' : '0 1px 3px rgba(0, 0, 0, 0.03)'
               }}
             >
               {isSelected && (
@@ -90,24 +91,24 @@ export default function BrandSelector({
                     position: 'absolute',
                     top: '6px',
                     right: '6px',
-                    width: '16px',
-                    height: '16px',
+                    width: '18px',
+                    height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'var(--color-primary)',
+                    backgroundColor: '#09090B',
                     color: '#FFFFFF',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
                   }}
                 >
-                  <Check size={10} strokeWidth={3} />
+                  <Check size={11} strokeWidth={3} />
                 </div>
               )}
               {b.logoUrl ? (
                 <img
                   src={b.logoUrl}
                   alt={b.name}
-                  style={{ maxHeight: '28px', maxWidth: '100%', objectFit: 'contain' }}
+                  style={{ maxHeight: '30px', maxWidth: '100%', objectFit: 'contain', filter: 'none', opacity: 1 }}
                 />
               ) : (
                 <span>{b.name}</span>
