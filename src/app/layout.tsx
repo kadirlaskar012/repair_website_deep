@@ -94,6 +94,17 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} ${notoSansBengali.variable}`}
     >
       <head>
+        {/* Google Tag Manager */}
+        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KXKGZ2L2" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            `
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
