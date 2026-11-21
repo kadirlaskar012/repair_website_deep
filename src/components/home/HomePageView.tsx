@@ -1,7 +1,24 @@
 'use client';
 
-import React from 'react';
-import OfficialLandingPage from './OfficialLandingPage';
+import React, { useState } from 'react';
+import Header from '@/components/header/Header';
+import LocationBar from '@/components/header/LocationBar';
+import Hero from '@/components/home/Hero';
+import SpotlightCards from '@/components/home/SpotlightCards';
+import MostBookedServices from '@/components/home/MostBookedServices';
+import WidePromoBanner from '@/components/home/WidePromoBanner';
+import ApplianceCategories from '@/components/home/ApplianceCategories';
+import WidePromoBannerTwo from '@/components/home/WidePromoBannerTwo';
+import TrustSection from '@/components/home/TrustSection';
+import BrandsSection from '@/components/home/BrandsSection';
+import PricingSection from '@/components/home/PricingSection';
+import HomeSeoContent from '@/components/home/HomeSeoContent';
+import HomeFaqSection from '@/components/home/HomeFaqSection';
+import CtaBanner from '@/components/home/CtaBanner';
+import Footer from '@/components/footer/Footer';
+import SearchModal from '@/components/search/SearchModal';
+import ServiceDetailsModal from '@/components/modal/ServiceDetailsModal';
+import BookingModal from '@/components/modal/BookingModal';
 import {
   Category,
   Problem,
@@ -28,20 +45,163 @@ interface HomePageViewProps {
 
 export default function HomePageView({
   categories,
+  problems,
   brands,
   locations,
+  trustItems,
   reviews,
   settings,
+  keywords,
   lang
 }: HomePageViewProps) {
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [selectedProblem, setSelectedProblem] = useState<Problem | null>(null);
+  const [bookingProblem, setBookingProblem] = useState<string>('');
+
+  const handleOpenBookingWithProblem = (p: Problem) => {
+    setSelectedProblem(null);
+    setBookingProblem(lang === 'bn' ? p.titleBn : p.title);
+    setIsBookingOpen(true);
+  };
+
+  const handleDirectBooking = () => {
+    setBookingProblem('');
+    setIsBookingOpen(true);
+  };
+
   return (
-    <OfficialLandingPage
-      categories={categories}
-      brands={brands}
-      locations={locations}
-      settings={settings}
-      reviews={reviews}
-      lang={lang}
-    />
+    <>
+      <LocationBar locations={locations} lang={lang} phone={settings.phone} />
+      <Header
+        categories={categories}
+        lang={lang}
+        onOpenSearch={() => setIsSearchOpen(true)}
+        onOpenBooking={handleDirectBooking}
+        phone={settings.phone}
+        whatsapp={settings.whatsapp}
+      />
+
+      <main style={{ paddingTop: '8px' }}>
+        {/* 1. Hero with Organic Graphics, Dual Search/Location Pill & Quick Icons */}
+        <Hero
+          categories={categories}
+          locations={locations}
+          lang={lang}
+          onOpenSearch={() => setIsSearchOpen(true)}
+          onOpenBooking={handleDirectBooking}
+          phone={settings.phone}
+        />
+
+        {/* 2. PRIMARY 5 APPLIANCE REPAIR CATEGORIES (Prominent Responsive Layout) */}
+        <ApplianceCategories
+          categories={categories}
+          lang={lang}
+        />
+
+        {/* 3. Top 3 Spotlight Banner Cards (Real Photos) */}
+        <SpotlightCards
+          lang={lang}
+          onOpenBooking={handleDirectBooking}
+        />
+
+        {/* 4. Most Booked Services (Real Photos & Badges) */}
+        <MostBookedServices
+          categories={categories}
+          problems={problems || []}
+          lang={lang}
+          onSelectProblem={(p) => setSelectedProblem(p)}
+          onOpenBooking={handleDirectBooking}
+        />
+
+        {/* 5. Wide Feature Banner #1 (Sudden Breakdown) */}
+        <WidePromoBanner
+          lang={lang}
+          onOpenBooking={handleDirectBooking}
+          phone={settings.phone}
+        />
+
+        {/* 6. Wide Feature Banner #2 (Genuine Spares & Guarantee) */}
+        <WidePromoBannerTwo
+          lang={lang}
+          onOpenBooking={handleDirectBooking}
+        />
+
+        {/* 7. Brands We Service with Brand Selector */}
+        <BrandsSection
+          brands={brands}
+          lang={lang}
+        />
+
+        {/* 8. Trust Section (Verified Techs, Transparent, Warranty) */}
+        <TrustSection
+          items={trustItems || []}
+          lang={lang}
+        />
+
+        {/* 9. Pricing / Diagnosis Explanation */}
+        <PricingSection
+          lang={lang}
+          onOpenBooking={handleDirectBooking}
+        />
+
+        {/* 10. Comprehensive In-Depth SEO Guide & Local Coverage Network */}
+        <HomeSeoContent
+          lang={lang}
+          onOpenBooking={handleDirectBooking}
+        />
+
+        {/* 11. Search-Intent Home FAQs with Schema */}
+        <HomeFaqSection
+          lang={lang}
+        />
+
+        {/* 12. Final Contact / Booking CTA */}
+        <CtaBanner
+          lang={lang}
+          onOpenBooking={handleDirectBooking}
+          phone={settings.phone}
+          whatsapp={settings.whatsapp}
+        />
+      </main>
+
+      <Footer
+        settings={settings}
+        categories={categories}
+        locations={locations}
+        lang={lang}
+      />
+
+      {/* Modals */}
+      <SearchModal
+        isOpen={isSearchOpen}
+        onClose={() => setIsSearchOpen(false)}
+        categories={categories}
+        problems={problems || []}
+        keywords={keywords || []}
+        lang={lang}
+        onSelectProblem={(p) => setSelectedProblem(p)}
+      />
+
+      <ServiceDetailsModal
+        problem={selectedProblem}
+        category={categories.find((c) => c.id === selectedProblem?.categoryId)}
+        isOpen={Boolean(selectedProblem)}
+        onClose={() => setSelectedProblem(null)}
+        onBookNow={handleOpenBookingWithProblem}
+        phone={settings.phone}
+        whatsapp={settings.whatsapp}
+        lang={lang}
+      />
+
+      <BookingModal
+        isOpen={isBookingOpen}
+        onClose={() => setIsBookingOpen(false)}
+        categories={categories || []}
+        brands={brands || []}
+        initialProblem={bookingProblem}
+        lang={lang}
+      />
+    </>
   );
 }
