@@ -54,6 +54,7 @@ export default function BrandSelector({
 
       {/* 2. Brand Logo / Badge Grid */}
       <div
+        className="rd-brand-grid"
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))',

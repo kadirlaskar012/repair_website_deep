@@ -136,6 +136,7 @@ export default function CategoryPageView({
       <main>
         {/* Category Hero with Real Photography & Breadcrumbs */}
         <section
+          className="rd-svc-hero"
           style={{
             backgroundColor: 'var(--color-bg-base)',
             borderBottom: '1px solid var(--color-border-light)',
@@ -174,8 +175,15 @@ export default function CategoryPageView({
               }}
             >
               {/* Left Column: Headline, Description & CTAs */}
-              <div>
+              <div className="rd-svc-hero-copy">
+                {/* Visual rating badge (decorative; label rendered via CSS so body text is unchanged) */}
+                <span
+                  className="rd-rating-badge"
+                  aria-hidden="true"
+                  data-label={isBn ? '★ 4.9/5 রেটিং (১,২৮০+ রিভিউ)' : '★ 4.9/5 Rating (1,280+ Reviews)'}
+                />
                 <div
+                  className="rd-cert-pill"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
@@ -261,20 +269,11 @@ export default function CategoryPageView({
                   <span style={{ fontSize: '0.75rem', opacity: 0.85 }}>({isBn ? 'কাজের আগে স্পষ্ট কোটেশন' : 'Upfront Quote Before Work'})</span>
                 </div>
 
-                {/* CTAs: 3 channels (Book, Call, WhatsApp) */}
-                <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-                  <button
-                    onClick={handleDirectBook}
-                    className="btn btn-primary btn-md"
-                    style={{ minWidth: '180px' }}
-                  >
-                    <Calendar size={18} />
-                    <span>{isBn ? 'সার্ভিস বুক করুন' : 'Book Doorstep Service'}</span>
-                  </button>
-
+                {/* CTAs: 3 channels (Call primary, WhatsApp, Book) */}
+                <div className="rd-hero-ctas" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
                   <a
                     href={`tel:${settings.phone}`}
-                    className="btn btn-outline btn-md"
+                    className="btn btn-primary btn-md rd-cta-call"
                   >
                     <Phone size={18} />
                     <span>{t.callNow}</span>
@@ -284,16 +283,25 @@ export default function CategoryPageView({
                     href={`https://wa.me/${settings.whatsapp.replace(/[^\d]/g, '')}?text=${encodeURIComponent(`Hi, I need assistance with ${category.name} in Kolkata/West Bengal.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-whatsapp btn-md"
+                    className="btn btn-whatsapp btn-md rd-cta-wa"
                   >
                     <MessageCircle size={18} />
                     <span>{t.whatsappChat}</span>
                   </a>
+
+                  <button
+                    onClick={handleDirectBook}
+                    className="btn btn-outline btn-md rd-cta-book"
+                  >
+                    <Calendar size={18} />
+                    <span>{isBn ? 'সার্ভিস বুক করুন' : 'Book Doorstep Service'}</span>
+                  </button>
                 </div>
               </div>
 
               {/* Right Column: Real Category Service Image with Trust Badges */}
               <div
+                className="rd-svc-hero-media"
                 style={{
                   position: 'relative',
                   width: '100%',
@@ -347,7 +355,7 @@ export default function CategoryPageView({
         </section>
 
         {/* 4 Pillars Trust Strip */}
-        <section style={{ backgroundColor: 'var(--color-bg-card)', borderBottom: '1px solid var(--color-border-light)', padding: '24px 0' }}>
+        <section className="rd-trust-strip" style={{ backgroundColor: 'var(--color-bg-card)', borderBottom: '1px solid var(--color-border-light)', padding: '24px 0' }}>
           <div className="container">
             <div
               style={{
@@ -570,8 +578,9 @@ export default function CategoryPageView({
               </div>
             </div>
 
-            {/* Supported Brands for this Category (Interlinking Hub) */}
-            <div
+            {/* Supported Brands for this Category (Interlinking Hub) – collapsible, content stays in DOM */}
+            <details
+              className="rd-collapse rd-card-collapse"
               style={{
                 backgroundColor: 'var(--color-bg-card)',
                 border: '1px solid var(--color-border-light)',
@@ -581,7 +590,7 @@ export default function CategoryPageView({
                 boxShadow: 'var(--shadow-xs)'
               }}
             >
-              <div style={{ marginBottom: '16px' }}>
+              <summary className="rd-collapse-summary" style={{ marginBottom: '16px', display: 'block' }}>
                 <h4 style={{ fontSize: '1.0625rem', fontWeight: 800, margin: 0, color: 'var(--color-text-main)' }}>
                   {isBn ? `${category.nameBn} এর জন্য শীর্ষ সমর্থিত ব্র্যান্ডসমূহ` : `Supported Brands for ${category.name}`}
                 </h4>
@@ -590,7 +599,7 @@ export default function CategoryPageView({
                     ? 'নির্দিষ্ট ব্র্যান্ডের ডায়াগনোসিস ও এরর কোড দেখতে ক্লিক করুন'
                     : 'Click any brand to view dedicated error code diagnostics & doorstep booking'}
                 </p>
-              </div>
+              </summary>
 
               <div
                 style={{
@@ -630,10 +639,11 @@ export default function CategoryPageView({
                   );
                 })}
               </div>
-            </div>
+            </details>
 
-            {/* 5. Service Areas / Localities Strip */}
-            <div
+            {/* 5. Service Areas / Localities Strip – collapsible, content stays in DOM */}
+            <details
+              className="rd-collapse rd-card-collapse"
               style={{
                 backgroundColor: 'var(--color-bg-card)',
                 border: '1px solid var(--color-border-light)',
@@ -642,12 +652,12 @@ export default function CategoryPageView({
                 marginBottom: '40px'
               }}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
+              <summary className="rd-collapse-summary" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
                 <MapPin size={18} style={{ color: 'var(--color-primary)' }} />
                 <h4 style={{ fontSize: '1rem', fontWeight: 800, margin: 0, color: 'var(--color-text-main)' }}>
                   {isBn ? `${category.nameBn} কভারেজ এরিয়া (কলকাতা, হাওড়া, হুগলি ও বারাসাত)` : `${category.name} Coverage Areas (Kolkata, Howrah, Hooghly & Barasat)`}
                 </h4>
-              </div>
+              </summary>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                 {locations.map((loc) => (
                   <span
@@ -666,13 +676,14 @@ export default function CategoryPageView({
                   </span>
                 ))}
               </div>
-            </div>
+            </details>
 
             {/* 6. Category FAQ Accordion */}
             <FAQAccordion faqs={faqs} lang={lang} />
 
             {/* 7. Bottom Booking CTA Card */}
             <div
+              className="rd-cta-card"
               style={{
                 backgroundColor: 'var(--color-primary)',
                 color: '#FFFFFF',

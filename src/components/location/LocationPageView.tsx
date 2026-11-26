@@ -117,6 +117,7 @@ export default function LocationPageView({
 
         {/* Hero Section */}
         <section
+          className="rd-loc-hero"
           style={{
             background: 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)',
             color: '#FFFFFF',

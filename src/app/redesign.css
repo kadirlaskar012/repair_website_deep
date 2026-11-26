@@ -1,0 +1,273 @@
+/* ============================================================
+   Appliance Seva – UI Redesign layer (frontend/visual only)
+   Loaded after globals.css. No content / SEO changes.
+   Teal #0F766E primary · Navy #0F172A · Inter only
+   ============================================================ */
+
+:root {
+  --rd-teal: #0F766E;
+  --rd-teal-dark: #0B5B55;
+  --rd-teal-tint: #CCFBF1;
+  --rd-teal-50: #F0FDFA;
+  --rd-navy: #0F172A;
+  --rd-muted: #475569;
+  --rd-line: #E2E8F0;
+  --rd-surface: #F8FAFC;
+  --rd-wa: #15803D; /* WhatsApp green, darkened for AA contrast with white text */
+  --rd-wa-dark: #166534;
+  --rd-star: #F59E0B;
+  --rd-radius: 12px;
+  --rd-btn-h: 52px;
+
+  --color-primary: var(--rd-teal);
+  --color-primary-hover: var(--rd-teal-dark);
+  --color-primary-dark: var(--rd-teal-dark);
+  --color-primary-light: var(--rd-teal-tint);
+  --color-primary-subtle: var(--rd-teal-50);
+  --color-accent: var(--rd-teal);
+  --color-accent-hover: var(--rd-teal-dark);
+  --color-accent-dark: var(--rd-teal-dark);
+  --color-accent-light: var(--rd-teal-50);
+  --color-text-main: var(--rd-navy);
+  --color-border-focus: var(--rd-teal);
+  --font-family-heading: var(--font-body), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --radius-md: 12px;
+}
+
+/* ---------- Overflow guard (fixes 404px-wide page on 390px phones) ---------- */
+html, body { max-width: 100%; overflow-x: clip; }
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6 { letter-spacing: -0.02em; }
+main, footer, .location-bar { font-size: max(1em, 13px); }
+/* minimum 13px for small inline text (inline styles use 11–12.5px) */
+main [style*="font-size:0.6875rem"], main [style*="font-size:0.7rem"], main [style*="font-size:0.71875rem"],
+main [style*="font-size:0.75rem"], main [style*="font-size:0.78125rem"], main [style*="font-size:0.7188rem"],
+footer [style*="font-size:0.6875rem"], footer [style*="font-size:0.71875rem"], footer [style*="font-size:0.75rem"], footer [style*="font-size:0.78125rem"] {
+  font-size: 0.8125rem !important;
+}
+
+/* ---------- Buttons: one system, 52px, 12px radius ---------- */
+.btn { min-height: var(--rd-btn-h); border-radius: var(--rd-radius) !important; font-weight: 700; padding: 12px 22px; }
+.btn-sm { min-height: 44px; padding: 8px 16px; }
+.btn-primary, .btn-accent {
+  background-color: var(--rd-teal) !important;
+  border: 1px solid var(--rd-teal) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 16px -6px rgba(15, 118, 110, 0.55) !important;
+}
+.btn-primary:hover:not(:disabled), .btn-accent:hover:not(:disabled) {
+  background-color: var(--rd-teal-dark) !important;
+  border-color: var(--rd-teal-dark) !important;
+}
+.btn-outline {
+  border: 1.5px solid var(--rd-teal) !important;
+  color: var(--rd-teal-dark) !important;
+  background-color: #FFFFFF;
+}
+.btn-whatsapp {
+  background-color: var(--rd-wa) !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+.btn-whatsapp:hover:not(:disabled) { background-color: var(--rd-wa-dark) !important; }
+
+/* CSS-rendered labels (keeps crawlable text unchanged) */
+.rd-cta-label::before, .rd-cta-sub::before, .rd-rating-badge::before { content: attr(data-label); }
+
+/* ---------- Header ---------- */
+.header-sticky { box-shadow: none; border-bottom: 1px solid var(--rd-line); }
+.header-logo-title { text-transform: none; }
+.header-call-btn {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 10px;
+  background: var(--rd-teal);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.header-call-btn { display: inline-flex; }
+.header-call-btn:hover { background: var(--rd-teal-dark); }
+@media (max-width: 768px) {
+  /* mobile header = logo + Call + menu */
+  .header-actions .header-track-btn,
+  .header-actions .header-icon-btn:not(.mobile-menu-btn) { display: none !important; }
+  .header-logo-sub { display: none !important; }
+  .header-container { height: 56px !important; }
+  .header-logo-title { font-size: 0.8125rem !important; line-height: 1.15; }
+  .header-brand-logo { min-width: 0; }
+  .header-logo-text { min-width: 0; overflow: hidden; }
+}
+
+/* ---------- Top location bar: hide default "Salt Lake" selector ---------- */
+.location-bar { background: var(--rd-navy) !important; }
+.location-bar-left { display: none !important; }
+@media (max-width: 768px) {
+  .location-bar { display: none !important; }
+}
+
+/* Home hero hub selector: hidden on phones (logic untouched) */
+@media (max-width: 640px) {
+  .hero-location-card { display: none !important; }
+}
+
+/* ---------- Floating widgets ---------- */
+.wa-radar-ring { display: none !important; }
+.floating-review-btn { display: none !important; }
+@media (max-width: 1023px) {
+  /* replaced by the sticky call bar on phones/tablets */
+  .floating-action-suite { display: none !important; }
+}
+
+/* Old per-page sticky bar replaced by the global one */
+.mobile-sticky-bar { display: none !important; }
+
+/* ---------- Global sticky Call / WhatsApp bar ---------- */
+.rd-sticky-bar { display: none; }
+@media (max-width: 1023px) {
+  .rd-sticky-bar {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 950;
+    display: flex;
+    gap: 10px;
+    padding: 10px 12px calc(12px + env(safe-area-inset-bottom));
+    background: #FFFFFF;
+    border-top: 1px solid var(--rd-line);
+    box-shadow: 0 -8px 24px rgba(15, 23, 42, 0.08);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  body { padding-bottom: 84px !important; }
+  body.modal-open .rd-sticky-bar { display: none; }
+}
+.rd-sticky-call, .rd-sticky-wa {
+  height: 54px;
+  border-radius: var(--rd-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  min-width: 0;
+}
+.rd-sticky-call { flex: 1.3; background: var(--rd-teal); }
+.rd-sticky-wa { flex: 1; background: var(--rd-wa); }
+.rd-sticky-text { display: flex; flex-direction: column; line-height: 1.15; }
+.rd-sticky-text .rd-cta-sub { font-size: 0.75rem; font-weight: 500; opacity: 0.92; }
+
+/* ---------- Service landing page hero ---------- */
+.rd-rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  margin: 0 8px 12px 0;
+  border-radius: 9999px;
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  color: #92400E;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.rd-svc-hero .rd-cert-pill { vertical-align: middle; }
+.rd-svc-hero h1 { color: var(--rd-navy) !important; }
+
+@media (max-width: 640px) {
+  .rd-svc-hero { padding-top: 14px !important; padding-bottom: 20px !important; }
+  .rd-svc-hero h1 { font-size: 1.625rem !important; line-height: 1.2 !important; margin-bottom: 10px !important; }
+  .rd-svc-hero .rd-cert-pill { padding: 4px 10px !important; margin-bottom: 10px !important; }
+  .rd-svc-hero-copy > p { font-size: 0.9375rem !important; margin-bottom: 12px !important; }
+  .rd-svc-hero-copy > div[style*="flex-wrap"] { margin-bottom: 12px !important; gap: 6px !important; }
+  .rd-svc-hero-copy > div[style*="inline-flex"] { margin-bottom: 14px !important; padding: 6px 12px !important; flex-wrap: wrap; row-gap: 2px; border-radius: 12px !important; }
+  /* decorative photo hidden on phones so trust signals reach the first screen */
+  .rd-svc-hero-media { display: none !important; }
+  .rd-svc-hero .container > div[style*="grid"] { gap: 0 !important; }
+  .rd-hero-ctas { display: grid !important; grid-template-columns: 1fr 1fr; gap: 10px !important; }
+  .rd-hero-ctas .rd-cta-call { grid-column: 1 / -1; }
+  .rd-hero-ctas .btn { width: 100%; min-width: 0 !important; padding-left: 10px; padding-right: 10px; }
+  .rd-hero-ctas .rd-cta-book span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}
+
+/* trust strip: 2x2 on phones */
+@media (max-width: 640px) {
+  .rd-trust-strip { padding: 14px 0 !important; }
+  .rd-trust-strip .container > div { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  .rd-trust-strip .container > div > div {
+    background: var(--rd-surface);
+    border: 1px solid var(--rd-line);
+    border-radius: var(--rd-radius);
+    padding: 10px;
+    gap: 8px !important;
+    align-items: flex-start !important;
+  }
+  .rd-trust-strip .container > div > div > div:first-child { width: 32px !important; height: 32px !important; }
+}
+
+/* ---------- Location page hero (Howrah etc.) ---------- */
+.rd-loc-hero h1 { color: #FFFFFF !important; }
+.rd-loc-hero a[href^="tel:"] {
+  background-color: var(--rd-teal) !important;
+  box-shadow: 0 6px 16px -6px rgba(15, 118, 110, 0.6) !important;
+  min-height: var(--rd-btn-h);
+  border-radius: var(--rd-radius) !important;
+}
+.rd-loc-hero a[href*="wa.me"] {
+  background-color: var(--rd-wa) !important;
+  box-shadow: none !important;
+  min-height: var(--rd-btn-h);
+  border-radius: var(--rd-radius) !important;
+}
+.rd-loc-hero button { min-height: var(--rd-btn-h); border-radius: var(--rd-radius) !important; }
+
+/* ---------- Footer: navy, slimmer, collapsible lists ---------- */
+.site-footer { background-color: var(--rd-navy) !important; border-top-color: #1E293B !important; padding-top: 48px !important; }
+.rd-collapse > .rd-collapse-summary { cursor: pointer; list-style: none; position: relative; padding-right: 28px; }
+.rd-collapse > .rd-collapse-summary::-webkit-details-marker { display: none; }
+.rd-collapse > .rd-collapse-summary::after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  width: 9px; height: 9px;
+  border-right: 2px solid #94A3B8;
+  border-bottom: 2px solid #94A3B8;
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform 0.2s ease;
+}
+.rd-collapse[open] > .rd-collapse-summary::after { transform: translateY(-30%) rotate(-135deg); }
+.rd-collapse:not([open]) > .rd-collapse-summary { margin-bottom: 0 !important; }
+
+/* Card-style collapsibles on service pages (brands / coverage areas) */
+.rd-card-collapse > .rd-collapse-summary { padding-right: 32px; }
+.rd-card-collapse > .rd-collapse-summary::after { border-color: var(--rd-muted); }
+.rd-card-collapse:not([open]) { padding-bottom: 20px !important; }
+
+/* Brand logo selector: 3 columns on phones (halves its height) */
+@media (max-width: 640px) {
+  .rd-brand-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 8px !important; }
+  .rd-brand-grid > * { padding: 8px 6px !important; min-height: 48px; }
+  .rd-brand-grid img { max-width: 100%; height: auto; }
+}
+
+/* Footer accent text on navy: lighter teal for contrast */
+.site-footer [style*="var(--color-accent)"] { color: #5EEAD4 !important; }
+
+/* Bottom CTA card on service pages (teal background) */
+.rd-cta-card { background-color: var(--rd-navy) !important; }
+.rd-cta-card p { color: #CBD5E1 !important; }
+.rd-cta-card .btn-accent { background-color: var(--rd-teal) !important; border-color: var(--rd-teal) !important; }
+
+/* Location hero: accent text/icons on navy need a lighter teal */
+.rd-loc-hero [style*="var(--color-accent)"] { color: #5EEAD4 !important; }

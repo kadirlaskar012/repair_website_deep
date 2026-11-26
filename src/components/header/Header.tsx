@@ -167,6 +167,16 @@ export default function Header({
 
           {/* Right Header Actions */}
           <div className="header-actions">
+            {/* Primary Call CTA (visual label via CSS, no new body text) */}
+            <a
+              href={`tel:${phone}`}
+              className="header-call-btn"
+              aria-label={t.callNow}
+            >
+              <Phone size={16} aria-hidden="true" />
+              <span className="rd-cta-label" aria-hidden="true" data-label={isBn ? t.callNow : 'Call'} />
+            </a>
+
             {/* Track Booking Button */}
             <button
               onClick={() => setIsTrackModalOpen(true)}

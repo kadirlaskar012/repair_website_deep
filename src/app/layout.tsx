@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
-import { Inter, Space_Grotesk, Noto_Sans_Bengali } from 'next/font/google';
+import { Inter, Noto_Sans_Bengali } from 'next/font/google';
 import './globals.css';
 import './invoice.css';
+import './redesign.css';
 import { SITE_URL } from '@/lib/seo';
 
 export const viewport: Viewport = {
@@ -15,12 +16,6 @@ export const viewport: Viewport = {
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-body',
-  display: 'swap'
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-heading',
   display: 'swap'
 });
 
@@ -80,6 +75,7 @@ export const metadata: Metadata = {
 
 import ScrollRestorer from '@/components/common/ScrollRestorer';
 import FloatingActionSuite from '@/components/common/FloatingActionSuite';
+import StickyCallBar from '@/components/common/StickyCallBar';
 import ContentProtection from '@/components/security/ContentProtection';
 
 export default function RootLayout({
@@ -91,7 +87,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${spaceGrotesk.variable} ${notoSansBengali.variable}`}
+      className={`${inter.variable} ${notoSansBengali.variable}`}
     >
       <head>
         {/* Google Tag Manager */}
@@ -147,6 +143,7 @@ export default function RootLayout({
         <ScrollRestorer />
         {children}
         <FloatingActionSuite />
+        <StickyCallBar />
       </body>
     </html>
   );

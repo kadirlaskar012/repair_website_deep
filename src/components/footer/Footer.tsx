@@ -17,7 +17,7 @@ export default function Footer({ settings, categories, locations, lang }: Footer
   const isBn = lang === 'bn';
 
   return (
-    <footer style={{ backgroundColor: '#0A251F', color: '#B5C7C3', paddingTop: '64px', paddingBottom: '32px', borderTop: '1px solid #133D34' }}>
+    <footer className="site-footer" style={{ backgroundColor: '#0A251F', color: '#B5C7C3', paddingTop: '64px', paddingBottom: '32px', borderTop: '1px solid #133D34' }}>
       <div className="container">
         {/* Top Feature Bar inside Footer */}
         <div
@@ -259,8 +259,8 @@ export default function Footer({ settings, categories, locations, lang }: Footer
         </div>
 
         {/* Local Branch Offices & Doorstep Hubs Network (Smart Section) */}
-        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '28px', marginBottom: '32px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px', marginBottom: '16px' }}>
+        <details className="rd-collapse rd-footer-hubs" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '28px', marginBottom: '32px' }}>
+          <summary className="rd-collapse-summary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px', marginBottom: '16px' }}>
             <div>
               <div style={{ fontSize: '0.9375rem', fontWeight: 800, color: '#FFFFFF', display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <MapPin size={18} style={{ color: 'var(--color-accent)' }} />
@@ -275,7 +275,7 @@ export default function Footer({ settings, categories, locations, lang }: Footer
             <div style={{ fontSize: '0.75rem', color: '#34D399', fontWeight: 700, background: 'rgba(52, 211, 153, 0.1)', padding: '4px 10px', borderRadius: '12px', border: '1px solid rgba(52, 211, 153, 0.25)' }}>
               {isBn ? '● ৯টি এলাকায় অফিস সার্ভিস সক্রিয়' : '● 9 Regional Hubs Active'}
             </div>
-          </div>
+          </summary>
 
           {/* Responsive Grid of Local Office Hubs */}
           <div
@@ -377,13 +377,13 @@ export default function Footer({ settings, categories, locations, lang }: Footer
               </div>
             ))}
           </div>
-        </div>
+        </details>
 
         {/* Top Brands Directory (Contextual SEO Interlinking) */}
-        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '20px', marginBottom: '32px' }}>
-          <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: '#FFFFFF', marginBottom: '10px' }}>
+        <details className="rd-collapse rd-footer-brands" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '20px', marginBottom: '32px' }}>
+          <summary className="rd-collapse-summary" style={{ fontSize: '0.8125rem', fontWeight: 700, color: '#FFFFFF', marginBottom: '10px' }}>
             {isBn ? 'জনপ্রিয় ব্র্যান্ড ডোরস্টেপ সাপোর্ট ও মেরামত:' : 'Top Brand Repair & Doorstep Service:'}
-          </div>
+          </summary>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', fontSize: '0.8125rem' }}>
             {Object.values(brandSeoCatalog).map((b, idx, arr) => (
               <span key={b.slug} style={{ color: '#88A39C' }}>
@@ -400,7 +400,7 @@ export default function Footer({ settings, categories, locations, lang }: Footer
               </span>
             ))}
           </div>
-        </div>
+        </details>
 
         {/* Bottom Copyright & Disclaimer */}
         <div
