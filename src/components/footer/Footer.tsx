@@ -21,6 +21,7 @@ export default function Footer({ settings, categories, locations, lang }: Footer
       <div className="container">
         {/* Top Feature Bar inside Footer */}
         <div
+          className="rd-footer-trust"
           style={{
             backgroundColor: 'rgba(255, 255, 255, 0.05)',
             border: '1px solid rgba(255, 255, 255, 0.1)',
@@ -80,6 +81,7 @@ export default function Footer({ settings, categories, locations, lang }: Footer
 
         {/* Main Footer Columns */}
         <div
+          className="rd-footer-cols"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
@@ -88,7 +90,7 @@ export default function Footer({ settings, categories, locations, lang }: Footer
           }}
         >
           {/* Brand & About */}
-          <div>
+          <div className="rd-footer-col rd-footer-col-brand">
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
               <div style={{ width: '56px', height: '56px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img
@@ -143,10 +145,34 @@ export default function Footer({ settings, categories, locations, lang }: Footer
                 <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>↗</span>
               </a>
             </div>
+
+            {/* Footer Call / WhatsApp CTAs + trust badges (visual labels via CSS, no new body text) */}
+            <div className="rd-footer-ctas">
+              <a href={`tel:${settings.phone}`} className="rd-footer-cta rd-footer-cta-call" aria-label={t.callNow}>
+                <Phone size={16} aria-hidden="true" />
+                <span className="rd-cta-label" aria-hidden="true" data-label={isBn ? t.callNow : 'Call Now'} />
+              </a>
+              <a
+                href={`https://wa.me/${settings.whatsapp.replace(/[^\d]/g, '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rd-footer-cta rd-footer-cta-wa"
+                aria-label="WhatsApp"
+              >
+                <MessageCircle size={16} aria-hidden="true" />
+                <span className="rd-cta-label" aria-hidden="true" data-label="WhatsApp" />
+              </a>
+            </div>
+            <div className="rd-footer-badges" aria-hidden="true">
+              <span className="rd-footer-badge" data-label={isBn ? '★ ৪.৯/৫ গুগল রেটিং' : '★ 4.9/5 Google Rating'} />
+              <span className="rd-footer-badge" data-label={isBn ? '✓ ভেরিফায়েড টেকনিশিয়ান' : '✓ Verified Technicians'} />
+              <span className="rd-footer-badge" data-label={isBn ? '✓ আসল পার্টস' : '✓ Genuine Spares'} />
+              <span className="rd-footer-badge" data-label={isBn ? '✓ সপ্তাহে ৭ দিন' : '✓ Open 7 Days'} />
+            </div>
           </div>
 
           {/* Services */}
-          <div>
+          <div className="rd-footer-col rd-footer-col-services">
             <div style={{ color: '#FFFFFF', fontWeight: 700, fontSize: '1rem', marginBottom: '18px', letterSpacing: '0.02em' }}>
               {t.footerServices}
             </div>
@@ -168,7 +194,7 @@ export default function Footer({ settings, categories, locations, lang }: Footer
           </div>
 
           {/* Quick Links & Legal */}
-          <div>
+          <div className="rd-footer-col rd-footer-col-links">
             <div style={{ color: '#FFFFFF', fontWeight: 700, fontSize: '1rem', marginBottom: '18px', letterSpacing: '0.02em' }}>
               {t.footerQuickLinks}
             </div>
@@ -207,7 +233,7 @@ export default function Footer({ settings, categories, locations, lang }: Footer
           </div>
 
           {/* Contact Details */}
-          <div>
+          <div className="rd-footer-col rd-footer-col-contact">
             <div style={{ color: '#FFFFFF', fontWeight: 700, fontSize: '1rem', marginBottom: '18px', letterSpacing: '0.02em' }}>
               {isBn ? 'যোগাযোগ ও হেল্পলাইন' : 'Helpline & Office'}
             </div>

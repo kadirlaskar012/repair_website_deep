@@ -177,6 +177,18 @@ export default function Header({
               <span className="rd-cta-label" aria-hidden="true" data-label={isBn ? t.callNow : 'Call'} />
             </a>
 
+            {/* WhatsApp CTA (desktop/tablet; visual label via CSS, no new body text) */}
+            <a
+              href={`https://wa.me/${whatsapp.replace(/[^\d]/g, '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="header-wa-btn"
+              aria-label="WhatsApp"
+            >
+              <MessageCircle size={16} aria-hidden="true" />
+              <span className="rd-cta-label" aria-hidden="true" data-label="WhatsApp" />
+            </a>
+
             {/* Track Booking Button */}
             <button
               onClick={() => setIsTrackModalOpen(true)}

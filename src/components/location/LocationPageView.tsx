@@ -179,9 +179,10 @@ export default function LocationPageView({
             </p>
 
             {/* CTA Buttons */}
-            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center', marginBottom: '32px' }}>
+            <div className="rd-loc-ctas" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center', marginBottom: '32px' }}>
               <a
                 href={`tel:${settings.phone}`}
+                className="rd-loc-cta rd-loc-cta-call"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -204,6 +205,7 @@ export default function LocationPageView({
                 href={`https://wa.me/${(settings.whatsapp || settings.phone).replace(/[^0-9]/g, '')}?text=${encodeURIComponent(isBn ? `নমস্কার, আমি ${locName} থেকে অ্যাপ্লায়েন্স মেরামতের জন্য যোগাযোগ করছি।` : `Hello, I need appliance repair service in ${locName}.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="rd-loc-cta rd-loc-cta-wa"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -225,6 +227,7 @@ export default function LocationPageView({
               <button
                 type="button"
                 onClick={() => openBookingFor()}
+                className="rd-loc-cta rd-loc-cta-book"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -246,6 +249,7 @@ export default function LocationPageView({
 
             {/* 4 Trust Feature Badges */}
             <div
+              className="rd-loc-trust"
               style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
@@ -292,6 +296,7 @@ export default function LocationPageView({
         {/* Micro-Areas & Neighborhoods Covered (Local SEO Cluster) */}
         {popularAreas.length > 0 && (
           <section
+            className="rd-loc-areas"
             style={{
               backgroundColor: '#FFFFFF',
               borderBottom: '1px solid var(--color-border)',
@@ -334,7 +339,7 @@ export default function LocationPageView({
                   : `Whether you reside in residential societies, high-rise complexes, or local lanes across ${locName}, our mobile technician units reach your doorstep with genuine spare parts:`}
               </p>
 
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+              <div className="rd-loc-area-chips" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                 {popularAreas.map((area, idx) => (
                   <span
                     key={idx}
@@ -368,7 +373,7 @@ export default function LocationPageView({
         )}
 
         {/* Core Services Offered in this Location */}
-        <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '48px 16px' }}>
+        <section className="rd-loc-services" style={{ maxWidth: '1200px', margin: '0 auto', padding: '48px 16px' }}>
           <div style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto 36px' }}>
             <span style={{ fontSize: '0.8125rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-primary)' }}>
               {isBn ? 'বিশেষায়িত ডোরস্টেপ সার্ভিস' : 'Specialized Services'}
@@ -384,6 +389,7 @@ export default function LocationPageView({
           </div>
 
           <div
+            className="rd-loc-svc-grid"
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
@@ -398,6 +404,7 @@ export default function LocationPageView({
               return (
                 <div
                   key={cat.id}
+                  className="rd-loc-svc-card"
                   style={{
                     backgroundColor: '#FFFFFF',
                     border: '1px solid var(--color-border)',
@@ -482,7 +489,7 @@ export default function LocationPageView({
         </section>
 
         {/* Multi-Brand Competency */}
-        <section style={{ backgroundColor: '#F8FAFC', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)', padding: '48px 16px' }}>
+        <section className="rd-loc-brands" style={{ backgroundColor: '#F8FAFC', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)', padding: '48px 16px' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 28px' }}>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-text-main)', marginBottom: '8px' }}>
@@ -496,6 +503,7 @@ export default function LocationPageView({
             </div>
 
             <div
+              className="rd-loc-brand-grid"
               style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))',
@@ -528,8 +536,9 @@ export default function LocationPageView({
         </section>
 
         {/* Transparent Diagnosis Policy Banner */}
-        <section style={{ maxWidth: '1200px', margin: '48px auto', padding: '0 16px' }}>
+        <section className="rd-loc-policy" style={{ maxWidth: '1200px', margin: '48px auto', padding: '0 16px' }}>
           <div
+            className="rd-loc-policy-card"
             style={{
               background: 'linear-gradient(135deg, #1E3A8A 0%, #0F172A 100%)',
               color: '#FFFFFF',
@@ -583,7 +592,7 @@ export default function LocationPageView({
         </section>
 
         {/* Local Area FAQs */}
-        <section style={{ maxWidth: '900px', margin: '0 auto 48px', padding: '0 16px' }}>
+        <section className="rd-loc-faq" style={{ maxWidth: '900px', margin: '0 auto 48px', padding: '0 16px' }}>
           <div style={{ textAlign: 'center', marginBottom: '28px' }}>
             <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-text-main)', marginBottom: '8px' }}>
               {isBn ? `${locName} সার্ভিস সম্পর্কিত সাধারণ প্রশ্নাবলী` : `Frequently Asked Questions about Service in ${locName}`}
@@ -597,7 +606,7 @@ export default function LocationPageView({
         </section>
 
         {/* Other Service Locations Grid */}
-        <section style={{ backgroundColor: '#F8FAFC', borderTop: '1px solid var(--color-border)', padding: '40px 16px' }}>
+        <section className="rd-loc-nearby" style={{ backgroundColor: '#F8FAFC', borderTop: '1px solid var(--color-border)', padding: '40px 16px' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
             <h3 style={{ fontSize: '1.125rem', fontWeight: 800, color: 'var(--color-text-main)', marginBottom: '16px' }}>
               {isBn ? 'অন্যান্য নিকটবর্তী সার্ভিস হাবসমূহ:' : 'Other Nearby Service Hubs Across Kolkata & Bengal:'}

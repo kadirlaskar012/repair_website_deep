@@ -122,6 +122,7 @@ export default function BrandPageView({
 
       {/* HERO SECTION - Smart, Flat, High Conversion */}
       <section
+        className="rd-brand-hero"
         style={{
           padding: '36px 0 44px',
           background: 'linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%)',
@@ -204,6 +205,7 @@ export default function BrandPageView({
 
             {/* CTA BUTTONS - Large, Prominent, Easy Click on Mobile */}
             <div
+              className="rd-brand-ctas"
               style={{
                 display: 'flex',
                 gap: '12px',
@@ -230,7 +232,7 @@ export default function BrandPageView({
                   transition: 'all 0.2s ease',
                   minHeight: '48px'
                 }}
-                className="hover-lift"
+                className="hover-lift rd-brand-cta rd-brand-cta-call"
               >
                 <Phone size={20} />
                 <span>{isBn ? `কল করুন: ${settings.phone}` : `Call Now: ${settings.phone}`}</span>
@@ -256,7 +258,7 @@ export default function BrandPageView({
                   transition: 'all 0.2s ease',
                   minHeight: '48px'
                 }}
-                className="hover-lift"
+                className="hover-lift rd-brand-cta rd-brand-cta-wa"
               >
                 <MessageCircle size={20} />
                 <span>{isBn ? 'হোয়াটসঅ্যাপ সহায়তা' : 'WhatsApp Us'}</span>
@@ -282,7 +284,7 @@ export default function BrandPageView({
                   transition: 'all 0.2s ease',
                   minHeight: '48px'
                 }}
-                className="hover-lift"
+                className="hover-lift rd-brand-cta rd-brand-cta-book"
               >
                 <Calendar size={18} />
                 <span>{isBn ? 'অনলাইনে টেকনিশিয়ান বুক করুন' : 'Book Doorstep Visit'}</span>
@@ -718,7 +720,7 @@ export default function BrandPageView({
               {isBn ? `${brand.name} কাস্টমার পরিষেবা সম্পর্কিত অনুসন্ধান` : `Popular ${brand.name} Customer Support Searches`}
             </h2>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
+            <div className="rd-kw-cloud" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
               {brandDetail.searchedKeywords.map((kw, i) => (
                 <button
                   key={i}
@@ -966,6 +968,7 @@ export default function BrandPageView({
 
       {/* FINAL HIGH-CONVERTING BOTTOM HERO CTA */}
       <section
+        className="rd-brand-final"
         style={{
           padding: '48px 0',
           background: 'linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%)',
